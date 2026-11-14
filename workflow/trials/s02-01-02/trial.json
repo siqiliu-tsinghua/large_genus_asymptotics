@@ -1,0 +1,534 @@
+{
+  "agents": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "writer": "/root/s02_writer"
+  },
+  "companion_units": [
+    "s01"
+  ],
+  "created": "2026-11-14T09:52:34+00:00",
+  "final_audit": {
+    "addressed_user_feedback": [
+      "USER-001",
+      "USER-002",
+      "USER-003"
+    ],
+    "companion_units": [
+      "s01"
+    ],
+    "pdf": "build/trials/s02-01-02/r005/preview.pdf",
+    "pdf_sha256": "0052c9fdaaded71a64820225266b7f103a87d3fe3177e12d9b8d2f7fa6ef1e6e",
+    "reports": {
+      "academic": {
+        "agent_id": "/root/s02_academic",
+        "path": "workflow/trials/s02-01-02/r005/academic.json",
+        "sha256": "0a3610604efb4a05c366b32f7512834751317a848cf79d932738bcf5112ea59f",
+        "verdict": "pass"
+      },
+      "math": {
+        "agent_id": "/root/s02_math",
+        "path": "workflow/trials/s02-01-02/r005/math.json",
+        "sha256": "5d9bfc968cc0da219f77d9f74d36ad110011e308fab3c99e5d675e77bf171eee",
+        "verdict": "pass"
+      },
+      "readability": {
+        "agent_id": "/root/s02_readability",
+        "path": "workflow/trials/s02-01-02/r005/readability.json",
+        "sha256": "599bb29ecd30d5344f4aff65d0b24a7ec7002040c351d0b65aa9da7f75f3e1f4",
+        "verdict": "pass"
+      }
+    },
+    "resolved_review_issues": [
+      "ACADEMIC-001"
+    ],
+    "snapshot": "fe5417226361b0adeae6bca067fd003d05feecb519858d1472ec00d66e9cba34",
+    "unresolved_review_issues": [],
+    "whole_section_approved": false,
+    "whole_section_status": "drafting"
+  },
+  "primary_sources": [
+    {
+      "key": "FP00",
+      "path": "refs/Faber_Pandharipande_2000_Hodge_integrals.pdf",
+      "sha256": "8342fe48c59cb57cc3a154065a4b2f795f5604748b7a242f8edc71379ba80c74",
+      "url": "https://webspace.science.uu.nl/~faber010/17.pdf"
+    },
+    {
+      "key": "Mum83",
+      "path": "refs/Mumford_1983_Enumerative_geometry.pdf",
+      "sha256": "c6c3b43dc0a91aacac552d7951d94b844ac8ddf16bb9e3e3b21a7b913d4ddc80",
+      "url": "https://www.dam.brown.edu/people/mumford/alg_geom/papers/1983b--EnumGeomModuli-NC.pdf"
+    }
+  ],
+  "review_revision_requests": [
+    {
+      "issue_id": "ACADEMIC-001",
+      "requested": "2026-11-14T10:52:52+00:00",
+      "resolved_in_round": 4,
+      "role": "academic",
+      "round": 3
+    }
+  ],
+  "reviewed": "2026-11-14T11:31:04+00:00",
+  "revision_requests": [
+    {
+      "id": "USER-001",
+      "path": "workflow/trials/s02-01-02/feedback/USER-001.json",
+      "received": "2026-11-14T10:24:59+00:00",
+      "reviewed_in_round": 2,
+      "round": 1
+    },
+    {
+      "id": "USER-002",
+      "path": "workflow/trials/s02-01-02/feedback/USER-002.json",
+      "received": "2026-11-14T10:37:30+00:00",
+      "reviewed_in_round": 4,
+      "round": 2
+    },
+    {
+      "id": "USER-003",
+      "path": "workflow/trials/s02-01-02/feedback/USER-003.json",
+      "received": "2026-11-14T11:21:57+00:00",
+      "reviewed_in_round": 5,
+      "round": 4
+    }
+  ],
+  "rounds": [
+    {
+      "artifacts": {
+        "build_preview.py": "4e93945bc888e6fa13a3503ca31744270ddaec3da557f1903faec7b3ca2dc500",
+        "build_receipt.json": "65586ed86550c0c19b7c330adb943d21910e8eef1ac5331378c050482adaa6bb",
+        "changes.diff": "5f114dcd86558a189bae0ac24b4b256afdab4bc12c65170f2ac974b3ec7d97a8",
+        "outline.md": "89d4cad1ad211a542408350d634ff6a375abe7aa1aecae1c70319dba9a95b267",
+        "scope.json": "bbe35d15908134ec0daa3d386fdf2209d24be5a8d983ce8169556c1a0ef803f0",
+        "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198"
+      },
+      "bundle": "workflow/trials/s02-01-02/r001",
+      "created": "2026-11-14T09:56:50+00:00",
+      "files": {
+        "@outline": "89d4cad1ad211a542408350d634ff6a375abe7aa1aecae1c70319dba9a95b267",
+        "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "AGENTS.md": "ccf961584b89c522721e130a938c308e9d780c029cf8ad68b26eb66f8f21a828",
+        "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+        "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+        "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+        "sections/01_introduction/INTERFACE.md": "5b1064545297d0200089b5d1b3b72f10cefdb74f6af41059eede012bac04fb31",
+        "sections/01_introduction/section.tex": "6640aff42b15fac9baae3576119138a282222cd8a3da6303ca11bd47d4ba4805",
+        "sections/02_notation/01_conventions.tex": "3e15b5ecc591c30a9130602f3f091163cb663075cea1bd75d49f78bddb38ef64",
+        "sections/02_notation/02_tautological_classes.tex": "0de428057451a6e0c4f4628cd38fca486c9b71764cc0e512515148165e212af6",
+        "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+        "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+        "sections/02_notation/INTERFACE.md": "025d344c6c17da4b4e6578e30119d14bfdc4fdc4ed68c8a186d892836d5a5237",
+        "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+        "sections/02_notation/writer_handoff.md": "d7cb2c68df8cfa2fae82bccd3f05db6c66e73a0988c70188cee3e00068de66a5",
+        "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+        "workflow/PROTOCOL.md": "5f62e2b38bb77560dba3e749b7d8801d9b979f3fb3c739b7fba20daea243d11f",
+        "workflow/context.md": "7c9bc6f2e5609f2ffc5abe84ce1b2ab86d9dc1b1337909e878cf29b4cb31fc81",
+        "workflow/roles/academic.md": "225cbe884a385fe33ec7e4ea20e2bf8bb89e6d7d6eeb92e2feff66c4e8ade72c",
+        "workflow/roles/coordinator.md": "7287561fc713aa99964570e21df4b35e9dbd0452c2a7f2a862288b2683219b03",
+        "workflow/roles/math.md": "2dc13963239a7e57666b1749a024eaf8bfdc003399c215c3676460608986904a",
+        "workflow/roles/readability.md": "a58bceb5e6e216c6d01145ebe25b1d5fdabd987a2b3e141c633639424494f603",
+        "workflow/roles/writer.md": "32c4526003a1e0b648119ca8cabfc12306c8ad824026ade87d302e516e179216"
+      },
+      "record_sha256": "846e4fe1ddb0d0d8e7e1a25c6308bb3d48b3a0930e8f88524336cdc3f7c3f4d5",
+      "response_path": null,
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/trials/s02-01-02/r001/academic.json",
+          "sha256": "a4b8aef31b798e86aa94fdf5c867ccf1918a5a9cd5a2254b15891603547af674",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/trials/s02-01-02/r001/math.json",
+          "sha256": "9c6e5f348dfe0718400b53e2d88563ae3b7536bd4da412bc888c4e96f0e4567f",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/trials/s02-01-02/r001/readability.json",
+          "sha256": "4109a174247c71cc8643e81798bf202b583b7d3f1a1c79641ec2917392b90378",
+          "verdict": "pass"
+        }
+      },
+      "round": 1,
+      "scope": {
+        "scope_files": [
+          "sections/02_notation/01_conventions.tex",
+          "sections/02_notation/02_tautological_classes.tex"
+        ],
+        "stage": "trial",
+        "subsections": [
+          1,
+          2
+        ],
+        "unit": "s02",
+        "whole_section_approved": false
+      },
+      "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+      "stage": "trial",
+      "superseded_reason": "User feedback USER-001 requires revision under clarified paper-wide definition economy."
+    },
+    {
+      "artifacts": {
+        "build_preview.py": "4e93945bc888e6fa13a3503ca31744270ddaec3da557f1903faec7b3ca2dc500",
+        "build_receipt.json": "76ca6c3daadb5cf68f61d47e0eec38a34d2e6a26d958daf623b18f8d3a9ac43f",
+        "changes.diff": "82e131647001fb7213c34fb51ccbf3bc5e83e4e984b3bf55046552c0e0b23d29",
+        "outline.md": "3efd0a9468f154b2f5b2bc3e86437ec37b29c2503e530c3df67fec80cedb2f36",
+        "scope.json": "bbe35d15908134ec0daa3d386fdf2209d24be5a8d983ce8169556c1a0ef803f0",
+        "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "user_feedback.json": "361b904480e07a776a16dbf868f57b7c3fc10071a8f8e3c42317cab01fab1e10"
+      },
+      "bundle": "workflow/trials/s02-01-02/r002",
+      "created": "2026-11-14T10:27:46+00:00",
+      "files": {
+        "@outline": "3efd0a9468f154b2f5b2bc3e86437ec37b29c2503e530c3df67fec80cedb2f36",
+        "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "AGENTS.md": "eaa38e057afd512bbbf702b4597c2d4c56304ae69749ce813a4f03ea794fc982",
+        "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+        "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+        "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+        "sections/01_introduction/INTERFACE.md": "5b1064545297d0200089b5d1b3b72f10cefdb74f6af41059eede012bac04fb31",
+        "sections/01_introduction/section.tex": "6640aff42b15fac9baae3576119138a282222cd8a3da6303ca11bd47d4ba4805",
+        "sections/02_notation/01_conventions.tex": "cd77ea02cea00d4b0c0c2a5f1a56be3208312c94f2eaa2a85f4ef8006f62268c",
+        "sections/02_notation/02_tautological_classes.tex": "4c39025373f498c3c7b3e9eab4d59a9c66eed4249d589d90924a3a15d5657545",
+        "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+        "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+        "sections/02_notation/INTERFACE.md": "91a53d4aaaed8ea5b0741e8217bb9d273383dc996b7a731ab518f14531025f59",
+        "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+        "sections/02_notation/writer_handoff.md": "fb308d798f674ca1b26f538807f0fcb47f24c6e47988013a3004331a12788caa",
+        "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+        "workflow/PROTOCOL.md": "73f225c51d9cae3011c352a9e2ebb58f8546eb9efb1df1e99dc48e970883eafb",
+        "workflow/context.md": "29a044fd6feb0ac2926ea11ffc3ee296247177995ccbf10dc4bece146f3bbbd0",
+        "workflow/roles/academic.md": "cadae9fd1dfb60a59d26874af559d77bb0639c259fde7cc6ee36affbae967629",
+        "workflow/roles/coordinator.md": "1a80227f9fe84477c388bc1b19bfd04062a5d58588e8667da9da7687c4f44265",
+        "workflow/roles/math.md": "b21f279728f0372b1ea02eabbdf9172f928ee5b627658de2f420c1b7c16ab516",
+        "workflow/roles/readability.md": "8b09742096c0f3515423e664534a00bce9b17ba7a9dab07689d4f0ce92779c23",
+        "workflow/roles/writer.md": "56da1496a80c7b5fc7c296f822eda4873903f15692e83624ef72bd3bc3d47829",
+        "workflow/trials/s02-01-02/r001/author_response.json": "b17cfab05b828c622f6f9dd66f342243ba472432011f9b283f1dbba9ce50b3ab"
+      },
+      "record_sha256": "0c4e8363d7d14ffb8a29d29c696e1af4c2c5a6a4854f3f0c5021554c947e5f4c",
+      "response_path": "workflow/trials/s02-01-02/r001/author_response.json",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/trials/s02-01-02/r002/academic.json",
+          "sha256": "4ee9dbf96aab6c9946f26605ee1173dfd90506902fae56213de884d1e4ae2dd8",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/trials/s02-01-02/r002/math.json",
+          "sha256": "30c36371e31b70829a4c8b11594f06fe5f310a9160830fc954cf7c0aeef203f9",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/trials/s02-01-02/r002/readability.json",
+          "sha256": "599987082a6f4778ab82a6d766473a52b138ff76a7640cf57fb317e37692c799",
+          "verdict": "pass"
+        }
+      },
+      "round": 2,
+      "scope": {
+        "scope_files": [
+          "sections/02_notation/01_conventions.tex",
+          "sections/02_notation/02_tautological_classes.tex"
+        ],
+        "stage": "trial",
+        "subsections": [
+          1,
+          2
+        ],
+        "unit": "s02",
+        "whole_section_approved": false
+      },
+      "snapshot": "282b2e15c2a343c18015c8f5b3aaf1ee59cf84c5c7100ac55dedbf9c7c2078f7",
+      "stage": "trial",
+      "superseded_reason": "User requests clarification of Introduction and relocation of global conventions from 2.1.",
+      "user_feedback": "USER-001"
+    },
+    {
+      "artifacts": {
+        "build_preview.py": "b256e7b019810b323d01e559197d8f8c52552ca365f9c812ebd54eb00d78dae8",
+        "build_receipt.json": "6da715cc6099b11d04e466356cbf8f6ba9d8e79cf77d28469df0b24fb95ea8c2",
+        "changes.diff": "7749f368efcef54cb188e66a747d521a6071d634ec9a58d85b8b83e6c75ee4fa",
+        "outline.md": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+        "scope.json": "23ac0e108f9437a2f4b691692d8bbd37122bee4dd51d9668ea3f9ba25888c025",
+        "target_preservation.json": "3773fca4d900a49a651ea961e439d2c51fefa1f05932a904c680f3e03ae4e599",
+        "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "user_feedback.json": "a963c318a86bf036c17318cc315dada77d6da107d9384628195eb38851724223"
+      },
+      "bundle": "workflow/trials/s02-01-02/r003",
+      "created": "2026-11-14T10:47:03+00:00",
+      "files": {
+        "@outline": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+        "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "AGENTS.md": "fbc74a25454ae566a00ae39b1fa92382bcdaae02c2490710a07e1312a37048b9",
+        "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+        "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+        "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+        "sections/01_introduction/INTERFACE.md": "c029153d75414802a70fa71fdd48aaf7dc05cb3a466686605182c406fcce8b94",
+        "sections/01_introduction/section.tex": "5fe2233c07a079b443d934aafe5279a08e889f6e83f29e11dc5319856414cc81",
+        "sections/02_notation/01_conventions.tex": "349d8fafb90a46c6acbbdeeb6681fc7e7ab07447c35ea356aef260c7df86ef8e",
+        "sections/02_notation/02_tautological_classes.tex": "4c39025373f498c3c7b3e9eab4d59a9c66eed4249d589d90924a3a15d5657545",
+        "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+        "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+        "sections/02_notation/INTERFACE.md": "213d4dac6ebc117db476767e5bbf34fb79383ef78c68e976245f89b6ea604347",
+        "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+        "sections/02_notation/writer_handoff.md": "6ceb483f4969d863297c695a47b32d28eda2a9df8c1f0026f64cdf65fff53a05",
+        "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+        "workflow/PROTOCOL.md": "ee8f12fe90debfe9328ac0f39fc646f4e16e8b7a7ab3ef25ea994f576d7a146c",
+        "workflow/context.md": "ffb40b7eb8e1a62aad5d779a1a9b0fe7e097f837981ab2f5cd817861944d8988",
+        "workflow/roles/academic.md": "15c7285891e0aa4917616a9fade90d0270d8ced2bf2bc4dbd0f6de75cfa5c2f8",
+        "workflow/roles/coordinator.md": "1a80227f9fe84477c388bc1b19bfd04062a5d58588e8667da9da7687c4f44265",
+        "workflow/roles/math.md": "5484923a6fb6b69c92a97e4b5106a54415941432e38347ffc44b9b11c7bd6482",
+        "workflow/roles/readability.md": "05696bd69e4b9333bdef89231aba02b8c4625809c6b64cf8aaf0a0e46af70ce4",
+        "workflow/roles/writer.md": "992e5655801bf391b5bcb7f38ee91fac1cd612cd7353863fec9d9fdc8198f152",
+        "workflow/trials/s02-01-02/r002/author_response.json": "befd4e764cbeaef0429e4a9c8b676873389c1d466c87021f2a3bb06f9e5ab31b"
+      },
+      "record_sha256": "9027ed20251235db0a2c32fd66a2216d444a1f4a10818bd98dcb0c81aabf389e",
+      "response_path": "workflow/trials/s02-01-02/r002/author_response.json",
+      "review_history": {
+        "academic": [
+          {
+            "agent_id": "/root/s02_academic",
+            "path": "workflow/trials/s02-01-02/r003/academic.json",
+            "sha256": "9a012a7622b15b1fce0417d1824cd494e6656a2dc2ffcd0606c64b3dfbe23b41",
+            "verdict": "pass"
+          }
+        ]
+      },
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/trials/s02-01-02/r003/academic_addendum.json",
+          "sha256": "befbae7a7a1ef995c035197a96a7134106628a30e50560480de51ee3f632f033",
+          "verdict": "changes_requested"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/trials/s02-01-02/r003/math.json",
+          "sha256": "84459a7e3f1965376159443f92fabd665e474c6b42304b1afbbe4307b818bdac",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/trials/s02-01-02/r003/readability.json",
+          "sha256": "8dfbb1d03e83dd1a6237277954ed5472256e75b9a9a6f4c5fc1b0f32775bbdff",
+          "verdict": "pass"
+        }
+      },
+      "round": 3,
+      "scope": {
+        "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+        "companion_units": [
+          "s01"
+        ],
+        "scope_files": [
+          "sections/01_introduction/section.tex",
+          "sections/02_notation/01_conventions.tex",
+          "sections/02_notation/02_tautological_classes.tex"
+        ],
+        "stage": "trial",
+        "subsections": [
+          1,
+          2
+        ],
+        "unit": "s02",
+        "whole_section_approved": false
+      },
+      "snapshot": "65cd5f904698f9b75acf73155af3c2e42c5070e3439d385b7294ab9bb13e00fe",
+      "stage": "trial",
+      "superseded_reason": "ACADEMIC-001: fix sentence-ending punctuation after moving definitions before theorem displays.",
+      "user_feedback": "USER-002"
+    },
+    {
+      "artifacts": {
+        "build_preview.py": "b256e7b019810b323d01e559197d8f8c52552ca365f9c812ebd54eb00d78dae8",
+        "build_receipt.json": "c617fb545b6f9ba4f16a6cdb55f25ec54409c2dea950e5d4f2e175d39873e969",
+        "changes.diff": "50fceeefc1505659fc324802218cd8d1edaa133395f7d07203e7e283ed1c66be",
+        "outline.md": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+        "review_request.json": "befbae7a7a1ef995c035197a96a7134106628a30e50560480de51ee3f632f033",
+        "scope.json": "23ac0e108f9437a2f4b691692d8bbd37122bee4dd51d9668ea3f9ba25888c025",
+        "target_preservation.json": "bf7327013110bca43ecbedff213a572f785b4b728eeea9c092b3b5200f1cec9e",
+        "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "user_feedback.json": "a963c318a86bf036c17318cc315dada77d6da107d9384628195eb38851724223"
+      },
+      "bundle": "workflow/trials/s02-01-02/r004",
+      "created": "2026-11-14T10:54:24+00:00",
+      "files": {
+        "@outline": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+        "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "AGENTS.md": "fbc74a25454ae566a00ae39b1fa92382bcdaae02c2490710a07e1312a37048b9",
+        "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+        "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+        "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+        "sections/01_introduction/INTERFACE.md": "c029153d75414802a70fa71fdd48aaf7dc05cb3a466686605182c406fcce8b94",
+        "sections/01_introduction/section.tex": "f553a4b3022ec81ef5736602cb899b9bed5d7983845138694249c38c3b59bd64",
+        "sections/02_notation/01_conventions.tex": "349d8fafb90a46c6acbbdeeb6681fc7e7ab07447c35ea356aef260c7df86ef8e",
+        "sections/02_notation/02_tautological_classes.tex": "4c39025373f498c3c7b3e9eab4d59a9c66eed4249d589d90924a3a15d5657545",
+        "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+        "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+        "sections/02_notation/INTERFACE.md": "213d4dac6ebc117db476767e5bbf34fb79383ef78c68e976245f89b6ea604347",
+        "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+        "sections/02_notation/writer_handoff.md": "6ceb483f4969d863297c695a47b32d28eda2a9df8c1f0026f64cdf65fff53a05",
+        "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+        "workflow/PROTOCOL.md": "ee8f12fe90debfe9328ac0f39fc646f4e16e8b7a7ab3ef25ea994f576d7a146c",
+        "workflow/context.md": "ffb40b7eb8e1a62aad5d779a1a9b0fe7e097f837981ab2f5cd817861944d8988",
+        "workflow/roles/academic.md": "15c7285891e0aa4917616a9fade90d0270d8ced2bf2bc4dbd0f6de75cfa5c2f8",
+        "workflow/roles/coordinator.md": "1a80227f9fe84477c388bc1b19bfd04062a5d58588e8667da9da7687c4f44265",
+        "workflow/roles/math.md": "5484923a6fb6b69c92a97e4b5106a54415941432e38347ffc44b9b11c7bd6482",
+        "workflow/roles/readability.md": "05696bd69e4b9333bdef89231aba02b8c4625809c6b64cf8aaf0a0e46af70ce4",
+        "workflow/roles/writer.md": "992e5655801bf391b5bcb7f38ee91fac1cd612cd7353863fec9d9fdc8198f152",
+        "workflow/trials/s02-01-02/r003/author_response.json": "ecd700ee82abaec2b6e41a00900be5dd5850f869884e754bca0737cddb0274fe"
+      },
+      "record_sha256": "db38b4c5062a90be8099a0e47fc208eb26d390612e481c00fe779e37221455ea",
+      "response_path": "workflow/trials/s02-01-02/r003/author_response.json",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/trials/s02-01-02/r004/academic.json",
+          "sha256": "bdade63b540c83b4ae053019858f761145b45631f63ea99286d5c7ea30ff6544",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/trials/s02-01-02/r004/math.json",
+          "sha256": "03b4539db30b9cd7e3ac6b207e7192824c3558ee926797fa18ebd94c84704ecc",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/trials/s02-01-02/r004/readability.json",
+          "sha256": "b3ca197e50a38e3b7aeedd0ae3d00a7d6dd4c8b005084cec3aaab22bf90ad75b",
+          "verdict": "pass"
+        }
+      },
+      "round": 4,
+      "scope": {
+        "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+        "companion_units": [
+          "s01"
+        ],
+        "scope_files": [
+          "sections/01_introduction/section.tex",
+          "sections/02_notation/01_conventions.tex",
+          "sections/02_notation/02_tautological_classes.tex"
+        ],
+        "stage": "trial",
+        "subsections": [
+          1,
+          2
+        ],
+        "unit": "s02",
+        "whole_section_approved": false
+      },
+      "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+      "stage": "trial",
+      "superseded_reason": "User-directed notation, coefficient-formatting and prose revision USER-003.",
+      "user_feedback": "USER-002"
+    },
+    {
+      "artifacts": {
+        "build_preview.py": "b256e7b019810b323d01e559197d8f8c52552ca365f9c812ebd54eb00d78dae8",
+        "build_receipt.json": "9aae2a4dba9e8b1da3c1a6ecda6b1f0cdfb0f0791889d12fd8ce0c9f43088f38",
+        "changes.diff": "ef37763c799749e0c6b7a8e6b85e82e8aa572553f534040d322cabc8f46d4c68",
+        "outline.md": "52d45fec623c768fb5faa6f9fb5c31563770ddc4594fcb55381fe3ee3ecd7214",
+        "scope.json": "f840c38acff86a4303058caef2f81c5e8de58f7df42c17fd96962b025b364b7f",
+        "target_preservation.json": "0625c5f7ccf530c4bb632ea6faf9362595fec8d87089a30fc94cfe5c526d3db8",
+        "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "user_feedback.json": "58c1648923ea97e0e5b8354571f50d051ed5ec49fa283ae059329b3692728d7b"
+      },
+      "bundle": "workflow/trials/s02-01-02/r005",
+      "created": "2026-11-14T11:27:13+00:00",
+      "files": {
+        "@outline": "52d45fec623c768fb5faa6f9fb5c31563770ddc4594fcb55381fe3ee3ecd7214",
+        "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+        "AGENTS.md": "66dd7272e9b9ef74c720aa3afe601d36eea4d4cb8de395affc67ae6a2afd04e4",
+        "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+        "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+        "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+        "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+        "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+        "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+        "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+        "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+        "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+        "sections/02_notation/INTERFACE.md": "a3ae804756b8c2e9a6d6efde81c7ef7ec93b6448999daf93f6acf759f8a35c15",
+        "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+        "sections/02_notation/writer_handoff.md": "6bb82d7e30e3697f1a18f938213ef3016c312fd863cdd98fccf3b01cf7457d65",
+        "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+        "workflow/PROTOCOL.md": "ee8f12fe90debfe9328ac0f39fc646f4e16e8b7a7ab3ef25ea994f576d7a146c",
+        "workflow/context.md": "d32f7a4867d04c6f14bf65ac3560a585997997fb2811dbdf20ca7af2f0f07a8a",
+        "workflow/roles/academic.md": "cfd29d6ec8c54e45029d5ff35e0972f509ddbab59c3c40dd7081c1cb8458db0a",
+        "workflow/roles/coordinator.md": "1a80227f9fe84477c388bc1b19bfd04062a5d58588e8667da9da7687c4f44265",
+        "workflow/roles/math.md": "3bbd84054c619da46ce9f5ed4707e4b35ee08601ff1b8af9033a94e33bbacaa8",
+        "workflow/roles/readability.md": "8e29cec708446361090c784a96890fe67a73d31459c0c8f0c787f9c4dd4868b3",
+        "workflow/roles/writer.md": "7c2447c3b88609a10d3ea7ae896fc6608295ec1b129adb7e673feedfe066d551",
+        "workflow/trials/s02-01-02/r004/author_response.json": "ceb383605fe5160edec7c1498ed3101664f3897754b444c930d2f39cea495d10"
+      },
+      "record_sha256": "f87f6ed50440b1f3b00ba3bece68f42ceff8d699634301655061edd6b580015e",
+      "response_path": "workflow/trials/s02-01-02/r004/author_response.json",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/trials/s02-01-02/r005/academic.json",
+          "sha256": "0a3610604efb4a05c366b32f7512834751317a848cf79d932738bcf5112ea59f",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/trials/s02-01-02/r005/math.json",
+          "sha256": "5d9bfc968cc0da219f77d9f74d36ad110011e308fab3c99e5d675e77bf171eee",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/trials/s02-01-02/r005/readability.json",
+          "sha256": "599bb29ecd30d5344f4aff65d0b24a7ec7002040c351d0b65aa9da7f75f3e1f4",
+          "verdict": "pass"
+        }
+      },
+      "round": 5,
+      "scope": {
+        "companion_scope": "Introduction clarifications and user-authorized notation/wording updates, coordinated with 2.1 and 2.2.",
+        "companion_units": [
+          "s01"
+        ],
+        "scope_files": [
+          "sections/01_introduction/section.tex",
+          "sections/02_notation/01_conventions.tex",
+          "sections/02_notation/02_tautological_classes.tex"
+        ],
+        "stage": "trial",
+        "subsections": [
+          1,
+          2
+        ],
+        "unit": "s02",
+        "whole_section_approved": false
+      },
+      "snapshot": "fe5417226361b0adeae6bca067fd003d05feecb519858d1472ec00d66e9cba34",
+      "stage": "trial",
+      "user_feedback": "USER-003"
+    }
+  ],
+  "schema_version": 1,
+  "scope_files": [
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex"
+  ],
+  "stage": "trial",
+  "status": "trial_reviewed",
+  "subsections": [
+    1,
+    2
+  ],
+  "unit": "s02",
+  "whole_section_approved": false
+}

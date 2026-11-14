@@ -1,0 +1,57 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Directly inspected the primary author PDFs: FP00, Section 1.1, PDF pp. 5-6, unnumbered Theorem (Mumford), and Section 1.3, PDF p. 11, equation (16); Mum83, Section 5, PDF p. 34, equation (5.2), and PDF p. 36, Corollary (5.3). FP00 defines its kappa class using the nonlogarithmic relative dualizing sheaf and explicitly corrects Mum83's Bernoulli convention and kappa-index typo. Its ordered branch cover, signed Bernoulli series, odd-degree GRR coefficient, and absence of positive even characters match 02_tautological_classes.tex. The universal marked stable-curve family satisfies the cited smooth-base and maximal-variation hypotheses: deformations of a nodal curve can be lifted together with its smooth markings. Introduction supplies only inherited bundle and normalization definitions here; none of its asymptotic target theorems is used as a proved premise. INTERFACE.md accurately limits the exports to the two trial subsections.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "01_conventions.tex:5 states g,n are nonnegative integers and 2g-2+n>0; lines 8-14 give complex codimension and dimension 3g-3+n. In the exponential lemma (lines 34-49), 0<=w<=3g-3+n makes the selected exponent 3g-3+n-w a nonnegative integer. In the finite-genus examples (lines 52-58), g>=2 and 0<=h<=g give codimension g-h and remaining exponent 2g-3+h=g_2+h; h=g reduces the second formula to the first. In 02_tautological_classes.tex:23-32, the stable source has relative dimension one, so pushing psi_new^(a+1) gives codimension a, including a=0. Chern roots have codimension one and ch_a has codimension a (lines 34-50). The GRR node polynomial has codimension 2a-2 on the ordered boundary source; xi_* raises codimension by one, matching both marking and kappa terms. The rank-zero case has empty root sums/products, and the lambda_0 and j>g conventions at 01_conventions.tex:20 keep the displayed lambda_2 and lambda_3 identities valid below rank three.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "01_conventions.tex:11-14 fixes stack degrees with stabilizer weights. Its exponential-to-power coefficient is exactly c^(3g-3+n-w)/(3g-3+n-w)!, yielding (3g-3)! for A_g and (g_2+h)! for B_g(h), in agreement with the archived Introduction. 02_tautological_classes.tex:52-64 uses a chosen node and ordered branches, hence a stack-degree-two source over each boundary divisor and delta=(1/2)xi_*1; this agrees with FP00 PDF p. 6 even when branch interchange is an automorphism. The normalization argument at lines 100-124 correctly uses disjoint marking sections, omega_pi|D_i=L_i and normal bundle L_i^vee: the term with k copies of D_i pushes to (-1)^(k-1)psi_i^a, whose binomial sum is psi_i^a. Thus nonlogarithmic kappa_a equals logarithmic kappa_a minus the marking sum, including a=0. The signed series gives mathsf B_2/2!=1/12, so the a=1 GRR specialization is exactly 12lambda_1=kappa_1+delta-sum_i psi_i. The Chern-character factor 1/a! and logarithm coefficient 1/a yield (a-1)!, with positive sign in every surviving odd degree.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Checked definitions and quantifiers against the archived Introduction and workflow/context.md. 01_conventions.tex:5-23 fixes stable (g,n), Chow degree, lambda_0, out-of-rank vanishing, Hodge indices j_1,...,j_ell and factor count ell, and preserves g_2=2g-3 without an alias. Q,w,L,c are typed and ranged before the exponential lemma; theta and its summation index are defined at lines 25-28. The integer defect range is explicit at lines 52-58, and lines 62-78 distinguish fixed insertion data from parameters that may grow. In 02_tautological_classes.tex:5-32, the universal curve, marking index 1<=i<=n, sections, dualizing sheaf, cotangent lines and psi classes precede logarithmic kappa. Lines 34-50 define the formal roots, positive integer character degree, root index, formal t and Chern polynomial before use. Lines 52-73 define delta, the chosen-node ordered-branch source, xi, psi_+, psi_-, formal z and mathsf B_m (m>=0). All finite summations bind their indices explicitly; the GRR degree parameter and the conversion parameter have separate stated ranges. D_i is defined before its self-intersection computation. Bernoulli mathsf B_m is distinct from inherited B_g. INTERFACE.md records the same types, scopes, definitions and finite-genus restrictions.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The exponential lemma follows by retaining exactly the homogeneous term of codimension 3g-3+n; its proof uses no asymptotic premise. Independently recomputed the marking-section binomial argument in 02_tautological_classes.tex:108-119, using the logarithmic relative dualizing expression for psi_new under the universal-curve identification; the result has precisely the required negative marking correction in the cited nonlogarithmic GRR. The a=1 specialization follows from the already defined ordered-boundary normalization. The Chern-polynomial proof at lines 155-168 computes log product_nu(1+t x_nu) coefficientwise, substitutes the factorial-normalized characters, removes the even terms by the cited GRR result and exponentiates. Its coefficients are lambda_1^2/2 and lambda_1^3/6+2ch_3 as stated. Genus zero gives c_t=1 and all positive characters zero; out-of-rank identities are coefficient identities of the same polynomial. No circular dependency or unresolved mathematical step was found within the authorized scope.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "All conclusions in these two subsections are exact identities at fixed finite genus, not estimates. 01_conventions.tex:25-29 truncates exponentials by positive codimension, and 02_tautological_classes.tex:137-168 states and proves the Chern identity as a formal power-series identity. Thus neither proof exchanges an analytic limit, an infinite graph sum, integration and an asymptotic expansion, or coefficient transfer. 01_conventions.tex:62-78 explicitly restricts fixed parameters and warns that future summation over growing graph data needs uniform estimates; INTERFACE.md makes the same limitation. No uniform graph-tail or convolution bound is claimed or needed for this trial.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Review covers only subsections 2.1 and 2.2 and their interface. Subsections 2.3, 2.4 and the full-section roadmap are outside this trial; this pass is not whole-section acceptance.",
+    "Recomputed SHA-256 values for both archived subsection files and INTERFACE.md, and for their live counterparts; all match submission.json. The reviewed snapshot is unchanged.",
+    "The archived build receipt reports a strict, successful trial build with no diagnostics. Mathematical approval here is based on the source and primary-source checks described above, not on build success."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+  "stage": "trial",
+  "summary": "Pass for the authorized trial of subsections 2.1-2.2 only. Dimension, stack and factorial normalization, logarithmic kappa translation, precise GRR ranges, inherited notation and the formal Chern-polynomial deduction were checked independently against the frozen source and the primary FP00/Mum83 passages. No unresolved issue was found. Whole s02 remains unapproved and outside this limited verdict.",
+  "unit": "s02",
+  "verdict": "pass"
+}

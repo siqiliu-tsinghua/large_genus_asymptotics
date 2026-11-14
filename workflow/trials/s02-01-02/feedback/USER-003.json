@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "USER-003",
+  "source": "user",
+  "unit": "s02",
+  "companion_units": ["s01"],
+  "subsections": [1, 2],
+  "applies_to_round": 4,
+  "location": "Introduction, 2.1, 2.2 and shared notation conventions",
+  "message": "Apply the requested terminology, coefficient-formatting, prose and notation revisions consistently in the current manuscript.",
+  "requested_changes": [
+    "In Theorem 1.3 write 'zero of J_0(z)' instead of 'zero of J_0'.",
+    "In the Introduction roadmap replace 'transport equations' by 'the ILW equation'.",
+    "Place the rational coefficient field inside the parentheses of every current Chow-ring/group expression, consistently using A^a(X; Q).",
+    "Remove or naturally rewrite the descendant-insertion explanation and the 'Applying (2.3)' sentence in 2.2, connecting directly to logarithmic kappa while keeping the source of psi_new unambiguous.",
+    "Reserve ordinary B_n for Bernoulli numbers; rename the integral families A_g, B_g(h), B_g as a_g, b_g(h), b_g throughout the current manuscript and active planning/notation documents.",
+    "Remove the now-obsolete special-font Bernoulli notation and explanation; preserve the mathematical values, normalization, ranges and theorem labels."
+  ],
+  "review_requirement": "The original writer makes the manuscript edits, and the same original reviewers check the new frozen trial. Keep historical archives and reports unchanged."
+}

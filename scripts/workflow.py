@@ -19,8 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 ROLES = ("writer", "math", "readability", "academic")
 REVIEWERS = ROLES[1:]
 CHECKS = {
-    "math": ("dimensions", "normalization", "proof_logic", "uniformity", "dependencies"),
-    "readability": ("definitions", "roadmap", "structure", "transitions"),
+    "math": ("dimensions", "normalization", "notation", "proof_logic", "uniformity", "dependencies"),
+    "readability": ("definitions", "notation_consistency", "notation_economy", "symbol_design",
+                    "roadmap", "structure", "transitions"),
     "academic": ("attribution", "citation_precision", "claim_status", "academic_style"),
 }
 
@@ -663,7 +664,11 @@ class Engine:
             phase = "Review the current frozen submission"
         lines = [f"{phase}: {uid} {unit['title']}.",
                  "Read AGENTS.md and workflow/roles/" + role + ".md.",
-                 "Read workflow/context.md and only this unit's outline initially.",
+                 "Read workflow/context.md, including its notation policy, and only this unit's outline initially.",
+                 "Define new symbols at their first use in the paper; inherit earlier definitions without reintroducing basic notation.",
+                 "Recall an earlier definition only when it helps the current argument; preserve g_2, j_1, ..., j_ell and z_{0,1}.",
+                 "Use lowercase a_g,b_g(h),b_g for integrals and ordinary B_k for Bernoulli numbers; put Chow coefficients inside parentheses.",
+                 "Minimize new symbols, group letters by purpose, and document definitions and scope in INTERFACE.md.",
                  f"Write scope: {unit['directory']}/." if role == "writer" else "Do not edit manuscript source.",
                  "Run workflow.py status to inspect the current binding. Use your real agent ID.",
                  "The coordinator records IDs and changes state; do not run state-changing commands.",

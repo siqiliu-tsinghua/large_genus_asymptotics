@@ -1,0 +1,27 @@
+{
+  "baseline_round": 2,
+  "equations": {
+    "eq:111": {
+      "sha256": "a5ec653dba0e7d398d0bac6355775584f6dc4bc0acc4a40c8bfe0f701f66adaf",
+      "unchanged": true
+    },
+    "eq:P111": {
+      "sha256": "7210214f02e3be5a20e1a27aaa934101bdac2c195a2a0afc9fc4f7f32ee92bbc",
+      "unchanged": true
+    },
+    "eq:g111": {
+      "sha256": "d6a2abf5828de0ce28be3f89037294891cb10d6ed94608d85e59184f994d3230",
+      "unchanged": true
+    },
+    "eq:gh11": {
+      "sha256": "f7b51b59e09d87404106a51b3a0aac88902568740fc83ba4ce0077f46523c141",
+      "unchanged": true
+    }
+  },
+  "theorem_numbers": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+  ]
+}

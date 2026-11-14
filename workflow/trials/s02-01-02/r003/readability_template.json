@@ -1,0 +1,62 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_consistency": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_economy": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "roadmap": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "structure": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "symbol_design": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "transitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 3,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "65cd5f904698f9b75acf73155af3c2e42c5070e3439d385b7294ab9bb13e00fe",
+  "stage": "trial",
+  "summary": "",
+  "unit": "s02",
+  "verdict": "FILL_IN"
+}

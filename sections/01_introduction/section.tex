@@ -1,37 +1,43 @@
 % !TeX root = ../../main.tex
 \section{Introduction}
 \label{sec:introduction}
-Let $g, n$ be non-negative integers such that $2g-2+n>0$, and $\MM_{g,n}$ (or $\MM_g$ when $n=0$
-and $g \ge 2$) be the moduli space of stable curves of genus $g$ with $n$ marked points. The Hodge
-bundle $\EE$ over $\MM_{g,n}$ is defined as the rank $g$ vector bundle whose fiber over the moduli
-point $[C; p_1, \dots, p_n] \in \MM_{g,n}$ is $H^0(C,\omega_C)$, where $\omega_C$ is the dualizing sheaf.
-Denote the $j$-th Chern class of the Hodge bundle $\EE$ by
-\[\lambda_j=c_j(\EE),\quad j=1,\dots, g,\]
-which is called the $j$-th Hodge class.
-We consider the asymptotic behavior of the following \emph{pure Hodge integrals}:
+Let $g,n$ be nonnegative integers with $2g-2+n>0$.  Denote by
+$\MM_{g,n}$ the proper Deligne--Mumford stack over $\mathbb C$ of
+stable curves of genus $g$ with $n$ marked points, and write $\MM_g$
+when $n=0$ and $g\geq2$.  We work in its rational Chow ring
+$A^*(\MM_{g,n};\mathbb Q)$, where degree means complex codimension.
+
+The Hodge bundle $\EE$ has rank $g$ and fiber $H^0(C,\omega_C)$ at
+$[C;p_1,\ldots,p_n]$, where $\omega_C$ is the dualizing sheaf of the
+curve $C$.  Its Chern classes are the Hodge classes
+\[\lambda_j=c_j(\EE)\in A^j(\MM_{g,n};\mathbb Q),
+\qquad 1\leq j\leq g.\]
+We also set $\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.
+
+The stack has complex dimension $3g-3+n$.  Integration selects the
+component of that codimension and takes the degree of the resulting
+zero-cycle, including stabilizer weights.  Scalar
+coefficients may be extended when necessary.  For a positive integer
+$\ell$, we study the \emph{pure Hodge integrals}
 \begin{equation}
 \int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell},\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
 \label{eq:phi-1}
 \end{equation}
 as $g$ tends to infinity.
 
-The sum of the degrees $j_1, \dots, j_\ell$ in \eqref{eq:phi-1} needs to equal the dimension of $\MM_{g,n}$,
-that is
+The integral in \eqref{eq:phi-1} vanishes unless
 \[j_1+\cdots+j_\ell=3g-3+n.\]
-On the other hand, let $\pi_{n,m}:\MM_{g,n}\to \MM_{g,m}\ (n > m, 2g-2+m>0)$ be the forgetful map that forgets the
-last $n-m$ marked points and stabilizes the curve, and $\tilde{\lambda}_j$ be the $j$-th Hodge class on $\MM_{g,m}$. Then we have
-\[\lambda_j=\pi_{n,m}^*\tilde{\lambda}_j,\]
-and therefore
-\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}
-=\int_{\MM_{g,n}}\pi_{n,m}^*\left(\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}\right).\]
-Note that the degree of $\tilde{\alpha}=\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}$
-is $j_1+\cdots+j_\ell$, which is greater than the dimension $3g-3+m$ of $\MM_{g,m}$, so
-$\tilde{\alpha}=0$, hence
-\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}=0.\]
-So there are only two kinds of nontrivial pure Hodge integrals:
-one is
+For integers $0\leq m<n$ with $2g-2+m>0$, let
+$\pi_{n,m}:\MM_{g,n}\to\MM_{g,m}$ forget the last $n-m$ markings
+and stabilize.  The Hodge bundle on the source is pulled back from the
+target.  When the degree condition above holds, the corresponding
+product on the target has degree $3g-3+n>3g-3+m$, so it vanishes,
+as does its pullback.  Hence \eqref{eq:phi-1} vanishes for $g\geq2$,
+$n\geq1$ (take $m=0$), and for $g=1$, $n\geq2$ (take $m=1$).
+In genus zero there are no positive-degree Hodge classes.  The only
+remaining marked case is
 \[\int_{\MM_{1,1}}\lambda_1=\frac{1}{24},\]
-and the others are
+and the large-genus problem therefore reduces to the unmarked integrals
 \begin{equation}
 \int_{\MM_g}\lambda_{j_1}\cdots \lambda_{j_\ell},
 \quad j_1, \dots, j_\ell \in \{1, \dots, g\},
@@ -39,31 +45,34 @@ and the others are
 \end{equation}
 where $g\ge 2$.
 
-We denote
-\[A_g=\int_{\MM_g}\lambda_1^{3g-3},\quad B_g(h)=\int_{\MM_g}\lambda_{g-h} \lambda_1^{2g-3+h},
-\quad B_g=B_g(0),\]
-and, for a homogeneous polynomial $P(\lambda)$ of Hodge classes with degree $d$,
-\[\langle P(\lambda) \rangle_g=\frac{1}{A_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
+For $g\geq2$ and an integer $h$ with $0\leq h\leq g$, set
+\[a_g=\int_{\MM_g}\lambda_1^{3g-3},\quad b_g(h)=\int_{\MM_g}\lambda_{g-h} \lambda_1^{2g-3+h},
+\quad b_g=b_g(0).\]
+For a homogeneous polynomial $P(\lambda)$ of Hodge classes of degree
+$d$, with $0\leq d\leq3g-3$, define
+\[\langle P(\lambda) \rangle_g=\frac{1}{a_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
 The main results of the present paper are as follows.
 
 \begin{thm}
 \label{thm:lambda-one}
+For real $x\geq0$, define
+\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \qquad
+N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
 As $g\to \infty$, we have
 \begin{equation}
-A_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
-\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right),
+a_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right).
 \label{eq:111}
 \end{equation}
-where $\Cin(x)$ is the cosine integral function
-\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \mbox{ and }
-N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
 \end{thm}
 
 \begin{thm}
 \label{thm:fixed-insertions}
-Given $P(\lambda)=\lambda_{j_1}\cdots \lambda_{j_\ell}$ with $j_1, \dots, j_\ell$ fixed, let
-\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2),\]
-then, as $g\to\infty$, we have
+Fix $\ell$ and the positive indices $j_1,\ldots,j_\ell$, and put
+$P(\lambda)=\lambda_{j_1}\cdots\lambda_{j_\ell}$.  For this list of
+indices, define
+\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2).\]
+Then, as $g\to\infty$, we have
 \begin{equation}
 \langle P(\lambda) \rangle_g=\frac{1}{F(j)}\left(1+\frac{4\pi^2-42}{9g^2}G(j)+
 \frac{4\pi^2-40}{3g^3}G(j)+O(g^{-4})\right).
@@ -74,24 +83,31 @@ then, as $g\to\infty$, we have
 \begin{thm}
 \label{thm:top-hodge}
 Let $g_2=2g-3$, $J_n(z)$ be the $n$-th Bessel function of the first kind, $z_{0,1}$ be the first
-positive zero of $J_0$, and $\rho=6z_{0,1}J_1(z_{0,1})$.
+positive zero of $J_0(z)$, and $\rho=6z_{0,1}J_1(z_{0,1})$.
+Set
+\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
 As $g\to\infty$, we have
 \begin{equation}
-B_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
-1+\frac{b}{g_2}+O(g_2^{-2})\right),
+b_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
+1+\frac{b}{g_2}+O(g_2^{-2})\right).
 \label{eq:g111}
 \end{equation}
-where
-\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
 \end{thm}
 
 \begin{thm}
 \label{thm:fixed-defect}
-With $\rho$ as above, for a fixed $h \ge 0$, we have
+With $\rho$ as above, for a fixed integer $h\geq0$, we have
 \begin{equation}
-\frac{B_g(h)}{B_g}\sim \frac{1}{h!}\left(\frac{24g^2}{\rho^2}\right)^h,\quad g\to\infty.
+\frac{b_g(h)}{b_g}\sim \frac{1}{h!}\left(\frac{24g^2}{\rho^2}\right)^h,\quad g\to\infty.
 \label{eq:gh11}
 \end{equation}
 \end{thm}
 
-The paper is organized as follows. asdf
+The planned organization separates two proof routes.  After the geometric
+identities in Section~2, Sections~3--5 develop uniform stable-graph and
+Weil--Petersson estimates for Theorems~\ref{thm:lambda-one} and
+\ref{thm:fixed-insertions}.  Section~6 treats
+Theorem~\ref{thm:top-hodge} through top-Hodge intersection formulas
+and Bessel analysis, independently of the Weil--Petersson asymptotics.
+Sections~7--8 address Theorem~\ref{thm:fixed-defect} through linear
+Hodge potentials, the ILW equation and singularity analysis.

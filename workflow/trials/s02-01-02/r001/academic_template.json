@@ -1,0 +1,45 @@
+{
+  "agent_id": "REPLACE_WITH_REAL_AGENT_ID",
+  "checks": {
+    "academic_style": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "attribution": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "citation_precision": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "claim_status": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+  "stage": "trial",
+  "summary": "",
+  "unit": "s02",
+  "verdict": "FILL_IN"
+}

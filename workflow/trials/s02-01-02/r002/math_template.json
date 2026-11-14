@@ -1,0 +1,53 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "dimensions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "normalization": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "proof_logic": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "uniformity": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 2,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "282b2e15c2a343c18015c8f5b3aaf1ee59cf84c5c7100ac55dedbf9c7c2078f7",
+  "stage": "trial",
+  "summary": "",
+  "unit": "s02",
+  "verdict": "FILL_IN"
+}

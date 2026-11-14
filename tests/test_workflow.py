@@ -168,6 +168,26 @@ class WorkflowTests(unittest.TestCase):
         with self.assertRaises(WorkflowError):
             self.record("math", report)
 
+    def test_notation_reviews_require_each_check_and_evidence(self):
+        self.freeze()
+        required = {
+            "math": ("notation",),
+            "readability": ("definitions", "notation_consistency", "notation_economy", "symbol_design"),
+        }
+        for role, checks in required.items():
+            for key in checks:
+                with self.subTest(role=role, check=key):
+                    report = self.report(role)
+                    self.assertIn(key, report["checks"])
+                    report["checks"].pop(key)
+                    with self.assertRaises(WorkflowError):
+                        self.record(role, report)
+                    report = self.report(role)
+                    report["checks"][key]["evidence"] = ""
+                    with self.assertRaises(WorkflowError):
+                        self.record(role, report)
+            self.record(role, self.report(role))
+
     def test_stale_content_and_shared_rules_block_review(self):
         self.freeze()
         atomic_write(self.root / "shared.tex", "% Changed shared convention.\n")

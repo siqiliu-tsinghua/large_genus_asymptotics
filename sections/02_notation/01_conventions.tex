@@ -2,4 +2,56 @@
 \subsection{Intersection conventions and normalization}
 \label{subsec:s02:01}
 
-% WORKFLOW-TODO: Write this subsection after the unit is assigned.
+If $\theta$ is a class with only positive-degree components, its
+exponential means the formal sum
+$e^\theta=\sum_{k\geq0}\theta^k/k!$, where $k$ ranges over the
+nonnegative integers.  On $\MM_{g,n}$ this sum is truncated in degrees
+above $3g-3+n$.  The following elementary identity will restore the
+factorials when we return from exponential integrals to powers.
+
+\begin{lmm}[Exponentials and powers]
+\label{lmm:s02:exp-to-power}
+Let $w$ be an integer with $0\leq w\leq3g-3+n$, let
+$Q\in A^w(\MM_{g,n};\mathbb Q)$ be homogeneous, and let
+$L\in A^1(\MM_{g,n};\mathbb Q)$ be a divisor class.  For every scalar
+$c$,
+\begin{equation}
+\label{eq:s02:exp-to-power}
+\int_{\MM_{g,n}}Qe^{cL}
+=\frac{c^{3g-3+n-w}}{(3g-3+n-w)!}
+  \int_{\MM_{g,n}}QL^{3g-3+n-w}.
+\end{equation}
+\end{lmm}
+
+\begin{prf}
+In the exponential expansion the term $Qc^kL^k/k!$ has degree $w+k$.
+The integral therefore retains exactly the term with
+$k=3g-3+n-w$.
+\end{prf}
+
+For example, if $g\geq2$ and $h$ is an integer with $0\leq h\leq g$,
+\begin{equation}
+\label{eq:s02:hodge-factorials}
+a_g=(3g-3)!\int_{\MM_g}e^{\lambda_1},
+\qquad
+b_g(h)=(g_2+h)!\int_{\MM_g}\lambda_{g-h}e^{\lambda_1}.
+\end{equation}
+These are exact identities at finite genus.
+
+The parameter conventions for subsequent asymptotic statements are as
+follows.
+\begin{center}
+\begin{tabular}{ll}
+Parameter & Convention as $g\to\infty$ \\
+\hline
+$j_1,\ldots,j_\ell$ and $\ell$ & fixed for low-index Hodge insertions, \\
+$h$ & fixed, nonnegative, for $\lambda_{g-h}$, \\
+expansion order & fixed for each stated expansion, \\
+$n$ & fixed only when the statement so specifies.
+\end{tabular}
+\end{center}
+Implicit constants in error terms may depend on these fixed data.
+In graph sums, vertex valences and the number of nodes may grow with
+$g$; summation of error terms will require estimates uniform over the
+stated indexing set.  Formal truncation in a graded ring and such
+uniform asymptotic estimates serve different purposes.

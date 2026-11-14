@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "unit": "s02",
+  "round": 1,
+  "agent_id": "/root/s02_writer",
+  "responses": [],
+  "user_responses": [
+    {
+      "issue_id": "USER-001",
+      "resolution": "addressed",
+      "explanation": "Rewrote the 2.1 opening to begin directly with the new rational Chow, complex-codimension and stack-integration conventions. Removed the repeated g,n/stability/moduli-stack/base setup, the inherited Hodge-bundle and normalization inventory, the repeated Hodge-index and g_2 declarations, and the routine pointer to Theorem 1.3. Retained lambda_0 and out-of-rank conventions, the conversion lemma and proof, local bounds, factorial examples and fixed-parameter/error discussion. Shortened 2.2 to identify pi=pi_{n+1,n} with its new universal-curve role without retelling the forgetting operation, and removed redundant dummy-index commentary. Kept all new psi/kappa/character/boundary definitions, source-convention explanations and mathematical proofs. The full inherited-notation ledger remains in INTERFACE.md. Read the updated shared writer/readability responsibilities and notation policy; did not edit shared files or the original three pass reports. This revision requires a new frozen snapshot and signatures from the same reviewers.",
+      "changed_files": [
+        "sections/02_notation/01_conventions.tex",
+        "sections/02_notation/02_tautological_classes.tex",
+        "sections/02_notation/INTERFACE.md",
+        "sections/02_notation/writer_handoff.md"
+      ]
+    }
+  ]
+}

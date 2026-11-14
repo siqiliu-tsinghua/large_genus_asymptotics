@@ -1,0 +1,61 @@
+{
+  "agent_id": "/root/s02_writer",
+  "artifacts": {
+    "build_preview.py": "b256e7b019810b323d01e559197d8f8c52552ca365f9c812ebd54eb00d78dae8",
+    "build_receipt.json": "c617fb545b6f9ba4f16a6cdb55f25ec54409c2dea950e5d4f2e175d39873e969",
+    "changes.diff": "50fceeefc1505659fc324802218cd8d1edaa133395f7d07203e7e283ed1c66be",
+    "outline.md": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+    "review_request.json": "befbae7a7a1ef995c035197a96a7134106628a30e50560480de51ee3f632f033",
+    "scope.json": "23ac0e108f9437a2f4b691692d8bbd37122bee4dd51d9668ea3f9ba25888c025",
+    "target_preservation.json": "bf7327013110bca43ecbedff213a572f785b4b728eeea9c092b3b5200f1cec9e",
+    "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+    "user_feedback.json": "a963c318a86bf036c17318cc315dada77d6da107d9384628195eb38851724223"
+  },
+  "files": {
+    "@outline": "67b9e3f2b9f52021aa3c4d1789d502986295a88921068a0f6938b065bf0ee683",
+    "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+    "AGENTS.md": "fbc74a25454ae566a00ae39b1fa92382bcdaae02c2490710a07e1312a37048b9",
+    "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+    "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+    "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+    "sections/01_introduction/INTERFACE.md": "c029153d75414802a70fa71fdd48aaf7dc05cb3a466686605182c406fcce8b94",
+    "sections/01_introduction/section.tex": "f553a4b3022ec81ef5736602cb899b9bed5d7983845138694249c38c3b59bd64",
+    "sections/02_notation/01_conventions.tex": "349d8fafb90a46c6acbbdeeb6681fc7e7ab07447c35ea356aef260c7df86ef8e",
+    "sections/02_notation/02_tautological_classes.tex": "4c39025373f498c3c7b3e9eab4d59a9c66eed4249d589d90924a3a15d5657545",
+    "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+    "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+    "sections/02_notation/INTERFACE.md": "213d4dac6ebc117db476767e5bbf34fb79383ef78c68e976245f89b6ea604347",
+    "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+    "sections/02_notation/writer_handoff.md": "6ceb483f4969d863297c695a47b32d28eda2a9df8c1f0026f64cdf65fff53a05",
+    "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+    "workflow/PROTOCOL.md": "ee8f12fe90debfe9328ac0f39fc646f4e16e8b7a7ab3ef25ea994f576d7a146c",
+    "workflow/context.md": "ffb40b7eb8e1a62aad5d779a1a9b0fe7e097f837981ab2f5cd817861944d8988",
+    "workflow/roles/academic.md": "15c7285891e0aa4917616a9fade90d0270d8ced2bf2bc4dbd0f6de75cfa5c2f8",
+    "workflow/roles/coordinator.md": "1a80227f9fe84477c388bc1b19bfd04062a5d58588e8667da9da7687c4f44265",
+    "workflow/roles/math.md": "5484923a6fb6b69c92a97e4b5106a54415941432e38347ffc44b9b11c7bd6482",
+    "workflow/roles/readability.md": "05696bd69e4b9333bdef89231aba02b8c4625809c6b64cf8aaf0a0e46af70ce4",
+    "workflow/roles/writer.md": "992e5655801bf391b5bcb7f38ee91fac1cd612cd7353863fec9d9fdc8198f152",
+    "workflow/trials/s02-01-02/r003/author_response.json": "ecd700ee82abaec2b6e41a00900be5dd5850f869884e754bca0737cddb0274fe"
+  },
+  "round": 4,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+  "unit": "s02"
+}

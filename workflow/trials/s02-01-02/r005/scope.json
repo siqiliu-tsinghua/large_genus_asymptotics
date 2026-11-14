@@ -1,0 +1,18 @@
+{
+  "companion_scope": "Introduction clarifications and user-authorized notation/wording updates, coordinated with 2.1 and 2.2.",
+  "companion_units": [
+    "s01"
+  ],
+  "scope_files": [
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex"
+  ],
+  "stage": "trial",
+  "subsections": [
+    1,
+    2
+  ],
+  "unit": "s02",
+  "whole_section_approved": false
+}

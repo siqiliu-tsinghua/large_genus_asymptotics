@@ -1,0 +1,56 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "ACADEMIC-001 from r003/academic_addendum.json is resolved. Independent character comparison finds exactly two changes in the Introduction: the terminal commas at line 64 (eq:111) and line 92 (eq:g111) are now periods. Both complete theorem sentences close correctly after their displayed formulas. Eq:P111 retains its existing period. All other introductory prose and the two subsection files are unchanged, so the prior full review of the continuous-paper flow and USER-001/USER-002 remains applicable to this new snapshot.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The complete manuscript delta consists of those two punctuation characters. It changes no attribution, quoted input or distinction between derived identities and planned proof routes. The unchanged 2.2 still attributes GRR to Mumford through the selected Faber-Pandharipande formulation and separately explains the local convention conversion and Chern-polynomial consequence, as verified in the retained original review context.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The bibliography, 2.2 and both interface ledgers are byte-identical to r003. The previously verified Mum83 Section 5, (5.2) and Corollary (5.3), and FP00 Section 1.1, Theorem (Mumford), and Section 1.3, (16), retain their exact locators, hypotheses and notation translations. The signed Bernoulli, logarithmic-kappa and ordered-node conventions are unaffected. No new source check is needed for the two terminal periods.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The independent comparison confirms that no mathematical character, coefficient, hypothesis, error order, label or other prose changed. Target_preservation.json also records the four target formulas' unchanged mathematics and theorem numbering. The prior assessment of the clarified finite-genus domains, fixed asymptotic parameters and distinction between exact identities and future uniform estimates remains valid. This signature resolves the copyediting issue for the scoped trial and does not certify the outstanding proofs of the four target asymptotic theorems.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "The operative preceding academic receipt is r003/academic_addendum.json. Its sole issue ACADEMIC-001 has been checked against the original writer's response and the new frozen text and is resolved. Original reports and the addendum remain unchanged.",
+    "All 22 archived source inputs matched their submission fingerprints and current copies. The strict build passed with no diagnostics, and the current joint PDF matched the build receipt hash.",
+    "The signature covers the authorized Introduction clarification and subsections 2.1/2.2 only. It remains a trial and does not constitute whole-section acceptance."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-001"
+  ],
+  "role": "academic",
+  "round": 4,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+  "stage": "trial",
+  "summary": "Pass for the new frozen joint trial. ACADEMIC-001 is resolved by exactly the two requested comma-to-period corrections; all other reviewed prose, mathematics and source material is unchanged. No unresolved academic issue remains.",
+  "unit": "s02",
+  "verdict": "pass"
+}

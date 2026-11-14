@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read the expanded scope, USER-002, changes.diff, target_preservation.json, r002/author_response.json and the affected Introduction and subsection sources together. The Introduction now supplies global conventions at their first use; 2.1 and 2.2 inherit those same conventions. The elementary forgetting argument uses invariance of the Hodge bundle under contraction of unstable rational components and dimension in rational Chow groups; it does not use any main asymptotic target. Subsection 2.2 is byte-for-byte identical to r002, so the independent original verification of FP00 Section 1.1, PDF pp. 5-6, Section 1.3 equation (16), PDF p. 11, and Mum83 Section 5, (5.2) and Corollary (5.3), PDF pp. 34 and 36, still applies without a new source hypothesis. Both interfaces accurately record the relocated conventions, unchanged target status and limited trial scope. No new source input or circular dependency was introduced.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Introduction:4-8 states nonnegative integer g,n, stability 2g-2+n>0, the stack over C and rational Chow grading; lines 13-23 give codimension-j Hodge classes, rank conventions, dimension 3g-3+n and positive integer product length. At lines 28-36 the top-degree condition is explicit. For g>=2,n>=1, m=0 is stable and 3g-3+n exceeds 3g-3; for g=1,n>=2, m=1 is stable and n exceeds 1. Thus the target product is zero before pullback in both cases. Genus zero has rank-zero Hodge bundle, and ell>=1 excludes the empty-product exception on M_{0,3}; at (1,1), top degree forces the single factor lambda_1. Lines 48-53 now explicitly restrict B_g(h) to g>=2 and integer 0<=h<=g and normalized homogeneous insertions to 0<=d<=3g-3. The endpoint h=g uses lambda_0=1 and gives B_g(g)=A_g. For a fixed insertion list or fixed nonnegative integer h, its finite-genus restrictions hold for all sufficiently large g, so the asymptotic domain is unchanged. The local w,Q,L,c bounds in 2.1:14-17 and the codimension/range checks for unchanged 2.2 remain intact.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The stack-degree, stabilizer-weight, top-component and coefficient-extension conventions now appear at Introduction:17-20 before the first integral, with the same meaning as the removed 2.1 paragraph. Lambda_0 and above-rank vanishing likewise move to Introduction:15. The existing marked value 1/24 and all raw integral definitions retain their stack normalization. Compared the complete 2.1 equation environments and proof bodies with r002: all are identical, including c^(3g-3+n-w)/(3g-3+n-w)!, (3g-3)! and (g_2+h)!. Subsection 2.2 is byte-identical, preserving factorial-normalized Chern characters, signed Bernoulli coefficients, the ordered-node stack factor 1/2, marking-section self-intersection and the negative marking correction in logarithmic kappa. Independently read the auxiliary definitions before and after relocation: Cin has exactly the same integral, N_g has the same factorials and powers, and g_2, rho and b have the same formulas. The x>=0 convention includes the used value 2pi; the Cin integrand has a removable zero-endpoint singularity. For g>=2 all factorial arguments and g_2 are positive as required. No conversion factor or target constant changed.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Checked first-use order across both chapters under USER-002. Introduction:4-8 defines the moduli, field and intersection ring before the Hodge classes; lines 10-15 define E, positive lambda_j and the rank extension; lines 17-23 define integration and positive integer ell before the first product/integral. The forgetful map and its stable target range are stated at lines 30-32. The unmarked integral definitions and normalized-P degree range precede the theorem statements at lines 48-53. Cin and N_g now precede their first displayed theorem use at lines 58-64; F(j),G(j) and the fixed positive list precede their use at lines 71-78; g_2=2g-3, the Bessel notation, rho and b precede their use at lines 85-92; the fixed defect is explicitly an integer at line 99. Existing names and product-index roles are preserved without aliases. Section 2.1 starts with the new local theta/exponential tool, gives its dummy-index range and all lemma types/bounds, and directly inherits the earlier global conventions. Section 2.2 retains the complete original definition order psi, logarithmic kappa, then factorial-normalized Chern characters; all marking, root, degree, boundary and Bernoulli scopes are unchanged. Both interfaces identify the new first-definition locations. The relocation leaves neither a missing definition nor a repeated global setup.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Rechecked the rewritten Introduction argument independently: integration first kills every non-top-degree homogeneous product. In top degree, the Hodge bundle is the pullback of the target Hodge bundle under a stable forgetful map, so its product is the pullback of a class whose codimension exceeds the target dimension. Rational Chow groups in that codimension vanish. The two specified stable targets exhaust marked positive-genus cases except (1,1); rank zero and ell>=1 handle genus zero. This is an exact finite-genus argument, independent of the four main theorem targets. Moving the global conventions to Introduction:4-20 preserves all assumptions used by the exponential proof and the universal-curve definitions. The 2.1 equations and proofs are unchanged, and all of 2.2 is byte-identical; consequently the previously checked section-intersection kappa conversion, ordered-boundary divisor specialization and formal Chern-root logarithm proof retain their inputs and conclusions. The new planned-organization paragraph does not supply a premise or claim completed proofs. No new logical gap or change of mathematical meaning was found within the authorized clarification scope.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Independently extracted and compared the four full main equation environments with r002; each is byte-for-byte identical and its SHA-256 matches target_preservation.json. Thus the preserved target errors are O(g^-3), O(g^-4), O(g_2^-2), and the fixed-defect asymptotic equivalence, respectively. The clearer fixed positive list and fixed integer defect statements express the same intended domains; the new finite-genus bounds hold eventually for those fixed data. These preserved targets are not being certified as proved by this trial. The new Introduction vanishing argument is finite-genus, while the 2.1 exponential truncation and unchanged 2.2 Chern identity remain formal graded identities. Section 2.1:41-57 still distinguishes fixed data from potentially growing graph data and requires future uniform estimates for summing remainders. The relocation introduces no limit exchange, summation claim, coefficient-transfer estimate or stronger uniformity assertion.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This signature covers the expressly extended companion scope: Introduction clarifications and relocation of global conventions together with 2.1-2.2. It does not accept the whole Introduction or s02, and it does not certify proofs of the four main asymptotic targets.",
+    "USER-002 is separately recorded user feedback, not a prior MATH issue. All previous MATH issue lists were empty, so resolved_issue_ids remains empty. Earlier reports and source archives were not edited.",
+    "Recomputed SHA-256 for the archived Introduction and its interface, both subsection files and the s02 interface, and their live counterparts; all match r003/submission.json. Independently confirmed unchanged target equation hashes, unchanged 2.1 equations/proof bodies and byte-identical 2.2.",
+    "Read the strict combined build receipt: passed=true with no diagnostics. Extracted the combined PDF text to confirm six pages and main theorem numbers 1.1, 1.2, 1.3, 1.4. Build success is separate from the mathematical checks above."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 3,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "65cd5f904698f9b75acf73155af3c2e42c5070e3439d385b7294ab9bb13e00fe",
+  "stage": "trial",
+  "summary": "Pass for the expanded USER-002 trial only: limited Introduction clarification together with 2.1-2.2. Global conventions now precede their first introductory use, and the later local tools inherit them without loss or repetition. The rewritten stable-forgetting argument, low-genus/empty-product treatment and finite-genus normalization ranges are mathematically consistent. Independently confirmed preservation of auxiliary constants, target displays, theorem numbering, asymptotic domains and claim strength. No unresolved mathematical issue was found; neither whole chapter nor the main target proofs is accepted by this limited report.",
+  "unit": "s02",
+  "verdict": "pass"
+}

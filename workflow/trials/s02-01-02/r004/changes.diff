@@ -1,0 +1,64 @@
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -61,7 +61,7 @@
+ As $g\to \infty$, we have
+ \begin{equation}
+ A_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+-\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right),
++\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right).
+ \label{eq:111}
+ \end{equation}
+ \end{thm}
+@@ -89,7 +89,7 @@
+ As $g\to\infty$, we have
+ \begin{equation}
+ B_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
+-1+\frac{b}{g_2}+O(g_2^{-2})\right),
++1+\frac{b}{g_2}+O(g_2^{-2})\right).
+ \label{eq:g111}
+ \end{equation}
+ \end{thm}
+--- /dev/null
++++ workflow/trials/s02-01-02/r003/author_response.json
+@@ -0,0 +1,17 @@
++{
++  "schema_version": 1,
++  "unit": "s02",
++  "round": 3,
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "issue_id": "ACADEMIC-001",
++      "resolution": "addressed",
++      "explanation": "Replaced only the sentence-final commas in eq:111 and eq:g111 with periods. Eq:P111 retains its existing period. Every mathematical expression, coefficient, error order, label and theorem number is unchanged; no other manuscript text was edited.",
++      "changed_files": [
++        "sections/01_introduction/section.tex"
++      ]
++    }
++  ],
++  "user_responses": []
++}
+--- previous/workflow/trials/s02-01-02/r002/author_response.json
++++ /dev/null
+@@ -1,21 +0,0 @@
+-{
+-  "schema_version": 1,
+-  "unit": "s02",
+-  "round": 2,
+-  "agent_id": "/root/s02_writer",
+-  "responses": [],
+-  "user_responses": [
+-    {
+-      "issue_id": "USER-002",
+-      "resolution": "addressed",
+-      "explanation": "Relocated genuinely global conventions from 2.1 to their natural first introductory use: the stack over C and rational Chow/codimension conventions accompany the first moduli definition; lambda_0 and vanishing above rank accompany the first Hodge-class definition; stack degrees, stabilizer weights, top-degree selection and coefficient extension precede the first integral. Clarified the stable-target dimension argument and the separate g>=2 and genus-one forgetting cases, retaining the nonempty positive-product convention and the (1,1) exception, and removed one-off target aliases. Specified g>=2 and integer 0<=h<=g for B_g(h), and 0<=d<=3g-3 for homogeneous normalized insertions. Moved existing Cin,N_g and b definitions before their first theorem use, clarified grammar and the fixed integer defect, and replaced the organization placeholder with an explicitly planned route. The four main target equation displays are byte-for-byte unchanged; all four theorem labels and their order are preserved. Section 2.1 now begins directly with formal exponentials and retains its local bounds, conversion proof, factorial examples and error conventions. Section 2.2 is unchanged. Both interfaces and the handoff record first-definition locations and the limited trial status; no new symbol/source, shared file, old response, old report or workflow state was changed.",
+-      "changed_files": [
+-        "sections/01_introduction/section.tex",
+-        "sections/01_introduction/INTERFACE.md",
+-        "sections/02_notation/01_conventions.tex",
+-        "sections/02_notation/INTERFACE.md",
+-        "sections/02_notation/writer_handoff.md"
+-      ]
+-    }
+-  ]
+-}

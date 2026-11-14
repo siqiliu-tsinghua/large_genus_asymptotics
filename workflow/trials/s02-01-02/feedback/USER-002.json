@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "USER-002",
+  "source": "user",
+  "unit": "s02",
+  "companion_units": ["s01"],
+  "subsections": [1, 2],
+  "applies_to_round": 2,
+  "location": "Introduction and the opening of subsection 2.1",
+  "severity": "major",
+  "message": "Some conventions currently explained at the start of 2.1 belong in the Introduction. Clarify imprecise introductory wording where the objects and integrals first appear, then let 2.1 inherit those conventions without explaining them again.",
+  "requested_change": "The same writer should review the Introduction for clarity, place the genuinely global intersection and degree conventions at their natural first use, and streamline 2.1 accordingly. Read the two sections continuously. Preserve the four target theorem formulas and the established notation; retain genuinely local definitions, hypotheses and proof explanations where they are needed. Do not move psi, kappa or Chern-character material out of 2.2.",
+  "review_requirement": "The same original reviewers must examine the revised Introduction together with 2.1 and the affected context in 2.2. Preserve previous reports and source archives; this remains a scoped trial rather than whole-section acceptance."
+}

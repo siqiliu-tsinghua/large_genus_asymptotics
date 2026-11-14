@@ -1,0 +1,66 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s02-01-02/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "entry_sha256": "5c6ad4cb1bb31feb1055d209f396b0bbaa4576f47fdafeaf886320a780688d8b",
+  "external_reference_labels": {
+    "path": "build/main.aux",
+    "sha256": "b557e0660238f558b58168b9ac9978af4fee43d2c1f33833c4e1de466b80f7ae"
+  },
+  "local_inputs": [
+    "build/main.aux",
+    "build/previews/s02-01-02/preview.aux",
+    "build/previews/s02-01-02/preview.bbl",
+    "build/previews/s02-01-02/preview.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/trials/s02-01-02/r001/preview.pdf",
+  "pdf_sha256": "584ad889ce6aa5f606fa20be527aefe81ab7abdaac1e2f636070eb5768089b1b",
+  "schema_version": 1,
+  "source_hash": "8169daaeaee1fed9d358fcf27959bb2eb75e5277d023375e4b58029260202492",
+  "stage": "trial",
+  "strict": true,
+  "subsections": [
+    1,
+    2
+  ],
+  "time": "2026-11-14T09:56:10+00:00",
+  "unit": "s02"
+}

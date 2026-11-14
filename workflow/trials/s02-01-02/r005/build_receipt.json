@@ -1,0 +1,65 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s02-01-02/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02-01-02",
+      "build/previews/s02-01-02/preview.tex"
+    ]
+  ],
+  "companion_units": [
+    "s01"
+  ],
+  "diagnostics": [],
+  "entry_sha256": "c5b3c36b37b15813312dc27e06a84a1e39ceb9ad23068ef4a16efee5520c4b5b",
+  "local_inputs": [
+    "build/previews/s02-01-02/preview.aux",
+    "build/previews/s02-01-02/preview.bbl",
+    "build/previews/s02-01-02/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/trials/s02-01-02/r005/preview.pdf",
+  "pdf_sha256": "0052c9fdaaded71a64820225266b7f103a87d3fe3177e12d9b8d2f7fa6ef1e6e",
+  "schema_version": 1,
+  "source_hash": "e8acc5774f60526031b4fa7de15689e6c44faf812ce7737047f852c0b54f2e91",
+  "stage": "trial",
+  "strict": true,
+  "subsections": [
+    1,
+    2
+  ],
+  "time": "2026-11-14T11:25:23+00:00",
+  "unit": "s02"
+}

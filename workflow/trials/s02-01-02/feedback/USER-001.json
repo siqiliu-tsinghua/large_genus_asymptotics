@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "USER-001",
+  "source": "user",
+  "unit": "s02",
+  "subsections": [1, 2],
+  "applies_to_round": 1,
+  "location": "Opening of subsection 2.1; inherited definitions throughout the trial",
+  "severity": "major",
+  "message": "The opening repeats g, n and the moduli-space notation already established in the Introduction. Definition-before-use is a paper-wide requirement, not a requirement to redefine familiar objects at each section boundary. The previous reviews missed this redundancy.",
+  "requested_change": "Begin with genuinely new intersection conventions. Remove the repeated basic setup and the inventory of inherited notation. Check the 2.2 opening for the same problem. Recall or cite an earlier important definition only when it specifically helps the current argument; preserve genuinely new definitions and necessary additional hypotheses. Add this criterion to writer and reviewer responsibilities.",
+  "review_requirement": "The original writer must revise; the same three original reviewers must sign the new frozen trial snapshot. Preserve all round-1 reports unchanged."
+}

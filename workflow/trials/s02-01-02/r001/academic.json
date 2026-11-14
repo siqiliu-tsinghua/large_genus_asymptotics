@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The two scoped subsections state the stable-pair and rational-stack-Chow setting before using it (01_conventions.tex:5-15), preserve the Introduction's Hodge indices and g_2 (17-23), and define psi, logarithmic kappa, factorial-normalized Chern characters, the ordered boundary source, and the distinct Bernoulli font before the GRR statement (02_tautological_classes.tex:5-73). The theorem has a named attribution, the two elementary lemmas have complete short proofs, and the normalization paragraph explains the change of convention rather than importing source notation. The English is professional and the scoped material contains no placeholder, unsupported priority claim, or substantial unacknowledged reuse of source prose. The four-page trial PDF presents the formulas and bibliography coherently.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "02_tautological_classes.tex:75-81 attributes GRR to Mumford and explicitly selects Faber-Pandharipande's modern formulation; it does not claim GRR as a new result. The conversion argument at 100-124 is distinguished from the quoted input and the Chern-polynomial lemma at 132-169 is proved algebraically from that input. The factorial identity in 01_conventions.tex:32-60 is identified as elementary and derived directly. Only the two primary sources are cited; internal research notes are not used as authority.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Checked the actual local primary PDFs: Mum83 PDF p.34 / printed p.304 contains (5.2), and PDF p.36 / printed p.306 contains Corollary (5.3); FP00 PDF pp.5-6 / journal pp.177-178 state the family hypotheses and the unnumbered Theorem (Mumford), and PDF p.11 / journal p.183 contains (16). The formula in 02_tautological_classes.tex:83-97 matches the corrected FP00 presentation after the explicitly proved conversion pi_*c_1(omega_pi)^(a+1)=kappa_a-sum_i psi_i^a (100-122); the branch classes and one-half pushforward are translated by 52-65 and 122-124. The universal stable marked family lies in the setting of FP00 Section 1.1. The manuscript uses the signed Bernoulli generating series and the correct kappa index 2a-1, rather than Mumford's differently indexed Bernoulli convention and printed kappa-index typo; its explicit choice of FP00's formulation makes this accurate. Proposition 1, the virtual stable-map extension, is not misidentified as the family theorem. Both publisher DOI pages independently confirm the bibliography: Mumford (1983), pp.271-328, and Faber-Pandharipande, Inventiones Mathematicae 139 (2000), pp.173-199; the author PDF's first-online 1999 header does not warrant changing FP00's publication year.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "01_conventions.tex:60 explicitly identifies the normalization formulas as finite-genus exact identities, and 62-78 separates fixed-parameter conventions from the uniform estimates that later graph summation will require. The GRR identities and Chern-polynomial consequences are exact Chow identities/formal-series identities, with the appropriate standing stability and degree conventions. Neither the scoped text nor INTERFACE.md presents a target asymptotic theorem or an unfinished later subsection as proved; the interface explicitly records trial/drafting status, no approved s02 results, and no supplied uniform graph estimate.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This signature covers only the frozen trial of subsections 2.1 and 2.2, together with their interface and cited dependencies. It does not approve s02 as a whole; unwritten subsections 2.3/2.4 and the section roadmap were excluded.",
+    "Before signing, SHA-256 checks confirmed that both subsection files, INTERFACE.md, references.bib, and the Introduction match the submission manifest and that the current copies match the archive."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+  "stage": "trial",
+  "summary": "Pass for the frozen 2.1-2.2 trial: primary-source attribution, exact locators, Bernoulli and logarithmic-kappa translations, publication metadata, claim strength, and professional statement style are satisfactory. No unresolved academic issue was found.",
+  "unit": "s02",
+  "verdict": "pass"
+}

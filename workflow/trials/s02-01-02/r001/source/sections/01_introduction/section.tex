@@ -1,0 +1,97 @@
+% !TeX root = ../../main.tex
+\section{Introduction}
+\label{sec:introduction}
+Let $g, n$ be non-negative integers such that $2g-2+n>0$, and $\MM_{g,n}$ (or $\MM_g$ when $n=0$
+and $g \ge 2$) be the moduli space of stable curves of genus $g$ with $n$ marked points. The Hodge
+bundle $\EE$ over $\MM_{g,n}$ is defined as the rank $g$ vector bundle whose fiber over the moduli
+point $[C; p_1, \dots, p_n] \in \MM_{g,n}$ is $H^0(C,\omega_C)$, where $\omega_C$ is the dualizing sheaf.
+Denote the $j$-th Chern class of the Hodge bundle $\EE$ by
+\[\lambda_j=c_j(\EE),\quad j=1,\dots, g,\]
+which is called the $j$-th Hodge class.
+We consider the asymptotic behavior of the following \emph{pure Hodge integrals}:
+\begin{equation}
+\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell},\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+\label{eq:phi-1}
+\end{equation}
+as $g$ tends to infinity.
+
+The sum of the degrees $j_1, \dots, j_\ell$ in \eqref{eq:phi-1} needs to equal the dimension of $\MM_{g,n}$,
+that is
+\[j_1+\cdots+j_\ell=3g-3+n.\]
+On the other hand, let $\pi_{n,m}:\MM_{g,n}\to \MM_{g,m}\ (n > m, 2g-2+m>0)$ be the forgetful map that forgets the
+last $n-m$ marked points and stabilizes the curve, and $\tilde{\lambda}_j$ be the $j$-th Hodge class on $\MM_{g,m}$. Then we have
+\[\lambda_j=\pi_{n,m}^*\tilde{\lambda}_j,\]
+and therefore
+\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}
+=\int_{\MM_{g,n}}\pi_{n,m}^*\left(\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}\right).\]
+Note that the degree of $\tilde{\alpha}=\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}$
+is $j_1+\cdots+j_\ell$, which is greater than the dimension $3g-3+m$ of $\MM_{g,m}$, so
+$\tilde{\alpha}=0$, hence
+\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}=0.\]
+So there are only two kinds of nontrivial pure Hodge integrals:
+one is
+\[\int_{\MM_{1,1}}\lambda_1=\frac{1}{24},\]
+and the others are
+\begin{equation}
+\int_{\MM_g}\lambda_{j_1}\cdots \lambda_{j_\ell},
+\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+\label{eq:phi-2}
+\end{equation}
+where $g\ge 2$.
+
+We denote
+\[A_g=\int_{\MM_g}\lambda_1^{3g-3},\quad B_g(h)=\int_{\MM_g}\lambda_{g-h} \lambda_1^{2g-3+h},
+\quad B_g=B_g(0),\]
+and, for a homogeneous polynomial $P(\lambda)$ of Hodge classes with degree $d$,
+\[\langle P(\lambda) \rangle_g=\frac{1}{A_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
+The main results of the present paper are as follows.
+
+\begin{thm}
+\label{thm:lambda-one}
+As $g\to \infty$, we have
+\begin{equation}
+A_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right),
+\label{eq:111}
+\end{equation}
+where $\Cin(x)$ is the cosine integral function
+\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \mbox{ and }
+N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+\end{thm}
+
+\begin{thm}
+\label{thm:fixed-insertions}
+Given $P(\lambda)=\lambda_{j_1}\cdots \lambda_{j_\ell}$ with $j_1, \dots, j_\ell$ fixed, let
+\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2),\]
+then, as $g\to\infty$, we have
+\begin{equation}
+\langle P(\lambda) \rangle_g=\frac{1}{F(j)}\left(1+\frac{4\pi^2-42}{9g^2}G(j)+
+\frac{4\pi^2-40}{3g^3}G(j)+O(g^{-4})\right).
+\label{eq:P111}
+\end{equation}
+\end{thm}
+
+\begin{thm}
+\label{thm:top-hodge}
+Let $g_2=2g-3$, $J_n(z)$ be the $n$-th Bessel function of the first kind, $z_{0,1}$ be the first
+positive zero of $J_0$, and $\rho=6z_{0,1}J_1(z_{0,1})$.
+As $g\to\infty$, we have
+\begin{equation}
+B_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
+1+\frac{b}{g_2}+O(g_2^{-2})\right),
+\label{eq:g111}
+\end{equation}
+where
+\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
+\end{thm}
+
+\begin{thm}
+\label{thm:fixed-defect}
+With $\rho$ as above, for a fixed $h \ge 0$, we have
+\begin{equation}
+\frac{B_g(h)}{B_g}\sim \frac{1}{h!}\left(\frac{24g^2}{\rho^2}\right)^h,\quad g\to\infty.
+\label{eq:gh11}
+\end{equation}
+\end{thm}
+
+The paper is organized as follows. asdf

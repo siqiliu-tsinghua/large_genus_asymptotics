@@ -1,0 +1,66 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The user-authorized renaming preserves the first-definition structure checked in r003/r004. Introduction:4-23 still introduces the stack, Chow/codimension convention, Hodge classes, rank conventions and integration before the first pure product; lines 48-53 now define a_g,b_g(h),b_g and the bracket with denominator a_g at their original locations and with the same ranges. Theorem 1.3:85-88 now explicitly calls z_{0,1} a zero of J_0(z), retaining the preceding J_n(z) definition and subsequent scalar b definition. In 02_tautological_classes.tex:5-17 the universal curve, sections, dualizing sheaf, L_i and psi_i still precede kappa. The replacement at 19-27 explicitly identifies psi_{n+1} as the last cotangent class on the source MM_{g,n+1}, then defines the pushforward and binds a>=0; removing the former recipe and descendant sentence loses neither a needed definition nor a base-space identification. Ordinary B_m is defined with m>=0 and formal z at 60-65 before B_{2a} appears in GRR. All later local indices, Chern roots, boundary data and formal-series scopes remain intact. Beta_g has no use in the trial prose and remains reserved for its later first definition.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "Checked USER-003 against the archived updated policy, source diff, both interfaces and current formulas. Introduction:49-53,63,91,101 and 2.1:35-37 consistently use a_g,b_g(h),b_g, including the normalized-bracket denominator and factorial examples. Ordinary uppercase B_m and B_{2a} occur only in the Bernoulli definition/GRR context at 2.2:60-65,83, with no old font explanation. All eight Chow expressions in the three scope files use uppercase A and place mathbb Q after a semicolon inside the parentheses: Introduction:8,13; 2.1:15,16; 2.2:14,24,46,139. Searches of the archived section sources/interfaces and target outline found no old A_g/B_g names, mathsf Bernoulli notation, font rationale, old descendant sentence, Applying recipe or transport-equations phrase. The Introduction now has J_0(z) at 86 and exactly 'the ILW equation' at 113. I independently compared all 18 numbered equations with r004 after the stated integral/Bernoulli/Chow notation translation: all matched, and theorem-label order is unchanged. The established g_2, j_1,...,j_ell, ell, z_{0,1}, rho and scalar b are preserved.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The naming change substitutes user-chosen names without adding mathematical objects or parallel aliases. Lowercase integral families free ordinary uppercase B for Bernoulli numbers, allowing removal of the entire special-font rationale. The direct kappa lead-in at 2.2:19-20 replaces the unnecessary descendant explanation and formula-application recipe with one useful statement identifying the source class. No compensating repetition of g,n, the moduli stack or inherited normalizations has been added. Global conventions remain at their introductory first use, while 2.1 starts with formal exponentials and 2.2 retains the technical classes. Local symbols still have the roles established in the earlier substantive review; the complete inherited ledger remains in the interfaces. No additional reminder about beta_g is inserted before it is used in the manuscript.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "Introduction:106-113 retains the planned two-route explanation and now names the ILW equation for the fixed-defect route, as requested, without introducing its technical machinery prematurely. The local functional route is unchanged: 2.1 announces restoring factorials before the conversion proof; 2.2 introduces cotangent classes, logarithmic kappa, character normalization, boundary/Bernoulli conventions and GRR, then explains the normalization and derives the Chern-polynomial consequence. The shorter kappa bridge does not remove a proof roadmap or hide an input. No long proof has acquired an unexplained step. The unwritten overall s02 roadmap remains outside this trial.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "I inspected all six pages of the new combined PDF. The eight coefficient-field placements are readable inside the Chow parentheses and do not crowd a statement or collide with equation numbers. Page 2 preserves complete Theorems 1.1-1.3, including the clear distinction between b_g on the left of (1.5) and scalar b in its correction. Page 4 presents the psi definition, geometric fiber sentence and direct source-aware kappa definition in an uninterrupted local sequence. Page 5 uses ordinary Bernoulli typography in (2.7)-(2.8), with the obsolete explanatory sentence absent; page 6 keeps the Chern lemma and proof together. The parameter table and later normalization explanation retain natural page continuations without obscuring their roles. The change reduces prose burden and leaves the earlier functional subdivision intact; no material layout defect or excessive statement length requires revision.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "USER-003's revised design works in the actual formulas: lowercase a_g,b_g are genus-indexed integral sequences, uppercase A^a is the Chow functor with the degree in its superscript, and ordinary uppercase B_m is the Bernoulli family with an explicitly bound local m. Choosing m here avoids using the marking count n as a Bernoulli dummy. In Theorem 1.3, b_g denotes the integral sequence defined at Introduction:49-50, while the unsubscripted b is separately defined at 88 and appears as b/g_2 in (1.5); their roles remain visibly distinct. The one-point coefficient beta_g is retained as a separate later symbol in the shared policy and interfaces, with no accidental replacement or premature use in the prose. Existing Hodge indices, product length, marking labels, root index nu and branch labels keep their previous roles. The new lowercase a_g does not collide with the local degree a in 2.2, where the integral sequence is not used. No stale typography rationale or new letter collision was found.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "For USER-003 I read the changed passages in their retained whole-paper sequence. The Introduction still supplies the global conventions once and directly inherits the renamed sequences in its four targets and the 2.1 examples; the explicit J_0(z) wording and ILW roadmap phrase fit those sentences naturally. At 2.2:17-27, the geometric fiber description now leads directly to logarithmic kappa using the last cotangent class on MM_{g,n+1}; the source is clear from both that sentence and pi's displayed domain at 5. This transition is smoother than the deleted descendant aside and Applying-(2.3) instruction, without an unexplained change of base. The Bernoulli generating series now leads straight into the attributed GRR result, and its mathematical convention references still explain the coefficient/sign choices. The progression to the marking correction, half factor and Chern-polynomial consequence is unchanged and remains followable without internal notes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh round-5 signature for the limited Introduction and 2.1-2.2 trial under USER-003's authorized notation policy. Prior uppercase-integral/special-font conventions in historical reports are superseded for current prose, not silently rewritten. This report does not approve either whole section, unwritten 2.3/2.4 or the overall s02 roadmap.",
+    "USER-003 is addressed. There were no previous READABILITY issues, so resolved_issue_ids remains empty; user/editorial feedback is not relabeled as an earlier reviewer issue.",
+    "Read the frozen feedback, writer response, updated readability role/context, manuscript diff, target-preservation record and both interfaces. Inspected all six PDF pages. All 24 archived file hashes and eight artifact hashes match submission.json; current scope files and both interfaces match their archives; the PDF hash matches its receipt. Independently verified all 18 numbered equations after canonical notation translation and the unchanged theorem order. A read-only spot-check of the active full outline also found the numerical integral examples written as a_2,a_3,b_2. No source, state, older response or report was edited."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 5,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and user-authorized notation/wording updates, coordinated with 2.1 and 2.2.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "fe5417226361b0adeae6bca067fd003d05feecb519858d1472ec00d66e9cba34",
+  "stage": "trial",
+  "summary": "Pass for the revised joint trial. USER-003's lowercase integral families, ordinary Bernoulli notation, internal Chow coefficients, J_0(z)/ILW wording and direct source-aware kappa transition are consistent and readable. Definitions, mathematical payloads and earlier non-repetition improvements are preserved; the six-page PDF has no material presentation obstacle. No unresolved readability issue; no whole-section acceptance.",
+  "unit": "s02",
+  "verdict": "pass"
+}

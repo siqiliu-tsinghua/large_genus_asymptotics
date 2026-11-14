@@ -1,128 +1,141 @@
 {
+  "active_unit": "s02",
+  "history": [
+    {
+      "action": "start",
+      "time": "2026-11-14T09:46:37+00:00",
+      "unit": "s02"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_writer",
+      "role": "writer",
+      "time": "2026-11-14T09:47:01+00:00",
+      "unit": "s02"
+    }
+  ],
   "schema_version": 1,
-  "active_unit": null,
   "units": {
-    "s01": {
-      "status": "baseline",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s02": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s03": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s04": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s05": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s06": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s07": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
-    "s08": {
-      "status": "planned",
-      "agents": {
-        "writer": null,
-        "math": null,
-        "readability": null,
-        "academic": null
-      },
-      "submissions": [],
-      "accepted": null
-    },
     "a": {
-      "status": "planned",
+      "accepted": null,
       "agents": {
-        "writer": null,
+        "academic": null,
         "math": null,
         "readability": null,
-        "academic": null
+        "writer": null
       },
-      "submissions": [],
-      "accepted": null
+      "status": "planned",
+      "submissions": []
     },
     "b": {
-      "status": "planned",
+      "accepted": null,
       "agents": {
-        "writer": null,
+        "academic": null,
         "math": null,
         "readability": null,
-        "academic": null
+        "writer": null
       },
-      "submissions": [],
-      "accepted": null
+      "status": "planned",
+      "submissions": []
     },
     "c": {
-      "status": "planned",
+      "accepted": null,
       "agents": {
-        "writer": null,
+        "academic": null,
         "math": null,
         "readability": null,
-        "academic": null
+        "writer": null
       },
-      "submissions": [],
-      "accepted": null
+      "status": "planned",
+      "submissions": []
+    },
+    "s01": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "baseline",
+      "submissions": []
+    },
+    "s02": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": "/root/s02_writer"
+      },
+      "status": "drafting",
+      "submissions": []
+    },
+    "s03": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
+    },
+    "s04": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
+    },
+    "s05": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
+    },
+    "s06": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
+    },
+    "s07": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
+    },
+    "s08": {
+      "accepted": null,
+      "agents": {
+        "academic": null,
+        "math": null,
+        "readability": null,
+        "writer": null
+      },
+      "status": "planned",
+      "submissions": []
     }
-  },
-  "history": []
+  }
 }

@@ -1,0 +1,61 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Checked both trial subsections, their statements and displays, and the parameter table against the archived Introduction. In 01_conventions.tex:5-23 the stable nonnegative pair (g,n), ambient Chow ring, codimension, integration, inherited Hodge notation, out-of-rank convention, product length ell and Hodge indices are specified before use. Lines 25-49 define the exponential and its bound index k, then give the types and ranges of w,Q,L,c before (2.1); lines 52-74 bind h and distinguish fixed asymptotic data. In 02_tautological_classes.tex:5-32, pi, s_i, omega_pi, L_i and psi_i precede psi_{n+1} and logarithmic kappa_a. Lines 34-50 define degree-one roots, factorial-normalized ch_a, the formal variable t and c_t, with bound root and Chern indices. Lines 52-73 define delta, the ordered boundary source, xi, branch labels and cotangent classes, and the formal Bernoulli series with m>=0. The GRR statement binds a>=1 and k=0,...,2a-2; the conversion argument at 100-119 binds a>=0, D_i and its marking range, and its binomial index. The final lemma explicitly recalls t and binds its odd-degree sum; its proof binds both a and nu. No definition-order, range or scope gap was found within the trial.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "Compared 01_conventions.tex:17-23,52-71 with Introduction:42-46,64-65,76-92 and the shared conventions. A_g, B_g(h), B_g, the normalized bracket, N_g and g_2=2g-3 are retained; j_1,...,j_ell remain Hodge indices and ell remains the number of factors. The exact finite-genus conversion (2.2) uses g_2 directly, without a replacement name. In 02_tautological_classes.tex:6-7, pi is explicitly tied to the inherited forgetful map pi_{n+1,n}, rather than silently changing its meaning. The logarithmic convention (2.4), nonlogarithmic conversion (2.9), and marking term in (2.8)/(2.10) are consistently distinguished. Bernoulli numbers use mathsf B throughout (2.7)-(2.8), visibly distinct from italic B_g. The interface records the same scopes and exported identities. No existing Bessel or correction-constant names are repurposed.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The reader's persistent additions are the tautological classes, Chern polynomial, boundary class and ordered-boundary source needed for the stated identities. The local pi serves the cotangent definition, kappa definition and conversion argument; x_nu supports both normalization and the final proof; xi and the ordered source explain both delta and GRR. The local D_i in 02_tautological_classes.tex:108-119 has an independent geometric role in the self-intersection computation and is not exported as a new global object. The local theta and w,Q,L,c in 01_conventions.tex:25-49 express a general convention and reusable conversion without introducing dimension aliases. No separate name is introduced for the nonlogarithmic kappa class, 3g-3, or a short binomial correction. Deferring the unused WP scale alpha avoids imposing a name before it has a role. INTERFACE.md explains these choices and separates local from inherited notation. No unnecessary dedicated name requires removal.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The local purposes are stated before their calculations: 01_conventions.tex:29-30 says the conversion restores factorials; lines 62-78 separate fixed data and graph-uniform estimates. In 02_tautological_classes.tex:5,23-25,34-38,75-79 the prose leads from cotangent classes through logarithmic kappa and factorial-normalized characters to GRR. The conversion at 100-124 explains the convention-dependent marking sign and one-half factor, and lines 132-133 announce the algebraic consequence of even-character vanishing. The two actual proofs are short and identify their mechanism immediately: degree selection in 2.1 and the formal logarithm in 2.2. No long proof lacks a route. The unfinished whole-section roadmap and subsections 2.3/2.4 are outside this trial.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The functional units are proportionate: Lemma 2.1 gives one reusable exponential-to-power identity followed by the relevant A_g and B_g(h) example; the compact parameter table then closes the normalization discussion. Subsection 2.2 gives definitions before its attributed GRR statement, keeps the normalization explanation adjacent to it, isolates the useful a=1 specialization, and then states and proves the separate Chern-polynomial consequence with the lambda_2/lambda_3 examples. The conversion proof occupies one paragraph and one binomial display, enough to explain the sign without a second layer of auxiliary names. I inspected all four rendered pages of build/trials/s02-01-02/r001/preview.pdf: equation numbers and formulas fit the text block, the GRR formula remains readable, and the Chern statement/proof stays together on page 4. The page-2 table follows its introduction on page 1 and the conversion paragraph continues after its display onto page 4; these natural breaks do not obscure the argument or justify a blocking layout change.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The actual formulas distinguish Hodge degree j and product indices j_k from marking index i, root index nu, Bernoulli index m, and bound summation index k. Degree/codimension variables a,w and scalar c are locally declared; the formal variables t and z are explicitly scoped to the Chern and Bernoulli series. The branch labels +,- and psi_+,psi_- avoid colliding with the original markings in GRR. Mathsf B is distinguishable from italic B_g in the rendered PDF, as the text explains at 02_tautological_classes.tex:73. The local divisor L in Lemma 2.1 and the later indexed line bundles L_i have separate declared scopes and visually distinct uses. No loop count reuses ell, no root or analytic variable replaces an inherited Hodge index, and no unrelated b or R is introduced.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "In 01_conventions.tex:25-30,52-60,62-78, formal exponentials lead to their factorial conversion, the manuscript's two concrete integrals, and the distinction from asymptotic uniformity. In 02_tautological_classes.tex, the fiber description after (2.3) gives geometric meaning to descendant powers; applying the same definition on the source introduces the kappa convention without an unexplained new psi. The ordered-branch description before (2.6) anticipates the one-half in (2.8); the paragraph after (2.9) connects section self-intersections to the minus sign and then to (2.10). Finally, even-character vanishing explicitly motivates the Chern-polynomial rewrite and its low-degree examples. A reader familiar with moduli spaces can follow these steps without the internal notes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a readability pass for the trial of subsections 2.1 and 2.2 only. It does not approve s02 as a whole, its unfinished roadmap, or subsections 2.3 and 2.4.",
+    "Read the archived sources and necessary Introduction definitions; inspected all four PDF pages. Verified all 23 archived file hashes against submission.json, confirmed the live scope files and INTERFACE.md equal their archived copies, and checked the PDF hash against build_receipt.json. No mismatch was found.",
+    "No unresolved readability issue was identified; the conversion explanation and statement lengths are proportionate to their purpose. Mathematical correctness and primary-source verification remain the independent duties of the other review roles."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+  "stage": "trial",
+  "summary": "Pass for the 2.1-2.2 trial. Definitions precede use, inherited notation and local scopes remain clear, and the progression from intersection conventions through psi/kappa/Chern classes, GRR normalization and the Chern-polynomial consequence is readable. The four-page preview has no material presentation obstacle. No unresolved issue; no whole-section acceptance is implied.",
+  "unit": "s02",
+  "verdict": "pass"
+}

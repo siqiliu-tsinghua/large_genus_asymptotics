@@ -1,0 +1,32 @@
+{
+  "baseline_round": 3,
+  "equations": {
+    "eq:111": {
+      "math_sha256": "b72f0da3e95fdb1e1c631f34b3cdf96cf17b2154943cddd478b28c17fa8444d6",
+      "mathematics_unchanged": true,
+      "verbatim_unchanged": false
+    },
+    "eq:P111": {
+      "math_sha256": "fc9fbdaceb8f23883ba9ee8d7557f30d9bbc280b0c3ef2a4612ae54027182831",
+      "mathematics_unchanged": true,
+      "verbatim_unchanged": true
+    },
+    "eq:g111": {
+      "math_sha256": "f5f67b9a09b4e4343fec2f9bf1beedae395d91f585b1825c6965a2275a927909",
+      "mathematics_unchanged": true,
+      "verbatim_unchanged": false
+    },
+    "eq:gh11": {
+      "math_sha256": "5e826c2ada2e8be12544cab6a10c5dfca94255f2597533386a583e7c9e9a85b3",
+      "mathematics_unchanged": true,
+      "verbatim_unchanged": true
+    }
+  },
+  "punctuation_changes": 2,
+  "theorem_numbers": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+  ]
+}

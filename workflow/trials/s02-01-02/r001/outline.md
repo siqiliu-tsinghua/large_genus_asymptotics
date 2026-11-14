@@ -1,0 +1,135 @@
+## 第 2 节 Notation and geometric identities
+
+本节解决三个问题：积分采用什么规范，节点和忘点如何作用于 Hodge 类，以及指数积分如何恢复成原始幂积分。证明中局部使用的 ILW 和 Borel 变量留到第 7 节定义；全局记号在此固定。
+
+### 2.1 Intersection conventions and normalization
+
+采用有理系数的 Deligne–Mumford 模叠交数，以复余维计次。约定 $\lambda_0=1$，超过秩的 Chern 类为零，指数积分仅取顶次。保留引言的 $A_g,B_g(h),B_g,\langle P\rangle_g,N_g$，并沿用 $g_2=2g-3$；$3g-3$ 直接写出，不为这两个表达式另设别名。WP 公式中反复使用的常数记为
+
+$$
+\alpha=2\pi^2.
+$$
+
+若 $Q$ 的余维为 $w$、$L$ 为除子且 $0\leq w\leq3g-3+n$，首先写出反复使用的换算
+
+$$
+\int_{\overline{\mathcal M}_{g,n}}Qe^{cL}
+=\frac{c^{3g-3+n-w}}{(3g-3+n-w)!}
+\int_{\overline{\mathcal M}_{g,n}}QL^{3g-3+n-w}.
+$$
+
+用一个简短的记号表说明哪些指标固定、哪些随 $g$ 增长。尤其区分固定的插入指标、固定的离顶差 $h$，以及图求和中会增长的顶点价数和自环数。误差项允许依赖固定插入与固定截断阶。
+
+全文遵守 workflow/context.md 的记号约定。每个符号先定义后使用；Hodge 类下标固定用 $j_1,\ldots,j_\ell$，$\ell$ 是该乘积的因子数。标记编号用 $i$，列表位置或局部求和指标可用 $k$；图的自环数用 $p$，核心复杂度用 $q$。不把 Bessel 零点改称 $j$，不把 $\ell$ 用作自环数。新增专名须具有反复使用的独立作用；单次出现的短表达式直接写出，局部符号的类型、范围和作用域须在首次使用前交代。
+
+不再用讲义中的字母 $A$ 表示 $2\pi^2$，也不在不同章节把 $D$ 同时用于 $3g-3$ 和 $2g-3$。一点 Hodge 系数统一记作 $\beta_g$，避免与第三定理中的修正常数 $b$ 混淆。两个不同的顶点积分分别加上 WP 和 top 上标。
+
+### 2.2 Tautological classes and the GRR formula
+
+沿用引言中 Hodge 丛 $\mathbb E$ 及其 Chern 类 $\lambda_j$ 的定义。本小节先依次引入引言尚未定义的 $\psi$ 类、$\kappa$ 类和 Chern 特征，再陈述 GRR 及其推论。
+
+**余切线丛与 psi 类。** 令 $\varpi:\mathcal C_{g,n}\to\overline{\mathcal M}_{g,n}$ 为万有稳定曲线，$s_i$ 为第 $i$ 个标记截面，$\omega_\varpi$ 为相对对偶化层。定义
+
+$$
+L_i=s_i^*\omega_\varpi,\qquad \psi_i=c_1(L_i).
+$$
+
+说明 $L_i$ 在 $[C;p_1,\ldots,p_n]$ 处的纤维是 $T_{p_i}^*C$；随后证明中的后裔插入即为这些 $\psi_i$ 的幂。
+
+**Kappa 类。** 令 $\pi:\overline{\mathcal M}_{g,n+1}\to\overline{\mathcal M}_{g,n}$ 为忘去最后一个标记并稳定化的映射。在已定义的 $\psi$ 类基础上，采用对数 $\kappa$ 约定
+
+$$
+\kappa_a=\pi_*(\psi_{n+1}^{a+1}),\qquad a\geq0.
+$$
+
+**Chern 特征。** 写 $\mathrm{ch}_a=\mathrm{ch}_a(\mathbb E)$。若 $x_1,\ldots,x_g$ 为 $\mathbb E$ 的形式 Chern 根，则
+
+$$
+\mathrm{ch}_a=\frac1{a!}\sum_{\nu=1}^g x_\nu^a\quad(a\geq1),
+\qquad
+c_t(\mathbb E)=\sum_{j=0}^g\lambda_jt^j
+=\prod_{\nu=1}^g(1+tx_\nu).
+$$
+
+统一说明 $\psi_i$、$\kappa_a$、$\mathrm{ch}_a$ 的复余维分别为 $1,a,a$，且 $\mathrm{ch}_1=\lambda_1$。在列出 GRR 前，引入模叠上的总边界除子类 $\delta$，用 $t/(e^t-1)=\sum_{k\geq0}\mathsf{B}_kt^k/k!$ 定义 Bernoulli 数；字体与已表示顶类积分的 $B_g$ 区分。
+
+**引用结果 2.1，Mumford 的 GRR。** 按本节的对数 $\kappa$ 约定写出带标记公式，包括 $-\sum_i\psi_i^a$ 和有序节点推前的 $1/2$。特别给出
+
+$$
+12\lambda_1=\kappa_1+\delta-\sum_{i=1}^n\psi_i,\qquad
+\mathrm{ch}_{2a}=0\quad(a\geq1).
+$$
+
+引用 [Mum83, §5, (5.2), Corollary (5.3)] 及 [FP00, §1.1, Theorem (Mumford)]。FP00 的 $\kappa$ 使用非对数对偶化层；说明它等于本文 $\kappa_a-\sum_i\psi_i^a$，并解释换算；参见 [FP00, §1.3, (16)]。不把稳定映射虚基本类版本的 Proposition 1 当作本文公式未经换算的直接出处。
+
+**引理 2.2，总 Chern 类的重写。** 从形式 Chern 根直接推导
+
+$$
+c_t(\mathbb E)=
+\exp\left(\lambda_1t+
+\sum_{\substack{a\geq3\\a\ {\rm odd}}}(a-1)!\,\mathrm{ch}_a\,t^a\right).
+$$
+
+紧接着列出 $\lambda_2=\lambda_1^2/2$ 和 $\lambda_3=\lambda_1^3/6+2\mathrm{ch}_3$。这两个例子为第五节的切入作准备。
+
+### 2.3 Gluing maps and restrictions of Hodge classes
+
+定义稳定图、腿、半边、价数、图自同构群和黏合映射。写清
+
+$$
+g=\sum_v g_v+b_1(\Gamma),\qquad
+\sum_v(2g_v-2+n_v)=2g-2+n.
+$$
+
+**引理 2.3，Hodge 丛的边界限制。** 用归一化曲线上的留数解释正合列
+
+$$
+0\longrightarrow\bigoplus_v\mathbb E_v
+\longrightarrow\xi_\Gamma^*\mathbb E
+\longrightarrow\mathcal O^{b_1(\Gamma)}
+\longrightarrow0
+$$
+
+在标记图覆盖上的含义，并据此得到总 Chern 类的乘法公式。
+
+**推论 2.4，顶类与离顶差的分配。** $\lambda_g$ 的限制只保留树；对于 $\lambda_{g-h}$，可能出现的项满足
+
+$$
+b_1(\Gamma)\leq h,\qquad
+\sum_v h_v=h-b_1(\Gamma),\qquad
+\xi_\Gamma^*\lambda_{g-h}
+=\sum_{\sum h_v=h-b_1(\Gamma)}\prod_v\lambda_{g_v-h_v}.
+$$
+
+这条推论同时解释第六节为何只需求树，以及第八节不可分离节点为何把差指标从 $h$ 改为 $h-1$。完整 Hodge 丛在边界上的处理可参照 [LX26b, Proposition 4.4] 中的归一化论证。
+
+### 2.4 Boundary exponentials and forgetting markings
+
+**命题 2.5，边界指数的稳定图公式。** 引用 [ABCDGLW23, Lemma 3.10, (3.18)–(3.21)]，给出本文所需的专门化。用节点法丛的第一 Chern 类 $-\psi_+-\psi_-$ 解释单边核
+
+$$
+K_a(x,y)=\frac{1-e^{-a(x+y)}}{x+y}
+=\int_0^a e^{-t(x+y)}\,dt.
+$$
+
+说明这是形式幂级数恒等式，并用一个自环和一条分离边展示自同构因子。图公式归于原作者；本文只证明本问题的换算和局部解释。
+
+**引理 2.6，忘点的置换公式与分拆反演。** 引用 [KMZ96, Theorem 2.2]，写出推前公式及其反演。至少详细演示
+
+$$
+\kappa_a\kappa_b
+=\pi_{2*}(\psi_{n+1}^{a+1}\psi_{n+2}^{b+1})
+-\pi_{1*}(\psi_{n+1}^{a+b+1}).
+$$
+
+再推导
+
+$$
+e^{\kappa_1}
+=\sum_{k\geq0}\frac1{k!}\,
+\pi_{k*}\prod_{i=1}^k
+\psi_{n+i}(1-e^{-\psi_{n+i}}).
+$$
+
+把旧标记 $\psi$ 类和 $\kappa_1$ 的拉回修正如何被有理尾上的次数限制消去，列为单独的小引理。随后三条证明路线都可直接引用，避免重复略写这一步。
+

@@ -1,0 +1,61 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Rechecked USER-001 against the revised opening and the unchanged Introduction, using first use in the paper as the definition boundary. The Introduction already supplies g,n, stability, the moduli spaces, the Hodge bundle/classes, the integral normalizations, and g_2. Removing their section-2 redeclarations creates no gap and requires no replacement inventory or routine back-references. In 01_conventions.tex:5-14 the new information remains explicit: rational Chow theory, complex codimension, stack degree and homogeneous selection, coefficient extensions, lambda_0, and out-of-rank vanishing. Lines 16-28 still define the formal exponential and its bound index, and the local types/ranges of w,Q,L,c; line 43 retains the additional finite-genus bounds g>=2 and 0<=h<=g. In 02_tautological_classes.tex:5-29 the inherited map is given its new universal-curve role, followed by s_i, omega_pi, L_i, psi_i, psi_{n+1} and logarithmic kappa_a in usable order. Removing the commentary on nu and j leaves their ranges explicitly bound in the root sum, product and Chern polynomial at 31-46. The boundary/branch/Bernoulli definitions at 48-69, GRR ranges at 79-90, local D_i and binomial index at 96-114, and formal-series scope at 133-164 remain intact. USER-001 is addressed without losing a necessary new definition or local hypothesis.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The deletions leave inherited meanings unchanged. Equation (2.2), 01_conventions.tex:43-48, still uses the Introduction's A_g, B_g(h) and g_2 directly, without renaming g_2 or rederiving its definition. The asymptotic table at 52-61 retains j_1,...,j_ell as Hodge indices and ell as product length. In 02_tautological_classes.tex:5, pi=pi_{n+1,n} explicitly identifies the local map with the established one. The logarithmic kappa definition and nonlogarithmic conversion remain distinct in (2.4), (2.9) and the GRR marking term; mathsf B remains distinct from italic B_g. No notation is repurposed by the shortened prose, and the revised interface records the same inheritance rather than introducing manuscript aliases.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "USER-001 is substantively addressed. 01_conventions.tex now starts at lines 5-12 with new intersection conventions; the g/n/stability/moduli setup, Hodge-bundle/normalization inventory, repeated Hodge-index declaration, and g_2/Theorem 1.3 pointer are gone. The full ledger is confined to INTERFACE.md. The 2.2 opening at lines 5-9 adds the universal-curve interpretation needed for sections and the dualizing sheaf, without repeating the forgetting operation. The factorial example at 2.1:43-50 is a new application of the conversion lemma, not a replay of the Introduction's definitions. The retained table and discussion at 2.1:52-68 have a concrete comparative role: fixed insertion/defect/order data versus potentially growing n, valences and node counts determine error dependencies and the need for uniform estimates. The retained convention references before and after GRR identify precisely the Bernoulli choice, logarithmic marking correction and ordered-branch half factor; they help read this formula. The brief B_g typography comparison at 2.2:69 resolves an actual visual collision. Source-level psi application at 20-21 is needed to distinguish the base on which psi_{n+1} lives. The earlier local symbols theta,w,Q,L,c, roots, xi and D_i retain their calculation roles; no new abbreviation has been added. No remaining inherited-definition repetition warrants an issue.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "Removing the generic setup has not removed the explanation of purpose. In 01_conventions.tex:20-21 the conversion is still announced as the way to restore factorials; its example and 52-68 explain how exact identities differ from asymptotic estimates. In 02_tautological_classes.tex, the universal-curve opening leads directly to cotangent classes, the next paragraph to logarithmic kappa, and 31-35 to the factorial normalization needed for Chern characters. The GRR attribution at 71-75 announces the conventions, and 96-120 explains their sign and factor before the specialization. Lines 128-129 still identify even-character vanishing as the input to the algebraic consequence. The short proofs state their mechanisms immediately; no long proof needs additional staging. The unwritten overall section roadmap remains out of scope.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The revised prose now treats section 2 as a continuation of the paper. The new conventions are followed by the reusable conversion lemma, its manuscript-specific factorial example, and the parameter/error discussion, with no intervening inherited-symbol list. Subsection 2.2 retains its functional blocks: psi, kappa, factorial-normalized characters, boundary and Bernoulli conventions, attributed GRR, the short conversion argument, the divisor specialization, and the separate Chern-polynomial lemma/proof. I inspected all four pages of the new preview.pdf. The parameter table now fits with its introduction on page 1; the conversion argument and a=1 specialization fit on page 3; the Chern statement and proof stay together on page 4. All displays and numbers fit the text block. The closing parameter discussion continuing onto page 2 and the algebraic transition preceding the page-4 lemma do not impede the reading sequence. The edit has reduced reader burden without overcompressing the arguments.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "Deleting the prose labels for nu and j has not blurred their functions: 02_tautological_classes.tex:38-42 explicitly binds nu=1,...,g for roots and j=0,...,g for Hodge classes. Markings use i, local binomial/GRR sums use k, degrees use a or w, and formal series use declared t or z. Branch labels +,- remain distinct from original markings. The indexed L_i and D_i have clear geometric roles and local scopes; the earlier generic divisor L is confined to the conversion lemma. Mathsf B and italic B_g remain visibly distinguishable in the new PDF. The edits introduce no letter collision or extra name and do not reuse ell for a count unrelated to the Hodge product.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The revised first sentence moves immediately from the Introduction's objects to the new intersection-theory convention; the next paragraphs explain graded exponentials before applying them. The factorial example reads directly from the lemma without the removed routine Introduction pointer. At 02_tautological_classes.tex:5-18 the new universal-curve role supplies exactly the geometry needed for the cotangent definition and fiber description, and 20-29 then introduces kappa on that basis. The remaining text still connects ordered branches to the half factor, logarithmic conversion to the marking sign, and even-character vanishing to the final Chern-polynomial rewrite. I found no abrupt gap caused by deleting the former generic opening sentence or dummy-index commentary. The local sequence remains followable without internal notes or repeated basic definitions.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Round 2 is a fresh readability signature for the trial of 2.1 and 2.2 only; it does not approve the whole section or its unwritten 2.3/2.4 and overall roadmap.",
+    "The previous readability review missed the redundant opening identified by USER-001. This report preserves that history and checks the revised manuscript under the paper-wide first-definition and continuous-reading criteria. USER-001 is addressed; it is user/editorial feedback rather than an earlier READABILITY issue, so resolved_issue_ids remains empty.",
+    "Read the frozen user feedback, original writer response, updated readability role/context and changes.diff; checked the changed prose in its local context and inspected all four new PDF pages. All 24 archived file hashes and seven artifact hashes match submission.json; the live trial source/interface match the archive, and the PDF hash matches its receipt. No old report, source or registry was edited."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 2,
+  "schema_version": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "282b2e15c2a343c18015c8f5b3aaf1ee59cf84c5c7100ac55dedbf9c7c2078f7",
+  "stage": "trial",
+  "summary": "Pass for the revised 2.1-2.2 trial. USER-001 is addressed: the prose directly inherits the Introduction's definitions and starts with genuinely new conventions; retained local bounds and recalls serve specific calculations. New definitions, notation scopes, proof structure and the four-page presentation remain clear. No unresolved readability issue; no whole-section acceptance.",
+  "unit": "s02",
+  "verdict": "pass"
+}

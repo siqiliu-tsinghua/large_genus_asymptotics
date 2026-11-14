@@ -1,0 +1,169 @@
+% !TeX root = ../../main.tex
+\subsection{Tautological classes and the GRR formula}
+\label{subsec:s02:02}
+
+We first define the classes entering the geometric identities.  Write
+$\pi:\MM_{g,n+1}\to\MM_{g,n}$ for the forgetful map
+$\pi_{n+1,n}$ of the Introduction.  Its source identifies with the
+universal stable curve over $\MM_{g,n}$, and $\pi$ forgets the last
+marking and stabilizes.  Let $s_i$ be its $i$th marking section for
+$1\leq i\leq n$, and let $\omega_\pi$ be its relative dualizing
+sheaf.  The cotangent line
+bundle and its first Chern class are
+\begin{equation}
+\label{eq:s02:psi-definition}
+L_i=s_i^*\omega_\pi,
+\qquad
+\psi_i=c_1(L_i)\in A^1(\MM_{g,n})_{\mathbb Q}
+\quad(1\leq i\leq n).
+\end{equation}
+The fiber of $L_i$ at $[C;p_1,\ldots,p_n]$ is $T_{p_i}^*C$.
+Descendant insertions below mean powers of these cotangent classes.
+
+Applying \eqref{eq:s02:psi-definition} on the source of $\pi$ defines
+$\psi_{n+1}$.  Our $\kappa$-classes use the logarithmic
+convention
+\begin{equation}
+\label{eq:s02:kappa-definition}
+\kappa_a=\pi_*(\psi_{n+1}^{a+1})
+\in A^a(\MM_{g,n})_{\mathbb Q}
+\quad(a\geq0),
+\end{equation}
+where $a$ ranges over the nonnegative integers.
+
+To fix the factorial normalization of Chern characters, let
+$x_1,\ldots,x_g$ be formal Chern roots of $\EE$, each of degree one.
+They are used under the splitting principle; the symmetric expressions
+below descend to the Chow ring.  For an integer $a\geq1$ and a formal
+variable $t$, set
+\begin{equation}
+\label{eq:s02:chern-definitions}
+\mathrm{ch}_a=\mathrm{ch}_a(\EE)
+=\frac{1}{a!}\sum_{\nu=1}^g x_\nu^a,
+\qquad
+c_t(\EE)=\sum_{j=0}^g\lambda_jt^j
+=\prod_{\nu=1}^g(1+tx_\nu).
+\end{equation}
+Thus $\mathrm{ch}_a$ and $\kappa_a$ have degree $a$,
+$\mathrm{ch}_1=\lambda_1$, and the coefficient of $t^j$ in
+$c_t(\EE)$ has degree $j$.  Here $\nu$ numbers roots and $j$ is a
+Chern-class index.
+
+Let $\delta\in A^1(\MM_{g,n})_{\mathbb Q}$ be the total boundary
+divisor class: every divisor of singular stable curves occurs with
+coefficient one.  Let $\widetilde\Delta_{g,n}$ parametrize a stable
+$n$-pointed curve with a chosen node and an ordering $(+,-)$ of its two
+branches, and let $\xi:\widetilde\Delta_{g,n}\to\MM_{g,n}$ be the
+map that forgets these choices.  On the normalization at the chosen
+node, the two branches give marked points.  Denote the first Chern
+classes of their cotangent lines by $\psi_+$ and $\psi_-$,
+respectively.  Each boundary divisor is generically covered twice by this ordered
+source, so the stack pushforward satisfies
+\begin{equation}
+\label{eq:s02:ordered-boundary}
+\delta=\frac12\xi_*1.
+\end{equation}
+For a formal variable $z$, define the Bernoulli numbers
+$\mathsf B_m$, indexed by integers $m\geq0$, by
+\begin{equation}
+\label{eq:s02:bernoulli-convention}
+\frac{z}{e^z-1}=\sum_{m=0}^{\infty}\mathsf B_m\frac{z^m}{m!};
+\qquad \mathsf B_2=\frac16.
+\end{equation}
+The upright font distinguishes them from the integrals $B_g$.
+
+Mumford's calculation \cite[\S 5, (5.2)--(5.3)]{Mum83} gives the
+following result.  We use the formulation in
+\cite[\S 1.1, Theorem (Mumford)]{FP00}, with the Bernoulli convention
+\eqref{eq:s02:bernoulli-convention} and the logarithmic convention
+\eqref{eq:s02:kappa-definition}.
+
+\begin{thm}[Mumford's GRR formula]
+\label{thm:s02:grr}
+For each integer $a\geq1$, the following identities hold in the
+rational Chow ring of $\MM_{g,n}$:
+\begin{equation}
+\label{eq:s02:grr}
+\begin{split}
+\mathrm{ch}_{2a}&=0,\\
+\mathrm{ch}_{2a-1}
+&=\frac{\mathsf B_{2a}}{(2a)!}
+\left(
+\kappa_{2a-1}-\sum_{i=1}^n\psi_i^{2a-1}
++\frac12\xi_*\!\left(
+\sum_{k=0}^{2a-2}(-1)^k\psi_+^k\psi_-^{2a-2-k}
+\right)\right).
+\end{split}
+\end{equation}
+\end{thm}
+
+For clarity, the $\kappa$-class in the cited formulation of
+\cite{FP00} is nonlogarithmic.  For every integer $a\geq0$, its
+conversion to our convention is
+\begin{equation}
+\label{eq:s02:kappa-conversion}
+\pi_*c_1(\omega_\pi)^{a+1}
+=\kappa_a-\sum_{i=1}^n\psi_i^a.
+\end{equation}
+Indeed, on the universal curve $\MM_{g,n+1}$, denote the image
+divisor of $s_i$ by $D_i$ for $1\leq i\leq n$.
+The class $\psi_{n+1}$ is
+$c_1(\omega_\pi(\sum_{i=1}^nD_i))$.  The divisors $D_i$ are
+disjoint; on $D_i$, the relative dualizing sheaf restricts to $L_i$
+and the normal bundle is $L_i^\vee$.  The binomial expansion therefore
+adds, for each marking $i$, the class
+\[
+\psi_i^a\sum_{k=1}^{a+1}(-1)^{k-1}\binom{a+1}{k}
+=\psi_i^a
+\]
+to $\pi_*c_1(\omega_\pi)^{a+1}$.  This proves
+\eqref{eq:s02:kappa-conversion} and explains the minus sign in
+\eqref{eq:s02:grr}; the same marking correction is encoded in
+\cite[\S 1.3, (16)]{FP00}.  The factor $1/2$ in
+\eqref{eq:s02:grr} is exactly the ordered-branch convention
+\eqref{eq:s02:ordered-boundary}.  At $a=1$ the formula becomes
+\begin{equation}
+\label{eq:s02:lambda-one-grr}
+12\lambda_1=\kappa_1+\delta-\sum_{i=1}^n\psi_i.
+\end{equation}
+In particular, on $\MM_g$ for $g\geq2$,
+$12\lambda_1=\kappa_1+\delta$.
+
+The vanishing of even Chern characters now gives a useful algebraic
+form of every Hodge insertion.
+
+\begin{lmm}[Chern polynomial]
+\label{lmm:s02:chern-exponential}
+For the formal variable $t$ of \eqref{eq:s02:chern-definitions},
+\begin{equation}
+\label{eq:s02:chern-exponential}
+c_t(\EE)=\exp\left(
+\lambda_1t+
+\sum_{\substack{a\geq3\\a\ \mathrm{odd}}}
+(a-1)!\,\mathrm{ch}_a t^a\right)
+\end{equation}
+as an identity of formal series with coefficients in
+$A^*(\MM_{g,n})_{\mathbb Q}$.  In particular,
+\begin{equation}
+\label{eq:s02:lambda-two-three}
+\lambda_2=\frac{\lambda_1^2}{2},
+\qquad
+\lambda_3=\frac{\lambda_1^3}{6}+2\mathrm{ch}_3.
+\end{equation}
+\end{lmm}
+
+\begin{prf}
+Taking the formal logarithm of the root product gives
+\[
+\log c_t(\EE)
+=\sum_{a=1}^{\infty}\frac{(-1)^{a-1}}{a}
+\left(\sum_{\nu=1}^g x_\nu^a\right)t^a
+=\sum_{a=1}^{\infty}(-1)^{a-1}(a-1)!\,
+\mathrm{ch}_a t^a,
+\]
+where $a$ runs over the positive integers.  The even terms vanish by
+Theorem~\ref{thm:s02:grr}, and the $a=1$ term is $\lambda_1t$.
+Exponentiating proves \eqref{eq:s02:chern-exponential}.  Its
+coefficients of $t^2$ and $t^3$ are exactly
+\eqref{eq:s02:lambda-two-three}.
+\end{prf}

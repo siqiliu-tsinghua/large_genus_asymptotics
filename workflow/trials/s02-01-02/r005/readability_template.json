@@ -1,0 +1,62 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_consistency": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_economy": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "roadmap": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "structure": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "symbol_design": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "transitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 5,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and user-authorized notation/wording updates, coordinated with 2.1 and 2.2.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "fe5417226361b0adeae6bca067fd003d05feecb519858d1472ec00d66e9cba34",
+  "stage": "trial",
+  "summary": "",
+  "unit": "s02",
+  "verdict": "FILL_IN"
+}

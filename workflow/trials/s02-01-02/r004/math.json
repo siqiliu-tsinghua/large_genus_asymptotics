@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read changes.diff, target_preservation.json and the original writer's r003 response to ACADEMIC-001. Independent byte comparison finds exactly two Introduction changes, both sentence-final comma-to-period substitutions in eq:111 and eq:g111; both subsection files and both interfaces are identical to r003. Thus all source dependencies and the independently checked FP00/Mum83 hypotheses from the retained reviews remain unchanged. No source rereading or new dependency was required for this punctuation-only impact check.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The two changed characters follow completed asymptotic expressions and are outside every mathematical argument. The r003 checks therefore remain applicable after direct comparison: Introduction:4-23 retains stable integer (g,n), complex codimension and positive product length; lines 30-39 retain stable forgetting targets and the low-genus/empty-product treatment; lines 48-53 retain integer 0<=h<=g and 0<=d<=3g-3. The local bounds in 2.1 and all class codimensions and ranges in 2.2 are byte-identical to the reviewed r003 text.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Full-source comparison proves that only the punctuation after the final closing parenthesis in eq:111 and eq:g111 changed. Stack degree and stabilizer weights, lambda rank conventions, all A_g/B_g(h) definitions, auxiliary constants Cin,N_g,g_2,rho,b and every factorial or power are untouched. Byte-identical 2.1 and 2.2 preserve the previously verified exponential factorial restoration, Chern-character normalization, marking-section signs, logarithmic kappa conversion, Bernoulli coefficient and ordered-boundary factor 1/2.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The r003 first-definition audit remains valid after checking the exact new delta. No symbol, type, index range, scope or definition location changes: global Chow/degree/integration conventions remain before their first introductory use; Cin,N_g and b remain before their target displays; g_2=2g-3 and j_1,...,j_ell retain their meanings; 2.1 directly inherits global conventions and 2.2 still introduces psi, logarithmic kappa and characters in order. Only the two completed theorem sentences now end with periods. Neither missing information nor repeated setup is introduced.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The independent comparison shows that every proof and every mathematical expression is identical to r003. Its verified finite-genus forgetting/pullback dimension argument, positive-genus cases and genus-zero exclusion therefore have exactly the same inputs. The exponential-to-power, section-intersection conversion and Chern-root logarithm proofs are also unchanged. Replacing the trailing sentence punctuation does not alter a premise, connective, quantified statement or inference. No main asymptotic target is newly used as an input, and this limited report still does not certify proofs of those targets.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The punctuation changes occur after the entire right-hand sides, including O(g^-3) in eq:111 and O(g_2^-2) in eq:g111. The full mathematical payloads, the O(g^-4) fixed-insertion target, the fixed-defect asymptotic equivalence and their parameter restrictions are unchanged. Byte-identical 2.1/2.2 preserve the finite-genus/formal nature of their conclusions and the requirement of future uniform estimates for growing graph sums. No error strength or limit/summation exchange is added by this revision.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is an impact review and new signature of the exact r004 snapshot, using the retained r003 substantive checks after independently verifying the complete two-character delta.",
+    "ACADEMIC-001 belongs to the academic review. There were no prior MATH issues, so resolved_issue_ids remains empty.",
+    "Verified that all five scoped manuscript/interface archive files and live counterparts match submission.json. The current PDF hash matches the strict r004 receipt, which reports passed=true with no diagnostics. Scope and theorem numbering are unchanged because no label, environment or counter input changed.",
+    "The verdict covers only Introduction clarifications and 2.1-2.2 in the stated trial. Neither whole chapter nor the main asymptotic proofs is accepted by this report."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+  "stage": "trial",
+  "summary": "Pass for the unchanged expanded trial scope. Independently verified exactly two comma-to-period manuscript substitutions, ending eq:111 and eq:g111. All mathematics, definitions, assumptions, proof text, asymptotic strength and numbering inputs are unchanged, so the retained r003 substantive checks remain valid after this impact review. No unresolved mathematical issue was found.",
+  "unit": "s02",
+  "verdict": "pass"
+}

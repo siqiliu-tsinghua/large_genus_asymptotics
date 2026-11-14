@@ -1,0 +1,66 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "For USER-002 I read the revised Introduction, 2.1 and 2.2 in that order, checking both destinations and deletions. Introduction:4-8 now fixes the stable pair, stack, rational Chow ring and complex-codimension meaning before the Hodge classes. Lines 10-15 give the bundle, positive Chern indices, lambda_0 and out-of-rank convention together. Lines 17-23 supply dimension, top-component integration, stabilizer weights, coefficient extension and positive product length before the first integral. The map and stable-target range appear at 30-32; the marked vanishing argument explicitly identifies the genus-one and g>=2 choices at 33-38. The normalization paragraph at 48-53 specifies integer h and the admissible homogeneous degree d. Cin and N_g now precede their use in Theorem 1.1, and b precedes its use in Theorem 1.3; Theorem 1.2 fixes the product length and indices, and Theorem 1.4 specifies an integer defect. In 01_conventions.tex:5-17 the new local exponential and conversion variables are still defined before use, while their ambient grading and integral convention are available from the Introduction. The unchanged 2.2 still introduces psi, logarithmic kappa, factorial-normalized characters, boundary data and Bernoulli numbers before GRR. USER-002's first-use placement requirement is satisfied without moving the technical tautological definitions into the Introduction or leaving a definition gap at the old location.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The relocation preserves the meaning of degree and integration from the Introduction through (2.1): both use complex codimension and stack degree. Introduction:15 supplies exactly the lambda extension used later in the h=g example and the low-rank Chern identities. The inherited names A_g, B_g(h), B_g and the normalized bracket retain their formulas; 2.1:32-37 uses g_2 directly. Introduction:71-74 and the 2.1 parameter table retain j_1,...,j_ell and ell with their established meanings; g_2, z_{0,1}, rho and b retain their names and values. I independently compared all four protected target equation environments with r002 and confirmed exact text equality and the same theorem-label order; the six-page PDF displays Theorems 1.1-1.4 in order. Section 2.2 is byte-for-byte unchanged, including its logarithmic/nonlogarithmic distinction and mathsf B versus B_g. Both interfaces now place the migrated conventions in the Introduction consistently.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "USER-002 is addressed through placement and proportion, rather than a pasted convention block. The stack/Chow/grading information is attached to the first moduli definition, the rank convention to the first Hodge-class definition, and stack integration to the first integral. Each explains an object the reader is about to use. Introduction:30-40 removes the one-off target-class aliases and tilde-alpha while keeping the short dimension comparison and explicit low-genus cases. The length and defect/degree bounds add necessary scope without new names. Moving the existing Cin,N_g and b definitions changes order, not the notation inventory. Section 2.1 no longer repeats any of those global conventions or lists inherited symbols; it begins with its new formal-exponential tool. Its finite-genus bounds, factorial examples, and parameter/error comparison still serve the conversion and later uniformity discussion. The 2.2 universal-curve identification and GRR convention references retain their specific geometric and sign-normalization purposes. The full inherited ledger remains in the interfaces, and psi/kappa/character machinery remains in 2.2. No unnecessary new name, repeated basic setup or material introductory overload was found.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The shortened introductory argument states its mechanism before the cases: the source Hodge bundle is a pullback, and top degree on the source exceeds the stable target dimension (Introduction:30-36). The replacement organization paragraph at 106-113 explains the WP/stable-graph route for the first two targets, the independent top-Hodge/Bessel route for the third, and the later Hodge-potential/singularity route for the fourth. It explicitly describes planned work and does not claim completed proofs. The local purposes in 2.1:9-10 and 41-57 remain clear: restoring factorials and distinguishing graded truncation from uniform asymptotic control. In unchanged 2.2, the character normalization precedes GRR, the conversion explains its marking term and half factor, and even-character vanishing motivates the final algebraic lemma. No long proof lacks a route; the unwritten whole-s02 roadmap remains outside this trial.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The Introduction now proceeds through objects/conventions, the pure-product problem, reduction to unmarked integrals, normalization definitions, four targets, and planned proof routes. The global explanations are short and distributed at actual use, while the longer conversion tools remain in 2.1/2.2. The forgetful argument is a single functional paragraph, and each target retains its own necessary auxiliary definitions before its asymptotic display. I inspected all six rendered PDF pages. Page 1 keeps the opening geometry, conventions and reduction together; the first three theorem statements fit intact on page 2; page 3 presents Theorem 1.4, the organization paragraph and the start of 2.1. Display widths, equation numbers, typography and theorem distinctions remain readable. The parameter table moves from its page-3 introduction to page 4; the boundary description and final half-factor sentence continue across later pages. These are ordinary continuations that preserve the argument, while the final Chern statement and proof remain together on page 6. No material layout or statement-length obstacle requires revision.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The changes reduce local symbol burden: the introductory target-class aliases and tilde-alpha are gone, and no replacement shorthand is introduced. Hodge degrees remain j and j_k, ell remains product length, n/m specify source and target marking counts, and h remains the defect. The F(j),G(j) sums bind k as a list position; the Cin integral binds t locally, separate from the explicitly formal t in 2.2. The Bessel names retain their established theorem scope. In 2.1 the local w,Q,L,c describe the homogeneous conversion, and in 2.2 i,nu,k,a,m distinguish markings, roots, local sums, degrees and Bernoulli indices. Branch signs +,- avoid conflicts with ordinary markings; mathsf B remains visibly distinct from italic B_g. Moving global conventions has caused no letter collision or new alias.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "USER-002's continuity requirement is satisfied at both locations. Introduction:4-23 gives each convention while introducing the objects and first integral it governs, then the degree condition at 28-29 directly initiates the vanishing argument. The explicit stable-target choices explain the marked exception before the text turns to unmarked normalizations and targets. The final planned-route paragraph leads into geometric tools; 2.1 starts with formal exponentials and uses the already established ring and integration convention without a redundant reset or routine definition inventory. Its factorial example directly reconnects the tool to A_g and B_g(h). Section 2.2 still advances from the inherited map's universal-curve role to psi, then kappa, Chern characters, boundary normalization, GRR and its algebraic consequence. Joint reading revealed no lost assumption, newly duplicated explanation or need to import technical 2.2 material into the Introduction.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh round-3 readability signature for the revised Introduction and subsections 2.1-2.2 together, limited to the companion clarity/convention work and trial scope. This does not approve either section as a whole or the unwritten 2.3/2.4 and overall s02 roadmap.",
+    "USER-002 is addressed. There were no prior READABILITY issues; user/editorial feedback is not placed in resolved_issue_ids, which remains empty. All older reports and source archives are untouched.",
+    "Read the archived feedback, writer response, updated role/context, diff and both interfaces; read the three scope files continuously and inspected all six PDF pages. All 24 archived file hashes and eight artifact hashes match submission.json; live scope files and both interfaces match the archive; the PDF hash matches its receipt. Independently confirmed the four protected target equation texts, theorem order and unchanged 2.2 against r002."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 3,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "65cd5f904698f9b75acf73155af3c2e42c5070e3439d385b7294ab9bb13e00fe",
+  "stage": "trial",
+  "summary": "Pass for the joint Introduction/2.1-2.2 trial. USER-002 is addressed: global conventions appear at their natural first use in the Introduction, while 2.1 inherits them and starts with local exponential tools. The introductory clarification is proportionate, needed scopes and target formulas are preserved, and the six-page presentation remains readable. No unresolved readability issue; no whole-section acceptance.",
+  "unit": "s02",
+  "verdict": "pass"
+}

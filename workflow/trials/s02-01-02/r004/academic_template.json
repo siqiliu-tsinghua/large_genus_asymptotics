@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "attribution": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "citation_precision": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "claim_status": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 4,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+  "stage": "trial",
+  "summary": "",
+  "unit": "s02",
+  "verdict": "FILL_IN"
+}

@@ -1,0 +1,52 @@
+{
+  "agent_id": "/root/s02_writer",
+  "artifacts": {
+    "build_preview.py": "4e93945bc888e6fa13a3503ca31744270ddaec3da557f1903faec7b3ca2dc500",
+    "build_receipt.json": "65586ed86550c0c19b7c330adb943d21910e8eef1ac5331378c050482adaa6bb",
+    "changes.diff": "5f114dcd86558a189bae0ac24b4b256afdab4bc12c65170f2ac974b3ec7d97a8",
+    "outline.md": "89d4cad1ad211a542408350d634ff6a375abe7aa1aecae1c70319dba9a95b267",
+    "scope.json": "bbe35d15908134ec0daa3d386fdf2209d24be5a8d983ce8169556c1a0ef803f0",
+    "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198"
+  },
+  "files": {
+    "@outline": "89d4cad1ad211a542408350d634ff6a375abe7aa1aecae1c70319dba9a95b267",
+    "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+    "AGENTS.md": "ccf961584b89c522721e130a938c308e9d780c029cf8ad68b26eb66f8f21a828",
+    "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+    "main.tex": "a00ed6a80532a8c114d5514100a28c785779e6fed67d72f0427788c7959d1086",
+    "references.bib": "5e15ec815edfeae8030fac8bb90b767e18c9d0ffd84a4ddece7f92cd167722f4",
+    "sections/01_introduction/INTERFACE.md": "5b1064545297d0200089b5d1b3b72f10cefdb74f6af41059eede012bac04fb31",
+    "sections/01_introduction/section.tex": "6640aff42b15fac9baae3576119138a282222cd8a3da6303ca11bd47d4ba4805",
+    "sections/02_notation/01_conventions.tex": "3e15b5ecc591c30a9130602f3f091163cb663075cea1bd75d49f78bddb38ef64",
+    "sections/02_notation/02_tautological_classes.tex": "0de428057451a6e0c4f4628cd38fca486c9b71764cc0e512515148165e212af6",
+    "sections/02_notation/03_gluing.tex": "79b7f2542fb44f443655e81436b2fe2c8cc2e087970566517e8a5b9d67fa6d90",
+    "sections/02_notation/04_boundary_and_forgetting.tex": "5e9cfd3f45044887d826995808b746eb04655d06e71447a1d20ae9b69ff01c7c",
+    "sections/02_notation/INTERFACE.md": "025d344c6c17da4b4e6578e30119d14bfdc4fdc4ed68c8a186d892836d5a5237",
+    "sections/02_notation/section.tex": "67dbb8f92f0baebdadb56b297c414b1e5f750d5794c2f68cd7609292dc4ac602",
+    "sections/02_notation/writer_handoff.md": "d7cb2c68df8cfa2fae82bccd3f05db6c66e73a0988c70188cee3e00068de66a5",
+    "tex/preamble.tex": "cfab442af4bd241661864027125f7f5ad85509420f09a85e0276ce3cc7e2d037",
+    "workflow/PROTOCOL.md": "5f62e2b38bb77560dba3e749b7d8801d9b979f3fb3c739b7fba20daea243d11f",
+    "workflow/context.md": "7c9bc6f2e5609f2ffc5abe84ce1b2ab86d9dc1b1337909e878cf29b4cb31fc81",
+    "workflow/roles/academic.md": "225cbe884a385fe33ec7e4ea20e2bf8bb89e6d7d6eeb92e2feff66c4e8ade72c",
+    "workflow/roles/coordinator.md": "7287561fc713aa99964570e21df4b35e9dbd0452c2a7f2a862288b2683219b03",
+    "workflow/roles/math.md": "2dc13963239a7e57666b1749a024eaf8bfdc003399c215c3676460608986904a",
+    "workflow/roles/readability.md": "a58bceb5e6e216c6d01145ebe25b1d5fdabd987a2b3e141c633639424494f603",
+    "workflow/roles/writer.md": "32c4526003a1e0b648119ca8cabfc12306c8ad824026ade87d302e516e179216"
+  },
+  "round": 1,
+  "scope": {
+    "scope_files": [
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "dd7c6480ceb517f46595b0658f38e8ca724a64fa8612c707ab97abad72189b51",
+  "unit": "s02"
+}

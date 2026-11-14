@@ -1,0 +1,492 @@
+--- previous/AGENTS.md
++++ AGENTS.md
+@@ -39,6 +39,7 @@
+ 
+ - 全文首次引入的数学对象和符号先定义再使用，包括定理、公式、图表和图注；说明必要的类型、范围、量词及作用域。哑变量在所在公式或紧邻文字中绑定。第 2.2 节统一引入 psi、kappa、Chern 特征。
+ - 以全文连续阅读为前提，已有定义直接沿用，不在每节开头重新介绍 g、n、模空间、Hodge 丛或罗列已固定的记号。只有回顾确实帮助理解关键步骤时才简短重述或引用原定义位置；每次回顾须有具体作用。额外的局部假设和本节新采用的交数规范仍需说明。
++- 决定读者如何理解引言中积分、次数和定义域的全局约定，应在引言的相关对象首次出现处说清；后续章节的局部工具在需要时再引入。迁移说明后同时检查原处与新处，避免留下缺失、重复或含义变化。
+ - 全文沿用引言和 workflow/context.md 的记号：g_2 = 2g-3，Hodge 类下标用 j_1, ..., j_ell，ell 表示该乘积的因子数；保留 z_{0,1}、rho、b 等既有名字。不得另起别名或为迁就笔记换字母。
+ - 尽量少设符号；只为反复使用、具有独立作用且确实减轻阅读负担的对象设专名。一次性的短表达式直接写出。按数学用途选择字母组，区分 Hodge 下标、标记编号、计数、次数、解析变量和常数，避免同一论证中的重载与视觉混淆。
+ - 作者在 INTERFACE.md 中记录继承和新增记号、定义位置、作用域及新增符号的必要性；协调者维护共享约定。易读性审核分别检查定义、一致性、符号数量和字母设计；数学审核核对定义、范围和语义，学术规范审核核对文献记号换算。任一未解决的记号问题都须返工。
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -1,11 +1,44 @@
+-# Introduction baseline
++# Introduction baseline — limited clarity revision
+ 
+-Status: existing baseline; theorem statements are targets, not approved proofs.
++Status: existing baseline, with an explicitly authorized clarity revision for USER-002 in the s02 trial. This is not whole-section acceptance. The four theorem statements remain targets, not approved proofs; their labels, order, constants and requested precision are unchanged.
+ 
+-Exports: A_g, B_g(h), B_g, normalized Hodge insertions and N_g; Hodge indices j_1, ..., j_ell and product length ell; F(j), G(j); g_2 = 2g-3, J_n(z), z_{0,1}, rho and b.
++## Global conventions at first use
+ 
+-Notation definitions: the opening pure Hodge product defines the Hodge indices; Theorem 1.2 defines F(j), G(j); Theorem 1.3 defines g_2 and the Bessel notation. Preserve these names in later sections. Full conventions and symbol-selection rules are in workflow/context.md.
++- The opening defines `g,n` as nonnegative integers with `2g-2+n>0`, interprets `\MM_{g,n}` as the proper Deligne–Mumford stack over `\mathbb C`, and defines `\MM_g` for `n=0`, `g>=2`.
++- The rational Chow ring `A^*(\MM_{g,n})_{\mathbb Q}` and complex-codimension grading are stated in that opening, before the first Chern classes. Degree means complex codimension throughout the paper.
++- The Hodge bundle and positive-index classes are defined in the next paragraph. The same paragraph now includes `\lambda_0=1` and `\lambda_j=0` for integers `j>g`.
++- Immediately before the first integral `eq:phi-1`, integration is specified as the degree of the codimension-`3g-3+n` component as a zero-cycle on the stack, including stabilizer weights. Scalar coefficients may be extended when necessary.
++- These conventions were relocated from 2.1 to their first introductory use. Later sections inherit them directly; no repetition or routine list of back-references is needed.
+ 
+-Labels: sec:introduction; thm:lambda-one; thm:fixed-insertions; thm:top-hodge; thm:fixed-defect.
++## Exported notation and scopes
+ 
+-Existing abstract and introduction prose contain drafting placeholders. Preserve the target statements until an explicit revision is assigned.
++| Symbols | First definition / type and range | Scope and purpose |
++| --- | --- | --- |
++| `g,n`, `\MM_{g,n}`, `\MM_g` | Opening; stable genus/marking pair and moduli stack | Throughout the paper |
++| `A^*`, `A^a` on `\MM_{g,n}` | Opening rational Chow convention; degree-`a` part consists of codimension-`a` classes | Ambient intersection ring; moved from 2.1, with no new alias |
++| `\EE`, `\lambda_j` | Hodge-bundle paragraph; rank-`g` bundle and codimension-`j` Chern classes for `1<=j<=g`; `\lambda_0=1`, vanishing for `j>g` | All relevant moduli stacks; extension conventions moved from 2.1 |
++| `\ell`, `j_1,...,j_\ell` | Text and display `eq:phi-1`; positive integer factor count and positive Hodge indices at most `g` | Nonempty pure Hodge products; no global fixedness assumption is imposed by this first definition |
++| `\pi_{n,m}` | Forgetting paragraph; `0<=m<n`, `2g-2+m>0` | Forgets the last `n-m` markings and stabilizes; its Hodge pullback property gives the dimension-vanishing argument |
++| `A_g`, `B_g(h)`, `B_g` | Normalization paragraph before Theorem 1.1; `g>=2`, integer `0<=h<=g`; `B_g=B_g(0)` | Unmarked intersection numbers; `h=g` uses `\lambda_0=1` |
++| `P(\lambda)`, `d`, `\langle P(\lambda)\rangle_g` | Same paragraph; homogeneous Hodge polynomial of degree `d`, `0<=d<=3g-3` | Normalized insertion with nonnegative background exponent |
++| `\Cin(x)`, `N_g` | Theorem `thm:lambda-one`, now before the asymptotic display; real `x>=0`, genus `g>=2` | Exact original definitions retained; moved before their first theorem use |
++| `F(j)`, `G(j)` | Theorem `thm:fixed-insertions`; factorial product and cubic sum of the fixed list of positive indices | The argument notation `j` is retained; the theorem fixes both indices and product length |
++| `g_2=2g-3`, `J_n(z)`, `z_{0,1}`, `\rho`, `b` | Theorem `thm:top-hodge`; original Bessel and correction definitions | Names and values retained; `b` is now defined before its use in the asymptotic display |
++
++Local dummy indices remain bound by the displayed sum, product or integral in which they occur. Full symbol-selection rules are in `workflow/context.md`.
++
++## Clarified vanishing and domains
++
++For a top-degree Hodge product, pullback from a stable lower-marking target gives a class of degree above the target dimension. The text now explicitly chooses `m=0` for `g>=2,n>=1` and `m=1` for `g=1,n>=2`. Genus zero has no positive-degree Hodge classes, and the convention `\ell>=1` excludes the empty product. Thus `\int_{\MM_{1,1}}\lambda_1=1/24` remains the only marked case in this nonempty positive-class setting. The temporary `\tilde\alpha` and target-class aliases have been removed.
++
++The definitions of `B_g(h)` and normalized insertions now state their integer/range conditions explicitly. Theorem 1.4 also explicitly calls `h` an integer. These clarifications do not alter any asymptotic target.
++
++## Labels and checks
++
++Preserved section and theorem labels: `sec:introduction`, `thm:lambda-one`, `thm:fixed-insertions`, `thm:top-hodge`, `thm:fixed-defect`.
++
++Preserved equation labels: `eq:phi-1`, `eq:phi-2`, `eq:111`, `eq:P111`, `eq:g111`, `eq:gh11`. The four main target equation environments are byte-for-byte identical to the r002 archive. There remain exactly four Introduction theorems in the original order, so their numbering is unchanged.
++
++No new source or global symbol was introduced. The baseline value `1/24` and all target constants are retained. The organization placeholder was replaced by a paragraph explicitly describing the planned proof routes, without claiming their completion. The unrelated abstract is unchanged. Psi, logarithmic kappa and Chern characters remain first defined in 2.2.
++
++The same original reviewers must examine this limited Introduction revision together with 2.1–2.2 in the new frozen trial snapshot. The response to USER-002 is `workflow/trials/s02-01-02/r002/author_response.json`; earlier archives and reports remain unchanged.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -1,37 +1,43 @@
+ % !TeX root = ../../main.tex
+ \section{Introduction}
+ \label{sec:introduction}
+-Let $g, n$ be non-negative integers such that $2g-2+n>0$, and $\MM_{g,n}$ (or $\MM_g$ when $n=0$
+-and $g \ge 2$) be the moduli space of stable curves of genus $g$ with $n$ marked points. The Hodge
+-bundle $\EE$ over $\MM_{g,n}$ is defined as the rank $g$ vector bundle whose fiber over the moduli
+-point $[C; p_1, \dots, p_n] \in \MM_{g,n}$ is $H^0(C,\omega_C)$, where $\omega_C$ is the dualizing sheaf.
+-Denote the $j$-th Chern class of the Hodge bundle $\EE$ by
+-\[\lambda_j=c_j(\EE),\quad j=1,\dots, g,\]
+-which is called the $j$-th Hodge class.
+-We consider the asymptotic behavior of the following \emph{pure Hodge integrals}:
++Let $g,n$ be nonnegative integers with $2g-2+n>0$.  Denote by
++$\MM_{g,n}$ the proper Deligne--Mumford stack over $\mathbb C$ of
++stable curves of genus $g$ with $n$ marked points, and write $\MM_g$
++when $n=0$ and $g\geq2$.  We work in its rational Chow ring
++$A^*(\MM_{g,n})_{\mathbb Q}$, where degree means complex codimension.
++
++The Hodge bundle $\EE$ has rank $g$ and fiber $H^0(C,\omega_C)$ at
++$[C;p_1,\ldots,p_n]$, where $\omega_C$ is the dualizing sheaf of the
++curve $C$.  Its Chern classes are the Hodge classes
++\[\lambda_j=c_j(\EE)\in A^j(\MM_{g,n})_{\mathbb Q},
++\qquad 1\leq j\leq g.\]
++We also set $\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.
++
++The stack has complex dimension $3g-3+n$.  Integration selects the
++component of that codimension and takes the degree of the resulting
++zero-cycle, including stabilizer weights.  Scalar
++coefficients may be extended when necessary.  For a positive integer
++$\ell$, we study the \emph{pure Hodge integrals}
+ \begin{equation}
+ \int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell},\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+ \label{eq:phi-1}
+ \end{equation}
+ as $g$ tends to infinity.
+ 
+-The sum of the degrees $j_1, \dots, j_\ell$ in \eqref{eq:phi-1} needs to equal the dimension of $\MM_{g,n}$,
+-that is
++The integral in \eqref{eq:phi-1} vanishes unless
+ \[j_1+\cdots+j_\ell=3g-3+n.\]
+-On the other hand, let $\pi_{n,m}:\MM_{g,n}\to \MM_{g,m}\ (n > m, 2g-2+m>0)$ be the forgetful map that forgets the
+-last $n-m$ marked points and stabilizes the curve, and $\tilde{\lambda}_j$ be the $j$-th Hodge class on $\MM_{g,m}$. Then we have
+-\[\lambda_j=\pi_{n,m}^*\tilde{\lambda}_j,\]
+-and therefore
+-\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}
+-=\int_{\MM_{g,n}}\pi_{n,m}^*\left(\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}\right).\]
+-Note that the degree of $\tilde{\alpha}=\tilde{\lambda}_{j_1}\cdots \tilde{\lambda}_{j_\ell}$
+-is $j_1+\cdots+j_\ell$, which is greater than the dimension $3g-3+m$ of $\MM_{g,m}$, so
+-$\tilde{\alpha}=0$, hence
+-\[\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell}=0.\]
+-So there are only two kinds of nontrivial pure Hodge integrals:
+-one is
++For integers $0\leq m<n$ with $2g-2+m>0$, let
++$\pi_{n,m}:\MM_{g,n}\to\MM_{g,m}$ forget the last $n-m$ markings
++and stabilize.  The Hodge bundle on the source is pulled back from the
++target.  When the degree condition above holds, the corresponding
++product on the target has degree $3g-3+n>3g-3+m$, so it vanishes,
++as does its pullback.  Hence \eqref{eq:phi-1} vanishes for $g\geq2$,
++$n\geq1$ (take $m=0$), and for $g=1$, $n\geq2$ (take $m=1$).
++In genus zero there are no positive-degree Hodge classes.  The only
++remaining marked case is
+ \[\int_{\MM_{1,1}}\lambda_1=\frac{1}{24},\]
+-and the others are
++and the large-genus problem therefore reduces to the unmarked integrals
+ \begin{equation}
+ \int_{\MM_g}\lambda_{j_1}\cdots \lambda_{j_\ell},
+ \quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+@@ -39,31 +45,34 @@
+ \end{equation}
+ where $g\ge 2$.
+ 
+-We denote
++For $g\geq2$ and an integer $h$ with $0\leq h\leq g$, set
+ \[A_g=\int_{\MM_g}\lambda_1^{3g-3},\quad B_g(h)=\int_{\MM_g}\lambda_{g-h} \lambda_1^{2g-3+h},
+-\quad B_g=B_g(0),\]
+-and, for a homogeneous polynomial $P(\lambda)$ of Hodge classes with degree $d$,
++\quad B_g=B_g(0).\]
++For a homogeneous polynomial $P(\lambda)$ of Hodge classes of degree
++$d$, with $0\leq d\leq3g-3$, define
+ \[\langle P(\lambda) \rangle_g=\frac{1}{A_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
+ The main results of the present paper are as follows.
+ 
+ \begin{thm}
+ \label{thm:lambda-one}
++For real $x\geq0$, define
++\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \qquad
++N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+ As $g\to \infty$, we have
+ \begin{equation}
+ A_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+ \left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right),
+ \label{eq:111}
+ \end{equation}
+-where $\Cin(x)$ is the cosine integral function
+-\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \mbox{ and }
+-N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+ \end{thm}
+ 
+ \begin{thm}
+ \label{thm:fixed-insertions}
+-Given $P(\lambda)=\lambda_{j_1}\cdots \lambda_{j_\ell}$ with $j_1, \dots, j_\ell$ fixed, let
+-\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2),\]
+-then, as $g\to\infty$, we have
++Fix $\ell$ and the positive indices $j_1,\ldots,j_\ell$, and put
++$P(\lambda)=\lambda_{j_1}\cdots\lambda_{j_\ell}$.  For this list of
++indices, define
++\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2).\]
++Then, as $g\to\infty$, we have
+ \begin{equation}
+ \langle P(\lambda) \rangle_g=\frac{1}{F(j)}\left(1+\frac{4\pi^2-42}{9g^2}G(j)+
+ \frac{4\pi^2-40}{3g^3}G(j)+O(g^{-4})\right).
+@@ -75,23 +84,30 @@
+ \label{thm:top-hodge}
+ Let $g_2=2g-3$, $J_n(z)$ be the $n$-th Bessel function of the first kind, $z_{0,1}$ be the first
+ positive zero of $J_0$, and $\rho=6z_{0,1}J_1(z_{0,1})$.
++Set
++\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
+ As $g\to\infty$, we have
+ \begin{equation}
+ B_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
+ 1+\frac{b}{g_2}+O(g_2^{-2})\right),
+ \label{eq:g111}
+ \end{equation}
+-where
+-\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
+ \end{thm}
+ 
+ \begin{thm}
+ \label{thm:fixed-defect}
+-With $\rho$ as above, for a fixed $h \ge 0$, we have
++With $\rho$ as above, for a fixed integer $h\geq0$, we have
+ \begin{equation}
+ \frac{B_g(h)}{B_g}\sim \frac{1}{h!}\left(\frac{24g^2}{\rho^2}\right)^h,\quad g\to\infty.
+ \label{eq:gh11}
+ \end{equation}
+ \end{thm}
+ 
+-The paper is organized as follows. asdf
++The planned organization separates two proof routes.  After the geometric
++identities in Section~2, Sections~3--5 develop uniform stable-graph and
++Weil--Petersson estimates for Theorems~\ref{thm:lambda-one} and
++\ref{thm:fixed-insertions}.  Section~6 treats
++Theorem~\ref{thm:top-hodge} through top-Hodge intersection formulas
++and Bessel analysis, independently of the Weil--Petersson asymptotics.
++Sections~7--8 address Theorem~\ref{thm:fixed-defect} through linear
++Hodge potentials, transport equations and singularity analysis.
+--- previous/sections/02_notation/01_conventions.tex
++++ sections/02_notation/01_conventions.tex
+@@ -1,17 +1,6 @@
+ % !TeX root = ../../main.tex
+ \subsection{Intersection conventions and normalization}
+ \label{subsec:s02:01}
+-
+-We work in the rational Chow ring
+-$A^*(\MM_{g,n})_{\mathbb Q}$.  Degree always means complex codimension:
+-for each integer $a\geq0$, a class in
+-$A^a(\MM_{g,n})_{\mathbb Q}$ has degree $a$.  Integration is the degree of a
+-zero-cycle on the stack, including its stabilizer weights.  For a class
+-with several homogeneous components, the integral selects the component
+-of degree $3g-3+n$.  We allow extension of the coefficient field when
+-scalar parameters occur.
+-
+-We set $\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.
+ 
+ If $\theta$ is a class with only positive-degree components, its
+ exponential means the formal sum
+--- previous/sections/02_notation/INTERFACE.md
++++ sections/02_notation/INTERFACE.md
+@@ -1,12 +1,12 @@
+ # Notation and geometric identities
+ 
+-Status: **drafting / incomplete**. This is the authorized trial draft of subsections 2.1 and 2.2 only, revised in response to USER-001 after trial round 1. No result in s02 has been approved. Subsections 2.3 and 2.4 and the section roadmap remain unwritten; their WORKFLOW-TODO markers remain in place. The full section is not ready for formal submission or acceptance.
++Status: **drafting / incomplete**. This is the authorized trial draft of subsections 2.1 and 2.2, now coordinated with a limited Introduction clarity revision in response to USER-002 after trial round 2. No result in s02 has been approved. Subsections 2.3 and 2.4 and the section roadmap remain unwritten; their WORKFLOW-TODO markers remain in place. The full section is not ready for formal submission or acceptance.
+ 
+ ## Scope and assumptions
+ 
+ - The standing scope of stable pairs of nonnegative integers `(g,n)`, with `2g-2+n>0`, is inherited directly from the Introduction. It is recorded here for collaborators and is not reintroduced in the manuscript opening.
+-- Classes lie in the rational Chow ring of the proper Deligne–Mumford stack, graded by complex codimension. Coefficients may be extended for scalar parameters.
+-- Integration selects codimension `3g-3+n` and includes stabilizer weights. All exponentials in classes are truncated by codimension at finite genus.
++- The Introduction now first states the stack-over-`\mathbb C` interpretation, rational Chow ring, complex-codimension grading, scalar coefficient extension, stabilizer weights and top-degree integration. These are inherited directly in 2.1.
++- The local material in 2.1 begins with formal exponentials and their finite-genus truncation by codimension, then derives the factorial conversion.
+ - Insertion indices, product length, defect and expansion order are fixed where specified. No uniform estimate over graph sums or growing marking counts is supplied by this trial.
+ 
+ ## Inherited notation
+@@ -16,11 +16,12 @@
+ | Symbols | Definition / type and range | Scope |
+ | --- | --- | --- |
+ | `g,n`, `\MM_{g,n}`, `\MM_g` | Introduction opening; genus and number of markings, moduli stack and stability are inherited without a new setup in 2.1 | Throughout the paper |
+-| `\EE`, `\lambda_j` | Introduction opening; rank-`g` Hodge bundle and Chern class of codimension `j`; 2.1 extends to `\lambda_0=1` and `\lambda_j=0` for integers `j>g` | All relevant moduli stacks |
++| `A^*(\MM_{g,n})_{\mathbb Q}` and `A^a` | Introduction opening; rational Chow ring and its codimension-`a` part; relocated from 2.1 to first introductory use | Ambient intersection ring inherited throughout the paper |
++| `\EE`, `\lambda_j` | Introduction Hodge-bundle paragraph; rank-`g` bundle and codimension-`j` Chern classes; `\lambda_0=1` and vanishing for integers `j>g` are now stated there | All relevant moduli stacks; no Chern-class convention is repeated in 2.1 |
+ | `j_1,...,j_\ell`, `\ell` | Introduction pure Hodge product; positive Hodge indices and factor count `\ell>=1`; each index is at most `g` when used; inherited directly, with fixedness specified by the asymptotic convention table | Hodge products; fixed for low-index asymptotics |
+-| `A_g`, `B_g(h)`, `B_g`, `\langle P(\lambda)\rangle_g`, `N_g` | Exact Introduction definitions are retained | Unmarked integrals and normalizations; displayed factorial conversion has `g>=2`, `0<=h<=g` |
++| `A_g`, `B_g(h)`, `B_g`, `\langle P(\lambda)\rangle_g`, `N_g` | Introduction definitions retained with explicit `g>=2`, integer `0<=h<=g`, and homogeneous insertion degree `0<=d<=3g-3`; `N_g` is defined before its first use in Theorem 1.1 | Unmarked integrals and normalizations; displayed factorial conversion has `g>=2`, `0<=h<=g` |
+ | `g_2=2g-3` | Introduction, Theorem `thm:top-hodge`; inherited without an alias or a routine manuscript pointer | Unmarked top-Hodge exponent and factorials |
+-| `h` | Fixed nonnegative defect from Theorem `thm:fixed-defect` | `\lambda_{g-h}`; genus sufficiently large, and `0<=h<=g` in the finite-genus example |
++| `h` | Introduction normalization paragraph, integer `0<=h<=g`; fixed as `g` grows in Theorem `thm:fixed-defect` | `\lambda_{g-h}`; genus sufficiently large in fixed-defect asymptotics |
+ | `F(j),G(j),J_n(z),z_{0,1},\rho,b` | Introduction definitions retained; no new use or redefinition in this trial | Their original theorem scopes |
+ 
+ ## New notation and definition order
+@@ -29,7 +30,6 @@
+ 
+ | Symbol | Definition location | Type, range and scope | Reason for the name |
+ | --- | --- | --- | --- |
+-| `A^*(\MM_{g,n})_{\mathbb Q}` and `A^a` | 2.1 opening | Rational Chow ring and its codimension-`a` part; `a` is a nonnegative integer | States the ambient intersection theory and degree convention |
+ | `\pi:\MM_{g,n+1}->\MM_{g,n}`, `s_i`, `\omega_\pi` | 2.2 opening, before `eq:s02:psi-definition` | The inherited map `\pi_{n+1,n}` is identified concisely with the universal stable curve, without retelling the forgetting operation; section with `1<=i<=n`; relative dualizing sheaf; local to the definitions and normalization argument | One local map symbol serves the cotangent definition, logarithmic kappa definition and normalization argument |
+ | `L_i`, `\psi_i` | `eq:s02:psi-definition` | Marking cotangent line and its first Chern class of codimension one, `1<=i<=n` | Repeated descendant and marking terms |
+ | `\kappa_a` | `eq:s02:kappa-definition` | `\pi_*(\psi_{n+1}^{a+1})` of codimension `a`, integers `a>=0` | Repeated logarithmic tautological classes |
+@@ -42,7 +42,7 @@
+ | `\mathsf B_m` | `eq:s02:bernoulli-convention` | Bernoulli numbers, integers `m>=0`, with generating variable `z` formal; `\mathsf B_2=1/6` | Needed in GRR; distinct typography prevents a collision with `B_g` |
+ | `D_i` | Normalization argument after `eq:s02:kappa-conversion` | Divisor image of `s_i` on the universal curve; `1<=i<=n`; this paragraph only | Makes the section self-intersection computation precise |
+ | `w,Q,L,c` | Lemma `lmm:s02:exp-to-power` | Integer `0<=w<=3g-3+n`, class `Q` of codimension `w`, divisor `L`, scalar `c`; local to the lemma | States the reusable conversion without specializing its insertion |
+-| `\theta` | 2.1 exponential paragraph | Class with only positive-degree components; local | Defines formal exponentials and graded truncation |
++| `\theta` | 2.1 opening | Class with only positive-degree components; local | Defines formal exponentials and graded truncation, the first local tool developed in 2.1 |
+ | `i,k,a,j,m,\nu,t,z` when bound or formal | Adjacent definitions or displayed sums | `i` marks original points, `k` is a local summation index, `a` a local degree, `j` a Hodge-class index, `m` a Bernoulli index, `\nu` a root index; `t,z` are explicitly formal variables in their respective scopes | Local variables have no new global role; no alias for an existing quantity is introduced |
+ 
+ The WP scale `\alpha` is intentionally deferred until the WP formulas use it. No graph-loop or core-count notation is introduced by this trial.
+@@ -60,13 +60,13 @@
+ | `eq:s02:kappa-conversion` | For every integer `a>=0`, nonlogarithmic `\pi_*c_1(\omega_\pi)^{a+1}=\kappa_a-\sum_i\psi_i^a`. The short section-intersection argument is included. |
+ | `eq:s02:lambda-one-grr` | For stable `(g,n)`, `12\lambda_1=\kappa_1+\delta-\sum_i\psi_i`; unmarked specialization explicitly restricted to `g>=2`. |
+ | `lmm:s02:chern-exponential`, `eq:s02:chern-exponential` | Formal Chern-polynomial exponential in `A^*[[t]]`, using even-character vanishing; proved from roots. |
+-| `eq:s02:lambda-two-three` | `\lambda_2=\lambda_1^2/2`, `\lambda_3=\lambda_1^3/6+2\mathrm{ch}_3`, with the out-of-rank vanishing convention from 2.1 applying if necessary. |
++| `eq:s02:lambda-two-three` | `\lambda_2=\lambda_1^2/2`, `\lambda_3=\lambda_1^3/6+2\mathrm{ch}_3`, with the out-of-rank vanishing convention now inherited from the Introduction. |
+ 
+ Subsection labels remain `subsec:s02:01` and `subsec:s02:02`.
+ 
+ ## Dependencies and verified primary sources
+ 
+-- Introduction supplies the bundle and Chern-class definitions and target normalization notation. Its theorem statements remain targets, not proved inputs to this trial.
++- Introduction supplies the bundle, Chern classes and rank conventions, stack/rational-Chow/degree/integration conventions and normalization notation. These first-definition locations were clarified under USER-002. Its theorem statements remain targets, not proved inputs to this trial.
+ - `Mum83`: David Mumford, *Towards an Enumerative Geometry of the Moduli Space of Curves* (1983), §5, formula (5.2) for GRR and Corollary (5.3) for even-character vanishing. Author PDF: https://www.dam.brown.edu/people/mumford/alg_geom/papers/1983b--EnumGeomModuli-NC.pdf . PDF pages 34 and 36 contain these displays. The original Bernoulli convention and kappa-index typography are handled by using the corrected modern presentation in the next item.
+ - `FP00`: Carel Faber and Rahul Pandharipande, *Hodge integrals and Gromov–Witten theory*, Invent. Math. 139 (2000), 173–199, DOI `10.1007/s002229900028`. Author PDF: https://webspace.science.uu.nl/~faber010/17.pdf . §1.1, unnumbered **Theorem (Mumford)**, PDF page 6 / journal page 178, gives the rational-Chow formula with the ordered double cover, one-half pushforward, signed Bernoulli convention and nonlogarithmic kappa. The same source explicitly flags the convention difference and kappa-term typo in Mumford. §1.3, equation (16), PDF page 11 / journal page 183, encodes the negative marking correction under the forgetful convention.
+ - `FP00, Proposition 1` is a virtual stable-map extension. It is **not** the locator used for the clean family statement in this trial, correcting the outline's suggested locator.
+@@ -74,7 +74,8 @@
+ 
+ ## Remaining work / unresolved scope
+ 
+-- USER-001 is addressed by starting 2.1 with the new Chow, grading and stack-integration conventions, removing the inherited-notation inventory and routine Introduction pointers, and shortening the 2.2 opening to the universal-curve identification. New definitions, local bounds and the GRR normalization arguments are retained. The concrete response is `workflow/trials/s02-01-02/r001/author_response.json`; the original round-1 pass reports are unchanged and do not sign this revision.
++- USER-001's continuous-paper principle remains in force: no repeated basic setup or inherited-notation inventory appears in the paper opening. Its r001 response and original reports are unchanged.
++- USER-002 relocates the global conventions and Chern-class extension to their first introductory use. The Introduction also clarifies stable forgetting targets, low-genus exceptions and normalization ranges. Section 2.1 now begins with formal exponentials and develops only the local conversion and parameter/error conventions. Section 2.2 is unchanged. The concrete response is `workflow/trials/s02-01-02/r002/author_response.json`; the original reviewers must sign a new snapshot containing the revised Introduction and 2.1–2.2.
+ - Subsections 2.3 (gluing and Hodge restrictions) and 2.4 (boundary exponentials and forgetting) are not drafted and export no results yet.
+ - `section.tex` still needs its authorized roadmap and transitions when the coordinator expands the writing scope. Proposed roadmap is in `writer_handoff.md`; the writer did not edit that file outside the assigned scope.
+ - Full-section build, static validation and three independent reviews are the coordinator's next checks. This interface makes no claim of reviewer approval or whole-section completion.
+--- previous/sections/02_notation/writer_handoff.md
++++ sections/02_notation/writer_handoff.md
+@@ -1,18 +1,21 @@
+ # s02 writer handoff — trial of 2.1 and 2.2
+ 
+-Status: drafting / incomplete. This handoff covers the authorized trial only, now revised in response to USER-001 after trial round 1. It is not a formal submission of the whole section and does not authorize acceptance. Original writer session must be retained for revision and for eventual completion of 2.3–2.4.
++Status: drafting / incomplete. This handoff covers the authorized trial, now coordinated with a limited Introduction revision for USER-002 after trial round 2. It is not a formal submission of either whole section and does not authorize acceptance. Original writer session must be retained for revision and for eventual completion of 2.3–2.4.
+ 
+ ## Files written
+ 
+-- `01_conventions.tex`: rational stack intersection convention; complex codimension; new degree-zero and out-of-rank Chern-class conventions; graded exponentials; exponential-to-power lemma and proof; exact `A_g` / `B_g(h)` factorial restoration; fixed-parameter/error conventions. The opening no longer reintroduces the inherited basic setup or inventories existing symbols.
++- `sections/01_introduction/section.tex`: limited USER-002 clarification and relocation of global conventions at first use; stable-forgetting dimension argument; normalization ranges; definition order and grammar; planned-organization paragraph. The four main target displays remain verbatim.
++- `sections/01_introduction/INTERFACE.md`: records this limited baseline revision, global first-definition locations and unchanged theorem targets.
++- `01_conventions.tex`: now starts with formal exponentials, followed by the exponential-to-power lemma and proof, exact `A_g` / `B_g(h)` factorial restoration, and fixed-parameter/error conventions. The global Chow/degree/integration/rank conventions have moved to the Introduction and are inherited directly.
+ - `02_tautological_classes.tex`: psi before logarithmic kappa; factorial-normalized Chern characters and Chern polynomial; total reduced boundary, chosen node and ordered branches; distinct-font Bernoulli numbers; fully normalized marked Mumford formula; nonlogarithmic conversion with a short section-intersection argument; divisor specialization; root-based exponential rewrite and lambda-two/lambda-three examples with proof.
+ - `INTERFACE.md`: exact assumptions, scopes and reasons for notation, result labels, verified primary locators, and explicit unfinished parts.
+ - `writer_handoff.md`: this record.
+ - `workflow/trials/s02-01-02/r001/author_response.json`: separate response to USER-001, with no open reviewer-issue responses and no alteration of the original pass reports.
++- `workflow/trials/s02-01-02/r002/author_response.json`: separate response to USER-002; the r001 response and all previous reports remain unchanged.
+ 
+-No changes were made to `section.tex`, 2.3, 2.4, the preamble, bibliography, other sections or workflow state.
++For USER-002, the only chapter edits are the authorized Introduction files and the assigned 2.1/interface/handoff files. Subsection 2.2 is unchanged from r002. No changes were made to the section-2 roadmap, 2.3, 2.4, the preamble, bibliography, abstract, other chapters or workflow state.
+ 
+-## USER-001 revision
++## USER-001 revision history
+ 
+ The updated writer/readability responsibilities and shared notation policy treat the paper as a continuous text. The earlier opening wrongly repeated the Introduction's basic setup; correctness of those repetitions did not justify them.
+ 
+@@ -22,7 +25,23 @@
+ - Shortened the 2.2 opening to identify `pi=pi_{n+1,n}` with the universal stable curve. It introduces sections and the dualizing sheaf in their needed roles without retelling the already defined forgetting operation.
+ - Removed the routine Introduction reference before the factorial example and the redundant prose labeling the root and Chern-class dummy indices. The psi/kappa/character definitions, boundary normalization, literature conversion and proofs remain intact.
+ 
+-No mathematical identity or hypothesis was changed. The shared responsibility files were read but not edited by the writer. The original three reports are unchanged; all three original reviewers must sign the new snapshot.
++No mathematical identity or hypothesis was changed in that revision. Its placement of the new global conventions at the start of 2.1 is superseded by USER-002 below. The shared responsibility files were read but not edited by the writer. The original three reports are unchanged; all three original reviewers must sign the new snapshot.
++
++## USER-002 revision
++
++Global information is now stated once at its natural first use in the Introduction:
++
++- Moduli-stack interpretation over `\mathbb C`, rational Chow products and complex-codimension degree are stated in the first moduli paragraph.
++- `lambda_0=1` and vanishing above rank accompany the first definition of the Hodge classes.
++- Stack integration, stabilizer weights, top-degree selection and scalar coefficient extension appear immediately before the first pure Hodge integral.
++
++The Introduction's forgetting argument now uses a direct dimension comparison on a stable target. It explicitly separates `g>=2,n>=1` (forget to `m=0`) and `g=1,n>=2` (forget to `m=1`), with genus zero excluded by positive-product/rank conventions and `(1,1)` retained. The unnecessary temporary target-class and tilde-alpha aliases are removed. The definitions of `B_g(h)` now specify `g>=2` and integer `0<=h<=g`; normalized homogeneous insertions specify `0<=d<=3g-3`.
++
++The definitions of `Cin,N_g` and `b` precede their first theorem use, without changing their formulas. The fixed-index theorem's grammar and the integer nature of the fixed defect are clarified. The Introduction's organization placeholder is replaced by a description explicitly framed as the planned proof routes. No proof is claimed complete.
++
++Section 2.1 now begins directly with the local formal-exponential tool and retains its degree conversion, local hypotheses, proof, factorial examples and parameter/error discussion. Section 2.2, including all first psi/kappa/character definitions and GRR normalization explanations, is byte-for-byte unchanged from r002.
++
++No new global symbol or source input was needed. The coordinator approved this relocation and low-genus clarification. Both interfaces record the exact first-definition locations. The response to USER-002 is in the r002 response file; the old responses, review reports and source archives are untouched.
+ 
+ ## Mathematical decisions
+ 
+@@ -42,16 +61,16 @@
+ - FP00 §1.3, (16), author PDF page 11 / journal page 183, for the marking correction under the forgetful convention.
+ - Bibliography keys `Mum83` and `FP00` were added by the coordinator. No shared bibliography change remains requested for this trial.
+ 
+-## Suggested section roadmap for the coordinator
++## Earlier unimplemented roadmap proposal
+ 
+ When authorized to fill `section.tex`, a short roadmap could say:
+ 
+ > We fix the grading and factorial normalizations, then recall Mumford's formula in the logarithmic kappa convention. These identities express Hodge insertions through odd Chern characters and the boundary. We next describe their behavior under normalization at nodes and give the boundary and forgetting formulas used in the later graph expansions.
+ 
+-The last sentence concerns unwritten 2.3–2.4 and is a proposal, not manuscript content or a completed claim.
++This quotation predates USER-002 and is retained only as handoff history. It was never inserted into the manuscript; no section-2 roadmap is drafted or updated in this revision.
+ 
+ ## Validation and next action
+ 
+-Author checks: all new mathematical notation has an adjacent definition and an interface entry; sums have explicit ranges; the GRR coefficient at `a=1` agrees with the stated divisor identity; Chern-log expansion gives coefficients `1/2` and `2` in the two examples. `git diff --check -- sections/02_notation` passed. A read-only Python check verified UTF-8, LF and final newline for all four authored files, unique trial labels and balanced theorem/proof/equation/tabular environments.
++Author source checks for USER-002 confirmed that `eq:111`, `eq:P111`, `eq:g111` and `eq:gh11` are byte-for-byte identical to the r002 archive, that exactly four Introduction theorems retain their original label order, and that 2.2 is unchanged. The final handoff also checks UTF-8/LF/final newlines, response JSON, unique labels and scoped diff formatting. No theorem proof or reviewer approval is inferred from these checks.
+ 
+-The revised trial must be built with `python workflow/trials/s02-01-02/build_preview.py`, then frozen by the coordinator for all three original reviewers to recheck. The section's remaining TODO markers deliberately prevent representing the whole unit as complete. The writer will stop editing after recording the new build result and await the coordinator's next instruction.
++The coordinator has updated `python workflow/trials/s02-01-02/build_preview.py` to typeset the revised Introduction followed by only 2.1–2.2. The writer may run that updated driver before handoff; its receipt records the actual result. The coordinator must verify and freeze r003 for all three original reviewers to recheck. The remaining section-2 TODO markers deliberately prevent representing the whole unit as complete. The writer will stop editing at handoff and await the coordinator's next instruction.
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -114,6 +114,8 @@
+ 
+ 用户在试审通过后提出修改时，单独记录用户反馈和原作者答复，保留原轮次的报告及归档；把当前试写状态转回 revising。原作者修改后重新冻结，由原三位审核者复审同一新快照。不能覆盖旧报告来制造曾经审核通过该新要求的记录。
+ 
++若用户授权同时澄清引言等前置章节，协调者明确扩展原作者的文件范围，并将前置章节纳入同一新快照和联读预览。复审同时检查新旧定义位置及其数学含义，既定目标公式保持不变；这不自动构成前置章节或当前整节的正式验收。
++
+ 后续完成整节时，先按常规 submit 冻结完整章节，再从试写记录中 bind 原审核者 ID，然后 dispatch 复用其上下文。不能因为整节状态中尚未绑定审核者，就重新 spawn 来替换参加试写的原审核者。
+ 
+ ## 验证脚本
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -32,6 +32,8 @@
+ 
+ Read the manuscript as one continuous paper. Once defined, notation is inherited directly: later sections should not reintroduce g, n, the moduli stack, the Hodge bundle or a list of existing normalizations. Do not add a routine back-reference for every inherited symbol. Briefly recall a definition or cite its original location only when that reminder materially helps the current argument, particularly for an important convention or a distant nonstandard definition. New intersection conventions and genuinely additional local hypotheses still need to be stated. The full notation ledger belongs in INTERFACE.md; it is not an opening inventory for the published prose. Review both missing first definitions and unnecessary repetition.
+ 
++Place global conventions needed to interpret the Introduction's integrals, degrees and parameter domains beside their first use there. Introduce later proof tools only where they become useful; do not move every technical definition to the Introduction. When relocating an explanation, read both locations together and update the interface ledger, checking that no assumption is lost, repeated needlessly or changed. Psi, logarithmic kappa and Hodge Chern characters remain together in Section 2.2.
++
+ Use the fewest names that make the argument easy to read. A dedicated symbol should have a recurring, independent role and save more reader effort than it costs. Write short one-off expressions directly. Frequency alone does not justify an alias for an existing name. Local coefficient indices such as $m$ in a coefficient-extraction lemma need an explicit scope; applying a general lemma to the unmarked problem means substituting $m=g_2$, not renaming $g_2$ throughout the paper.
+ 
+ Plan letters by purpose before choosing individual names. These preferences guide choices; they are not a requirement to use every family or a license to override an established convention.
+--- previous/workflow/roles/academic.md
++++ workflow/roles/academic.md
+@@ -15,6 +15,8 @@
+ 
+ 各项填写 status 和具体 evidence。原文不可取得而又无法核实关键输入时，明确列出实际缺口，不编造页码、定理编号或文献。
+ 
++涉及引言与后文的说明迁移时，联读两处，确认引言在相关对象首次使用时已有必要的全局约定，后文直接继承而不过度重复；技术性定义仍在适当位置引入。澄清陈述须保持目标结论、范围及文献归属。
++
+ ## 报告
+ 
+ 只写指定的 academic.json 和 academic_handoff.md，不修改正文或书目。使用真实 ID 和本轮模板。问题使用 ACADEMIC-001 等稳定 ID，列明位置、严重程度、问题和修正要求。
+--- previous/workflow/roles/math.md
++++ workflow/roles/math.md
+@@ -24,3 +24,5 @@
+ checks 的 status 为 pass、issue 或 not_applicable；后者仍需解释。复审时，原有 issue 要么沿用同一 ID 继续列出，要么列入 resolved_issue_ids 并在 summary 或 evidence 中说明已如何解决。保留对新差异的检查，不直接沿用旧快照的 pass。
+ 
+ notation 的 evidence 须给出关键定义和范围的位置，不能仅写“记号统一”。本节出现数学符号时不得省略或笼统标为 not_applicable。与易读性审核分工：你对定义的数学意义、类型和量词负责；符号数量与阅读负担由易读性审核专门判断。未定义或语义冲突的符号会阻止数学审核通过。
++
++定义或规范跨章节迁移时，同时核查新旧位置：引言中的积分、余维、参数范围和定理陈述是否已在使用前明确，后续推导是否仍继承同一约定。文字澄清不能改变既定目标公式、误差强度或有效范围。
+--- previous/workflow/roles/readability.md
++++ workflow/roles/readability.md
+@@ -18,6 +18,8 @@
+ 
+ 按全文的连续阅读顺序检查开头和过渡，不把每个 section 当作独立文章。“先定义后使用”不是“每节重新定义”。区分本节首次采用的交数规范、真正需要重申的局部假设，与已在引言固定的基本对象。不能仅因重复内容准确，就放过其对叙述效率和阅读节奏的影响。
+ 
++还须检查信息是否放在合适位置：读懂引言中的积分、次数或参数范围所必需的全局约定应在引言相应位置说明；后续技术定义不应提前堆入引言。说明迁移后，联读新旧位置检查是否既清楚又精练，不能只审被删短的一节。
++
+ 每项填写 status 和具体 evidence。易读性改写必须保持数学含义；怀疑语义或数学变化时列为问题并说明需要数学审核者确认。
+ 
+ 定义、一致性、符号数量和字母设计这四项必须分别作答。evidence 应指出检查范围、关键定义位置、与既有记号的对应，以及保留或删去新增符号的理由。本节出现数学符号时，不得把这些检查笼统标成 not_applicable；发现未定义、冲突、冗余或误导性选字，列为 issue 并要求原作者返工。
+--- previous/workflow/roles/writer.md
++++ workflow/roles/writer.md
+@@ -19,6 +19,8 @@
+ 
+ 仅在回顾对于理解当前关键论证确有帮助时，简短重述重要定义或引用最初位置，并说明其在此处的作用。新的对象、不同于既有范围的局部假设和新增交数规范必须交代；不能以删重复为由略去必要信息。INTERFACE.md 中可保留完整记号表供协作查询，但不能把内部清单搬进论文正文。
+ 
++按实际首次用途安排信息：解释引言中积分、次数和参数范围的全局约定，应在引言相关位置明确；只为后续论证服务的技术定义留到使用处。不要把后文的整段规范机械搬到引言，也不要为了缩短后文而给引言增加尚无用途的符号。跨章节迁移须在授权范围内完成，并同步核对两处衔接和定义位置。
++
+ 保留 g_2 = 2g-3，Hodge 类下标 j_1, ..., j_ell 及乘积长度 ell；Bessel 零点保留 z_{0,1}，不改称 j。引用文献时把原文记号译入本文约定，必要时给一次换算，不让多个名字并行。
+ 
+ 引入专名之前先判断能否直接写表达式或用文字说明。只保留频繁使用、具有独立作用且帮助理解的符号。先按用途规划字母组，再逐个选字母；检查它与引言、前置接口及同一论证中的现有含义是否冲突。不要占用 j_i 表示别类指标，也不要把 ell 改作自环数。新全局记号先向协调者提出，经共享约定统一后使用。
+--- /dev/null
++++ workflow/trials/s02-01-02/r002/author_response.json
+@@ -0,0 +1,21 @@
++{
++  "schema_version": 1,
++  "unit": "s02",
++  "round": 2,
++  "agent_id": "/root/s02_writer",
++  "responses": [],
++  "user_responses": [
++    {
++      "issue_id": "USER-002",
++      "resolution": "addressed",
++      "explanation": "Relocated genuinely global conventions from 2.1 to their natural first introductory use: the stack over C and rational Chow/codimension conventions accompany the first moduli definition; lambda_0 and vanishing above rank accompany the first Hodge-class definition; stack degrees, stabilizer weights, top-degree selection and coefficient extension precede the first integral. Clarified the stable-target dimension argument and the separate g>=2 and genus-one forgetting cases, retaining the nonempty positive-product convention and the (1,1) exception, and removed one-off target aliases. Specified g>=2 and integer 0<=h<=g for B_g(h), and 0<=d<=3g-3 for homogeneous normalized insertions. Moved existing Cin,N_g and b definitions before their first theorem use, clarified grammar and the fixed integer defect, and replaced the organization placeholder with an explicitly planned route. The four main target equation displays are byte-for-byte unchanged; all four theorem labels and their order are preserved. Section 2.1 now begins directly with formal exponentials and retains its local bounds, conversion proof, factorial examples and error conventions. Section 2.2 is unchanged. Both interfaces and the handoff record first-definition locations and the limited trial status; no new symbol/source, shared file, old response, old report or workflow state was changed.",
++      "changed_files": [
++        "sections/01_introduction/section.tex",
++        "sections/01_introduction/INTERFACE.md",
++        "sections/02_notation/01_conventions.tex",
++        "sections/02_notation/INTERFACE.md",
++        "sections/02_notation/writer_handoff.md"
++      ]
++    }
++  ]
++}
+--- previous/workflow/trials/s02-01-02/r001/author_response.json
++++ /dev/null
+@@ -1,20 +0,0 @@
+-{
+-  "schema_version": 1,
+-  "unit": "s02",
+-  "round": 1,
+-  "agent_id": "/root/s02_writer",
+-  "responses": [],
+-  "user_responses": [
+-    {
+-      "issue_id": "USER-001",
+-      "resolution": "addressed",
+-      "explanation": "Rewrote the 2.1 opening to begin directly with the new rational Chow, complex-codimension and stack-integration conventions. Removed the repeated g,n/stability/moduli-stack/base setup, the inherited Hodge-bundle and normalization inventory, the repeated Hodge-index and g_2 declarations, and the routine pointer to Theorem 1.3. Retained lambda_0 and out-of-rank conventions, the conversion lemma and proof, local bounds, factorial examples and fixed-parameter/error discussion. Shortened 2.2 to identify pi=pi_{n+1,n} with its new universal-curve role without retelling the forgetting operation, and removed redundant dummy-index commentary. Kept all new psi/kappa/character/boundary definitions, source-convention explanations and mathematical proofs. The full inherited-notation ledger remains in INTERFACE.md. Read the updated shared writer/readability responsibilities and notation policy; did not edit shared files or the original three pass reports. This revision requires a new frozen snapshot and signatures from the same reviewers.",
+-      "changed_files": [
+-        "sections/02_notation/01_conventions.tex",
+-        "sections/02_notation/02_tautological_classes.tex",
+-        "sections/02_notation/INTERFACE.md",
+-        "sections/02_notation/writer_handoff.md"
+-      ]
+-    }
+-  ]
+-}

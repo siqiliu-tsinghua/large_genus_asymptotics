@@ -1,0 +1,66 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Compared the current scope sources directly with r003: the only differences are commas changed to periods at Introduction:64 and 92, ending eq:111 and eq:g111. No object, definition, range or ordering changed. The substantive r003 first-use checks therefore remain applicable to this snapshot: global conventions precede the Introduction's classes/integrals at lines 4-23, normalization ranges remain at 48-53, and Cin/N_g and b remain defined before their target formulas. The 2.1 local variables and all 2.2 definitions are byte-for-byte unchanged. USER-002's placement correction remains intact.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The two verified source substitutions at Introduction:64,92 affect sentence punctuation only. The mathematical expressions, labels, constants, error orders and inherited symbols checked in r003 are unchanged, including g_2, j_1,...,j_ell, ell, z_{0,1}, rho and b. Both 2.1 and 2.2 are identical to r003; eq:P111 and eq:gh11 are untouched. The target-preservation record correctly distinguishes punctuation changes from mathematical changes, and Theorems 1.1-1.4 retain their order and numbers.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The r003 economy findings carry over after direct verification of the two-character delta. Neither edit adds a symbol, recall, alias or explanatory repetition. The Introduction still distributes global conventions at first use, 2.1 still begins with formal exponentials, and the full inherited ledger remains in the interfaces. The corrections close the two completed statements without restoring the former post-formula definition clauses; USER-001/USER-002's continuous-paper and placement improvements are preserved.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The planned organization paragraph at Introduction:106-113 and the local purpose statements in 2.1/2.2 are unchanged from the r003 substantive review. Replacing the sentence-final commas in (1.3) and (1.5) with periods changes no input, proof mechanism or dependency. No new route explanation is needed for this punctuation-only delta; the unfinished overall s02 roadmap remains outside trial scope.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The functional and page structure inspected in r003 is preserved. The current PDF still has six pages; comparison of the complete layout-text extraction found exactly two character differences, both comma-to-period substitutions on page 2. I visually inspected current page 2: Theorems 1.1-1.3, their definitions, displays and equation numbers retain their fit and spacing. The new periods appear at the intended ends of (1.3) and (1.5). No statement, proof, table or section has been reordered or newly split.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The r003 design audit remains valid: no mathematical letter or index changed. In particular the Hodge indices/product length, source/target marking counts, defect, locally bound indices, branch signs and mathsf B distinction retain their scopes. The only new glyphs are two sentence-final periods, visibly separated from equation numbers on current PDF page 2; they introduce no visual or semantic ambiguity.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The periods at Introduction:64 and 92 now correctly end the sentences introduced by 'As g tends to infinity, we have'. The auxiliary definitions already precede those displays, so no following definition clause needs a continuing comma. Eq:P111 already ended with a period and is unchanged. All paragraph and section transitions checked continuously in r003, including the Introduction-to-2.1 inheritance and 2.2's geometric progression, remain textually identical. The delta improves sentence closure without changing that flow.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh round-4 signature for the same scoped trial: limited Introduction clarifications together with 2.1-2.2. This does not approve either whole section or the unwritten 2.3/2.4 and s02 roadmap.",
+    "Read changes.diff, target_preservation.json and the original writer's response to ACADEMIC-001. Independently verified exactly two manuscript substitutions against r003 and unchanged 2.1/2.2. The previous READABILITY issue list was empty, so resolved_issue_ids remains empty; the academic issue is not relabeled as a readability issue.",
+    "All 24 archived file hashes and nine artifact hashes match submission.json; current scope files and both interfaces match their archives; the PDF hash matches its receipt. The six-page layout-text extraction differs from r003 only at the two corrected page-2 punctuation marks. Current page 2 was rendered and inspected, using the retained r003 whole-paper review for unaffected content. No source, state or older report was edited."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 4,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "43b20190b360ad0708874f0c6c4119b67444eaf209fd39a047e4e418704cf268",
+  "stage": "trial",
+  "summary": "Pass for the final scoped trial snapshot. The only manuscript changes from r003 are two sentence-final commas corrected to periods in eq:111 and eq:g111. They improve closure without affecting definitions, notation, mathematical content, structure or layout. No unresolved readability issue; no whole-section acceptance.",
+  "unit": "s02",
+  "verdict": "pass"
+}

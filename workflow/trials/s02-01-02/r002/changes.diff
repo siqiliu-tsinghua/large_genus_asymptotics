@@ -1,0 +1,295 @@
+--- previous/AGENTS.md
++++ AGENTS.md
+@@ -37,7 +37,8 @@
+ 
+ ## 数学与写作要求
+ 
+-- 每个数学符号先有定义再使用，包括定理、公式、图表和图注中的符号；说明对象类型、指标范围、固定或变化的参数及作用域。哑变量须在所在公式或紧邻文字中明确绑定。第 2.2 节统一引入 psi、kappa、Chern 特征。
++- 全文首次引入的数学对象和符号先定义再使用，包括定理、公式、图表和图注；说明必要的类型、范围、量词及作用域。哑变量在所在公式或紧邻文字中绑定。第 2.2 节统一引入 psi、kappa、Chern 特征。
++- 以全文连续阅读为前提，已有定义直接沿用，不在每节开头重新介绍 g、n、模空间、Hodge 丛或罗列已固定的记号。只有回顾确实帮助理解关键步骤时才简短重述或引用原定义位置；每次回顾须有具体作用。额外的局部假设和本节新采用的交数规范仍需说明。
+ - 全文沿用引言和 workflow/context.md 的记号：g_2 = 2g-3，Hodge 类下标用 j_1, ..., j_ell，ell 表示该乘积的因子数；保留 z_{0,1}、rho、b 等既有名字。不得另起别名或为迁就笔记换字母。
+ - 尽量少设符号；只为反复使用、具有独立作用且确实减轻阅读负担的对象设专名。一次性的短表达式直接写出。按数学用途选择字母组，区分 Hodge 下标、标记编号、计数、次数、解析变量和常数，避免同一论证中的重载与视觉混淆。
+ - 作者在 INTERFACE.md 中记录继承和新增记号、定义位置、作用域及新增符号的必要性；协调者维护共享约定。易读性审核分别检查定义、一致性、符号数量和字母设计；数学审核核对定义、范围和语义，学术规范审核核对文献记号换算。任一未解决的记号问题都须返工。
+--- previous/sections/02_notation/01_conventions.tex
++++ sections/02_notation/01_conventions.tex
+@@ -2,25 +2,16 @@
+ \subsection{Intersection conventions and normalization}
+ \label{subsec:s02:01}
+ 
+-Throughout this section, $g,n$ are nonnegative integers with $2g-2+n>0$.
+-We regard $\MM_{g,n}$ as the proper Deligne--Mumford stack over
+-$\mathbb C$ and work in its rational Chow ring
++We work in the rational Chow ring
+ $A^*(\MM_{g,n})_{\mathbb Q}$.  Degree always means complex codimension:
+ for each integer $a\geq0$, a class in
+-$A^a(\MM_{g,n})_{\mathbb Q}$ has degree $a$, and
+-$\dim_{\mathbb C}\MM_{g,n}=3g-3+n$.  Integration is the degree of a
++$A^a(\MM_{g,n})_{\mathbb Q}$ has degree $a$.  Integration is the degree of a
+ zero-cycle on the stack, including its stabilizer weights.  For a class
+ with several homogeneous components, the integral selects the component
+ of degree $3g-3+n$.  We allow extension of the coefficient field when
+ scalar parameters occur.
+ 
+-We retain the Hodge bundle $\EE$, its classes $\lambda_j$, and the
+-normalizations $A_g$, $B_g(h)$, $B_g$, $\langle P(\lambda)\rangle_g$ and
+-$N_g$ from the Introduction.  We extend the Chern-class convention by
+-$\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.  In a Hodge
+-product with $\ell\geq1$ factors, the indices remain
+-$j_1,\ldots,j_\ell\in\{1,\ldots,g\}$.  We also keep $g_2=2g-3$, as defined in
+-Theorem~\ref{thm:top-hodge}.
++We set $\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.
+ 
+ If $\theta$ is a class with only positive-degree components, its
+ exponential means the formal sum
+@@ -50,7 +41,6 @@
+ \end{prf}
+ 
+ For example, if $g\geq2$ and $h$ is an integer with $0\leq h\leq g$,
+-the definitions in the Introduction give
+ \begin{equation}
+ \label{eq:s02:hodge-factorials}
+ A_g=(3g-3)!\int_{\MM_g}e^{\lambda_1},
+--- previous/sections/02_notation/02_tautological_classes.tex
++++ sections/02_notation/02_tautological_classes.tex
+@@ -2,11 +2,8 @@
+ \subsection{Tautological classes and the GRR formula}
+ \label{subsec:s02:02}
+ 
+-We first define the classes entering the geometric identities.  Write
+-$\pi:\MM_{g,n+1}\to\MM_{g,n}$ for the forgetful map
+-$\pi_{n+1,n}$ of the Introduction.  Its source identifies with the
+-universal stable curve over $\MM_{g,n}$, and $\pi$ forgets the last
+-marking and stabilizes.  Let $s_i$ be its $i$th marking section for
++View $\pi=\pi_{n+1,n}:\MM_{g,n+1}\to\MM_{g,n}$ as the universal
++stable curve.  Let $s_i$ be its $i$th marking section for
+ $1\leq i\leq n$, and let $\omega_\pi$ be its relative dualizing
+ sheaf.  The cotangent line
+ bundle and its first Chern class are
+@@ -46,8 +43,7 @@
+ \end{equation}
+ Thus $\mathrm{ch}_a$ and $\kappa_a$ have degree $a$,
+ $\mathrm{ch}_1=\lambda_1$, and the coefficient of $t^j$ in
+-$c_t(\EE)$ has degree $j$.  Here $\nu$ numbers roots and $j$ is a
+-Chern-class index.
++$c_t(\EE)$ has degree $j$.
+ 
+ Let $\delta\in A^1(\MM_{g,n})_{\mathbb Q}$ be the total boundary
+ divisor class: every divisor of singular stable curves occurs with
+--- previous/sections/02_notation/INTERFACE.md
++++ sections/02_notation/INTERFACE.md
+@@ -1,23 +1,25 @@
+ # Notation and geometric identities
+ 
+-Status: **drafting / incomplete**. This is the authorized trial draft of subsections 2.1 and 2.2 only. No result in s02 has been approved. Subsections 2.3 and 2.4 and the section roadmap remain unwritten; their WORKFLOW-TODO markers remain in place. The full section is not ready for formal submission or acceptance.
++Status: **drafting / incomplete**. This is the authorized trial draft of subsections 2.1 and 2.2 only, revised in response to USER-001 after trial round 1. No result in s02 has been approved. Subsections 2.3 and 2.4 and the section roadmap remain unwritten; their WORKFLOW-TODO markers remain in place. The full section is not ready for formal submission or acceptance.
+ 
+ ## Scope and assumptions
+ 
+-- The standing scope is stable pairs of nonnegative integers `(g,n)`, with `2g-2+n>0`, over the complex numbers.
++- The standing scope of stable pairs of nonnegative integers `(g,n)`, with `2g-2+n>0`, is inherited directly from the Introduction. It is recorded here for collaborators and is not reintroduced in the manuscript opening.
+ - Classes lie in the rational Chow ring of the proper Deligne–Mumford stack, graded by complex codimension. Coefficients may be extended for scalar parameters.
+ - Integration selects codimension `3g-3+n` and includes stabilizer weights. All exponentials in classes are truncated by codimension at finite genus.
+ - Insertion indices, product length, defect and expansion order are fixed where specified. No uniform estimate over graph sums or growing marking counts is supplied by this trial.
+ 
+ ## Inherited notation
+ 
++This ledger is for collaboration. The paper inherits these definitions directly; it does not repeat this inventory or attach routine back-references to each name. A reminder is retained only where it serves a concrete mathematical step.
++
+ | Symbols | Definition / type and range | Scope |
+ | --- | --- | --- |
+-| `g,n`, `\MM_{g,n}`, `\MM_g` | Introduction opening; genus and number of markings, moduli stack; stability is restated in 2.1 | Throughout the paper |
++| `g,n`, `\MM_{g,n}`, `\MM_g` | Introduction opening; genus and number of markings, moduli stack and stability are inherited without a new setup in 2.1 | Throughout the paper |
+ | `\EE`, `\lambda_j` | Introduction opening; rank-`g` Hodge bundle and Chern class of codimension `j`; 2.1 extends to `\lambda_0=1` and `\lambda_j=0` for integers `j>g` | All relevant moduli stacks |
+-| `j_1,...,j_\ell`, `\ell` | Introduction pure Hodge product; positive Hodge indices and factor count `\ell>=1`; each index is at most `g` when used; ranges are restated in 2.1 | Hodge products; fixed for low-index asymptotics |
++| `j_1,...,j_\ell`, `\ell` | Introduction pure Hodge product; positive Hodge indices and factor count `\ell>=1`; each index is at most `g` when used; inherited directly, with fixedness specified by the asymptotic convention table | Hodge products; fixed for low-index asymptotics |
+ | `A_g`, `B_g(h)`, `B_g`, `\langle P(\lambda)\rangle_g`, `N_g` | Exact Introduction definitions are retained | Unmarked integrals and normalizations; displayed factorial conversion has `g>=2`, `0<=h<=g` |
+-| `g_2=2g-3` | Introduction, Theorem `thm:top-hodge`; retained without an alias | Unmarked top-Hodge exponent and factorials |
++| `g_2=2g-3` | Introduction, Theorem `thm:top-hodge`; inherited without an alias or a routine manuscript pointer | Unmarked top-Hodge exponent and factorials |
+ | `h` | Fixed nonnegative defect from Theorem `thm:fixed-defect` | `\lambda_{g-h}`; genus sufficiently large, and `0<=h<=g` in the finite-genus example |
+ | `F(j),G(j),J_n(z),z_{0,1},\rho,b` | Introduction definitions retained; no new use or redefinition in this trial | Their original theorem scopes |
+ 
+@@ -28,7 +30,7 @@
+ | Symbol | Definition location | Type, range and scope | Reason for the name |
+ | --- | --- | --- | --- |
+ | `A^*(\MM_{g,n})_{\mathbb Q}` and `A^a` | 2.1 opening | Rational Chow ring and its codimension-`a` part; `a` is a nonnegative integer | States the ambient intersection theory and degree convention |
+-| `\pi:\MM_{g,n+1}->\MM_{g,n}`, `s_i`, `\omega_\pi` | 2.2 opening, before `eq:s02:psi-definition` | The inherited forgetful map `\pi_{n+1,n}`, identified with the universal stable curve; section with `1<=i<=n`; relative dualizing sheaf; local to the definitions and normalization argument | One local map symbol serves the cotangent definition, logarithmic kappa definition and normalization argument |
++| `\pi:\MM_{g,n+1}->\MM_{g,n}`, `s_i`, `\omega_\pi` | 2.2 opening, before `eq:s02:psi-definition` | The inherited map `\pi_{n+1,n}` is identified concisely with the universal stable curve, without retelling the forgetting operation; section with `1<=i<=n`; relative dualizing sheaf; local to the definitions and normalization argument | One local map symbol serves the cotangent definition, logarithmic kappa definition and normalization argument |
+ | `L_i`, `\psi_i` | `eq:s02:psi-definition` | Marking cotangent line and its first Chern class of codimension one, `1<=i<=n` | Repeated descendant and marking terms |
+ | `\kappa_a` | `eq:s02:kappa-definition` | `\pi_*(\psi_{n+1}^{a+1})` of codimension `a`, integers `a>=0` | Repeated logarithmic tautological classes |
+ | `x_1,...,x_g` | Before `eq:s02:chern-definitions` | Formal degree-one Chern roots in a splitting extension; local to Chern definitions and the algebraic proof | Makes the factorial normalization and proof explicit |
+@@ -72,6 +74,7 @@
+ 
+ ## Remaining work / unresolved scope
+ 
++- USER-001 is addressed by starting 2.1 with the new Chow, grading and stack-integration conventions, removing the inherited-notation inventory and routine Introduction pointers, and shortening the 2.2 opening to the universal-curve identification. New definitions, local bounds and the GRR normalization arguments are retained. The concrete response is `workflow/trials/s02-01-02/r001/author_response.json`; the original round-1 pass reports are unchanged and do not sign this revision.
+ - Subsections 2.3 (gluing and Hodge restrictions) and 2.4 (boundary exponentials and forgetting) are not drafted and export no results yet.
+ - `section.tex` still needs its authorized roadmap and transitions when the coordinator expands the writing scope. Proposed roadmap is in `writer_handoff.md`; the writer did not edit that file outside the assigned scope.
+ - Full-section build, static validation and three independent reviews are the coordinator's next checks. This interface makes no claim of reviewer approval or whole-section completion.
+--- previous/sections/02_notation/writer_handoff.md
++++ sections/02_notation/writer_handoff.md
+@@ -1,15 +1,28 @@
+ # s02 writer handoff — trial of 2.1 and 2.2
+ 
+-Status: drafting / incomplete. This handoff covers the authorized trial only. It is not a formal submission of the whole section and does not authorize acceptance. Original writer session must be retained for revision and for eventual completion of 2.3–2.4.
++Status: drafting / incomplete. This handoff covers the authorized trial only, now revised in response to USER-001 after trial round 1. It is not a formal submission of the whole section and does not authorize acceptance. Original writer session must be retained for revision and for eventual completion of 2.3–2.4.
+ 
+ ## Files written
+ 
+-- `01_conventions.tex`: rational stack intersection convention; complex codimension; inherited notation and rank convention; graded exponentials; exponential-to-power lemma and proof; exact `A_g` / `B_g(h)` factorial restoration; fixed-parameter/error conventions.
++- `01_conventions.tex`: rational stack intersection convention; complex codimension; new degree-zero and out-of-rank Chern-class conventions; graded exponentials; exponential-to-power lemma and proof; exact `A_g` / `B_g(h)` factorial restoration; fixed-parameter/error conventions. The opening no longer reintroduces the inherited basic setup or inventories existing symbols.
+ - `02_tautological_classes.tex`: psi before logarithmic kappa; factorial-normalized Chern characters and Chern polynomial; total reduced boundary, chosen node and ordered branches; distinct-font Bernoulli numbers; fully normalized marked Mumford formula; nonlogarithmic conversion with a short section-intersection argument; divisor specialization; root-based exponential rewrite and lambda-two/lambda-three examples with proof.
+ - `INTERFACE.md`: exact assumptions, scopes and reasons for notation, result labels, verified primary locators, and explicit unfinished parts.
+ - `writer_handoff.md`: this record.
++- `workflow/trials/s02-01-02/r001/author_response.json`: separate response to USER-001, with no open reviewer-issue responses and no alteration of the original pass reports.
+ 
+ No changes were made to `section.tex`, 2.3, 2.4, the preamble, bibliography, other sections or workflow state.
++
++## USER-001 revision
++
++The updated writer/readability responsibilities and shared notation policy treat the paper as a continuous text. The earlier opening wrongly repeated the Introduction's basic setup; correctness of those repetitions did not justify them.
++
++- Removed the paragraph reintroducing `g,n`, stability, the moduli stack and its base. The opening now starts with the genuinely new rational Chow, complex-codimension and stack-integration conventions.
++- Removed the inventory of the Hodge bundle, Hodge indices, normalizations and `g_2`, along with the needless pointer to Theorem 1.3. Their full inherited ledger remains in `INTERFACE.md` for collaborators.
++- Retained the new conventions `lambda_0=1` and vanishing above rank, the homogeneous conversion lemma, its precise local bounds, the factorial examples and the fixed-parameter/error table.
++- Shortened the 2.2 opening to identify `pi=pi_{n+1,n}` with the universal stable curve. It introduces sections and the dualizing sheaf in their needed roles without retelling the already defined forgetting operation.
++- Removed the routine Introduction reference before the factorial example and the redundant prose labeling the root and Chern-class dummy indices. The psi/kappa/character definitions, boundary normalization, literature conversion and proofs remain intact.
++
++No mathematical identity or hypothesis was changed. The shared responsibility files were read but not edited by the writer. The original three reports are unchanged; all three original reviewers must sign the new snapshot.
+ 
+ ## Mathematical decisions
+ 
+@@ -41,4 +54,4 @@
+ 
+ Author checks: all new mathematical notation has an adjacent definition and an interface entry; sums have explicit ranges; the GRR coefficient at `a=1` agrees with the stated divisor identity; Chern-log expansion gives coefficients `1/2` and `2` in the two examples. `git diff --check -- sections/02_notation` passed. A read-only Python check verified UTF-8, LF and final newline for all four authored files, unique trial labels and balanced theorem/proof/equation/tabular environments.
+ 
+-The coordinator should run the unit build and repository validation, inspect the trial page count, and obtain the independent trial reviews. The section's remaining TODO markers deliberately prevent representing the whole unit as complete. The writer will now stop editing until the coordinator sends the collected review issues or another authorized instruction.
++The revised trial must be built with `python workflow/trials/s02-01-02/build_preview.py`, then frozen by the coordinator for all three original reviewers to recheck. The section's remaining TODO markers deliberately prevent representing the whole unit as complete. The writer will stop editing after recording the new build result and await the coordinator's next instruction.
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -11,6 +11,8 @@
+ sections/单元/INTERFACE.md 与正文一起提交。它必须列明本节导出的记号、结果及标签、完整假设、引用来源和仍未解决的问题。只有经过验收的结果可在后文当作已建立的输入。
+ 
+ 每节接口还须列出继承与新增记号、定义位置、类型与范围、作用域和新增专名的必要性；同类哑变量可成组记录。全文约定由 workflow/context.md 维护，引言已有的 g_2、j_1, ..., j_ell 等记号优先保留，新增全局记号由协调者统一处理。
++
++正文按全文连续阅读组织：首次定义需完整，前文已有定义直接继承。审核同时检查缺失定义和无必要的重复定义；只有确实帮助理解当前重要论证的回顾才可简短保留或回指。协作接口的完整记号清单不应复制到每节开头。
+ 
+ 写作次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。建议先完成 s02、s03、附录 A，再写 s04、s05、s06、s07、附录 B、s08，最后写附录 C；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用，因此需要先完成相应附录。预览始终保留目标章节和附录编号，最终正文仍按第 1–8 节、附录 A–C 排版。
+ 
+@@ -110,6 +112,8 @@
+ 
+ 试写报告必须明确标为 trial，检查项沿用相应角色清单，但不构成整节验收。协调者在派发、收集意见及出具试稿前核对归档与当前文件指纹。三类意见收齐后再派原作者修改；新一轮重新冻结并由原审核者复审。试写的预览单独生成在 build/ 中，正式默认装配保持既有验收状态。
+ 
++用户在试审通过后提出修改时，单独记录用户反馈和原作者答复，保留原轮次的报告及归档；把当前试写状态转回 revising。原作者修改后重新冻结，由原三位审核者复审同一新快照。不能覆盖旧报告来制造曾经审核通过该新要求的记录。
++
+ 后续完成整节时，先按常规 submit 冻结完整章节，再从试写记录中 bind 原审核者 ID，然后 dispatch 复用其上下文。不能因为整节状态中尚未绑定审核者，就重新 spawn 来替换参加试写的原审核者。
+ 
+ ## 验证脚本
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -28,7 +28,9 @@
+ | $g_2=2g-3$ | The degree in the unmarked top-Hodge problem; Theorem 1.3. Do not rename it. |
+ | $J_n(z),z_{0,1},\rho,b$ | The Bessel function, its specified zero, the asymptotic scale and correction constant; Theorem 1.3. Preserve their exact definitions. |
+ 
+-Every mathematical symbol must be defined before use in prose, statements, formulas, tables and captions. A definition specifies the object, type, index range, quantifiers and scope; distinguish fixed parameters, variables tending to infinity and bound indices. A sum, product or integral can bind its dummy variable in the same formula if the domain and range are explicit. Earlier definitions can be cited instead of repeated. A reference to a later section is not a definition at the point of use.
++Define new mathematical objects and symbols before their first use in the paper, including statements, formulas, tables and captions. Give the necessary types, ranges, quantifiers and scope; distinguish fixed parameters, variables tending to infinity and bound indices. A formula may bind its dummy variables when its domain and ranges are explicit. A later definition does not cover an earlier use.
++
++Read the manuscript as one continuous paper. Once defined, notation is inherited directly: later sections should not reintroduce g, n, the moduli stack, the Hodge bundle or a list of existing normalizations. Do not add a routine back-reference for every inherited symbol. Briefly recall a definition or cite its original location only when that reminder materially helps the current argument, particularly for an important convention or a distant nonstandard definition. New intersection conventions and genuinely additional local hypotheses still need to be stated. The full notation ledger belongs in INTERFACE.md; it is not an opening inventory for the published prose. Review both missing first definitions and unnecessary repetition.
+ 
+ Use the fewest names that make the argument easy to read. A dedicated symbol should have a recurring, independent role and save more reader effort than it costs. Write short one-off expressions directly. Frequency alone does not justify an alias for an existing name. Local coefficient indices such as $m$ in a coefficient-extraction lemma need an explicit scope; applying a general lemma to the unmarked problem means substituting $m=g_2$, not renaming $g_2$ throughout the paper.
+ 
+--- previous/workflow/roles/academic.md
++++ workflow/roles/academic.md
+@@ -11,7 +11,7 @@
+ - attribution：已有结果是否清楚归于原作者，本文推导、引用结果和内部笔记是否区分。
+ - citation_precision：引文是否真实可核实，作者、版本、公式或定理位置、假设和规范换算是否准确；引用文献的记号是否明确对应到本文约定，避免直接搬入与引言冲突的符号。
+ - claim_status：候选值、形式计算、数值证据、已证结论和误差强度是否表述准确。
+-- academic_style：定理陈述、证明结构、术语、引用方式及英文是否符合专业论文要求，是否存在占位、夸大或无依据的优先权主张；定理和图表是否自洽地使用已有定义与统一记号，新记号的首次引入和作用域是否清楚。
++- academic_style：定理陈述、证明结构、术语、引用方式及英文是否符合专业论文要求，是否存在占位、夸大或无依据的优先权主张；新记号的首次引入和作用域是否清楚。按全文连续阅读检查是否无必要地重新讲解已有定义或罗列继承记号；仅保留有明确解释作用的重要回顾，避免把每节写成独立的入门介绍。
+ 
+ 各项填写 status 和具体 evidence。原文不可取得而又无法核实关键输入时，明确列出实际缺口，不编造页码、定理编号或文献。
+ 
+--- previous/workflow/roles/coordinator.md
++++ workflow/roles/coordinator.md
+@@ -12,4 +12,6 @@
+ 
+ 维护 workflow/context.md 的全文记号约定，以引言已有定义为优先依据。新全局符号先审查必要性、字母用途和现有占用，再统一登记；不接受为同一对象新造别名。核对 INTERFACE.md 的记号清单及审核证据，确保 definitions、notation_consistency、notation_economy、symbol_design 和数学 notation 各有明确结论。脚本只强制报告结构与证据齐全，符号是否有定义、是否值得命名由作者和审核者实质核查。
+ 
++检查审核者是否同时关注“首次定义完整”和“已有定义不重复”，尤其核查章节开头。论文正文直接继承前文约定；完整记号清单留在协作接口中。用户指出先前审核漏项时，保留旧报告，将反馈单独记录并派原作者返工；复审必须针对新快照，不沿用旧 pass。
++
+ 完成本节后保存简短交接，说明当前轮次、真实角色 ID、验收状态、未纳入的扩展以及接下来可用的接口。用户没有授权写作时，只维护流程和脚手架。
+--- previous/workflow/roles/math.md
++++ workflow/roles/math.md
+@@ -10,7 +10,7 @@
+ 
+ - dimensions：维数、余维、稳定性和指标范围。
+ - normalization：栈因子、边和自环对称数、符号、阶乘、生成函数与原始积分的换算。
+-- notation：每个符号是否先定义，定义、类型、范围、绑定变量和作用域是否明确；参数是否固定、随亏格变化或被求和。对照引言、workflow/context.md 和前置接口，核对 g_2、j_1, ..., j_ell 等记号的含义和范围，排查重载、换名及文献记号换算造成的语义错误。
++- notation：以全文为单位核对首次定义、类型、范围、绑定变量和作用域；已有定义直接继承，不因本节未重复而判为缺失。核对参数的固定或变化性质及额外局部假设；对照引言、共享约定和前置接口排查重载、换名及文献换算错误。精简重复后须确认必要假设和定义仍可在前文获得。
+ - proof_logic：每个结论的逻辑依据，是否循环使用待证结果，是否有未证明的关键步骤。
+ - uniformity：极限、求导、求和、积分及系数转移的交换依据，尾和与余项是否覆盖全部对象。
+ - dependencies：外部定理假设、已验收前置结果和本节接口是否一致，常数及适用范围是否准确。
+--- previous/workflow/roles/readability.md
++++ workflow/roles/readability.md
+@@ -8,13 +8,15 @@
+ 
+ 报告 checks 对象必须包含：
+ 
+-- definitions：逐项核对正文、定理、公式、图表和图注中的符号是否先定义再使用，包括指标、参数、算子和函数；检查类型、范围、量词、固定或变化的参数、哑变量绑定和作用域。已有定义必须可定位，不能依赖后文或读者猜测。
++- definitions：以全文为单位检查首次定义是否先于使用，核对新对象的类型、范围、量词、参数、哑变量绑定和作用域。已有定义可在前文定位即已满足要求，不要求每节重定义或逐项回指；新引入的信息不能只在后文交代。
+ - notation_consistency：对照引言、workflow/context.md 和前置接口，检查同一对象是否始终用同一记号。必须沿用 g_2 = 2g-3、Hodge 类下标 j_1, ..., j_ell、乘积长度 ell 及 z_{0,1}；拒绝给既有对象另起别名或无说明重载。检查近似记号、自由能规范和不同维数是否清楚区分。
+-- notation_economy：每个新增专名是否反复使用、具有独立作用且减轻阅读负担；检查能否删去一次性缩写、重复别名和无助于理解的装饰。以读者需要记住的对象数评估，而非只看公式长度。
++- notation_economy：检查新增专名的必要性，也检查已有定义是否被无必要地重述。逐节开头重讲 g、n、模空间、Hodge 丛或罗列继承记号应列为问题。仅当回顾帮助理解当前重要论证时才保留简短重述或原定义引用，evidence 须说明具体作用；同时删去一次性缩写、重复别名和无助于理解的装饰。
+ - symbol_design：字母是否按用途成组选择，Hodge 下标、标记编号、计数、次数、解析变量和常数是否容易区分；是否占用已有字母，或出现同一论证内的重载、大小写及上下标混淆。结合实际公式取舍，不机械地把字母组当作配额。
+ - roadmap：长证明之前是否说明目标、输入、机制和步骤之间的关系。
+ - structure：引理是否具有明确功能和可复用结论，是否拆开无关计算、避免跳步和过度压缩。
+ - transitions：段落与章节衔接、例子和解释是否足以帮助读者跟上主要论证。
++
++按全文的连续阅读顺序检查开头和过渡，不把每个 section 当作独立文章。“先定义后使用”不是“每节重新定义”。区分本节首次采用的交数规范、真正需要重申的局部假设，与已在引言固定的基本对象。不能仅因重复内容准确，就放过其对叙述效率和阅读节奏的影响。
+ 
+ 每项填写 status 和具体 evidence。易读性改写必须保持数学含义；怀疑语义或数学变化时列为问题并说明需要数学审核者确认。
+ 
+--- previous/workflow/roles/writer.md
++++ workflow/roles/writer.md
+@@ -7,7 +7,7 @@
+ ## 产出
+ 
+ - section.tex 中的章节入口、证明概览和逻辑衔接。
+-- 每个 subsection 对应的独立 .tex 文件，定义先于使用，引用采用稳定标签。
++- 每个 subsection 对应的独立 .tex 文件，全文首次定义先于使用，已有定义直接沿用，引用采用稳定标签。
+ - 本节 INTERFACE.md：导出记号、结果标签和完整假设、依赖、原始文献定位、未解决问题；另列记号清单，记录继承或新增、定义位置、类型与范围、作用域及新增符号的必要性。同一类哑变量可以成组记录。
+ - 当前派发指定的 writer_handoff.md；返工时另填写 author_response.json，逐条回应本轮全部 issue。
+ 
+@@ -15,7 +15,9 @@
+ 
+ ## 数学和结构
+ 
+-遵守 workflow/context.md 的全文记号约定。每个符号在首次使用前定义；求和、乘积和积分中的哑变量也要给出类型、范围和绑定位置。引言已有定义可直接沿用并指明位置，不能以“读者应该知道”或后文才会定义代替交代。
++遵守 workflow/context.md 的全文记号约定。新对象和符号在全文首次使用前定义；求和、乘积和积分的哑变量给出必要的类型、范围和绑定位置。已有定义直接沿用，不必逐个重述或附上回指，也不要把本节写成从零开始的独立说明。g、n、模空间、Hodge 丛及已有归一化记号不在后续章节开头再次介绍或列清单。
++
++仅在回顾对于理解当前关键论证确有帮助时，简短重述重要定义或引用最初位置，并说明其在此处的作用。新的对象、不同于既有范围的局部假设和新增交数规范必须交代；不能以删重复为由略去必要信息。INTERFACE.md 中可保留完整记号表供协作查询，但不能把内部清单搬进论文正文。
+ 
+ 保留 g_2 = 2g-3，Hodge 类下标 j_1, ..., j_ell 及乘积长度 ell；Bessel 零点保留 z_{0,1}，不改称 j。引用文献时把原文记号译入本文约定，必要时给一次换算，不让多个名字并行。
+ 
+--- /dev/null
++++ workflow/trials/s02-01-02/r001/author_response.json
+@@ -0,0 +1,20 @@
++{
++  "schema_version": 1,
++  "unit": "s02",
++  "round": 1,
++  "agent_id": "/root/s02_writer",
++  "responses": [],
++  "user_responses": [
++    {
++      "issue_id": "USER-001",
++      "resolution": "addressed",
++      "explanation": "Rewrote the 2.1 opening to begin directly with the new rational Chow, complex-codimension and stack-integration conventions. Removed the repeated g,n/stability/moduli-stack/base setup, the inherited Hodge-bundle and normalization inventory, the repeated Hodge-index and g_2 declarations, and the routine pointer to Theorem 1.3. Retained lambda_0 and out-of-rank conventions, the conversion lemma and proof, local bounds, factorial examples and fixed-parameter/error discussion. Shortened 2.2 to identify pi=pi_{n+1,n} with its new universal-curve role without retelling the forgetting operation, and removed redundant dummy-index commentary. Kept all new psi/kappa/character/boundary definitions, source-convention explanations and mathematical proofs. The full inherited-notation ledger remains in INTERFACE.md. Read the updated shared writer/readability responsibilities and notation policy; did not edit shared files or the original three pass reports. This revision requires a new frozen snapshot and signatures from the same reviewers.",
++      "changed_files": [
++        "sections/02_notation/01_conventions.tex",
++        "sections/02_notation/02_tautological_classes.tex",
++        "sections/02_notation/INTERFACE.md",
++        "sections/02_notation/writer_handoff.md"
++      ]
++    }
++  ]
++}

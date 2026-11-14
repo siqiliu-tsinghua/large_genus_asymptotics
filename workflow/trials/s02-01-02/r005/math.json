@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read USER-003, changes.diff, the updated archived context and math-role requirements, target_preservation.json and r004/author_response.json. The user's new object-by-object notation map supersedes the earlier capital integral names and special Bernoulli font. No external result, source locator or mathematical hypothesis changed. The generating series now written with ordinary B_m is exactly the convention independently verified in the original FP00/Mum83 review; the nonlogarithmic-to-logarithmic kappa translation and ordered-node normalization remain the same. The amended roadmap names the ILW equation as a planned later tool and supplies no new premise to the present proofs. Both interfaces and the active section outline agree with the revised object names and limited trial status. No main target theorem is used as a proved input, and unchanged literature was not reloaded.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Read the complete revised Introduction and 2.1/2.2. Introduction:4-23 retains stable nonnegative integer (g,n), complex codimension, rank conventions and positive integer product length; lines 28-39 retain the previously checked stable-target dimension argument and genus-zero/empty-product treatment. Lines 48-53 still require g>=2, integer 0<=h<=g and homogeneous insertion degree 0<=d<=3g-3. Renaming the integrals changes none of their dimensions. Section 2.1:14-17 retains all w,Q,L,c hypotheses and uses the same rational Chow spaces, now written A^w(M;Q) and A^1(M;Q). The revised 2.2:19-27 explicitly locates psi_{n+1} on the source M_{g,n+1}; it has codimension one there, so pi_*(psi_{n+1}^{a+1}) has codimension a on the base. The source is stable whenever the standing base is stable. The GRR degree range a>=1, root/character ranges, boundary codimension and low-rank conventions remain unchanged.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Checked the complete normalization, including unnumbered displays: Introduction:49-53 defines a_g as the original pure-lambda_1 integral, b_g(h) as the original lambda_{g-h} integral, b_g=b_g(0), and the normalized bracket with denominator 1/a_g. Section 2.1:35-37 consistently restores (3g-3)! times the exponential integral for a_g and (g_2+h)! for b_g(h); h=g still yields b_g(g)=a_g. Scalar b in Introduction:88 and the b/g_2 correction are unchanged, while b_g denotes the genus-indexed integral. In 2.2:60-65 the unchanged signed generating series gives ordinary B_2=1/6; at lines 81-88 the coefficient is still B_{2a}/(2a)!, hence 1/12 at a=1. The half ordered-boundary pushforward, negative marking correction, section self-intersection, Chern-character 1/a! and Chern-log (a-1)! factors are unchanged. Independent comparison confirms all 18 numbered equations, every unnumbered display and every proof body equal r004 after only the authorized integral-name, Bernoulli-font and Chow-coefficient-format translation. Thus numerical coefficients, signs, factorials, values and normalization are preserved.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Performed a specific USER-003 consistency audit across the three complete manuscript files, both interfaces, the updated shared context and active outline. Integral definitions, the bracket denominator, all four main targets and the factorial example consistently use a_g,b_g(h),b_g; uppercase A remains the Chow functor. All eight current manuscript Chow expressions place Q inside the parentheses as A^a(M;Q). No old capital integral name, special Bernoulli font or outside-parenthesis coefficient format remains in those manuscript files. Ordinary B_m is first defined at 2.2:60-65 before B_{2a} is used in GRR; its index m>=0 and the GRR index a>=1 remain bound. Scalar b retains its explicit fixed correction formula before the b_g theorem, whereas beta_g is reserved for later one-point coefficients and is not unnecessarily introduced into the trial. Active outline examples use a_2,a_3,b_2 and its ILW coefficients use ordinary B_{2k}, consistently separating these objects. The Introduction retains g_2=2g-3, j_1,...,j_ell, ell, z_{0,1} and rho; its Bessel-zero wording now explicitly uses J_0(z). In 2.2, the cotangent-line construction precedes the explicit source-class transition, then logarithmic kappa, then factorial-normalized Chern characters. The removed descendant explanation and recipe-style back-reference do not remove a definition or scope. Historical archives were correctly treated as historical, not as current naming errors.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Independently compared all numbered equations, all unnumbered displays and all proof bodies with r004 after the exact authorized translation; each comparison passed. This includes the unnumbered normalized bracket and auxiliary definitions, which are not covered solely by numbered-target checks. The new transition identifies psi_{n+1} as the last cotangent class on M_{g,n+1}; the preceding construction defines cotangent classes for arbitrary stable marking counts, so this is the same source class as before. The later identity psi_{n+1}=c_1(omega_pi(sum D_i)) and its disjoint-section self-intersection argument are unchanged. The exact forgetting/dimension argument, graded exponential proof, GRR divisor specialization and formal Chern-root logarithm proof retain the same assumptions and conclusions. Neither replacing a family name nor changing the coefficient notation changes a mathematical object. The J_0(z) wording and ILW roadmap clarification add no assertion used as a proof input. No new logical gap was found in the authorized scope.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The four main target equations are identical to r004 after renaming the integral sequences: the errors remain O(g^-3), O(g^-4), O(g_2^-2), and the fixed-integer-defect asymptotic equivalence, with the same constants and fixed-data domains. The normalized insertion background exponent and all finite-genus bounds are unchanged. Section 2.1 still distinguishes finite graded truncation from future uniform estimates over growing graph data, and 2.2 still states a formal Chern-series identity. Deleting the redundant descendant prose and identifying the source cotangent class introduces no limiting or summation operation. No error strength, uniformity range, exchange of operations or claim of an established main-target proof has been added.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This new signature audits the USER-003 changes and their impact in the retained original-reviewer context. Prior MATH issue lists were empty; USER-003 is separate user feedback, so resolved_issue_ids remains empty.",
+    "Independently verified all 18 numbered equation environments, every unnumbered display and every proof body after exactly the authorized notation/format translation, rather than relying only on the coordinator's preservation receipt.",
+    "Verified both scoped manuscript/interface archives and live files against submission.json. The current six-page PDF matches the successful strict build receipt with no diagnostics; its main theorem numbers remain 1.1-1.4.",
+    "The scope remains a trial of Introduction clarifications/authorized notation updates and 2.1-2.2. Neither whole chapter nor the four main asymptotic proofs is accepted by this report. No manuscript, workflow state, older report or historical source archive was edited."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and user-authorized notation/wording updates, coordinated with 2.1 and 2.2.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "fe5417226361b0adeae6bca067fd003d05feecb519858d1472ec00d66e9cba34",
+  "stage": "trial",
+  "summary": "Pass for the USER-003 trial revision. The authorized mapping is consistent: lowercase integral families and bracket denominator a_g, ordinary Bernoulli B_m, uppercase Chow A with coefficients inside parentheses, and distinct scalar b, integral b_g and later beta_g. The direct kappa transition preserves the source and prior definition of psi_new. Independent complete formula/proof comparison confirms unchanged values, normalizations, ranges, constants and asymptotic strength after translation. No unresolved mathematical issue was found; this is not whole-section acceptance or verification of the main asymptotic target proofs.",
+  "unit": "s02",
+  "verdict": "pass"
+}

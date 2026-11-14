@@ -1,0 +1,54 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "USER-002 is addressed by a joint reading of the revised Introduction and 2.1-2.2. Introduction:4-8 places the stack, rational Chow and codimension conventions beside the first moduli object; 10-15 attaches the rank conventions to the first Hodge-class definition; 17-25 explains stack degree, stabilizer weights, top-component selection and scalar extension immediately before the first integral. These are short explanations needed to interpret the stated problem, without importing the later psi/kappa/character machinery. The revised reduction at 28-46 gives the stable-target argument directly and removes one-off target aliases and repeated pullback displays. Theorem 1.1 now defines Cin and N_g before use (58-60); Theorem 1.3 defines b before use (85-88); the fixed-insertion statement has a complete sentence and explicit fixed data (71-75). Section 2.1 starts with its local formal-exponential tool (5-10), without repeating the relocated conventions, and retains its lemma, proof and parameter/error discussion. Section 2.2 remains in its appropriate technical position. Both interfaces accurately record the relocated first-definition locations. The resulting flow is professional and proportionate to the introductory problem.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The revised introductory vanishing passage (28-40) explains the dimension argument from the standard Hodge pullback property; it makes no novelty or priority claim for that observation or the retained classical genus-one value. The final paragraph (106-113) explicitly describes planned proof routes, rather than claiming completion or attributing existing analytic inputs to the present authors. The quoted GRR result in the unchanged 2.2 remains named for Mumford, selects the Faber-Pandharipande presentation, and distinguishes the local kappa-convention argument and root-based algebraic consequence. No internal note is used as authority and no new external result has been presented as an original theorem by this revision.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The entire 02_tautological_classes.tex and references.bib are byte-identical to r002, so the original primary-source checks remain applicable: Mum83 Section 5, (5.2), and Corollary (5.3), local PDF pp.34 and 36 / printed pp.304 and 306; FP00 Section 1.1, unnumbered Theorem (Mumford), PDF p.6 / journal p.178; and FP00 Section 1.3, (16), PDF p.11 / journal p.183. The modern signed Bernoulli convention and corrected kappa index, the explicit nonlogarithmic/logarithmic conversion, and the ordered-node one-half pushforward remain unchanged. Interpreting all introductory integrals as stack degrees preserves the normalization used in those sources and in the retained 1/24 example. The introduction of Chow notation earlier does not change the cited identities' ring or hypotheses. The two interface ledgers now correctly place the global ring, degree, integration and rank conventions in the Introduction and keep the tautological definitions in 2.2. No new citation or unsupported locator was introduced.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "USER-002's relocation preserves meaning as well as location. Introduction:28-40 restricts the dimension argument to stable lower-marking targets, explicitly chooses m=0 for g>=2,n>=1 and m=1 for g=1,n>=2, and handles genus zero; the positive-factor convention at 20-23 excludes an empty-product exception. Lines 48-53 make the finite-genus integer range 0<=h<=g and normalized insertion degree 0<=d<=3g-3 explicit. The fixed-insertion list and fixed integer defect are specified at 71-75 and 99; no uniformity in these data is added. Independent comparison confirms that the four main target equation environments, including constants and error orders, are unchanged from r002. Section 2.1 still labels its factorial conversions exact at finite genus (32-39) and distinguishes formal truncation from uniform estimates for growing graph parameters (41-57). The roadmap is explicitly planned, and both interfaces retain the distinction between target statements and approved proofs. This scoped signature does not certify the outstanding proofs of the four asymptotic targets.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "The scope now includes the authorized Introduction clarification as a companion to 2.1-2.2. It remains a trial and does not approve either complete section.",
+    "USER-002 is addressed separately from reviewer issues. The previous academic issue list was empty, so resolved_issue_ids remains empty; prior reports are unchanged.",
+    "All 22 archived source inputs matched the submission manifest and their current copies. The four target equation environments, 2.2 and bibliography were independently compared with r002. The strict trial build receipt passed without diagnostics, and the joint PDF hash matched its receipt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 3,
+  "schema_version": 1,
+  "scope": {
+    "companion_scope": "Introduction clarifications and relocation of global conventions; target formulas preserved.",
+    "companion_units": [
+      "s01"
+    ],
+    "scope_files": [
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex"
+    ],
+    "stage": "trial",
+    "subsections": [
+      1,
+      2
+    ],
+    "unit": "s02",
+    "whole_section_approved": false
+  },
+  "snapshot": "65cd5f904698f9b75acf73155af3c2e42c5070e3439d385b7294ab9bb13e00fe",
+  "stage": "trial",
+  "summary": "Pass for the joint Introduction and 2.1-2.2 trial. USER-002 is addressed: global conventions are present at their first introductory use and inherited directly in 2.1; local definitions, precision, target formulas and source attribution are preserved. No unresolved academic issue was found.",
+  "unit": "s02",
+  "verdict": "pass"
+}
