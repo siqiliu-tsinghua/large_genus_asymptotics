@@ -1,0 +1,19 @@
+{
+  "changed_inputs": [
+    "sections/03_graph_asymptotics/section.tex",
+    "sections/03_graph_asymptotics/writer_handoff.md"
+  ],
+  "clean_pdf_sha256": "6652e94b31c7ec25ea5bef235d49535199bfbe30af1d3a0dd888ec59866c1910",
+  "diagnostics": [],
+  "feedback_path": "workflow/feedback/s03/USER-005.json",
+  "feedback_sha256": "86ebc7b9672da44a277d5310ad7d44ad2684cc7d6e4490d88a173406cae5d321",
+  "layout_diagnostics": [],
+  "pdf_info": "Pages:           32",
+  "round": 2,
+  "schema_version": 1,
+  "scope": "USER-005 opening bridge/roadmap only; four mathematical subsections and scientific interface byte-identical to approved r001.",
+  "snapshot": "4a5093c8dfca3e5c6eb7c12ff753d49cb5ac08f742a084c519321db551208780",
+  "source_hash": "fa2304d70ced43c5edafb16c451eef5180101b9b66080f7abb6d2f39ce408e98",
+  "stage": "frozen_for_independent_delta_review",
+  "unit": "s03"
+}

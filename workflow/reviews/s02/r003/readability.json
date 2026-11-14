@@ -1,0 +1,56 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Checked the USER-004 rearrangement against the retained whole-paper reading. Introduction/2.1/2.2 and the section roadmap are unchanged. In 03_gluing.tex:9-19, our graph and H(Gamma) are defined before the source comparison; the source letters H and L are immediately typed as paired half-edges and a separate leg set, local to that comparison. No previously defined basic objects are reintroduced. In 04_boundary_and_forgetting.tex:93-110, pi_m, the identity case, source/base convention and tail divisor remain in the main text before the one-point identities. The following Proof at 112-135 retains the section divisor D, line mathcal L, stabilization, self-intersection and binomial argument at actual use. The tail lemma's positive powers, the retained new-psi correction and the partition/block definitions remain before their applications. Moving the source omega notation into the post-proof Remark at 249-260 creates no dependency gap: the preceding statement and proof use the already defined paper notation. Essential hypotheses or proof steps have not been made optional.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The 2.3 recall now expressly distinguishes GP03's separate paired-half-edge H and leg L from the paper's all-flags H(Gamma), with legs as fixed points (03:5-19). This clarifies a source translation without changing the established graph encoding. All 34 numbered equation environments and 13 principal theorem/lemma/proposition/corollary blocks were independently compared with r002 and are byte-identical. The lowercase integral families, ordinary Bernoulli numbers, internal Chow coefficients, g_2, Hodge indices/product length, Bessel names and separate b/b_g/beta_g roles remain unchanged. All version-specific KMZ citations in 2.4 now use KMZ96v1; the explicit version is in references.bib, and no raw arXiv identifier remains in the manuscript subsection. The revised interface records the same source translation and scientific exports. Principal result numbers remain 2.1-2.9, with independent Remark and Example counters.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The new H and L are source letters with a necessary, short translation role, not competing global aliases. No new mathematical object or gratuitous abbreviation is introduced. The 2.3 opening identifies a classic recall without repeating g,n, moduli-space or Hodge-bundle setup. The source remarks have focused jobs: specialization/Chow distinction, one-point source citation, and KMZ attribution/notation translation. The one-edge Example retains only the loop, labelled separating split and ordered-splitting symmetry lessons. The forgetting-map motivation and source/base definitions remain once in the main text. Removing raw version strings from prose also avoids duplicating bibliographic metadata. The source/proof/illustration division generally reduces reader burden; the remaining paragraph-density issue is recorded separately under structure.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged section roadmap still connects factorial conversion, GRR, normalization/defect allocation and boundary/forgetting tools, with later uniform estimates distinguished from finite-genus identities. The 2.3 opening now signals the classic recall and immediately flags its convention translation. The 2.4 roadmap at 5-9 still prepares the normal-line expansion, forgetting/inversion and rational-tail degree input. The new 'Forgetting maps' lead-in at 93-100 explicitly explains why extra cotangent markings are being introduced before defining the map family. 'One-point comparisons' is then followed by the identities and an algebraic Proof that separates the psi argument from the kappa calculation. Lemma 2.8's proof follows its statement directly and still distinguishes the forward recursion and inverse generating-series steps. The route is conceptually clear; the boundary proof needs the local paragraph divisions specified in READABILITY-003.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "USER-004 is substantially implemented in actual reading order. Proposition 2.6 and Lemma 2.8 now end immediately before their Proof environments. Boundary source and KMZ credit/conversion material are short post-proof Remarks, not interruptions. The material before Lemma 2.7 is divided into a two-paragraph symmetry Example, a motivated map-definition paragraph, one-point comparisons with their algebraic Proof, and a brief source Remark; these modules have distinct purposes and retain necessary mathematics. In the current PDF, Remarks 2.1-2.3 and Example 2.1 have roman bodies, while principal statements remain italic. The independent counters preserve substantive numbering. I inspected pages 6-15: the repaired boundary formula still fits, source versions are in the bibliography, and there are no new overflow or collision problems. One actual density concern remains: on page 10 the whole proof of Proposition 2.6 is still a single continuous paragraph spanning the normal-line calculation, graph grouping/symmetry counting, and Chow/projection conclusion. This is the remaining USER-004 functional-paragraph issue, READABILITY-003; it calls only for local paragraph breaks.",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "The source-comparison letters H and L are visibly distinguished from H(Gamma) by their explicit local source context at 03:16-19. They do not replace the paper's flags f/f', Hodge indices j_k, product length ell, vertex types or defects. The moved discussion uses the same kappa/omega and ordered/unordered block translation; no new dummy or coefficient role is introduced. The independent Remark/Example numbering is visually identified by its environment name, so it does not compete with mathematical-result references. Source inspection of the new theorem styles and the rendered pages confirms roman explanatory bodies and italic principal bodies, with ordinary math typography retained. The pre-existing source/base psi conventions, local D/mathcal L and tail/partition indices remain legible and unchanged.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The classic-recall signal at the start of 2.3 and the adjacent half-edge/leg translation let a familiar reader identify the convention difference before skipping the review. The mathematical normalization material continues with FP00 used for its Hodge-sequence role rather than as the full graph-flag source. In 2.4 the reader can proceed directly from each principal statement to its proof, then choose whether to read the source Remark and symmetry Example. Skipping those optional modules does not omit the automorphism weight, map definitions, hypotheses or algebraic justification, which remain in the principal statement/proof and main comparison text. The map motivation and named one-point comparisons bridge naturally to the rational-tail lemma. The post-proof KMZ Remark separates attribution from notation conversion into two short paragraphs; the m=2 check and exponential specialization follow coherently. The remaining need for visual breaks inside the boundary proof is a structure issue, not a missing logical connection or changed meaning.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-003",
+      "severity": "minor",
+      "location": "sections/02_notation/04_boundary_and_forgetting.tex:45-63, Proposition 2.6 proof; build/reviews/s02/r003/preview.pdf page 10",
+      "message": "The proof remains one dense, uninterrupted paragraph despite passing through three different functions: the node normal-line and repeated-node self-intersection calculation, grouping distinct nodes with graph symmetry factors, and the Chow/projection-formula conclusion. Moving the surrounding credit into Remarks has improved the section, but this central proof block still does not meet USER-004's request for short paragraphs organized by purpose. Its unchanged mathematical text should not exempt it from the new density criterion.",
+      "requested_change": "Keep the proof immediately after the proposition and preserve its mathematical text, but divide it locally into those three paragraphs. Natural breaks are before 'Distinct nodes intersect as the corresponding boundary branches' and before 'These are algebraic self-intersection and pushforward calculations'. No new environment, lemma, general rewrite, font or global spacing adjustment is needed. Recheck the affected PDF page and resulting pagination."
+    }
+  ],
+  "notes": [
+    "Fresh formal round-3 review for USER-004 by the original reviewer. Prior issues READABILITY-001/002 were already resolved in r002 and remain resolved; resolved_issue_ids is therefore empty in this user-triggered round. The new density issue uses READABILITY-003 and does not reuse the old IDs.",
+    "The requested classic-source signal and important H-versus-legs translation, statement/proof adjacency, purposeful intermediate modules, roman explanatory bodies, independent counters and versioned KMZ bibliography are all present. The outstanding point is a small functional paragraph split inside the boundary proof; no mathematical or source rewrite is requested.",
+    "Read the updated frozen AGENTS/role/context, USER-004, current handoff, changed subsection sources, preamble, source/interface/bibliography deltas and clean-PDF receipt. Inspected current PDF pages 6-15. Verified all 23 archived file hashes and three artifact hashes plus live/archive equality; independently confirmed 34 numbered equations and 13 principal statement blocks byte-identical to r002. Introduction/2.1/2.2 and the roadmap are unchanged. The USER-004 digest matches the value bound by the frozen handoff. PDF/entry/helper hashes match the exact snapshot receipt and layout_diagnostics is empty.",
+    "No manuscript, shared input, older report/archive, workflow state or shared build was modified. The coordinator should collect all three reports before returning READABILITY-003 to the original writer, then reuse this reviewer session for the new frozen snapshot."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "462957e77c7a4126e4fa8ade9c79553544caeee25c2a411b6efad54190d476e8",
+  "summary": "Changes requested for one minor remaining USER-004 density issue: split Proposition 2.6's continuous proof paragraph by its three natural functions. The classic-source/convention recall, proof adjacency, post-proof Remarks, purposeful Example/comparison modules, versioned citations, styles and numbering otherwise pass review. Mathematical statements and numbered equations are preserved.",
+  "unit": "s02",
+  "verdict": "changes_requested"
+}

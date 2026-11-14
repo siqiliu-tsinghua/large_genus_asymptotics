@@ -2,4 +2,163 @@
 \subsection{Gluing maps and restrictions of Hodge classes}
 \label{subsec:s02:03}
 
-% WORKFLOW-TODO: Write this subsection after the unit is assigned.
+We recall the stable-graph terminology of Graber--Pandharipande
+\cite[Appendix A.1]{GP03} for later use, including legs among our
+flags as explained below.
+
+A stable graph $\Gamma$ of type $(g,n)$ is a finite connected graph
+with a nonnegative integer genus $g_v$ at each vertex $v$.  Its flags
+form a finite set $H(\Gamma)$ with an incidence map to the vertex set
+$V(\Gamma)$ and an involution.  The two-element orbits of the
+involution are the edges $E(\Gamma)$; its fixed points are the legs,
+labelled $1,\ldots,n$.
+
+In the cited convention, $H$ contains only paired half-edges, its
+involution has no fixed points, and $L$ is a separate set of legs.
+Our $H(\Gamma)$ combines those two sets and encodes legs as fixed
+points.  Write $n_v$ for the number of flags incident
+to $v$, counting both flags of a self-loop.  Stability and the genus
+condition mean
+\begin{equation}
+\label{eq:s02:graph-genus}
+\begin{gathered}
+2g_v-2+n_v>0\quad(v\in V(\Gamma)),\\
+b_1(\Gamma)=|E(\Gamma)|-|V(\Gamma)|+1,\qquad
+g=\sum_{v\in V(\Gamma)}g_v+b_1(\Gamma).
+\end{gathered}
+\end{equation}
+Here $b_1(\Gamma)$ is the first Betti number of the graph.  Counting
+flags also gives
+\begin{equation}
+\label{eq:s02:graph-stability-sum}
+\sum_{v\in V(\Gamma)}(2g_v-2+n_v)=2g-2+n.
+\end{equation}
+An automorphism preserves incidence, the involution, vertex genera and
+each leg label; its finite group is denoted by
+$\operatorname{Aut}\Gamma$.  Let $\mathcal G_{g,n}$ be the set of
+isomorphism classes of such graphs.
+
+For a representative with its vertices and flags distinguished, set
+\begin{equation}
+\label{eq:s02:gluing-map}
+\MM_\Gamma=\prod_{v\in V(\Gamma)}\MM_{g_v,n_v},
+\qquad
+\xi_\Gamma:\MM_\Gamma\longrightarrow\MM_{g,n}.
+\end{equation}
+The markings of each factor are labelled by its incident flags, and
+$\xi_\Gamma$ glues the two markings belonging to each edge.  We work
+on this product before taking its quotient by
+$\operatorname{Aut}\Gamma$.  Thus the gluing pushforward in a graph
+sum carries the factor $1/|\operatorname{Aut}\Gamma|$.  The product
+has dimension $3g-3+n-|E(\Gamma)|$, so $|E(\Gamma)|\leq3g-3+n$
+and $\mathcal G_{g,n}$ is finite.  Let $\EE_v$ be the Hodge bundle
+pulled back from the $v$th factor, and write $\lambda_j^{(v)}$ and
+$\kappa_a^{(v)}$ for its Hodge classes and that factor's logarithmic
+kappa classes.  A flag $f$ similarly defines a cotangent class
+$\psi_f$ on the product.
+
+Choose orientations for the edges, and let $H_1(\Gamma;\mathbb C)$
+denote the complex cycle space: the kernel of the oriented incidence
+map $\mathbb C^{E(\Gamma)}\to\mathbb C^{V(\Gamma)}$.  Its dimension
+is $b_1(\Gamma)$.
+
+Normalization describes the Hodge bundle by residues at the chosen
+nodes.  Keeping the cycle space in the quotient makes the role of the
+graph labels explicit.  The one-node sequences are recalled in
+\cite[\S 1.3, (17)--(18)]{FP00}; the partial-normalization argument
+below is also given in \cite[proof of Proposition 4.4, (4.2)--(4.3)]{LX26b}.
+
+\begin{lmm}[Normalization of the Hodge bundle]
+\label{lmm:s02:hodge-normalization}
+On $\MM_\Gamma$ there is an exact sequence of vector bundles
+\begin{equation}
+\label{eq:s02:hodge-normalization}
+0\longrightarrow\bigoplus_{v\in V(\Gamma)}\EE_v
+\longrightarrow\xi_\Gamma^*\EE
+\longrightarrow H_1(\Gamma;\mathbb C)\otimes\mathcal O_{\MM_\Gamma}
+\longrightarrow0.
+\end{equation}
+Consequently,
+\begin{equation}
+\label{eq:s02:hodge-factorization}
+\xi_\Gamma^*c_t(\EE)
+=\prod_{v\in V(\Gamma)}c_t(\EE_v).
+\end{equation}
+\end{lmm}
+
+\begin{prf}
+Normalize only the nodes prescribed by $E(\Gamma)$, leaving any
+additional nodes inside the vertex curves unchanged.  A dualizing
+differential on the glued curve becomes a differential on each vertex
+curve with at most simple poles at the gluing markings.  The residues
+on the two branches of an edge are opposite, and their sum at each
+vertex is zero.  With the chosen edge orientations, these
+conditions identify the residue vectors with the kernel of the
+incidence map
+$\mathbb C^{E(\Gamma)}\to\mathbb C^{V(\Gamma)}$, namely
+$H_1(\Gamma;\mathbb C)$.
+
+Every such vector of residues is realized.  Indeed, on a connected
+vertex curve the only obstruction to prescribed simple-pole residues
+is their sum, by duality with the constant functions.  The kernel of
+the residue map consists precisely of the vertex Hodge differentials.
+This argument works in families: partial normalization, the
+structure-sheaf exact sequence and relative duality give
+\eqref{eq:s02:hodge-normalization}; connectedness of each vertex
+family makes the incidence map constant.  Its kernel has constant
+dimension $b_1(\Gamma)$, including over further degenerations of the
+vertex curves.  The quotient is therefore a trivial bundle on the
+labelled product, and the Whitney formula proves
+\eqref{eq:s02:hodge-factorization}.
+\end{prf}
+
+The triviality here concerns the underlying bundle on $\MM_\Gamma$.
+The action of $\operatorname{Aut}\Gamma$ on the cycle space can be
+nontrivial: reversing a self-loop changes the sign of its residue.
+No equivariantly trivial quotient is asserted on the graph quotient.
+
+\begin{crl}[Allocation of the Hodge defect]
+\label{crl:s02:defect-allocation}
+For an integer $h$ with $0\leq h\leq g$,
+\begin{equation}
+\label{eq:s02:defect-allocation}
+\xi_\Gamma^*\lambda_{g-h}
+=\sum_{\substack{0\leq h_v\leq g_v\ (v\in V(\Gamma))\\
+\sum_{v\in V(\Gamma)}h_v=h-b_1(\Gamma)}}
+\prod_{v\in V(\Gamma)}\lambda_{g_v-h_v}^{(v)},
+\end{equation}
+where the summation variables $h_v$ are integers.  The sum is empty
+if $b_1(\Gamma)>h$.  In particular, $\xi_\Gamma^*\lambda_g$ is zero
+unless $\Gamma$ is a tree, and on a tree it equals
+$\prod_{v\in V(\Gamma)}\lambda_{g_v}^{(v)}$.
+\end{crl}
+
+\begin{prf}
+Take the coefficient of $t^{g-h}$ in
+\eqref{eq:s02:hodge-factorization}.  Choosing degree $g_v-h_v$ at
+vertex $v$ gives total degree
+$g-b_1(\Gamma)-\sum_v h_v$, which is $g-h$ exactly under the stated
+constraint.
+\end{prf}
+
+Thus a nonseparating one-node graph uses one unit of defect before any
+vertex defect is assigned.  This will explain both the tree restriction
+for the top class and the change from $h$ to $h-1$ at a nonseparating
+node in the fixed-defect problem.
+
+Under gluing, logarithmic kappa and leg cotangent classes satisfy
+\begin{equation}
+\label{eq:s02:tautological-gluing}
+\xi_\Gamma^*\kappa_a=\sum_{v\in V(\Gamma)}\kappa_a^{(v)}
+\quad(a\geq0),
+\qquad
+\xi_\Gamma^*\psi_i=\psi_i\quad(1\leq i\leq n),
+\end{equation}
+where the last class is on the factor carrying leg $i$.  For the first
+identity, use the logarithmic-dualizing description in the argument for
+\eqref{eq:s02:kappa-conversion}.  On partial normalization the
+logarithmic dualizing line restricts to the corresponding line on each
+vertex curve, with the gluing branches counted as markings.  Pushing
+its $(a+1)$st power along the vertex families gives the sum in
+\eqref{eq:s02:tautological-gluing}.  The second identity follows because
+gluing at other markings preserves the cotangent line at leg $i$.

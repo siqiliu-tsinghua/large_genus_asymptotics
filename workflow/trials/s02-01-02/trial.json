@@ -8,6 +8,15 @@
   "companion_units": [
     "s01"
   ],
+  "continued_in_full_section": {
+    "accepted_receipt": "workflow/reviews/s02/r002/build_receipt.json",
+    "bundle": "workflow/reviews/s02/r002",
+    "recorded": "2026-11-14T12:41:27+00:00",
+    "round": 2,
+    "snapshot": "973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac",
+    "status": "approved",
+    "unit": "s02"
+  },
   "created": "2026-11-14T09:52:34+00:00",
   "final_audit": {
     "addressed_user_feedback": [

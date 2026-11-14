@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The section roadmap states the two operations, their proof order and the finite-genus scope before the technical material. New graph data, the labelled product, cycle space, edge kernel, forgetting maps, tail monomial and partition conventions are introduced before their statements; the complete interface records their types and scopes. The manuscript inherits the Introduction's definitions directly and retains the user-authorized lowercase integral families, ordinary Bernoulli B and Chow coefficients inside parentheses. The new proofs are divided by function: normalization and defect allocation in 2.3, then boundary expansion, one-point comparison, tail corrections, inversion and specialization in 2.4. Their short route paragraphs and examples explain the relevant conventions without repeating the basic setup. The English and theorem punctuation are professional, with no drafting placeholder or unsupported priority claim. Introduction and 2.1/2.2 were independently confirmed byte-identical to reviewed commit c6d9c0c; the new material introduces no conflicting convention.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "03_gluing.tex:56-60 credits FP00 for the one-node sequences and cites only the partial-normalization argument in the proof of LX26b Proposition 4.4; the manuscript does not import that proposition's nefness conclusion. The boundary exponential is explicitly identified as Andersen et al.'s constant-edge specialization (04_boundary_and_forgetting.tex:45-52), and the algebraic proof is presented as the corresponding Chow argument. The forgetting and inverse formulas are attributed to Kaufmann-Manin-Zagier, with their own credit to Arbarello-Cornalba and the earlier unpublished Faber-Zagier derivation preserved (204-213). The local convention explanations, degree argument and exponential specialization are distinguished from those quoted formulas and supplied with proofs. Neither internal notes nor the unpublished historical result are used as substitutes for the checked primary inputs.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Checked the primary PDFs and relevant formula images. FP00 Section 1.3, PDF p.11 / journal p.183, contains the sequences adjoining (17)-(18). LX26b arXiv:2610.39462v1, PDF pp.7-8, proof of Proposition 4.4, (4.2)-(4.3), gives the partial-normalization and relative-duality construction actually used. ABCDGLW23 arXiv:1905.10352v3, PDF pp.27-29, defines the weighted one-edge map and states Lemma 3.10, (3.18)-(3.22); its edge series E=a, vertex series T(u)=cu and weighted one-edge class translate to this paper's K_a, c kappa_1 and delta. KMZ96 alg-geom/9604001v1, PDF pp.12-13, (2.4), Theorem 2.2 (2.6), Lemma 2.2.1 (2.8) and (2.9)-(2.11), confirms the multiple-pushforward convention, logarithmic kappa comparison, cycle factors and ordered-block 1/k!; the manuscript correctly converts this to unordered partitions without block factorials. The original cohomological formulations and their Chow adaptations are identified rather than conflated. The three new bibliography entries match primary arXiv/publisher metadata, including the 2023 journal publication versus 2020 cited arXiv version for ABCDGLW23, the 1996 KMZ publication and versioned 2026 LX preprint. The retained Mumford/FP00 GRR conventions and original source checks remain valid.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The new results are stated as exact finite-genus identities. The Hodge quotient is asserted trivial on the labelled product only; 03_gluing.tex:106-109 explicitly allows a nontrivial graph-automorphism action. Defect allocation includes integer bounds and the empty-sum condition. The boundary argument uses algebraic normal-line self-intersection and pushforward, and the one-point logarithmic-kappa comparison is proved algebraically before the KMZ push-pull recursion is applied in Chow (04_boundary_and_forgetting.tex:105-123,215-226); no cycle-map injectivity is assumed. The tail lemma requires a positive cotangent power at every forgotten point, retains the negative sum of new psi classes in a kappa background, and is not used to erase that term. The exponential specialization derives its factorials and explains why the marking sum truncates at fixed genus. The roadmap, last paragraph and interface explicitly withhold uniform estimates for later genus-dependent summations and make no claim to prove the four asymptotic targets in this section.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is the first formal whole-s02 academic review. Historical scoped trial reports do not substitute for this signature; resolved_issue_ids is empty in this first formal round.",
+    "All 21 frozen source inputs matched the submission fingerprints and current copies. Introduction and 2.1/2.2 also matched commit c6d9c0c. The strict build receipt and its 14-page PDF were checked separately from the source review.",
+    "The recorded overfull-line warnings are assigned to the readability review; no attribution or claim-strength defect is inferred from those typography warnings. This academic pass is one required review and does not itself constitute workflow acceptance."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "2c3cf36a29fe93b245bf57fe4ba82f5066fbb208aa46a6ae2cc6a5a9c7826837",
+  "summary": "Pass for the first formal whole-section academic review. New source attributions, exact versioned locators, normalization and graph conventions, cohomology-to-Chow arguments, and finite-genus claim strength are accurately distinguished. No unresolved academic issue was found.",
+  "unit": "s02",
+  "verdict": "pass"
+}

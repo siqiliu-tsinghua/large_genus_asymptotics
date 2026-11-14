@@ -1,87 +1,71 @@
-# s02 writer handoff — trial of 2.1 and 2.2
+# s02 writer handoff - USER-004 organization and attribution
 
-Status: drafting / incomplete. This handoff covers the authorized Introduction + 2.1–2.2 trial, updated through USER-003 after trial round 4. It is not a formal submission of either whole section and does not authorize acceptance. Original writer session must be retained for revision and for eventual completion of 2.3–2.4.
+Document role: current author handoff for the reopened s02 submission. Fixed writer: `/root/s02_writer`. Live review and acceptance status are in `workflow/state.json`. The approved formal r002 record and all formal r003 reports remain immutable. The current revision responds only to READABILITY-003 and requires a fresh formal round 4 review by the same original agents. This handoff does not confer approval.
 
-## Files written
+## Formal r003 response: READABILITY-003 addressed
 
-- `sections/01_introduction/section.tex`: limited clarification and relocation of global conventions at first use; stable-forgetting dimension argument; normalization ranges; current lowercase integral-family names; parenthesized Chow coefficients; requested Bessel argument and ILW wording. Main target values and error orders remain unchanged under the naming translation.
-- `sections/01_introduction/INTERFACE.md`: records this limited baseline revision, global first-definition locations and unchanged theorem targets.
-- `01_conventions.tex`: now starts with formal exponentials, followed by the exponential-to-power lemma and proof, exact `a_g` / `b_g(h)` factorial restoration, and fixed-parameter/error conventions. The global Chow/degree/integration/rank conventions have moved to the Introduction and are inherited directly.
-- `02_tautological_classes.tex`: psi before logarithmic kappa; direct source-cotangent transition; factorial-normalized Chern characters and Chern polynomial; parenthesized Chow coefficients; total reduced boundary, chosen node and ordered branches; ordinary Bernoulli notation; fully normalized marked Mumford formula; nonlogarithmic conversion with a short section-intersection argument; divisor specialization; root-based exponential rewrite and lambda-two/lambda-three examples with proof.
-- `INTERFACE.md`: exact assumptions, scopes and reasons for notation, result labels, verified primary locators, and explicit unfinished parts.
-- `writer_handoff.md`: this record.
-- `workflow/trials/s02-01-02/r001/author_response.json`: separate response to USER-001, with no open reviewer-issue responses and no alteration of the original pass reports.
-- `workflow/trials/s02-01-02/r002/author_response.json`: separate response to USER-002; the r001 response and all previous reports remain unchanged.
-- `workflow/trials/s02-01-02/r004/author_response.json`: current response to USER-003; no old response or report is modified.
+The collected r003 math and academic reports passed; readability requested only two paragraph breaks in the proof of Proposition 2.6. Blank lines now precede "Distinct nodes intersect as the corresponding boundary branches" and "These are algebraic self-intersection and pushforward calculations". The new first-line indents caused two overfull boxes, so the coordinator authorized the exact local prefix `\smallskip\noindent` at both starts. These two hints provide a small visible paragraph gap without an indent; no global font or spacing setting changes. Every visible word, mathematical expression, environment, label and statement/proof adjacency is retained. The response is recorded in `workflow/reviews/s02/r003/author_response.json`; no unchanged literature was reread.
 
-For USER-003, the only chapter edits are the six assigned current Introduction and 2.1–2.2 source/interface/handoff files. No changes were made to the section-2 roadmap, 2.3, 2.4, the preamble, bibliography, abstract, other chapters or workflow state.
+## Bound user feedback
 
-## USER-001 revision history
+- Feedback ID: USER-004.
+- Feedback path: `workflow/feedback/s02/USER-004.json`.
+- Feedback SHA-256: `1e03939e205eb8014e624dacf88df3cb7e964467a45a58ec97ce579df046f5f6`.
+- Previous approved formal round: r002.
+- Previous snapshot: `973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac`.
 
-The updated writer/readability responsibilities and shared notation policy treat the paper as a continuous text. The earlier opening wrongly repeated the Introduction's basic setup; correctness of those repetitions did not justify them.
+The feedback contains the verbatim user request and checklist. Its raw-file digest is included here so the current source snapshot binds the request. This is a response to user feedback, not a new response to past reviewer issues: both r001 readability issues were already resolved in formal r002.
 
-- Removed the paragraph reintroducing `g,n`, stability, the moduli stack and its base. That revision began with Chow/degree/integration conventions, subsequently relocated by USER-002.
-- Removed the inventory of the Hodge bundle, Hodge indices, normalizations and `g_2`, along with the needless pointer to Theorem 1.3. Their full inherited ledger remains in `INTERFACE.md` for collaborators.
-- Retained the new conventions `lambda_0=1` and vanishing above rank, the homogeneous conversion lemma, its precise local bounds, the factorial examples and the fixed-parameter/error table.
-- Shortened the 2.2 opening to identify `pi=pi_{n+1,n}` with the universal stable curve. It introduces sections and the dualizing sheaf in their needed roles without retelling the already defined forgetting operation.
-- Removed the routine Introduction reference before the factorial example and the redundant prose labeling the root and Chern-class dummy indices. The psi/kappa/character definitions, boundary normalization, literature conversion and proofs remain intact.
+## USER-004 response: addressed
 
-No mathematical identity or hypothesis was changed in that revision. Its placement of the new global conventions at the start of 2.1 is superseded by USER-002 below. The shared responsibility files were read but not edited by the writer. The original three reports are unchanged; all three original reviewers must sign the new snapshot.
+1. **Classic-source recall.** The 2.3 opening now identifies Graber-Pandharipande, Appendix A.1, as the stable-graph source and says the terminology is recalled for later use. The primary v2 text was independently checked. Its `H` contains only paired half-edges and has a fixed-point-free involution; its numbered legs form a separate `L`. Our `H(Gamma)` contains both kinds of flags and represents legs by fixed points. This difference is explicit beside the definition. FP00 is retained only for the actual Hodge conventions/sequences, not credited with our identical flag presentation.
+2. **Boundary statement/proof adjacency.** Proposition 2.6 is followed immediately by its proof. The source specialization and cohomology/Chow convention are in a short two-paragraph Remark after the proof, rather than between statement and proof.
+3. **Purposeful intermediate modules.** A concise Example explains loop, labelled separating-edge and ordered-splitting weights. The forgetting-map paragraph explains why the maps are introduced and retains the source/base convention. A separate one-point-comparison paragraph gives the tail divisor and original equation, immediately followed by its algebraic Proof. The complete stabilization, log-dualizing line, section self-intersection, projection/base-change and binomial argument remains in the main text. Only the source citation is placed in the following short Remark. No essential definition or hypothesis is made optional.
+4. **Forgetting statement/proof adjacency.** Lemma 2.8 is followed immediately by its proof. Its source credit, Arbarello-Cornalba/Faber-Zagier attribution and notation/ordered-block conversion are in a short post-proof Remark.
+5. **Versioned citations.** All KMZ formula-number citations in 2.4 now use the explicit `KMZ96v1` preprint entry. No raw version identifier remains in manuscript prose. The journal `KMZ96` entry stays in the shared database but is uncited here. ABCDGLW's checked numbering version is specified by its bibliography note, with no raw identifier repeated in 2.4.
+6. **Selective reading.** Short, named source remarks and the one-edge Example have one purpose each and use short paragraphs. The proof-bearing one-point material remains in the main argument. The independent `rmk`/`exm` section counters supplied by the coordinator preserve all substantive result numbers. The coordinator fixed the initially ineffective roman-body hook with explicit theorem/remark styles, retaining the substantive counter grouping. The coordinator also updated writer/reviewer duties and the shared outline; the writer read those instructions and did not edit shared files.
 
-## USER-002 revision history
+## Authorized current files
 
-Global information is now stated once at its natural first use in the Introduction:
+The USER-004 submission edited these four tracked files:
 
-- Moduli-stack interpretation over `\mathbb C`, rational Chow products and complex-codimension degree are stated in the first moduli paragraph.
-- `lambda_0=1` and vanishing above rank accompany the first definition of the Hodge classes.
-- Stack integration, stabilizer weights, top-degree selection and scalar coefficient extension appear immediately before the first pure Hodge integral.
+- `sections/02_notation/03_gluing.tex`;
+- `sections/02_notation/04_boundary_and_forgetting.tex`;
+- `sections/02_notation/INTERFACE.md`;
+- `sections/02_notation/writer_handoff.md`.
 
-The Introduction's forgetting argument now uses a direct dimension comparison on a stable target. It explicitly separates `g>=2,n>=1` (forget to `m=0`) and `g=1,n>=2` (forget to `m=1`), with genus zero excluded by positive-product/rank conventions and `(1,1)` retained. The unnecessary temporary target-class and tilde-alpha aliases are removed. The definitions of `b_g(h)` now specify `g>=2` and integer `0<=h<=g`; normalized homogeneous insertions specify `0<=d<=3g-3`.
+The present READABILITY-003 revision edits only `04_boundary_and_forgetting.tex`, this handoff and the designated r003 author response. The interface and scientific ledger are unchanged. The Introduction, 2.1, 2.2 and section roadmap are unchanged. All frozen trial/review sources, reports, earlier author responses, build receipts and review helpers remain untouched. No commit or state-changing workflow command is made by the writer. New clean draft products and their helper use only the ignored directory `build/reviews/s02/writer-user004-draft/`.
 
-The definitions of `Cin,N_g` and `b` precede their first theorem use, without changing their formulas. The fixed-index theorem's grammar and the integer nature of the fixed defect are clarified. The Introduction's organization placeholder is replaced by a description explicitly framed as the planned proof routes. No proof is claimed complete.
+## Mathematical preservation
 
-Section 2.1 begins directly with the local formal-exponential tool and retains its degree conversion, local hypotheses, proof, factorial examples and parameter/error discussion. At that revision, Section 2.2 was unchanged from r002; the USER-003 changes below now update its coefficient formatting, notation and transition prose.
+All 34 numbered equation environments and their labels retain their approved mathematical payload and order. Existing theorem/lemma/proposition/corollary labels, statement hypotheses, signs, edge weights, factorials and substantive numbers are retained. The Hodge normalization/cycle-space argument, bounded defect allocation, algebraic boundary calculation, positive-new-psi tail condition, surviving negative new-psi sum, partition inversion and degree-two finite cutoff have not been changed.
 
-No new global symbol or source input was needed. The coordinator approved this relocation and low-genus clarification. Both interfaces record the exact first-definition locations. The response to USER-002 is in the r002 response file; the old responses, review reports and source archives are untouched.
+The new source-convention explanation distinguishes equivalent graph encodings; it does not change our existing graph definition. The additional one-point Proof environment exposes the already present argument without introducing a numbered result. Remarks and Examples have independent counters and roman bodies. No global font or spacing change is made by the writer.
 
-## USER-003 revision
+## Exact source mapping
 
-- The Introduction's first-positive-zero description now says `J_0(z)`, and its last paragraph uses exactly `the ILW equation`.
-- All current Chow expressions use `A^a(\MM_{g,n};\mathbb Q)` or the appropriate degree, keeping uppercase `A` for the Chow functor and placing the coefficient field inside the parentheses.
-- The integral families are consistently `a_g`, `b_g(h)` and `b_g`, including the normalized-bracket denominator, theorem statements and factorial examples. Ordinary uppercase `B_m` is reserved for Bernoulli numbers, with the same generating series and signs. The scalar correction `b` and later one-point coefficient `\beta_g` are retained.
-- The obsolete font explanation is removed. The descendant explanation and recipe-like reference before logarithmic kappa are replaced by a direct transition identifying `\psi_{n+1}` as the last cotangent class on the source `\MM_{g,n+1}`.
-- Both interfaces and this current handoff follow the new names; frozen archives, earlier responses, review reports and addenda remain unchanged. No new source or mathematical object is introduced.
+- `GP03`: primary Appendix A.1, PDF pages 13--14 of the version fixed in its bibliography note. It defines separate paired half-edges and numbered legs, vertex stability/genus, the product of vertex moduli stacks and the gluing map. The primary HTML/PDF was checked for this request. The source graph `A`, vertex functions `g(v),n(v)` and Betti number `h^1(A)` correspond to our `Gamma,g_v,n_v,b_1(Gamma)`; the significant flag/involution difference is described above. The publisher's title uses "of moduli spaces", while the preprint title uses "on moduli spaces"; the coordinator's bibliography fixes the cited appendix version.
+- `FP00`: Section 1.3 (17)--(18), retained for one-node Hodge sequences. It is not used as the source for our full stable-flag definition.
+- `LX26b`: proof of Proposition 4.4 (4.2)--(4.3), retained for the partial-normalization/cycle-space argument, not its nefness conclusion.
+- `ABCDGLW23`: Lemma 3.10 (3.18)--(3.22), with version in its bibliography note. The post-proof Remark identifies constant edge series `a`, linear vertex coefficient `c`, weighted one-edge class `delta` and the cohomology-to-Chow distinction. The existing algebraic proof is unchanged.
+- `KMZ96v1`: Section 2 (2.4), Theorem 2.2 (2.6), Lemma 2.2.1 (2.8), comparison (2.10), and push-pull formulas (2.9)--(2.11). The explicit versioned entry replaces every section-2.4 citation to the journal key. The post-proof source Remark retains `omega_n(a)=kappa_a` and the conversion from ordered blocks with `1/k!` to unordered partitions. The original geometric attribution to Arbarello-Cornalba and earlier unpublished Faber-Zagier is retained.
 
-The four main target equations and all numbered identities retain their mathematical payload after the canonical notation/format translation. Hypotheses, numerical coefficients, labels, theorem order, constants and error orders are preserved.
+No additional source uncertainty or bibliography request remains. The existing source checks for the unchanged mathematics are retained; unchanged literature was not reread for this organizational request.
 
-## Mathematical decisions
+## Historical continuity
 
-1. All integrals are stack degrees. The ordered-node cover records both branch orientations, giving `delta=(1/2)xi_*1`; this is also the normalization of the GRR boundary term.
-2. `kappa_a=pi_*(psi_new^(a+1))` is logarithmic. FP00 §1.1 uses the nonlogarithmic dualizing power. The local comparison is proved by identifying the universal curve with the forgetful source, writing the new cotangent class as the logarithmic dualizing class, and using disjoint sections with normal bundle `L_i^vee`. The contribution of each marking is the alternating binomial sum equal to `psi_i^a`. This supplies the negative marking term in the stated GRR formula.
-3. `ch_a` includes `1/a!`. The coefficient in `log c_t` is consequently `(-1)^(a-1)(a-1)! ch_a`. Even characters vanish; odd coefficients are positive after the sign specializes to odd `a`.
-4. `12lambda_1=kappa_1+delta-sum_i psi_i` follows from `B_2=1/6` and the half-boundary normalization. The unmarked specialization is explicitly restricted to `g>=2`.
-5. Exponential-to-power conversions are exact finite-genus degree selections. They do not provide any uniform asymptotic estimate or interchange of graph sums.
-6. `g_2`, the `j`-family Hodge indices and `ell` are retained. The WP scale is deferred, and there is no extra dimension abbreviation. Uppercase `A` is the Chow functor, ordinary uppercase `B_m` the Bernoulli family, and lowercase `a_g,b_g(h),b_g` the integral families. Scalar `b` and the later `\beta_g` retain separate roles. One local map `pi`, explicitly identified with the inherited `pi_{n+1,n}`, serves as both forgetting map and universal stable curve; no second family-map alias is introduced.
+Earlier scoped records under `workflow/trials/s02-01-02/` preserve USER-001's continuous-paper inheritance, USER-002's introductory convention placement, USER-003's lowercase integral/Bernoulli/Chow conventions, and the prior punctuation correction. Formal r001/r002 records under `workflow/reviews/s02/` remain immutable. The new request is bound above and is not relabelled as a past reviewer issue.
 
-## Literature checks
+The current notation remains `a_g,b_g(h),b_g`, ordinary `B_m`, `A^a(X;Q)`, scalar `b`, and later one-point `beta_g`. Hodge indices remain `j_1,...,j_ell`, factor count `ell`, and flags use `f,f'`; `g_2` and the Bessel names are unchanged.
 
-The coordinator verified and communicated the precise locators; the writer also opened and checked the primary author PDFs.
+## Checks and handoff
 
-- Mumford (1983), §5, (5.2) and Corollary (5.3); primary PDF pages 34 and 36. Its original Bernoulli convention and kappa-index typo are resolved through the corrected FP00 presentation.
-- Faber–Pandharipande (2000), §1.1, unnumbered Theorem (Mumford), author PDF page 6 / journal page 178. This is the intended primary clean-family statement; Proposition 1 is the stable-map virtual generalization and is not used as the locator.
-- FP00 §1.3, (16), author PDF page 11 / journal page 183, for the marking correction under the forgetful convention.
-- Bibliography keys `Mum83` and `FP00` were added by the coordinator. No shared bibliography change remains requested for this trial.
+The final source checks compare whitespace-normalized full subsection 2.4 after removing only the two authorized `\smallskip\noindent` prefixes, all 34 numbered equations, all 13 principal statements and unaffected files with frozen r003. The only manuscript delta is the two blank lines and their local prefixes above. Documents remain ASCII-safe UTF-8 with LF and final newlines, with no corrupted separators.
 
-## Earlier unimplemented roadmap proposal
+After all three files are saved, the writer runs repository validation, the draft gate, native strict build and a separate label-free draft build. The clean log is required to have zero overfull horizontal/vertical boxes; the affected page and pagination are inspected visually. Actual outcomes and matching source hashes are recorded in the draft receipts and reported to the coordinator. The clean artifact records no new review signature; the coordinator freezes formal r004 and obtains all three original reviewers' fresh signatures.
 
-When authorized to fill `section.tex`, a short roadmap could say:
+The writer stops editing at handoff until the collected reviews or another explicit instruction arrive.
 
-> We fix the grading and factorial normalizations, then recall Mumford's formula in the logarithmic kappa convention. These identities express Hodge insertions through odd Chern characters and the boundary. We next describe their behavior under normalization at nodes and give the boundary and forgetting formulas used in the later graph expansions.
+## Shared-input refresh for s03 preparation
 
-This quotation predates USER-002 and is retained only as handoff history. It was never inserted into the manuscript; no section-2 roadmap is drafted or updated in this revision.
-
-## Validation and next action
-
-Current source checks compare every numbered equation with r004 after the canonical notation/format translation, including the four target equations; exactly four Introduction theorems retain their original labels and order. The handoff also checks UTF-8/LF/final newlines, response JSON, unique labels, scoped diff formatting and the absence of stale current integral names or obsolete Bernoulli formatting. No theorem proof or reviewer approval is inferred from these checks.
-
-The coordinator is synchronizing the shared notation documents. After the coordinator's confirmation, the writer will run `python workflow/trials/s02-01-02/build_preview.py` for the Introduction followed by only 2.1–2.2; its receipt records the actual result. The coordinator must verify and freeze the next snapshot for all three original reviewers to recheck. The remaining section-2 TODO markers deliberately prevent representing the whole unit as complete. The writer will stop editing at handoff and await the coordinator's next instruction.
+This dependency refresh adds only the coordinator-supplied bibliography entries Wol86, Mir07, MZ15, SW25, HMT25, LX26 and W26, which are not used in s02, and future s03 notation/core-contraction conventions in shared context. Every s02 TeX file and INTERFACE.md remains byte-identical to the approved source; no s02 mathematical recalculation is needed. Historical sources, reports and receipts remain immutable; the original reviewers will check this shared-input delta against the new snapshot.

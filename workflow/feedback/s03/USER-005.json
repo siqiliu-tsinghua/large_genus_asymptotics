@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "USER-005",
+  "unit": "s03",
+  "previous_round": 1,
+  "previous_snapshot": "357cc0991040efce307cb989a61ba2f97a57045f78ad9b05588263bd8331496c",
+  "request": "很好，只需要做一点点调整：第3节开头缺少一些承接和导引的话。在Introduction中的organization部分应该介绍过第3节的内容，这里有必要再复述并扩充一下，介绍第3节主要内容，与前面的部分的关系（要引用之前的图和展开公式），以及与后面内容的关系（比如在下一节中帮助证明定理1.1等）。",
+  "changes": [
+    "Expand only the Section 3 opening into a concise bridge from Section 2 and a guide to the current estimates and their later applications.",
+    "Refer explicitly to the stable graphs of Subsection 2.3 and the applicable earlier expansion and geometric identities, using their existing labels.",
+    "Explain why the fixed-genus graph identity needs uniform absolute tails and summable remainders before asymptotic summation.",
+    "Explain how the finite-core expansion will be used in the next section to prove Theorem 1.1, and how the marked/derivative extension supports the later proof of Theorem 1.2."
+  ],
+  "constraints": [
+    "Keep the four subsection files and all mathematical statements, proofs, formulas, labels and normalization conventions unchanged.",
+    "Do not reintroduce inherited basic notation or use new Section 3 symbols before their definitions.",
+    "Leave the Introduction, Section 2, shared files and later-section placeholders unchanged.",
+    "Reuse the original writer and three original reviewers, preserving all old snapshots and reports.",
+    "No new Git commit requested."
+  ]
+}

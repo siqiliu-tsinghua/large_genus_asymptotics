@@ -1,0 +1,68 @@
+{
+  "accepted": {
+    "receipt_path": "workflow/reviews/s02/r004/build_receipt.json",
+    "receipt_sha256": "cff4150950e5fa22c7660fc0d03ab68ad9df6e09490b213d25e1ec9910dc1e22",
+    "round": 4,
+    "snapshot": "05698d83d428c81b2670569a4189243384864e7adf31ba8a08da3440b7480db7"
+  },
+  "addressed_user_feedback": {
+    "id": "USER-004",
+    "path": "workflow/feedback/s02/USER-004.json",
+    "sha256": "1e03939e205eb8014e624dacf88df3cb7e964467a45a58ec97ce579df046f5f6"
+  },
+  "checked_new_primary_records": [
+    {
+      "path": "refs/Graber_Pandharipande_2003_Nontautological_v2.pdf",
+      "sha256": "65f84984b10957e440a0d6d78aface6c25e908dc687a3503c6ef8806a8e05c08"
+    },
+    {
+      "path": "build/ref-text/GP03-crossref.json",
+      "sha256": "6b841ad08db765e88001c526449146a58496b85fc37fb0dda5ca8eac557c5edc"
+    }
+  ],
+  "included_units": [
+    "s01",
+    "s02"
+  ],
+  "layout_diagnostics": [],
+  "numbered_equations_preserved_since_r002": 34,
+  "original_agents": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "writer": "/root/s02_writer"
+  },
+  "principal_statements_preserved_since_r002": 13,
+  "reading_pdf": "build/reviews/s02/r004/preview.pdf",
+  "reading_pdf_sha256": "d1af2f6509117c57e893d3293eb71037dd31e7bda8fc956912c2f5cb221d1c54",
+  "recorded": "2026-11-14T13:47:33+00:00",
+  "resolved_review_issues": [
+    "READABILITY-003"
+  ],
+  "reviews": {
+    "academic": {
+      "agent_id": "/root/s02_academic",
+      "path": "workflow/reviews/s02/r004/academic.json",
+      "sha256": "2190d89262e4ed2564a4da3182ecf228d3ec155c5936c26a93a9e12ee4f754fd",
+      "verdict": "pass"
+    },
+    "math": {
+      "agent_id": "/root/s02_math",
+      "path": "workflow/reviews/s02/r004/math.json",
+      "sha256": "7ad2176e28b9ec93f25e5898b2e90bc444d65c722cff2da665bdf86bdca84000",
+      "verdict": "pass"
+    },
+    "readability": {
+      "agent_id": "/root/s02_readability",
+      "path": "workflow/reviews/s02/r004/readability.json",
+      "sha256": "3becf6368e434903b61ddcc16941398d9eb893e806595ca4d6a2c7125313bb5a",
+      "verdict": "pass"
+    }
+  },
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "05698d83d428c81b2670569a4189243384864e7adf31ba8a08da3440b7480db7",
+  "status": "approved",
+  "unit": "s02",
+  "unresolved_review_issues": []
+}

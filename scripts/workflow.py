@@ -669,6 +669,8 @@ class Engine:
                  "Recall an earlier definition only when it helps the current argument; preserve g_2, j_1, ..., j_ell and z_{0,1}.",
                  "Use lowercase a_g,b_g(h),b_g for integrals and ordinary B_k for Bernoulli numbers; put Chow coefficients inside parentheses.",
                  "Minimize new symbols, group letters by purpose, and document definitions and scope in INTERFACE.md.",
+                 "Keep statements adjacent to proofs; put historical credit and conventions in short post-proof remarks, and use purposeful examples.",
+                 "Identify actual classic sources and convention differences when recalling material; cite versioned bibliography entries instead of raw arXiv identifiers.",
                  f"Write scope: {unit['directory']}/." if role == "writer" else "Do not edit manuscript source.",
                  "Run workflow.py status to inspect the current binding. Use your real agent ID.",
                  "The coordinator records IDs and changes state; do not run state-changing commands.",

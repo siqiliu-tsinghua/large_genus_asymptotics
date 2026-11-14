@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "The protected Introduction and s02 files match the approved s02 r005 input hashes; s01 remains the permitted baseline dependency and s02 is approved. Independently checked MZ15 pp.1-2 and 4, LX26 Corollary 1.2 p.3, W26 Corollary 1.2 p.6 and its amplitude conversion on pp.20/31, Mir07 pp.4/14, and the Wol86 p.138 scan; these support the stated numerical normalization and fixed-n inputs. Reused the prior independent SW25 Lemmas 14/18 and HMT25 pp.27-28 verification, and checked HMT Proposition 4.17 p.57 for K=0: A1/A3/A4 thresholds, the A3 factor 500, coefficient bounds and the multinomial total-degree translation are retained. The manuscript derives its global graph estimates rather than attributing them to these volume inputs, and uses no unproved introductory target or numerical second-order coefficient.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Stable vertex types have k=2G-2+n>=1, n<=k+2 and descendant cutoff |d|<=3G-3+n; the only k=1 types are (0,3) and (1,1). The unmarked complexity sum H=2g-2 makes a vertex above H/2 unique, while fixed q bounds all small genera/valences and yields integral c=(q+n_0)/2. Loop contraction preserves complexity and total genus, giving restored (G,n)=(g-c-p,n_0+2p). Independently verified the marked shift H=2g-2+r, q=2c+r-n_0 with c equal to the other genera plus core Betti number, the path from (g,r), and its gamma ratio; all retained intermediate types are stable for the stated sufficiently large genus.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The descendant factorial identity gives V(2y) coefficients y^(2d)/(2d+1)! and W coefficients (-t/2)^d/(2d+1)!, with real comparison length sqrt(2|t|). The stack value V_11(y)=pi^2/12+y^2/48 is the whole half of Mir07's exceptional polynomial, and W26's common 4^(-(3G-3+n)) amplitude scaling cancels in each profile ratio. The exact deformation uses one shared variable per edge, the s02 1/Aut weight, and 12lambda_1=kappa_1+delta to obtain Z_g(1)/F_g=a_g/N_g. Independently checked the labelled-pairing quotient, the exact 2^p p! core factor, the orientation Gamma(H-q)/((4pi^2)^q Gamma(H)) of the volume path, and the leading loop integral S=(1/2)integral f^2, hence exp(S).",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Section 3.1 defines alpha, the stable vertex parameters, real lengths y_i, volumes, descendants and total degree before use; cotangent L_i and all Introduction/s02 conventions are inherited. The HMT eta_r are explicitly separate local coefficients, while F_g/Z_g/W are defined in 3.2, f/S before their identities, and the counting scalar H, complexities, Gaussian variable and P_m/U_k in 3.3. Section 3.4 defines contraction, core type, p,n_0,c and the auxiliary/main gamma families with their ranges; the marked assertion explicitly changes the total H and binds its fixed r,s and derivative orders. Lowercase integral families, g_2, j_i/ell, Bernoulli and Chow conventions are preserved; no necessary assumption is deferred to an optional Remark, and all 12 principal statements immediately precede their proofs.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Checked the entire lemma chain: orbit-stabilizer with repeated ordered types gives the Gaussian majorant, and sqrt(g)/product sqrt(k_i)<=sqrt(m) prevents a lost genus factor. The short series proves all three k-ranges with constants fixed before epsilon is decreased; the global proof treats X>epsilon H, no large vertex at z=3/H, and both q-tail alternatives, including the y=H/(1+x)^3 argument and the intermediate exp(-c sqrt(H)) tail. Core finiteness and all-legal loop tails precede HMT; the exact nonnegative-marking ratio path, common threshold, finite-product tail via (1-Q_K(p)/g)^(-N), telescoped source errors and descendant extension establish the asserted per-p remainder. The marked proof independently supplies differentiated valence polynomials and the shifted ratio path; the decoration statement proves only the conditional tail actually implied by its explicit majorant.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The pairing bound controls the sum of compact suprema of absolute graph contributions, also with absolute values inside edge integrals, for all growing graph data. Keeping n<=k+2 enables the large-Gaussian degree bound <=3H and uniform absorption; the two q-tail cases yield O(F_g g^(-M)), not merely a fixed-graph estimate. Every legal p>log g is controlled by C^p/p! before high-genus inputs are used, while exponential descendant moments and polynomial-in-p product errors yield g^(-q-K-1) C^(p+1)(1+p)^s/p!; the coefficient bounds hold for all p and justify both extensions and normal convergence. Fixed labelled legs contribute P^(r_i)=P_{k+2-r_i} and m^r<=C_r^m, with no extra H^r; the explicit scale alone contributes g^r. Entire coherent coefficients and complex compact bounds justify Cauchy derivatives, including zeros of f, and the weighted condition loses only the declared H^s factor.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh first formal whole-s03 review of all four subsections, roadmap, interface and handoff; preparation notes were used only as an independently rechecked proof/source aid. No prior s03 MATH issue exists, so resolved_issue_ids=[].",
+    "Verified every archive/live input hash, submission snapshot digest, receipt source hash 6e733542672f5b71950a3340cdaf63f7f2885efb0eb7473bbffab2fb6df62a07 and PDF hash edce901f204c52a5582e1624c602eee5154266ad7c446d02466a898799ff9a8d. The strict receipt matches this snapshot with diagnostics=[] and layout_diagnostics=[]; the archived preview entry hash also matches.",
+    "Read the complete mathematical source and inspected the frozen rendered input/marked pages, as well as the primary Wolpert scan. Independently confirmed 54 unique section labels, 37 numbered equations and immediate proof adjacency for all 12 principal statements.",
+    "The section establishes existence and uniform summability of expansions, including the stated fixed-marking extension and conditional decorated tail. It does not compute the second-order Hodge target or certify arbitrary future internal decorations; later concrete applications must satisfy the exported hypotheses.",
+    "Only the assigned math.json and math_handoff.md were written. No manuscript, shared input, workflow state, historical record or shared build output was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "357cc0991040efce307cb989a61ba2f97a57045f78ad9b05588263bd8331496c",
+  "summary": "Pass for the complete frozen s03 r001 submission. The source conventions, global absolute graph tail, genus-correct core/loop reduction, summable arbitrary fixed-order expansions, entire coefficients and fixed-marked/conditional-weight extensions are justified on their stated ranges. No unresolved mathematical issue was found.",
+  "unit": "s03",
+  "verdict": "pass"
+}

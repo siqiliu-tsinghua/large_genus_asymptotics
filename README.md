@@ -28,7 +28,7 @@ Use Python 3.10 or newer and TeX Live with XeLaTeX and BibTeX on PATH.
 
 The build script runs XeLaTeX twice and runs BibTeX when citations require it. All products go to build/. A unit preview uses its intended section number and the same preamble and bibliography. References into other, excluded sections can remain unresolved in an isolated preview; acceptance also builds an integrated preview of the candidate and its prerequisites.
 
-The original introduction and abstract still contain their existing drafting placeholders. Establishing this repository does not mark those texts or the four target theorems as reviewed.
+The abstract retains its original drafting placeholder. The Introduction's four asymptotic statements remain the targets of the later proof sections; approval of the geometric identities in Section 2 does not certify those proofs.
 
 Writing follows the dependency graph rather than the printed order: complete Appendix A before Section 4 and Appendix B before Section 8. Integrated previews retain the intended section and appendix numbers. Strict acceptance rejects unresolved references and citations.
 

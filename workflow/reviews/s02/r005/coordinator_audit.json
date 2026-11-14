@@ -1,0 +1,29 @@
+{
+  "changed_inputs": [
+    "references.bib",
+    "sections/02_notation/writer_handoff.md",
+    "workflow/context.md"
+  ],
+  "clean_pdf_sha256": "d10827272be33b15395b1c71764644377016572a72c6ad0244710e2b39f7e07e",
+  "clean_receipt": "build/reviews/s02/r005/build_receipt.json",
+  "diagnostics": [],
+  "layout_diagnostics": [],
+  "reference_pdf_sha256": {
+    "Hide_Macera_Thomas_2025_Spectral_gap_v2.pdf": "cbf85dc9c4ed694b8a917b1208aa7d9b3a8c03672d036c572fae629060d78863",
+    "Liu_Xu_2026_WP_constant_v1.pdf": "d72cc19edbcfc0f0c43541cf8930d30468e52ca6c2b03c0dec4530803048c3b3",
+    "Mirzakhani_2007_WP_intersection.pdf": "6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+    "Mirzakhani_Zograf_2015_Large_genus.pdf": "c5931771ed33c78924a6747723c2b9bda9b394022ba645f26a5bb3249ae8a26f",
+    "Shen_Wu_2025_Spectral_gaps_v4.pdf": "785c9602d3fd7dadecd0a87413bc412edfae35c8abf8131c732dd0ea64d19a8b",
+    "Wang_et_al_2026_Uniform_WP_v4.pdf": "7fcab8ab7ee269a48bcdcd82ba4052d44b689c8c866b02b0260ebcb5411b703f",
+    "Wolpert_1986_Chern_forms.pdf": "97d47ccdb708f3665c2c570506d09a8923a61e39f325b98f3bd9fef8999c00e3"
+  },
+  "rendered_text_sha256": {
+    "r004": "55a1a62c692b75f43a617ada531165dff92f6aa7b7367d14447feb2378583f6e",
+    "r005": "55a1a62c692b75f43a617ada531165dff92f6aa7b7367d14447feb2378583f6e"
+  },
+  "round": 5,
+  "schema_version": 1,
+  "scope": "Shared-input-only dependency refresh before s03; all s02 TeX and interface unchanged.",
+  "snapshot": "5634fa68be11f0aec6929967508aa7a9cb6b4140dddeba004534a06281f68f9d",
+  "unit": "s02"
+}

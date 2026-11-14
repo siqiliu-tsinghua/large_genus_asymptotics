@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Rechecked the revision against the r001 whole-section reading and author response. Introduction/2.1/2.2 and the section roadmap are byte-identical to r001, so the paper-wide first-definition placement remains intact. The graph, flag, cycle-space, vertex-defect and forgetting/partition definitions are unchanged. In 04_boundary_and_forgetting.tex:127-139 the tail lemma still binds m>=1, every integer r_k>=1 and W on the source before use. Its rewritten paragraph at 154-163 retains k>=1, epsilon in {0,1}, the precise factor MM_{0,k+epsilon+1}, both dimension cases and the degree comparison; shortening has not removed a range or an argument. The specialization at 271-287 still binds block sizes and derives the minimum degree after pushforward. No new symbol or definition gap is introduced by the formatting or sentence edits.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "All 34 numbered equations were independently compared with r001 after removing split alignment, line breaks, empty alignment groups and whitespace; their mathematical text and label sets match. The two-line (2.21) retains every graph factor, kernel argument, automorphism weight and pushforward. The lowercase integral families, ordinary Bernoulli B_m, internal Chow coefficients, g_2 and Hodge-index/product-length conventions remain unchanged. The base/source psi distinction and logarithmic-kappa correction remain explicit in (2.23)-(2.24): the new-psi sum is retained at 04:132-134,169-173 and referenced again at 294-295. The synchronized outline now uses actual statement numbers and accurately distinguishes exponent >=1 for the tail lemma from minimum degree 2 in the specialization. The interface's status edit changes no scientific notation or export.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The revision introduces no mathematical name, alias, reminder inventory or repeated setup. The graph/flag/defect/partition groups assessed in r001 remain unchanged and retain their repeated roles. The shorter gluing lead-in at 03_gluing.tex:140 replaces a long transition without repeating definitions. Splitting the KMZ attribution/version information from its notation translation at 04:203-213 makes those two jobs easier to read without adding explanatory baggage. The new final paragraph at 290-297 is shorter while preserving the projection-formula application, tail lemma, additional-background correction and uniformity limitation. The interface now leaves live workflow status in its authoritative location rather than requiring post-review scientific-source edits.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "Section.tex:5-13 and the 2.4 local roadmap at 04:5-9 are unchanged and still explain the two operations, intermediate normalization/degree inputs and separation from later uniform asymptotics. The revised tail paragraph preserves the route from a local dimension count to annihilation of the divisor ideal, polynomial replacement and codimension-truncated series. The final paragraph still directs old cotangent insertions to Lemma 2.7 and an extra kappa background specifically to (2.24), then states that growing summed data require later uniform bounds. Outline synchronization describes these already-proved steps and actual result numbers; it adds no paper claim or detour.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "READABILITY-001 and READABILITY-002 are genuinely resolved in the current clean PDF. On page 9, 04:27-39 now places the LHS and graph-sum RHS of (2.21) on separate aligned lines; both fit within the text block at the normal math size, the pushforward brackets remain readable, and the single equation number is beside the display. On page 12, 04:203-213 gives the complete arXiv version its own sentence and allows a local break after the slash; the full Theorem 2.2/(2.6) and Lemma 2.2.1/(2.8) locators, attribution and source-notation translation remain legible within the measure. I inspected current pages 9-14, including the other three locally rephrased areas and pagination effects. The PDF remains 14 pages, the tail proof and later proof continuations remain intelligible, and no replacement overflow or collision appears. The clean receipt reports no horizontal or vertical overfull diagnostics. The preamble is byte-identical and the delta uses no global spacing, font-size or stretch adjustment.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No letters, roles or index conventions changed from the r001 audit. Flags f/f', vertex types g_v/n_v, defects h/h_v, tail powers r_k, local k/epsilon, kappa degrees a_i and partition blocks C_k remain separately typed and scoped. The boundary display's line break preserves those groups rather than compressing their typography. The rewritten tail paragraph explicitly retains the old/new marking count distinction. The KMZ locator break concerns text punctuation only and introduces no new symbol. Scalar b, b_g and beta_g remain in their established separate roles; no unrelated b or ell has been introduced.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The shortened gluing transition still leads directly to the two restriction identities and their factor interpretation. The rewritten tail-degree paragraph at 04:154-163 follows the unchanged support-of-corrections paragraph and explicitly closes both equalities, then the polynomial and formal-series consequences. The following (2.24) and its positive-power warning remain adjacent. On page 12, attribution/version information now precedes a separate source-notation translation paragraph, followed by the same geometric recursion proof, so reflow has not interrupted the logical sequence. The final application at 290-297 still distinguishes unchanged Hodge pullback, old cotangent replacement, the surviving kappa-background correction and the need for future uniform bounds. No new repetition, missing connection or mathematical-meaning shift was found.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal round-2 signature by the original readability reviewer. Both prior formal issues are resolved and listed in resolved_issue_ids; no unresolved or new readability issue remains. This reviewer pass does not itself change the unit's workflow acceptance status.",
+    "Read the r001 author response, frozen r002 diff, affected source passages and synchronized outline; inspected current clean-PDF pages 9-14. The full KMZ source version and locators are preserved, and the localized changes retain the tail lemma's >=1 hypothesis, the specialization's degree-2 cutoff mechanism and the retained new-psi correction.",
+    "Verified all 24 archived file hashes and three artifact hashes against submission.json and the live files against their archives. Independently compared all 34 numbered equations after format normalization, with no differences. Introduction/2.1/2.2, roadmap and preamble are byte-identical to r001. The PDF, preview-entry and helper hashes match the receipt and exact snapshot; layout_diagnostics is empty. No shared build was rerun and no source, state or older record was edited."
+  ],
+  "resolved_issue_ids": [
+    "READABILITY-001",
+    "READABILITY-002"
+  ],
+  "role": "readability",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac",
+  "summary": "Pass. READABILITY-001 is resolved by the locally aligned boundary formula; READABILITY-002 is resolved by the reflowed KMZ version/attribution paragraph. The adjacent wording changes preserve definitions, degree hypotheses, corrections, proof routes and navigation. All seven checks pass on the new formal snapshot, with no unresolved readability issue.",
+  "unit": "s02",
+  "verdict": "pass"
+}

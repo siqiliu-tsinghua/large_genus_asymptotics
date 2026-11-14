@@ -2,7 +2,33 @@
 \section{Uniform asymptotics for stable graph sums}
 \label{sec:s03}
 
-% WORKFLOW-TODO: Write a proof roadmap and section transitions.
+The stable graphs of Subsection~\ref{subsec:s02:03} and the boundary
+expansion \eqref{eq:s02:boundary-exponential} supply the geometric
+starting point for the first two asymptotic problems. The unmarked
+specialization of \eqref{eq:s02:lambda-one-grr}, together with the
+degree conversion \eqref{eq:s02:exp-to-power}, turns the background
+powers of $\lambda_1$ into an exponential involving $\kappa_1$ and
+$\delta$. The boundary expansion then separates the corresponding
+intersection numbers into vertex integrals.
+
+These identities hold at each fixed genus. Their asymptotic use requires
+bounds on the whole graph sum as its vertex number, valences and loop
+counts grow. Every fixed number of self-loops on a vertex of large genus
+can contribute at leading order, so these loops must be summed before
+the remaining corrections are organized.
+
+Subsection~\ref{subsec:s03:01} puts the Weil--Petersson inputs in a
+common normalization. Subsection~\ref{subsec:s03:02} gives the vertex
+representation and loop contribution. Subsection~\ref{subsec:s03:03}
+controls absolute tails over all stable graphs;
+Subsection~\ref{subsec:s03:04} contracts the large-vertex loops and
+proves summable remainders for the finite cores. Expansion and insertion
+orders remain fixed while the graph data may grow with genus.
+
+The next section uses these tools to compute the correction coefficients
+and prove Theorem~\ref{thm:lambda-one}. The marked expansion and Cauchy
+bounds also provide inputs for the proof of
+Theorem~\ref{thm:fixed-insertions} in Section~5.
 
 \input{sections/03_graph_asymptotics/01_wp_inputs}
 \input{sections/03_graph_asymptotics/02_deformation_and_loops}

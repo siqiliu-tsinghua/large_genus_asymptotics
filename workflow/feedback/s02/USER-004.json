@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "USER-004",
+  "unit": "s02",
+  "previous_round": 2,
+  "previous_snapshot": "973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac",
+  "request": "第2.3节开头要提一下我们采取哪篇经典文献（如FP00）中的术语和几号约定，下面仅作回顾，这样熟悉这部分的人就可以直接跳过。如果我们的约定与文献中不同，更要指出，避免读者误读。命题 2.6的陈述和证明之间那一段可以做成一个remark放到证明之后。另外，这个证明之后和引理 2.7 之间的三段文字意义不明，且排版过密，应当予以精简，或者用Example环境包起来。引理 2.8 的表述和证明之间的段落也应该用 Remark 包起来，另外，其中出现的arXiv:alg-geom/9604001v1应该做成最后参考文献中的条目，然后在这里引用。总之，引理、命题的陈述和证明之间最好不要插东西，如果要做些这种历史或credit的说明，可以放到  Remark 里。文字不要出现大段密集文字，最好利用remark、example等环境模块，便于读者在阅读时取舍。",
+  "changes": [
+    "Open 2.3 with precise classic-source terminology/convention attribution and identify the subsection as a recall; explicitly translate actual differences.",
+    "Keep proposition/lemma statements adjacent to their proofs; put historical credit and convention explanations in remarks after proofs.",
+    "Move the boundary-exponential source paragraph to a remark after its proof.",
+    "Clarify and shorten the material before the rational-tail lemma, using examples/remarks with a defined reader purpose; preserve necessary map definitions and the algebraic comparison proof.",
+    "Move the forgetting/inversion attribution and notation conversion into a post-proof remark.",
+    "Use a bibliography entry and citation for the exact KMZ arXiv version, with no raw arXiv identifier in the manuscript prose.",
+    "Document modular, selective-reading organization in writer and reviewer duties."
+  ],
+  "constraints": [
+    "Preserve mathematical statements, hypotheses, definitions, signs, symmetry weights, factorials and labels.",
+    "Reuse original writer and all three original reviewers; preserve earlier snapshots and reports.",
+    "No new Git commit requested."
+  ]
+}

@@ -1,0 +1,578 @@
+--- previous/AGENTS.md
++++ AGENTS.md
+@@ -47,6 +47,9 @@
+ - 明确有限亏格恒等式、固定参数渐近和可交换求和的一致估计之间的差别。控制全体图或卷积的余项，不能只估计每一个固定项。
+ - 第一大定理的二阶系数仍需从精确输入补算；旧表的代数相加不是这些输入和各组贡献的证明。
+ - 每个长证明前给整体路线，按功能拆分引理，明确每一步的假设、输出和后续用途。
++- 定理、引理和命题的陈述后直接接证明，不在二者之间插入历史、credit、版本说明或记号换算；证明导读放在陈述之前，来源和补充说明通常放在证明后的 Remark。必要定义和有效假设仍须在首次使用前、在陈述中清楚给出，不能藏进可选说明。
++- 回顾经典材料时，在开头说明所采用的准确文献及术语、记号约定，并指出与本文实际不同之处。不要把“标准约定”笼统归给没有该表述的文献。文献版本标识放进参考文献条目，正文用带定位的引用。
++- 文字按功能组织为简短段落和有明确标题的 Remark、Example，使读者能选择阅读回顾、credit 和例子；不要仅将原有密集长段套进环境。证明所需的定义、范围和关键步骤不能因模块化而缺失。
+ - 文献结果署名引用，写明版本、原定理或公式及规范换算。内部笔记是计算线索，不替代原始文献；未核实的引文和证明缺口必须标明。
+ - 不把尚未证明的候选值、数值外推或形式运算写成已证定理，不使用占位文献伪造出处。
+ - 通过后禁止悄悄修改已验收章节。任何实质修改都要重新进入该节的写作与原角色审核流程；共享内容或依赖变化会使旧快照失效。
+--- previous/references.bib
++++ references.bib
+@@ -56,6 +56,31 @@
+   note    = {Cited numbering follows arXiv:alg-geom/9604001v1}
+ }
+ 
++@misc{KMZ96v1,
++  author       = {Kaufmann, Ralph and Manin, Yuri and Zagier, Don},
++  title        = {Higher {Weil--Petersson} Volumes of Moduli Spaces of Stable
++                  {$n$}-Pointed Curves},
++  year         = {1996},
++  howpublished = {arXiv:alg-geom/9604001v1},
++  eprint       = {alg-geom/9604001v1},
++  url          = {https://arxiv.org/abs/alg-geom/9604001v1},
++  note         = {Preprint version; published in Communications in Mathematical
++                  Physics 181 (1996), 763--787}
++}
++
++@article{GP03,
++  author  = {Graber, Thomas and Pandharipande, Rahul},
++  title   = {Constructions of Nontautological Classes of Moduli Spaces of Curves},
++  journal = {Michigan Mathematical Journal},
++  volume  = {51},
++  number  = {1},
++  year    = {2003},
++  pages   = {93--110},
++  doi     = {10.1307/mmj/1049832895},
++  eprint  = {math/0104057},
++  note    = {Cited appendix follows arXiv:math/0104057v2}
++}
++
+ @misc{LX26b,
+   author       = {Liu, Kefeng and Xu, Hao},
+   title        = {Balancing Tautological Intersection Numbers},
+--- previous/sections/02_notation/03_gluing.tex
++++ sections/02_notation/03_gluing.tex
+@@ -1,13 +1,22 @@
+ % !TeX root = ../../main.tex
+ \subsection{Gluing maps and restrictions of Hodge classes}
+ \label{subsec:s02:03}
++
++We recall the stable-graph terminology of Graber--Pandharipande
++\cite[Appendix A.1]{GP03} for later use, including legs among our
++flags as explained below.
+ 
+ A stable graph $\Gamma$ of type $(g,n)$ is a finite connected graph
+ with a nonnegative integer genus $g_v$ at each vertex $v$.  Its flags
+ form a finite set $H(\Gamma)$ with an incidence map to the vertex set
+ $V(\Gamma)$ and an involution.  The two-element orbits of the
+ involution are the edges $E(\Gamma)$; its fixed points are the legs,
+-labelled $1,\ldots,n$.  Write $n_v$ for the number of flags incident
++labelled $1,\ldots,n$.
++
++In the cited convention, $H$ contains only paired half-edges, its
++involution has no fixed points, and $L$ is a separate set of legs.
++Our $H(\Gamma)$ combines those two sets and encodes legs as fixed
++points.  Write $n_v$ for the number of flags incident
+ to $v$, counting both flags of a self-loop.  Stability and the genus
+ condition mean
+ \begin{equation}
+--- previous/sections/02_notation/04_boundary_and_forgetting.tex
++++ sections/02_notation/04_boundary_and_forgetting.tex
+@@ -41,15 +41,6 @@
+ incident factor.  Both sides are truncated by codimension.  The graph
+ with no edges contributes the original vertex expression.
+ \end{prp}
+-
+-This is the constant-edge specialization of Andersen et al.,
+-\cite[Lemma 3.10, (3.18)--(3.22)]{ABCDGLW23}, using the numbering of
+-arXiv:1905.10352v3.  Their edge series is the constant $a$, and their
+-vertex series is linear with coefficient $c$.  Their sum of one-edge
+-pushforwards weighted by $1/|\operatorname{Aut}\Gamma|$ is our
+-boundary class $\delta$.  The cited statement is in cohomology; the
+-same normal-bundle intersection proof gives the present Chow identity,
+-as follows.
+ 
+ \begin{prf}
+ The smoothing parameter of the node for $\{f,f'\}$ belongs to the
+@@ -71,24 +62,45 @@
+ exponentials and leg factors in \eqref{eq:s02:boundary-exponential}.
+ \end{prf}
+ 
+-For example, the one-loop graph with vertex type $(0,3)$ and one leg
+-has two automorphisms, obtained by exchanging its loop flags.  In the
+-bare boundary exponential on $\MM_{1,1}$ its term is
+-$(a/2)(\xi_\Gamma)_*1$.  A separating edge on $\MM_{0,4}$ with leg
+-sets $\{1,2\}$ and $\{3,4\}$ has no nontrivial automorphism and
+-contributes $a(\xi_\Gamma)_*1$.  More generally, interchanging the
+-two sides of a separating edge is an automorphism only when it
+-preserves their genera and every leg label; in the unmarked equal-genus
+-case it contributes a factor $1/2$.  Summing over ordered separating
+-splittings instead requires a uniform prefactor $1/2$, since unequal
+-sides then occur twice.  These conventions agree with
++\begin{rmk}[Boundary source]
++\label{rmk:s02:boundary-source}
++We use the constant edge series $a$ and a vertex series linear with
++coefficient $c$ in Andersen et al.'s formula
++\cite[Lemma 3.10, (3.18)--(3.22)]{ABCDGLW23}.
++Their weighted one-edge pushforward is our $\delta$.
++
++The cited statement is in cohomology.  The proof above uses algebraic
++normal-line self-intersection and pushforward, giving the stated
++identity in rational Chow.
++\end{rmk}
++
++\begin{exm}[One-edge weights]
++\label{exm:s02:one-edge-weights}
++On $\MM_{1,1}$, the loop graph with vertex type $(0,3)$ and one leg
++has two automorphisms, exchanging its loop flags.  Its contribution
++to the bare boundary exponential is $(a/2)(\xi_\Gamma)_*1$.
++On $\MM_{0,4}$, the separating edge with leg sets $\{1,2\}$ and
++$\{3,4\}$ has trivial automorphism group and contributes
++$a(\xi_\Gamma)_*1$.
++
++A separating-edge swap must preserve genera and every leg label;
++the unmarked equal-genus case therefore has weight $1/2$.
++Ordered separating splittings always require a prefactor $1/2$,
++since unequal sides occur twice.  This agrees with
+ $\delta=\frac12\xi_*1$ in \eqref{eq:s02:ordered-boundary}.
+-
++\end{exm}
++
++\paragraph{Forgetting maps.}
++To express kappa insertions by additional cotangent markings, we will
++use the following forgetting maps.
+ For an integer $m\geq1$, write
+ $\pi_m=\pi_{n+m,n}:\MM_{g,n+m}\to\MM_{g,n}$, with
+ $\pi_0$ the identity.  In a pullback formula, classes inside
+ $\pi_m^*$ are on the base, and classes outside it are intrinsic to
+-the source.  For $1\leq i\leq n$, let
++the source.
++
++\paragraph{One-point comparisons.}
++For $1\leq i\leq n$, let
+ $D_{0,\{i,n+1\}}$ be the divisor whose rational tail carries exactly
+ the markings $i,n+1$.  The one-point identities used below are
+ \begin{equation}
+@@ -97,13 +109,12 @@
+ \pi_1^*\kappa_a=\kappa_a-\psi_{n+1}^a
+ \quad(1\leq i\leq n,\ a\geq0).
+ \end{equation}
++\begin{prf}
+ The first comparison follows from the
+ cotangent line under contraction of this three-pointed tail; its
+-vanishing along that divisor has multiplicity one.  The second is the
+-logarithmic-kappa comparison in \cite[(2.10)]{KMZ96}, whose classes
+-$\omega_n(a)$ are our $\kappa_a$.
+-
+-For its algebraic justification, consider the universal curve over
++vanishing along that divisor has multiplicity one.
++
++For the kappa comparison, consider the universal curve over
+ $\MM_{g,n+1}$ and its stabilization to the pulled-back universal
+ curve over $\MM_{g,n}$.  On the former, let $D$ be the new section
+ divisor and let $\mathcal L$ be the pullback of the old logarithmic
+@@ -121,6 +132,13 @@
+ \]
+ This proves the kappa comparison in Chow without appealing to
+ injectivity of the cycle map.
++\end{prf}
++
++\begin{rmk}[Comparison source]
++\label{rmk:s02:comparison-source}
++The kappa identity is \cite[(2.10)]{KMZ96v1} in the logarithmic
++convention; the proof above establishes it in Chow.
++\end{rmk}
+ 
+ \begin{lmm}[Rational-tail degree]
+ \label{lmm:s02:rational-tail-degree}
+@@ -200,24 +218,12 @@
+ The pushforward is independent of the chosen ordering of the blocks.
+ \end{lmm}
+ 
+-These are Kaufmann--Manin--Zagier's formulas
+-\cite[Theorem 2.2, (2.6), and Lemma 2.2.1, (2.8)]{KMZ96}.
+-The numbering is from arXiv:alg-geom/\allowbreak 9604001v1.
+-They credit Arbarello--Cornalba for the geometric cycle formula and
+-note its earlier unpublished derivation by Faber--Zagier.
+-
+-Their
+-$\omega_n(a_1,\ldots,a_m)$ in (2.4) is the left side of
+-\eqref{eq:s02:forgetting-permutations}, and $\omega_n(a)=\kappa_a$.
+-Their inverse sums over ordered blocks with a factor $1/k!$; summing
+-over unordered partitions gives \eqref{eq:s02:partition-inversion}.
+-
+ \begin{prf}
+ The geometric inputs are one-point forgetting and the logarithmic
+ comparison \eqref{eq:s02:one-point-comparison}.  The old cotangent
+ pullback corrections are killed by the positive power at the point
+-being forgotten.  Thus their push-pull computation, recorded in
+-\cite[(2.9)--(2.11)]{KMZ96}, applies in Chow as well as cohomology.
++being forgotten.  Thus the push-pull computation recorded in
++\cite[(2.9)--(2.11)]{KMZ96v1} applies in Chow as well as cohomology.
+ It gives a recursion for the left side of
+ \eqref{eq:s02:forgetting-permutations}: the last label either supplies
+ its own kappa factor, or its degree is added at one of the other
+@@ -239,6 +245,19 @@
+ $(k-1)!$ to give $1/k$.  Only singleton resulting blocks survive,
+ with coefficient one, proving \eqref{eq:s02:partition-inversion}.
+ \end{prf}
++
++\begin{rmk}[KMZ source]
++\label{rmk:s02:forgetting-source}
++The formulas are recalled from Kaufmann--Manin--Zagier
++\cite[Theorem 2.2, (2.6), and Lemma 2.2.1, (2.8)]{KMZ96v1}.
++They credit Arbarello--Cornalba for the geometric cycle formula and
++note its earlier unpublished derivation by Faber--Zagier.
++
++Their $\omega_n(a_1,\ldots,a_m)$ in (2.4) is the left side of
++\eqref{eq:s02:forgetting-permutations}, and $\omega_n(a)=\kappa_a$.
++Their ordered-block inverse has a factor $1/k!$; unordered partitions
++give \eqref{eq:s02:partition-inversion}.
++\end{rmk}
+ 
+ For instance, for nonnegative integers $a,c$,
+ \begin{equation}
+--- previous/sections/02_notation/INTERFACE.md
++++ sections/02_notation/INTERFACE.md
+@@ -30,7 +30,7 @@
+ | `\delta`, `\widetilde\Delta_{g,n}`, `\xi`, `\psi_+,\psi_-` | Before `eq:s02:ordered-boundary` | Total reduced boundary divisor, cover with a chosen node and ordered branches, its forgetful/gluing map and two branch cotangent classes; fixes `\delta=(1/2)\xi_*1` |
+ | `B_m` | `eq:s02:bernoulli-convention` | Ordinary Bernoulli numbers for integers `m>=0`, formal generating variable `z`; `B_2=1/6` |
+ | `D_i` | Argument after `eq:s02:kappa-conversion` | Section image on the universal curve, `1<=i<=n`; local to nonlogarithmic/logarithmic conversion |
+-| `\Gamma`, `V(\Gamma)`, `H(\Gamma)`, `E(\Gamma)`, flags `f,f'` | 2.3 opening | Finite connected stable graph, vertex/flag/edge sets; involution pairs edge flags, its fixed flags are legs labelled `1,...,n`. Flags are distinct from defect `h` and factor count `\ell` |
++| `\Gamma`, `V(\Gamma)`, `H(\Gamma)`, `E(\Gamma)`, flags `f,f'` | 2.3 opening, recalled from `GP03`, Appendix A.1 with the stated translation | Finite connected stable graph, vertex/flag/edge sets; involution pairs edge flags, its fixed flags are legs labelled `1,...,n`. Our all-flags `H(\Gamma)` combines GP03's paired half-edge set `H` and separate leg set `L`; GP03's involution has no fixed points. The source letters are local to this comparison |
+ | `g_v`, `n_v`, `b_1(\Gamma)` | Before/in `eq:s02:graph-genus` | Nonnegative vertex genus, incident-flag count, first Betti number `|E|-|V|+1`; satisfy vertex stability and total-genus constraints |
+ | `\operatorname{Aut}\Gamma`, `\mathcal G_{g,n}` | 2.3 opening | Finite automorphism group preserving all leg labels and graph data; finite set of graph isomorphism classes. Required for graph weights |
+ | `\MM_\Gamma`, `\xi_\Gamma` | `eq:s02:gluing-map` | Labelled product of vertex moduli stacks and gluing morphism; computations precede quotienting by graph automorphisms |
+@@ -41,7 +41,7 @@
+ | `a,c,d_i` in boundary proposition | `prp:s02:boundary-exponential` | Scalar parameters and nonnegative old marking exponents, `1<=i<=n`; local to this specialization |
+ | `\pi_m` | After boundary examples in 2.4 | Inherited `\pi_{n+m,n}` for integer `m>=0`, `\pi_0` identity; repeated new-marking count |
+ | `D_{0,\{i,n+1\}}` | Before `eq:s02:one-point-comparison` | Rational-tail divisor on the source carrying exactly old mark `i` and the one new mark; used for the old cotangent comparison |
+-| `D`, `\mathcal L` | Algebraic argument after `eq:s02:one-point-comparison` | New section divisor on the universal curve over the source and the pulled-back old log-dualizing line. Local to the one-point kappa proof, distinct from a boundary divisor on the moduli base |
++| `D`, `\mathcal L` | Proof immediately after `eq:s02:one-point-comparison` | New section divisor on the universal curve over the source and the pulled-back old log-dualizing line. Local to the one-point kappa proof, distinct from a boundary divisor on the moduli base |
+ | `r_1,...,r_m`, `W`; `k,\epsilon` in its proof | `lmm:s02:rational-tail-degree` | Integers `r_i>=1`, new cotangent monomial `W`; tail has `k>=1` new points and `\epsilon=0` or `1` old points. These precise conditions are needed for annihilation |
+ | `[m]`, `\mathfrak S_m`, `\operatorname{Cyc}(\sigma)`, `\mathcal P`, `C_k` | Before `lmm:s02:forgetting-inversion` | Label set, permutation group, cycles, unordered set partition and arbitrarily ordered blocks; used in the forward and inverse formulas |
+ | `a_i` in forgetting lemma; `s` in specialization | `lmm:s02:forgetting-inversion`; `crl:s02:kappa-exponential` | Nonnegative integer kappa degrees; scalar exponential parameter. Product length here is `m`, never `\ell` |
+@@ -69,19 +69,36 @@
+ 
+ Subsection labels `subsec:s02:01` through `subsec:s02:04` and `sec:s02` are stable. All results here are exact finite-genus algebraic identities. No uniform estimate over a genus-dependent graph or forgetting sum is exported.
+ 
++## Reading modules and source placement
++
++USER-004 reorganizes exposition without changing any of the 34 numbered equations, existing mathematical-result labels, hypotheses or result numbers. Each proposition/lemma statement remains adjacent to its proof. The independent section counters of `rmk` and `exm` do not share the substantive-result counter.
++
++| Module | Reader purpose and location |
++| --- | --- |
++| 2.3 opening recall | Identifies the actual classic stable-graph source `GP03`, Appendix A.1, and explicitly translates its separate half-edges/legs into our fixed-point convention. FP00 remains a Hodge source, not a source for the identical flag presentation |
++| `rmk:s02:boundary-source` | After the boundary proposition's proof: constant edge and linear vertex specialization, delta normalization, and cohomology/Chow distinction |
++| `exm:s02:one-edge-weights` | Short loop and separating-edge examples, followed by the ordered-splitting convention; gives concrete symmetry factors |
++| Forgetting maps / One-point comparisons paragraphs | Motivate the map family and give all source/base conventions and divisor definitions in the main argument; `eq:s02:one-point-comparison` is immediately followed by its algebraic proof |
++| `rmk:s02:comparison-source` | After that proof: version-specific citation for the logarithmic comparison |
++| `rmk:s02:forgetting-source` | After Lemma 2.8's proof: source credit and historical attribution, multiple-pushforward notation, logarithmic kappa and ordered/unordered block translation |
++
++The essential definitions, positive-new-psi hypothesis and Chow argument remain in the main text, not in optional historical modules. Raw version identifiers have been removed from manuscript prose; the cited bibliography entries specify the checked versions.
++
+ ## Checked sources and translations
+ 
++- `GP03`, Graber-Pandharipande, Appendix A.1 of the version fixed by its bibliography note: checked primary HTML/PDF, PDF pages 13--14. The source's graph is written `A`, with a fixed-point-free involution on paired half-edges `H` and a separate numbered-leg set `L`; our graph is `\Gamma`, with all flags in `H(\Gamma)` and the legs as involution fixed points. Its `g(v),n(v),h^1(A)` correspond to `g_v,n_v,b_1(\Gamma)`. This is the actual graph terminology source; no identical presentation is attributed to FP00. Primary text: https://arxiv.org/html/math/0104057v2 . The preprint title uses "on moduli spaces"; the publisher's journal title uses "of moduli spaces", as reflected in the coordinator's bibliography entry.
+ - `Mum83`, Section 5, (5.2) and Corollary (5.3): GRR and even-character vanishing. The corrected modern Bernoulli convention and kappa index are taken from the next source.
+ - `FP00`, Section 1.1, unnumbered Theorem (Mumford), and Section 1.3, (16): checked primary marked GRR presentation and nonlogarithmic/logarithmic marking conversion. The clean family theorem is not Proposition 1. Section 1.3, (17)--(18) gives the one-node Hodge sequences. Author copy: https://webspace.science.uu.nl/~faber010/17.pdf .
+ - `LX26b`, arXiv:2610.39462v1 (2026-10-29), proof of Proposition 4.4, (4.2)--(4.3): partial-normalization structure-sheaf sequence, constant graph cohomology, and the dual Hodge quotient. The manuscript supplies the family residue proof and makes the nontrivial possible automorphism action explicit. Only this normalization argument is used, not the nefness assertion of that proposition. Primary link: https://arxiv.org/abs/2610.39462v1 .
+ - `ABCDGLW23`, numbering of arXiv:1905.10352v3 (2020-10-03), Section 3.6, definition of `jmath` immediately before Proposition 3.9, and Lemma 3.10, (3.18)--(3.22): the weighted one-edge pushforward is our `delta`. The edge series is specialized to constant `a`, the vertex series to linear coefficient `c`, giving `K_a`. The primary statement is cohomological; the paper repeats the algebraic normal-line/self-intersection and graph multiplicity proof in rational Chow, without assuming an injective cycle map. Primary text: https://arxiv.org/html/1905.10352v3#S3.SS6 . Journal JLMS 107 (2023), 254--332, DOI 10.1112/jlms.12686.
+-- `KMZ96`, arXiv:alg-geom/9604001v1, Section 2: (2.4) defines their multiple pushforward, Theorem 2.2 (2.6) gives inversion, Lemma 2.2.1 (2.8) gives the cycle formula, and (2.9)--(2.11) gives the geometric recursion. Their `omega_n(a)` is our logarithmic `kappa_a`; the cohomological grading `2a` becomes complex codimension `a`. Ordered-block `1/k!` becomes an unordered partition sum. KMZ credit the geometric formula to Arbarello-Cornalba and earlier unpublished Faber-Zagier; that credit is retained. The one-point kappa comparison is proved algebraically here, and the psi comparison follows the cotangent line under contraction, so the push-pull recursion applies in Chow. Primary text: https://arxiv.org/html/alg-geom/9604001 .
++- `KMZ96v1`, the explicit versioned preprint entry, Section 2: (2.4) defines their multiple pushforward, Theorem 2.2 (2.6) gives inversion, Lemma 2.2.1 (2.8) gives the cycle formula, and (2.9)--(2.11) gives the geometric recursion. Their `omega_n(a)` is our logarithmic `kappa_a`; the cohomological grading `2a` becomes complex codimension `a`. Ordered-block `1/k!` becomes an unordered partition sum. KMZ credit the geometric formula to Arbarello-Cornalba and earlier unpublished Faber-Zagier; that credit is retained. The one-point kappa comparison is proved algebraically here, and the psi comparison follows the cotangent line under contraction, so the push-pull recursion applies in Chow. All these version-specific formula citations now use `KMZ96v1`; the journal database entry `KMZ96` is uncited in this section. Primary text: https://arxiv.org/html/alg-geom/9604001 .
+ 
+-All five keys exist in the shared bibliography. Primary PDF copies and extracts are under `refs/` and `build/ref-text/`; internal research notes are not used as evidence.
++All six cited keys exist in the shared bibliography. Primary PDF copies and extracts are under `refs/` and `build/ref-text/`; internal research notes are not used as evidence. The ABCDGLW numbering version is fixed in its bibliography note; the manuscript no longer repeats the raw version identifier.
+ 
+ ## Review status and remaining work
+ 
+ - The full mathematical draft and roadmap are supplied; no placeholder remains. No known source locator or mathematical gap is left open by the writer, subject to independent review.
++- The USER-004 organization/attribution response, feedback path and feedback SHA-256 are recorded in the current `writer_handoff.md`. The approved formal r002 snapshot remains immutable; this reopened submission requires a fresh whole-section review by the same original agents.
+ - The first two subsections and the Introduction are unchanged in this extension. Their historical trials, USER-001/002/003 feedback and author responses, and the ACADEMIC-001 punctuation correction remain in `workflow/trials/s02-01-02/`; those records are not whole-section approval.
+ - Full-section strict build and repository validation must be checked against the final saved source, then the coordinator submits the frozen formal snapshot. The original writer and three original reviewers remain responsible for revisions and rechecks.
+ - Later sections still need the uniform estimates that justify asymptotic use of the finite-genus identities. No later section was drafted or amended here.
+--- previous/sections/02_notation/writer_handoff.md
++++ sections/02_notation/writer_handoff.md
+@@ -1,79 +1,63 @@
+-# s02 writer handoff - formal r001 layout revision
++# s02 writer handoff - USER-004 organization and attribution
+ 
+-Status: **revised complete draft, awaiting formal r002 recheck**. Fixed writer: `/root/s02_writer`. Formal r001 math and academic reports passed; readability requested two local layout repairs. Both are addressed in the original writer session. No old report is edited, and no r001 signature is treated as a signature of r002. No acceptance or proof of an asymptotic target is claimed.
++Document role: current author handoff for the reopened s02 submission. Fixed writer: `/root/s02_writer`. Live review and acceptance status are in `workflow/state.json`. The approved formal r002 record remains immutable; the present user-requested delta requires a fresh formal round 3 review by the same original agents. This handoff does not confer approval.
+ 
+-## Complete-draft work and files
++## Bound user feedback
+ 
+-This extension writes only:
++- Feedback ID: USER-004.
++- Feedback path: `workflow/feedback/s02/USER-004.json`.
++- Feedback SHA-256: `1e03939e205eb8014e624dacf88df3cb7e964467a45a58ec97ce579df046f5f6`.
++- Previous approved formal round: r002.
++- Previous snapshot: `973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac`.
++
++The feedback contains the verbatim user request and checklist. Its raw-file digest is included here so the current source snapshot binds the request. This is a response to user feedback, not a new response to past reviewer issues: both r001 readability issues were already resolved in formal r002.
++
++## USER-004 response: addressed
++
++1. **Classic-source recall.** The 2.3 opening now identifies Graber-Pandharipande, Appendix A.1, as the stable-graph source and says the terminology is recalled for later use. The primary v2 text was independently checked. Its `H` contains only paired half-edges and has a fixed-point-free involution; its numbered legs form a separate `L`. Our `H(Gamma)` contains both kinds of flags and represents legs by fixed points. This difference is explicit beside the definition. FP00 is retained only for the actual Hodge conventions/sequences, not credited with our identical flag presentation.
++2. **Boundary statement/proof adjacency.** Proposition 2.6 is followed immediately by its proof. The source specialization and cohomology/Chow convention are in a short two-paragraph Remark after the proof, rather than between statement and proof.
++3. **Purposeful intermediate modules.** A concise Example explains loop, labelled separating-edge and ordered-splitting weights. The forgetting-map paragraph explains why the maps are introduced and retains the source/base convention. A separate one-point-comparison paragraph gives the tail divisor and original equation, immediately followed by its algebraic Proof. The complete stabilization, log-dualizing line, section self-intersection, projection/base-change and binomial argument remains in the main text. Only the source citation is placed in the following short Remark. No essential definition or hypothesis is made optional.
++4. **Forgetting statement/proof adjacency.** Lemma 2.8 is followed immediately by its proof. Its source credit, Arbarello-Cornalba/Faber-Zagier attribution and notation/ordered-block conversion are in a short post-proof Remark.
++5. **Versioned citations.** All KMZ formula-number citations in 2.4 now use the explicit `KMZ96v1` preprint entry. No raw version identifier remains in manuscript prose. The journal `KMZ96` entry stays in the shared database but is uncited here. ABCDGLW's checked numbering version is specified by its bibliography note, with no raw identifier repeated in 2.4.
++6. **Selective reading.** Short, named source remarks and the one-edge Example have one purpose each and use short paragraphs. The proof-bearing one-point material remains in the main argument. The independent `rmk`/`exm` section counters supplied by the coordinator preserve all substantive result numbers. The coordinator fixed the initially ineffective roman-body hook with explicit theorem/remark styles, retaining the substantive counter grouping. The coordinator also updated writer/reviewer duties and the shared outline; the writer read those instructions and did not edit shared files.
++
++## Authorized current files
++
++Only these four tracked files are edited by the writer for this request:
+ 
+ - `sections/02_notation/03_gluing.tex`;
+ - `sections/02_notation/04_boundary_and_forgetting.tex`;
+-- `sections/02_notation/section.tex`;
+ - `sections/02_notation/INTERFACE.md`;
+ - `sections/02_notation/writer_handoff.md`.
+ 
+-The Introduction and 2.1--2.2 stay unchanged from the committed trial batch. Shared bibliography entries and primary copies were supplied by the coordinator; the writer did not edit shared files, workflow state, historical responses/reports, or any later chapter. The complete section is ready for the next frozen snapshot after the coordinator's checks.
++The Introduction, 2.1, 2.2 and section roadmap are unchanged. All frozen trial/review sources, reports, author responses, build receipts and review helpers remain untouched. No commit or state-changing workflow command is made by the writer. New clean draft products and their helper use only the ignored directory `build/reviews/s02/writer-user004-draft/`.
+ 
+-## Formal r001 revision
++## Mathematical preservation
+ 
+-The collected formal reports are under `workflow/reviews/s02/r001/`. The author response is `workflow/reviews/s02/r001/author_response.json`, using the generated template and both stable issue IDs.
++All 34 numbered equation environments and their labels retain their approved mathematical payload and order. Existing theorem/lemma/proposition/corollary labels, statement hypotheses, signs, edge weights, factorials and substantive numbers are retained. The Hodge normalization/cycle-space argument, bounded defect allocation, algebraic boundary calculation, positive-new-psi tail condition, surviving negative new-psi sum, partition inversion and degree-two finite cutoff have not been changed.
+ 
+-- READABILITY-001: the boundary-exponential identity now places its left side and graph-sum right side on separate aligned lines. Its font size, single label, factors, graph weights and hypotheses are unchanged.
+-- READABILITY-002: the KMZ version locator is a short separate sentence with a local break opportunity after its slash; attribution and notation translation are separate paragraphs. The complete checked version, theorem/formula locators, source translation and attribution are retained.
+-- Adjacent cleanup: short local rephrasing of the gluing transition, rational-tail degree paragraph and final application paragraph removes the three small additional overfull lines, without changing their mathematical content or proof steps.
++The new source-convention explanation distinguishes equivalent graph encodings; it does not change our existing graph definition. The additional one-point Proof environment exposes the already present argument without introducing a numbered result. Remarks and Examples have independent counters and roman bodies. No global font or spacing change is made by the writer.
+ 
+-This revision changes only `03_gluing.tex`, `04_boundary_and_forgetting.tex`, this handoff, the designated author response and the coordinator-requested interface status metadata. The interface's scientific ledger and exports, section roadmap, all other manuscript files and all earlier records remain unchanged. Interface metadata now identifies an author submission and defers live review/acceptance status to `workflow/state.json`. No literature was reopened and no new source is introduced. The coordinator separately synchronized actual statement numbers and the already-stated tail/cutoff distinctions in the shared outline before the final checks.
++## Exact source mapping
+ 
+-## Mathematical organization
++- `GP03`: primary Appendix A.1, PDF pages 13--14 of the version fixed in its bibliography note. It defines separate paired half-edges and numbered legs, vertex stability/genus, the product of vertex moduli stacks and the gluing map. The primary HTML/PDF was checked for this request. The source graph `A`, vertex functions `g(v),n(v)` and Betti number `h^1(A)` correspond to our `Gamma,g_v,n_v,b_1(Gamma)`; the significant flag/involution difference is described above. The publisher's title uses "of moduli spaces", while the preprint title uses "on moduli spaces"; the coordinator's bibliography fixes the cited appendix version.
++- `FP00`: Section 1.3 (17)--(18), retained for one-node Hodge sequences. It is not used as the source for our full stable-flag definition.
++- `LX26b`: proof of Proposition 4.4 (4.2)--(4.3), retained for the partial-normalization/cycle-space argument, not its nefness conclusion.
++- `ABCDGLW23`: Lemma 3.10 (3.18)--(3.22), with version in its bibliography note. The post-proof Remark identifies constant edge series `a`, linear vertex coefficient `c`, weighted one-edge class `delta` and the cohomology-to-Chow distinction. The existing algebraic proof is unchanged.
++- `KMZ96v1`: Section 2 (2.4), Theorem 2.2 (2.6), Lemma 2.2.1 (2.8), comparison (2.10), and push-pull formulas (2.9)--(2.11). The explicit versioned entry replaces every section-2.4 citation to the journal key. The post-proof source Remark retains `omega_n(a)=kappa_a` and the conversion from ordered blocks with `1/k!` to unordered partitions. The original geometric attribution to Arbarello-Cornalba and earlier unpublished Faber-Zagier is retained.
+ 
+-The roadmap now connects factorial restoration, GRR, normalization at nodes, graph exponentials and forgetting. The new material is split into reusable units:
++No additional source uncertainty or bibliography request remains. The existing source checks for the unchanged mathematics are retained; unchanged literature was not reread for this organizational request.
+ 
+-1. Stable graphs are defined by vertices, flags, an involution, labelled legs and stable vertex genera. The labelled product and gluing map precede every graph formula; automorphisms preserve every leg label.
+-2. The Hodge-normalization lemma has quotient `H_1(Gamma;C) tensor O`. The cycle space is defined before the statement as the incidence-map kernel. Partial normalization, prescribed residues and relative duality give a bundle sequence over the full labelled product, including deeper degenerations of the vertex curves.
+-3. The quotient is constant on that product; it is not asserted equivariantly trivial. A loop reversal changes residue sign. Chern factorization then proves the full defect allocation with integers `0<=h<=g`, `0<=h_v<=g_v`, `sum h_v=h-b_1`. For `h=0`, only trees survive.
+-4. Logarithmic kappa is additive under gluing because each normalized branch becomes a marking of its vertex factor. Leg cotangent lines are preserved.
+-5. The boundary proposition is the constant-edge, linear-kappa specialization of Andersen et al. Its kernel is a divisible formal series, not an inverse cotangent class. The normal-line self-intersection gives the sign, and labelled multiplicities give `1/Aut`. The `(1,1)` self-loop has weight `1/2`; a `(0,4)` separating edge with a fixed labelled split has weight one. The unmarked equal-genus separating exchange is also explained.
+-6. The one-point logarithmic-kappa comparison is proved algebraically. On the universal source curve, stabilization identifies the old log-dualizing line with the line with only old markings; the new log line adds the new section. Its self-intersection and the alternating binomial sum give the extra `psi_new^a`; projection/flat base change supplies the pulled-back base term. This is a distinct comparison from the nonlogarithmic marking conversion in 2.2.
+-7. The rational-tail lemma requires a positive psi power at EVERY forgotten marking. A tail with `k` new points has dimension `k-1` when it contains one old point and `k-2` when it contains none. The new factors have degree at least `k`, annihilating the comparison-divisor ideal. The old psi corrections disappear, while `pi_m^*kappa_1` becomes `kappa_1-sum_new psi`, retaining the latter sum. Arbitrary polynomials and graded-truncated series in the stated old classes inherit these replacements.
+-8. KMZ's forward permutation sum has cycle factors `(block size-1)!`. Its inverse unordered partition coefficient is just `(-1)^(m-number of blocks)`. The proof uses the one-point algebraic comparisons and a signed exponential-series inversion. The two-kappa example explicitly retains the negative merged-block term.
+-9. The exponential specialization is derived by counting labelled block sizes. For `m` blocks of sizes `r_i>=1`, the coefficient is `1/m! prod_i((-1)^(r_i-1) s^(r_i)/r_i!)`, yielding one factor `psi(1-exp(-s psi))` at each new marking. The minimum degree after forgetting is `m`, so only `m<=3g-3+n` can contribute at fixed genus.
++## Historical continuity
+ 
+-No local tool is presented as a uniform asymptotic estimate. In particular, neither a per-graph identity nor degree truncation justifies exchanging a growing graph/marking sum with a genus limit; later sections must supply that control.
++Earlier scoped records under `workflow/trials/s02-01-02/` preserve USER-001's continuous-paper inheritance, USER-002's introductory convention placement, USER-003's lowercase integral/Bernoulli/Chow conventions, and the prior punctuation correction. Formal r001/r002 records under `workflow/reviews/s02/` remain immutable. The new request is bound above and is not relabelled as a past reviewer issue.
+ 
+-## Checked primary sources and shared requests
++The current notation remains `a_g,b_g(h),b_g`, ordinary `B_m`, `A^a(X;Q)`, scalar `b`, and later one-point `beta_g`. Hodge indices remain `j_1,...,j_ell`, factor count `ell`, and flags use `f,f'`; `g_2` and the Bessel names are unchanged.
+ 
+-No further bibliography or source request remains outstanding.
++## Checks and handoff
+ 
+-- `FP00` Section 1.3 (17)--(18), already in the trial bibliography: one-node Hodge sequences.
+-- `LX26b` arXiv:2610.39462v1, proof of Proposition 4.4 (4.2)--(4.3): partial normalization and the cycle-space quotient. No positivity input is imported here.
+-- `ABCDGLW23` arXiv:1905.10352v3, Section 3.6, weighted one-edge `jmath` before Proposition 3.9 and Lemma 3.10 (3.18)--(3.22): edge-exponential/graph identity. Primary HTML was checked by the writer; the coordinator also supplied the primary PDF and journal metadata. Set their edge series equal to constant `a` and their vertex series to linear coefficient `c`.
+-- `KMZ96` alg-geom/9604001v1, Section 2, (2.4), Theorem 2.2 (2.6), Lemma 2.2.1 (2.8), Lemma 2.2.2 (2.13), and geometric formulas (2.9)--(2.11): forward cycles and inverse partitions. Their cohomological `omega_n(a)` is the logarithmic `kappa_a` here, with degree `2a` converted to complex codimension `a`. Their credit to Arbarello-Cornalba and earlier unpublished Faber-Zagier is retained.
++The final source checks compare the numbered equations, result statements and unaffected files with approved r002, verify citation keys and absence of raw version identifiers in manuscript prose, and check proof adjacency and independent Remark/Example counters. Documents remain ASCII-safe UTF-8 with LF and final newlines, with no corrupted separators.
+ 
+-The ABCDGLW and KMZ primary statements are in cohomology. The manuscript does not infer Chow equalities from equality of cycle classes: it supplies the same algebraic normal-bundle/push-pull argument, with the local kappa comparison proved via universal curves. Existing Mumford/FP00 GRR attribution and normalization are unchanged.
++After all four files and the settled shared inputs are saved, the writer runs repository validation, the draft gate, native strict build and a separate label-free draft build. The clean log is required to have zero overfull horizontal/vertical boxes; selected pages are inspected visually. Actual outcomes and matching source hashes are recorded in the draft receipts and reported to the coordinator. The clean artifact records no new review signature; the coordinator freezes formal r003 and obtains all three original reviewers' fresh signatures.
+ 
+-## Canonical notation and historical continuity
+-
+-The user-revised lowercase families `a_g,b_g(h),b_g`, ordinary Bernoulli `B_m`, and `A^a(X;Q)` coefficient format remain in force. Scalar `b` and later `beta_g` are separate. New flag labels are `f,f'`; `h` stays the Hodge defect and `ell` stays the Hodge-product length. No aliases for `g_2`, the Bessel zero, or `3g-3` are introduced; `alpha` remains deferred until WP formulas.
+-
+-Historical scope and feedback are preserved under `workflow/trials/s02-01-02/`:
+-
+-- USER-001 established continuous-paper inheritance of definitions.
+-- USER-002 placed global intersection/degree conventions at first introductory use and clarified stable forgetting targets and normalization domains.
+-- ACADEMIC-001 corrected only theorem-final punctuation.
+-- USER-003 established the current notation, Chow formatting and concise 2.2 transition.
+-
+-Those scoped passes are not substituted for a full-section review. The same writer and reviewers must review the whole new snapshot and any later revision.
+-
+-## Validation and handoff
+-
+-Author checks passed:
+-
+-- `python scripts/build.py --unit s02 --with-deps --strict`: XeLaTeX, BibTeX and final reruns succeeded with no diagnostics.
+-- `python scripts/validate.py`: repository validation passed.
+-- `git diff --check -- sections/02_notation`: no whitespace errors.
+-- Read-only source checks confirmed that the Introduction and 2.1--2.2 are unchanged from the committed batch; all section files use UTF-8, LF and final newlines; labels are unique, environments balanced, citation keys present and notation canonical. The adjusted display retains the same mathematical payload after removing alignment whitespace.
+-- A separate clean rendering disables showkeys locally in its preview entry. Its final log is required to have no overfull horizontal or vertical boxes; the native strict builder's warning check alone does not establish this. Draft artifacts stay under `build/reviews/s02/writer-r002-draft/`; the frozen r001 artifacts are untouched.
+-
+-The native and clean draft receipts are regenerated after saving this handoff and the response, so their source hash records the current files and synchronized outline. The clean artifact is a writer draft with the prior snapshot recorded only as its base; it is not an r002 review signature. The coordinator will independently verify and freeze r002. Source checks and compilation do not replace mathematical review.
+-
+-No known source or mathematical gap is intentionally left unresolved. The coordinator should freeze the full s02 snapshot only after its checks, then dispatch all three original reviewers. The writer stops editing at handoff until the collected reviews are returned.
++The writer stops editing at handoff until the collected reviews or another explicit instruction arrive.
+--- previous/tex/preamble.tex
++++ tex/preamble.tex
+@@ -1,4 +1,4 @@
+-\usepackage{amsmath}
++\usepackage{amsmath,amsthm}
+ 
+ \usepackage{fontspec,unicode-math}
+ \setmainfont{texgyrepagella}[
+@@ -20,13 +20,25 @@
+ 
+ \DeclareMathOperator{\Cin}{\mathrm{Cin}}
+ 
++% Keep the existing mathematical headings; optional exposition has roman bodies.
++\newtheoremstyle{paperplain}
++  {\topsep}{\topsep}{\itshape}{}{\bfseries}{}{.5em}
++  {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
++\newtheoremstyle{paperremark}
++  {\topsep}{\topsep}{\normalfont}{}{\bfseries}{}{.5em}
++  {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
++
++\theoremstyle{paperplain}
+ \newtheorem{thm}{Theorem}[section]
+ \newtheorem{dfn}[thm]{Definition}
+ \newtheorem{lmm}[thm]{Lemma}
+-\newtheorem{rmk}[thm]{Remark}
++\newtheorem{prp}[thm]{Proposition}
++\newtheorem{crl}[thm]{Corollary}
++
++\theoremstyle{paperremark}
++\newtheorem{rmk}{Remark}[section]
++\newtheorem{exm}{Example}[section]
++\theoremstyle{paperplain}
+ 
+ \newenvironment{prf}{\noindent \textbf{Proof: }}{\hfill $\mdlgwhtsquare$}
+ \newenvironment{prfn}[1]{\vskip 1em \noindent \textbf{Proof of #1: }}{\hfill $\mdlgwhtsquare$}
+-
+-\newtheorem{prp}[thm]{Proposition}
+-\newtheorem{crl}[thm]{Corollary}
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -13,6 +13,8 @@
+ 每节接口还须列出继承与新增记号、定义位置、类型与范围、作用域和新增专名的必要性；同类哑变量可成组记录。全文约定由 workflow/context.md 维护，引言已有的 g_2、j_1, ..., j_ell 等记号优先保留，新增全局记号由协调者统一处理。
+ 
+ 正文按全文连续阅读组织：首次定义需完整，前文已有定义直接继承。审核同时检查缺失定义和无必要的重复定义；只有确实帮助理解当前重要论证的回顾才可简短保留或回指。协作接口的完整记号清单不应复制到每节开头。
++
++回顾经典材料时，说明准确来源及与本文的约定差异。定理、引理、命题的陈述直接接证明；历史、credit 和版本/记号说明通常放入证明后的 Remark，例子和长说明按用途整理为简短 Example、Remark 和段落。原始版本标识放入参考文献条目，正文通过引用定位。数学审核检查模块化后定义和论证仍完整；易读性审核检查读者能否选择阅读及段落是否疏朗；学术审核检查来源、差异和归属的准确性。检查项沿用既有 keys，不用新增形式字段替代实质判断。
+ 
+ 写作次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。建议先完成 s02、s03、附录 A，再写 s04、s05、s06、s07、附录 B、s08，最后写附录 C；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用，因此需要先完成相应附录。预览始终保留目标章节和附录编号，最终正文仍按第 1–8 节、附录 A–C 排版。
+ 
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -53,6 +53,32 @@
+ 
+ Each section's INTERFACE.md must list inherited and new symbols, their definition locations, types and ranges, scope, and the reason each new dedicated name is needed. Group dummy indices with a common range. Proposed new global names go to the coordinator; they must be reconciled here before use. Readability reviews must report separately on definition order, consistency, economy and letter design; mathematical reviews check the definitions and quantifiers themselves. These are substantive reviewer duties, not claims of automatic TeX validation.
+ 
++## Exposition and source conventions
++
++Keep each theorem, lemma or proposition immediately adjacent to its proof.
++Put proof orientation before the statement, and historical credit, source
++conventions and ancillary discussion in short remarks after the proof. Use
++purposeful examples and short paragraphs for optional material; wrapping an
++unchanged dense block in an environment is not enough. Essential definitions,
++hypotheses and proof inputs must remain available before they are used.
++
++When recalling standard material, identify its actual classic source at the
++start and explain genuine convention differences. For stable graphs, GP03,
++Appendix A.1, separates paired half-edges from legs: its half-edge involution
++has no fixed points. Our H(Gamma) contains all flags, including legs as fixed
++points. State this translation explicitly; do not attribute the identical flag
++presentation to FP00. FP00 remains a source for the Hodge bundle conventions.
++Use a bibliography entry for each cited source version, with precise locators
++in citations, instead of raw arXiv identifiers in manuscript prose. The exact
++KMZ preprint version is cited as KMZ96v1; the journal record KMZ96 remains in
++the bibliography database.
++
++The rmk and exm environments have independent section-based counters and roman
++bodies, preserving the existing mathematical-result numbers when optional
++modules are inserted. User feedback USER-004 is recorded at
++workflow/feedback/s02/USER-004.json; its implementation and independent review
++must preserve the previous mathematics and all historical reports.
++
+ ## Material status
+ 
+ The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.
+--- previous/workflow/roles/academic.md
++++ workflow/roles/academic.md
+@@ -15,6 +15,8 @@
+ 
+ 各项填写 status 和具体 evidence。原文不可取得而又无法核实关键输入时，明确列出实际缺口，不编造页码、定理编号或文献。
+ 
++回顾材料的开头须准确交代采用哪篇经典文献的术语和记号；独立核查“沿用约定”的真实性及实际差异。历史、credit 和记号换算通常归入证明后的 Remark，陈述与证明之间不插说明；例子单独成 Example，避免密集散文。版本号、arXiv 标识应落实为正式参考文献条目，由正文引用，不能用裸标识代替引文。模块化不能隐藏假设或将关键数学依据降为可有可无的背景。
++
+ 涉及引言与后文的说明迁移时，联读两处，确认引言在相关对象首次使用时已有必要的全局约定，后文直接继承而不过度重复；技术性定义仍在适当位置引入。澄清陈述须保持目标结论、范围及文献归属。
+ 
+ 全文采用小写积分 a_g、b_g(h)、b_g，普通 B_n 表示 Bernoulli 数；引用来源的原字母须换算到本文约定，不能混入当前正文。核对不再使用的特殊字体解释是否已删，周环系数是否统一置于括号内，技术路线是否明确写出所用方程而非含混地泛称输运方程。
+--- previous/workflow/roles/coordinator.md
++++ workflow/roles/coordinator.md
+@@ -14,4 +14,6 @@
+ 
+ 检查审核者是否同时关注“首次定义完整”和“已有定义不重复”，尤其核查章节开头。论文正文直接继承前文约定；完整记号清单留在协作接口中。用户指出先前审核漏项时，保留旧报告，将反馈单独记录并派原作者返工；复审必须针对新快照，不沿用旧 pass。
+ 
++核对回顾段开头的经典来源及约定差异是否有原文依据；检查陈述与证明相邻、历史和 credit 归入证明后 Remark、例子和密集说明是否按用途模块化。版本标识进入书目并被正确引用。新增说明环境尽量保持既有结果编号；冻结前检查环境字体、段落密度和版面，不能只依靠编译成功。
++
+ 完成本节后保存简短交接，说明当前轮次、真实角色 ID、验收状态、未纳入的扩展以及接下来可用的接口。用户没有授权写作时，只维护流程和脚手架。
+--- previous/workflow/roles/math.md
++++ workflow/roles/math.md
+@@ -25,6 +25,8 @@
+ 
+ notation 的 evidence 须给出关键定义和范围的位置，不能仅写“记号统一”。本节出现数学符号时不得省略或笼统标为 not_applicable。与易读性审核分工：你对定义的数学意义、类型和量词负责；符号数量与阅读负担由易读性审核专门判断。未定义或语义冲突的符号会阻止数学审核通过。
+ 
++把说明移入 Remark 或 Example 时，检查定义、假设、范围、规范换算和必要证明是否仍在逻辑上先于使用；可选历史说明不应成为陈述缺少假设的借口。经典来源的约定须按数学对象核对，尤其区分半边是否包括腿、标记乘积与自同构商、次数与系数的规范；不得为声称沿用文献而改变已固定对象。
++
+ 定义或规范跨章节迁移时，同时核查新旧位置：引言中的积分、余维、参数范围和定理陈述是否已在使用前明确，后续推导是否仍继承同一约定。文字澄清不能改变既定目标公式、误差强度或有效范围。
+ 
+ 用户授权改名时，按数学对象逐项核对映射：积分 a_g、b_g(h)、b_g；Bernoulli 数 B_n；周环 A^a(X; Q)；一点 Hodge 系数 beta_g 和标量修正 b。既要同步归一化分母和低亏格例子，也要避免把周环函子 A 或引用文献中的其他对象机械改名。保护数学内容，不把旧字母或句末标点当作不可修改的公式内容。
+--- previous/workflow/roles/readability.md
++++ workflow/roles/readability.md
+@@ -13,8 +13,8 @@
+ - notation_economy：检查新增专名的必要性，也检查已有定义是否被无必要地重述。逐节开头重讲 g、n、模空间、Hodge 丛或罗列继承记号应列为问题。仅当回顾帮助理解当前重要论证时才保留简短重述或原定义引用，evidence 须说明具体作用；同时删去一次性缩写、重复别名和无助于理解的装饰。
+ - symbol_design：字母是否按用途成组选择，Hodge 下标、标记编号、计数、次数、解析变量和常数是否容易区分；是否占用已有字母，或出现同一论证内的重载、大小写及上下标混淆。结合实际公式取舍，不机械地把字母组当作配额。
+ - roadmap：长证明之前是否说明目标、输入、机制和步骤之间的关系。
+-- structure：引理是否具有明确功能和可复用结论，是否拆开无关计算、避免跳步和过度压缩。
+-- transitions：段落与章节衔接、例子和解释是否足以帮助读者跟上主要论证。
++- structure：引理是否具有明确功能和可复用结论，是否拆开无关计算、避免跳步和过度压缩；陈述后是否直接接证明，credit 和版本说明是否放入证明后的 Remark；是否用有单一用途的短段落、Remark、Example 疏解密集文字，而非仅给长段套环境。
++- transitions：段落与章节衔接、例子和解释是否足以帮助读者跟上主要论证；回顾的经典来源和约定差异是否明确，读者能否选择跳过背景和例子而不遗漏必要定义、假设或推理。
+ 
+ 按全文的连续阅读顺序检查开头和过渡，不把每个 section 当作独立文章。“先定义后使用”不是“每节重新定义”。区分本节首次采用的交数规范、真正需要重申的局部假设，与已在引言固定的基本对象。不能仅因重复内容准确，就放过其对叙述效率和阅读节奏的影响。
+ 
+--- previous/workflow/roles/writer.md
++++ workflow/roles/writer.md
+@@ -29,6 +29,10 @@
+ 
+ 核对维数、栈与自同构因子、Bernoulli 符号、阶乘、归一化及误差依赖。把形式恒等式、逐项渐近和统一求和依据写清。先解释证明路线，再按功能拆引理，最后组合得到主定理。
+ 
++陈述与证明相邻：不在定理、引理、命题和相应证明之间插入 credit、历史、版本或记号换算段。证明路线放在陈述之前，来源和补充说明放在证明后的 Remark。将例子组织成简短 Example，按单一用途拆分段落和环境，让读者能跳过回顾或背景而保留主论证；不把密集长段原封不动地套进环境。必要定义、假设和数学依据仍应在使用前清楚可见。
++
++回顾标准材料时，开头说明准确的经典来源及所采用的术语、记号约定，实际不同之处就地明确换算。不要未经核实就声称“完全沿用”某文献。原始版本标识放入参考文献条目，正文用引用和精确定位代替裸写 arXiv 编号。新 Remark、Example 的编号不应无必要地扰动已有数学结果的编号。
++
+ 引用原作者的定理，写明版本、假设和换算；内部笔记作为线索。发现材料不足时明确指出缺口，保留为未完成，不编造结果和引文。未闭合的关键证明不能作为完成稿提交。
+ 
+ ## 返工
+--- previous/workflow/reviews/s02/r001/author_response.json
++++ /dev/null
+@@ -1,24 +0,0 @@
+-{
+-  "agent_id": "/root/s02_writer",
+-  "responses": [
+-    {
+-      "changed_files": [
+-        "sections/02_notation/03_gluing.tex",
+-        "sections/02_notation/04_boundary_and_forgetting.tex"
+-      ],
+-      "explanation": "Set the boundary-exponential left side and graph-sum right side on separate aligned lines at the normal math size, preserving its single label and every factor, graph weight and hypothesis. Also shortened the nearby gluing transition, rational-tail proof paragraph and final application paragraph to remove the three small adjacent overfull lines. The mathematical content and proof steps are unchanged. Verification includes a separate label-free rendering with no overfull hbox or vbox in its final log.",
+-      "issue_id": "READABILITY-001",
+-      "resolution": "addressed"
+-    },
+-    {
+-      "changed_files": [
+-        "sections/02_notation/04_boundary_and_forgetting.tex"
+-      ],
+-      "explanation": "Separated the KMZ version information into a short sentence with a local break opportunity after the slash, and separated attribution from notation translation. Retained arXiv:alg-geom/9604001v1, the full Theorem 2.2/(2.6) and Lemma 2.2.1/(2.8) citation locator, the source-notation translation and the historical attribution. No source, mathematical assertion or global typography setting changed. The label-free final rendering has no overfull hbox or vbox.",
+-      "issue_id": "READABILITY-002",
+-      "resolution": "addressed"
+-    }
+-  ],
+-  "round": 1,
+-  "unit": "s02"
+-}

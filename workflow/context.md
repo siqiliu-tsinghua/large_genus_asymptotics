@@ -15,6 +15,7 @@ The paper_outline.md plan defines the proof organization. Read only the target s
 - Reserve ordinary $B_k$ for Bernoulli numbers, defined by their generating series in Section 2.2. The integral families are lowercase, so no special Bernoulli font or font-distinction explanation is needed.
 - In the Bessel branch, keep z_{0,1} for the first positive zero of J_0(z). At their first use in Section 6, define x_* = z_{0,1}^2/4 and R = z_{0,1}*J_1(z_{0,1})/2 = rho/12. Do not give the zero an alias j.
 - All insertion indices, the defect h and requested truncation orders are fixed unless explicitly stated otherwise. Any stronger uniformity requires proof.
+- In the stable-graph analytic branch, Section 3 introduces $F_g$ for the WP factorial scale, $Z_g(u)$ for the boundary deformation, $W^{\rm WP}_{G,n}$ for its vertex integral, and $f(t),S(u)$ for the half-edge and loop functions. These objects have different recurring roles; define them in the manuscript before use. Keep $p$ for the number of self-loops on the large vertex and $q$ for the total complexity away from that vertex. A temporary scalar $H=2g-2$ is confined to the graph-counting estimates and is distinct from the flag set $H(\Gamma)$. Form the core by contracting those self-loops and increasing the vertex genus, preserving its complexity.
 
 ## Notation policy
 
@@ -52,6 +53,32 @@ Plan letters by purpose before choosing individual names. These preferences guid
 Reserve $R$ for the Bessel critical value once introduced; use a locally defined truncation order for asymptotic expansions. Keep $\delta$ for the boundary class, rather than reusing it for an analytic distance. Avoid unrelated meanings of the same symbol inside one argument, visually similar names and gratuitous decorations. Standard local conventions from a cited theorem may be retained only with explicit scope and a clear translation into the paper's notation.
 
 Each section's INTERFACE.md must list inherited and new symbols, their definition locations, types and ranges, scope, and the reason each new dedicated name is needed. Group dummy indices with a common range. Proposed new global names go to the coordinator; they must be reconciled here before use. Readability reviews must report separately on definition order, consistency, economy and letter design; mathematical reviews check the definitions and quantifiers themselves. These are substantive reviewer duties, not claims of automatic TeX validation.
+
+## Exposition and source conventions
+
+Keep each theorem, lemma or proposition immediately adjacent to its proof.
+Put proof orientation before the statement, and historical credit, source
+conventions and ancillary discussion in short remarks after the proof. Use
+purposeful examples and short paragraphs for optional material; wrapping an
+unchanged dense block in an environment is not enough. Essential definitions,
+hypotheses and proof inputs must remain available before they are used.
+
+When recalling standard material, identify its actual classic source at the
+start and explain genuine convention differences. For stable graphs, GP03,
+Appendix A.1, separates paired half-edges from legs: its half-edge involution
+has no fixed points. Our H(Gamma) contains all flags, including legs as fixed
+points. State this translation explicitly; do not attribute the identical flag
+presentation to FP00. FP00 remains a source for the Hodge bundle conventions.
+Use a bibliography entry for each cited source version, with precise locators
+in citations, instead of raw arXiv identifiers in manuscript prose. The exact
+KMZ preprint version is cited as KMZ96v1; the journal record KMZ96 remains in
+the bibliography database.
+
+The rmk and exm environments have independent section-based counters and roman
+bodies, preserving the existing mathematical-result numbers when optional
+modules are inserted. User feedback USER-004 is recorded at
+workflow/feedback/s02/USER-004.json; its implementation and independent review
+must preserve the previous mathematics and all historical reports.
 
 ## Material status
 

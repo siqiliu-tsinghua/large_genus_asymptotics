@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Checked the complete section using the Introduction's paper-wide definitions. The Introduction, 2.1 and 2.2 are byte-identical to committed trial c6d9c0c; their first-use placement, source-aware psi/kappa definitions, Chow coefficients and normalization ranges remain available without a repeated setup. New 03_gluing.tex:5-30 defines the graph, vertex genera, flag/edge/leg sets, valences, stability/genus constraints, Betti number, automorphisms and graph indexing set before the graph formulas. Lines 32-54 define the labelled product, gluing map, vertex/flag classes and oriented complex cycle space before the normalization lemma. The defect corollary at 113-124 explicitly binds integer h and the integer h_v with their bounds and total. In 04_boundary_and_forgetting.tex:11-21 the formal variables, scalar parameter and positive summation range precede the kernel; 25-42 binds the boundary proposition's parameters and marking exponents and identifies the space of its factors. Lines 87-123 specify pi_m, its base/source convention, the tail divisor, and the local section divisor/line used in the comparison argument. Lines 127-139 specify every positive forgotten-point exponent and W; 154-159 binds the tail count and old-marking indicator. Lines 176-201 introduce [m], permutations, cycles, unordered partitions and block ordering before the two formulas; 255-286 binds the exponential parameter and explains truncation after pushforward. No missing new definition or range was found.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The complete section preserves the current lowercase a_g,b_g(h),b_g, the bracket denominator a_g, ordinary Bernoulli B_m, and uppercase Chow A with rational coefficients inside parentheses. The inherited g_2, j_1,...,j_ell, ell, z_{0,1}, rho and scalar b are unchanged; beta_g is not prematurely used. Searches found no stale uppercase integral family, old Bernoulli font explanation, external coefficient subscript or TODO in the section. In 03_gluing.tex:35-49, vertex superscripts and flag labels specify the pullback factors, while xi_Gamma is distinct from the ordered one-node map xi of 2.2. Lines 144-156 explain the intrinsic factor carrying the leg psi on the right of its pullback formula. The base/source convention before (2.22), 04:87-99, likewise makes the repeated psi/kappa notation meaningful. Logarithmic kappa is maintained throughout gluing, forgetting and exponential specialization, and the surviving new-psi correction is explicitly retained at 130-174. INTERFACE.md agrees with these conventions and hypotheses.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The new section entry describes its operations without reintroducing g,n, the moduli stack, Hodge bundle or a normalization inventory. The graph notation at 03:5-54 is grouped by data, product/classes and cycle space; it is repeatedly needed in the normalization, defect and boundary identities. The incidence map and involution are described without giving each an unnecessary extra name. H_1(Gamma;C) has a specific explanatory role: it identifies the quotient and its possible nontrivial automorphism action. Vertex defects h_v are needed for the full allocation constraint, not an alias for a total degree. In 04, K_a recurs in the graph formula; the local D and mathcal L make the section calculation legible; W is reused in the rational-tail lemma and exponential consequence. [m], the permutation group, cycles and partition/block notation support both forward and inverse formulas and their proof. No dedicated symbol is introduced for a one-off dimension expression or for an inherited object. The full ledger stays in INTERFACE.md, and the WP scale remains deferred. No unnecessary notation or repeated basic definition warrants revision.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "Section.tex:5-13 now explains the two reusable operations, the order of factorial/GRR input, normalization and defect allocation, and the final boundary/forgetting combination. It also separates finite-genus identities from later uniform asymptotics. In 03:56-60 the residue mechanism and reason for the cycle-space quotient precede the normalization lemma; its proof moves from partial normalization and residue constraints to surjectivity/families and then Chern factorization. The 2.4 opening at 5-9 announces the boundary kernel, cycle inversion, separate rational-tail degree lemma and later specialization. The proof at 54-71 follows precisely the node normal line, repeated-node series, graph weights and projection steps. The rational-tail proof at 143-164 first identifies the support of corrections and then kills it by degree; the forgetting proof at 215-239 separates forward recursion from inverse generating series; the final proof at 268-286 accounts for block sizes before showing finite truncation. These are adequate local routes and modular conclusions for the proof lengths.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The complete section has distinct reusable units: conversion, tautological definitions/GRR, Hodge normalization, defect allocation, tautological gluing, boundary exponential with automorphism examples, one-point comparison, rational-tail annihilation, forward/inverse forgetting, and exponential specialization. The separate tail lemma prevents the final application from hiding the old-class pullback correction; the two-kappa example fixes the inverse normalization. I inspected current PDF pages 3-14, covering the section entry and all s02 text. Two material typesetting defects require local repair: (2.21) on page 9 exceeds the right text boundary and places its tag below the display (READABILITY-001); the KMZ version-locator sentence on page 12 protrudes substantially into the right margin (READABILITY-002). These agree with receipt overflows of 21.85936pt and 31.49205pt. The other three reported overflows, approximately 1.5pt at 03:140-142 and 04:154-166,289-end, were visually checked on pages 9,11-12,14 and do not independently obstruct reading. No wholesale restructuring or global spacing change is needed.",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "The new choices keep roles legible in the actual formulas: v labels vertices, f/f' label flags, g_v/n_v record vertex type, h/h_v record Hodge defect, and ell remains the Hodge-product length. H(Gamma) is the flag set, whereas the explicitly typed H_1(Gamma;C) is the cycle space; their different constructions and roles are clear. The boundary exponents d_i, positive tail powers r_k and kappa degrees a_i are separately declared. W is local to the tail comparisons, and the tail-count k/epsilon is scoped to that degree argument. In the partition calculation m counts labels, C_k labels blocks and sigma is a permutation; the two-kappa example uses degrees a,c and does not repurpose the reserved scalar b. D_i from 2.2, D_{0,{i,n+1}} on the moduli source and the local section divisor D in 2.4 have explicitly distinguished spaces and uses. Changes of a,c from scalar parameters to local integer degrees are explicitly re-declared and occur in separate calculations. No unannounced letter collision or misleading alias was found.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The transition from 2.2's Chern identities to 2.3's graph definitions supplies the geometric domains before restricting classes. The labelled-product explanation leads into residues and the quotient, and the post-proof automorphism caveat at 03:106-109 explains exactly which triviality was proved. The defect corollary is followed by its tree/nonseparating interpretation, and the final psi/kappa gluing identities are the input used in the next boundary formula. In 04:74-85 the loop and separating examples explain the symmetry factors before the text turns to forgetting. The base/source convention and one-point comparisons prepare the tail lemma; its explicit surviving kappa correction prepares the later background application. Partition terminology precedes the formulas, the m=2 example precedes the exponential specialization, and the final paragraph distinguishes exact identities from uniform control. A reader need not consult internal notes to follow these connections. The two layout issues affect presentation, not the continuity of these explanations.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/02_notation/04_boundary_and_forgetting.tex:27-39, eq:s02:boundary-exponential; build/reviews/s02/r001/preview.pdf page 9, equation (2.21)",
+      "message": "The main boundary-exponential identity is set as one long line. In the clean PDF its closing factors and bracket extend beyond the right text boundary, and the equation number is displaced onto a lower line. The receipt reports a 21.85936pt overfull box here. This is a central reusable formula, and its dense one-line presentation needs a local line break.",
+      "requested_change": "Wrap (2.21) locally into aligned lines, for example separating the left-hand expression from the graph-sum/pushforward expression, while preserving the bracketed factors, symmetry weight and single stable label. Keep every line and the number within the text block at the normal math font size. Recheck the resulting PDF; no global stretch/shrink, font-size reduction or broader rewrite is needed."
+    },
+    {
+      "id": "READABILITY-002",
+      "severity": "minor",
+      "location": "sections/02_notation/04_boundary_and_forgetting.tex:204-212, KMZ attribution/version paragraph; build/reviews/s02/r001/preview.pdf page 12",
+      "message": "The line ending with arXiv:alg-geom/9604001v1 protrudes conspicuously into the right margin after the long citation locator. The clean-PDF receipt reports a 31.49205pt overflow. The bibliographic information is useful, but this local line does not fit the paragraph's text measure.",
+      "requested_change": "Reflow the attribution/version sentence locally, such as giving the version locator a short separate sentence or a suitable break opportunity, while preserving the full source version and formula/theorem locators. Verify that the resulting line fits the text block. Do not alter global spacing or stretch settings to mask the overflow."
+    }
+  ],
+  "notes": [
+    "This is the first formal whole-s02 readability review, not another trial signature. The original reviewer ID is retained. There are no previous formal READABILITY issues, so resolved_issue_ids is empty; historical scoped passes do not accept the completed section.",
+    "Changes are requested only for the two localized layout defects listed above. The three approximately 1.5pt preflight warnings were independently inspected and are not listed as separate reader-facing obstacles. Definition order, inheritance, notation grouping and economy, local proof routes and transitions passed this review.",
+    "Read the frozen role/context, complete section outline, roadmap, new subsections, interface and writer handoff, and the committed-trial delta. Verified all 23 archived file hashes and three artifact hashes against submission.json, and all corresponding live files against their archives. Introduction/2.1/2.2 were independently confirmed byte-identical to c6d9c0c. Verified the clean-PDF, preview-entry and helper hashes and its exact snapshot against the receipt; five layout diagnostics are recorded. Rendered/viewed pages 3-14 under build/reviews/s02/r001 without rerunning LaTeX or changing shared outputs.",
+    "No manuscript, bibliography, other reviewer report, historical archive or workflow state was edited. The original writer should receive the collected formal reports before revising; this same reviewer session should sign the next frozen snapshot."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "2c3cf36a29fe93b245bf57fe4ba82f5066fbb208aa46a6ae2cc6a5a9c7826837",
+  "summary": "Changes requested for two localized layout defects: the boundary-exponential formula (2.21) overflows on page 9, and the KMZ version-locator sentence overflows on page 12. The completed section otherwise passes the definition, notation, economy, symbol-design, roadmap and transition checks. This is a fresh formal whole-section review; historical trial passes are not substituted for acceptance.",
+  "unit": "s02",
+  "verdict": "changes_requested"
+}

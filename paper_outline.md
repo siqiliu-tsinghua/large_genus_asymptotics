@@ -72,7 +72,7 @@ $$
 
 统一说明 $\psi_i$、$\kappa_a$、$\mathrm{ch}_a$ 的复余维分别为 $1,a,a$，且 $\mathrm{ch}_1=\lambda_1$。在列出 GRR 前，引入模叠上的总边界除子类 $\delta$，用 $t/(e^t-1)=\sum_{k\geq0}B_kt^k/k!$ 定义普通字体的 Bernoulli 数；积分统一使用小写 $a_g,b_g(h),b_g$，不另设字体来区分两者。
 
-**引用结果 2.1，Mumford 的 GRR。** 按本节的对数 $\kappa$ 约定写出带标记公式，包括 $-\sum_i\psi_i^a$ 和有序节点推前的 $1/2$。特别给出
+**引用结果 2.2，Mumford 的 GRR。** 按本节的对数 $\kappa$ 约定写出带标记公式，包括 $-\sum_i\psi_i^a$ 和有序节点推前的 $1/2$。特别给出
 
 $$
 12\lambda_1=\kappa_1+\delta-\sum_{i=1}^n\psi_i,\qquad
@@ -81,7 +81,7 @@ $$
 
 引用 [Mum83, §5, (5.2), Corollary (5.3)] 及 [FP00, §1.1, Theorem (Mumford)]。FP00 的 $\kappa$ 使用非对数对偶化层；说明它等于本文 $\kappa_a-\sum_i\psi_i^a$，并解释换算；参见 [FP00, §1.3, (16)]。不把稳定映射虚基本类版本的 Proposition 1 当作本文公式未经换算的直接出处。
 
-**引理 2.2，总 Chern 类的重写。** 从形式 Chern 根直接推导
+**引理 2.3，总 Chern 类的重写。** 从形式 Chern 根直接推导
 
 $$
 c_t(\mathbb E)=
@@ -93,6 +93,8 @@ $$
 
 ### 2.3 Gluing maps and restrictions of Hodge classes
 
+开头说明本小节回顾经典材料：稳定图术语与黏合乘积采用 [GP03, Appendix A.1]，Hodge 丛约定参照 FP00。明确 GP03 将配对半边与腿分开、半边上的对合无固定点；本文的 flags 包括腿，腿对应对合固定点。其余差异在相关定义处清楚说明，不把不同约定笼统说成完全相同。
+
 定义稳定图、腿、半边、价数、图自同构群和黏合映射。写清
 
 $$
@@ -100,7 +102,7 @@ g=\sum_v g_v+b_1(\Gamma),\qquad
 \sum_v(2g_v-2+n_v)=2g-2+n.
 $$
 
-**引理 2.3，Hodge 丛的边界限制。** 用归一化曲线上的留数解释正合列
+**引理 2.4，Hodge 丛的边界限制。** 用归一化曲线上的留数解释正合列
 
 $$
 0\longrightarrow\bigoplus_v\mathbb E_v
@@ -109,9 +111,9 @@ $$
 \longrightarrow0
 $$
 
-在标记图覆盖上的含义，并据此得到总 Chern 类的乘法公式。
+在标记图乘积覆盖上的含义，并据此得到总 Chern 类的乘法公式。平凡商丛的陈述限于该乘积；图自同构在循环空间上的作用可以非平凡。
 
-**推论 2.4，顶类与离顶差的分配。** $\lambda_g$ 的限制只保留树；对于 $\lambda_{g-h}$，可能出现的项满足
+**推论 2.5，顶类与离顶差的分配。** $\lambda_g$ 的限制只保留树；对于 $\lambda_{g-h}$，可能出现的项满足
 
 $$
 b_1(\Gamma)\leq h,\qquad
@@ -124,7 +126,9 @@ $$
 
 ### 2.4 Boundary exponentials and forgetting markings
 
-**命题 2.5，边界指数的稳定图公式。** 引用 [ABCDGLW23, Lemma 3.10, (3.18)–(3.21)]，给出本文所需的专门化。用节点法丛的第一 Chern 类 $-\psi_+-\psi_-$ 解释单边核
+本小节的引理、命题陈述后直接接证明。来源、credit、版本与记号换算移入证明后的简短 Remark，图权重核对放入有单一用途的 Example；忘点约定和忘去一个标记时所需的代数比较按功能模块化，但保留所有必要定义与证明。原始版本标识放入参考文献，用精确定位的引用代替正文中的裸 arXiv 编号。
+
+**命题 2.6，边界指数的稳定图公式。** 引用 [ABCDGLW23, Lemma 3.10, (3.18)–(3.22)]，给出本文所需的专门化。用节点法丛的第一 Chern 类 $-\psi_+-\psi_-$ 解释单边核
 
 $$
 K_a(x,y)=\frac{1-e^{-a(x+y)}}{x+y}
@@ -133,15 +137,17 @@ $$
 
 说明这是形式幂级数恒等式，并用一个自环和一条分离边展示自同构因子。图公式归于原作者；本文只证明本问题的换算和局部解释。
 
-**引理 2.6，忘点的置换公式与分拆反演。** 引用 [KMZ96, Theorem 2.2]，写出推前公式及其反演。至少详细演示
+**引理 2.7，有理尾的次数消失。** 先给出忘去一个标记时的余切类和对数 $\kappa$ 类比较式及其代数证明。若每个新标记都带正次 $\psi$ 插入，则含一个旧标记或不含旧标记的被压缩有理尾分别有维数 $k-1$ 或 $k-2$，而 $k$ 个新标记的插入次数至少为 $k$。由此消去相关边界修正；$\kappa_1$ 的拉回仍保留 $-\sum\psi_{\mathrm{new}}$，不能将这一项同时消去。
+
+**引理 2.8，忘点的置换公式与分拆反演。** 引用 [KMZ96v1, Theorem 2.2, (2.6), Lemma 2.2.1, (2.8)]，写出推前公式及其反演。至少详细演示
 
 $$
-\kappa_a\kappa_b
-=\pi_{2*}(\psi_{n+1}^{a+1}\psi_{n+2}^{b+1})
--\pi_{1*}(\psi_{n+1}^{a+b+1}).
+\kappa_a\kappa_c
+=\pi_{2*}(\psi_{n+1}^{a+1}\psi_{n+2}^{c+1})
+-\pi_{1*}(\psi_{n+1}^{a+c+1}).
 $$
 
-再推导
+**推论 2.9，指数 kappa 的专门化。** 再推导
 
 $$
 e^{\kappa_1}
@@ -150,7 +156,7 @@ e^{\kappa_1}
 \psi_{n+i}(1-e^{-\psi_{n+i}}).
 $$
 
-把旧标记 $\psi$ 类和 $\kappa_1$ 的拉回修正如何被有理尾上的次数限制消去，列为单独的小引理。随后三条证明路线都可直接引用，避免重复略写这一步。
+明确区分两种次数条件：每个新标记的次数至少为一足以消去上述有理尾边界项；指数专门化的每个新因子从二次开始，忘点后余维至少为新标记数，因此固定亏格时求和有限。后续证明直接引用引理 2.7，并在附加 $\kappa_1$ 背景时保留新 $\psi$ 项。
 
 ## 第 3 节 Uniform asymptotics for stable graph sums
 
@@ -161,13 +167,13 @@ $$
 定义
 
 $$
-V_{G,n}(\mathbf L)
+V_{G,n}(\mathbf y)
 =\int_{\overline{\mathcal M}_{G,n}}
-\exp\left(\alpha\kappa_1+\frac12\sum_iL_i^2\psi_i\right),
+\exp\left(\alpha\kappa_1+\frac12\sum_iy_i^2\psi_i\right),
 \qquad V_{G,n}=V_{G,n}(\mathbf0),
 $$
 
-以及标准化后裔
+其中 $\mathbf y=(y_1,\ldots,y_n)$ 为非负实边长；$L_i$ 继续表示第 2.2 节的余切线丛。同时定义标准化后裔
 
 $$
 [\tau_{\mathbf d}]_{G,n}
@@ -243,11 +249,11 @@ $$
 
 其中 $u$ 位于固定紧集 $\mathcal K$。
 
-长证明拆成三个引理：带标签的半边配对与图自同构权；高斯矩控制配对数后的指数生成函数界；复杂度分拆的阶乘尾界。正文保留计数机制与最终估计，附录承担区间拆分的详细不等式。这里必须估计逐图取绝对值后的总和，才能用于带符号边核。
+长证明拆成三个引理：带标签的半边配对与图自同构权；高斯矩控制配对数后的指数生成函数界；复杂度分拆的阶乘尾界。本节给出完整估计及区间拆分，不依赖尚未验收的附录。这里必须估计逐图取绝对值后的总和，才能用于带符号边核。
 
 ### 3.4 Finite cores and summable remainders
 
-**引理 3.3，固定复杂度下的核心有限性。** 令 $p$ 为大顶点上的自环数。剥去这些自环后，固定 $q$ 只剩有限种核心，并有
+**引理 3.3，固定复杂度下的核心有限性。** 令 $p$ 为大顶点上的自环数。收缩这些自环，并相应增加大顶点的亏格，保持顶点复杂度后，固定 $q$ 只剩有限种核心，并有
 
 $$
 |\operatorname{Aut}\Gamma|
@@ -264,7 +270,7 @@ $$
 
 这样的可求和形式，而不是停在带 $(\log g)^s$ 损失的界。于是得到 $Z_g(u)/V_{g,0}$ 在紧集上的任意固定阶展开，其首项为 $e^{S(u)}$。
 
-**推论 3.6，有限阶导数和带固定装饰的适用性。** 说明局部一致性如何允许 Cauchy 求导；第五节只需在此基础上控制固定个数装饰带来的多项式增长。
+**推论 3.6，有限阶导数和带固定装饰的适用性。** 说明局部一致性如何允许 Cauchy 求导。对固定 $r$ 条编号外腿及独立复参数，证明相应的 $Z_{g,r}(u;\mathbf t)/V_{g,r}$ 展开，首项为 $e^{S(u)}\prod_{i=1}^r f(t_i)$。带腿计数使用截断指数多项式的导数，不能无端增加一个 $g^r$ 损失；换回 $F_g$ 才有体积尺度带来的 $g^r$。这是加法形式的一致展开，不能除以可能为零的首项，特别是 $f(\alpha)=0$。固定外腿 psi 插入由参数求导处理；额外指定旗或边的求和须明示允许的核、次数、计数和多项式损失，未核实的任意装饰不作笼统承诺。第五节再逐项核对具体 Chern-character 装饰的适用性。
 
 ## 第 4 节 Powers of the first Hodge class
 
@@ -339,7 +345,7 @@ $$
 
 将证明分为两个模块：带标签源变量的精确图展开；固定装饰对第三节绝对界的影响。用忘点分拆数和大顶点上的自由新标记数记录增长，解释每个 $\mathrm{ch}_a$ 带来 $g^{1-a}$ 的尺度。
 
-**推论 5.2，三阶精度的代数约化。** 沿用引言的 $P(\lambda)=\prod_{k=1}^{\ell}\lambda_{j_k}$、$F(j)$ 和 $G(j)$，由引理 2.2 得到
+**推论 5.2，三阶精度的代数约化。** 沿用引言的 $P(\lambda)=\prod_{k=1}^{\ell}\lambda_{j_k}$、$F(j)$ 和 $G(j)$，由引理 2.3 得到
 
 $$
 F(j)\langle P\rangle_g
@@ -407,7 +413,7 @@ W^{\rm top}_{G,n}(\mathbf s)=
 m=2G-3+n.
 $$
 
-这里 $m$ 只表示通式的系数提取阶数 $2G-3+n$。在无标记整体积分中代入 $G=g,n=0$ 时，使用引言的 $g_2$，不把它重新命名。由引理 2.6 及 $\lambda_g$ 定理逐步推导
+这里 $m$ 只表示通式的系数提取阶数 $2G-3+n$。在无标记整体积分中代入 $G=g,n=0$ 时，使用引言的 $g_2$，不把它重新命名。由引理 2.8 及 $\lambda_g$ 定理逐步推导
 
 $$
 W^{\rm top}_{G,n}(\mathbf s)
@@ -447,7 +453,7 @@ $$
 
 ### 6.3 Stable trees and their tails
 
-**命题 6.6，树展开及按边数的余项。** 从命题 2.5 和推论 2.4 得到 $b_g$ 的精确树表达。利用
+**命题 6.6，树展开及按边数的余项。** 从命题 2.6 和推论 2.5 得到 $b_g$ 的精确树表达。利用
 
 $$
 \sum_v(2g_v-3+n_v)=g_2-|E|,\qquad
@@ -523,7 +529,7 @@ t_d^*=\frac{(-1)^{d-2}}{(d-1)!}\quad(d\geq2),
 \qquad t_1=-\theta.
 $$
 
-用引理 2.6 推导，对稳定的目标空间，
+用引理 2.8 推导，对稳定的目标空间，
 
 $$
 \partial_x^n\mathcal F_{g,h}(0;0)
@@ -798,7 +804,8 @@ $$
 | Wol86 | S. A. Wolpert, [Chern forms and the Riemann tensor for the moduli space of curves](https://doi.org/10.1007/BF01388794), 1986 | WP 类的规范 |
 | Mir07 | M. Mirzakhani, [Weil–Petersson volumes and intersection theory on the moduli space of curves](https://doi.org/10.1090/S0894-0347-06-00526-1), 2007，Theorem 1.1 | 体积多项式与交数的换算 |
 | ABCDGLW23 | J. E. Andersen, G. Borot, S. Charbonnier, V. Delecroix, A. Giacchetto, D. Lewański, C. Wheeler, [Topological recursion for Masur–Veech volumes](https://arxiv.org/html/1905.10352v3), Lemma 3.10，(3.18)–(3.21)；刊于 JLMS 107 (2023), 254–332 | 第 2、3、5、6 节的精确图公式 |
-| KMZ96 | R. Kaufmann, Yu. Manin, D. Zagier, [Higher Weil–Petersson volumes of moduli spaces of stable n-pointed curves](https://arxiv.org/html/alg-geom/9604001), 1996，Theorem 2.2 及循环公式 | 第 2、5、6、7 节的忘点与参数变换 |
+| KMZ96v1 | R. Kaufmann, Yu. Manin, D. Zagier, [Higher Weil–Petersson volumes of moduli spaces of stable n-pointed curves](https://arxiv.org/html/alg-geom/9604001v1), 1996，指定预印本版本的 Theorem 2.2 及循环公式 | 第 2、5、6、7 节的忘点与参数变换 |
+| GP03 | T. Graber, R. Pandharipande, [Constructions of nontautological classes on moduli spaces of curves](https://arxiv.org/html/math/0104057v2), Appendix A.1 | 第 2.3 节回顾稳定图及黏合乘积，明确半边和腿的约定差异 |
 | FP00 | C. Faber, R. Pandharipande, [Hodge integrals and Gromov–Witten theory](https://arxiv.org/html/math/9810173), Invent. Math. 139 (2000), 173–199，Proposition 1、Theorem 2 | 带标记 GRR、一点 Hodge 系数 |
 | FP03 | C. Faber, R. Pandharipande, [Hodge integrals, partition matrices, and the lambda g conjecture](https://annals.math.princeton.edu/2003/157-1/p03), Ann. of Math. 157 (2003), 97–124，Theorem 1 | 第 6 节的顶类多点交数 |
 | MZ15 | M. Mirzakhani, P. Zograf, [Towards large genus asymptotics of intersection numbers on moduli spaces of curves](https://arxiv.org/abs/1112.1151), GAFA 25 (2015), 1258–1289，Theorem 1.2、Remark 1.3、Corollary 1.5 | 固定标记数展开与一阶系数 |

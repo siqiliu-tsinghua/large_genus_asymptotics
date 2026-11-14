@@ -1,0 +1,59 @@
+--- previous/sections/03_graph_asymptotics/section.tex
++++ sections/03_graph_asymptotics/section.tex
+@@ -2,20 +2,33 @@
+ \section{Uniform asymptotics for stable graph sums}
+ \label{sec:s03}
+ 
+-Self-loops at a vertex of large genus contribute at leading order even
+-when their number is fixed and positive. We therefore sum these loops
+-before organizing the corrections by the complexity carried by the other
+-vertices. The estimates in this section justify that order of operations
+-for the entire stable-graph sum.
++The stable graphs of Subsection~\ref{subsec:s02:03} and the boundary
++expansion \eqref{eq:s02:boundary-exponential} supply the geometric
++starting point for the first two asymptotic problems. The unmarked
++specialization of \eqref{eq:s02:lambda-one-grr}, together with the
++degree conversion \eqref{eq:s02:exp-to-power}, turns the background
++powers of $\lambda_1$ into an exponential involving $\kappa_1$ and
++$\delta$. The boundary expansion then separates the corresponding
++intersection numbers into vertex integrals.
+ 
+-We first fix the Weil--Petersson normalization and the uniform volume
+-inputs, then express the boundary deformation by vertex integrals.
+-Subsection~\ref{subsec:s03:03} bounds the absolute graph sum using
+-pairings, Gaussian moments and a factorial series.
+-Subsection~\ref{subsec:s03:04} contracts these loops and expands the
+-finitely many core types. Its remainders are summable over loop counts.
+-All expansion orders and numbers of insertions are fixed;
+-the graph, its valences and its loop count are allowed to vary with genus.
++These identities hold at each fixed genus. Their asymptotic use requires
++bounds on the whole graph sum as its vertex number, valences and loop
++counts grow. Every fixed number of self-loops on a vertex of large genus
++can contribute at leading order, so these loops must be summed before
++the remaining corrections are organized.
++
++Subsection~\ref{subsec:s03:01} puts the Weil--Petersson inputs in a
++common normalization. Subsection~\ref{subsec:s03:02} gives the vertex
++representation and loop contribution. Subsection~\ref{subsec:s03:03}
++controls absolute tails over all stable graphs;
++Subsection~\ref{subsec:s03:04} contracts the large-vertex loops and
++proves summable remainders for the finite cores. Expansion and insertion
++orders remain fixed while the graph data may grow with genus.
++
++The next section uses these tools to compute the correction coefficients
++and prove Theorem~\ref{thm:lambda-one}. The marked expansion and Cauchy
++bounds also provide inputs for the proof of
++Theorem~\ref{thm:fixed-insertions} in Section~5.
+ 
+ \input{sections/03_graph_asymptotics/01_wp_inputs}
+ \input{sections/03_graph_asymptotics/02_deformation_and_loops}
+--- previous/sections/03_graph_asymptotics/writer_handoff.md
++++ sections/03_graph_asymptotics/writer_handoff.md
+@@ -138,3 +138,7 @@
+ 
+ At handoff the writer stops editing so the coordinator can freeze one
+ complete s03 snapshot for the original three independent reviewers.
++
++## USER-005 opening revision
++
++Feedback: `workflow/feedback/s03/USER-005.json`; SHA-256: `86ebc7b9672da44a277d5310ad7d44ad2684cc7d6e4490d88a173406cae5d321`. The opening now links s02's exact graph/GRR/degree identities to the uniform graph estimates, explains loop resummation, guides all four subsections, and identifies the later proofs of Theorems 1.1 and 1.2. Only the opening and this note change; subsection proofs, interface, assembly lines and protected sources remain unchanged from accepted r001. Scope and UTF-8/LF checks are performed; the coordinator handles the new builds, freeze and original-reviewer recheck.

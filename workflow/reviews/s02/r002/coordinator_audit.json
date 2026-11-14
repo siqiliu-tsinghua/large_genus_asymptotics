@@ -1,0 +1,79 @@
+{
+  "accepted": {
+    "receipt_path": "workflow/reviews/s02/r002/build_receipt.json",
+    "receipt_sha256": "da4105aa94961de8b800efb4a93ba7fd195cbedc5858b7e28c8b23ab15812dd2",
+    "round": 2,
+    "snapshot": "973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac"
+  },
+  "earlier_manuscript_unchanged": [
+    "Introduction",
+    "2.1",
+    "2.2"
+  ],
+  "included_units": [
+    "s01",
+    "s02"
+  ],
+  "layout_diagnostics": [],
+  "numbered_equations_preserved_in_revision": 34,
+  "original_agents": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "writer": "/root/s02_writer"
+  },
+  "primary_sources": [
+    {
+      "path": "refs/Mumford_1983_Enumerative_geometry.pdf",
+      "sha256": "c6c3b43dc0a91aacac552d7951d94b844ac8ddf16bb9e3e3b21a7b913d4ddc80"
+    },
+    {
+      "path": "refs/Faber_Pandharipande_2000_Hodge_integrals.pdf",
+      "sha256": "8342fe48c59cb57cc3a154065a4b2f795f5604748b7a242f8edc71379ba80c74"
+    },
+    {
+      "path": "refs/Andersen_et_al_2023_Topological_recursion_v3.pdf",
+      "sha256": "11cb6b0529840f339a0db7cdd7c0be9fb6ba9d251e473775573a21f6dd6b8a1c"
+    },
+    {
+      "path": "refs/Kaufmann_Manin_Zagier_1996_Higher_WP.pdf",
+      "sha256": "df3b47a7b01155917987764809da2876294d6440ff802c8083c965d30adbfb03"
+    },
+    {
+      "path": "refs/Liu_Xu_2026_Balancing_v1.pdf",
+      "sha256": "10eaa1f3aaaf731849efc196602b3d0f9cc382380da927a515c78bf8f77a42d9"
+    }
+  ],
+  "prior_batch_commit": "c6d9c0c",
+  "reading_pdf": "build/reviews/s02/r002/preview.pdf",
+  "reading_pdf_sha256": "9fb199996f9b8e4ac523732930f3185270225953ae6cc48c757bea4cb1e5f8cc",
+  "resolved_review_issues": [
+    "READABILITY-001",
+    "READABILITY-002"
+  ],
+  "reviews": {
+    "academic": {
+      "agent_id": "/root/s02_academic",
+      "path": "workflow/reviews/s02/r002/academic.json",
+      "sha256": "b27a36316793e1d0cc4974c1e0d298d7b38626d83e166bce73ab239db8e40018",
+      "verdict": "pass"
+    },
+    "math": {
+      "agent_id": "/root/s02_math",
+      "path": "workflow/reviews/s02/r002/math.json",
+      "sha256": "ac5946f8d3bd7f6792b38705b8e7408e2d47651291e76615c5cd09655ac80ade",
+      "verdict": "pass"
+    },
+    "readability": {
+      "agent_id": "/root/s02_readability",
+      "path": "workflow/reviews/s02/r002/readability.json",
+      "sha256": "2dda8b6458377db10b70426a105dc3f2ff0faa3ac19782ee8098c68f38effa2b",
+      "verdict": "pass"
+    }
+  },
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "973388c748e423ce472519ec961217561b7f97769981d4d065a3d50fed8548ac",
+  "status": "approved",
+  "unit": "s02"
+}

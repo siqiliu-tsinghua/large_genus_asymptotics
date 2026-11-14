@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The Introduction, all s02 TeX files and both interfaces are byte-identical to approved r004, preserving the audited first-definition order, types, ranges and scopes. The added context paragraph explicitly assigns its new objects to future Section 3 and still requires manuscript definitions before use; it creates no missing or repeated definition in s02.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The lowercase integral families, ordinary Bernoulli notation, internal Chow coefficients and inherited g_2/Hodge/Bessel conventions are unchanged. The prospective core-contraction note does not alter s02's stable-graph encoding, identities or hypotheses; all seven existing bibliography entries are unchanged and the seven added keys are uncited in the frozen TeX.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No symbol, alias, recall or setup paragraph has been added to the paper. The future notation stays in shared planning context, and the uncited bibliography additions do not appear in the rendered s02 references, so the reader's notation and background burden is unchanged.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The section roadmap and all proof guides are unchanged from r004, including the separation of finite-genus identities from later uniform estimates. The new graph-estimate/core note is explicitly prospective and supplies no new claimed s02 result or proof dependency.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Independent pdftotext comparisons show that the complete r004/r005 rendered text is identical in both plain and layout modes, retaining the r004 paragraphing, proof adjacency, optional modules and numbering. The preamble is unchanged and the matching clean receipt has no standard or layout diagnostics; no new presentation defect is indicated.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The context expressly confines future scalar H=2g-2 to graph-counting estimates and distinguishes it from the existing flag set H(Gamma); the future vertex function has the WP superscript rather than changing s02's local W. These prospective roles do not enter current s02 formulas or disturb its flag, marking, defect and partition indices; their eventual s03 implementation is outside this review.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "All paper transitions remain verbatim and identically rendered, including the GP03 convention recall, the three functional boundary-proof paragraphs, post-proof source Remarks and symmetry Example. Shared planning additions introduce no interruption or repeated introductory setup into the continuous paper.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal r005 signature for the shared-input dependency refresh, retaining r004's substantive audit of unchanged s02 content. There were no open r004 issues, so resolved_issue_ids remains empty. This review does not audit or approve s03.",
+    "Read frozen AGENTS, role, context, delta, handoff addition, coordinator audit and clean receipt. Verified 23 archived files, three artifacts and live/archive equality; 11 TeX/interface inputs are unchanged. Seven bibliography keys were added without changing the seven existing entries, and none of the additions is cited by frozen TeX.",
+    "Independently reproduced equal full rendered-text hashes in plain and layout modes; the layout hash matches the coordinator audit. PDF/entry/helper hashes match the exact snapshot receipt with empty diagnostics. The omitted r003 author-response input still exists unchanged on disk; its removal is snapshot selection, not deletion of history. No source, shared file, state, old record or build output was modified."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "5634fa68be11f0aec6929967508aa7a9cb6b4140dddeba004534a06281f68f9d",
+  "summary": "Pass for the s02 shared-input refresh. The new uncited bibliography and explicitly future-scoped context do not change s02 definitions, notation, exposition or rendering. All seven checks pass on the new snapshot; no s03 approval is implied.",
+  "unit": "s02",
+  "verdict": "pass"
+}

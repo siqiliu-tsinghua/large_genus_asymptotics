@@ -1,83 +1,104 @@
 # Notation and geometric identities
 
-Status: **drafting / incomplete**. This is the authorized trial draft of subsections 2.1 and 2.2, coordinated with a limited Introduction revision and updated through USER-003 after trial round 4. No result in s02 has been approved. Subsections 2.3 and 2.4 and the section roadmap remain unwritten; their WORKFLOW-TODO markers remain in place. The full section is not ready for formal submission or acceptance.
+Document role: **scientific interface for the complete s02 author submission**. Live review and acceptance status are recorded in `workflow/state.json`; this interface does not confer approval. The Introduction + 2.1--2.2 trials remain historical scoped reviews, not acceptance of s02. No part of this document claims a proof of the four asymptotic targets.
 
-## Scope and assumptions
+## Scope and inherited conventions
 
-- The standing scope of stable pairs of nonnegative integers `(g,n)`, with `2g-2+n>0`, is inherited directly from the Introduction. It is recorded here for collaborators and is not reintroduced in the manuscript opening.
-- The Introduction now first states the stack-over-`\mathbb C` interpretation, rational Chow ring, complex-codimension grading, scalar coefficient extension, stabilizer weights and top-degree integration. These are inherited directly in 2.1.
-- The local material in 2.1 begins with formal exponentials and their finite-genus truncation by codimension, then derives the factorial conversion.
-- Insertion indices, product length, defect and expansion order are fixed where specified. No uniform estimate over graph sums or growing marking counts is supplied by this trial.
+The Introduction supplies stable nonnegative `(g,n)` with `2g-2+n>0`, the proper moduli stack over `\mathbb C`, rational Chow groups with coefficients inside parentheses, complex-codimension grading and stack integration with stabilizer weights. Integration selects codimension `3g-3+n`; scalar coefficients may be extended. These conventions are inherited directly in the paper.
 
-## Inherited notation
-
-This ledger is for collaboration. The paper inherits these definitions directly; it does not repeat this inventory or attach routine back-references to each name. A reminder is retained only where it serves a concrete mathematical step.
-
-| Symbols | Definition / type and range | Scope |
-| --- | --- | --- |
-| `g,n`, `\MM_{g,n}`, `\MM_g` | Introduction opening; genus and number of markings, moduli stack and stability are inherited without a new setup in 2.1 | Throughout the paper |
-| `A^*(\MM_{g,n};\mathbb Q)` and `A^a(\MM_{g,n};\mathbb Q)` | Introduction opening; rational Chow ring and its codimension-`a` part; relocated from 2.1 to first introductory use | Uppercase `A` remains the Chow functor, with coefficients inside the parentheses |
-| `\EE`, `\lambda_j` | Introduction Hodge-bundle paragraph; rank-`g` bundle and codimension-`j` Chern classes; `\lambda_0=1` and vanishing for integers `j>g` are now stated there | All relevant moduli stacks; no Chern-class convention is repeated in 2.1 |
-| `j_1,...,j_\ell`, `\ell` | Introduction pure Hodge product; positive Hodge indices and factor count `\ell>=1`; each index is at most `g` when used; inherited directly, with fixedness specified by the asymptotic convention table | Hodge products; fixed for low-index asymptotics |
-| `a_g`, `b_g(h)`, `b_g`, `\langle P(\lambda)\rangle_g`, `N_g` | Introduction definitions retained with explicit `g>=2`, integer `0<=h<=g`, and homogeneous insertion degree `0<=d<=3g-3`; `N_g` is defined before its first use in Theorem 1.1 | Unmarked integrals and normalizations; displayed factorial conversion has `g>=2`, `0<=h<=g` |
-| `g_2=2g-3` | Introduction, Theorem `thm:top-hodge`; inherited without an alias or a routine manuscript pointer | Unmarked top-Hodge exponent and factorials |
-| `h` | Introduction normalization paragraph, integer `0<=h<=g`; fixed as `g` grows in Theorem `thm:fixed-defect` | `\lambda_{g-h}`; genus sufficiently large in fixed-defect asymptotics |
-| `F(j),G(j),J_n(z),z_{0,1},\rho,b` | Introduction definitions retained; no new use or redefinition in this trial | Their original theorem scopes |
-
-## New notation and definition order
-
-The names below follow the current user-authorized convention. The integral families are lowercase `a_g`, `b_g(h)` and `b_g`; ordinary uppercase `B_m` denotes Bernoulli numbers. The scalar correction `b` and the later one-point coefficient `\beta_g` retain their separate roles.
-
-| Symbol | Definition location | Type, range and scope | Reason for the name |
-| --- | --- | --- | --- |
-| `\pi:\MM_{g,n+1}->\MM_{g,n}`, `s_i`, `\omega_\pi` | 2.2 opening, before `eq:s02:psi-definition` | The inherited map `\pi_{n+1,n}` is identified concisely with the universal stable curve, without retelling the forgetting operation; section with `1<=i<=n`; relative dualizing sheaf; local to the definitions and normalization argument | One local map symbol serves the cotangent definition, logarithmic kappa definition and normalization argument |
-| `L_i`, `\psi_i` | `eq:s02:psi-definition` | Marking cotangent line and its first Chern class of codimension one, `1<=i<=n` | Repeated descendant and marking terms |
-| `\psi_{n+1}`, `\kappa_a` | Text before and display `eq:s02:kappa-definition` | Last cotangent class on the source `\MM_{g,n+1}`; `\kappa_a=\pi_*(\psi_{n+1}^{a+1})` of codimension `a`, integers `a>=0` | Connects the source cotangent class directly to the logarithmic convention |
-| `x_1,...,x_g` | Before `eq:s02:chern-definitions` | Formal degree-one Chern roots in a splitting extension; local to Chern definitions and the algebraic proof | Makes the factorial normalization and proof explicit |
-| `\mathrm{ch}_a` | `eq:s02:chern-definitions` | `\mathrm{ch}_a(\EE)=\sum_{\nu=1}^g x_\nu^a/a!`, integer `a>=1`, codimension `a` | Repeated Hodge Chern characters with fixed normalization |
-| `c_t(\EE)` | `eq:s02:chern-definitions` | Chern polynomial in the formal variable `t`; coefficient of `t^j` has codimension `j`, `0<=j<=g` | Encodes and rewrites all Hodge classes |
-| `\delta` | Before `eq:s02:ordered-boundary` | Total reduced boundary divisor class of codimension one, stack convention | Repeated boundary class; matches the reserved shared name |
-| `\widetilde\Delta_{g,n}`, `\xi` | Before `eq:s02:ordered-boundary` | Stack of a curve with a chosen node and ordered branches; finite map forgetting those choices | Supplies a single fully normalized source for the GRR pushforward |
-| `+,-`, `\psi_+,\psi_-` | Before `eq:s02:ordered-boundary` | Ordered branch labels and their cotangent classes on the normalization at the node, on `\widetilde\Delta_{g,n}` | Keeps node branches distinct from the original markings |
-| `B_m` | `eq:s02:bernoulli-convention` | Bernoulli numbers, integers `m>=0`, with generating variable `z` formal; `B_2=1/6` | Needed in GRR; ordinary uppercase `B` is reserved for this family |
-| `D_i` | Normalization argument after `eq:s02:kappa-conversion` | Divisor image of `s_i` on the universal curve; `1<=i<=n`; this paragraph only | Makes the section self-intersection computation precise |
-| `w,Q,L,c` | Lemma `lmm:s02:exp-to-power` | Integer `0<=w<=3g-3+n`, class `Q` of codimension `w`, divisor `L`, scalar `c`; local to the lemma | States the reusable conversion without specializing its insertion |
-| `\theta` | 2.1 opening | Class with only positive-degree components; local | Defines formal exponentials and graded truncation, the first local tool developed in 2.1 |
-| `i,k,a,j,m,\nu,t,z` when bound or formal | Adjacent definitions or displayed sums | `i` marks original points, `k` is a local summation index, `a` a local degree, `j` a Hodge-class index, `m` a Bernoulli index, `\nu` a root index; `t,z` are explicitly formal variables in their respective scopes | Local variables have no new global role; no alias for an existing quantity is introduced |
-
-The WP scale `\alpha` is intentionally deferred until the WP formulas use it. No graph-loop or core-count notation is introduced by this trial.
-
-## Exported identities and stable labels
-
-| Label | Statement and full hypotheses |
+| Inherited symbols | First manuscript definition and scope |
 | --- | --- |
-| `lmm:s02:exp-to-power`, `eq:s02:exp-to-power` | On a stable `\MM_{g,n}`, for homogeneous `Q` of codimension `w` with `0<=w<=3g-3+n`, divisor `L` and scalar `c`, only the power `3g-3+n-w` contributes to `\int Qe^{cL}`. Proof is graded truncation. |
-| `eq:s02:hodge-factorials` | For `g>=2`, integer `0<=h<=g`, restores `(3g-3)!` for `a_g` and `(g_2+h)!` for `b_g(h)`. Exact finite-genus identities. |
-| `eq:s02:psi-definition`, `eq:s02:kappa-definition`, `eq:s02:chern-definitions` | Cotangent lines precede psi, psi precedes logarithmic kappa, and factorial-normalized Chern characters precede GRR. |
-| `eq:s02:ordered-boundary` | `\delta=(1/2)\xi_*1` for the source with a selected node and ordered branches. |
-| `eq:s02:bernoulli-convention` | `z/(e^z-1)=\sum_{m>=0}B_m z^m/m!`. |
-| `thm:s02:grr`, `eq:s02:grr` | For every stable pair `(g,n)` and every integer `a>=1`, even character vanishes and odd character has logarithmic kappa, negative marking correction and one-half ordered-boundary pushforward; exact Chow identities. |
-| `eq:s02:kappa-conversion` | For every integer `a>=0`, nonlogarithmic `\pi_*c_1(\omega_\pi)^{a+1}=\kappa_a-\sum_i\psi_i^a`. The short section-intersection argument is included. |
-| `eq:s02:lambda-one-grr` | For stable `(g,n)`, `12\lambda_1=\kappa_1+\delta-\sum_i\psi_i`; unmarked specialization explicitly restricted to `g>=2`. |
-| `lmm:s02:chern-exponential`, `eq:s02:chern-exponential` | Formal Chern-polynomial exponential in `A^*(\MM_{g,n};\mathbb Q)[[t]]`, using even-character vanishing; proved from roots. |
-| `eq:s02:lambda-two-three` | `\lambda_2=\lambda_1^2/2`, `\lambda_3=\lambda_1^3/6+2\mathrm{ch}_3`, with the out-of-rank vanishing convention now inherited from the Introduction. |
+| `g,n`, `\MM_{g,n}`, `\MM_g`, `A^a(\MM_{g,n};\mathbb Q)` | Introduction opening; stable genus and marking counts, moduli stack and codimension-`a` Chow group |
+| `\EE`, `\lambda_j` | Introduction Hodge paragraph; rank-`g` bundle, `1<=j<=g`, with `\lambda_0=1` and vanishing above rank |
+| `j_1,...,j_\ell`, `\ell` | Introduction, `eq:phi-1`; positive Hodge indices and nonempty product length, fixed for low-index asymptotics where specified |
+| `a_g`, `b_g(h)`, `b_g`, normalized bracket, `N_g` | Introduction normalizations and Theorem 1.1; `g>=2`, integer `0<=h<=g`, homogeneous insertion degree between zero and `3g-3` |
+| `g_2=2g-3`, `J_n(z)`, `z_{0,1}`, `\rho`, scalar `b` | Theorem `thm:top-hodge`; names and numerical definitions unchanged |
+| `F(j),G(j)` | Theorem `thm:fixed-insertions`; factorial product and cubic sum of fixed Hodge indices |
+| `\pi_{n,m}` | Introduction forgetting paragraph; `0<=m<n`, stable target; forgets the last `n-m` markings and stabilizes |
 
-Subsection labels remain `subsec:s02:01` and `subsec:s02:02`.
+The user-authorized integral families remain lowercase. Ordinary `B_m` is the Bernoulli family; scalar `b`, genus-indexed `b_g` and the reserved later one-point coefficient `\beta_g` have different roles. This ledger is for collaborators, not an opening inventory in the paper.
 
-## Dependencies and verified primary sources
+## Definitions and notation ledger
 
-- Introduction supplies the bundle, Chern classes and rank conventions, stack/rational-Chow/degree/integration conventions and normalization notation. These first-definition locations were clarified under USER-002. Its theorem statements remain targets, not proved inputs to this trial.
-- `Mum83`: David Mumford, *Towards an Enumerative Geometry of the Moduli Space of Curves* (1983), §5, formula (5.2) for GRR and Corollary (5.3) for even-character vanishing. Author PDF: https://www.dam.brown.edu/people/mumford/alg_geom/papers/1983b--EnumGeomModuli-NC.pdf . PDF pages 34 and 36 contain these displays. The original Bernoulli convention and kappa-index typography are handled by using the corrected modern presentation in the next item.
-- `FP00`: Carel Faber and Rahul Pandharipande, *Hodge integrals and Gromov–Witten theory*, Invent. Math. 139 (2000), 173–199, DOI `10.1007/s002229900028`. Author PDF: https://webspace.science.uu.nl/~faber010/17.pdf . §1.1, unnumbered **Theorem (Mumford)**, PDF page 6 / journal page 178, gives the rational-Chow formula with the ordered double cover, one-half pushforward, signed Bernoulli convention and nonlogarithmic kappa. The same source explicitly flags the convention difference and kappa-term typo in Mumford. §1.3, equation (16), PDF page 11 / journal page 183, encodes the negative marking correction under the forgetful convention.
-- `FP00, Proposition 1` is a virtual stable-map extension. It is **not** the locator used for the clean family statement in this trial, correcting the outline's suggested locator.
-- Coordinator supplied local primary PDF copies in `refs/` and added the two formal bibliography keys. The writer checked the exact relevant passages in the primary author PDFs through the web tool. No internal note is cited as evidence.
+| Symbols | Definition location | Type, range and scope; reason for notation |
+| --- | --- | --- |
+| `\theta`; `w,Q,L,c` | 2.1 opening; `lmm:s02:exp-to-power` | Positive-degree class; homogeneous codimension `0<=w<=3g-3+n`, class `Q`, divisor `L`, scalar `c`. Local names for graded exponentials and factorial conversion |
+| `\pi=\pi_{n+1,n}`, `s_i`, `\omega_\pi` | 2.2 opening | Universal stable curve, original marking sections `1<=i<=n`, relative dualizing sheaf; one map name suffices for psi and kappa definitions |
+| `L_i`, `\psi_i` | `eq:s02:psi-definition` | Cotangent line and codimension-one class at marking `i`; first defined here |
+| `\psi_{n+1}`, `\kappa_a` | Before and in `eq:s02:kappa-definition` | Last cotangent class on source `\MM_{g,n+1}`; logarithmic `\kappa_a=\pi_*(\psi_{n+1}^{a+1})`, integers `a>=0`, codimension `a` |
+| `x_1,...,x_g`, `\mathrm{ch}_a`, `c_t(\EE)` | `eq:s02:chern-definitions` | Formal degree-one roots, factorial-normalized character for integer `a>=1`, Chern polynomial in formal `t`; needed for GRR and algebraic rewriting |
+| `\delta`, `\widetilde\Delta_{g,n}`, `\xi`, `\psi_+,\psi_-` | Before `eq:s02:ordered-boundary` | Total reduced boundary divisor, cover with a chosen node and ordered branches, its forgetful/gluing map and two branch cotangent classes; fixes `\delta=(1/2)\xi_*1` |
+| `B_m` | `eq:s02:bernoulli-convention` | Ordinary Bernoulli numbers for integers `m>=0`, formal generating variable `z`; `B_2=1/6` |
+| `D_i` | Argument after `eq:s02:kappa-conversion` | Section image on the universal curve, `1<=i<=n`; local to nonlogarithmic/logarithmic conversion |
+| `\Gamma`, `V(\Gamma)`, `H(\Gamma)`, `E(\Gamma)`, flags `f,f'` | 2.3 opening, recalled from `GP03`, Appendix A.1 with the stated translation | Finite connected stable graph, vertex/flag/edge sets; involution pairs edge flags, its fixed flags are legs labelled `1,...,n`. Our all-flags `H(\Gamma)` combines GP03's paired half-edge set `H` and separate leg set `L`; GP03's involution has no fixed points. The source letters are local to this comparison |
+| `g_v`, `n_v`, `b_1(\Gamma)` | Before/in `eq:s02:graph-genus` | Nonnegative vertex genus, incident-flag count, first Betti number `|E|-|V|+1`; satisfy vertex stability and total-genus constraints |
+| `\operatorname{Aut}\Gamma`, `\mathcal G_{g,n}` | 2.3 opening | Finite automorphism group preserving all leg labels and graph data; finite set of graph isomorphism classes. Required for graph weights |
+| `\MM_\Gamma`, `\xi_\Gamma` | `eq:s02:gluing-map` | Labelled product of vertex moduli stacks and gluing morphism; computations precede quotienting by graph automorphisms |
+| `\EE_v`, `\lambda_j^{(v)}`, `\kappa_a^{(v)}`, `\psi_f` | After `eq:s02:gluing-map` | Classes/bundle pulled back from the incident vertex factor; inherited Chern rank conventions and nonnegative kappa indices apply |
+| `H_1(\Gamma;\mathbb C)` | Paragraph before `lmm:s02:hodge-normalization` | Complex cycle space, kernel of the oriented edge-to-vertex incidence map, dimension `b_1(\Gamma)`; gives the constant-bundle quotient on the labelled product |
+| `h_v` | `crl:s02:defect-allocation` | Integer vertex defects `0<=h_v<=g_v`, with total `h-b_1(\Gamma)`; graph cycles consume defect |
+| `K_a(x,y)` | `eq:s02:edge-kernel` | Symmetric formal edge kernel; `x,y` formal variables, `a` scalar parameter, `t` bound formal integration variable. Repeated node weights justify its name |
+| `a,c,d_i` in boundary proposition | `prp:s02:boundary-exponential` | Scalar parameters and nonnegative old marking exponents, `1<=i<=n`; local to this specialization |
+| `\pi_m` | After boundary examples in 2.4 | Inherited `\pi_{n+m,n}` for integer `m>=0`, `\pi_0` identity; repeated new-marking count |
+| `D_{0,\{i,n+1\}}` | Before `eq:s02:one-point-comparison` | Rational-tail divisor on the source carrying exactly old mark `i` and the one new mark; used for the old cotangent comparison |
+| `D`, `\mathcal L` | Proof immediately after `eq:s02:one-point-comparison` | New section divisor on the universal curve over the source and the pulled-back old log-dualizing line. Local to the one-point kappa proof, distinct from a boundary divisor on the moduli base |
+| `r_1,...,r_m`, `W`; `k,\epsilon` in its proof | `lmm:s02:rational-tail-degree` | Integers `r_i>=1`, new cotangent monomial `W`; tail has `k>=1` new points and `\epsilon=0` or `1` old points. These precise conditions are needed for annihilation |
+| `[m]`, `\mathfrak S_m`, `\operatorname{Cyc}(\sigma)`, `\mathcal P`, `C_k` | Before `lmm:s02:forgetting-inversion` | Label set, permutation group, cycles, unordered set partition and arbitrarily ordered blocks; used in the forward and inverse formulas |
+| `a_i` in forgetting lemma; `s` in specialization | `lmm:s02:forgetting-inversion`; `crl:s02:kappa-exponential` | Nonnegative integer kappa degrees; scalar exponential parameter. Product length here is `m`, never `\ell` |
 
-## Remaining work / unresolved scope
+All coefficient rings use `A^a(X;\mathbb Q)`. Superscripts, local formal variables and bound indices are defined at their actual uses; no alias for `g_2` or `3g-3` is introduced. The WP scale `\alpha` remains deferred until a WP formula uses it.
 
-- USER-001's continuous-paper principle remains in force: no repeated basic setup or inherited-notation inventory appears in the paper opening. Its r001 response and original reports are unchanged.
-- USER-002 relocated the global conventions and Chern-class extension to their first introductory use. The Introduction also clarified stable forgetting targets, low-genus exceptions and normalization ranges. Section 2.1 begins with formal exponentials and develops only the local conversion and parameter/error conventions; that placement remains in force.
-- USER-003 changes all current integral-family names to lowercase and reserves ordinary uppercase `B` for Bernoulli numbers. Current Chow expressions place `\mathbb Q` inside their parentheses. The 2.2 transition to logarithmic kappa now directly identifies the last cotangent class on `\MM_{g,n+1}`; the obvious descendant explanation is removed. The mathematical identities and assumptions are unchanged after the notation translation. The current response is `workflow/trials/s02-01-02/r004/author_response.json`, and the same original reviewers must sign the new snapshot.
-- Subsections 2.3 (gluing and Hodge restrictions) and 2.4 (boundary exponentials and forgetting) are not drafted and export no results yet.
-- `section.tex` still needs its authorized roadmap and transitions when the coordinator expands the writing scope. Proposed roadmap is in `writer_handoff.md`; the writer did not edit that file outside the assigned scope.
-- Full-section build, static validation and three independent reviews are the coordinator's next checks. This interface makes no claim of reviewer approval or whole-section completion.
-- No unresolved mathematical or source gap is knowingly hidden in 2.1–2.2; the trial remains subject to independent review.
+## Exported results and hypotheses
+
+| Labels | Export |
+| --- | --- |
+| `lmm:s02:exp-to-power`, `eq:s02:exp-to-power` | On a stable target, exact degree selection for homogeneous `Q` of codimension `w` between zero and `3g-3+n`, a divisor `L` and scalar `c` |
+| `eq:s02:hodge-factorials` | Exact factorial restoration for `a_g` and `b_g(h)`, `g>=2`, integer `0<=h<=g` |
+| `thm:s02:grr`, `eq:s02:grr` | Marked Mumford formula for every integer `a>=1`: even character vanishes; odd character uses logarithmic kappa, negative marking terms, ordinary Bernoulli numbers and the half ordered-node pushforward |
+| `eq:s02:kappa-conversion`, `eq:s02:lambda-one-grr` | Nonlogarithmic/logarithmic conversion for integer `a>=0`; `12lambda_1=kappa_1+delta-sum psi_i`, with the unmarked case restricted to `g>=2` |
+| `lmm:s02:chern-exponential`, `eq:s02:chern-exponential`, `eq:s02:lambda-two-three` | Root-based formal Chern exponential and its degree-two/three consequences; all finite-rank conventions inherited |
+| `eq:s02:graph-genus`, `eq:s02:graph-stability-sum`, `eq:s02:gluing-map` | Stable graph data, genus and stability sums, labelled product/gluing; product dimension `3g-3+n-|E|` |
+| `lmm:s02:hodge-normalization`, `eq:s02:hodge-normalization`, `eq:s02:hodge-factorization` | Exact vector-bundle sequence on the labelled product with quotient `H_1(\Gamma;\mathbb C)\otimes\mathcal O`, and Chern factorization. The quotient's graph-automorphism representation is not claimed trivial |
+| `crl:s02:defect-allocation`, `eq:s02:defect-allocation` | For integer `0<=h<=g`, sum over `0<=h_v<=g_v` with total `h-b_1`; empty if `b_1>h`. At `h=0` only trees remain, with top Hodge class at every vertex |
+| `eq:s02:tautological-gluing` | Additivity of logarithmic `kappa_a`, integers `a>=0`, and leg cotangent pullback under gluing |
+| `prp:s02:boundary-exponential`, `eq:s02:edge-kernel`, `eq:s02:boundary-exponential` | Scalar parameters `a,c`, integers `d_i>=0`: stable-graph expansion of `exp(a delta+c kappa_1) prod psi_i^{d_i}` with one kernel per edge and weight `1/Aut`. Formal fractions divide as series; no inverse cotangent class is used |
+| `eq:s02:one-point-comparison` | Old psi divisor comparison and logarithmic-kappa pullback for integer `a>=0`; the latter has a local algebraic proof via stabilization, the new section and binomial expansion |
+| `lmm:s02:rational-tail-degree`, `eq:s02:tail-comparisons`, `eq:s02:tail-exponential` | If EVERY forgotten point has psi exponent at least one, its monomial annihilates the relevant tail-boundary corrections. Old psi may then be replaced by intrinsic source psi, but the kappa background becomes `kappa_1-sum_new psi`. Applies to polynomials and graded-truncated series in old psi and kappa_1 |
+| `lmm:s02:forgetting-inversion`, `eq:s02:forgetting-permutations`, `eq:s02:partition-inversion`, `eq:s02:two-kappas` | Integers `m>=1`, `a_i>=0`: forward cycle formula; inverse unordered partition coefficient `(-1)^(m-number of blocks)` with NO block factorials; two-input example fixes the negative merged term |
+| `crl:s02:kappa-exponential`, `eq:s02:kappa-exponential` | `exp(s kappa_1)` as the `1/m!` pushforward sum of `psi_new(1-exp(-s psi_new))`; all block-size coefficients are derived. Terms `m>3g-3+n` vanish at fixed genus |
+
+Subsection labels `subsec:s02:01` through `subsec:s02:04` and `sec:s02` are stable. All results here are exact finite-genus algebraic identities. No uniform estimate over a genus-dependent graph or forgetting sum is exported.
+
+## Reading modules and source placement
+
+USER-004 reorganizes exposition without changing any of the 34 numbered equations, existing mathematical-result labels, hypotheses or result numbers. Each proposition/lemma statement remains adjacent to its proof. The independent section counters of `rmk` and `exm` do not share the substantive-result counter.
+
+| Module | Reader purpose and location |
+| --- | --- |
+| 2.3 opening recall | Identifies the actual classic stable-graph source `GP03`, Appendix A.1, and explicitly translates its separate half-edges/legs into our fixed-point convention. FP00 remains a Hodge source, not a source for the identical flag presentation |
+| `rmk:s02:boundary-source` | After the boundary proposition's proof: constant edge and linear vertex specialization, delta normalization, and cohomology/Chow distinction |
+| `exm:s02:one-edge-weights` | Short loop and separating-edge examples, followed by the ordered-splitting convention; gives concrete symmetry factors |
+| Forgetting maps / One-point comparisons paragraphs | Motivate the map family and give all source/base conventions and divisor definitions in the main argument; `eq:s02:one-point-comparison` is immediately followed by its algebraic proof |
+| `rmk:s02:comparison-source` | After that proof: version-specific citation for the logarithmic comparison |
+| `rmk:s02:forgetting-source` | After Lemma 2.8's proof: source credit and historical attribution, multiple-pushforward notation, logarithmic kappa and ordered/unordered block translation |
+
+The essential definitions, positive-new-psi hypothesis and Chow argument remain in the main text, not in optional historical modules. Raw version identifiers have been removed from manuscript prose; the cited bibliography entries specify the checked versions.
+
+## Checked sources and translations
+
+- `GP03`, Graber-Pandharipande, Appendix A.1 of the version fixed by its bibliography note: checked primary HTML/PDF, PDF pages 13--14. The source's graph is written `A`, with a fixed-point-free involution on paired half-edges `H` and a separate numbered-leg set `L`; our graph is `\Gamma`, with all flags in `H(\Gamma)` and the legs as involution fixed points. Its `g(v),n(v),h^1(A)` correspond to `g_v,n_v,b_1(\Gamma)`. This is the actual graph terminology source; no identical presentation is attributed to FP00. Primary text: https://arxiv.org/html/math/0104057v2 . The preprint title uses "on moduli spaces"; the publisher's journal title uses "of moduli spaces", as reflected in the coordinator's bibliography entry.
+- `Mum83`, Section 5, (5.2) and Corollary (5.3): GRR and even-character vanishing. The corrected modern Bernoulli convention and kappa index are taken from the next source.
+- `FP00`, Section 1.1, unnumbered Theorem (Mumford), and Section 1.3, (16): checked primary marked GRR presentation and nonlogarithmic/logarithmic marking conversion. The clean family theorem is not Proposition 1. Section 1.3, (17)--(18) gives the one-node Hodge sequences. Author copy: https://webspace.science.uu.nl/~faber010/17.pdf .
+- `LX26b`, arXiv:2610.39462v1 (2026-10-29), proof of Proposition 4.4, (4.2)--(4.3): partial-normalization structure-sheaf sequence, constant graph cohomology, and the dual Hodge quotient. The manuscript supplies the family residue proof and makes the nontrivial possible automorphism action explicit. Only this normalization argument is used, not the nefness assertion of that proposition. Primary link: https://arxiv.org/abs/2610.39462v1 .
+- `ABCDGLW23`, numbering of arXiv:1905.10352v3 (2020-10-03), Section 3.6, definition of `jmath` immediately before Proposition 3.9, and Lemma 3.10, (3.18)--(3.22): the weighted one-edge pushforward is our `delta`. The edge series is specialized to constant `a`, the vertex series to linear coefficient `c`, giving `K_a`. The primary statement is cohomological; the paper repeats the algebraic normal-line/self-intersection and graph multiplicity proof in rational Chow, without assuming an injective cycle map. Primary text: https://arxiv.org/html/1905.10352v3#S3.SS6 . Journal JLMS 107 (2023), 254--332, DOI 10.1112/jlms.12686.
+- `KMZ96v1`, the explicit versioned preprint entry, Section 2: (2.4) defines their multiple pushforward, Theorem 2.2 (2.6) gives inversion, Lemma 2.2.1 (2.8) gives the cycle formula, and (2.9)--(2.11) gives the geometric recursion. Their `omega_n(a)` is our logarithmic `kappa_a`; the cohomological grading `2a` becomes complex codimension `a`. Ordered-block `1/k!` becomes an unordered partition sum. KMZ credit the geometric formula to Arbarello-Cornalba and earlier unpublished Faber-Zagier; that credit is retained. The one-point kappa comparison is proved algebraically here, and the psi comparison follows the cotangent line under contraction, so the push-pull recursion applies in Chow. All these version-specific formula citations now use `KMZ96v1`; the journal database entry `KMZ96` is uncited in this section. Primary text: https://arxiv.org/html/alg-geom/9604001 .
+
+All six cited keys exist in the shared bibliography. Primary PDF copies and extracts are under `refs/` and `build/ref-text/`; internal research notes are not used as evidence. The ABCDGLW numbering version is fixed in its bibliography note; the manuscript no longer repeats the raw version identifier.
+
+## Review status and remaining work
+
+- The full mathematical draft and roadmap are supplied; no placeholder remains. No known source locator or mathematical gap is left open by the writer, subject to independent review.
+- The USER-004 organization/attribution response, feedback path and feedback SHA-256 are recorded in the current `writer_handoff.md`. The approved formal r002 snapshot remains immutable; this reopened submission requires a fresh whole-section review by the same original agents.
+- The first two subsections and the Introduction are unchanged in this extension. Their historical trials, USER-001/002/003 feedback and author responses, and the ACADEMIC-001 punctuation correction remain in `workflow/trials/s02-01-02/`; those records are not whole-section approval.
+- Full-section strict build and repository validation must be checked against the final saved source, then the coordinator submits the frozen formal snapshot. The original writer and three original reviewers remain responsible for revisions and rechecks.
+- Later sections still need the uniform estimates that justify asymptotic use of the finite-genus identities. No later section was drafted or amended here.

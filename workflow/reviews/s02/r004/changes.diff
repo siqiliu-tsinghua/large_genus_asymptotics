@@ -1,0 +1,83 @@
+--- previous/sections/02_notation/04_boundary_and_forgetting.tex
++++ sections/02_notation/04_boundary_and_forgetting.tex
+@@ -48,7 +48,8 @@
+ has first Chern class $-\psi_f-\psi_{f'}$.  In a product of boundary
+ divisors, repeating this node $r$ times contributes
+ $(-\psi_f-\psi_{f'})^{r-1}$ after the gluing pushforward.
+-Distinct nodes intersect as the corresponding boundary branches.
++
++\smallskip\noindent Distinct nodes intersect as the corresponding boundary branches.
+ Grouping the terms of the exponential by their graph of distinct
+ nodes gives at each edge the series
+ $\sum_{r\geq1}a^r(-\psi_f-\psi_{f'})^{r-1}/r!$, which is
+@@ -56,7 +57,8 @@
+ the orderings of the chosen divisor factors; passing from distinguished
+ graph labels to graph isomorphism classes leaves
+ $1/|\operatorname{Aut}\Gamma|$.
+-These are algebraic self-intersection and pushforward calculations,
++
++\smallskip\noindent These are algebraic self-intersection and pushforward calculations,
+ valid in rational Chow on the moduli stack.  Finally, the projection
+ formula and \eqref{eq:s02:tautological-gluing} supply the vertex
+ exponentials and leg factors in \eqref{eq:s02:boundary-exponential}.
+--- previous/sections/02_notation/writer_handoff.md
++++ sections/02_notation/writer_handoff.md
+@@ -1,6 +1,10 @@
+ # s02 writer handoff - USER-004 organization and attribution
+ 
+-Document role: current author handoff for the reopened s02 submission. Fixed writer: `/root/s02_writer`. Live review and acceptance status are in `workflow/state.json`. The approved formal r002 record remains immutable; the present user-requested delta requires a fresh formal round 3 review by the same original agents. This handoff does not confer approval.
++Document role: current author handoff for the reopened s02 submission. Fixed writer: `/root/s02_writer`. Live review and acceptance status are in `workflow/state.json`. The approved formal r002 record and all formal r003 reports remain immutable. The current revision responds only to READABILITY-003 and requires a fresh formal round 4 review by the same original agents. This handoff does not confer approval.
++
++## Formal r003 response: READABILITY-003 addressed
++
++The collected r003 math and academic reports passed; readability requested only two paragraph breaks in the proof of Proposition 2.6. Blank lines now precede "Distinct nodes intersect as the corresponding boundary branches" and "These are algebraic self-intersection and pushforward calculations". The new first-line indents caused two overfull boxes, so the coordinator authorized the exact local prefix `\smallskip\noindent` at both starts. These two hints provide a small visible paragraph gap without an indent; no global font or spacing setting changes. Every visible word, mathematical expression, environment, label and statement/proof adjacency is retained. The response is recorded in `workflow/reviews/s02/r003/author_response.json`; no unchanged literature was reread.
+ 
+ ## Bound user feedback
+ 
+@@ -23,14 +27,14 @@
+ 
+ ## Authorized current files
+ 
+-Only these four tracked files are edited by the writer for this request:
++The USER-004 submission edited these four tracked files:
+ 
+ - `sections/02_notation/03_gluing.tex`;
+ - `sections/02_notation/04_boundary_and_forgetting.tex`;
+ - `sections/02_notation/INTERFACE.md`;
+ - `sections/02_notation/writer_handoff.md`.
+ 
+-The Introduction, 2.1, 2.2 and section roadmap are unchanged. All frozen trial/review sources, reports, author responses, build receipts and review helpers remain untouched. No commit or state-changing workflow command is made by the writer. New clean draft products and their helper use only the ignored directory `build/reviews/s02/writer-user004-draft/`.
++The present READABILITY-003 revision edits only `04_boundary_and_forgetting.tex`, this handoff and the designated r003 author response. The interface and scientific ledger are unchanged. The Introduction, 2.1, 2.2 and section roadmap are unchanged. All frozen trial/review sources, reports, earlier author responses, build receipts and review helpers remain untouched. No commit or state-changing workflow command is made by the writer. New clean draft products and their helper use only the ignored directory `build/reviews/s02/writer-user004-draft/`.
+ 
+ ## Mathematical preservation
+ 
+@@ -56,8 +60,8 @@
+ 
+ ## Checks and handoff
+ 
+-The final source checks compare the numbered equations, result statements and unaffected files with approved r002, verify citation keys and absence of raw version identifiers in manuscript prose, and check proof adjacency and independent Remark/Example counters. Documents remain ASCII-safe UTF-8 with LF and final newlines, with no corrupted separators.
++The final source checks compare whitespace-normalized full subsection 2.4 after removing only the two authorized `\smallskip\noindent` prefixes, all 34 numbered equations, all 13 principal statements and unaffected files with frozen r003. The only manuscript delta is the two blank lines and their local prefixes above. Documents remain ASCII-safe UTF-8 with LF and final newlines, with no corrupted separators.
+ 
+-After all four files and the settled shared inputs are saved, the writer runs repository validation, the draft gate, native strict build and a separate label-free draft build. The clean log is required to have zero overfull horizontal/vertical boxes; selected pages are inspected visually. Actual outcomes and matching source hashes are recorded in the draft receipts and reported to the coordinator. The clean artifact records no new review signature; the coordinator freezes formal r003 and obtains all three original reviewers' fresh signatures.
++After all three files are saved, the writer runs repository validation, the draft gate, native strict build and a separate label-free draft build. The clean log is required to have zero overfull horizontal/vertical boxes; the affected page and pagination are inspected visually. Actual outcomes and matching source hashes are recorded in the draft receipts and reported to the coordinator. The clean artifact records no new review signature; the coordinator freezes formal r004 and obtains all three original reviewers' fresh signatures.
+ 
+ The writer stops editing at handoff until the collected reviews or another explicit instruction arrive.
+--- /dev/null
++++ workflow/reviews/s02/r003/author_response.json
+@@ -0,0 +1,16 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/02_notation/04_boundary_and_forgetting.tex",
++        "sections/02_notation/writer_handoff.md"
++      ],
++      "explanation": "Inserted two blank paragraph breaks in Proposition 2.6's proof: before \"Distinct nodes intersect as the corresponding boundary branches\" and before \"These are algebraic self-intersection and pushforward calculations\". The new first-line indents produced two overfull boxes, so the coordinator authorized exactly two local \\smallskip\\noindent prefixes, one at each new paragraph start. These hints give a small visible gap without first-line indents; visible words, mathematics, environments, labels and proof adjacency remain unchanged, with no global font or spacing adjustment. The current handoff records this narrow revision.",
++      "issue_id": "READABILITY-003",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 3,
++  "unit": "s02"
++}

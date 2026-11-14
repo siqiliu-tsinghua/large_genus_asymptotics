@@ -1,0 +1,24 @@
+{
+  "agent_id": "/root/s02_writer",
+  "responses": [
+    {
+      "changed_files": [
+        "sections/02_notation/03_gluing.tex",
+        "sections/02_notation/04_boundary_and_forgetting.tex"
+      ],
+      "explanation": "Set the boundary-exponential left side and graph-sum right side on separate aligned lines at the normal math size, preserving its single label and every factor, graph weight and hypothesis. Also shortened the nearby gluing transition, rational-tail proof paragraph and final application paragraph to remove the three small adjacent overfull lines. The mathematical content and proof steps are unchanged. Verification includes a separate label-free rendering with no overfull hbox or vbox in its final log.",
+      "issue_id": "READABILITY-001",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/02_notation/04_boundary_and_forgetting.tex"
+      ],
+      "explanation": "Separated the KMZ version information into a short sentence with a local break opportunity after the slash, and separated attribution from notation translation. Retained arXiv:alg-geom/9604001v1, the full Theorem 2.2/(2.6) and Lemma 2.2.1/(2.8) citation locator, the source-notation translation and the historical attribution. No source, mathematical assertion or global typography setting changed. The label-free final rendering has no overfull hbox or vbox.",
+      "issue_id": "READABILITY-002",
+      "resolution": "addressed"
+    }
+  ],
+  "round": 1,
+  "unit": "s02"
+}
