@@ -1,0 +1,6 @@
+/refs/
+/build/
+__pycache__/
+*.py[cod]
+/workflow/.lock
+.workflow-*.tmp

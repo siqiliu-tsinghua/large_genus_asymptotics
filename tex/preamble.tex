@@ -1,0 +1,32 @@
+\usepackage{amsmath}
+
+\usepackage{fontspec,unicode-math}
+\setmainfont{texgyrepagella}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\setmathfont{texgyrepagella-math.otf}
+
+\numberwithin{equation}{section}
+
+\usepackage{showkeys}
+
+\newcommand{\MM}{\overline{\mathcal{M}}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\dd}{\mathrm{d}}
+
+\DeclareMathOperator{\Cin}{\mathrm{Cin}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{lmm}[thm]{Lemma}
+\newtheorem{rmk}[thm]{Remark}
+
+\newenvironment{prf}{\noindent \textbf{Proof: }}{\hfill $\Box$}
+\newenvironment{prfn}[1]{\vskip 1em \noindent \textbf{Proof of #1: }}{\hfill $\Box$}
+
+\newtheorem{prp}[thm]{Proposition}
+\newtheorem{crl}[thm]{Corollary}

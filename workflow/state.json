@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "active_unit": null,
+  "units": {
+    "s01": {
+      "status": "baseline",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s02": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s03": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s04": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s05": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s06": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s07": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "s08": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "a": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "b": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    },
+    "c": {
+      "status": "planned",
+      "agents": {
+        "writer": null,
+        "math": null,
+        "readability": null,
+        "academic": null
+      },
+      "submissions": [],
+      "accepted": null
+    }
+  },
+  "history": []
+}

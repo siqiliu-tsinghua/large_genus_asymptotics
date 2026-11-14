@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "shared_inputs": [
+    "main.tex",
+    "tex/preamble.tex",
+    "frontmatter/abstract.tex",
+    "references.bib",
+    "AGENTS.md",
+    "workflow/context.md",
+    "workflow/roles/coordinator.md",
+    "workflow/roles/writer.md",
+    "workflow/roles/math.md",
+    "workflow/roles/readability.md",
+    "workflow/roles/academic.md",
+    "workflow/PROTOCOL.md"
+  ],
+  "units": [
+    {
+      "id": "s01",
+      "title": "Introduction",
+      "directory": "sections/01_introduction",
+      "number": 1,
+      "kind": "body",
+      "outline_heading": null,
+      "depends_on": [],
+      "subsections": []
+    },
+    {
+      "id": "s02",
+      "title": "Notation and geometric identities",
+      "directory": "sections/02_notation",
+      "number": 2,
+      "kind": "body",
+      "outline_heading": "## 第 2 节 Notation and geometric identities",
+      "depends_on": [
+        "s01"
+      ],
+      "subsections": [
+        {
+          "path": "sections/02_notation/01_conventions.tex",
+          "title": "Intersection conventions and normalization"
+        },
+        {
+          "path": "sections/02_notation/02_tautological_classes.tex",
+          "title": "Tautological classes and the GRR formula"
+        },
+        {
+          "path": "sections/02_notation/03_gluing.tex",
+          "title": "Gluing maps and restrictions of Hodge classes"
+        },
+        {
+          "path": "sections/02_notation/04_boundary_and_forgetting.tex",
+          "title": "Boundary exponentials and forgetting markings"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Uniform asymptotics for stable graph sums",
+      "directory": "sections/03_graph_asymptotics",
+      "number": 3,
+      "kind": "body",
+      "outline_heading": "## 第 3 节 Uniform asymptotics for stable graph sums",
+      "depends_on": [
+        "s02"
+      ],
+      "subsections": [
+        {
+          "path": "sections/03_graph_asymptotics/01_wp_inputs.tex",
+          "title": "Weil–Petersson inputs in a common convention"
+        },
+        {
+          "path": "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+          "title": "The boundary deformation and the loop contribution"
+        },
+        {
+          "path": "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+          "title": "A uniform vertex bound and concentration on a large vertex"
+        },
+        {
+          "path": "sections/03_graph_asymptotics/04_finite_cores.tex",
+          "title": "Finite cores and summable remainders"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Powers of the first Hodge class",
+      "directory": "sections/04_lambda_one",
+      "number": 4,
+      "kind": "body",
+      "outline_heading": "## 第 4 节 Powers of the first Hodge class",
+      "depends_on": [
+        "s03",
+        "a"
+      ],
+      "subsections": [
+        {
+          "path": "sections/04_lambda_one/01_loop_moments.tex",
+          "title": "Signed loop moments"
+        },
+        {
+          "path": "sections/04_lambda_one/02_leading_and_first_correction.tex",
+          "title": "The leading term and the first correction"
+        },
+        {
+          "path": "sections/04_lambda_one/03_second_correction.tex",
+          "title": "The second correction"
+        },
+        {
+          "path": "sections/04_lambda_one/04_proof.tex",
+          "title": "Proof of Theorem 1.1"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Fixed degree Hodge insertions",
+      "directory": "sections/05_fixed_insertions",
+      "number": 5,
+      "kind": "body",
+      "outline_heading": "## 第 5 节 Fixed degree Hodge insertions",
+      "depends_on": [
+        "s03"
+      ],
+      "subsections": [
+        {
+          "path": "sections/05_fixed_insertions/01_character_filtration.tex",
+          "title": "A filtration by odd Chern characters"
+        },
+        {
+          "path": "sections/05_fixed_insertions/02_single_character.tex",
+          "title": "The two leading coefficients of a single character"
+        },
+        {
+          "path": "sections/05_fixed_insertions/03_proof_and_examples.tex",
+          "title": "Proof of Theorem 1.2 and examples"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "The top Hodge class and Bessel asymptotics",
+      "directory": "sections/06_top_hodge",
+      "number": 6,
+      "kind": "body",
+      "outline_heading": "## 第 6 节 The top Hodge class and Bessel asymptotics",
+      "depends_on": [
+        "s02"
+      ],
+      "subsections": [
+        {
+          "path": "sections/06_top_hodge/01_exact_vertices.tex",
+          "title": "The lambda g theorem and an exact vertex formula"
+        },
+        {
+          "path": "sections/06_top_hodge/02_bessel_critical_point.tex",
+          "title": "The Bessel critical point and a uniform coefficient bound"
+        },
+        {
+          "path": "sections/06_top_hodge/03_tree_tails.tex",
+          "title": "Stable trees and their tails"
+        },
+        {
+          "path": "sections/06_top_hodge/04_correction_and_proof.tex",
+          "title": "The first correction and proof of Theorem 1.3"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Linear Hodge potentials and transport at fixed defect",
+      "directory": "sections/07_ilw_transport",
+      "number": 7,
+      "kind": "body",
+      "outline_heading": "## 第 7 节 Linear Hodge potentials and transport at fixed defect",
+      "depends_on": [
+        "s06"
+      ],
+      "subsections": [
+        {
+          "path": "sections/07_ilw_transport/01_hodge_potential.tex",
+          "title": "The linear Hodge potential and the first ILW flow"
+        },
+        {
+          "path": "sections/07_ilw_transport/02_specialization.tex",
+          "title": "A specialization producing the kappa background"
+        },
+        {
+          "path": "sections/07_ilw_transport/03_exact_transport.tex",
+          "title": "Exact recursions and their integration constants"
+        },
+        {
+          "path": "sections/07_ilw_transport/04_borel_transform.tex",
+          "title": "One Borel normalization for all fixed defects"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Singularity analysis and Hodge integrals at fixed defect",
+      "directory": "sections/08_fixed_defect",
+      "number": 8,
+      "kind": "body",
+      "outline_heading": "## 第 8 节 Singularity analysis and Hodge integrals at fixed defect",
+      "depends_on": [
+        "s07",
+        "b"
+      ],
+      "subsections": [
+        {
+          "path": "sections/08_fixed_defect/01_analytic_domains.tex",
+          "title": "Analytic domains of the inverse Bessel function"
+        },
+        {
+          "path": "sections/08_fixed_defect/02_singularity_propagation.tex",
+          "title": "Propagation of the leading singularity"
+        },
+        {
+          "path": "sections/08_fixed_defect/03_transport_constant.tex",
+          "title": "The transport constant and its factorial"
+        },
+        {
+          "path": "sections/08_fixed_defect/04_coefficient_transfer.tex",
+          "title": "Inverting the sine transform and transferring coefficients"
+        },
+        {
+          "path": "sections/08_fixed_defect/05_background_comparison.tex",
+          "title": "Comparing the kappa and Hodge backgrounds"
+        },
+        {
+          "path": "sections/08_fixed_defect/06_proof.tex",
+          "title": "Proof of Theorem 1.4"
+        }
+      ]
+    },
+    {
+      "id": "a",
+      "title": "Coefficients and finite cores",
+      "directory": "sections/a_coefficients",
+      "number": "A",
+      "kind": "appendix",
+      "outline_heading": "### 附录 A Coefficients and finite cores",
+      "depends_on": [
+        "s03"
+      ],
+      "subsections": [
+        {
+          "path": "sections/a_coefficients/content.tex",
+          "title": null
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "title": "Analytic estimates for transport kernels",
+      "directory": "sections/b_analytic_estimates",
+      "number": "B",
+      "kind": "appendix",
+      "outline_heading": "### 附录 B Analytic estimates for transport kernels",
+      "depends_on": [
+        "s07"
+      ],
+      "subsections": [
+        {
+          "path": "sections/b_analytic_estimates/content.tex",
+          "title": null
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "title": "Exact values and reproducible checks",
+      "directory": "sections/c_exact_checks",
+      "number": "C",
+      "kind": "appendix",
+      "outline_heading": "### 附录 C Exact values and reproducible checks",
+      "depends_on": [
+        "s04",
+        "s05",
+        "s06",
+        "s08"
+      ],
+      "subsections": [
+        {
+          "path": "sections/c_exact_checks/content.tex",
+          "title": null
+        }
+      ]
+    }
+  ]
+}

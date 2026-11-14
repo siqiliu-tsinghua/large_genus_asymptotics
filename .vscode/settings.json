@@ -1,0 +1,74 @@
+{
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "XeLaTeX (2 passes)",
+  "latex-workshop.latex.outDir": "build",
+  "latex-workshop.latex.auxDir": "%OUTDIR%",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "XeLaTeX (2 passes)",
+      "tools": ["xelatex", "xelatex"]
+    },
+    {
+      "name": "XeLaTeX -> BibTeX -> XeLaTeX (2 passes)",
+      "tools": ["xelatex", "bibtex", "xelatex", "xelatex"]
+    },
+    {
+      "name": "pdfLaTeX (2 passes)",
+      "tools": ["pdflatex", "pdflatex"]
+    },
+    {
+      "name": "pdfLaTeX -> BibTeX -> pdfLaTeX (2 passes)",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "cwd": "%DIR%",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=%OUTDIR%",
+        "%DOC_EXT%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "cwd": "%DIR%",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=%OUTDIR%",
+        "%DOC_EXT%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "cwd": "%DIR%",
+      "args": ["%OUTDIR%/%DOCFILE%"]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.zoom": "page-width",
+  "latex-workshop.view.pdf.tab.editorGroup": "right",
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.latex.clean.method": "glob",
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.autoIndent": "none",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  }
+}
