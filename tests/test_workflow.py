@@ -115,6 +115,62 @@ class WorkflowTests(unittest.TestCase):
         with self.assertRaises(WorkflowError):
             self.engine.start("s06")
 
+    def test_defer_preserves_draft_and_original_writer(self):
+        self.engine.start("s02")
+        self.engine.bind("s02", "writer", self.writer)
+        folder = self.root / "sections/s02"
+        before = {p.name: p.read_bytes() for p in folder.iterdir() if p.is_file()}
+        self.engine.defer("s02", self.writer, "New bibliography needs prerequisite review.")
+        self.assertEqual(self.engine.state["units"]["s02"]["status"], "planned")
+        self.assertIsNone(self.engine.state["active_unit"])
+        self.assertEqual(before, {p.name: p.read_bytes() for p in folder.iterdir() if p.is_file()})
+        self.assertEqual(self.engine.state["history"][-1]["action"], "defer")
+        self.assertIn("bibliography", self.engine.state["history"][-1]["reason"])
+        self.engine.start("s02")
+        self.assertEqual(self.engine.dispatch("s02", "writer")["arguments"]["target"], self.writer)
+        with self.assertRaises(WorkflowError):
+            self.engine.bind("s02", "writer", "/test/replacement")
+
+    def test_defer_requires_writer_and_reason(self):
+        self.engine.start("s02")
+        self.engine.bind("s02", "writer", self.writer)
+        for agent, reason in (("/test/other", "Repair inputs"), (self.writer, "  ")):
+            with self.subTest(agent=agent, reason=reason):
+                before = self.engine.state_path.read_bytes()
+                with self.assertRaises(WorkflowError):
+                    self.engine.defer("s02", agent, reason)
+                self.assertEqual(self.engine.state_path.read_bytes(), before)
+
+    def test_defer_rejects_baseline_and_frozen_history(self):
+        self.engine.start("s01")
+        self.engine.bind("s01", "writer", self.writer)
+        with self.assertRaises(WorkflowError):
+            self.engine.defer("s01", self.writer, "Cannot discard a baseline")
+
+    def test_defer_rejects_review_revision_and_accepted_reopening(self):
+        self.freeze()
+        with self.assertRaises(WorkflowError):
+            self.engine.defer("s02", self.writer, "Cannot escape review")
+        for role in REVIEWERS:
+            self.record(role, self.report(role, failed=(role == "math")))
+        self.engine.revise("s02", self.writer)
+        with self.assertRaises(WorkflowError):
+            self.engine.defer("s02", self.writer, "Cannot escape revision")
+
+    def test_deferred_draft_cannot_bypass_stale_prerequisites(self):
+        sub = self.freeze()
+        self.approve_reviews()
+        self.engine.accept("s02", builder=self.successful_build)
+        self.engine.start("s03")
+        self.engine.bind("s03", "writer", self.writer)
+        self.engine.defer("s03", self.writer, "Update a shared input first")
+        atomic_write(self.root / "shared.tex", "% New shared convention.\n")
+        with self.assertRaises(WorkflowError):
+            self.engine.start("s03")
+        self.engine.start("s02")
+        with self.assertRaises(WorkflowError):
+            self.engine.defer("s02", self.writer, "Cannot discard accepted history")
+
     def test_author_cannot_be_reviewer_or_be_replaced(self):
         self.freeze()
         with self.assertRaises(WorkflowError):

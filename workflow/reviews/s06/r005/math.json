@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding is confirmed, and s02 r011 is actually accepted with unchanged scientific inputs.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific files and path sets preserve all stable vertex types, the unmarked exception, coefficient orders and the nonelliptic endpoint condition m>=2 from r004.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The lambda_g/beta normalization, exact Bessel factorials, tree automorphism weights, elliptic-leaf factor and final b_g/rho conversion remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, local scopes, labels and interfaces preserve g_2, z_{0,1}, Phi/w, x_*/R, beta_g and the distinct b_g/scalar b without a new symbol or interpretation.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole changed fingerprint is exactly the preamble pair reviewed in s02 r011, whose layout-only analysis preserves the exact-vertex, tree-reduction, saddle and elliptic-leaf proofs.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The all-type vertex bound, complete tree tail, two odd half-order cancellations and strict relative O(g_2^-2) conclusion retain their checked hypotheses and remainders.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh FORMAT-003 impact signature on snapshot d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd; actual source SHA256 440f301812b41cc15be4a4688e37bf8d3a7082e442ab2052a049f2d4ecfc37ac; actual PDF SHA256 f4e6009c21ba1e6df3ba84ebfd7aa927a99dc5bd492e27feeb294c289ca97634; strict/layout diagnostics are empty.",
+    "Only tex/preamble.tex differs from r004, with identical input paths; its exact old/new hashes match the already reviewed macro pair and its current bytes equal accepted s02 r011, while the common writer ACK hash matches.",
+    "No prior MATH issue was open; only these two reports were written, without repeated scientific/macro research, external lookup, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd",
+  "summary": "Pass for s06 r005: the independently verified sole delta adopts the previously checked FORMAT-003 proof-end spacing, preserving all scientific inputs and prior mathematical conclusions.",
+  "unit": "s06",
+  "verdict": "pass"
+}

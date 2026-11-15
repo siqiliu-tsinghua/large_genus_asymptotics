@@ -1,0 +1,21 @@
+{
+  "id": "FORMAT-003",
+  "request": "Add a visible vertical gap after the QED square in both custom proof environments.",
+  "scope": "tex/preamble.tex only",
+  "implementation": "Append \\par\\addvspace{0.5\\baselineskip} to both prf and prfn end code; about 6pt at the current 10pt/12pt baseline. Adjacent structural skips are merged and page-top glue is discardable.",
+  "baseline": "build/proof-spacing-20261115/baseline.json",
+  "approved_units": [
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05",
+    "s06",
+    "s07"
+  ],
+  "constraints": [
+    "All scientific text, formulas, labels, citations and interfaces remain byte-identical.",
+    "Use the original writer and reviewers, actual sequential snapshots and acceptance.",
+    "Preserve current pending Section 7 changes and all immutable review history."
+  ]
+}

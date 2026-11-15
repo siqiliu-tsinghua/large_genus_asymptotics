@@ -1,0 +1,251 @@
+% !TeX root = ../../main.tex
+\subsection{Exact recursions and their integration constants}
+\label{subsec:s07:03}
+
+We first recover enough of the free energy to justify integrating the
+field equation. The string equation removes the zero-degree time, and
+the dilaton equation then sums the degree-one time. For fixed positive
+defect, this leaves finitely many higher times. Their expression in
+inverse-function coordinates will also give the condition at the
+infinite end of a characteristic.
+
+For integers $d\geq1$ and $k\geq1$, define the shifted times and
+inverse-function jets by
+\begin{equation}\label{eq:s07:jets}
+ \mathcal I_d=\sum_{a\geq0}t_{d+a}\frac{v^a}{a!},\qquad
+ W_k=W^{(k)}(v),\qquad
+ W_1=1-\mathcal I_1,\quad W_k=-\mathcal I_k\ (k\geq2).
+\end{equation}
+The symbol $W$ here is the full-time series in
+\eqref{eq:s07:genus-zero-inverse}; after specialization it is
+$w_\theta$. A rational expression in the jets means an expression in
+finitely many $W_k$, with denominators powers of $W_1$.
+
+\begin{lmm}[Finite jet expressions]\label{lmm:s07:finite-jets}
+For $g\geq2$ and $1\leq h\leq g$,
+\begin{equation}\label{eq:s07:finite-jets}
+ \mathcal F_{g,h}
+ =\sum_{n\geq1}\frac1{n!}
+   \sum_{\substack{d_1,\ldots,d_n\geq2\\
+                   \sum_i(d_i-1)=2g-3+h}}
+   \left(\int_{\MM_{g,n}}\lambda_{g-h}
+                                  \prod_{i=1}^n\psi_i^{d_i}\right)
+   \frac{\prod_{i=1}^n\mathcal I_{d_i}}
+        {(1-\mathcal I_1)^{2g-2+n}}.
+\end{equation}
+The sum is finite. In genus one the positive-defect term is
+\begin{equation}\label{eq:s07:genus-one-seed}
+ \mathcal F_{1,1}=\mathcal G_{1,1}
+                         =-\frac1{24}\log W_1.
+\end{equation}
+For every $g\geq h\geq1$, both
+$\partial_x\mathcal F_{g,h}$ and
+$\partial_x\mathcal G_{g,h}$ are rational expressions in the jets.
+Every term has a denominator of degree at least two in $W_1$, and
+vanishes when $W_k=0$ for all $k\geq2$.
+\end{lmm}
+\begin{prf}
+For $h\geq1$ the string equation is homogeneous, by
+Remark~\ref{rmk:s07:string}. Its characteristic with parameter $a$
+sends the times to
+$\sum_{k\geq0}t_{d+k}a^k/k!-\mathbf1_{d=0}a$; here
+$\mathbf1_{d=0}$ is one for $d=0$ and zero otherwise.
+At $a=v$, its zero-degree time is zero by
+\eqref{eq:s07:genus-zero-inverse}, and its remaining times are
+$\mathcal I_d$. Hence $\mathcal F_{g,h}$ can be evaluated at these
+times with no zero-degree insertions.
+
+On a stable target, forgetting a degree-one marking gives the dilaton
+factor $2g-2+n$. Geometrically, this is
+$\pi_*\psi_{n+1}=(2g-2+n)[\MM_{g,n}]$; the cotangent pullback
+corrections restrict to zero after multiplication by $\psi_{n+1}$
+on the three-pointed rational tail. Summing $r\geq0$ such markings
+with weight $\mathcal I_1^r/r!$ gives
+$(1-\mathcal I_1)^{-(2g-2+n)}$. Dimension imposes
+$\sum_i(d_i-1)=2g-3+h$ on the remaining markings. Each summand on
+the left is at least one, so $n\leq2g-3+h$ and the sum is finite.
+There is no $n=0$ term for $g\geq2$, since it would require
+$g-h=3g-3$.
+
+For $g=h=1$, dimension with no zero-degree insertions permits only
+degree-one markings. On $\MM_{1,1}$, evaluation of a differential at
+the marked point identifies the Hodge and cotangent lines, also on
+the irreducible nodal fiber. Thus
+$\int_{\MM_{1,1}}\psi_1=\beta_1=1/24$.
+Starting with this one-point value, the dilaton equation gives
+$\int_{\MM_{1,r}}\prod_{i=1}^r\psi_i=(r-1)!/24$ for $r\geq1$.
+Its exponential generating function is
+$-\log(1-\mathcal I_1)/24$, proving
+\eqref{eq:s07:genus-one-seed}. The sine transformation has no
+other term with $g=h=1$.
+
+Finally, implicit differentiation gives
+\begin{equation}\label{eq:s07:jet-x}
+ \partial_xv=W_1^{-1},\qquad
+ \partial_xW_k=\frac{W_{k+1}}{W_1}\quad(k\geq1).
+\end{equation}
+Applying a positive number of $x$ derivatives to
+\eqref{eq:s07:finite-jets} produces rational expressions with the
+stated denominators and at least one higher jet in every numerator.
+The same holds for the logarithmic seed after its first derivative.
+Since
+\[
+ \mathcal G_{g,h}
+ =\sum_{k=0}^{g-h}\frac{(-1)^k}{2^{2k}(2k+1)!}
+                           \partial_x^{2k}\mathcal F_{g-k,h},
+\]
+it also holds for $\partial_x\mathcal G_{g,h}$.
+\end{prf}
+
+Define, for $g\geq h\geq1$,
+\begin{equation}\label{eq:s07:transport-definitions}
+ L_{g,h}=\partial_x\mathcal G_{g,h},\qquad
+ \mathscr D=\partial_{t_1}-v\partial_x.
+\end{equation}
+The notation $L_{g,h}(\theta;x)$ denotes specialization at
+\eqref{eq:s07:times}. In particular,
+$L_{1,1}=-W_2/(24W_1^2)$.
+The identities for the transport operator on the jets are
+\begin{equation}\label{eq:s07:jet-transport}
+ \mathscr Dv=0,\qquad
+ \mathscr DW_1=-1,\qquad \mathscr DW_k=0\quad(k\geq2).
+\end{equation}
+They follow by differentiating $W(v)=x$ in $t_1$ and using
+$\partial_{t_1}W(u)=-u$. After specialization,
+$\mathscr D=-\partial_\theta-v_\theta(x)\partial_x$.
+
+We now integrate the field equation once in $x$. The finite jet
+description fixes its possible constant, and its decay under
+$W_1\mapsto W_1+\sigma$ fixes the subsequent characteristic integral.
+
+\begin{prp}[Exact transport]\label{prp:s07:transport}
+For every $g\geq1$,
+\begin{equation}\label{eq:s07:transport-one}
+ \mathscr DL_{g,1}=c_g\partial_x^{2g}v.
+\end{equation}
+For $g\geq h\geq2$,
+\begin{equation}\label{eq:s07:transport-higher}
+ \begin{aligned}
+ \mathscr DL_{g,h}
+ ={}&\sum_{k=1}^{g-h+1}c_k\partial_x^{2k+1}L_{g-k,h-1}\\
+ &+\frac12\sum_{i=1}^{h-1}
+   \sum_{\substack{g'+g''=g\\g'\geq i,\ g''\geq h-i}}
+       (\partial_xL_{g',i})(\partial_xL_{g'',h-i}).
+ \end{aligned}
+\end{equation}
+For real $\theta\geq0$ and $x$ in a sufficiently small complex
+neighborhood of zero, set
+$X_\sigma=x+\sigma v_\theta(x)$ for $\sigma\geq0$.
+On the inverse branch obtained by keeping $v_\theta(x)$ fixed,
+\begin{equation}\label{eq:s07:characteristic}
+ v_{\theta+\sigma}(X_\sigma)=v_\theta(x),\qquad
+ L_{g,h}(\theta+\sigma;X_\sigma)=O_{g,h,\theta,x}(\sigma^{-2}).
+\end{equation}
+The corresponding integral formulas are
+\begin{equation}\label{eq:s07:characteristic-one}
+ L_{g,1}(\theta;x)
+ =c_g\int_0^\infty
+       (\partial_x^{2g}v_{\theta+\sigma})(X_\sigma)\,\dd\sigma
+\end{equation}
+and, for $g\geq h\geq2$,
+\begin{equation}\label{eq:s07:characteristic-higher}
+ \begin{aligned}
+ L_{g,h}(\theta;x)=\int_0^\infty
+ \Biggl[&\sum_{k=1}^{g-h+1}c_k\partial_x^{2k+1}L_{g-k,h-1}\\
+ &+\frac12\sum_{i=1}^{h-1}
+   \sum_{\substack{g'+g''=g\\g'\geq i,\ g''\geq h-i}}
+     (\partial_xL_{g',i})(\partial_xL_{g'',h-i})
+ \Biggr](\theta+\sigma;X_\sigma)\,\dd\sigma.
+ \end{aligned}
+\end{equation}
+All derivatives inside the brackets are taken before evaluation on
+the characteristic. The integrals converge at each fixed $g,h$ and
+also express identities of formal Taylor series at $x=\theta=0$.
+\end{prp}
+\begin{prf}
+Extract the coefficient of $z^g\eta^h$ in
+\eqref{eq:s07:ilw}, using $U|_{\eta=0}=v$. The terms involving
+$v$ give $\partial_x(\mathscr DL_{g,h})$ after the product rule.
+The dispersive part gives the derivative of the linear term displayed
+in \eqref{eq:s07:transport-one} or
+\eqref{eq:s07:transport-higher}. The two positive-defect factors
+in $U\partial_xU$ give the derivative of the ordered quadratic sum
+with factor $1/2$. Thus the asserted equations hold up to an
+$x$-independent expression.
+
+That expression is a rational function of finitely many jets, by
+Lemma~\ref{lmm:s07:finite-jets} and
+\eqref{eq:s07:jet-transport}. The kernel of $\partial_x$ on this
+ring consists of numerical constants. Indeed, in
+\[
+ \partial_x=\frac1{W_1}\sum_{k\geq1}W_{k+1}\partial_{W_k},
+\]
+the coefficient of the highest jet forces independence of the
+preceding jet; descending induction leaves only a constant.
+The jets are independent formal coordinates, as is seen at $x=0$
+by varying $t_1,t_2,\ldots$. Setting all $W_k$ with $k\geq2$ to
+zero makes both sides of the asserted equations zero, so the
+constant is zero. This proves
+\eqref{eq:s07:transport-one}--\eqref{eq:s07:transport-higher}.
+
+Along the stated curve, the inverse equation reads
+$w_{\theta+\sigma}(v_\theta(x))=x+\sigma v_\theta(x)$.
+The first jet becomes $w_\theta'(v_\theta(x))+\sigma$, and the
+higher jets stay fixed. For $x$ sufficiently close to zero the
+first jet has positive real part, so this defines the branch for
+all $\sigma\geq0$. The finite jet expressions give the decay in
+\eqref{eq:s07:characteristic}. The source in
+\eqref{eq:s07:transport-one} is $O(\sigma^{-3})$, since
+$2g\geq2$; the linear and quadratic sources in
+\eqref{eq:s07:transport-higher} decay at least as fast.
+
+The derivative along the characteristic is $-\mathscr D$.
+Integrating from $\sigma=0$ to infinity and using the zero limit
+therefore gives \eqref{eq:s07:characteristic-one} and
+\eqref{eq:s07:characteristic-higher}. Each integrand is a finite
+sum of rational functions of $W_1+\sigma$ with integrable powers.
+The calculation is consequently also valid coefficientwise in the
+formal jets, and in their specialized Taylor series.
+\end{prf}
+
+The first layer can be evaluated without a recursion. For an
+auxiliary formal variable $y$, define the normalized logarithmic
+difference quotient
+\begin{equation}\label{eq:s07:logarithmic-kernel}
+ \Lambda_\theta(x,y)
+ =\log\frac{v_\theta(x+y)-v_\theta(x)}
+                  {y\,\partial_xv_\theta(x)}.
+\end{equation}
+Its argument has constant term one. The normalization removes only
+a term independent of $y$ and makes the formal logarithm unambiguous.
+
+\begin{lmm}[The first-layer kernel]\label{lmm:s07:first-kernel}
+For every $g\geq1$,
+\begin{equation}\label{eq:s07:first-kernel}
+ L_{g,1}(\theta;x)
+ =c_g(2g-1)![y^{2g-1}]\Lambda_\theta(x,y).
+\end{equation}
+\end{lmm}
+\begin{prf}
+Fix $v=v_\theta(x)$, and use a local formal variable $u$ to put
+$A(u)=(w_\theta(v+u)-w_\theta(v))/u$.
+The constant term of $A$ is $W_1$. Lagrange inversion at
+$X_\sigma$ gives
+\[
+ (\partial_x^{2g}v_{\theta+\sigma})(X_\sigma)
+ =(2g-1)![u^{2g-1}](A(u)+\sigma)^{-2g}.
+\]
+Integration in \eqref{eq:s07:characteristic-one} yields
+$c_g(2g-2)![u^{2g-1}]A(u)^{-(2g-1)}$.
+If $V(y)=v_\theta(x+y)-v$, then $y=V A(V)$.
+Lagrange--B\"urmann inversion applied to $-\log A(V)$ gives,
+for each integer $N\geq1$,
+\[
+ [y^N]\log\frac{V(y)}y
+                 =\frac1N[u^N]A(u)^{-N}.
+\]
+The same positive-degree coefficients occur in
+\eqref{eq:s07:logarithmic-kernel}. Taking $N=2g-1$ proves the
+claim. In particular $g=1$ gives $-W_2/(24W_1^2)$, in agreement
+with the independently determined genus-one seed.
+\end{prf}

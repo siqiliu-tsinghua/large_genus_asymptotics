@@ -1,0 +1,53 @@
+% !TeX root = ../../main.tex
+\subsection{Proof of Theorem 1.2 and examples}
+\label{subsec:s05:03}
+
+The filtration has removed every character monomial except the one
+just computed, so only substitution remains.
+
+\begin{prfn}{Theorem~\ref{thm:fixed-insertions}}
+The indices $j_1,\ldots,j_\ell$ are fixed, so all the classes and
+powers in Corollary~\ref{crl:s05:algebraic-reduction} are defined
+for sufficiently large $g$. By that corollary and
+Proposition~\ref{prp:s05:third-character},
+\[
+ \langle P(\lambda)\rangle_g
+ =\frac1{F(j)}\left[
+ 1+\frac{4\pi^2-42}{9g^2}G(j)
+  +\frac{4\pi^2-40}{3g^3}G(j)+O(g^{-4})\right].
+\]
+The error constant may depend on the fixed list of indices.
+This is \eqref{eq:P111}.
+\end{prfn}
+
+\begin{exm}[Indices at most two]
+If every $j_k$ is one or two, then
+\eqref{eq:s02:lambda-two-three} gives
+\[
+ \left\langle\prod_{k=1}^{\ell}\lambda_{j_k}\right\rangle_g
+ =2^{-\#\{k:j_k=2\}}=\frac1{F(j)}
+\]
+exactly whenever the total degree is at most $3g-3$.
+In this case $G(j)=0$, in agreement with the theorem.
+\end{exm}
+
+\begin{exm}[A single third Chern class]
+The exact relation
+$6\langle\lambda_3\rangle_g=1+12\langle\mathrm{ch}_3\rangle_g$
+gives
+\[
+ \langle\lambda_3\rangle_g
+ =\frac16+\frac{4\pi^2-42}{9g^2}
+          +\frac{4(\pi^2-10)}{3g^3}+O(g^{-4}).
+\]
+These are precisely $F(j)=6$ and $G(j)=6$ in the theorem.
+\end{exm}
+
+\begin{exm}[Two fixed classes]
+For $\lambda_{j_1}\lambda_{j_2}$ the correction is proportional to
+$j_1(j_1-1)(j_1-2)+j_2(j_2-1)(j_2-2)$.
+Selecting one $\mathrm{ch}_3$ from each factor instead gives
+$\mathrm{ch}_3^2$, whose bracket is $O(g^{-4})$ by
+Lemma~\ref{lmm:s05:character-filtration}. Thus through order
+$g^{-3}$ only the sum of the two individual coefficients appears.
+\end{exm}

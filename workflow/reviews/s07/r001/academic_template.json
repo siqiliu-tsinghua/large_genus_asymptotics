@@ -1,0 +1,31 @@
+{
+  "agent_id": "REPLACE_WITH_REAL_AGENT_ID",
+  "checks": {
+    "academic_style": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "attribution": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "citation_precision": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "claim_status": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46",
+  "summary": "",
+  "unit": "s07",
+  "verdict": "FILL_IN"
+}

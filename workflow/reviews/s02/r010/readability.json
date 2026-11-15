@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The Introduction, all s02 scientific files and interfaces are byte-identical to r009, preserving first-use definitions, ranges and scopes without repeated setup. The added context ledger explicitly confines its new potential/fixed-defect roles to Sections 7-8 and requires their manuscript definitions before use; it does not redefine an s02 object.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The context change inserts guidance without removing or replacing any old policy text, so g_2, j_i/ell, lowercase integral families, ordinary Bernoulli B_n and Chow coefficient placement retain their existing meanings. Its new calligraphic potentials and indexed Borel series are expressly distinguished from F_g, F(j)/G(j) and the unindexed loop functional; no manuscript notation changes.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No reader-facing symbol, alias, recall or inherited-symbol inventory is added. The new ledger remains internal, and Bur15/Bur16 are absent from all nine selected TeX paths; neither appended entry adds a reference or explanatory burden to this preview.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged section entry and subsection files preserve the conventions/GRR, gluing and boundary/forgetting route and the final finite-genus versus uniform-estimate distinction. The restricted first-draft defer instructions concern workflow recovery only and introduce no proof step or changed mathematical dependency in s02.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Both native preview.txt and an independent complete Unix layout-text extraction are identical to r009 across all 11 pages. With scientific TeX, macros and shared layout files unchanged, the previously inspected statement/proof adjacency, functional paragraphs, tables, long formulas, Remarks/Examples and bibliography layout retain their assessed structure; strict/layout diagnostics are empty.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No existing manuscript letter, index, font or scope changes. The future ledger protects Section 6's Phi, w(v), critical-point notation and beta_g, differentiates indexed calligraphic L_h from the old loop functional, and requests a separate Euler-operator name rather than reusing the transport operator; these instructions leave s02's existing letter roles intact.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "Identical complete layout text confirms that the Introduction-to-s02 opening, proof/source modules, forgetting discussion and final bibliography transition are unchanged. The added protocol paragraph retains original-session recovery and required review; it introduces no detour or new explanation into the paper's reading path.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused S07-SHARED impact review in the retained original whole-s02 context. Read the dispatch, three-file diff, current summary, original-writer ACK, preserved prior plan and schedule addendum. The r009/r010 input path sets are identical; only references.bib, workflow/context.md and workflow/PROTOCOL.md change. All other 20 fingerprints, including scientific text, interfaces, handoff, macro/layout files, outline/unit fragments and readability role, are unchanged. The 7478-byte old bibliography is an exact prefix, with only Bur15/Bur16 appended. Both policy files contain insertions only.",
+    "Verified all 23 archived input hashes and every non-alias live input, three artifacts, exact snapshot dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9, source hash 5015451de30ba3ea13f0d466338f9cede044991fabca5d866480a26d060a4c6c, PDF SHA f7a95b0f63314630581a5c5c314cf58a768f572f51a8b0e77e87443c2cb5ad62, and entry/native-helper hashes. Writer ACK SHA c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 matches the summary; preserved prior-plan and recovery-review hashes also match, and both plans bind the same shared input hashes. Read-only state inspection confirms the original readability ID.",
+    "The PDF remains 11 pages. Independent pdftotext -layout -eol unix extraction is byte-identical to r009, SHA 2a001694ee21a7d844de67fc38e447e20ed7c96dffc33f67ec0f306063a10ccd; native preview.txt is also identical. Reused the actual r009 visual inspection without rendering unchanged pages or rereading old proofs/sources. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s02 passed.",
+    "No prior s02 readability issue is open, so issues=[] and resolved_issue_ids=[]. This signs only the current s02 shared-input refresh and does not review or approve new Sections 7-8 mathematics or the workflow implementation. Only this report and its handoff were written; no source, state, old report, shared output, build or workflow state command was changed or run."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9",
+  "summary": "Pass. The three shared additions preserve s02 definitions, notation, organization and complete rendered layout; future fixed-defect guidance does not change the existing paper's reading conventions.",
+  "unit": "s02",
+  "verdict": "pass"
+}

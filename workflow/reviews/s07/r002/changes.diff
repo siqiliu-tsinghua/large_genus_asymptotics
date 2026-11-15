@@ -1,0 +1,336 @@
+--- previous/sections/07_ilw_transport/01_hodge_potential.tex
++++ sections/07_ilw_transport/01_hodge_potential.tex
+@@ -112,22 +112,27 @@
+ only $\eta^0$ term of $\mathcal G$ is $\mathcal F_{0,0}$.
+ \end{prf}
+ 
+-\begin{rmk}[The string constant]\label{rmk:s07:string}
++\begin{lmm}[The string equations]\label{lmm:s07:string}
+ The raw potential has the string equation
+ \begin{equation}\label{eq:s07:string}
+  \partial_x\mathcal F
+  =\sum_{d\geq0}t_{d+1}\partial_{t_d}\mathcal F
+                  +\frac{x^2}{2}+\frac z{24}.
+ \end{equation}
+-Indeed, forgetting a zero-degree marking gives the usual string
++For $\mathcal G$, the same equation holds with string term $x^2/2$
++alone. In particular, both $\mathcal F_{g,h}$ and $\mathcal G_{g,h}$
++have the homogeneous string equation for $g\geq h\geq1$.
++\end{lmm}
++\begin{prf}
++Forgetting a zero-degree marking gives the usual string
+ identity on each stable target. The exceptional targets contribute
+ $\int_{\MM_{0,3}}1=1$ and
+ $\int_{\MM_{1,1}}\lambda_1=\beta_1=1/24$.
+ The operator in \eqref{eq:s07:miura} commutes with the homogeneous
+-string operator, and takes $x^2/2$ to $x^2/2-z/24$.
+-Thus $\mathcal G$ has string term $x^2/2$ alone. In particular,
+-both $\mathcal F_{g,h}$ and $\mathcal G_{g,h}$ have the homogeneous
+-string equation for $h\geq1$. The second derivative in the ILW flow
++string operator, and takes $x^2/2$ to $x^2/2-z/24$, canceling the
++constant $z/24$.
++\end{prf}
++
++The second derivative in the ILW flow
+ does not by itself fix the constants of the free energy; we determine
+ them below from these geometric equations.
+-\end{rmk}
+--- previous/sections/07_ilw_transport/03_exact_transport.tex
++++ sections/07_ilw_transport/03_exact_transport.tex
+@@ -46,7 +46,7 @@
+ \end{lmm}
+ \begin{prf}
+ For $h\geq1$ the string equation is homogeneous, by
+-Remark~\ref{rmk:s07:string}. Its characteristic with parameter $a$
++Lemma~\ref{lmm:s07:string}. Its characteristic with parameter $a$
+ sends the times to
+ $\sum_{k\geq0}t_{d+k}a^k/k!-\mathbf1_{d=0}a$; here
+ $\mathbf1_{d=0}$ is one for $d=0$ and zero otherwise.
+@@ -133,7 +133,36 @@
+        (\partial_xL_{g',i})(\partial_xL_{g'',h-i}).
+  \end{aligned}
+ \end{equation}
+-For real $\theta\geq0$ and $x$ in a sufficiently small complex
++\end{prp}
++\begin{prf}
++Extract the coefficient of $z^g\eta^h$ in
++\eqref{eq:s07:ilw}, using $U|_{\eta=0}=v$. The terms involving
++$v$ give $\partial_x(\mathscr DL_{g,h})$ after the product rule.
++The dispersive part gives the derivative of the linear term displayed
++in \eqref{eq:s07:transport-one} or
++\eqref{eq:s07:transport-higher}. The two positive-defect factors
++in $U\partial_xU$ give the derivative of the ordered quadratic sum
++with factor $1/2$. Thus the asserted equations hold up to an
++$x$-independent expression.
++
++That expression is a rational function of finitely many jets, by
++Lemma~\ref{lmm:s07:finite-jets} and
++\eqref{eq:s07:jet-transport}. The kernel of $\partial_x$ on this
++ring consists of numerical constants. Indeed, in
++\[
++ \partial_x=\frac1{W_1}\sum_{k\geq1}W_{k+1}\partial_{W_k},
++\]
++the coefficient of the highest jet forces independence of the
++preceding jet; descending induction leaves only a constant.
++The jets are independent formal coordinates, as is seen at $x=0$
++by varying $t_1,t_2,\ldots$. Setting all $W_k$ with $k\geq2$ to
++zero makes both sides of the asserted equations zero, so the
++constant is zero. This proves
++\eqref{eq:s07:transport-one}--\eqref{eq:s07:transport-higher}.
++\end{prf}
++
++\begin{crl}[Characteristic recovery]\label{crl:s07:characteristic-recovery}
++For integers $g\geq h\geq1$, real $\theta\geq0$ and $x$ in a sufficiently small complex
+ neighborhood of zero, set
+ $X_\sigma=x+\sigma v_\theta(x)$ for $\sigma\geq0$.
+ On the inverse branch obtained by keeping $v_\theta(x)$ fixed,
+@@ -161,33 +190,8 @@
+ All derivatives inside the brackets are taken before evaluation on
+ the characteristic. The integrals converge at each fixed $g,h$ and
+ also express identities of formal Taylor series at $x=\theta=0$.
+-\end{prp}
+-\begin{prf}
+-Extract the coefficient of $z^g\eta^h$ in
+-\eqref{eq:s07:ilw}, using $U|_{\eta=0}=v$. The terms involving
+-$v$ give $\partial_x(\mathscr DL_{g,h})$ after the product rule.
+-The dispersive part gives the derivative of the linear term displayed
+-in \eqref{eq:s07:transport-one} or
+-\eqref{eq:s07:transport-higher}. The two positive-defect factors
+-in $U\partial_xU$ give the derivative of the ordered quadratic sum
+-with factor $1/2$. Thus the asserted equations hold up to an
+-$x$-independent expression.
+-
+-That expression is a rational function of finitely many jets, by
+-Lemma~\ref{lmm:s07:finite-jets} and
+-\eqref{eq:s07:jet-transport}. The kernel of $\partial_x$ on this
+-ring consists of numerical constants. Indeed, in
+-\[
+- \partial_x=\frac1{W_1}\sum_{k\geq1}W_{k+1}\partial_{W_k},
+-\]
+-the coefficient of the highest jet forces independence of the
+-preceding jet; descending induction leaves only a constant.
+-The jets are independent formal coordinates, as is seen at $x=0$
+-by varying $t_1,t_2,\ldots$. Setting all $W_k$ with $k\geq2$ to
+-zero makes both sides of the asserted equations zero, so the
+-constant is zero. This proves
+-\eqref{eq:s07:transport-one}--\eqref{eq:s07:transport-higher}.
+-
++\end{crl}
++\begin{prf}
+ Along the stated curve, the inverse equation reads
+ $w_{\theta+\sigma}(v_\theta(x))=x+\sigma v_\theta(x)$.
+ The first jet becomes $w_\theta'(v_\theta(x))+\sigma$, and the
+--- previous/sections/07_ilw_transport/04_borel_transform.tex
++++ sections/07_ilw_transport/04_borel_transform.tex
+@@ -141,7 +141,7 @@
+ For each output degree these computations involve finitely many
+ genera and derivative orders. Their only infinite scalar sums are
+ the convergent series $\zeta(2k)$ with $k\geq1$. The characteristic
+-integral then converges by Proposition~\ref{prp:s07:transport}.
++integral then converges by Corollary~\ref{crl:s07:characteristic-recovery}.
+ This proves \eqref{eq:s07:borel-transport} coefficientwise without
+ interchanging an infinite genus sum with that integral.
+ 
+--- previous/sections/07_ilw_transport/INTERFACE.md
++++ sections/07_ilw_transport/INTERFACE.md
+@@ -15,11 +15,9 @@
+ - s02 r009: `33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084`.
+ - s06 r003: `3bb0091152f459efb5cb63ee188e913e5e3e2ea163126c82245a77f52ad02ec7`.
+ 
+-These record the unchanged scientific sources, not a substitute for
+-their new shared-input approval. The coordinator is refreshing the
+-dependencies after adding Bur15/Bur16, the fixed-defect notation ledger
+-and the first-draft defer protocol. No s07 build or frozen review is
+-claimed here.
++These record historical scientific-source provenance. Those scientific
++files were preserved during the completed shared-input refresh.
++Current dependency approval and freshness belong to `workflow/state.json`.
+ 
+ The section proves exact formal identities and fixed-genus
+ characteristic integrals. It does not prove `thm:fixed-defect` or
+@@ -59,7 +57,7 @@
+ | W_k | `eq:s07:jets` | kth u derivative of W evaluated at v, integer k>=1; finitely many inverse-function jets occur at each g,h |
+ | L_{g,h} | `eq:s07:transport-definitions` | partial_x G_{g,h}, g>=h>=1, with the same parenthesized notation after specialization |
+ | script D | `eq:s07:transport-definitions` | Full-time transport partial_{t_1}-v partial_x; specialized form -partial_theta-v_theta partial_x |
+-| X_sigma | Proposition `prp:s07:transport`, before `eq:s07:characteristic` | Characteristic coordinate x+sigma v_theta(x), real sigma>=0; fixed inverse value and branch |
++| X_sigma | Corollary `crl:s07:characteristic-recovery`, before `eq:s07:characteristic` | Characteristic coordinate x+sigma v_theta(x), real sigma>=0; fixed inverse value and branch |
+ | Lambda_theta(x,y) | `eq:s07:logarithmic-kernel` | Normalized log difference quotient, zero constant term in auxiliary increment y; reused in the first Borel layer, never a new Phi |
+ | calligraphic L_h | `eq:s07:borel` | Borel series, integer h>=1, factorial (2g+h-2)!; y now the independent formal Borel variable. Distinct type/scope from the earlier unindexed signed loop functional |
+ | calligraphic K | `eq:s07:linear-kernel` | Linear operator on a formal input with locally analytic x coefficients; theta held fixed and shifts read as Taylor series |
+@@ -86,9 +84,10 @@
+ 2. `lmm:s07:top-sector`, `eq:s07:top-sector`:
+    F_{g,0}=beta_g partial_x^{2g} F_{0,0} for g>=1 and
+    G_{g,0}=0 for g>=1; U at eta=0 is the inverse v.
+-3. `rmk:s07:string`, `eq:s07:string`:
++3. `lmm:s07:string`, `eq:s07:string`:
+    the raw string term is x^2/2+z/24. The sine transformation cancels
+-   z/24; positive-defect coefficients obey the homogeneous equation.
++   z/24; coefficients with g>=h>=1 obey the homogeneous equation.
++   This is a main lemma with its geometric proof immediately following.
+ 4. `prp:s07:specialization`, `eq:s07:specialization`:
+    partial_x^n F_{g,h}(0;0)=T_{g,h,n} for stable targets.
+    `eq:s07:unmarked` identifies the exact kappa power and factorial.
+@@ -103,14 +102,21 @@
+    `eq:s07:transport-higher`:
+    exact positive-defect transport, separately h=1 and h>=2.
+    All integration constants from U to L vanish by the rational-jet
+-   kernel argument. `eq:s07:characteristic-one` and
++   kernel argument in the immediately following proof. This proposition
++   contains only the full-time differential recursions.
++7. `crl:s07:characteristic-recovery`, `eq:s07:characteristic`,
++   `eq:s07:characteristic-one` and
+    `eq:s07:characteristic-higher` recover L from its zero infinite-end
+-   value. At fixed g,h they are convergent locally for theta>=0 and
+-   x near zero, and valid coefficientwise as formal Taylor identities.
+-7. `lmm:s07:first-kernel`, `eq:s07:first-kernel`:
++   value. For fixed integers g>=h>=1 they are convergent for real
++   theta>=0 and x in a small complex neighborhood of zero, on the
++   branch with fixed v_theta(x), and valid coefficientwise as formal
++   Taylor identities. Derivatives are taken before evaluation on the
++   characteristic. Its proof contains the jet shift, endpoint decay
++   and integration argument. The Borel convergence citation points here.
++8. `lmm:s07:first-kernel`, `eq:s07:first-kernel`:
+    L_{g,1}=c_g(2g-1)! [y^{2g-1}] Lambda_theta for every g>=1.
+    Removing log partial_x v_theta changes no positive coefficient.
+-8. `prp:s07:borel-transport`, `eq:s07:borel-one`,
++9. `prp:s07:borel-transport`, `eq:s07:borel-one`,
+    `eq:s07:borel-transport`:
+    exact common-normalization Borel kernels. The proof contains the
+    full Beta integrals, derivative orders and genus reindexing.
+@@ -125,7 +131,7 @@
+   Its F^Hodge, tilde F^Hodge and u become our F,G,U.
+   The inverse transformation and string-recovery discussion are also
+   on PDF p.2. The precise string anomaly and its cancellation are
+-  derived in `rmk:s07:string`, rather than inferred from the field.
++  derived in `lmm:s07:string`, rather than inferred from the field.
+ - Bur16, fixed v2: Theorem 1.1 and (1.2), PDF p.1; Section 2
+   provides the shorter coefficient computation behind the ILW result.
+   This is supporting source credit, not a second convention for the
+@@ -146,8 +152,3 @@
+ and remote-characteristic estimates, both dominant singularities,
+ primitive estimates for G, coefficient transfer, and the kappa versus
+ 12 lambda_1 comparison. None is claimed as an export here.
+-
+-Only static checks were authorized before the coordinator's temporary
+-shared-input dependency refresh. The final draft gate, native strict
+-build, clean PDF layout checks and frozen review remain to be performed
+-after those dependencies regain freshness.
+--- previous/sections/07_ilw_transport/writer_handoff.md
++++ sections/07_ilw_transport/writer_handoff.md
+@@ -1,18 +1,21 @@
+ # s07 original-writer handoff
+ 
+ Writer: `/root/s02_writer`.
+-Stage: complete mathematical first draft, not frozen and not reviewed.
+-The coordinator requested a stop before dependency gates/builds while
+-the new shared inputs are refreshed upstream. Actual workflow status
+-remains in `workflow/state.json`.
++Stage: local structural revision after the three formal s07 r001
++reports, on snapshot
++`aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46`.
++The math report passed; readability and academic requested the local
++changes recorded below. Actual workflow status remains in
++`workflow/state.json`; this handoff is not a new review signature.
+ 
+ ## Saved scope
+ 
+ Only `sections/07_ilw_transport/` was edited for the mathematical draft:
+ the entry, all four existing subsection files, INTERFACE and this
+ handoff. The four input paths and section/subsection labels are retained.
+-There are seven principal statements with adjacent `prf` proofs, one
+-purposeful string Remark, and 35 numbered equation environments.
++There are now nine principal statements with adjacent `prf` proofs
++and 35 numbered equation environments. The string result is a main
++lemma; characteristic recovery has its own corollary and proof.
+ The separate authorized shared-input acknowledgment is at
+ `workflow/feedback/shared/S07-SHARED_writer_handoff.md`.
+ 
+@@ -76,8 +79,10 @@
+ balanced environments/braces, unique labels, resolution of references
+ and citation keys in the s01/s02/s06 closure, and the authorized edit
+ scope. The actual results are reported to the coordinator on handoff.
+-No dependency freshness gate, formal build or clean-PDF check was run,
+-as explicitly instructed while shared-input refresh is pending.
++The first draft was stopped before builds during the shared-input
++refresh. The coordinator subsequently completed that refresh and the
++formal r001 build/review. This local revision requires static checks
++only; the coordinator will build and freeze the next snapshot.
+ No old unit, shared input, workflow state or historical report was
+ edited by this writer.
+ 
+@@ -87,5 +92,30 @@
+ In particular this draft does not prove Theorem 1.4 or assert the
+ square-root Borel singularity as an established input.
+ 
+-STOP after saving and static checks. Retain this original context for
+-the dependency-restored build and the three original reviewers' rounds.
++## Formal r001 structural responses
++
++- READABILITY-001 and ACADEMIC-007: promoted the raw/transformed string
++  equations and homogeneous positive-defect conclusion to
++  `lmm:s07:string`, immediately followed by the existing exceptional
++  stack-value and anomaly-cancellation proof. The finite-jet proof and
++  interface now cite the lemma. The field/free-energy orientation
++  remains ordinary main text after the proof.
++- READABILITY-002: `prp:s07:transport` now ends after the two
++  differential recursions and is immediately followed by coefficient
++  extraction and the rational-jet constant proof.
++  `crl:s07:characteristic-recovery` separately retains the real theta,
++  local complex x, fixed inverse branch, X_sigma, sigma range, decay,
++  both integral formulas, derivative-before-evaluation convention,
++  and fixed-genus/formal scope. Its proof is the former characteristic
++  half. The Borel convergence citation points to this corollary.
++- All 35 numbered equation blocks and their order/labels are preserved
++  byte for byte against the frozen r001 source. Other main statements,
++  mathematical expressions and noninvolved prose remain unchanged.
++  There is no new source, macro or global notation, and no new
++  computation or build was needed for this structural delta.
++
++The three issue responses are in
++`workflow/reviews/s07/r001/author_response.json`. Static checks verify
++the equation preservation, proof adjacency, references, edit scope and
++UTF-8/LF/final newline. STOP after saving; retain this original context
++for the coordinator's next build/freeze and original-reviewer rechecks.
+--- /dev/null
++++ workflow/reviews/s07/r001/author_response.json
+@@ -0,0 +1,40 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/07_ilw_transport/01_hodge_potential.tex",
++        "sections/07_ilw_transport/03_exact_transport.tex",
++        "sections/07_ilw_transport/INTERFACE.md",
++        "sections/07_ilw_transport/writer_handoff.md"
++      ],
++      "explanation": "Promoted the raw string equation, transformed string term and homogeneous conclusion for g>=h>=1 to Lemma lmm:s07:string, immediately followed by the existing geometric exceptional-value and cancellation proof. Updated the finite-jet citation and scientific interface; eq:s07:string and all constants are unchanged.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/07_ilw_transport/03_exact_transport.tex",
++        "sections/07_ilw_transport/04_borel_transform.tex",
++        "sections/07_ilw_transport/INTERFACE.md",
++        "sections/07_ilw_transport/writer_handoff.md"
++      ],
++      "explanation": "Restricted Exact transport to the two differential recursions and immediately attached its coefficient-extraction/rational-jet constant proof. Moved the complete characteristic statement and its former proof half into Corollary crl:s07:characteristic-recovery, retaining the real-theta/local-complex-x setting, fixed inverse branch, X_sigma, sigma range and decay, both integrals, derivative-before-evaluation convention, and fixed-genus/formal scope. Updated the Borel convergence citation and interface. All numbered equation blocks and labels are preserved.",
++      "issue_id": "READABILITY-002",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/07_ilw_transport/01_hodge_potential.tex",
++        "sections/07_ilw_transport/03_exact_transport.tex",
++        "sections/07_ilw_transport/INTERFACE.md",
++        "sections/07_ilw_transport/writer_handoff.md"
++      ],
++      "explanation": "The essential string input is now the main Lemma lmm:s07:string with an adjacent geometric proof, rather than an optional Remark. Its statement includes both raw/transformed string terms and the positive-defect homogeneous consequence; the finite-jet argument and interface cite the new lemma. No source convention, coefficient, hypothesis or numbered formula was changed.",
++      "issue_id": "ACADEMIC-007",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "s07"
++}

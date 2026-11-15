@@ -1,0 +1,32 @@
+{
+  "id": "S07-SHARED",
+  "reason": "Add verified ILW sources and the fixed-defect notation ledger before freezing Section 7; save its unfrozen first draft while sequentially refreshing accepted dependencies.",
+  "changed_shared_inputs": {
+    "references.bib": "36f320706e17f2181123c9c6f96318a85b5c76b06c73e5d9e1849d96ccdadb40",
+    "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+    "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e"
+  },
+  "scientific_sources_unchanged": [
+    "s01",
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05",
+    "s06"
+  ],
+  "recovery_review": "workflow/feedback/shared/S07-SHARED_workflow_review.md",
+  "recovery_tests": "35 tests passed; no production defer yet",
+  "baseline": "build/s07-preparation/shared-update/baseline.json",
+  "order": [
+    "s02",
+    "s06",
+    "s07",
+    "s03",
+    "a",
+    "s04",
+    "s05"
+  ],
+  "recovery_review_sha256": "4c8b64a2b00c52cb38d143c087aa44100c96f2a21a1656e017bef9280477408b",
+  "ordering_reason": "Refresh Section 7 actual dependency closure first, review the new mathematics next, and restore all remaining accepted units before the final complete build."
+}

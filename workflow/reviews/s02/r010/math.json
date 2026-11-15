@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The s01 closure and all previously cited source entries are unchanged and fresh; the old 7478-byte bibliography is an exact prefix, with only unique Bur15/Bur16 entries added and no new-key/wildcard citation. Archive/live/artifact, canonical snapshot/source, native PDF/helper/entry hashes, original binding and focused validation --unit s02 pass; the historical ACK/prior-plan and current scheduling addendum preserve the same scientific baseline and three shared hashes."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All Introduction/s02 scientific TeX, interfaces and outline fragments are byte-identical to r009. Stability, complex codimension, Hodge/character ranges, graph dimensions and forgetting-degree cutoffs retain their exact hypotheses; the three shared additions introduce no current mathematical assumption."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "Every old bibliography byte and every mathematical display/macro is preserved, and the complete rendered text equals r009. Ordered-node/graph factors, Chern/exponential factorials, forgetting signs and rational-Chow conventions therefore remain unchanged; Bur15/Bur16 are uncited in this closure."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The new context block explicitly scopes its variable roles to Sections 7-8 and still requires manuscript definitions before use; all pre-existing convention text is retained verbatim. Introduction and s02.1-2.4 first definitions/scopes, lowercase integral families, g_2/j_i/ell and Bernoulli/Chow notation are unchanged, with no new s02 symbol or reinterpretation."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The exact changed-input set is references.bib, workflow/context.md and workflow/PROTOCOL.md; all other inputs and path sets are unchanged. The references are unused, the ledger is prospective, and defer is expressly restricted to never-frozen first drafts without waiving original-role review, so none supplies a premise or changes the current frozen s02 proof/gates."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "s02 still exports the same exact finite-genus identities, with no new limiting or exchange assertion. The every-new-psi>=1 tail condition, retained negative new-psi kappa contribution, >=2 exponential start and finite cutoff are unchanged; future Borel/ILW notation is not an additional uniformity claim certified here."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature by original reviewer /root/s02_math. No prior MATH issue was open; issues=[] and resolved_issue_ids=[]. This signature covers s02 shared-input impact, not the future Section 7/8 mathematics or a replacement workflow-code audit.",
+    "Snapshot dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9; source SHA256 5015451de30ba3ea13f0d466338f9cede044991fabca5d866480a26d060a4c6c; PDF SHA256 f7a95b0f63314630581a5c5c314cf58a768f572f51a8b0e77e87443c2cb5ad62. Actual native helper/entry hashes and strict receipt match; diagnostics=[] and layout_diagnostics=[].",
+    "Independent byte/token audits confirmed the exact old 7478-byte bibliography prefix, only two distinct appended keys, no Bur15/Bur16 or wildcard citation, and insertion-only context/protocol edits. Every other source, macro, interface, handoff and outline/unit fragment is unchanged.",
+    "Both preview.txt files are byte-identical and equal independent full Unix-layout extraction of both actual PDFs; text SHA256 is 2a001694ee21a7d844de67fc38e447e20ed7c96dffc33f67ec0f306063a10ccd.",
+    "Original writer ACK SHA256 c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 matches. Its original plan hash d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 is preserved in prior_plan.json; operative-plan differences are only order and ordering_reason, while baseline and shared hashes match. The independent workflow-review record SHA256 4c8b64a2b00c52cb38d143c087aa44100c96f2a21a1656e017bef9280477408b was read, including its 35-test/isolated-CLI evidence; those tests were not repeated here.",
+    "python -B scripts/validate.py --unit s02 passes. Only this round math.json/math_handoff.md were written; no manuscript, shared input, state, older record or shared build output was edited or rebuilt. No old proof, mathematical algorithm or literature was reprocessed. The reviewer has stopped."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9",
+  "summary": "Pass for s02 r010. The verified three shared-input additions do not alter any s02 scientific source, convention, cited premise or normalization; full rendered text is identical to r009. The original complete mathematical reasoning remains valid on this independently checked snapshot, with no unresolved issue.",
+  "unit": "s02",
+  "verdict": "pass"
+}

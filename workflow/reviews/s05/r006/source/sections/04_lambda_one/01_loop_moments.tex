@@ -1,0 +1,85 @@
+% !TeX root = ../../main.tex
+\subsection{Signed loop moments}
+\label{subsec:s04:01}
+
+An edge has one integration parameter, shared by its two flags in
+\eqref{eq:s03:integrated-graph-formula}. For nonnegative integers
+$a,b$ define its paired self-loop weight by
+\begin{equation}\label{eq:s04:paired-weight}
+ w_{ab}=\frac12\int_0^\alpha
+       \frac{(-t/2)^{a+b}}{(2a+1)!(2b+1)!}\,\dd t
+ =\frac{(-1)^{a+b}\pi^{2a+2b+2}}
+       {(a+b+1)(2a+1)!(2b+1)!}.
+\end{equation}
+The factor $1/2$ accounts for exchange of the two branches of the loop. The denominator
+$a+b+1$ records their common parameter; their weights do not factor
+into independent endpoint weights.
+
+For any nonnegative integer degree tuple $\mathbf d$, write
+$D=|\mathbf d|$ and let
+$m_a=\#\{i:d_i=a\}$ for $a=0,1,2$. Given $p\geq0$ ordered pairs
+$(a_i,b_i)$, use the concatenated tuple
+$\mathbf d=(a_1,b_1,\ldots,a_p,b_p)$, of length $2p$.
+For a polynomial $\Phi$ in $p,D,m_0,m_1,m_2$ set
+\begin{equation}\label{eq:s04:loop-functional}
+ \mathcal L[\Phi]=e^{-S(1)}\sum_{p\geq0}\frac1{p!}
+ \sum_{a_1,b_1,\ldots,a_p,b_p\geq0}
+   \left(\prod_{i=1}^p w_{a_i b_i}\right)
+       \Phi(p,D,m_0,m_1,m_2).
+\end{equation}
+The empty tuple has all five statistics zero. Together these symmetry
+factors give $1/(2^pp!)$, exactly the automorphism factor for the
+restored root loops. We also use the same series for the exponential
+test functions in the next lemma.
+
+The joint generator retains the low degrees needed at second order.
+Let $v,x,z_0,z_1,z_2$ be independent complex moment parameters.
+
+\begin{lmm}[Joint loop moments]\label{lmm:s04:loop-moments}
+The functional~\eqref{eq:s04:loop-functional} is absolutely convergent
+on polynomials, satisfies $\mathcal L[1]=1$, and has the entire
+joint generating function
+\begin{align}
+ &\mathcal L\left[e^{vp+xD+\sum_{a=0}^2z_a m_a}\right]\notag\\
+ &\quad=\exp\left\{\frac{e^v}{2}\int_0^\alpha
+ \left[f(e^x t)+\sum_{a=0}^2(e^{z_a}-1)
+               \frac{(-e^x t/2)^a}{(2a+1)!}\right]^2\dd t-S(1)\right\}.
+ \label{eq:s04:joint-generator}
+\end{align}
+Every fixed moment is obtained by differentiating at zero. The
+functional is signed, rather than a probability expectation.
+\end{lmm}
+\begin{prf}
+For one edge the square selects its two endpoint degrees. Its
+integral gives $w_{ab}$, the factors $e^x$ count their total degree,
+and $e^{z_a}$ counts endpoints of degree $a$. Summing over $p$ with
+$1/p!$ exponentiates this one-edge sum.
+
+On compact sets of the moment parameters, the absolute endpoint
+series are bounded by factorial series on the finite interval
+$[0,\alpha]$. Their exponential sum over $p$ converges normally,
+also after any fixed number of derivatives. This proves the
+convergence and differentiation assertions. At zero parameters the
+one-edge term is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$, proving
+$\mathcal L[1]=1$.
+\end{prf}
+
+\begin{exm}[Two moments]
+For a local complex variable $z$ near $1$, the degree generator of
+one loop is
+\[
+ \sum_{a,b\geq0}w_{ab}z^{a+b}
+ =\frac12\int_0^\alpha f(zt)^2\dd t=\frac{S(z)}z.
+\]
+Taking its Euler derivative gives the corresponding logarithmic
+derivative of~\eqref{eq:s04:joint-generator}. Since
+$S'(1)=\alpha f(\alpha)^2/2=0$, it follows that
+\begin{equation}\label{eq:s04:representative-moments}
+ \mathcal L[D]=-S(1),\qquad \mathcal L[m_0]=8.
+\end{equation}
+For the second identity, differentiation in $z_0$ gives
+$\int_0^\alpha f(t)\dd t$. With $t=2y^2$ this is
+$4\int_0^\pi\sin y\dd y=8$. Both endpoints contribute to this
+derivative of the square. The remaining finite differentiation rules
+and moment tables are given in Subsection~\ref{subsec:a:02}.
+\end{exm}

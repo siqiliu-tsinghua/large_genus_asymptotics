@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "s02 r010 is actually accepted at snapshot dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9, with original three-role report fingerprints checked and current dependency freshness passing. Archive/live/artifact, canonical snapshot/source, native PDF/helper/entry hashes, original binding and focused validation --unit s06 pass; the common ACK, preserved prior plan and scheduling addendum retain the same scientific baseline/shared hashes."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All s06/s02/Introduction scientific sources and interfaces are byte-identical to r003. The marked/genus-zero ranges, beta_0 convention, unmarked k=0 exception, stable coefficient orders and complete tree-degree range retain their exact hypotheses; no shared addition changes a current degree or domain."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "The exact vertex factorials, graph/elliptic automorphisms, saddle prefactor, three scalar-b terms and double-factorial/12 restoration are unchanged. The entire old 7478-byte bibliography is preserved and the new Bur15/Bur16 entries are uncited in this closure, while the complete native rendered text equals r003."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The prospective Section 7-8 ledger explicitly preserves Section 6 Phi,w,x_*,R and beta_g and requires future definitions before use; it introduces a distinct logarithmic-quotient name instead of reusing Phi. Existing first definitions/scopes in 6.1-6.4, inherited g_2/z_{0,1}/rho/b and all manuscript notation remain unchanged."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The only changed input fingerprints are the same references/context/PROTOCOL triple already independently checked in s02 r010; every mathematical source and input path is unchanged. Unused citations, a prospective ledger and a defer procedure restricted to never-frozen first drafts add no premise to the current lambda_g/Bessel/tree/saddle proof and do not waive its frozen-review gates."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The all-stable-type C^(n+1) bound, complete edge/genus/valence tree sum, corrected nonelliptic O(g_2^-3) estimate, two odd half-orders and degree-12 integrable remainder are unchanged. The strict relative O(m^-2) saddle and O(g_2^-2) theorem conclusion preserve their original scopes; no future Borel/ILW mathematics is certified here."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature by original reviewer /root/s02_math. No MATH issue was open; issues=[] and resolved_issue_ids=[]. This report covers s06, not the future Section 7 mathematics or the separate workflow-code review.",
+    "Snapshot febf9e26fb88de34d016f7d977ac46f637f550578992bd17071b2ad9eaca560d; source SHA256 c5260b2388d561bfc6a5f837720a4df92e20098ffe8c98506ac4038578d85af2; PDF SHA256 9723da5508c2150908c612e6024d3bbb95ee55c7c2bf2946326fa957b5c8c266. Actual native helper/entry hashes and strict receipt match; diagnostics=[] and layout_diagnostics=[].",
+    "Input path sets equal r003; only references.bib/context/PROTOCOL differ, with exactly the same three hashes as accepted s02 r010. The full old bibliography prefix, only two new keys and their absence from the citation/wildcard closure were independently verified; all scientific files, IF, macros, handoffs and outline/unit fragments remain unchanged.",
+    "The two complete preview.txt files are byte-identical and equal independent full Unix-layout extraction of both actual PDFs; text SHA256 is 01697b0a1f6e74ef18a4407974a9120679ab3b210f6164e57975ebe594fd7c01.",
+    "Common writer ACK SHA256 c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and exact prior-plan SHA256 d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 remain unchanged. Operative-plan changes are only order/ordering_reason, with identical baseline/shared hashes; the unchanged workflow-review record 4c8b64a2b00c52cb38d143c087aa44100c96f2a21a1656e017bef9280477408b retains its separately audited 35-test/CLI evidence, without rerunning those tests here.",
+    "Historical interface snapshot labels remain scientific provenance; actual current approval/freshness was checked from s02 r010 acceptance. No old lambda_g, Bessel, tree or saddle proof, algorithm or source search was repeated. python -B scripts/validate.py --unit s06 passes.",
+    "Only this round math.json/math_handoff.md were written; no manuscript, shared input, state, older record or shared build output was edited or rebuilt. The reviewer has stopped."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "febf9e26fb88de34d016f7d977ac46f637f550578992bd17071b2ad9eaca560d",
+  "summary": "Pass for s06 r004 shared-input impact review. The verified three shared additions change no current scientific source, definition, cited premise or normalization; the complete native layout text is identical to r003. The original complete mathematical reasoning remains valid with the actually accepted fresh s02 r010 dependency.",
+  "unit": "s06",
+  "verdict": "pass"
+}

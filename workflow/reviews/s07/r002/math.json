@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Independently checked the frozen/live input hashes, canonical r002 snapshot, added r001 author response, and actual PDF/entry/helper hashes against the receipt; the render source hash also matches the current render fingerprint. The original math binding is /root/s02_math, and accepted s02 r010 / s06 r004 remain fresh under Engine checks and validate.py --unit s07. Shared conventions, external-source inputs, the specialization subsection and the section roadmap are unchanged, so the r001 primary-source verification remains applicable.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 35 numbered equations, their labels and order are byte-identical to r001, preserving the stable-target restrictions, kappa degree g_2+h, finite-jet dimension constraint and all recursive genus/defect ranges. The promoted string lemma explicitly states g>=h>=1; the new characteristic corollary binds integers g>=h>=1, real theta>=0 and sigma>=0, with the higher-layer integral still restricted to g>=h>=2. No low-genus term, stability exception or Borel degree/parity condition was lost in the split.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The string lemma retains the same raw x^2/2+z/24 term, stack value beta_1=1/24 and sine cancellation, now with an adjacent proof. Transport and recovery retain the exact c_k, ordered quadratic half, derivative orders, characteristic sign and zero infinite-end condition. Since every numbered formula and both halves of the original transport proof are unchanged mathematically, the r001 checks of sine inversion, forgetting factorials, Lagrange normalization, Dirichlet weights and both Beta factors remain valid without rerunning the exact guards.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "No symbol was added or redefined: X_sigma is introduced in the characteristic corollary before its use, and its inverse branch, theta/x/sigma domains and derivative-before-evaluation convention remain explicit. The finite-jet proof now cites lmm:s07:string, while the Borel proof cites crl:s07:characteristic-recovery; the obsolete string-Remark reference is absent from the frozen TeX. INTERFACE records these new statement locations and scopes, and all original first definitions and inherited g_2, beta_g, Bernoulli and lowercase-integral conventions are preserved.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read the changed statements, adjacent proofs and interface against r001 and the author response. The essential homogeneous-string input is now a proved main lemma before the finite-jet argument; Exact transport is immediately followed by its coefficient-extraction/rational-jet constant proof, then Characteristic recovery by its branch/decay/integration proof. Independently concatenating those two new proofs recovers the former proof exactly after whitespace folding; the Borel convergence citation now points to the result that actually proves convergence. All nine main statements have nine adjacent proofs, and no assumption, dependency or step was moved into an optional module.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The new corollary retains the small complex inverse neighborhood, fixed-v branch for all sigma>=0, L=O(sigma^-2), integrable sources, fixed-g,h convergence and formal Taylor interpretation. These endpoint arguments are unchanged and remain available before the first-layer and Borel proofs; derivatives are still taken before characteristic composition. The unchanged Borel text continues to assert only coefficientwise identities for higher defects and explicitly avoids an infinite-genus/infinite-end interchange, leaving global analytic domains and asymptotic transfer to Section 8.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a fresh impact signature on r002, using the complete r001 mathematical review after independently verifying the structural delta. The author responses to READABILITY-001/002 and ACADEMIC-007 are not prior MATH issues; resolved_issue_ids therefore remains empty.",
+    "Actual render source SHA256: c2e289eeb5fa92b42dcb80011472069e4abf7b7ace04958d2bb88dd4dd3dc809. Actual PDF SHA256: a89640abd25b65bb61e53bdb4ba79c29f0c1128371c8fb94891cd7996ca66813. Strict and layout diagnostics are empty. The frozen review snapshot additionally binds the prior author response, which is outside the render-only fingerprint.",
+    "No primary-source reload, old exact-guard rerun or shared build was needed. This pass covers the exact s07 results and fixed-genus recovery, not Section 8 or Theorem 1.4."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "6a3d5cdd24cc81c81945b0468909d75d3b5c2478562751ccd4e33690837249b6",
+  "summary": "Pass on s07 r002. Promoting string to a proved lemma and separating differential transport from characteristic recovery preserves every mathematical formula, hypothesis, scope and proof step; the updated interface and Borel reference are accurate. No unresolved mathematical issue.",
+  "unit": "s07",
+  "verdict": "pass"
+}

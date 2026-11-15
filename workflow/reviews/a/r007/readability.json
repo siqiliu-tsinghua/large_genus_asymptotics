@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All seventeen Appendix A inputs are byte-identical to r006, preserving the source generating series, recurrence ranges, loop/connector parameters and core-data definitions before use. In particular, the local connector x near 1 and separate zero-indicator integrals remain in place. The added Sections 7-8 ledger introduces no appendix object or repeated setup and retains the manuscript-first-definition requirement.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "All scientific formulas, interfaces, algorithms and macro/layout files retain their reviewed bytes, including the absolute normalization and the raw-connector versus loop-half distinction. The new context explicitly distinguishes future calligraphic potentials/Borel layers from the WP scale and signed loop functional; ordinary Bernoulli, lowercase integral and Chow conventions remain unchanged. A.32/A.36/A.44 coefficients, grouping, labels and numbering are untouched.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No reader-facing symbol, alias, repeated definition or supplementary prose is added. The 7478-byte old bibliography is an exact prefix, with only Bur15/Bur16 appended; neither appears in the nineteen selected TeX paths. The future ledger remains internal and adds no burden to the existing moment and finite-core notation.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The four-part route through descendant/absolute-volume coefficients, correlated loop moments, small vertices and finite cores is unchanged. The q=0/1/2 formulas retain their existing proposition/proof and finite-summary roles; neither the future-defect ledger nor first-draft recovery instructions changes this route or an exported input.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Native preview.txt and independent complete Unix layout-text extraction are identical to r006 across all forty-two pages. Scientific TeX and layout controls are also unchanged, preserving the actually inspected A.32/A.36 aligned continuations, single-line A.44, tags, moment tables, core diagrams, statement/proof adjacency and reference reflow. No new layout consequence occurs; strict/layout diagnostics are empty.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No letter, index, font or scope changes. The reviewed calligraphic D_n versus Bessel J_n distinction and local r_1/r_2 versus the integral family a_g remain intact, as do loop/core and degree/count roles. Future ledger names are explicitly separated from the existing WP/loop objects and do not reassign an appendix symbol.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "Identical complete layout text preserves the recurrence-to-moment-to-core progression, raw-connector explanations, immediate proofs and optional normalization/source modules. The final finite contribution, reproducibility note and bibliography boundary retain the r006 reading flow, with no new reference or background detour introduced by the shared additions.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused S07-SHARED review in the retained original Appendix A context. Read the dispatch, diff, summary and r006 report, and checked the unchanged interface's notation ledger. The r006/r007 input path sets are identical; only references.bib, workflow/context.md and workflow/PROTOCOL.md change. All other 44 fingerprints, including all seventeen appendix inputs, calculations, figures/tables, interfaces, handoffs, macros/layout and outline/unit fragments, are unchanged.",
+    "Verified all 47 archived input hashes and every non-alias live input, three artifacts, exact snapshot 0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1, source hash 79e31d7a8a4023112a7ac5f07df6bc8084b865195f45157101c96f0a11db38e9, PDF SHA 44d10c0cd823ec36ae5790c6596472738b1f056662b6f914c4e00c0909e86e97, and entry/native-helper hashes. The shared hashes match the just-reviewed event; selected s02/s03 source files match actually accepted r010/r007. Read-only state inspection confirms those approvals and the original readability binding.",
+    "The old 7478-byte bibliography prefix is exact and the two appended keys are unused by the nineteen selected TeX paths. Common writer ACK SHA c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and preserved prior-plan SHA d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 match; both plan versions bind identical shared hashes. Context/protocol additions are the same already reviewed insertions and leave old notation/review policies intact.",
+    "The PDF remains forty-two pages. Independent pdftotext -layout -eol unix output is byte-identical to r006, SHA b486849093e1a5c8577f1d6345f8d035d7d8ad9d33930e207688bce76d5c8017; native preview.txt is also identical. Reused the original actual visual inspection, including the recent A.32/A.36/A.44 check, without repeating screenshots, long proofs or calculations. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit a passed.",
+    "No prior appendix readability issue is open; issues=[] and resolved_issue_ids=[]. This signs only the present shared-input refresh. Only this report and its handoff were written; no source, state, old report or shared output was changed, and no build or workflow state command was run."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1",
+  "summary": "Pass. The three shared additions preserve Appendix A's definitions, notation, proof/table organization and complete layout, including the accepted A.32/A.36/A.44 formatting.",
+  "unit": "a",
+  "verdict": "pass"
+}

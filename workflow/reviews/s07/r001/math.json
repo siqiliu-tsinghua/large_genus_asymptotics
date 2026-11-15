@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Independently read the frozen entry, all four subsections, outline, INTERFACE and writer handoff, together with the s01/s02/s06 interfaces. Bur15 v4 PDF pp.1-2 and Bur16 v2 PDF pp.1-4 (Theorem 1.1, (1.2), Section 2) confirm positive epsilon^j, the sine transformation, and hbar^k epsilon^(k-1)|B_2k|/(2k)!; their conversion to eta z^k c_k is exact. The accepted s02 exponential-forgetting identity and s06 lambda_g/beta exports have precisely the stability and normalization used here. Engine.assert_fresh/assert_dependencies and validate.py --unit s07 pass: s02 r010 and s06 r004 are actually accepted; no WP/A input or unproved Theorem 1.4 is used. All 37 fingerprint entries, archived/live files, snapshot, source hash, native helper/entry and PDF hashes were independently checked against the frozen receipt.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The stable raw potential has j+sum d_i=3g-3+n and h=g-j, hence 0<=h<=g. The specialization retains n labelled zero-degree markings and has finitely many additional marks because each contributes at least psi^2 while increasing dimension by one; the unmarked kappa exponent and factorial are exactly g_2+h for g>=2. In (7.17), dimension gives sum(d_i-1)=2g-3+h, with d_i>=2 and n<=2g-3+h; the n=0 term is absent for g>=2. Genus one is separately treated by the stable one-point value and logarithmic seed; the top-sector proof also respects unstable/zero-dimensional coefficients. Transport has 1<=k<=g-h+1 and ordered genus splits g'>=i, g''>=h-i; Borel degrees are nonnegative, begin at 3h-2, and have parity h.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The change hbar^g epsilon^(g-h)=z^g eta^h, sine coefficients (-1)^k/[2^(2k)(2k+1)!], inverse coefficients beta_k, and c_1=1/12 agree with the primary sources. The raw string anomaly z/24 is canceled by the sine operator on x^2/2; the independent genus-one seed gives L_1,1=-W_2/(24W_1^2). Forgetting uses exactly psi(1-exp(-psi)) with 1/m!, without an extra new-point exponential. Characteristic integration and Lagrange inversion give c_g(2g-1)! times the positive odd coefficient of the normalized logarithm. With (2pi)^(2g), the Dirichlet weight is 2 zeta(2g); the linear Beta denominator (N+1)! becomes N! under 1+y partial_y, and the quadratic two-integral factor is 1/N! with the external ordered-sum half retained. An executed exact-rational guard independently checked Bur16's one-point source through g=8, 78 linear and 169 quadratic Beta instances, and 1092 genus/degree index instances; all residuals are zero.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The first paragraphs of 7.1 define the descendant times, x, hbar/epsilon, F, z/eta, G/U and c_k before use; W and its zero-constant inverse v are defined in (7.7). Section 7.2 states theta's formal specialization, the stable domain of T_g,h,n and the inverse-germ branch; 7.3 defines shifted times I_d, finite jets W_k, L_g,h, the transport operator and X_sigma with their ranges. Lambda_theta is normalized to a unit before its logarithm, and 7.4 explicitly gives y's Borel scope, h>=1, the local shift a, m>=1 and both real integration variables. Dummy degree/genus indices are bound where used, and x derivatives are explicitly taken before characteristic composition. The Introduction/s02/s06 definitions are inherited without a redundant reset; g_2, the Hodge j-family, lowercase b_g(h), ordinary Bernoulli B_n, beta_g, Phi and w retain their meanings, and the interface records the new scopes.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "All seven main statements have adjacent proofs, and the complete chain is present in the frozen body. The lambda_g multinomial theorem eliminates the positive-genus eta^0 sector; homogeneous string and dilaton reduce each positive-defect coefficient to finitely many inverse jets, with the genus-one log derived separately. In Proposition 7.5 the difference after integrating the ILW field is a rational finite-jet expression: the highest-jet argument makes the kernel of partial_x numerical constants, and evaluation at zero higher jets forces that constant to vanish. Along the chosen characteristic partial_sigma=-script D, W_1 increases by sigma, and L tends to zero, fixing the sign and infinite-end constant. The normalized-log Lagrange calculation, the linear shift subtraction, and both Beta reindexings prove the stated Borel equations. The final paragraph correctly leaves the primitive of G, analytic singularities and Theorem 1.4 to Section 8 rather than assuming them.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Formal specialization is locally finite at every fixed genus and coefficient of x/theta. For fixed g,h and real theta>=0, x is restricted to a small inverse neighborhood with Re W_1>0; keeping v fixed defines the continued inverse branch for all sigma>=0, while the finite-jet formulas yield L=O(sigma^-2) and sources O(sigma^-3) or faster. Their rational denominators justify the characteristic integrals and local Taylor-coefficient operations, without a global inverse or infinite-genus interchange. The first Borel layer is normally convergent locally since its summand is O(y/m^2); in the higher layers each output coefficient involves finitely many genera/orders and only absolutely convergent zeta(2k), k>=1, scalar sums. The manuscript explicitly limits the higher-layer equations to coefficientwise identities and defers full Borel convergence, common global domains and asymptotic transfer to Section 8; no stronger uniformity is asserted here.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Reviewed the complete new s07 implementation, not merely preparation evidence or a textual delta. Supplementary executed calculations and primary-page images are confined to build/s07-preparation/math-r001/.",
+    "Frozen source hash: 0727d8104128d0e0921b54da9d716b66fd5eb3aa496105e3adc827276f25acf8. Actual PDF SHA256: af05ec13c85935d49706cf02d23b3c99f8e37171d418fca72ee7931056d7dfd4. Strict/layout diagnostics are empty; no shared output was rebuilt.",
+    "This pass covers s07's exact formal identities and fixed-genus characteristic integrals. It does not certify the unproved Section 8 analytic steps or Theorem 1.4."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46",
+  "summary": "Pass on the complete frozen s07 r001: all seven results, 35 numbered equations, source conversions, geometric constants, finite-jet transport and coefficientwise Borel kernels were independently checked. No unresolved mathematical issue; Section 8's analytic/asymptotic work remains outside this acceptance.",
+  "unit": "s07",
+  "verdict": "pass"
+}

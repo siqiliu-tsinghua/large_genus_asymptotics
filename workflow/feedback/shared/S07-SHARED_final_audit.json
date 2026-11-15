@@ -1,0 +1,300 @@
+{
+  "prior_batch_commit": "7ae7604",
+  "included_units": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "a"
+  ],
+  "approved_units": {
+    "s02": {
+      "round": 10,
+      "snapshot": "dcb337458929b5149d531258075560effdc94f8d7e3c51f20f1278c60f9d8bb9",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s02/r010/academic.json",
+          "sha256": "b2f2b5971f5ce5995c71fe5b853ec37793c45e2ea85e9fb7e77365ff5e908cc8",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s02/r010/math.json",
+          "sha256": "843b5be5a3b06081ffce68ac64db9ae8c5a756b5cf9571e83993ffaa94d8a887",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s02/r010/readability.json",
+          "sha256": "1432d39f533f2c9416df43309d09c45f2af5ba3af205650ff0bbe146aec591c3",
+          "verdict": "pass"
+        }
+      }
+    },
+    "s03": {
+      "round": 7,
+      "snapshot": "155a7452d5786cc2ddee7a9fd7aea738bb0456e11de6a5e1f3113fb82af6278e",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s03/r007/academic.json",
+          "sha256": "23f0ad7d08ffc3e8fc732dc5e3ad96ff0a340cde4c0fca360b7ccee5d10367cc",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s03/r007/math.json",
+          "sha256": "c1aa8c341bc68dcf05684c78e7674b81b20d816fa7cac5be0b5f56980ec57f20",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s03/r007/readability.json",
+          "sha256": "644662f7aab66bcb3466ddb1b453b9e57fb82543a184eeb149bf6ac35ddc985c",
+          "verdict": "pass"
+        }
+      }
+    },
+    "a": {
+      "round": 7,
+      "snapshot": "0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/a/r007/academic.json",
+          "sha256": "2138dec32cb3fe01b3232453047ce36cae6d1b70a7eb69f2a5c499ec097e0fc5",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/a/r007/math.json",
+          "sha256": "c98e8695f67de5484540f1a75b0b30f7eafbc2e01641fa6c79ae60508fcef848",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/a/r007/readability.json",
+          "sha256": "906428014f76f0a2586f34ede39b4e7d6d25bd6ca184968f4061a4d0329f36e2",
+          "verdict": "pass"
+        }
+      }
+    },
+    "s04": {
+      "round": 9,
+      "snapshot": "b777a98d2199e1c89e858c299bc36320aa653c99c013b39c8f81cb85f187f2a5",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s04/r009/academic.json",
+          "sha256": "aa51f81cd446d5d185133787f4a21b41b6319cabb410f7138835ea392c7bcd9e",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s04/r009/math.json",
+          "sha256": "53b53444b8dca1edcdde9f542e88042abaa54bcda4d87568fc32eef3f3bb63d7",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s04/r009/readability.json",
+          "sha256": "a81e85cc64c830d6d641ce32add8b19034f9ed51377d69c3e27d6c013c30f466",
+          "verdict": "pass"
+        }
+      }
+    },
+    "s05": {
+      "round": 6,
+      "snapshot": "d6109e0f9490cb89534031b552b5469f9910761b1aaba245320181228a3131da",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s05/r006/academic.json",
+          "sha256": "4088e8ec530f918d23881330136cf605ae96bd29bb13235b67c87266b2d7f1f0",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s05/r006/math.json",
+          "sha256": "486f186a994e73f2c2d137d2763bba41f47a270aa164c3a500349a17ff12e656",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s05/r006/readability.json",
+          "sha256": "9126e55c3e08cbad2adc281f071c8a786c41ec549d542eebd6438bf7bf70466e",
+          "verdict": "pass"
+        }
+      }
+    },
+    "s06": {
+      "round": 4,
+      "snapshot": "febf9e26fb88de34d016f7d977ac46f637f550578992bd17071b2ad9eaca560d",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s06/r004/academic.json",
+          "sha256": "19d2f35f9f1e01060bbece18db1292c007cf860e3ab465e83650f472202407fc",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s06/r004/math.json",
+          "sha256": "b86cca91293028169060948c01db69b6b1a122d616171567fcc45ba247365bb0",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s06/r004/readability.json",
+          "sha256": "41212e1d316dfb2d464cfdb5016dd8f9049866da9e6b4aba8dbb42f2666a08a2",
+          "verdict": "pass"
+        }
+      }
+    },
+    "s07": {
+      "round": 2,
+      "snapshot": "6a3d5cdd24cc81c81945b0468909d75d3b5c2478562751ccd4e33690837249b6",
+      "reports": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s07/r002/academic.json",
+          "sha256": "4572d8455310f0a2619b24913327b5566ff5158efa4d3515333aa5f627515e60",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s07/r002/math.json",
+          "sha256": "ac482e70b71e0d21293fb2ec50ff58c299208241e9d658bc8b214eeb2a30306e",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s07/r002/readability.json",
+          "sha256": "5cb6d73e462e83f1e4ee065bf45103c5958e03415733d2fa22c7eba31ae1c948",
+          "verdict": "pass"
+        }
+      }
+    }
+  },
+  "section7_scope": "Exact formal ILW/forgetting/transport/Borel identities and fixed-genus characteristic integrals; Section 8 and Theorem 1.4 proof are pending.",
+  "section7_principal_results": 9,
+  "section7_numbered_equations": 35,
+  "all_preexisting_scientific_files_unchanged": true,
+  "old_units_only_changed_shared_inputs": {
+    "s02": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ],
+    "s03": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ],
+    "a": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ],
+    "s04": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ],
+    "s05": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ],
+    "s06": [
+      "references.bib",
+      "workflow/PROTOCOL.md",
+      "workflow/context.md"
+    ]
+  },
+  "old_bibliography_exact_prefix": true,
+  "all_preexisting_result_and_equation_numbers_preserved": true,
+  "locations": {
+    "sec:s07": {
+      "number": "7",
+      "page": 45
+    },
+    "subsec:s07:01": {
+      "number": "7.1",
+      "page": 45
+    },
+    "subsec:s07:02": {
+      "number": "7.2",
+      "page": 47
+    },
+    "subsec:s07:03": {
+      "number": "7.3",
+      "page": 48
+    },
+    "subsec:s07:04": {
+      "number": "7.4",
+      "page": 51
+    },
+    "lmm:s07:string": {
+      "number": "7.3",
+      "page": 47
+    },
+    "prp:s07:transport": {
+      "number": "7.6",
+      "page": 50
+    },
+    "crl:s07:characteristic-recovery": {
+      "number": "7.7",
+      "page": 50
+    },
+    "prp:s07:borel-transport": {
+      "number": "7.9",
+      "page": 52
+    },
+    "sec:appendix-a": {
+      "number": "A",
+      "page": 53
+    },
+    "eq:s04:first-correction": {
+      "number": "4.7",
+      "page": 25
+    },
+    "eq:a:q-zero": {
+      "number": "A.32",
+      "page": 63
+    },
+    "eq:a:q-one": {
+      "number": "A.36",
+      "page": 65
+    },
+    "eq:a:q-two": {
+      "number": "A.44",
+      "page": 71
+    }
+  },
+  "pdf_pages": 73,
+  "pdf_sha256": "5fef94ac71cd1922fe949988cafe2b8119eb233686addae4a93d94e52f5ff55e",
+  "source_hash": "51935441519635c028187f9467af051ec80e8124422007a869b36552e4aba39d",
+  "diagnostics": [],
+  "overfull_boxes": [],
+  "workflow_recovery_review": "workflow/feedback/shared/S07-SHARED_workflow_review.md",
+  "workflow_tests": "35 tests passed at implementation and independently rerun by workflow_review",
+  "workflow_py_sha256": "3625b84f2ad22f834ce849469a98ed58919f0896b747a16721da3660e15efd52",
+  "workflow_tests_py_sha256": "edeca872a51bc83e0da2449704ac6016d40d1414f1ea54efb794612ce56ae67d",
+  "final_visual_inspection": {
+    "pdf_sha256": "5fef94ac71cd1922fe949988cafe2b8119eb233686addae4a93d94e52f5ff55e",
+    "pages": [
+      45,
+      47,
+      50,
+      52,
+      53,
+      72
+    ],
+    "result": "Actually rendered and viewed the final complete PDF: Section 6/7 entrance, required string lemma, transport/recovery modules, Borel kernels/Beta proof, appendix boundary and printed Buryak references are clear, with no clipping or material layout defect."
+  }
+}

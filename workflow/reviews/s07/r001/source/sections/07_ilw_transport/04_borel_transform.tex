@@ -1,0 +1,162 @@
+% !TeX root = ../../main.tex
+\subsection{One Borel normalization for all fixed defects}
+\label{subsec:s07:04}
+
+For each integer $h\geq1$, define
+\begin{equation}\label{eq:s07:borel}
+ \mathcal L_h(\theta;x,y)
+ =\sum_{g\geq h}(2\pi)^{2g}L_{g,h}(\theta;x)
+                         \frac{y^{2g+h-2}}{(2g+h-2)!}.
+\end{equation}
+Here $y$ is a formal Borel variable, independent of the genus variable
+$z$. All layers now use the same rule for the factorial. Their lowest
+possible degree is
+$3h-2$, and their parity is
+\begin{equation}\label{eq:s07:borel-parity}
+ \mathcal L_h(\theta;x,-y)=(-1)^h\mathcal L_h(\theta;x,y).
+\end{equation}
+This normalization will allow a common singularity analysis in the
+next section. At present we work coefficientwise; convergence of the
+whole series for $h\geq2$ is not part of the assertion.
+
+We next define the two expressions that encode the linear and
+quadratic sources. In the linear operator below, $\mathcal H$ is a
+formal input whose coefficients are analytic germs in $x$.
+For each integer $m\geq1$ and real $\tau\in[0,1]$, put
+$a=(1-\tau)y/m$, with this notation local to the integral. Set
+\begin{equation}\label{eq:s07:linear-kernel}
+ \begin{aligned}
+ (\mathcal K\mathcal H)(\theta;x,y)
+ =\sum_{m\geq1}m\int_0^1
+ \bigl[&\mathcal H(\theta;x+a,\tau y)
+             -\mathcal H(\theta;x-a,\tau y)\\
+       &-2a\,\partial_x\mathcal H(\theta;x,\tau y)\bigr]\,\dd\tau.
+ \end{aligned}
+\end{equation}
+The shifts mean Taylor expansion in $a$. Subtracting the linear
+Taylor term makes each coefficient a convergent sum over $m$;
+the first remaining shift degree is three. For $h\geq2$, also set
+\begin{equation}\label{eq:s07:quadratic-kernel}
+ \begin{aligned}
+ \mathcal N_h(\theta;x,y)
+ =y^2\sum_{i=1}^{h-1}\int_0^1\int_0^1
+ t\,&\partial_x\mathcal L_i(\theta;x,t\tau y)\\
+ &\cdot\partial_x\mathcal L_{h-i}(\theta;x,t(1-\tau)y)
+                                      \,\dd\tau\,\dd t.
+ \end{aligned}
+\end{equation}
+Both integration variables in this formula are real and lie in
+$[0,1]$. All $x$ derivatives in these kernels hold $\theta$ and the
+Borel variable fixed.
+
+The following verification keeps the factorials visible: the linear
+source increases the Borel degree by $2k+1$, while a quadratic
+product requires two additional degrees. The two Beta integrals
+implement precisely those changes.
+
+\begin{prp}[Borel transport]\label{prp:s07:borel-transport}
+The first layer is
+\begin{equation}\label{eq:s07:borel-one}
+ \mathcal L_1(\theta;x,y)
+ =\sum_{m\geq1}\frac1m
+       \bigl[\Lambda_\theta(x,y/m)-\Lambda_\theta(x,-y/m)\bigr].
+\end{equation}
+For every $h\geq2$, the exact coefficientwise transport equation is
+\begin{equation}\label{eq:s07:borel-transport}
+ \begin{aligned}
+ \mathcal L_h(\theta;x,y)
+ ={}&\int_0^\infty\bigl[(1+y\partial_y)
+                               \mathcal K\mathcal L_{h-1}
+                      +\tfrac12\mathcal N_h\bigr]\\
+ &\quad(\theta+\sigma;
+                  x+\sigma v_\theta(x),y)\,\dd\sigma.
+ \end{aligned}
+\end{equation}
+The derivatives and the kernels are evaluated before composition
+with the characteristic. Both sources in this equation have order
+at least $3h-2$ in $y$ and parity $(-1)^h$.
+\end{prp}
+\begin{prf}
+The Bernoulli identity used already in the proof of
+\eqref{eq:s06:beta-asymptotics} gives
+\begin{equation}\label{eq:s07:zeta-coefficients}
+ (2\pi)^{2k}c_k=2\zeta(2k)\qquad(k\geq1).
+\end{equation}
+Multiplying \eqref{eq:s07:first-kernel} by
+$(2\pi)^{2g}y^{2g-1}/(2g-1)!$ and summing $g\geq1$ therefore
+weights each odd coefficient of $\Lambda_\theta$ by
+$2\sum_{m\geq1}m^{-2g}$. The difference in
+\eqref{eq:s07:borel-one} supplies the factor two, and its additional
+$1/m$ gives exactly $m^{-2g}$. This proves the first formula.
+For fixed $\theta$ and $x$ in the inverse germ, it is also a locally
+normally convergent expression for small $y$: its summand is
+$O(y/m^2)$, uniformly on smaller neighborhoods.
+
+\smallskip\noindent
+\emph{The linear coefficient.}
+Take one term $A(\theta;x)y^{N'}/N'!$ in a formal input, where
+$N'\geq0$ is an integer and $A$ is its coefficient. Expanding
+\eqref{eq:s07:linear-kernel} retains precisely the odd derivative
+orders $2k+1$ with $k\geq1$. For each such order, the integral is
+\[
+ \int_0^1\tau^{N'}(1-\tau)^{2k+1}\,\dd\tau
+                   =\frac{N'!(2k+1)!}{(N'+2k+2)!}.
+\]
+The factor $m$ and the shift power give
+$\sum_{m\geq1}m^{-2k}=\zeta(2k)$. With
+$N=N'+2k+1$, the resulting term of $\mathcal K\mathcal H$ is
+\[
+ 2\zeta(2k)\,\partial_x^{2k+1}A\,
+                              \frac{y^N}{(N+1)!}.
+\]
+Applying $1+y\partial_y$ changes its denominator to $N!$.
+For a term of $\mathcal L_{h-1}$, write
+$g'\geq h-1$ for its genus. Then
+$N'=2g'+h-3$ and $N=2(g'+k)+h-2$.
+Equation~\eqref{eq:s07:zeta-coefficients} changes its weight
+$(2\pi)^{2g'}2\zeta(2k)$ to
+$(2\pi)^{2(g'+k)}c_k$. This is precisely the linear source of
+\eqref{eq:s07:characteristic-higher}, with $g=g'+k$.
+
+\smallskip\noindent
+\emph{The quadratic coefficient.}
+Choose $1\leq i\leq h-1$, $g'\geq i$ and $g''\geq h-i$.
+The two input degrees and the output degree are
+\[
+ N_1=2g'+i-2,\qquad N_2=2g''+h-i-2,\qquad
+ N=N_1+N_2+2=2(g'+g'')+h-2.
+\]
+The integrals in \eqref{eq:s07:quadratic-kernel} give
+\[
+ \int_0^1\tau^{N_1}(1-\tau)^{N_2}\,\dd\tau
+       =\frac{N_1!N_2!}{(N-1)!},\qquad
+ \int_0^1t^{N-1}\,\dd t=\frac1N.
+\]
+After the two input factorials are canceled, their product is
+$1/N!$. The genus weights multiply to
+$(2\pi)^{2(g'+g'')}$, so $\mathcal N_h/2$ gives exactly the
+ordered quadratic sum and its factor $1/2$ in
+\eqref{eq:s07:characteristic-higher}.
+
+For each output degree these computations involve finitely many
+genera and derivative orders. Their only infinite scalar sums are
+the convergent series $\zeta(2k)$ with $k\geq1$. The characteristic
+integral then converges by Proposition~\ref{prp:s07:transport}.
+This proves \eqref{eq:s07:borel-transport} coefficientwise without
+interchanging an infinite genus sum with that integral.
+
+Finally, the linear source raises the minimum degree
+$3(h-1)-2$ by at least three. The quadratic source has minimum
+degree $(3i-2)+(3(h-i)-2)+2=3h-2$.
+The index calculations above give degree congruent to $h$ modulo
+two in both cases, proving the parity assertion.
+\end{prf}
+
+The characteristic identities now determine every positive-defect
+field from the inverse $v_\theta$. The constants incurred in passing
+from $U$ to $L_{g,h}$ have been fixed geometrically. Passing from
+these formal fields to their dominant Borel
+singularities requires uniform complex domains and bounds for the
+kernel integrals. Recovering the unmarked free energy also requires
+its primitive constant. These analytic steps are the tasks of the
+next section; no coefficient asymptotic has been used here.

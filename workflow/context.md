@@ -20,6 +20,32 @@ The paper_outline.md plan defines the proof organization. Read only the target s
 
 ## Notation policy
 
+Section 7 introduces the fixed-defect variables and potentials used again
+in Section 8. Keep the following roles; their mathematical definitions
+must appear in the manuscript before use, not only in this ledger.
+
+- z = hbar*epsilon records genus, and eta = epsilon^(-1) records the
+  defect h; the weight hbar^g*epsilon^(g-h) is z^g*eta^h. Use x=t_0
+  for the zero time and theta=-t_1 for the auxiliary specialization.
+- Calligraphic F and G denote the linear Hodge potential and its sine
+  transform. Their (g,h) components are not the WP scale F_g or the
+  introduction's fixed-index functions F(j),G(j).
+- W is the full-time inverse map, with finite jets W_k; its kappa
+  specialization is w_theta(v)=w(v)+theta*v. Preserve Section 6's
+  w(v)=v*Phi(v), x_*, R and beta_g. The specialized inverse is v_theta;
+  do not introduce another name for the first Bessel zero or critical point.
+- L_{g,h} is the x derivative of the transformed component, and
+  calligraphic L_h is its Borel series with factorial (2g+h-2)!.
+  This indexed Borel series is distinct from Sections 4--5's unindexed
+  signed loop functional. Use a distinct Euler-operator name if needed;
+  do not overload the transport operator with y*d/dy in the same proof.
+- Ordinary B_n still denotes Bernoulli numbers. Do not reuse Phi for a
+  logarithmic difference quotient or ordinary I for shifted times when
+  that could be confused with the established Bessel notation.
+  Lambda_theta denotes the repeatedly used normalized logarithmic
+  difference quotient; its argument has constant term one in the Borel
+  variable. It does not alter Section 6's Phi.
+
 The introduction fixes the existing names below. The outline, source notes and external papers must be translated into these conventions. Definitions in workflow documents do not replace definitions for the reader in the manuscript.
 
 | Existing notation | Meaning and first manuscript definition |

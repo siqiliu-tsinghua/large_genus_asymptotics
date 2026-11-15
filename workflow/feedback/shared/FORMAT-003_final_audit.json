@@ -1,0 +1,212 @@
+{
+  "active_unit": null,
+  "actual_final_pdf_visual_checks": [
+    {
+      "environment": "prf",
+      "page": 7,
+      "result": "Visible half-line proof-to-body separation; normal heading and display layout."
+    },
+    {
+      "environment": "prfn",
+      "page": 30,
+      "result": "Main theorem proof, complete samepage Remark 4.4 and next section remain readable."
+    }
+  ],
+  "all_approved_units_fresh": true,
+  "all_original_scientific_inputs_byte_identical": true,
+  "commit_created": false,
+  "full_layout_text_matches_inspected_preflight": true,
+  "full_pdf": "build/main.pdf",
+  "full_pdf_sha256": "9962853d1b63b3551935db5e8be1a2f32ddff91449217bc8741731ffdf214629",
+  "gap": "\\par\\addvspace{0.5\\baselineskip}",
+  "id": "FORMAT-003",
+  "overfull_diagnostics": [],
+  "pages": 73,
+  "preflight_visual_checks": "build/proof-spacing-20261115/coordinator-preflight.json",
+  "preserved_physical_inputs": 89,
+  "s07_historical_author_response_preserved": true,
+  "scope": "Two proof end codes in tex/preamble.tex",
+  "standard_diagnostics": [],
+  "strict_build_passed": true,
+  "time": "2026-11-15T07:40:43+00:00",
+  "unchanged_label_numbers": 318,
+  "units": {
+    "a": {
+      "bundle": "workflow/reviews/a/r008",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/a/r008/academic.json",
+          "sha256": "23c6fe7cb824cfa0fe8eada2f1d59b0ac0faf014fabe49efde5ce3fb4114a16a",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/a/r008/math.json",
+          "sha256": "c364a6133017e20cd2c45e56acdc4c7bfe856fc35619433749e80e7bbc3250fa",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/a/r008/readability.json",
+          "sha256": "0ea1c032b54120a4eabe96c79eb7c3c448780af7d04146630fbdba86a348dfbc",
+          "verdict": "pass"
+        }
+      },
+      "round": 8,
+      "snapshot": "869a39b41f720591a5929df6f32f77ca04dcdbfd126f9a1ec261b9055b950893"
+    },
+    "s02": {
+      "bundle": "workflow/reviews/s02/r011",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s02/r011/academic.json",
+          "sha256": "9b24102ec56dae700076a3dafd85cc16d134899e2b5cfaf7b3c7c09b5e2b304f",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s02/r011/math.json",
+          "sha256": "3105b9116138dc69846a34840059cba7d3d64d2f826e0d3a4b476ed7b711bee9",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s02/r011/readability.json",
+          "sha256": "5e6186045b7b59b1beca836581bdc68ca9d4c3ab62386ab33ad6ada432a18e11",
+          "verdict": "pass"
+        }
+      },
+      "round": 11,
+      "snapshot": "05b068eac423d3b7dc81651e9bb23d0b42b242f3497bdb922e49fddf950b37a3"
+    },
+    "s03": {
+      "bundle": "workflow/reviews/s03/r008",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s03/r008/academic.json",
+          "sha256": "511e6a3cbd7c948788e78a1ff25b8289b51957ee2a66d8c507351cfcdd16f608",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s03/r008/math.json",
+          "sha256": "be286216c42cb7fbc0271d5b3cdf4130f1815e679797db23879b5765beb6b231",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s03/r008/readability.json",
+          "sha256": "564dd6c3097280fd3ca747fac6c1d4d160e1578ad822c5a0f8f79d17d19fce37",
+          "verdict": "pass"
+        }
+      },
+      "round": 8,
+      "snapshot": "905ecbc06ae36d511a842d8419aa2a68107cca83fd523f9064a9ab21d5b36a16"
+    },
+    "s04": {
+      "bundle": "workflow/reviews/s04/r010",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s04/r010/academic.json",
+          "sha256": "a5469beaa0ac4b02b981b8971e4bad054f78aee94dfc23f6a31c6b5aed6a525f",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s04/r010/math.json",
+          "sha256": "6b56ba471b941b7ebb51b80d3979b42d92b8284f81b772167c2d4ed8730b323d",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s04/r010/readability.json",
+          "sha256": "70ea96af7f8e3471867100eececfb958e75e29afc7e3df48e92f0d17ab187569",
+          "verdict": "pass"
+        }
+      },
+      "round": 10,
+      "snapshot": "b7702898e9e8f92a916045d0ab1f1d9a7657404cd35e0790b6f4f210b0f0bc46"
+    },
+    "s05": {
+      "bundle": "workflow/reviews/s05/r007",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s05/r007/academic.json",
+          "sha256": "b358f375889dae4c2a328ac3d7d040ca292c191488a4695dcd20fabd7df9d5a8",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s05/r007/math.json",
+          "sha256": "cd1988ea15895b97f3a28d081165c2261833a4a32c304d64d6f957a043e00b3e",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s05/r007/readability.json",
+          "sha256": "f3da90b7400420a93db0d69a8a37a8e3871a425a6be6a550f1909962416c363a",
+          "verdict": "pass"
+        }
+      },
+      "round": 7,
+      "snapshot": "36b156c43ec7e15e7e424d273c5c025553e699b447950f2ee580c75414a98bf6"
+    },
+    "s06": {
+      "bundle": "workflow/reviews/s06/r005",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s06/r005/academic.json",
+          "sha256": "696325455c3412230f1a33a72a171742c18fddb8c51667e699b14785639560fa",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s06/r005/math.json",
+          "sha256": "2c667b4f66daaefd4c153d6d35e27f71d8d15c40a8610b16707315910ae56acf",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s06/r005/readability.json",
+          "sha256": "3fd29a9633a337dfe16b2f3619dc3bb7b22f40bdc6619441ad693c191c7ae850",
+          "verdict": "pass"
+        }
+      },
+      "round": 5,
+      "snapshot": "d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd"
+    },
+    "s07": {
+      "bundle": "workflow/reviews/s07/r003",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s07/r003/academic.json",
+          "sha256": "5dd969c933c85b27d88433b42ea57859f80277f4716647299b8931bdff477d4f",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s07/r003/math.json",
+          "sha256": "e25fe4106045a6230d95d2d0214fa2e9cb46e6633cdafb8b8a4f101f1f75f37a",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s07/r003/readability.json",
+          "sha256": "24f37cd5fed55f468fa4992c5725da124e1b6a4735c836e35ad958ed055087f7",
+          "verdict": "pass"
+        }
+      },
+      "round": 3,
+      "snapshot": "f8d93be7cf973184112eda4d49a6b2f401ba75cb74708bf162660947737271c9"
+    }
+  },
+  "writer_ack": "workflow/feedback/shared/FORMAT-003_writer_handoff.md",
+  "writer_ack_sha256": "1be342fe277d788608a07db2564a53de769b4207d14faab4be5164ee2f2384bf"
+}

@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, canonical snapshot, render source, actual native PDF/helper/entry and real reviewer-binding checks pass. Accepted s02 r010, s03 r007 and Appendix A r007 are fresh, and validate.py --unit s04 passes. The only three changed inputs are the previously audited S07-SHARED bibliography/context/PROTOCOL; Bur15/Bur16 are absent from the old TeX closure and add no source premise to this proof.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The input path set and every scientific TeX/interface/calculation/outline fingerprint are identical to r008. Stability, the fixed q=0,1,2 core ranges, genus-correct loop contraction, profile orders and all descendant-degree bounds therefore retain their checked domains; the future fixed-defect ledger introduces no s04 parameter restriction.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Both (4.7) and the final a_g expansion retain (9/8)g^-1, with their original common factors, signs and remainder grouping. Graph/loop symmetry factors, raw connector conventions, Q as the absolute Z/F coefficient and recovery of a_g/N_g are unchanged. The complete normalized higher-coefficient Remark and its calculation inputs are byte-identical to r008; no ILW/Borel normalization is imported.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The added context block explicitly scopes the new potential/inverse-jet/Borel symbols to Sections 7-8 and distinguishes them from the WP scale and signed loop functional used here. Every s04 first definition, scope, label and interface entry is unchanged, preserving the Hodge-index, lowercase-integral, Bernoulli and Chow conventions. The approved samepage wrapper around Further coefficients is also unchanged.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Independent fingerprint comparison finds exactly three shared changes and no added/removed input, while saved text and independently extracted full native PDF layout text are identical to r008. The bibliography keeps its exact 7478-byte prefix; the defer insertion concerns only never-frozen first drafts and waives no review. Thus the finite-core synthesis, final theorem proof and supplementary coefficient reconstruction have no altered mathematical input or inference, and the complete prior review remains applicable.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The M=3 whole-graph tail, all-legal-loop truncation before HMT, factorially summable coefficient errors and strict final O(g^-3) remain unchanged. The first-correction O(g^-2) range and the higher-coefficient Remark's scope are preserved in source and full rendered text. No shared addition strengthens an asymptotic claim or changes a limit/summation exchange.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh original-reviewer signature on s04 r009, retaining the earlier complete mathematical reasoning only after independently checking the current delta and dependencies. No prior MATH issue was open; issues=[] and resolved_issue_ids=[].",
+    "Snapshot b777a98d2199e1c89e858c299bc36320aa653c99c013b39c8f81cb85f187f2a5; actual source SHA256 50f1f81706bb5718d2bf627fdb3224a47b8a25192abec624ba6162dea45bc95c; actual PDF SHA256 2aa40df9c0a169f9fb4a18a6a326d361b9a5f5c72fcd347c09e238caa1abc37e. Strict/layout diagnostics are empty. Complete preview text SHA256 1f56a676003247efa94b445affcc32d7412c6892a5a030ad9f654373f23eaa7f matches r008, as does independent extraction of the actual PDFs.",
+    "Shared hashes are exactly the previously checked S07-SHARED packet. The common writer ACK retains c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and the exact prior plan retains d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038; the schedule addendum remains applicable.",
+    "No unchanged coefficient algorithm, long proof or original source was rerun or reread. Only this round's math.json/math_handoff.md were written; no source, state, historical report, other role's report or shared build output was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "b777a98d2199e1c89e858c299bc36320aa653c99c013b39c8f81cb85f187f2a5",
+  "summary": "Pass for s04 r009 S07-SHARED impact review. The three previously audited shared metadata additions leave all scientific inputs, normalization, proof content, higher-coefficient data and complete native rendering unchanged; the refreshed dependencies are actually accepted and fresh.",
+  "unit": "s04",
+  "verdict": "pass"
+}

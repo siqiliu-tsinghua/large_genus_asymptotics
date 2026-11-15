@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Independently checked archived/live/artifact, canonical snapshot, render source, actual PDF/helper/entry hashes and the original /root/s02_math binding. Accepted s02 r010, s03 r007, Appendix A r007 and s04 r009 are fresh, and validate.py --unit s05 passes. Only the same three S07-SHARED hashes differ; the exact old bibliography prefix is preserved, and the old TeX closure contains neither Bur15/Bur16 nor a wildcard citation.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All six s05 files and every other scientific/interface/calculation/outline fingerprint are byte-identical to r005, with the same input path set. Fixed insertion ranges and weights, stability, the original graph complexity and added-marking Gamma increments therefore retain their checked hypotheses. The Section 7-8 ledger imposes no new genus, degree or parameter range on the fixed-insertion theorem.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All GRR/Bernoulli coefficients, labelled-source and forgetting factors, loop halves, profile-to-genus conversions, degree-Euler moments and factorial restoration are unchanged. The numerator/denominator common-term cancellation and final Hodge/Chern coefficients preserve the r005 normalization and remainder grouping; the adopted s04/A scientific inputs also retain their exact bytes. No linear-Hodge-potential or Borel normalization is substituted for the insertion bracket.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The new ledger explicitly scopes its calligraphic potentials, inverse jets and indexed Borel L_h to Sections 7-8, distinguishing them from the earlier WP scale, fixed-index F(j)/G(j) and unindexed signed loop functional. It preserves Bernoulli B_n and manuscript first definitions, and changes none of the s05 source-data, free-marking/Euler or Chern-reduction definitions and scopes. All inherited Hodge indices, lowercase integral names, labels and Chow conventions remain intact.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Independent fingerprint comparison finds exactly references.bib, context and PROTOCOL changed; all scientific inputs and the complete native layout text equal r005. The restricted never-frozen-first-draft defer documentation waives no old review and adds no mathematical premise. Thus the labelled-source filtration, single-character calculation, ODE reduction, common-factor cancellation and Chern-algebra proof retain the complete original reasoning without a new circular dependency.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The all-graph weighted majorant, Gamma increments, legal-loop cutoff before HMT and polynomial degree-error summation are unchanged. Hence the fixed O(g^(r-w)) bound and strict O(g^-4) single-character remainder keep their original uniform control and ranges. Neither the appended sources nor the future-variable ledger adds an exchange of limits, derivatives or infinite sums to s05.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh original-reviewer impact signature for s05 r006 after independently verifying preservation of the scientific inputs and proof dependencies. r005 had no open MATH issue; issues=[] and resolved_issue_ids=[].",
+    "Snapshot d6109e0f9490cb89534031b552b5469f9910761b1aaba245320181228a3131da; actual source SHA256 8ec130375b551af20201b0c51048475017066189bb4fd981995cccab9cdc8826; actual PDF SHA256 ddef80d56a6a72569e42bca060ed4684cc0c7af6e045ec36ba6c81799d8684ba. Strict/layout diagnostics are empty. Saved full preview text SHA256 41b2ca87f0704a250971df053bf18a027dfb44b89c6d7c52ae2ddbbf2e0b5a8c equals r005; independent complete layout-text extraction from the actual PDFs is also identical.",
+    "The three shared hashes exactly match the previously audited S07-SHARED packet. Common writer ACK c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and saved prior-plan d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 hashes remain unchanged, with the same schedule addendum applicable.",
+    "No old source-filtration, ODE, Chern proof, coefficient algorithm or source literature was reprocessed, and no build was rerun. Only the current math.json/math_handoff.md were written; no source, state, historical record, other role's report or shared output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 6,
+  "schema_version": 1,
+  "snapshot": "d6109e0f9490cb89534031b552b5469f9910761b1aaba245320181228a3131da",
+  "summary": "Pass for s05 r006 S07-SHARED impact review. The three previously audited shared additions leave all fixed-insertion mathematics, calculation inputs, interfaces and complete native rendering unchanged; all refreshed dependencies are actually accepted and fresh.",
+  "unit": "s05",
+  "verdict": "pass"
+}

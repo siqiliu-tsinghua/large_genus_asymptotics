@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and actual native PDF/helper/entry hashes match, the real binding is confirmed, and s02 r011 plus s03 r008 are actually accepted.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve the low-genus/profile ranges, degree constraints, genus-correct 1/3/13 cores and all fixed-order hypotheses from r007.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Every coefficient, raw connector factor, signed moment, flag automorphism factor, absolute/relative normalization and A.32/A.36/A.44 remainder grouping remains byte-identical to r007.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, scopes, equation labels, interfaces and scientific macros are unchanged apart from the already reviewed proof-end paragraph/spacing commands.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole changed fingerprint is the same old/new preamble pair audited in s02 r011, whose layout-only analysis preserves all exact recursions, moment identities and finite-core deductions.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged coefficient-extraction, fixed-order HMT and summable loop/core error arguments retain their original remainders and exchange justifications without any stronger assertion from proof spacing.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh FORMAT-003 impact signature on snapshot 869a39b41f720591a5929df6f32f77ca04dcdbfd126f9a1ec261b9055b950893; actual source SHA256 2a87f8177e08a10e052d8f0d605ccbfa9014b2b6b0ca166d25cf88cff48b766b; actual PDF SHA256 e1cf7ad9b946cb0aec5ec76d9b979a887ea4ec1eb5b57af6170dd5fb609afeae; strict/layout diagnostics are empty.",
+    "Only tex/preamble.tex differs from r007, with no input selection change; its exact old/new hashes match the already reviewed macro pair and its current bytes equal accepted s02 r011, while the common writer ACK hash also matches.",
+    "No prior MATH issue was open; only these two reports were written, without repeated scientific/macro research, workflow/status commands, builds or any source/state/old-record/shared-output modification."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "869a39b41f720591a5929df6f32f77ca04dcdbfd126f9a1ec261b9055b950893",
+  "summary": "Pass for Appendix A r008: the independently verified sole delta adopts the already checked FORMAT-003 proof-end spacing and preserves every scientific input and prior mathematical conclusion.",
+  "unit": "a",
+  "verdict": "pass"
+}

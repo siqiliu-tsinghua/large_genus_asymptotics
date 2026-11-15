@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Frozen/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding is confirmed, and s02 r011 is actually accepted with unchanged scientific inputs.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All scientific files and input paths equal r007, preserving stability, valence/complexity ranges, genus-correct loop contraction and the fixed-marked shift.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged scientific macros and formulas preserve descendant factorials, graph/loop symmetry factors, marked-leg scaling and gamma_k as coefficients of Z_g/V_g,0.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, local scopes, labels and interfaces remain unchanged because the sole delta is the already checked proof-end paragraph/spacing pair.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The old/new preamble hashes exactly match the pair reviewed in s02 r011, so its layout-only semantic analysis applies without changing any premise or inference of the r007 WP proofs.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The whole-graph Gaussian/q-tail bounds, legal-loop tail, summable errors and marked/weighted uniformity claims are unchanged and acquire no stronger assertion from proof spacing.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh FORMAT-003 impact signature on snapshot 905ecbc06ae36d511a842d8419aa2a68107cca83fd523f9064a9ab21d5b36a16; source SHA256 4dfb4862abd68b944e1bf448296f8914ef02beaef31adff55cd543df97ffd270; actual PDF SHA256 4b895ff5c4e4ae5eb14337096224a740db852cc452d9bf5de822e24efea4fed9; strict/layout diagnostics are empty.",
+    "Only tex/preamble.tex differs from r007, with identical path sets and all other hashes preserved; the new preamble is byte-identical to accepted s02 r011 and writer ACK 1be342fe277d788608a07db2564a53de769b4207d14faab4be5164ee2f2384bf matches.",
+    "No prior MATH issue was open; no repeated macro research, mathematical calculation, literature lookup, workflow/status command or build was performed, and only these two current reports were written."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "905ecbc06ae36d511a842d8419aa2a68107cca83fd523f9064a9ab21d5b36a16",
+  "summary": "Pass for s03 r008: the independently verified sole delta adopts the already checked FORMAT-003 proof-end spacing, preserving all scientific inputs and prior mathematical conclusions.",
+  "unit": "s03",
+  "verdict": "pass"
+}

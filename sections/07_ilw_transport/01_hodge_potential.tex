@@ -2,4 +2,137 @@
 \subsection{The linear Hodge potential and the first ILW flow}
 \label{subsec:s07:01}
 
-% WORKFLOW-TODO: Write this subsection after the unit is assigned.
+We use Buryak's genus weights and transformation
+\cite[Theorem~1.1, (1.1)--(1.2)]{Bur15}; a shorter proof of the
+ILW result is given in \cite[Theorem~1.1 and Section~2]{Bur16}.
+Let $\mathbf t=(t_0,t_1,\ldots)$ be formal descendant times, and put
+$x=t_0$. With formal parameters $\hbar$ and $\varepsilon$, define the
+linear Hodge potential by
+\begin{equation}\label{eq:s07:hodge-potential}
+ \begin{aligned}
+ \mathcal F(\hbar,\varepsilon;\mathbf t)
+ ={}&\sum_{\substack{g,n\geq0\\2g-2+n>0}}
+   \sum_{j=0}^g\frac{\hbar^g\varepsilon^j}{n!}
+   \sum_{d_1,\ldots,d_n\geq0}\\
+ &\quad\times
+   \left(\int_{\MM_{g,n}}\lambda_j
+                    \prod_{i=1}^n\psi_i^{d_i}\right)
+   \prod_{i=1}^n t_{d_i}.
+ \end{aligned}
+\end{equation}
+Only the dimension-matching terms contribute. Reindex the genus and
+Hodge degree by
+\begin{equation}\label{eq:s07:defect-variables}
+ z=\hbar\varepsilon,\qquad \eta=\varepsilon^{-1},\qquad
+ \mathcal F=\sum_{g\geq h\geq0}z^g\eta^h
+                         \mathcal F_{g,h}(\mathbf t).
+\end{equation}
+Thus $\mathcal F_{g,h}$ contains $\lambda_{g-h}$. This is a reindexing
+of the monomials $\hbar^g\varepsilon^j$, rather than a specialization
+of $\varepsilon$.
+
+Define the transformed potential and its second derivative by
+\begin{equation}\label{eq:s07:miura}
+ \begin{aligned}
+ \mathcal G
+ &=\sum_{k\geq0}\frac{(-1)^kz^k}{2^{2k}(2k+1)!}
+                         \partial_x^{2k}\mathcal F
+ =\frac{\sin(\sqrt z\,\partial_x/2)}{\sqrt z\,\partial_x/2}
+                         \mathcal F,\\
+ U&=\partial_x^2\mathcal G.
+ \end{aligned}
+\end{equation}
+The quotient of operators means its displayed formal power series;
+no square-root choice is involved. Write
+$\mathcal G=\sum_{g\geq h\geq0}z^g\eta^h\mathcal G_{g,h}$, and, for
+integers $k\geq1$, set
+\begin{equation}\label{eq:s07:ilw-coefficients}
+ c_k=\frac{|B_{2k}|}{(2k)!}.
+\end{equation}
+
+\begin{thm}[Buryak]\label{thm:s07:ilw}
+The field $U$ satisfies the first ILW flow
+\begin{equation}\label{eq:s07:ilw}
+ \partial_{t_1}U=U\partial_xU
+        +\eta\sum_{k\geq1}c_k z^k\partial_x^{2k+1}U.
+\end{equation}
+The change of potential is invertible, with inverse
+\begin{equation}\label{eq:s07:inverse-miura}
+ \mathcal F=\sum_{k\geq0}\beta_k z^k\partial_x^{2k}\mathcal G.
+\end{equation}
+\end{thm}
+\begin{prf}
+In the notation of \cite[Theorem~1.1 and (1.1)--(1.2)]{Bur15}, our
+$\mathcal F$ is $F^{\mathrm{Hodge}}$, our $\mathcal G$ is
+$\widetilde F^{\mathrm{Hodge}}$, and $U$ is its field $u$.
+The coefficient of the derivative of order $2k+1$ there is
+$\hbar^k\varepsilon^{k-1}|B_{2k}|/(2k)!$.
+Equation~\eqref{eq:s07:defect-variables} makes it $\eta z^k c_k$,
+which gives \eqref{eq:s07:ilw}. The inverse follows by multiplying the
+sine series in \eqref{eq:s07:miura} by the series
+\eqref{eq:s06:beta-series}; the constant term of both is one.
+\end{prf}
+
+The top Hodge sector supplies the dispersionless field. To describe
+it, let $v=v(\mathbf t)$ be the formal solution with zero constant
+term of
+\begin{equation}\label{eq:s07:genus-zero-inverse}
+ \begin{aligned}
+ v&=\sum_{d\geq0}t_d\frac{v^d}{d!},\\
+ W(u)&=(1-t_1)u-\sum_{d\geq2}t_d\frac{u^d}{d!},\qquad W(v)=x.
+ \end{aligned}
+\end{equation}
+Here $u$ is a local formal variable, and the coefficients are expanded
+at $\mathbf t=0$.
+
+\begin{lmm}[The top sector]\label{lmm:s07:top-sector}
+One has $\partial_x^2\mathcal F_{0,0}=v$ and, for every $g\geq1$,
+\begin{equation}\label{eq:s07:top-sector}
+ \mathcal F_{g,0}=\beta_g\partial_x^{2g}\mathcal F_{0,0},
+ \qquad \mathcal G_{g,0}=0.
+\end{equation}
+In particular, $U|_{\eta=0}=v$.
+\end{lmm}
+\begin{prf}
+The genus-zero formula
+$\int_{\MM_{0,N}}\prod_i\psi_i^{d_i}
+=(N-3)!/\prod_i d_i!$ when $\sum_i d_i=N-3$ follows by induction
+from the string equation, starting with $\MM_{0,3}$.
+After two derivatives in $x$, it gives the Lagrange expansion of the
+solution in \eqref{eq:s07:genus-zero-inverse}. For positive genus,
+\eqref{eq:s06:lambda-g} gives the same multinomial coefficient as
+the genus-zero integral with $2g$ additional zero-degree markings,
+multiplied by $\beta_g$. This proves the first identity in
+\eqref{eq:s07:top-sector} coefficient by coefficient, including the
+zero coefficients forced by stability or dimension.
+
+Consequently the $\eta^0$ part of $\mathcal F$ is the inverse-sine
+operator in \eqref{eq:s07:inverse-miura} applied to
+$\mathcal F_{0,0}$. Applying the sine operator cancels it. Thus the
+only $\eta^0$ term of $\mathcal G$ is $\mathcal F_{0,0}$.
+\end{prf}
+
+\begin{lmm}[The string equations]\label{lmm:s07:string}
+The raw potential has the string equation
+\begin{equation}\label{eq:s07:string}
+ \partial_x\mathcal F
+ =\sum_{d\geq0}t_{d+1}\partial_{t_d}\mathcal F
+                 +\frac{x^2}{2}+\frac z{24}.
+\end{equation}
+For $\mathcal G$, the same equation holds with string term $x^2/2$
+alone. In particular, both $\mathcal F_{g,h}$ and $\mathcal G_{g,h}$
+have the homogeneous string equation for $g\geq h\geq1$.
+\end{lmm}
+\begin{prf}
+Forgetting a zero-degree marking gives the usual string
+identity on each stable target. The exceptional targets contribute
+$\int_{\MM_{0,3}}1=1$ and
+$\int_{\MM_{1,1}}\lambda_1=\beta_1=1/24$.
+The operator in \eqref{eq:s07:miura} commutes with the homogeneous
+string operator, and takes $x^2/2$ to $x^2/2-z/24$, canceling the
+constant $z/24$.
+\end{prf}
+
+The second derivative in the ILW flow
+does not by itself fix the constants of the free energy; we determine
+them below from these geometric equations.

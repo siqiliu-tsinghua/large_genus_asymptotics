@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The entry gives a clear new proof route without reintroducing the inherited moduli/Hodge setup; new potentials, inverse jets, transport fields and Borel kernels are defined before use. The seven principal statements are immediately followed by proofs, and the long Borel proof separates its linear and quadratic coefficient checks. However, Remark 7.1 contains the homogeneous string result explicitly invoked at the start of Lemma 7.4's proof and needed to fix the free-energy constants; this proof-essential result is presented as an optional Remark, contrary to the project's module policy (ACADEMIC-007).",
+      "status": "issue"
+    },
+    "attribution": {
+      "evidence": "The opening identifies Bur15/Bur16, and Theorem 7.1's proof explicitly translates F^Hodge, its transformed potential and u into the paper's calligraphic F, G and U. The lambda_g/top-sector and inverse-sine coefficients are inherited through the normalized s06 exports, while the kappa specialization uses the s02 exponential forgetting identity. Finite jets, integration constants, characteristics and the Beta kernels are actually derived in the body; no internal note, code result or new Chow-class version of the cohomological ILW theorem is presented as a source theorem.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Checked Bur15 v4 PDF p.2, Theorem 1.1 and (1.1)-(1.2), including its unnumbered inverse/recovery discussion: the source coefficient hbar^k epsilon^(k-1)|B_(2k)|/(2k)! becomes eta z^k c_k, and the inverse coefficients equal the existing beta_k. Bur16 v2 PDF p.1, Theorem 1.1/(1.2), and Section 2 on pp.3-5 support the stated shorter-proof credit; its string equation (2.3) and transformed-string discussion on p.4 agree with the geometric anomaly cancellation in the manuscript. The bibliography fixes the read versions, and the source metadata checked in the shared-input review is unchanged; the printed Bur15/Bur16 entries and existing DLMF label are complete.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Stable targets and genus ranges are explicit in the specialization; the genus-one logarithm is separately derived from the stack value 1/24, and the rational-jet argument fixes the constant from U to L before the characteristic integrals are used. The Borel proof displays the linear (N+1)! correction and both quadratic Beta factors with the ordered-split factor 1/2, and takes the characteristic integral only after fixing an output coefficient. The entry, subsection 7.4 and interface consistently reserve common global inverse domains, full higher-layer Borel continuation, singularities, primitive estimates, coefficient transfer and kappa/Hodge comparison for Section 8; no proof of Theorem 1.4 or unproved square-root singularity is claimed here.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-007",
+      "severity": "minor",
+      "location": "sections/07_ilw_transport/01_hodge_potential.tex:115-133 (Remark 7.1); sections/07_ilw_transport/03_exact_transport.tex:48-56; INTERFACE.md:89-91",
+      "message": "Remark 7.1 is a necessary step of the proof chain, not optional recall: it establishes the homogeneous string equation for both positive-defect potentials, and the finite-jet lemma expressly invokes it before deriving the integration-constant and endpoint results. Keeping this core assertion and its geometric anomaly/cancellation argument solely in a Remark conflicts with the project requirement that proof-essential results remain in the main argument rather than optional modules.",
+      "requested_change": "Promote the raw/transformed string equations and their homogeneous positive-defect consequence to a Lemma or Proposition with explicit scope, followed immediately by the geometric proof already supplied. Update the finite-jet citation and interface export accordingly. Any nonessential recovery commentary may remain in a short post-proof Remark; preserve the mathematical content and constants."
+    }
+  ],
+  "notes": [
+    "This is the first full s07 scientific review, not reuse of a shared-input or preparation pass. Read the complete frozen entry, four subsections, interface, writer handoff, target outline and relevant inherited interfaces; inspected primary Bur15/Bur16 pages and rendered manuscript pages 21, 22, 26 and 27. Personal inspection images are under build/s07-preparation/academic-r001/.",
+    "Recomputed snapshot aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46 and source hash 0727d8104128d0e0921b54da9d716b66fd5eb3aa496105e3adc827276f25acf8. All 37 fingerprint entries and submission artifacts match archived/live inputs. Verified the real /root/s02_academic binding for active, non-stale s07 r001 and approved/fresh s02 r010 and s06 r004.",
+    "Verified PDF SHA256 af05ec13c85935d49706cf02d23b3c99f8e37171d418fca72ee7931056d7dfd4, entry SHA256 6c13b1b0a47db4a52bd57255631172cb9f06619c55ad1f5bced71583b81dc8b3 and native helper SHA256 83e54aba6b9d59878fefe7c120f9385cfefa2fdc21f5347dacdcbb387bb052db. The receipt matches the snapshot and records strict/pass with empty standard/layout diagnostics. python scripts/validate.py --unit s07 passed; no shared output was rebuilt.",
+    "Primary PDFs read: Bur15 v4 SHA256 e1671e26e3851feda76ffe474cb6ec98ddad4975cca51954e50e0bc6d5033e86; Bur16 v2 SHA256 d9afb420ba04e8fe84b1f1e364527f803956e4ae49fd24b4207373fe86cfa1a3. Their source equations are used as numerical intersection-generating identities, so no cycle-map injectivity or new Chow identity is assumed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46",
+  "summary": "Changes requested for one publication-structure issue: promote the proof-essential homogeneous string result from Remark 7.1 into the formal lemma/proof chain. Source attribution, precise variable conversion and the boundary between exact identities and Section 8's pending analysis otherwise pass.",
+  "unit": "s07",
+  "verdict": "changes_requested"
+}

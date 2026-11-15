@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "The actual input delta from r006 is exactly references.bib, workflow/context.md and workflow/PROTOCOL.md, with identical path sets and all other hashes unchanged. The bibliography retains its exact 7478-byte prefix, and neither appended Bur15/Bur16 key occurs in the old TeX closure; no external theorem is added to the WP proof. Archive/live/artifact, canonical snapshot, native source/PDF/helper/entry and original-role checks pass; s02 r010 is actually accepted and fresh, and validate.py --unit s03 passes.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Every scientific TeX file, interface and outline/unit fragment is byte-identical to r006, so stability, valence caps, complexity/defect bounds and genus-correct loop contraction retain their checked hypotheses. The fixed-marked complexity shift and all index ranges are unchanged; the future fixed-defect ledger and defer paragraph impose no new mathematical domain on s03.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All mathematical macros, equations, calculation inputs and rendered text are unchanged, preserving descendant/length factorials, graph and loop symmetry factors, volume-path factors and marked-leg scaling. In particular gamma_k remains a coefficient of Z_g/V_g,0, and the added ILW bibliography/ledger supplies no replacement normalization or input for the WP expansion.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The new context paragraph explicitly scopes its z/eta, calligraphic F/G, W-jets, L_g,h and Borel L_h to Sections 7-8 and distinguishes them from the established WP scale and other existing objects. It preserves ordinary Bernoulli B_n, beta_g, Phi and first-use manuscript definitions rather than redefining any s03 symbol. The actual s03 first definitions, local scopes, inherited g_2/Hodge/Chow conventions and interface remain byte-identical to r006.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Only the same three shared hashes already audited in the S07-SHARED event changed; no scientific statement, proof, source input, dependency text or equation changed. The protocol insertion permits defer only for a never-frozen first draft and does not remove the required original-role review or acceptance of existing units; it adds no premise to the Gaussian whole-sum, finite-core, coefficient-coherence or marked/weighted proofs. Thus the complete prior mathematical reasoning remains valid on this independently checked snapshot.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Both saved preview.txt files and independent full layout-text extractions of the actual PDFs agree exactly. The compact sum of sup absolute contributions, three Gaussian regimes, two q-tail cases, all-legal-loop tail, HMT thresholds and factorially summable errors therefore retain their original arguments and quantifiers. The fixed-marked/weighted hypotheses, entire coefficient functions and Cauchy derivative conclusions acquire no stronger uniformity claim from this shared metadata refresh.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh impact signature by original reviewer /root/s02_math on s03 r007; no prior MATH issue was open, so issues=[] and resolved_issue_ids=[]. The r006 mathematical reasoning is retained only after independent verification that its scientific inputs and proof dependencies are preserved.",
+    "Snapshot 155a7452d5786cc2ddee7a9fd7aea738bb0456e11de6a5e1f3113fb82af6278e; actual source SHA256 8611c47c7d42131b5a299fd0c689dd6463b4d1b6963f18ef2ac28df3cb673ea8; actual PDF SHA256 f66158c544745dba211ae84d25e3b9b46cad40587d07acbfeb05023d812608e2. Strict and layout diagnostics are empty. Full preview text SHA256 is 118052d75f5e1625a00aed22d75b504dc0ff0367e373f1c238e6ff040e93e3b4, identical to r006.",
+    "The three shared hashes equal the previously audited S07-SHARED packet: bibliography 36f32070...ccdadb40, context 2475cec7...e32cf2f3, protocol 750c4bf3...9df82e. The original writer ACK hash c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 matches. The prior plan retains its exact d9292c8a...cd717038 hash; the operative plan differs only in order and ordering_reason, as its addendum records.",
+    "No old mathematical proof, calculation or literature check was repeated, and no shared output was rebuilt. Only this round's math.json and math_handoff.md were written; no source, state, older report or other role's report was modified."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "155a7452d5786cc2ddee7a9fd7aea738bb0456e11de6a5e1f3113fb82af6278e",
+  "summary": "Pass for the s03 r007 S07-SHARED impact review. Only the previously audited uncited bibliography additions, future fixed-defect notation ledger and restricted defer documentation differ; all scientific inputs and full rendered text are unchanged, with a fresh accepted s02 dependency.",
+  "unit": "s03",
+  "verdict": "pass"
+}

@@ -1,0 +1,31 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "attribution": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "citation_precision": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "claim_status": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1",
+  "summary": "",
+  "unit": "a",
+  "verdict": "FILL_IN"
+}

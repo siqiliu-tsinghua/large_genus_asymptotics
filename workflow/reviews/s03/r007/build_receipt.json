@@ -1,0 +1,66 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s03",
+      "build/previews/s03/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s03/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s03",
+      "build/previews/s03/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s03",
+      "build/previews/s03/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s03/preview.aux",
+    "build/previews/s03/preview.bbl",
+    "build/previews/s03/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/03_graph_asymptotics/01_wp_inputs.tex",
+    "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+    "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+    "sections/03_graph_asymptotics/04_finite_cores.tex",
+    "sections/03_graph_asymptotics/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s03/preview.pdf",
+  "pdf_sha256": "bb60dfd6aeb0e90998561dbb0e114362064d2b46026d09c69dea69754674a492",
+  "schema_version": 1,
+  "snapshot": "155a7452d5786cc2ddee7a9fd7aea738bb0456e11de6a5e1f3113fb82af6278e",
+  "source_hash": "8611c47c7d42131b5a299fd0c689dd6463b4d1b6963f18ef2ac28df3cb673ea8",
+  "strict": true,
+  "time": "2026-11-15T06:23:55+00:00",
+  "unit": "s03",
+  "with_dependencies": true
+}

@@ -298,6 +298,22 @@ class Engine:
             self.event("start", uid)
         return {"unit": uid, "status": "drafting"}
 
+    def defer(self, uid, agent_id, reason):
+        """Save an unfrozen first draft while prerequisite/shared reviews run."""
+        with self.mutation():
+            self.assert_active(uid)
+            unit, state = self.unit(uid)
+            self.writer(uid, agent_id)
+            require(state["status"] == "drafting", "Only a first draft can be deferred.")
+            require(not state["submissions"] and state["accepted"] is None
+                    and unit["outline_heading"] is not None,
+                    "Cannot defer a baseline or a unit with frozen review history.")
+            require(isinstance(reason, str) and reason.strip(), "Record a concrete deferral reason.")
+            state["status"] = "planned"
+            self.state["active_unit"] = None
+            self.event("defer", uid, agent_id=agent_id, reason=reason.strip())
+        return {"unit": uid, "status": "planned", "reason": reason.strip()}
+
     def bind(self, uid, role, agent_id):
         with self.mutation():
             self.assert_active(uid)
@@ -719,11 +735,11 @@ def main():
             sub.add_argument("--agent-id", required=True)
         if name == "record-review":
             sub.add_argument("--file")
-    for name in ("submit", "revise", "invalidate"):
+    for name in ("submit", "revise", "invalidate", "defer"):
         sub = commands.add_parser(name)
         sub.add_argument("unit")
         sub.add_argument("--agent-id", required=True)
-        if name == "invalidate":
+        if name in {"invalidate", "defer"}:
             sub.add_argument("--reason", required=True)
     args = parser.parse_args()
     try:

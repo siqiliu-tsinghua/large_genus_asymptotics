@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "ACADEMIC-007 is resolved: Lemma 7.3 (lmm:s07:string) now states the raw/transformed string terms and the homogeneous conclusion for g>=h>=1, immediately followed by the geometric exceptional-value and cancellation proof. The finite-jet proof and interface cite this main lemma. Exact transport and Characteristic recovery are now separate statement/proof pairs, and all nine principal statements have adjacent proofs; the current PDF pp.21 and 24 show the revised structure clearly.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The structural revision retains the string result's geometric derivation and the prior separation between Buryak's ILW theorem, inherited s02/s06 inputs and the finite-jet/characteristic/Borel arguments supplied here. No external source, source-credit paragraph or bibliography field changed, and splitting the transport proof introduces no new priority or theorem claim.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All 35 numbered equation blocks, their labels and order are byte-identical to r001; unchanged primary-source locators and variable conversions retain the full r001 verification. The finite-jet citation now correctly points to lmm:s07:string, and the Borel coefficient-convergence step points to crl:s07:characteristic-recovery, where the required convergence argument now resides. The interface records those actual locations and scopes consistently.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The new characteristic corollary retains fixed integer g>=h>=1, real theta>=0, local complex x, the fixed inverse branch, sigma>=0, endpoint decay, differentiation before evaluation and fixed-genus/formal-Taylor interpretation. Its proof and the differential-recursion proof together reproduce the old transport proof up to whitespace, preserving all branch, constant and endpoint arguments. The first-layer local convergence and coefficientwise higher-layer Borel identities remain distinct from Section 8's pending global analysis, primitives and background comparison; no stronger asymptotic or Theorem 1.4 proof is claimed.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the frozen diff, r001 author response, revised lemma/transport/corollary passages, updated Borel reference, interface and handoff. This impact review retains the original full-source/primary-literature verification and does not repeat unchanged source searches or proofs. READABILITY issue resolution belongs to that original reviewer; only ACADEMIC-007 is recorded as resolved here.",
+    "Recomputed snapshot 6a3d5cdd24cc81c81945b0468909d75d3b5c2478562751ccd4e33690837249b6 and source hash c2e289eeb5fa92b42dcb80011472069e4abf7b7ace04958d2bb88dd4dd3dc809. All 38 fingerprint entries and submission artifact hashes match archived/live inputs. The build fingerprint excludes the separately frozen r001 author response; the snapshot includes it. Verified original /root/s02_academic binding and active/non-stale s07 r002, with approved/fresh s02 r010 and s06 r004.",
+    "Verified PDF SHA256 a89640abd25b65bb61e53bdb4ba79c29f0c1128371c8fb94891cd7996ca66813, entry SHA256 6c13b1b0a47db4a52bd57255631172cb9f06619c55ad1f5bced71583b81dc8b3 and native helper SHA256 83e54aba6b9d59878fefe7c120f9385cfefa2fdc21f5347dacdcbb387bb052db. The matching receipt records strict/pass and empty standard/layout diagnostics. python scripts/validate.py --unit s07 passed; personal page images are under build/s07-preparation/academic-r002/, with no shared output rebuilt."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-007"
+  ],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "6a3d5cdd24cc81c81945b0468909d75d3b5c2478562751ccd4e33690837249b6",
+  "summary": "Pass. ACADEMIC-007 is resolved by the main string lemma and adjacent proof. The transport/corollary reorganization preserves all source credit, mathematical equations, local hypotheses, coefficientwise interpretation and limits of the claimed results.",
+  "unit": "s07",
+  "verdict": "pass"
+}

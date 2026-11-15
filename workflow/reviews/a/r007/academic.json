@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "All scientific source, interfaces, macros and outline inputs retain their r006 bytes, and the entire freshly extracted native-layout PDF text is identical, including references. The accepted A.32/A.36 alignment, single-line A.44 and existing statement/proof organization are therefore preserved; the separate Section 7-8 ledger adds no appendix setup or terminology.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The existing MZ/HMT/Wang source-credit passages and their distinction from the appendix's coefficient/core derivations and reproducibility code are unchanged. Neither Bur15/Bur16 nor a wildcard citation occurs in this closure, so the appended sources introduce no attribution or proof dependency into Appendix A.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The old 7478-byte bibliography is an exact prefix; all three updated shared files match the versions already checked in s02 r010. Bur15/Bur16 retain their verified primary-PDF/Crossref metadata, while every existing source locator and signed-profile, complexity, elliptic-stack and connector convention translation is unchanged. No repeat source search is needed for this identical shared event.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "All equations, hypotheses, proofs, tables, calculation inputs and scientific exports match approved r006 byte for byte. Exact-recursion coefficient reconstruction, conditional EGGLS comparison and computational verification retain their distinct proof status; the future fixed-defect ledger and restricted first-draft defer documentation neither change an appendix result nor waive fresh review requirements.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Recomputed snapshot 0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1 and source hash 79e31d7a8a4023112a7ac5f07df6bc8084b865195f45157101c96f0a11db38e9. All 47 fingerprint entries and submission artifacts match archived/live inputs; the selected path set is unchanged and only references.bib, workflow/context.md and workflow/PROTOCOL.md differ from r006.",
+    "Verified the real /root/s02_academic binding for active, non-stale a r007, with actually approved/fresh s02 r010 and s03 r007. The common writer acknowledgment matches SHA256 c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844; the preserved prior plan remains d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038. The already checked common plan/addendum and workflow-review context are retained.",
+    "Verified PDF SHA256 44d10c0cd823ec36ae5790c6596472738b1f056662b6f914c4e00c0909e86e97 and receipt entry/helper hashes. Fresh pdftotext -layout -eol unix output is identical to r006 at SHA256 b486849093e1a5c8577f1d6345f8d035d7d8ad9d33930e207688bce76d5c8017. The matching native receipt records strict/pass and empty standard/layout diagnostics. python scripts/validate.py --unit a passed; no old source/proof review, coefficient calculation or shared build was repeated."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1",
+  "summary": "Pass. The same three shared-input updates preserve Appendix A attribution, citation and notation precision, display presentation and proof-status boundaries; the complete native-layout text is unchanged from r006.",
+  "unit": "a",
+  "verdict": "pass"
+}

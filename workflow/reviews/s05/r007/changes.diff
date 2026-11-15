@@ -1,0 +1,10 @@
+--- previous/tex/preamble.tex
++++ tex/preamble.tex
+@@ -54,5 +54,5 @@
+ \newtheorem{exm}{Example}[section]
+ \theoremstyle{paperplain}
+ 
+-\newenvironment{prf}{\noindent \textbf{Proof: }}{\hfill $\mdlgwhtsquare$}
+-\newenvironment{prfn}[1]{\vskip 1em \noindent \textbf{Proof of #1: }}{\hfill $\mdlgwhtsquare$}
++\newenvironment{prf}{\noindent \textbf{Proof: }}{\hfill $\mdlgwhtsquare$\par\addvspace{0.5\baselineskip}}
++\newenvironment{prfn}[1]{\vskip 1em \noindent \textbf{Proof of #1: }}{\hfill $\mdlgwhtsquare$\par\addvspace{0.5\baselineskip}}

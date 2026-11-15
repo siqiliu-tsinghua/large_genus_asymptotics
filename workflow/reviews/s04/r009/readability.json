@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All twenty-four s04 inputs, including scientific text, interface and checks, are byte-identical to r008, preserving the moment/profile/core definitions and their scopes before use. Remark 4.4 still gives its normalized quantity and g^-3/g^-4 ordering before both values. The new future-defect ledger requires later manuscript definitions and adds no s04 object or repeated setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "Selected dependency sources match accepted s02 r010/s03 r007/a r007, and all s04 coefficients, labels and normalizations are unchanged. Equation (4.7) and the final a_g display retain (9/8)g^-1, while absolute Q versus relative gamma and the supplementary coefficient assignments retain their meanings. The new ledger expressly distinguishes its indexed Borel L_h from this section's signed loop functional and changes no existing integral/Bernoulli/Chow convention.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No alias, coefficient family, introductory recall or reader-facing explanation is added. The exact 7478-byte old bibliography prefix is retained and neither appended Bur15/Bur16 key is used in the twenty-four selected TeX paths. The new notation ledger remains internal and adds no burden to the existing moments/core calculations.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The joint-moment, first-correction, second-correction and whole-graph remainder guides retain their reviewed source. Theorem 1.1 still closes before the optional supplementary Remark, with no change to its precision, inputs or finite-coefficient/uniform-estimate route; the restricted defer procedure has no role in that paper argument.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Native preview.txt and independent complete Unix layout-text extraction are identical to r008 over all forty-nine pages, with unchanged TeX and layout controls. Thus the actually inspected p.25 formula/proof, p.29 final expansion and complete p.30 samepage Remark retain their grouping, tags and readable hierarchy, as do the tables, core diagrams and appendix boundary. Strict/layout diagnostics are empty; there is no new layout consequence.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No letter, index, font or scope changes. The established distinctions among endpoint degrees, m_a counts, loop p/core q, Q_{q,r} and inverse-genus orders remain intact. Future calligraphic potentials and indexed Borel layers are explicitly distinguished from the WP scale and unindexed signed functional, preserving the current section's symbol roles.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "Identical complete layout text preserves the profile-to-core calculation sequence, immediate proofs, optional source modules and the final proof-to-Remark-to-appendix transition. The full normalization/order sentence remains with both supplementary values, and no new bibliography or background insertion interrupts selective reading.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused S07-SHARED impact review in the retained full-s04 context. Read the dispatch, diff, summary and r008 report, reusing the same common writer ACK/prior-plan/addendum from this event. The r008/r009 path sets are identical; only references.bib, workflow/context.md and workflow/PROTOCOL.md change. All other 68 fingerprints, including every s04 scientific/interface/handoff/check input, samepage wrapper, macro/layout and outline/unit fragment, are unchanged.",
+    "Verified all 71 archived input hashes and every non-alias live input, three artifacts, exact snapshot b777a98d2199e1c89e858c299bc36320aa653c99c013b39c8f81cb85f187f2a5, source hash 50f1f81706bb5718d2bf627fdb3224a47b8a25192abec624ba6162dea45bc95c, PDF SHA 2aa40df9c0a169f9fb4a18a6a326d361b9a5f5c72fcd347c09e238caa1abc37e, and entry/native-helper hashes. Shared hashes and selected dependency source files match actually accepted s02 r010/s03 r007/a r007; read-only state inspection confirms those approvals and the original readability binding.",
+    "The old bibliography is an exact 7478-byte prefix, with only unused Bur15/Bur16 appended. Writer ACK SHA c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and preserved prior-plan SHA d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 match; both plans bind identical shared hashes. The context/protocol insertions are the same already reviewed additions and leave old notation/review policies intact.",
+    "The PDF remains forty-nine pages. Independent pdftotext -layout -eol unix output is byte-identical to r008, SHA 1f56a676003247efa94b445affcc32d7412c6892a5a030ad9f654373f23eaa7f; native preview.txt is also identical. Retained the original actual visual assessment without repeating screenshots, old mathematics or coefficient reconstruction. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s04 passed.",
+    "No prior s04 readability issue is open. The local Remark issue was resolved at r007 and is not closed again, so issues=[] and resolved_issue_ids=[]. Only this report and its handoff were written; no source, state, historical report or shared output was changed, and no build or workflow state command was run."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "b777a98d2199e1c89e858c299bc36320aa653c99c013b39c8f81cb85f187f2a5",
+  "summary": "Pass. The shared additions preserve s04 notation and full rendered layout, including the specified (4.7)/final a_g form and complete samepage Remark 4.4.",
+  "unit": "s04",
+  "verdict": "pass"
+}

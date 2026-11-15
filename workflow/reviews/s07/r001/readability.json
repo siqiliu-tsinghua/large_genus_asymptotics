@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read all four subsections continuously. Times, formal weights, the defect reindexing and F/G/U/c_k are bound in 01_hodge_potential.tex:8-51; theta, stable T_{g,h,n} and the specialized inverse are introduced in 02_specialization.tex:5-36. Shifted times/jets, L_{g,h}, the transport operator, characteristic coordinate and normalized logarithmic kernel have local definitions in 03_exact_transport.tex:12-22,100-115,136-143,211-220. The Borel layers, input type, integer m and real integration ranges are specified before the kernels in 04_borel_transform.tex:5-50. Formal versus fixed-genus local analytic claims are explicitly separated, with no missing new definition or routine restart of g,n/moduli notation found.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The unmarked formula (7.15) retains the Introduction's g_2+h and b_g(h), while beta_g remains the one-point coefficient inherited from Section 6 and scalar b keeps its earlier role. Ordinary B_{2k}, the sine/inverse-sine coefficients and the full-time W versus specialized w_theta/v_theta are used consistently, with the latter relationship explicitly recalled at (7.16). The hbar/epsilon reindexing, derivative-before-evaluation convention in (7.26)/(7.34), and the common (2g+h-2)! Borel normalization are consistent across text, formulas and interface; no Hodge j_i/ell or Chow-convention collision was found.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The new names have repeated roles: c_k drives the flow and transport; shifted I_d and W_k support the finite-jet and constant arguments; L_{g,h}, Lambda_theta, K and N_h organize successive layers and both kernel verifications. T_{g,h,n} provides the recurring geometric target and exact unmarked specialization. Local A(u), V(y) and coefficient-degree indices shorten repeated inversion/factorial expressions without becoming new global families. The section adds no inherited-symbol inventory or repeated basic setup, and the Section 2/6 recalls each explain a specific conversion or input.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry on p.19 explains why positive defect requires a different route from the top-class tree restriction, then maps potentials/specialization to constant recovery, characteristics and Borel kernels. Section 7.3 opens with the string-to-dilaton-to-finite-jets plan; Section 7.4 explains the degree shifts and labels the linear/quadratic coefficient calculations. Both the entry and final paragraph explicitly reserve Theorem 1.4, global Borel analysis, primitives and background comparison for Section 8, so the reader can distinguish exact inputs from later asymptotics.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Actually inspected every new-section page, pp.19-27. Long displays, tags, jet subscripts and evaluation parameters are legible, the proofs are adjacent to their statements, and the finite-jet and Borel proofs have useful functional paragraphs. Two local hierarchy problems remain: the necessary homogeneous string result is packaged as optional Remark 7.1 although Lemma 7.4 starts by using it (READABILITY-001); Proposition 7.5 runs from the foot of p.23 through most of p.24 and combines formal differential recursion with a distinct real-parameter/branch/decay/integral result (READABILITY-002). These need local modularization, not a font, spacing or general prose rewrite.",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "Calligraphic F/G distinguish the potentials, ordinary W with indexed jets distinguishes the full-time inverse map, and w_theta/v_theta retain the Section 6 inverse specialization. Calligraphic I_d avoids the Bessel-I collision; Lambda_theta leaves Phi unchanged; indexed calligraphic L_h is visually distinct from L_{g,h} and from the earlier unindexed loop functional. Genus/defect splits g',g''/i, derivative index k, and Borel/integration variables y,m,tau,t are grouped and scoped coherently. These distinctions remain legible in the actual 10pt formulas, with no unnecessary new Bessel-zero or critical-point alias.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The specialization proof leads clearly from the exponential forgetting formula to the Bessel inverse and identifies the remaining kappa-versus-Hodge comparison; the first-layer logarithm then feeds the Borel normalization and Beta checks. Selective reading is weakened at two joints: skipping the apparent supplementary Remark loses the input used immediately in the later finite-jet proof, and the long Exact transport statement obscures the passage from a formal recursion to characteristic recovery under additional local analytic hypotheses. READABILITY-001/002 repair those joints while preserving the otherwise clear flow and coefficientwise scope.",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/07_ilw_transport/01_hodge_potential.tex:115-133, rmk:s07:string / eq:s07:string; used at 03_exact_transport.tex:48-56; frozen PDF pp.21,23",
+      "message": "Remark 7.1 contains the raw string anomaly, its cancellation by the sine operator and the homogeneous positive-defect string equation. This is an essential proved input: the finite-jet proof begins by invoking it to remove the zero-degree time, which in turn underlies the integration-constant and characteristic-endpoint arguments. Presenting the only derivation as a Remark gives required reasoning the hierarchy of optional background, contrary to the section's otherwise modular main proof chain.",
+      "requested_change": "Promote the raw/transformed string-equation result, including the homogeneous h>=1 conclusion, to a main Lemma with its proof immediately following, before the finite-jet argument. Retain the anomaly/cancellation calculation and its exceptional stack values, update the finite-jet citation and interface, and keep only any genuinely optional commentary in a post-proof Remark. No new mathematical claim or expanded background discussion is needed."
+    },
+    {
+      "id": "READABILITY-002",
+      "severity": "minor",
+      "location": "sections/07_ilw_transport/03_exact_transport.tex:117-208, prp:s07:transport and eq:s07:transport-one through eq:s07:characteristic-higher; frozen PDF pp.23-25",
+      "message": "Proposition 7.5 starts at the foot of p.23 with (7.22), then continues on p.24 with the higher-defect differential recursion, a real-theta/local-x inverse-branch hypothesis, endpoint decay and two integral reconstruction formulas before its proof begins. The formal full-time recursion and the specialized characteristic recovery have distinct inputs and later uses, but they appear as one long italic statement. Readers seeking either result must parse the other and track a change of setting across the page turn; the proof already has a natural division after establishing (7.22)-(7.23).",
+      "requested_change": "Keep (7.22)-(7.23) in an Exact transport proposition followed immediately by the existing coefficient-extraction/rational-jet-constant proof through the sentence proving those equations. Follow it with a separately titled corollary or proposition for characteristic recovery: retain the real theta, local x, fixed inverse branch, X_sigma definition, decay, derivative-evaluation convention, convergence/formal qualifications and (7.24)-(7.26), followed immediately by the existing characteristic/decay/integration proof. Update later convergence citations and the interface to point to the recovery result. Preserve all mathematics and use local statement/proof modularization rather than global layout changes or a large keep-together block."
+    }
+  ],
+  "notes": [
+    "First full formal s07 readability review, not a shared-input refresh. Read the frozen entry, all of 7.1-7.4, outline/unit definition, INTERFACE and writer handoff in the continuous s01/s02/s06 context; consulted only the relevant approved interfaces and established conventions. No old WP/A material or old mathematical proof was reopened. Both identified issues concern the organization of already present reasoning, not an asserted mathematical gap.",
+    "Verified all 37 archived input hashes and every non-alias live input, three artifacts, exact snapshot aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46, source hash 0727d8104128d0e0921b54da9d716b66fd5eb3aa496105e3adc827276f25acf8, PDF SHA af05ec13c85935d49706cf02d23b3c99f8e37171d418fca72ee7931056d7dfd4, and entry/native-helper hashes. Original readability binding and actual accepted s02 r010/s06 r004 dependencies, with matching selected source bytes, were confirmed by read-only inspection.",
+    "The clean frozen PDF has 28 pages. Rendered and actually viewed all new-section pages 19-27, including the entry/old-section boundary, string Remark, specialization, finite jets, cross-page Exact transport statement/proof, logarithmic kernel, both Borel kernels, Beta-factorial verification and final references boundary. Normal-sized formulas and tags have no clipping or overflow. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s07 passed. These gates do not resolve the two hierarchy/navigation issues.",
+    "New unit: no prior readability issue exists, so resolved_issue_ids=[]. This report does not approve Theorem 1.4, full Borel continuation or the Section 8 asymptotic argument. Only this report, its handoff and own ignored products under build/s07-preparation/readability-r001/ were written; no source, shared input, state, old record, other review or shared preview was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "aea8b2ec4386f19480f32af79e5941ae9cfe92ff9176ce8f6c129c6e2237cb46",
+  "summary": "Changes requested for two local structural issues: promote the required string result from an optional Remark to a proved main Lemma, and separate exact differential transport from characteristic recovery. Definitions, notation, scope boundaries and the remaining rendered presentation are clear.",
+  "unit": "s07",
+  "verdict": "changes_requested"
+}

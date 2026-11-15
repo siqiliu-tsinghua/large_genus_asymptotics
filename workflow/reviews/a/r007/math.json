@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Independently verified archive/live/artifact hashes, canonical snapshot, render source hash, actual PDF/helper/entry hashes and the real /root/s02_math binding. Accepted s02 r010 and s03 r007 are fresh, and validate.py --unit a passes. Only the same three S07-SHARED inputs differ from r006; Bur15/Bur16 are absent from the old TeX closure, so no coefficient proof acquires a new external input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Input path sets and every scientific TeX/interface/calculation/outline fingerprint are identical to r006. Thus the fixed profile orders, low-genus types, q=0,1,2 core ranges, genus corrections and 1/3/13 core enumeration retain their original hypotheses; neither the future fixed-defect ledger nor the first-draft defer documentation changes an Appendix A range or degree.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All coefficients, signed moments, raw connector conventions, graph/flag Aut factors and absolute Z/F versus relative Z/V distinctions remain byte-identical to r006. In particular A.32/A.36 preserve their common exp(S(1))/sqrt(pi) factors and internal remainders, while A.44 retains its external O(g^-3) placement; their approved aligned/single-line layouts are unchanged. No ILW normalization is introduced into these coefficient calculations.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The new context ledger explicitly scopes its potentials, inverse jets and indexed Borel series to Sections 7-8, distinguishing them from the existing WP scale and signed loop functional. It preserves ordinary Bernoulli B_n and manuscript first-definition requirements; all Appendix A definitions, local scopes, labels, symbol choices and interface remain unchanged. The original Hodge-index, lowercase-integral and Chow conventions are therefore unaffected.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The exact delta is references.bib plus context and PROTOCOL insertions, with every other archived input unchanged and the complete native PDF text identical to r006. The old 7478-byte bibliography prefix is intact; the defer paragraph concerns only a never-frozen first draft and waives no review or acceptance. Consequently the previously reviewed exact recursion, moment calculations, coefficient extraction and finite-core deductions have no altered premise or inference.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The existing fixed-order HMT error control, all-genus separating estimates, kernel tails and dilaton/coefficient-extraction arguments are unchanged, as are the summable loop/core errors. All g^-1/g^-2 terms and O(g^-3) ownership remain intact in source and full rendered layout text. The three shared additions make no stronger uniformity or exchange-of-limits assertion for Appendix A.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh original-reviewer impact signature on Appendix A r007; the complete earlier mathematical reasoning is retained after verifying the actual delta. r006 had no open MATH issue, so issues=[] and resolved_issue_ids=[]. No old algorithm, long proof or original literature was rerun or reread.",
+    "Snapshot 0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1; actual source SHA256 79e31d7a8a4023112a7ac5f07df6bc8084b865195f45157101c96f0a11db38e9; actual PDF SHA256 44d10c0cd823ec36ae5790c6596472738b1f056662b6f914c4e00c0909e86e97. Strict/layout diagnostics are empty. Both saved preview.txt files and independently extracted complete native PDF layout text are equal; saved text SHA256 b486849093e1a5c8577f1d6345f8d035d7d8ad9d33930e207688bce76d5c8017 matches r006.",
+    "The three shared hashes exactly match the previously checked S07-SHARED packet. Writer ACK SHA256 c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and the exact prior-plan hash d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 are preserved; operative-plan differences remain only order and ordering_reason, as recorded by the same addendum.",
+    "Only the current math.json and math_handoff.md were written. No manuscript, shared input, state, old report, other role's report or shared build output was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "0ddd924fc85cf19bcd7c0bf72894f3650473bdd39c225993a166ce11d2a1f3e1",
+  "summary": "Pass for Appendix A r007 S07-SHARED impact review. Only the previously audited uncited bibliography additions, future fixed-defect ledger and restricted defer documentation differ; all coefficient mathematics, calculation inputs, interfaces and complete rendered text remain unchanged with fresh accepted dependencies.",
+  "unit": "a",
+  "verdict": "pass"
+}

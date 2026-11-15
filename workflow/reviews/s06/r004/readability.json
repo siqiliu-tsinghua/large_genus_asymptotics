@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All seven s06 files, the Introduction and selected s02 inputs retain their reviewed bytes, so the vertex, beta_G, Phi and critical-point definitions still precede use with the same ranges and scopes. The new context ledger concerns Sections 7-8 and explicitly requires their first manuscript definitions; it neither redefines an s06 object nor adds repeated basic setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The three changed shared hashes exactly match accepted s02 r010, while all s06 formulas, labels and normalization conventions are unchanged. The added ledger explicitly preserves w(v)=v*Phi(v), x_*, R and beta_g, leaving g_2, z_{0,1}, rho and the distinction between b_g and scalar b intact.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No symbol, alias, prose recall or inherited-symbol inventory is added to s06. Bur15/Bur16 occur in none of the fourteen selected TeX paths, and the future notation ledger remains internal rather than adding material to the concise opening or optional source modules.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged entry still starts by announcing the proof of Theorem 1.3, then explains the tree reduction and gives the concrete vertex/circle-bound/complete-tree-tail/saddle-and-leaf strategy. Its separate final paragraph records the downstream fixed-defect use, preserving the user's goal-to-idea-to-strategy order without advancing that later argument.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Complete native and independent Unix layout-text comparisons are identical to r003 across all twenty pages. Scientific TeX, macros and layout controls are also unchanged, preserving the previously viewed three-paragraph entrance, statement/proof adjacencies, functional long-proof stages and legible vertex/tree/saddle displays; strict/layout diagnostics are empty.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No existing letter, index, font or scope changes, including the reviewed distinctions among Hodge indices, Bessel data, tree counts and Q_1/Q_2/Q_3. The future ledger protects Phi from reuse as a logarithmic quotient, assigns Lambda_theta to that separate role and forbids a new name for the Bessel zero/critical point, preserving s06's existing symbol design.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The unchanged opening still connects Section 2's exact boundary/degree identities to the present tree sum and then announces the uniform estimate needed to sum it. Identical full layout text preserves the transition into 6.1, the main/optional-module sequence and final proof/reference boundary; neither the future ledger nor restricted defer instructions interrupts the paper's reading path.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused S07-SHARED refresh in the original complete-s06 context. Read the current dispatch, diff, summary and unchanged entry, and reused the same just-reviewed common writer ACK/prior-plan/addendum. The r003/r004 input path sets are identical; only references.bib, workflow/context.md and workflow/PROTOCOL.md change. The remaining 27 fingerprints, including all seven s06 files, interfaces, handoffs, macro/layout files and outline/unit fragments, are unchanged.",
+    "Verified all 30 archived input hashes and every non-alias live input, three artifacts, exact snapshot febf9e26fb88de34d016f7d977ac46f637f550578992bd17071b2ad9eaca560d, source hash c5260b2388d561bfc6a5f837720a4df92e20098ffe8c98506ac4038578d85af2, PDF SHA 9723da5508c2150908c612e6024d3bbb95ee55c7c2bf2946326fa957b5c8c266, and entry/native-helper hashes. All three shared hashes and the selected Introduction/s02 files match accepted s02 r010. Read-only state inspection confirms its actual acceptance and the original s06 readability binding.",
+    "The old 7478-byte bibliography is an exact prefix; only Bur15/Bur16 are appended and neither is used in the fourteen selected TeX paths. Writer ACK SHA c200821da979a09a3f511cab885dcdf5d391b87dd1233c0aa27724255b93f844 and preserved prior-plan SHA d9292c8a6da0826559f983f8e2d9126918a34fe0caf0d5b071b2fb80cd717038 match; both plan versions retain the same shared hashes. The context/protocol additions are the identical ones just reviewed for s02, leaving old definition and review policies intact.",
+    "The PDF remains twenty pages. Independent pdftotext -layout -eol unix output is byte-identical to r003, SHA 01697b0a1f6e74ef18a4407974a9120679ab3b210f6164e57975ebe594fd7c01; native preview.txt is also identical. Reused the original actual page inspection without rerendering unchanged pages or rereading old proofs/sources. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s06 passed.",
+    "No prior s06 readability issue is open: issues=[] and resolved_issue_ids=[]. This signs the current shared-input refresh only, not new Sections 7-8 mathematics or the workflow implementation. Only this report and its handoff were written; no source, state, historical report or shared output was changed, and no build or workflow state command was run."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "febf9e26fb88de34d016f7d977ac46f637f550578992bd17071b2ad9eaca560d",
+  "summary": "Pass. The shared additions preserve s06's goal/idea/strategy entrance, notation and complete rendered layout, with no new readability issue.",
+  "unit": "s06",
+  "verdict": "pass"
+}
