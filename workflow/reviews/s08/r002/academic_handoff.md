@@ -1,0 +1,13 @@
+# s08 r002 academic re-review
+
+Reviewer: `/root/s02_academic`.
+Snapshot: `7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b`.
+Verdict: **pass**; **ACADEMIC-009 resolved**, no new academic issues.
+
+The frozen diff, original author's response, revised interface and changed proof were checked. Every endpoint-distance use of `t_0` is removed; the proof writes `S-y` directly, and the ledger preserves `t_0=x`. All 33 numbered equation blocks and 13 principal statement blocks are byte-identical to r001. The scientific delta is the expanded initial-path proof and a shorter closing summary in the background comparison, with matching interface/handoff updates and the newly selected author response.
+
+The new proof correctly cites Lemma B.4 for the shift with `c=1-tau`, `t=tau`, and Proposition B.12 for its larger-cone extension and patching. On the initial segment, `tau<1/2` and positive-cone addition give lower bounds for the center and both endpoint distances; `|u|<=C|S-y|` supplies upper bounds. Thus all three are comparable to `|S-y|`, and both normalized endpoint distances stay bounded above and away from zero. Equation (B.28), with one center derivative and no Borel derivative, supplies the `(h-3)/2` exponent; the segment length gives the asserted `(h-1)/2` integral bound. This uses the actual complex cone rather than an inverse-disk assertion. These are explicitly stated applications and a local derivation, not newly attributed external results. Closure of MATH-001 belongs to the original mathematical reviewer; this report resolves only the academic issue.
+
+The former full primary-source checks remain applicable: no bibliography, external locator, shared input or accepted dependency source changed. The fixed-layer/angular hypotheses, additive singularity, whole-background conclusion and final relative `o(1)` precision remain intact. The shorter background ending still identifies the one-node estimate and endpoint equations needed for its conclusion. Native pages 32--33 and 37 were visually inspected; the proof grouping and local closing square are clear. The final theorem proof continues onto page 38, where Appendix B then begins; total length is 53 pages.
+
+The original binding and fresh dependency approvals were checked, as were all archived/live input and artifact hashes, recomputed snapshot/render-source fingerprints and native PDF/entry/helper receipt hashes. Strict and layout diagnostics are empty. Only the two reports and private ignored page images were written; no source, state, historical report or frozen output was changed or rebuilt. Stop with the original source/review context retained.

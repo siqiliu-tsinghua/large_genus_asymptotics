@@ -1,0 +1,18 @@
+# s02 r012 academic bibliography-impact review
+
+Reviewer: `/root/s02_academic`.
+Snapshot: `f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec`.
+Verdict: **pass**; issues and resolved issue IDs are empty.
+
+I read the dispatch, frozen diff, summary, common writer acknowledgment, source record and plan. Independent archive/live comparison confirms that only `references.bib` differs from approved r011: its old 8323 bytes are an exact prefix and its 1428-byte append contains only FO90, CH88, Fuj78 and Kaw81. The current closure has no new-key citation, nocite or wildcard citation. Scientific text, interfaces, macros and proof spacing remain unchanged; fresh native-layout PDF extraction is identical to r011, including references.
+
+The first shared-event source-identity check is complete and reusable for subsequent metadata-only rounds:
+
+- **FO90:** Philippe Flajolet and Andrew Odlyzko, *Singularity analysis of generating functions*, SIAM Journal on Discrete Mathematics 3(2) (1990), 216–240, DOI 10.1137/0403019. The publisher-deposited record cached in `build/s08-preparation/FO90_crossref.json` supplies publication metadata; the rendered author-hosted preprint supplies the title/authors and Section 2 identity. Its pages are reversed: PDF p.25 is printed p.1 and PDF p.22 is printed p.4, headed “A Basic Transfer Theorem”; its broken font mapping was not treated as reliable extraction. This is not a claim to have inspected the journal PDF.
+- **CH88:** Maurizio Cornalba and Joe Harris, Annales scientifiques de l'École Normale Supérieure, series 4, 21(3) (1988), 455–475, DOI 10.24033/asens.1564; the primary PDF and [official Numdam record](https://www.numdam.org/articles/10.24033/asens.1564/) agree with the appended title and fields.
+- **Fuj78:** Takao Fujita, *On Kähler fiber spaces over curves*, Journal of the Mathematical Society of Japan 30(4) (1978), 779–794, DOI 10.2969/jmsj/03040779; the primary scan and [journal's J-STAGE record](https://www.jstage.jst.go.jp/article/jmath1948/30/4/30_4_779/_article) agree, using the publication year rather than its later online availability.
+- **Kaw81:** Yujiro Kawamata, *Characterization of abelian varieties*, Compositio Mathematica 43(2) (1981), 253–276; the primary scan and [official Numdam record](https://www.numdam.org/item/CM_1981__43_2_253_0/) agree with the entry and its stable item URL.
+
+All four local PDF hashes match `S08-SHARED_sources.json`. I checked the recorded theorem locations and relevant scope: CH88 Theorem (1.3), printed pp.457–458, distinguishes its interior-test-curve statement from the compactified ampleness criterion a>11b>0; Fuj78 Main Theorem (0.6), pp.779–780, treats the relative dualizing direct image for a Kähler fiber space over a smooth curve with the paper's smooth-total-space assumptions; Kaw81 Theorem 5, p.254, treats an algebraic fiber space smooth over the complement of a normal-crossing boundary and requires unipotent local monodromy. These conditions must remain attached to any later boundary application. This source/metadata check is not an audit or approval of the unfrozen Appendix B or a new nefness assertion in s02.
+
+The original reviewer binding is correct for active, non-stale s02 r012. The current snapshot and PDF hash match the summary/native receipt, and the actual common acknowledgment hash matches. The receipt records strict/pass with empty standard/layout diagnostics. Only this report and handoff were written; no old source, state, historical record, scientific draft or frozen output was changed or rebuilt. Stopping with the original context retained.

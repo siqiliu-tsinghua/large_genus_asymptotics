@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read the complete frozen entry, five subsections, 16 statements/proofs, 35 numbered formulas, interface, outline and writer handoff; the exact s07 transport/Borel identities and s06 Bessel/critical data have the normalization and domains used here. The s02 r012, s06 r006 and s07 r004 approvals are actually accepted and fresh under Engine checks, with no Section 8, WP, Appendix A or nefness result used as an input. The modified-Bessel series and integer-order integral were checked directly against DLMF (10.25.2) and (10.32.3), rather than an internal note. All 45 archived/live fingerprint entries, submission artifacts, canonical snapshot/source and actual native PDF/helper/entry hashes match; the real binding is /root/s02_math and validate.py --unit b passes.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The analytic quantifiers are explicit: the convex domain has 0<a_*<x_*/2 and small nonnegative theta, the local characteristic has theta+sigma within the critical interval, while full-sigma bounds use regular disks instead of assuming a large-theta critical branch. Endpoint scales a,c are nonnegative, 1/2<nu<1, and local transport requires an integer N>a+1/2; for the actual layer the source scale is (h-2)/2 and its vanishing order 3h-2 satisfies this inequality. Proposition B.12 concerns a fixed finite cap 1<=h<=H, not growing defect. In B.5 the primitive explicitly excludes G_1,1, and g>=max(2,h) gives N=2g+h-2>=h+2, exactly the condition required by the negative-infinity integral.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The Borel normalization remains (2pi)^(2g)L_g,h/(2g+h-2)!, so the final primitive bound has the inverse factor (2pi)^(-2g)N! and the stated N^(-5/2). The linear kernel keeps the complete m>=2 cubic difference, yielding a summable m^(-2) majorant without separating divergent subtraction terms; its negative-end square-root coefficient has the opposite sign. The quadratic estimates are applied to the exact s07 source with its external half. Freezing the differentiated positive-end term -S H_1/(2 sqrt(S-y+sigma d)), where d=x_{*,theta}-v_theta(x), gives the positive lower-end coefficient S H_1/d; the same sign results at the negative endpoint. Finally, x=w(-u) reverses the u orientation, so the geometric zero limit gives the positive integral from negative infinity to zero in (B.32).",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "B.1 defines the critical branch/value, disk notation, subsection-local M_k, positive-center Omega_theta, image D_theta, S=R_theta-x and the two-distance cones before their use; branch choices and local/full sigma ranges are stated separately. B.2 explicitly binds the regular-disk scale beta and theta_0, and B.3 defines the endpoint class, analytic coefficient functions and larger complex-theta neighborhoods before using their Cauchy derivatives. B.4 binds the local vanishing order and finite layer cap, while B.5 defines I_k, r_0/u_{r_0} and the separate coefficient degree N. The inherited g_2, z_{0,1}, Phi/w, beta_g, Hodge-index, lowercase-integral and Chow conventions are retained; the interface accurately records the scopes and excludes an assertion of Theorem 1.4.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "All 16 statements have adjacent proofs. B.1 proves the positive real-part estimate using the strictly positive coefficient a_*w'''(x_{*,theta})-theta, then proves the full image radius separately by the difference-quotient angular minimum, the origin margin and the affine distance comparison; univalence alone is not substituted for that budget. B.2 constructs the actual Borel functions inductively from normally integrable sources and identifies coefficients afterward. B.3-B.4 prove endpoint integration and the additive frozen-model error, including a zero leading coefficient, before applying them to actual fields. Proposition B.12's proof, 04_local_transport.tex:220-241, patches the principal shifted center S'=tau S+(1-tau)(S-y) using lower-layer critical cones when S' is small and lower-layer compact-center neighborhoods otherwise, so the entire real segment is covered without using the current layer as an input; noncritical arcs and remote pieces then supply a finite cover. Its lines 243-250 explicitly extend the construction in complex theta via uniformly analytic Morse coefficients and persistent angular margins, compact inverse patches and regular remote bounds, meeting the complex-parameter hypothesis of B.3. B.5 proves the fixed-genus zero constant from finite jets, then proves the two-endpoint Fourier bound and the separate genus-uniform primitive estimate.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The regular-disk source majorant is s^(3h-2)(s+sigma)^(-2h), whose full integral is s^(h-1)/(2h-1), establishing normal convergence before coefficient extraction. The cone estimate controls both endpoint distances by their initial sizes plus sigma sqrt(|S|)+sigma^2, and boundary distance is nondecreasing for every complex center in the convex image. The linear nonprincipal and quadratic corner integrals have uniform first normalized derivatives; larger-domain value remainders regenerate all fixed derivatives, including the next third order. Local transport combines the sigma=O(sqrt(|S|)) model with an integrable vanishing-order tail, while finite reductions of theta intervals/cones and the B.12 compact/critical/remote cover give the common joint domains. For the primitive, the near-zero coefficient bound N^(-3/2) gains N^(-1), the compact negative interval has radius R_1>R, and reserving h+2 growing-radius powers at infinity leaves u^(-(h+2)/2)I_0(2sqrt(u))^(-2), integrable uniformly in genus; the remaining powers retain an exponential radius advantage. No positivity of transformed coefficients, whole-genus integral interchange or Section 8 coefficient asymptotic is assumed.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a complete new scientific review of Appendix B, not reuse of any unused-bibliography or formatting signature; no prior B mathematical issue exists, so resolved_issue_ids=[].",
+    "Snapshot b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff; source SHA256 7f82decb3898d10d166ef8c0d16e674e3360a0549095be7925db20f21b8dc2b4; actual 42-page PDF SHA256 625520f822305c89dea820a12a12a3882b515e7bf0ecec87817d37fbe5d5c3c5; strict/layout diagnostics are empty.",
+    "Executed exact-rational guards in build/s08-preparation/math-b-r001/exact_bounds.py reproduce the B.1 finite constants: the M_0 even partial sum at 1.446 is below -8e-5, the polynomial minimum is 937/2880, its tail bound is 421758977/9142272000<0.049, and the even/first-odd ratio at 1.447 is strictly below one; all regular/local/primitive power guards pass. These are supplementary finite checks, not replacements for the analytic proofs.",
+    "Primary modified-Bessel identities were checked against [DLMF (10.25.2)](https://dlmf.nist.gov/10.25.E2) and [DLMF (10.32.3)](https://dlmf.nist.gov/10.32.E3); no FO90, positivity/nefness theorem or internal-lecture claim is used as a proof input here.",
+    "Only the two current reports and authorized private scratch/renderings under build/s08-preparation/math-b-r001/ were written; no manuscript, shared input, state, older report, other role's report or frozen build output was modified or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff",
+  "summary": "Pass on the complete frozen Appendix B r001: inverse-radius geometry, actual Borel convergence, endpoint/local transport calculus, complex-parameter and center patching, geometric primitive and genus-uniform coefficient bound have been independently checked with no unresolved mathematical issue; Theorem 1.4 remains outside this appendix's claims.",
+  "unit": "b",
+  "verdict": "pass"
+}

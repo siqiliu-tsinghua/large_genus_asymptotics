@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and all refreshed dependency acceptances are confirmed, and the same unused bibliography append adds no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve fixed insertion ranges, weights, stability and original-graph versus added-marking degree increments from r007.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All source/forgetting factors, Bernoulli coefficients, loop halves, profile/Euler corrections, factorials and final normalized Hodge/Chern coefficients remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Every first definition, scope, label, interface, mathematical macro and inherited Hodge/Chow convention retains its original bytes without a symbol introduced by uncited entries.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact unused bibliography append changes no premise or inference of the source filtration, single-character calculation, ODE reduction, common-term cancellation or Chern proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged whole-graph majorant, Gamma increments, legal-loop control and summable errors retain the fixed O(g^(r-w)) bound and strict O(g^-4) remainder scope.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot 4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3; actual source SHA256 f28edfc0ed2059721cd533d944b287dc58db69dd445a81d5cba8c8a2ed7afe19; actual PDF SHA256 e7e0ab3da20e90692581b6af083e1f31d4a0482c20fc6e4e906986526563294d; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r007, with identical input paths and exact 8323-byte prefix plus recorded append; its SHA256 equals the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, preserving the common four-key nonuse/no-wildcard analysis.",
+    "Saved text and independently extracted complete native PDF layout text equal r007, the common writer ACK hash matches, and s02 r012/s03 r009/A r009/s04 r011 are actually accepted; no prior MATH issue was open and no B manuscript was reviewed.",
+    "Only these two reports were written, without old mathematical recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3",
+  "summary": "Pass for s05 r008: the independently verified unused bibliography append preserves every scientific input, prior mathematical conclusion and complete native rendering.",
+  "unit": "s05",
+  "verdict": "pass"
+}

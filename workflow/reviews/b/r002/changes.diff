@@ -1,0 +1,54 @@
+--- previous/sections/b_analytic_estimates/02_regular_transport.tex
++++ sections/b_analytic_estimates/02_regular_transport.tex
+@@ -10,8 +10,10 @@
+ use them to construct the actual holomorphic Borel functions.
+ 
+ The first estimate is local and has no critical-point hypothesis. Its
+-dependence on the inverse derivative is important: this derivative
+-grows along a remote characteristic and on the negative real axis.
++scale is the derivative $w_\theta'$ evaluated at the inverse point.
++This forward-map derivative grows along a remote characteristic and on
++the negative real axis; the inverse derivative $v_\theta'$ is its
++reciprocal.
+ 
+ \begin{lmm}[A regular disk]\label{lmm:b:regular-disk}
+ Let $u_0\in\mathbb C$, $\theta_0\geq0$, $r>0$ and $\beta>0$,
+--- previous/sections/b_analytic_estimates/writer_handoff.md
++++ sections/b_analytic_estimates/writer_handoff.md
+@@ -112,3 +112,17 @@
+ reversible notation translation restores the previous equations exactly.
+ Static/control-character checks are reported at handoff. The coordinator
+ will rebuild the actual new source before freezing. STOP.
++
++## Formal r001 response: ACADEMIC-008
++
++Read all three reports on snapshot
++b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff.
++Math and readability passed; the sole academic issue requests precise
++terminology for the growing derivative scale in the B.2 opening.
++That paragraph now names the forward derivative w_theta' evaluated
++at the inverse point and explicitly identifies the inverse derivative
++v_theta' as its reciprocal. No symbol was introduced and no formula,
++proof, hypothesis, label or other mathematical prose was changed.
++The reply is workflow/reviews/b/r001/author_response.json.
++Only static checks were rerun; STOP for the coordinator's new build,
++freeze and original-reviewer rechecks.
+--- /dev/null
++++ workflow/reviews/b/r001/author_response.json
+@@ -0,0 +1,16 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/b_analytic_estimates/02_regular_transport.tex",
++        "sections/b_analytic_estimates/writer_handoff.md"
++      ],
++      "explanation": "The B.2 opening now explicitly names w_theta' evaluated at the inverse point as the growing forward-map derivative and states that the inverse derivative v_theta' is its reciprocal. No new symbol, equation, hypothesis, label or proof was added or changed.",
++      "issue_id": "ACADEMIC-008",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "b"
++}

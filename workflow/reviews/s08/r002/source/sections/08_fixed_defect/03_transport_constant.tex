@@ -1,0 +1,65 @@
+% !TeX root = ../../main.tex
+\subsection{The transport constant and its factorial}
+\label{subsec:s08:03}
+
+For $0\leq x<R$ define
+\begin{equation}\label{eq:s08:transport-integral}
+ \mathcal B(x)=\int_x^R\frac{\dd s}{x_*-v_0(s)}.
+\end{equation}
+The inverse expansion \eqref{eq:s08:inverse-singularity} makes its
+endpoint singularity integrable. In particular $\mathcal B(R)=0$
+by continuous extension and $\mathcal B(0)>0$.
+
+\begin{lmm}[Ordered integrals]\label{lmm:s08:ordered-integrals}
+For every integer $h\geq1$,
+\begin{equation}\label{eq:s08:ordered-integrals}
+ P_h(x)=\frac{\mathcal B(x)^{h-1}}
+                      {(h-1)!(x_*-v_0(x))},\qquad
+ \int_0^R P_h(x)\,\dd x=\frac{\mathcal B(0)^h}{h!}.
+\end{equation}
+\end{lmm}
+\begin{prf}
+The first identity holds at $h=1$. Since
+$\mathcal B'(x)=-1/(x_*-v_0(x))$, integrating the expression for
+$P_{h-1}$ in \eqref{eq:s08:principal-recurrence} gives
+$\mathcal B(x)^{h-1}/(h-1)!$. This proves the first identity
+inductively. One further integration gives the second. Equivalently,
+the $h$ ordered integration variables occupy one of the $h!$
+orderings of a product integration region; this is the source of
+the factorial in the theorem.
+\end{prf}
+
+The remaining constant can be evaluated at the first Bessel zero.
+Let $Y_0$ denote the order-zero Bessel function of the second kind
+on the positive real axis, and define the harmonic numbers by
+$H_0=0$ and $H_a=\sum_{k=1}^a1/k$ for integers $a\geq1$.
+
+\begin{lmm}[The Bessel transport constant]\label{lmm:s08:bessel-constant}
+One has
+\begin{equation}\label{eq:s08:bessel-constant}
+ \mathcal B(0)=\frac1{z_{0,1}J_1(z_{0,1})}=\frac1{2R}.
+\end{equation}
+\end{lmm}
+\begin{prf}
+Use $s=w(u)$ in \eqref{eq:s08:transport-integral} to obtain
+\begin{equation}\label{eq:s08:bessel-integral}
+ \mathcal B(0)=\int_0^{x_*}\frac{J_0(2\sqrt u)}{x_*-u}\,\dd u
+ =\int_0^1\frac{J_0(2\sqrt{x_*t})-J_0(z_{0,1})}{1-t}\,\dd t.
+\end{equation}
+The apparent singularity is removable, since the numerator vanishes
+at the simple zero. Expanding it as the difference of its Bessel
+series is uniform up to that endpoint: for $a\geq1$ and
+$0\leq t\leq1$, $|(t^a-1)/(1-t)|\leq a$, while
+$\sum_{a\geq1}a x_*^a/(a!)^2<\infty$. Termwise integration gives
+\begin{equation}\label{eq:s08:harmonic-sum}
+ \mathcal B(0)=-\sum_{a\geq1}\frac{(-x_*)^aH_a}{(a!)^2}
+                              =\frac\pi2Y_0(z_{0,1}).
+\end{equation}
+For the last equality use the harmonic-number expansion
+\cite[(10.8.2)]{DLMF}; its term proportional to $J_0$ vanishes
+at $z_{0,1}$. The Wronskian identity
+\cite[(10.5.2)]{DLMF}, at the same zero, reads
+$J_1(z_{0,1})Y_0(z_{0,1})=2/(\pi z_{0,1})$.
+Together with \eqref{eq:s06:critical-data}, this proves
+\eqref{eq:s08:bessel-constant}, including its sign.
+\end{prf}

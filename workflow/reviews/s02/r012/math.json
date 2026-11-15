@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding is confirmed, and the four appended keys are unused while the s01 baseline and all old cited premises remain unchanged.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve stability, complex codimension, Hodge/character ranges, graph dimensions and forgetting cutoffs from r011.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The exact old bibliography prefix, mathematical macros and complete rendered layout are preserved, leaving stack/graph factors, Chern/exponential factorials and forgetting signs unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Every first definition, scope, label and interface remains unchanged, including g_2, j_i/ell, lowercase integrals, ordinary Bernoulli notation and rational Chow coefficients.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole delta is an exact unused bibliography append, so no new source result, assumption or inference enters the original geometric proof chain.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged finite-genus identities retain the every-new-psi>=1 tail condition, negative new-psi kappa sum, >=2 exponential start and finite cutoff without any new limiting claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED impact signature on snapshot f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec; actual source SHA256 742455488b8da30d56d3c8f562e34ff21dbc36ef87180cf8a6ad9f6bbb11a239; actual PDF SHA256 c26f3482fd227864f98864595d47006b083603e315d10cce4978230e3b53e113; strict/layout diagnostics are empty.",
+    "Independent byte audit confirms the 8323-byte old prefix plus exactly the recorded 1428-byte append, adding only FO90/CH88/Fuj78/Kaw81 with no duplicate key; resulting bibliography SHA256 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf.",
+    "The read-only common-packet audit covered 89 physical inputs and 38 old TeX inputs across seven baseline units: only references.bib differs, none of the four new keys is cited, and no nocite/wildcard command occurs; this report signs only the current s02 snapshot.",
+    "Both saved text files and independent full native PDF layout extractions equal r011, with saved-text SHA256 e31975f9bdbb5e0b1d162fff7b3427e007185752c3b1957feb9e1fba8852c6f1; proof-spacing preamble 74966d1a...68a213f is unchanged.",
+    "Writer ACK 0d7b4d04b88a1cb3bb77b59ca5d2ad756116c70601b42bbb548f17231401ac0e and its plan/source-record/baseline hashes match; no Appendix B manuscript or new theorem application was reviewed.",
+    "No prior MATH issue was open; only these two reports were written, without old mathematical recomputation, external research, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec",
+  "summary": "Pass for s02 r012: the independently verified unused bibliography append preserves all scientific inputs, original mathematical conclusions and complete native rendering.",
+  "unit": "s02",
+  "verdict": "pass"
+}

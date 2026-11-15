@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and actual s02 r012 acceptance are confirmed, and the same unused bibliography append introduces no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve stability, valence/complexity ranges, genus-correct cores and the fixed-marked complexity shift from r008.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All descendant factorials, graph/loop symmetry factors, volume-path and marked-leg factors, and gamma_k as coefficients of Z_g/V_g,0 remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged first definitions, scopes, labels, interfaces, Hodge/Chow conventions and mathematical macros acquire no new symbol from uncited bibliography entries.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact bibliography append leaves the Gaussian whole-sum, finite-core, coefficient-coherence and marked/weighted proof premises and inferences identical to r008.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The compact absolute graph sums, q/loop tails, HMT thresholds and summable remainders retain their complete previously checked uniformity scope without a new limiting claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot 4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4; actual source SHA256 f0463b92f1d8324a3dd73abffa7b7d634a240b3bee1f04fd1878ee0a95420f07; actual PDF SHA256 fec0682c0cea3f288743e14abf23f9b8a0e55ffe278b93325c6071068c2d89ff; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r008, with the same input paths and exact 8323-byte prefix plus the recorded append; its SHA256 is the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, so the verified four-key nonuse/no-wildcard analysis remains applicable.",
+    "Saved text and independently extracted complete native PDF layout text equal r008, and the common writer ACK hash matches; no prior MATH issue was open and no B manuscript was reviewed.",
+    "Only these two reports were written, without old mathematical recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4",
+  "summary": "Pass for s03 r009: the independently verified unused bibliography append preserves every scientific input, prior mathematical conclusion and complete native rendering.",
+  "unit": "s03",
+  "verdict": "pass"
+}

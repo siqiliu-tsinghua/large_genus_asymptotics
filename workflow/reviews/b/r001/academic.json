@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Read the complete entry, five subsections, interface and writer handoff, and inspected native PDF pages 28, 32, 34, 37, 39 and 40: the 16 principal statements have adjacent proofs, the endpoint class and parameter restrictions precede use, and the longer arguments have functional paragraph headings. Inherited notation is used economically, but B.2's opening calls the growing scale an 'inverse derivative' although the displayed scale is the derivative of w_theta and the inverse-function derivative is its reciprocal; ACADEMIC-008 requests a precise name for this quantity.",
+      "status": "issue"
+    },
+    "attribution": {
+      "evidence": "B.1 explicitly uses Section 6's critical data and circle bound; B.2--B.4 use Section 7's finite jets, characteristic recovery and exact Borel kernels, with analytic convergence and endpoint estimates proved here rather than attributed to Buryak or Manin--Zograf. B.5 credits DLMF for the modified-Bessel series/integral and supplies its own inequalities, primitive normalization and elementary two-endpoint Fourier bound; neither internal lecture notes nor an uncited FO90, positivity or nefness result is presented as a published input.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Independently checked the primary DLMF pages for (10.25.2) and (10.32.3): setting its order to the explicitly integral k and its argument to 2 sqrt(u), u>0, gives exactly B.5's factorial series and cosine integral. The printed DLMF label is complete, and the versioned entry matches the primary site's release information; the inherited Section 6 circle estimate and Section 7 finite-jet, vanishing-order and characteristic formulas support the actual internal citations without importing a new convention or a stronger external theorem.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The manuscript distinguishes fixed-genus rational identities from the normally convergent Borel functions constructed by the regular-disk/tube estimates and from the fixed-H common-domain bounds, with no growing-defect uniformity claimed. The geometric primitive is restricted to g>=max(2,h), explicitly excludes the divergent undifferentiated genus-one logarithm, and is separated from its uniform-in-genus N^(-5/2) bound; the elementary N^(-3/2) coefficient estimate is expressly distinguished from asymptotic transfer, while leading coefficients, constants, sine inversion and background comparison remain for Section 8 rather than being claimed as Theorem 1.4 proved here.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-008",
+      "severity": "minor",
+      "location": "sections/b_analytic_estimates/02_regular_transport.tex:12--14 (B.2 opening)",
+      "message": "The sentence 'Its dependence on the inverse derivative is important: this derivative grows along a remote characteristic and on the negative real axis' does not identify the derivative correctly. The growing quantity used in the hypothesis and estimates is w_theta'(v), whereas the derivative of the inverse function is partial_x v_theta=1/w_theta'(v), which decreases in the two situations cited. The current terminology therefore reverses the usual reading at the point where the scale dependence is motivated.",
+      "requested_change": "Name the quantity explicitly as the derivative scale of w_theta (evaluated at the inverse point), or equivalently refer directly to w_theta'(v); retain the existing formulas and explain the growth using that quantity rather than calling it the inverse derivative. No additional symbol or proof expansion is needed."
+    }
+  ],
+  "notes": [
+    "This is the first full academic review of Appendix B, not an unused-bibliography refresh; resolved_issue_ids is empty because no prior B issue exists, and ACADEMIC-008 continues the retained reviewer's issue sequence.",
+    "Verified original reviewer binding and approved/fresh s02/s06/s07 dependencies; all archived/live input fingerprints and artifact hashes match submission.json, and the snapshot and source hashes recompute to the frozen identifiers.",
+    "Actual native PDF SHA-256 is 625520f822305c89dea820a12a12a3882b515e7bf0ecec87817d37fbe5d5c3c5; its matching receipt records strict/pass with empty standard/layout diagnostics, source hash 7f82decb3898d10d166ef8c0d16e674e3360a0549095be7925db20f21b8dc2b4, and matching archived entry/helper hashes. Representative pages were rendered only into the private ignored review cache; no frozen output was rebuilt.",
+    "Primary checks: https://dlmf.nist.gov/10.25.E2 and https://dlmf.nist.gov/10.32.E3; prior verified source context was reused for unchanged dependency results, and the four newly appended Section 8 sources are not used by Appendix B."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff",
+  "summary": "Changes requested for one minor terminology correction in B.2: identify the growing derivative scale of w_theta rather than the reciprocal inverse-function derivative; attribution, citation precision and principal claim boundaries pass.",
+  "unit": "b",
+  "verdict": "changes_requested"
+}

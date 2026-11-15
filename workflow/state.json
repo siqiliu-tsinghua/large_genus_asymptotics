@@ -2409,16 +2409,547 @@
       "snapshot": "f8d93be7cf973184112eda4d49a6b2f401ba75cb74708bf162660947737271c9",
       "time": "2026-11-15T07:39:49+00:00",
       "unit": "s07"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T08:10:55+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_writer",
+      "role": "writer",
+      "time": "2026-11-15T08:10:56+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "defer",
+      "agent_id": "/root/s02_writer",
+      "reason": "Add verified Section 8 references and refresh prerequisite snapshots before Appendix B freeze",
+      "time": "2026-11-15T08:54:38+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T08:55:10+00:00",
+      "unit": "s02"
+    },
+    {
+      "action": "submit",
+      "round": 12,
+      "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec",
+      "time": "2026-11-15T08:57:40+00:00",
+      "unit": "s02"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 12,
+      "time": "2026-11-15T09:03:24+00:00",
+      "unit": "s02",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 12,
+      "time": "2026-11-15T09:03:24+00:00",
+      "unit": "s02",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 12,
+      "time": "2026-11-15T09:03:24+00:00",
+      "unit": "s02",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 12,
+      "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec",
+      "time": "2026-11-15T09:03:36+00:00",
+      "unit": "s02"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:03:39+00:00",
+      "unit": "s03"
+    },
+    {
+      "action": "submit",
+      "round": 9,
+      "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4",
+      "time": "2026-11-15T09:03:52+00:00",
+      "unit": "s03"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 9,
+      "time": "2026-11-15T09:05:36+00:00",
+      "unit": "s03",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 9,
+      "time": "2026-11-15T09:05:36+00:00",
+      "unit": "s03",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 9,
+      "time": "2026-11-15T09:05:36+00:00",
+      "unit": "s03",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 9,
+      "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4",
+      "time": "2026-11-15T09:05:46+00:00",
+      "unit": "s03"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:05:54+00:00",
+      "unit": "a"
+    },
+    {
+      "action": "submit",
+      "round": 9,
+      "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba",
+      "time": "2026-11-15T09:06:05+00:00",
+      "unit": "a"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 9,
+      "time": "2026-11-15T09:07:49+00:00",
+      "unit": "a",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 9,
+      "time": "2026-11-15T09:07:49+00:00",
+      "unit": "a",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 9,
+      "time": "2026-11-15T09:07:49+00:00",
+      "unit": "a",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 9,
+      "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba",
+      "time": "2026-11-15T09:08:05+00:00",
+      "unit": "a"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:08:07+00:00",
+      "unit": "s04"
+    },
+    {
+      "action": "submit",
+      "round": 11,
+      "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b",
+      "time": "2026-11-15T09:08:24+00:00",
+      "unit": "s04"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 11,
+      "time": "2026-11-15T09:10:12+00:00",
+      "unit": "s04",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 11,
+      "time": "2026-11-15T09:10:13+00:00",
+      "unit": "s04",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 11,
+      "time": "2026-11-15T09:10:13+00:00",
+      "unit": "s04",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 11,
+      "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b",
+      "time": "2026-11-15T09:10:31+00:00",
+      "unit": "s04"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:10:33+00:00",
+      "unit": "s05"
+    },
+    {
+      "action": "submit",
+      "round": 8,
+      "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3",
+      "time": "2026-11-15T09:10:51+00:00",
+      "unit": "s05"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 8,
+      "time": "2026-11-15T09:12:42+00:00",
+      "unit": "s05",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 8,
+      "time": "2026-11-15T09:12:42+00:00",
+      "unit": "s05",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 8,
+      "time": "2026-11-15T09:12:43+00:00",
+      "unit": "s05",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 8,
+      "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3",
+      "time": "2026-11-15T09:13:00+00:00",
+      "unit": "s05"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:13:02+00:00",
+      "unit": "s06"
+    },
+    {
+      "action": "submit",
+      "round": 6,
+      "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de",
+      "time": "2026-11-15T09:13:16+00:00",
+      "unit": "s06"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 6,
+      "time": "2026-11-15T09:15:02+00:00",
+      "unit": "s06",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 6,
+      "time": "2026-11-15T09:15:03+00:00",
+      "unit": "s06",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 6,
+      "time": "2026-11-15T09:15:04+00:00",
+      "unit": "s06",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 6,
+      "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de",
+      "time": "2026-11-15T09:15:19+00:00",
+      "unit": "s06"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:15:21+00:00",
+      "unit": "s07"
+    },
+    {
+      "action": "submit",
+      "round": 4,
+      "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53",
+      "time": "2026-11-15T09:15:36+00:00",
+      "unit": "s07"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 4,
+      "time": "2026-11-15T09:19:39+00:00",
+      "unit": "s07",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 4,
+      "time": "2026-11-15T09:19:40+00:00",
+      "unit": "s07",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 4,
+      "time": "2026-11-15T09:19:41+00:00",
+      "unit": "s07",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 4,
+      "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53",
+      "time": "2026-11-15T09:19:52+00:00",
+      "unit": "s07"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:20:03+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "submit",
+      "round": 1,
+      "snapshot": "b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff",
+      "time": "2026-11-15T09:26:06+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_math",
+      "role": "math",
+      "time": "2026-11-15T09:26:08+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_readability",
+      "role": "readability",
+      "time": "2026-11-15T09:26:09+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_academic",
+      "role": "academic",
+      "time": "2026-11-15T09:26:11+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 1,
+      "time": "2026-11-15T09:40:07+00:00",
+      "unit": "b",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 1,
+      "time": "2026-11-15T09:40:09+00:00",
+      "unit": "b",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 1,
+      "time": "2026-11-15T09:40:10+00:00",
+      "unit": "b",
+      "verdict": "changes_requested"
+    },
+    {
+      "action": "revise",
+      "agent_id": "/root/s02_writer",
+      "round": 1,
+      "time": "2026-11-15T09:40:11+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "submit",
+      "round": 2,
+      "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871",
+      "time": "2026-11-15T09:42:53+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 2,
+      "time": "2026-11-15T09:45:29+00:00",
+      "unit": "b",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 2,
+      "time": "2026-11-15T09:45:30+00:00",
+      "unit": "b",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 2,
+      "time": "2026-11-15T09:45:32+00:00",
+      "unit": "b",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 2,
+      "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871",
+      "time": "2026-11-15T09:45:44+00:00",
+      "unit": "b"
+    },
+    {
+      "action": "start",
+      "time": "2026-11-15T09:46:50+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_writer",
+      "role": "writer",
+      "time": "2026-11-15T09:46:51+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "submit",
+      "round": 1,
+      "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd",
+      "time": "2026-11-15T10:11:22+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_math",
+      "role": "math",
+      "time": "2026-11-15T10:11:44+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_readability",
+      "role": "readability",
+      "time": "2026-11-15T10:11:45+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "bind",
+      "agent_id": "/root/s02_academic",
+      "role": "academic",
+      "time": "2026-11-15T10:11:46+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 1,
+      "time": "2026-11-15T10:18:23+00:00",
+      "unit": "s08",
+      "verdict": "changes_requested"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 1,
+      "time": "2026-11-15T10:18:43+00:00",
+      "unit": "s08",
+      "verdict": "changes_requested"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 1,
+      "time": "2026-11-15T10:26:07+00:00",
+      "unit": "s08",
+      "verdict": "changes_requested"
+    },
+    {
+      "action": "revise",
+      "agent_id": "/root/s02_writer",
+      "round": 1,
+      "time": "2026-11-15T10:26:14+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "submit",
+      "round": 2,
+      "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b",
+      "time": "2026-11-15T10:31:23+00:00",
+      "unit": "s08"
+    },
+    {
+      "action": "review",
+      "role": "math",
+      "round": 2,
+      "time": "2026-11-15T10:35:05+00:00",
+      "unit": "s08",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "academic",
+      "round": 2,
+      "time": "2026-11-15T10:35:06+00:00",
+      "unit": "s08",
+      "verdict": "pass"
+    },
+    {
+      "action": "review",
+      "role": "readability",
+      "round": 2,
+      "time": "2026-11-15T10:36:00+00:00",
+      "unit": "s08",
+      "verdict": "pass"
+    },
+    {
+      "action": "accept",
+      "round": 2,
+      "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b",
+      "time": "2026-11-15T10:36:16+00:00",
+      "unit": "s08"
     }
   ],
   "schema_version": 1,
   "units": {
     "a": {
       "accepted": {
-        "receipt_path": "workflow/reviews/a/r008/build_receipt.json",
-        "receipt_sha256": "38bccf1a932a9b5de57271637237b6bdf1a386f088d7a16a8c6695c78ab6360e",
-        "round": 8,
-        "snapshot": "869a39b41f720591a5929df6f32f77ca04dcdbfd126f9a1ec261b9055b950893"
+        "receipt_path": "workflow/reviews/a/r009/build_receipt.json",
+        "receipt_sha256": "6616b4a87ba2b9ce3d5d5ef378b846711c487cfe9f578f7cb7df0e4fed60f7ca",
+        "round": 9,
+        "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -3084,19 +3615,268 @@
           },
           "round": 8,
           "snapshot": "869a39b41f720591a5929df6f32f77ca04dcdbfd126f9a1ec261b9055b950893"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "7e3c118f1467976df07f526c4639492fca6ffcc7b0f96b7bfbe4f26dee76b6aa",
+            "unit_definition.json": "b53110347339b2566f6729aa47d1376f305cc419d3e8152acf59e3e58178ba73"
+          },
+          "bundle": "workflow/reviews/a/r009",
+          "created": "2026-11-15T09:06:04+00:00",
+          "files": {
+            "@outline": "7e3c118f1467976df07f526c4639492fca6ffcc7b0f96b7bfbe4f26dee76b6aa",
+            "@unit": "b53110347339b2566f6729aa47d1376f305cc419d3e8152acf59e3e58178ba73",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/03_graph_asymptotics/01_wp_inputs.tex": "793db9b8212c4a567e451eb02747f8404e5381a3063a7a66dc3f8709422222e2",
+            "sections/03_graph_asymptotics/02_deformation_and_loops.tex": "b4eba50bcb84c702bedfebcbd4d1724554bfbfc74ab0617b692f0d7f07d3bb0e",
+            "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex": "5137e2903f2e9320cdbcf9982d3e0b2894cfcea0c43540489c47d19f6212d36f",
+            "sections/03_graph_asymptotics/04_finite_cores.tex": "56431c3fe86e3ff295648993b58882a5165dd0218dfd403b3bac815c316556c8",
+            "sections/03_graph_asymptotics/INTERFACE.md": "588f31fe7fa1aac19ea1b1d28aee26ccf27f3a9a0698dbba6f2818bfbb37690f",
+            "sections/03_graph_asymptotics/section.tex": "9f796262373323a1567b398153c1182fc619659ee47db53cea6799aabe8d72e3",
+            "sections/03_graph_asymptotics/writer_handoff.md": "209c678223f328047fe1b0f64069b88ab689060618065ff204de1c073ffcdc89",
+            "sections/a_coefficients/01_wp_coefficients.tex": "27bc4629f96eb2f63839b7d291867ec2958e0e97773ee751e5763d78e4430143",
+            "sections/a_coefficients/02_loop_moments.tex": "198b2e3f1b24fad1684bb7cc756809edc7ae723da5617d8ca7a63986c10c2875",
+            "sections/a_coefficients/03_low_complexity_vertices.tex": "7486842c1e3a0b059b44047891bd16b5b6cfed229f24a557d6d6f4bea2b710f0",
+            "sections/a_coefficients/04_finite_core_tables.tex": "cdf7b43c9fdff4359edc874b2d21e46aeb0871bc60791cd9f2bd2d4839a3ed16",
+            "sections/a_coefficients/INTERFACE.md": "c43077fff8267cd1d57c918f6fb8a72422d016f46173f8e57a02b70978fc6a43",
+            "sections/a_coefficients/calculations/README.md": "4b2db0ca6fc8881970a5ac97f60f49bc0766754484d6ccf5983ebac56b54c85d",
+            "sections/a_coefficients/calculations/core_first_correction.py": "afb416739ab32eb989d57948b73f813ccad10f5311b8fdfcb8c1a67917e0bb0b",
+            "sections/a_coefficients/calculations/enumerate_cores.py": "14803060777fcab04b3cfad36915e825848a95977f632a56af2302ead4185c6b",
+            "sections/a_coefficients/calculations/independent_volume_check.py": "57f6783107d703b1c6d946a26dd5d2a2759e07a20097c77bea3f0a9c0a3e6d5b",
+            "sections/a_coefficients/calculations/loop_moments.py": "bb9c157a789ee4a3ecc2fcc877c7ff3ebc496db4788da68d3fbaec377ea57b5c",
+            "sections/a_coefficients/calculations/run_all.py": "cee0eff2c85f15501a78754391f470bea494ae24b64d66afd295294f05cc2ecf",
+            "sections/a_coefficients/calculations/runtime.py": "b3b8881a6295cbc0981140e85955563b6a7f5951bb899e298f62e5cbf96128ef",
+            "sections/a_coefficients/calculations/verify_profiles.py": "503e37dfe3b49b52e413fb79a33ef231363ca14448af9745a5319191610dad43",
+            "sections/a_coefficients/calculations/volume_coefficients.py": "67a62fba487ea435f2a3a8029e7484ea6c5d365530352c030f10c624665dda19",
+            "sections/a_coefficients/calculations/wp_profiles.py": "e4d72df7ed9c113977813f4feec3f42cefebc825fa33049cbd392de6c872fd98",
+            "sections/a_coefficients/section.tex": "9dd6615cc20a074b494e2b36a84ac5f643f7c87fd942123173868af71c569f8c",
+            "sections/a_coefficients/writer_handoff.md": "e58abeb4cfd49ad96a22eaeb2ff944f18b4ad2be5b295208126b624e92dfdfec",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "6e58bd87c7927d0b1ef004b75e80f47c02a7290e024c9fd3a7c9636402b5f4ac",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/a/r009/academic.json",
+              "sha256": "7c03ced5a5024e13e1f899a86de2daaf6c47217dc659347926fc75b7feb75d2c",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/a/r009/math.json",
+              "sha256": "db0bfac99149eeeefb8c13125f5e48c6ccd53a0f16d26ce6be4f16d7e5597a6c",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/a/r009/readability.json",
+              "sha256": "1f853020fbc01210168fcd735dcc8eefe0c2fe148c1891b715404be5a584f8cd",
+              "verdict": "pass"
+            }
+          },
+          "round": 9,
+          "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba"
         }
       ]
     },
     "b": {
-      "accepted": null,
-      "agents": {
-        "academic": null,
-        "math": null,
-        "readability": null,
-        "writer": null
+      "accepted": {
+        "receipt_path": "workflow/reviews/b/r002/build_receipt.json",
+        "receipt_sha256": "b5b94e2a0665b9f1f4670e3b940fb54fc9ba7d6f960f7f01272f6138cba3e9fe",
+        "round": 2,
+        "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871"
       },
-      "status": "planned",
-      "submissions": []
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "status": "approved",
+      "submissions": [
+        {
+          "artifacts": {
+            "changes.diff": "5ac13145fe3300d901dcda557a78f47b3f1123a27681e142b86ffcc532835a23",
+            "outline.md": "184e660e80ee12545569332060518bca3caa37aa2364bc493e2c2ba557dcea65",
+            "unit_definition.json": "5f8a63e318d6f8f18005eb67451647d2ecc96000faa19a015fe179c91d61416b"
+          },
+          "bundle": "workflow/reviews/b/r001",
+          "created": "2026-11-15T09:26:06+00:00",
+          "files": {
+            "@outline": "184e660e80ee12545569332060518bca3caa37aa2364bc493e2c2ba557dcea65",
+            "@unit": "5f8a63e318d6f8f18005eb67451647d2ecc96000faa19a015fe179c91d61416b",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "sections/07_ilw_transport/01_hodge_potential.tex": "3d0052a4af7ff04f3b7d178ae289ce766435cb41f33f9255f48561e5c8f2241e",
+            "sections/07_ilw_transport/02_specialization.tex": "e1ddd400ebc6f0412493822b1686692f6d57176b6c5fa7e875b29c1f36760dc4",
+            "sections/07_ilw_transport/03_exact_transport.tex": "23a3b6277ae5ce325e1da0cd84a99359c0b5e9b4c9641535dde73bc4d7aea9f8",
+            "sections/07_ilw_transport/04_borel_transform.tex": "776d27dff319e3f09e58e1cd4a2626e158e28f5496685819f665cbefc2fe7440",
+            "sections/07_ilw_transport/INTERFACE.md": "1254aff39491d9d1440305dbcc40b1cfb8b42c702a36cada52151899a867bf95",
+            "sections/07_ilw_transport/section.tex": "d5219fbe83cdbb82e4991fe9ea26f7318200dd3dbb430725eb7f1305567f0eed",
+            "sections/07_ilw_transport/writer_handoff.md": "f87fed38ef7dcfcc3a2a8bd9265d55143a8f3473a501d33c44533a42e8c7d6e8",
+            "sections/b_analytic_estimates/01_inverse_domains.tex": "806b7c79ef7fa0de1c54d27616a9c75dbaee76012813d746f18cc504f88908ba",
+            "sections/b_analytic_estimates/02_regular_transport.tex": "fd6196fb7a9b430b66f3703d07844c92109875ee1c5e833fc6b7513d78070fd3",
+            "sections/b_analytic_estimates/03_endpoint_bounds.tex": "b5a482298aa19478b1b1c8c6f0d642e524d7f75fa4761e018a3f7ed241360f16",
+            "sections/b_analytic_estimates/04_local_transport.tex": "1f46eeb0d93bf8f157c21b4ce58d8130367115903c109c43c886044010ed39ae",
+            "sections/b_analytic_estimates/05_negative_primitives.tex": "e871aba9df9fdb67afbc60361dde57a02784e7f177383ab898f49ed852ca1784",
+            "sections/b_analytic_estimates/INTERFACE.md": "7dbe4cb91e0509ab21f0c21de7894a1be5842e70dc655c462728d1c36c2e6085",
+            "sections/b_analytic_estimates/section.tex": "b8638ec5bfe09d553a25a2f0145dc4081c09cc75f30b58df06fb4a212c3a1232",
+            "sections/b_analytic_estimates/writer_handoff.md": "7adcc084f9c1318c0968778a63a02fd4f340abfdbd8fbff106e283b66845c824",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "6058a334b17e72e7c9ef25c718f91df7ebcd0e93617e3299aa89a0bb2b3654b8",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/b/r001/academic.json",
+              "sha256": "53f44833a8b7b53d4366351648a08d1f8286d3ebd8c9a77a46d12b8ca9c86e0e",
+              "verdict": "changes_requested"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/b/r001/math.json",
+              "sha256": "742a6f5841a0cea7cb1afd9d00a0ab7223232e2c2644253c635e43bcb61c2976",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/b/r001/readability.json",
+              "sha256": "5bb3c5f841c35fb5742764d4f10faee13c441d4223cf90a2b51c88e7e5f9cc82",
+              "verdict": "pass"
+            }
+          },
+          "round": 1,
+          "snapshot": "b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "91b763959654854b128b01b9673e7214927ed8f1372de8bacc93fd6348416104",
+            "outline.md": "184e660e80ee12545569332060518bca3caa37aa2364bc493e2c2ba557dcea65",
+            "unit_definition.json": "5f8a63e318d6f8f18005eb67451647d2ecc96000faa19a015fe179c91d61416b"
+          },
+          "bundle": "workflow/reviews/b/r002",
+          "created": "2026-11-15T09:42:53+00:00",
+          "files": {
+            "@outline": "184e660e80ee12545569332060518bca3caa37aa2364bc493e2c2ba557dcea65",
+            "@unit": "5f8a63e318d6f8f18005eb67451647d2ecc96000faa19a015fe179c91d61416b",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "sections/07_ilw_transport/01_hodge_potential.tex": "3d0052a4af7ff04f3b7d178ae289ce766435cb41f33f9255f48561e5c8f2241e",
+            "sections/07_ilw_transport/02_specialization.tex": "e1ddd400ebc6f0412493822b1686692f6d57176b6c5fa7e875b29c1f36760dc4",
+            "sections/07_ilw_transport/03_exact_transport.tex": "23a3b6277ae5ce325e1da0cd84a99359c0b5e9b4c9641535dde73bc4d7aea9f8",
+            "sections/07_ilw_transport/04_borel_transform.tex": "776d27dff319e3f09e58e1cd4a2626e158e28f5496685819f665cbefc2fe7440",
+            "sections/07_ilw_transport/INTERFACE.md": "1254aff39491d9d1440305dbcc40b1cfb8b42c702a36cada52151899a867bf95",
+            "sections/07_ilw_transport/section.tex": "d5219fbe83cdbb82e4991fe9ea26f7318200dd3dbb430725eb7f1305567f0eed",
+            "sections/07_ilw_transport/writer_handoff.md": "f87fed38ef7dcfcc3a2a8bd9265d55143a8f3473a501d33c44533a42e8c7d6e8",
+            "sections/b_analytic_estimates/01_inverse_domains.tex": "806b7c79ef7fa0de1c54d27616a9c75dbaee76012813d746f18cc504f88908ba",
+            "sections/b_analytic_estimates/02_regular_transport.tex": "0a0b26a3685da9c358fff9b9d5a265b4a2c2fc1baed37d1d9a7445cb8faa00ea",
+            "sections/b_analytic_estimates/03_endpoint_bounds.tex": "b5a482298aa19478b1b1c8c6f0d642e524d7f75fa4761e018a3f7ed241360f16",
+            "sections/b_analytic_estimates/04_local_transport.tex": "1f46eeb0d93bf8f157c21b4ce58d8130367115903c109c43c886044010ed39ae",
+            "sections/b_analytic_estimates/05_negative_primitives.tex": "e871aba9df9fdb67afbc60361dde57a02784e7f177383ab898f49ed852ca1784",
+            "sections/b_analytic_estimates/INTERFACE.md": "7dbe4cb91e0509ab21f0c21de7894a1be5842e70dc655c462728d1c36c2e6085",
+            "sections/b_analytic_estimates/section.tex": "b8638ec5bfe09d553a25a2f0145dc4081c09cc75f30b58df06fb4a212c3a1232",
+            "sections/b_analytic_estimates/writer_handoff.md": "0e6069a1e3b1bc98fb74fed1076474613231ecae770c95a228c3e3948be5ecff",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/reviews/b/r001/author_response.json": "e9d919694e3a7e5255c3de7a0d5ac8044006704a9d504197e90b2f1375228d2b",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "0b46850b91f5c9eb62691fcf7ca64ec4e5ae07ffb194d88b06b4bcd385a31aaf",
+          "response_path": "workflow/reviews/b/r001/author_response.json",
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/b/r002/academic.json",
+              "sha256": "7dda9d3670dc419085e1ac10dffe97adb734cffb2e5c30010cd1186491da415f",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/b/r002/math.json",
+              "sha256": "b4aee944e2323d6a4aaa2ae73feca153decaecd9096a2518a518df3616781c86",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/b/r002/readability.json",
+              "sha256": "4fc8b1033edf2db7e0b581d8f8af1d876838a574c11e55716d47821092f92738",
+              "verdict": "pass"
+            }
+          },
+          "round": 2,
+          "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871"
+        }
+      ]
     },
     "c": {
       "accepted": null,
@@ -3122,10 +3902,10 @@
     },
     "s02": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s02/r011/build_receipt.json",
-        "receipt_sha256": "322b22b574d7b7dcc93f1676e3df728e29979ccef99977901a42ccb616d0426e",
-        "round": 11,
-        "snapshot": "05b068eac423d3b7dc81651e9bb23d0b42b242f3497bdb922e49fddf950b37a3"
+        "receipt_path": "workflow/reviews/s02/r012/build_receipt.json",
+        "receipt_sha256": "a16d16a7146afb4a0ecb31b3059db6266f7a7db401a5080e46b87124b378d258",
+        "round": 12,
+        "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -3774,15 +4554,73 @@
           },
           "round": 11,
           "snapshot": "05b068eac423d3b7dc81651e9bb23d0b42b242f3497bdb922e49fddf950b37a3"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "2f349c27b8cc40bea59083e29d225f6c45a9342dc5c960606acdc4b26158a96a",
+            "unit_definition.json": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198"
+          },
+          "bundle": "workflow/reviews/s02/r012",
+          "created": "2026-11-15T08:57:40+00:00",
+          "files": {
+            "@outline": "2f349c27b8cc40bea59083e29d225f6c45a9342dc5c960606acdc4b26158a96a",
+            "@unit": "a98e56cf1f35c44ec546293d9753628d38721296e7de367f8807b35a1e795198",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "36141d0df766923a189df0902cc40bfa9e3891f88f15c49353333fd5348fcf22",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s02/r012/academic.json",
+              "sha256": "600b3f49f59b9253712916cfbd8d1e776655d2c9b8f6ef07cd84c1a08ffcefbf",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s02/r012/math.json",
+              "sha256": "2109f756e65492b81e081de1f3b8ace80f9bd83eb415d79083f2bb6de33f39af",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s02/r012/readability.json",
+              "sha256": "7cc133c6811b5745b17ed79a800fe207901a9007276515fd131d70243469e473",
+              "verdict": "pass"
+            }
+          },
+          "round": 12,
+          "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec"
         }
       ]
     },
     "s03": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s03/r008/build_receipt.json",
-        "receipt_sha256": "61e0602cab7a736a0c7bebfeebdae16efb7a69f7b8f85737c7046be8a0c3dccd",
-        "round": 8,
-        "snapshot": "905ecbc06ae36d511a842d8419aa2a68107cca83fd523f9064a9ab21d5b36a16"
+        "receipt_path": "workflow/reviews/s03/r009/build_receipt.json",
+        "receipt_sha256": "c9000ba27c7b8032480f9623e80f712264d4d56b77a05c6d48d9460815d4e6cf",
+        "round": 9,
+        "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -4311,15 +5149,80 @@
           },
           "round": 8,
           "snapshot": "905ecbc06ae36d511a842d8419aa2a68107cca83fd523f9064a9ab21d5b36a16"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "f8fd72963db9b3925b4eacb4d27b3c4781669f8cb6e466d07473920e78a7bb87",
+            "unit_definition.json": "15a514dfc18563d58dd1dfe3bfb62b21a8a3efdb4175632bbf03d13c3892b725"
+          },
+          "bundle": "workflow/reviews/s03/r009",
+          "created": "2026-11-15T09:03:52+00:00",
+          "files": {
+            "@outline": "f8fd72963db9b3925b4eacb4d27b3c4781669f8cb6e466d07473920e78a7bb87",
+            "@unit": "15a514dfc18563d58dd1dfe3bfb62b21a8a3efdb4175632bbf03d13c3892b725",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/03_graph_asymptotics/01_wp_inputs.tex": "793db9b8212c4a567e451eb02747f8404e5381a3063a7a66dc3f8709422222e2",
+            "sections/03_graph_asymptotics/02_deformation_and_loops.tex": "b4eba50bcb84c702bedfebcbd4d1724554bfbfc74ab0617b692f0d7f07d3bb0e",
+            "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex": "5137e2903f2e9320cdbcf9982d3e0b2894cfcea0c43540489c47d19f6212d36f",
+            "sections/03_graph_asymptotics/04_finite_cores.tex": "56431c3fe86e3ff295648993b58882a5165dd0218dfd403b3bac815c316556c8",
+            "sections/03_graph_asymptotics/INTERFACE.md": "588f31fe7fa1aac19ea1b1d28aee26ccf27f3a9a0698dbba6f2818bfbb37690f",
+            "sections/03_graph_asymptotics/section.tex": "9f796262373323a1567b398153c1182fc619659ee47db53cea6799aabe8d72e3",
+            "sections/03_graph_asymptotics/writer_handoff.md": "209c678223f328047fe1b0f64069b88ab689060618065ff204de1c073ffcdc89",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "4ffe8121bc4b863d6a5b906a0173bd81321743673a50b501a8d8f3a16b23fe9b",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s03/r009/academic.json",
+              "sha256": "a69c1fd7947a3abaf444865b5d5d6d42398875bf381d1647a95d9cc0ae807d98",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s03/r009/math.json",
+              "sha256": "21760631e3c6d6763421555c08cdc7449f5b19e7b1c912d790685756be0c7640",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s03/r009/readability.json",
+              "sha256": "01c396134853a907034458ae98f0c1c41084a251afd5ccfd32bb63f9fdeb96a0",
+              "verdict": "pass"
+            }
+          },
+          "round": 9,
+          "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4"
         }
       ]
     },
     "s04": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s04/r010/build_receipt.json",
-        "receipt_sha256": "042996e52fa5916945aeebd84e462dd13e211955a9edc6f48e12e341740a68d3",
-        "round": 10,
-        "snapshot": "b7702898e9e8f92a916045d0ab1f1d9a7657404cd35e0790b6f4f210b0f0bc46"
+        "receipt_path": "workflow/reviews/s04/r011/build_receipt.json",
+        "receipt_sha256": "8403f9829e6124b64c6de4f4f47eb1eae56a188b1e5daecfade6b671e2facd00",
+        "round": 11,
+        "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -5372,15 +6275,121 @@
           },
           "round": 10,
           "snapshot": "b7702898e9e8f92a916045d0ab1f1d9a7657404cd35e0790b6f4f210b0f0bc46"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "8eda57ffb7a4d8d3688ec1144fd1d99d71e255b8a1a0e553c2ffd11a4a9e5fa3",
+            "unit_definition.json": "b46f8501c4a4e7b910ea2e37cc68b6980e93083e928f5f1cb7353073377b7dde"
+          },
+          "bundle": "workflow/reviews/s04/r011",
+          "created": "2026-11-15T09:08:24+00:00",
+          "files": {
+            "@outline": "8eda57ffb7a4d8d3688ec1144fd1d99d71e255b8a1a0e553c2ffd11a4a9e5fa3",
+            "@unit": "b46f8501c4a4e7b910ea2e37cc68b6980e93083e928f5f1cb7353073377b7dde",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/03_graph_asymptotics/01_wp_inputs.tex": "793db9b8212c4a567e451eb02747f8404e5381a3063a7a66dc3f8709422222e2",
+            "sections/03_graph_asymptotics/02_deformation_and_loops.tex": "b4eba50bcb84c702bedfebcbd4d1724554bfbfc74ab0617b692f0d7f07d3bb0e",
+            "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex": "5137e2903f2e9320cdbcf9982d3e0b2894cfcea0c43540489c47d19f6212d36f",
+            "sections/03_graph_asymptotics/04_finite_cores.tex": "56431c3fe86e3ff295648993b58882a5165dd0218dfd403b3bac815c316556c8",
+            "sections/03_graph_asymptotics/INTERFACE.md": "588f31fe7fa1aac19ea1b1d28aee26ccf27f3a9a0698dbba6f2818bfbb37690f",
+            "sections/03_graph_asymptotics/section.tex": "9f796262373323a1567b398153c1182fc619659ee47db53cea6799aabe8d72e3",
+            "sections/03_graph_asymptotics/writer_handoff.md": "209c678223f328047fe1b0f64069b88ab689060618065ff204de1c073ffcdc89",
+            "sections/04_lambda_one/01_loop_moments.tex": "83e25f9639c678b37b766acdabe0835c1fb1f389b5dfbb9c4e890240ab8abbe8",
+            "sections/04_lambda_one/02_leading_and_first_correction.tex": "4f14b35d25b5420ccab1abb43ba39d345a489118175ce27d1836e0d84c451aef",
+            "sections/04_lambda_one/03_second_correction.tex": "e449bc2e9cde3a62f2fe05a22a6113b0f7b127a5ac95a1203d882e58acd55879",
+            "sections/04_lambda_one/04_proof.tex": "e31406fe02ba6feef417eaa8e1e42a5522bcbe5aa92d522bc788d4aa747376c1",
+            "sections/04_lambda_one/INTERFACE.md": "8597b03aa06dbe6a0d154c2f96509c699f0e83e6aa16a7c0beb4b068137ca477",
+            "sections/04_lambda_one/checks/README.md": "91b3337d50959715ffafb3582066f57610d8bbf005aa8fa6d7b60d48d3910c64",
+            "sections/04_lambda_one/checks/run.py": "88f2d3e4b56e452784e8e2a96706c16cf9fbdd3fdc6723568a29660b3b6ea42c",
+            "sections/04_lambda_one/checks/source/math/check_high_moments.py": "042dfc4f69bf57d1304da431bb6441ef1a444b7bb6103a35cfb15b6072b7643e",
+            "sections/04_lambda_one/checks/source/math/check_volume_extraction.py": "897b9b2f78d7df57a250fbc4b2ec0b2fc9097d2c2b7eaf44edd003a8dc305e6c",
+            "sections/04_lambda_one/checks/source/math/compose_final.py": "8bcd0239f4bacdce1a444ae4ea11a38222a264f2a2e39411422be1158e5a948f",
+            "sections/04_lambda_one/checks/source/math/core_mass_check.py": "57c198e868bfc66fab2e12425468cb52009509ac8396f1285800e94a147a946b",
+            "sections/04_lambda_one/checks/source/math/finite_functional.py": "54933b76809bf6ea475f8114c6c15da54ef6323c8f2e6b5af089f586d8c5158d",
+            "sections/04_lambda_one/checks/source/math/higher_blocks.py": "5206bb9b9c7cdf696f5b7d5cec7bd0a15b88260f85459919723458efa3e92f98",
+            "sections/04_lambda_one/checks/source/math/kernel_moment_check.py": "da9187dfdd7e53266de1c97e8f6a074b71e110468350cbe2ae60b5ce5f04c51c",
+            "sections/04_lambda_one/checks/source/math/literal_input_check.py": "575620861d65952c812a192d474406bd32198948cb2448c98f56807070f1180d",
+            "sections/04_lambda_one/checks/source/root/absolute_volumes.py": "8aacd04a631449ffe8726c0a92a749dd5c57da5f668579d763e49cbbe7471178",
+            "sections/04_lambda_one/checks/source/root/asymptotic_inputs.py": "94910ade35d800b2de193df8f6c61a487307a7376b44aa0c568f8fea2a9df750",
+            "sections/04_lambda_one/checks/source/root/one_positive.py": "94b29ad3cbf8ed973984ce89a4b2c2ff705aadab0ca96b9b5b981ba79303dd8d",
+            "sections/04_lambda_one/checks/source/root/reconstruct_volumes.py": "f1e36fbe26db53eb240c0eb386de997548617e09b5df0b19b2404ab96cfffc5e",
+            "sections/04_lambda_one/checks/source/root/separating.py": "488439d6baa25045fd3c6473185b9540d2297caa889a768ef7e899d309650548",
+            "sections/04_lambda_one/checks/source/writer/profile_engine.py": "d0c205ce74c4e466c8d2d5ded6f559aab631cabbdb003d73ed938f3eca266daa",
+            "sections/04_lambda_one/checks/verification.json": "a27f1befb28ff54c2f5f9f988fd5ab9bb99140329c90e4a5f9f98238ff6cdbaa",
+            "sections/04_lambda_one/section.tex": "3ce6961fd50a4881020c160ae3c89e6b09d3f1586c0b38b79c5f93dc9f632438",
+            "sections/04_lambda_one/writer_handoff.md": "eceb9dc299cacfa910af5122dbdd2f753fac868b1f7d6ccbeafb6be2064e87e8",
+            "sections/a_coefficients/01_wp_coefficients.tex": "27bc4629f96eb2f63839b7d291867ec2958e0e97773ee751e5763d78e4430143",
+            "sections/a_coefficients/02_loop_moments.tex": "198b2e3f1b24fad1684bb7cc756809edc7ae723da5617d8ca7a63986c10c2875",
+            "sections/a_coefficients/03_low_complexity_vertices.tex": "7486842c1e3a0b059b44047891bd16b5b6cfed229f24a557d6d6f4bea2b710f0",
+            "sections/a_coefficients/04_finite_core_tables.tex": "cdf7b43c9fdff4359edc874b2d21e46aeb0871bc60791cd9f2bd2d4839a3ed16",
+            "sections/a_coefficients/INTERFACE.md": "c43077fff8267cd1d57c918f6fb8a72422d016f46173f8e57a02b70978fc6a43",
+            "sections/a_coefficients/calculations/README.md": "4b2db0ca6fc8881970a5ac97f60f49bc0766754484d6ccf5983ebac56b54c85d",
+            "sections/a_coefficients/calculations/core_first_correction.py": "afb416739ab32eb989d57948b73f813ccad10f5311b8fdfcb8c1a67917e0bb0b",
+            "sections/a_coefficients/calculations/enumerate_cores.py": "14803060777fcab04b3cfad36915e825848a95977f632a56af2302ead4185c6b",
+            "sections/a_coefficients/calculations/independent_volume_check.py": "57f6783107d703b1c6d946a26dd5d2a2759e07a20097c77bea3f0a9c0a3e6d5b",
+            "sections/a_coefficients/calculations/loop_moments.py": "bb9c157a789ee4a3ecc2fcc877c7ff3ebc496db4788da68d3fbaec377ea57b5c",
+            "sections/a_coefficients/calculations/run_all.py": "cee0eff2c85f15501a78754391f470bea494ae24b64d66afd295294f05cc2ecf",
+            "sections/a_coefficients/calculations/runtime.py": "b3b8881a6295cbc0981140e85955563b6a7f5951bb899e298f62e5cbf96128ef",
+            "sections/a_coefficients/calculations/verify_profiles.py": "503e37dfe3b49b52e413fb79a33ef231363ca14448af9745a5319191610dad43",
+            "sections/a_coefficients/calculations/volume_coefficients.py": "67a62fba487ea435f2a3a8029e7484ea6c5d365530352c030f10c624665dda19",
+            "sections/a_coefficients/calculations/wp_profiles.py": "e4d72df7ed9c113977813f4feec3f42cefebc825fa33049cbd392de6c872fd98",
+            "sections/a_coefficients/section.tex": "9dd6615cc20a074b494e2b36a84ac5f643f7c87fd942123173868af71c569f8c",
+            "sections/a_coefficients/writer_handoff.md": "e58abeb4cfd49ad96a22eaeb2ff944f18b4ad2be5b295208126b624e92dfdfec",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "feabe4e261f9f1711499b5f7e5652481436486f4e64e113ba81cbf8fc92bad40",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s04/r011/academic.json",
+              "sha256": "ce4e998327ade024d3b1ae56ffc7db161e09f85009fde3c5622a40f674d013f7",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s04/r011/math.json",
+              "sha256": "643c341e413d612ab5a2cba0037e9991ddd25f295db112f85b1bf51f12bc3ff7",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s04/r011/readability.json",
+              "sha256": "fc265a69c4e8ec41a24044a7d4d76bb5e71502cf349cfe54ceef25ec368befe2",
+              "verdict": "pass"
+            }
+          },
+          "round": 11,
+          "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b"
         }
       ]
     },
     "s05": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s05/r007/build_receipt.json",
-        "receipt_sha256": "83fa1d13a9b37489ab7a3309c4f76b768560e821f6a209d88286222f74d18ba0",
-        "round": 7,
-        "snapshot": "36b156c43ec7e15e7e424d273c5c025553e699b447950f2ee580c75414a98bf6"
+        "receipt_path": "workflow/reviews/s05/r008/build_receipt.json",
+        "receipt_sha256": "4645664a426da9afdf6bce4f1c99793bf06c097998bdaa279e1cf346add3d907",
+        "round": 8,
+        "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -6174,15 +7183,127 @@
           },
           "round": 7,
           "snapshot": "36b156c43ec7e15e7e424d273c5c025553e699b447950f2ee580c75414a98bf6"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "436c6893f984c90ff8be54dd6d2a1d3f5a2b82cee74286b38f07951a4f61e7f7",
+            "unit_definition.json": "5e475e211961775723f1a2eef6cb3895c8efdd9947900ad90e8d09939ac209f3"
+          },
+          "bundle": "workflow/reviews/s05/r008",
+          "created": "2026-11-15T09:10:51+00:00",
+          "files": {
+            "@outline": "436c6893f984c90ff8be54dd6d2a1d3f5a2b82cee74286b38f07951a4f61e7f7",
+            "@unit": "5e475e211961775723f1a2eef6cb3895c8efdd9947900ad90e8d09939ac209f3",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/03_graph_asymptotics/01_wp_inputs.tex": "793db9b8212c4a567e451eb02747f8404e5381a3063a7a66dc3f8709422222e2",
+            "sections/03_graph_asymptotics/02_deformation_and_loops.tex": "b4eba50bcb84c702bedfebcbd4d1724554bfbfc74ab0617b692f0d7f07d3bb0e",
+            "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex": "5137e2903f2e9320cdbcf9982d3e0b2894cfcea0c43540489c47d19f6212d36f",
+            "sections/03_graph_asymptotics/04_finite_cores.tex": "56431c3fe86e3ff295648993b58882a5165dd0218dfd403b3bac815c316556c8",
+            "sections/03_graph_asymptotics/INTERFACE.md": "588f31fe7fa1aac19ea1b1d28aee26ccf27f3a9a0698dbba6f2818bfbb37690f",
+            "sections/03_graph_asymptotics/section.tex": "9f796262373323a1567b398153c1182fc619659ee47db53cea6799aabe8d72e3",
+            "sections/03_graph_asymptotics/writer_handoff.md": "209c678223f328047fe1b0f64069b88ab689060618065ff204de1c073ffcdc89",
+            "sections/04_lambda_one/01_loop_moments.tex": "83e25f9639c678b37b766acdabe0835c1fb1f389b5dfbb9c4e890240ab8abbe8",
+            "sections/04_lambda_one/02_leading_and_first_correction.tex": "4f14b35d25b5420ccab1abb43ba39d345a489118175ce27d1836e0d84c451aef",
+            "sections/04_lambda_one/03_second_correction.tex": "e449bc2e9cde3a62f2fe05a22a6113b0f7b127a5ac95a1203d882e58acd55879",
+            "sections/04_lambda_one/04_proof.tex": "e31406fe02ba6feef417eaa8e1e42a5522bcbe5aa92d522bc788d4aa747376c1",
+            "sections/04_lambda_one/INTERFACE.md": "8597b03aa06dbe6a0d154c2f96509c699f0e83e6aa16a7c0beb4b068137ca477",
+            "sections/04_lambda_one/checks/README.md": "91b3337d50959715ffafb3582066f57610d8bbf005aa8fa6d7b60d48d3910c64",
+            "sections/04_lambda_one/checks/run.py": "88f2d3e4b56e452784e8e2a96706c16cf9fbdd3fdc6723568a29660b3b6ea42c",
+            "sections/04_lambda_one/checks/source/math/check_high_moments.py": "042dfc4f69bf57d1304da431bb6441ef1a444b7bb6103a35cfb15b6072b7643e",
+            "sections/04_lambda_one/checks/source/math/check_volume_extraction.py": "897b9b2f78d7df57a250fbc4b2ec0b2fc9097d2c2b7eaf44edd003a8dc305e6c",
+            "sections/04_lambda_one/checks/source/math/compose_final.py": "8bcd0239f4bacdce1a444ae4ea11a38222a264f2a2e39411422be1158e5a948f",
+            "sections/04_lambda_one/checks/source/math/core_mass_check.py": "57c198e868bfc66fab2e12425468cb52009509ac8396f1285800e94a147a946b",
+            "sections/04_lambda_one/checks/source/math/finite_functional.py": "54933b76809bf6ea475f8114c6c15da54ef6323c8f2e6b5af089f586d8c5158d",
+            "sections/04_lambda_one/checks/source/math/higher_blocks.py": "5206bb9b9c7cdf696f5b7d5cec7bd0a15b88260f85459919723458efa3e92f98",
+            "sections/04_lambda_one/checks/source/math/kernel_moment_check.py": "da9187dfdd7e53266de1c97e8f6a074b71e110468350cbe2ae60b5ce5f04c51c",
+            "sections/04_lambda_one/checks/source/math/literal_input_check.py": "575620861d65952c812a192d474406bd32198948cb2448c98f56807070f1180d",
+            "sections/04_lambda_one/checks/source/root/absolute_volumes.py": "8aacd04a631449ffe8726c0a92a749dd5c57da5f668579d763e49cbbe7471178",
+            "sections/04_lambda_one/checks/source/root/asymptotic_inputs.py": "94910ade35d800b2de193df8f6c61a487307a7376b44aa0c568f8fea2a9df750",
+            "sections/04_lambda_one/checks/source/root/one_positive.py": "94b29ad3cbf8ed973984ce89a4b2c2ff705aadab0ca96b9b5b981ba79303dd8d",
+            "sections/04_lambda_one/checks/source/root/reconstruct_volumes.py": "f1e36fbe26db53eb240c0eb386de997548617e09b5df0b19b2404ab96cfffc5e",
+            "sections/04_lambda_one/checks/source/root/separating.py": "488439d6baa25045fd3c6473185b9540d2297caa889a768ef7e899d309650548",
+            "sections/04_lambda_one/checks/source/writer/profile_engine.py": "d0c205ce74c4e466c8d2d5ded6f559aab631cabbdb003d73ed938f3eca266daa",
+            "sections/04_lambda_one/checks/verification.json": "a27f1befb28ff54c2f5f9f988fd5ab9bb99140329c90e4a5f9f98238ff6cdbaa",
+            "sections/04_lambda_one/section.tex": "3ce6961fd50a4881020c160ae3c89e6b09d3f1586c0b38b79c5f93dc9f632438",
+            "sections/04_lambda_one/writer_handoff.md": "eceb9dc299cacfa910af5122dbdd2f753fac868b1f7d6ccbeafb6be2064e87e8",
+            "sections/05_fixed_insertions/01_character_filtration.tex": "349e8e86ef3f2c9ac5fcbdfdbdd87f7d1e4f99ebbef2dafba47c4956ea13b086",
+            "sections/05_fixed_insertions/02_single_character.tex": "417a3db3480098d9cf151227166b37538422bfd738b8f8df598b695f7b8349ec",
+            "sections/05_fixed_insertions/03_proof_and_examples.tex": "6bbe9691d56b188ff78aaab7f2266dc11b851e5a18e784ca6aed5816de401bd4",
+            "sections/05_fixed_insertions/INTERFACE.md": "746f8e7e0634a971d3b4c6a3dc76aeee616c03bcdda8ecb4f19a704fa5df417e",
+            "sections/05_fixed_insertions/section.tex": "7660608befff186f2c5d30428f8cb49f0b0ccbbda2bd282538b4198f06a80cdf",
+            "sections/05_fixed_insertions/writer_handoff.md": "65c99d3570b006c47705411483af185d27967aaf9ab221eb359a90566ae142de",
+            "sections/a_coefficients/01_wp_coefficients.tex": "27bc4629f96eb2f63839b7d291867ec2958e0e97773ee751e5763d78e4430143",
+            "sections/a_coefficients/02_loop_moments.tex": "198b2e3f1b24fad1684bb7cc756809edc7ae723da5617d8ca7a63986c10c2875",
+            "sections/a_coefficients/03_low_complexity_vertices.tex": "7486842c1e3a0b059b44047891bd16b5b6cfed229f24a557d6d6f4bea2b710f0",
+            "sections/a_coefficients/04_finite_core_tables.tex": "cdf7b43c9fdff4359edc874b2d21e46aeb0871bc60791cd9f2bd2d4839a3ed16",
+            "sections/a_coefficients/INTERFACE.md": "c43077fff8267cd1d57c918f6fb8a72422d016f46173f8e57a02b70978fc6a43",
+            "sections/a_coefficients/calculations/README.md": "4b2db0ca6fc8881970a5ac97f60f49bc0766754484d6ccf5983ebac56b54c85d",
+            "sections/a_coefficients/calculations/core_first_correction.py": "afb416739ab32eb989d57948b73f813ccad10f5311b8fdfcb8c1a67917e0bb0b",
+            "sections/a_coefficients/calculations/enumerate_cores.py": "14803060777fcab04b3cfad36915e825848a95977f632a56af2302ead4185c6b",
+            "sections/a_coefficients/calculations/independent_volume_check.py": "57f6783107d703b1c6d946a26dd5d2a2759e07a20097c77bea3f0a9c0a3e6d5b",
+            "sections/a_coefficients/calculations/loop_moments.py": "bb9c157a789ee4a3ecc2fcc877c7ff3ebc496db4788da68d3fbaec377ea57b5c",
+            "sections/a_coefficients/calculations/run_all.py": "cee0eff2c85f15501a78754391f470bea494ae24b64d66afd295294f05cc2ecf",
+            "sections/a_coefficients/calculations/runtime.py": "b3b8881a6295cbc0981140e85955563b6a7f5951bb899e298f62e5cbf96128ef",
+            "sections/a_coefficients/calculations/verify_profiles.py": "503e37dfe3b49b52e413fb79a33ef231363ca14448af9745a5319191610dad43",
+            "sections/a_coefficients/calculations/volume_coefficients.py": "67a62fba487ea435f2a3a8029e7484ea6c5d365530352c030f10c624665dda19",
+            "sections/a_coefficients/calculations/wp_profiles.py": "e4d72df7ed9c113977813f4feec3f42cefebc825fa33049cbd392de6c872fd98",
+            "sections/a_coefficients/section.tex": "9dd6615cc20a074b494e2b36a84ac5f643f7c87fd942123173868af71c569f8c",
+            "sections/a_coefficients/writer_handoff.md": "e58abeb4cfd49ad96a22eaeb2ff944f18b4ad2be5b295208126b624e92dfdfec",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "141f76234837b07cacc12830db019fbcb84c072998d050df80a351205ef76d88",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s05/r008/academic.json",
+              "sha256": "e0e1a61daf5dbd7905fea7992526fe0c39d29f67b089411c371df8ddb0c0cfc9",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s05/r008/math.json",
+              "sha256": "ec0d56a3723e25ffa3c007e020a822ebf7582c7a24b562663ca92648d7a9df1c",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s05/r008/readability.json",
+              "sha256": "0597eae7763f701eb3e053a6c7f463d60df3c504d1855354e729cc4b780704f8",
+              "verdict": "pass"
+            }
+          },
+          "round": 8,
+          "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3"
         }
       ]
     },
     "s06": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s06/r005/build_receipt.json",
-        "receipt_sha256": "cfb28669ef4bf1dbd0b2b1ce1627fd241aeee95c2ce3e79446676d3530ba421b",
-        "round": 5,
-        "snapshot": "d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd"
+        "receipt_path": "workflow/reviews/s06/r006/build_receipt.json",
+        "receipt_sha256": "6cf720d337561ae5b6612dd6e0db03c2ce96c960bd91b165c30c4081638b759f",
+        "round": 6,
+        "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -6517,15 +7638,80 @@
           },
           "round": 5,
           "snapshot": "d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "433fc9c1981284f0f0b490a1fa01e44f213ca1539b0f410e48276a4639497999",
+            "unit_definition.json": "8af4ae7a138fb1c65e19e91d5922a7287baf159c16f55ac540f521e825b858dc"
+          },
+          "bundle": "workflow/reviews/s06/r006",
+          "created": "2026-11-15T09:13:15+00:00",
+          "files": {
+            "@outline": "433fc9c1981284f0f0b490a1fa01e44f213ca1539b0f410e48276a4639497999",
+            "@unit": "8af4ae7a138fb1c65e19e91d5922a7287baf159c16f55ac540f521e825b858dc",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "dfc528f156ba624663b065a637236dabcfe12c30832f5e05ab6a165678d4921a",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s06/r006/academic.json",
+              "sha256": "b54ed7029ee81e547103bce1dc8b7897ff70330c7656d0bffbedb7d0fdfded3a",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s06/r006/math.json",
+              "sha256": "ea0a782e09a506d458dc6afaf3c4ee2ed2d2181cc29f7d7aa7ee593c2503f289",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s06/r006/readability.json",
+              "sha256": "4cfac53a87d658f7b83207cc5b51f78601099fb0fff6535f38e14caa37db2d12",
+              "verdict": "pass"
+            }
+          },
+          "round": 6,
+          "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de"
         }
       ]
     },
     "s07": {
       "accepted": {
-        "receipt_path": "workflow/reviews/s07/r003/build_receipt.json",
-        "receipt_sha256": "8898bf27b21fa6cf4805a7874a66969eba897c6765f88545850ada7b58bc6aa7",
-        "round": 3,
-        "snapshot": "f8d93be7cf973184112eda4d49a6b2f401ba75cb74708bf162660947737271c9"
+        "receipt_path": "workflow/reviews/s07/r004/build_receipt.json",
+        "receipt_sha256": "67798f3c7ff7dee01f1b7d4c26bbb1246756f9144503b946d722816b66e6b223",
+        "round": 4,
+        "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53"
       },
       "agents": {
         "academic": "/root/s02_academic",
@@ -6751,19 +7937,276 @@
           },
           "round": 3,
           "snapshot": "f8d93be7cf973184112eda4d49a6b2f401ba75cb74708bf162660947737271c9"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+            "outline.md": "12eccfc33598f78c3b3417e5122db76de5f7088c9ce2dcc25947a4a8a77b6588",
+            "unit_definition.json": "fa4d30761cbdccb5c4b6223aaa2dd24e8668e3cd240d65610a268de8b67f3208"
+          },
+          "bundle": "workflow/reviews/s07/r004",
+          "created": "2026-11-15T09:15:36+00:00",
+          "files": {
+            "@outline": "12eccfc33598f78c3b3417e5122db76de5f7088c9ce2dcc25947a4a8a77b6588",
+            "@unit": "fa4d30761cbdccb5c4b6223aaa2dd24e8668e3cd240d65610a268de8b67f3208",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "sections/07_ilw_transport/01_hodge_potential.tex": "3d0052a4af7ff04f3b7d178ae289ce766435cb41f33f9255f48561e5c8f2241e",
+            "sections/07_ilw_transport/02_specialization.tex": "e1ddd400ebc6f0412493822b1686692f6d57176b6c5fa7e875b29c1f36760dc4",
+            "sections/07_ilw_transport/03_exact_transport.tex": "23a3b6277ae5ce325e1da0cd84a99359c0b5e9b4c9641535dde73bc4d7aea9f8",
+            "sections/07_ilw_transport/04_borel_transform.tex": "776d27dff319e3f09e58e1cd4a2626e158e28f5496685819f665cbefc2fe7440",
+            "sections/07_ilw_transport/INTERFACE.md": "1254aff39491d9d1440305dbcc40b1cfb8b42c702a36cada52151899a867bf95",
+            "sections/07_ilw_transport/section.tex": "d5219fbe83cdbb82e4991fe9ea26f7318200dd3dbb430725eb7f1305567f0eed",
+            "sections/07_ilw_transport/writer_handoff.md": "f87fed38ef7dcfcc3a2a8bd9265d55143a8f3473a501d33c44533a42e8c7d6e8",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "cdf1eedadb807a38d7fa06cada4b93ea1b1956a12b1491f1413b07ecec0e925c",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s07/r004/academic.json",
+              "sha256": "4aad8cb8872106cf1af9468d64da09757c3cc43cd087ee4fbc2329570e9b10a3",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s07/r004/math.json",
+              "sha256": "9c52c4e489fca759c3acb9b1ea479f499da682c264abafbf804d62268d0bf557",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s07/r004/readability.json",
+              "sha256": "7b8d1884e7e2e797d379bc3ad1005c0a0b80ad7c82ab33bc06f307277d86f0a3",
+              "verdict": "pass"
+            }
+          },
+          "round": 4,
+          "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53"
         }
       ]
     },
     "s08": {
-      "accepted": null,
-      "agents": {
-        "academic": null,
-        "math": null,
-        "readability": null,
-        "writer": null
+      "accepted": {
+        "receipt_path": "workflow/reviews/s08/r002/build_receipt.json",
+        "receipt_sha256": "58b3606273d7d088461b1298a090f7b562753e0310becfc8041fa34a4f46c77e",
+        "round": 2,
+        "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b"
       },
-      "status": "planned",
-      "submissions": []
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "status": "approved",
+      "submissions": [
+        {
+          "artifacts": {
+            "changes.diff": "5ac13145fe3300d901dcda557a78f47b3f1123a27681e142b86ffcc532835a23",
+            "outline.md": "996aaede8db576b82919bea1d82154f3c608c5cc22e3d8914e0af5a1a4699fff",
+            "unit_definition.json": "dacbdcd9bc92adc700359fab1a109f5d5e34bc75ff5059b84e236d01625f26b1"
+          },
+          "bundle": "workflow/reviews/s08/r001",
+          "created": "2026-11-15T10:11:22+00:00",
+          "files": {
+            "@outline": "996aaede8db576b82919bea1d82154f3c608c5cc22e3d8914e0af5a1a4699fff",
+            "@unit": "dacbdcd9bc92adc700359fab1a109f5d5e34bc75ff5059b84e236d01625f26b1",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "sections/07_ilw_transport/01_hodge_potential.tex": "3d0052a4af7ff04f3b7d178ae289ce766435cb41f33f9255f48561e5c8f2241e",
+            "sections/07_ilw_transport/02_specialization.tex": "e1ddd400ebc6f0412493822b1686692f6d57176b6c5fa7e875b29c1f36760dc4",
+            "sections/07_ilw_transport/03_exact_transport.tex": "23a3b6277ae5ce325e1da0cd84a99359c0b5e9b4c9641535dde73bc4d7aea9f8",
+            "sections/07_ilw_transport/04_borel_transform.tex": "776d27dff319e3f09e58e1cd4a2626e158e28f5496685819f665cbefc2fe7440",
+            "sections/07_ilw_transport/INTERFACE.md": "1254aff39491d9d1440305dbcc40b1cfb8b42c702a36cada52151899a867bf95",
+            "sections/07_ilw_transport/section.tex": "d5219fbe83cdbb82e4991fe9ea26f7318200dd3dbb430725eb7f1305567f0eed",
+            "sections/07_ilw_transport/writer_handoff.md": "f87fed38ef7dcfcc3a2a8bd9265d55143a8f3473a501d33c44533a42e8c7d6e8",
+            "sections/08_fixed_defect/01_analytic_domains.tex": "87fae1a8610c8da0d2fd5f068a3f5a1d1c70350c4c563fa3edc822bd07ee76b3",
+            "sections/08_fixed_defect/02_singularity_propagation.tex": "9d86007eac6e79e0ae59172c206e847894093a9de854cca52e761b95d7ab946d",
+            "sections/08_fixed_defect/03_transport_constant.tex": "69b5b505bf73a101f7bcc17756263e4e96495c2137164423b4fba9dbf2502313",
+            "sections/08_fixed_defect/04_coefficient_transfer.tex": "d541c8d1e32cebc54d621ce9ebf30f19cdba86cd2ceb46b30bb811ee33456053",
+            "sections/08_fixed_defect/05_background_comparison.tex": "97b4801a195eaddc48957d5831231e50fd892908056cfdadc07c16c1f153d0dc",
+            "sections/08_fixed_defect/06_proof.tex": "ff39870c4101fa1501f1c9116fd90fd9918b99d4fcdc16d426680e03650671ba",
+            "sections/08_fixed_defect/INTERFACE.md": "0727c0d81c1f0d72fa26ead71b897beb42fdfaa3aed9e6bdf9bd5ceb90696a55",
+            "sections/08_fixed_defect/section.tex": "6a8dee6716bc1eca100d97d6b6b7d7eb20937730744a66bb1cbf55da7ca2e208",
+            "sections/08_fixed_defect/writer_handoff.md": "f445c845005db14d56a1a02f24ab2adc929436142547a26171a86fb5fed6c5d4",
+            "sections/b_analytic_estimates/01_inverse_domains.tex": "806b7c79ef7fa0de1c54d27616a9c75dbaee76012813d746f18cc504f88908ba",
+            "sections/b_analytic_estimates/02_regular_transport.tex": "0a0b26a3685da9c358fff9b9d5a265b4a2c2fc1baed37d1d9a7445cb8faa00ea",
+            "sections/b_analytic_estimates/03_endpoint_bounds.tex": "b5a482298aa19478b1b1c8c6f0d642e524d7f75fa4761e018a3f7ed241360f16",
+            "sections/b_analytic_estimates/04_local_transport.tex": "1f46eeb0d93bf8f157c21b4ce58d8130367115903c109c43c886044010ed39ae",
+            "sections/b_analytic_estimates/05_negative_primitives.tex": "e871aba9df9fdb67afbc60361dde57a02784e7f177383ab898f49ed852ca1784",
+            "sections/b_analytic_estimates/INTERFACE.md": "7dbe4cb91e0509ab21f0c21de7894a1be5842e70dc655c462728d1c36c2e6085",
+            "sections/b_analytic_estimates/section.tex": "b8638ec5bfe09d553a25a2f0145dc4081c09cc75f30b58df06fb4a212c3a1232",
+            "sections/b_analytic_estimates/writer_handoff.md": "0e6069a1e3b1bc98fb74fed1076474613231ecae770c95a228c3e3948be5ecff",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "e2686e30dc05912b5b5bf63be83a4a3cc2ab65de9f75e5c198982798607726a0",
+          "response_path": null,
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s08/r001/academic.json",
+              "sha256": "9889df2e2cec3a85a4c1da26c96e1444641233a54aa5d65f88d3f1ba486d1682",
+              "verdict": "changes_requested"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s08/r001/math.json",
+              "sha256": "acd25d7ee605d7e76f6fc561813e091ab5eb8765d3fa568978e6e01a39cfbca4",
+              "verdict": "changes_requested"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s08/r001/readability.json",
+              "sha256": "9270614c50102d86c729411b7097b254ed1a7252290046c847c7404ae8551e31",
+              "verdict": "changes_requested"
+            }
+          },
+          "round": 1,
+          "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd"
+        },
+        {
+          "artifacts": {
+            "changes.diff": "7dfbd9b7729c4e72dad21f750e44d73ce634ee4164fa30fe7fb25a9136679672",
+            "outline.md": "996aaede8db576b82919bea1d82154f3c608c5cc22e3d8914e0af5a1a4699fff",
+            "unit_definition.json": "dacbdcd9bc92adc700359fab1a109f5d5e34bc75ff5059b84e236d01625f26b1"
+          },
+          "bundle": "workflow/reviews/s08/r002",
+          "created": "2026-11-15T10:31:23+00:00",
+          "files": {
+            "@outline": "996aaede8db576b82919bea1d82154f3c608c5cc22e3d8914e0af5a1a4699fff",
+            "@unit": "dacbdcd9bc92adc700359fab1a109f5d5e34bc75ff5059b84e236d01625f26b1",
+            "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+            "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+            "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+            "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+            "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+            "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+            "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+            "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+            "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+            "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+            "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+            "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+            "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+            "sections/06_top_hodge/01_exact_vertices.tex": "52cb1414b41bbd72c6212107a9a95d91a2a129b34c2a4e8a92a9f072e77fc87a",
+            "sections/06_top_hodge/02_bessel_critical_point.tex": "a6b0d76ea777301753ccc612190dc9f625b9cdb74e3be4b64a0a95450ba41b19",
+            "sections/06_top_hodge/03_tree_tails.tex": "4c94ef745105279b500058679a8ff5cbae9ef616beb7b630fdc5183ff2b65bfa",
+            "sections/06_top_hodge/04_correction_and_proof.tex": "71b35b470c2cbd483d7dffdef39bb365e6343d195cd73b3ec319f989ba2ae0b2",
+            "sections/06_top_hodge/INTERFACE.md": "2d4bfe23ae87eec80b7f3001386ea0a36873f7e46df2d96af0656e7655b60472",
+            "sections/06_top_hodge/section.tex": "96245a201e87c75e8630ed5488c50dc81351177f4e9a345c37a3285b1cc8fff9",
+            "sections/06_top_hodge/writer_handoff.md": "5f668c2571b25f5be58f140b292b37646379b48b1b7b3fbbd5999544cc59fdc3",
+            "sections/07_ilw_transport/01_hodge_potential.tex": "3d0052a4af7ff04f3b7d178ae289ce766435cb41f33f9255f48561e5c8f2241e",
+            "sections/07_ilw_transport/02_specialization.tex": "e1ddd400ebc6f0412493822b1686692f6d57176b6c5fa7e875b29c1f36760dc4",
+            "sections/07_ilw_transport/03_exact_transport.tex": "23a3b6277ae5ce325e1da0cd84a99359c0b5e9b4c9641535dde73bc4d7aea9f8",
+            "sections/07_ilw_transport/04_borel_transform.tex": "776d27dff319e3f09e58e1cd4a2626e158e28f5496685819f665cbefc2fe7440",
+            "sections/07_ilw_transport/INTERFACE.md": "1254aff39491d9d1440305dbcc40b1cfb8b42c702a36cada52151899a867bf95",
+            "sections/07_ilw_transport/section.tex": "d5219fbe83cdbb82e4991fe9ea26f7318200dd3dbb430725eb7f1305567f0eed",
+            "sections/07_ilw_transport/writer_handoff.md": "f87fed38ef7dcfcc3a2a8bd9265d55143a8f3473a501d33c44533a42e8c7d6e8",
+            "sections/08_fixed_defect/01_analytic_domains.tex": "87fae1a8610c8da0d2fd5f068a3f5a1d1c70350c4c563fa3edc822bd07ee76b3",
+            "sections/08_fixed_defect/02_singularity_propagation.tex": "9d86007eac6e79e0ae59172c206e847894093a9de854cca52e761b95d7ab946d",
+            "sections/08_fixed_defect/03_transport_constant.tex": "69b5b505bf73a101f7bcc17756263e4e96495c2137164423b4fba9dbf2502313",
+            "sections/08_fixed_defect/04_coefficient_transfer.tex": "68eb4ab3d756bdddb06ca758dd74ad670e208e670094b64ac5fd3c5e84967751",
+            "sections/08_fixed_defect/05_background_comparison.tex": "f3fdda99a23f914ca2f3a179e11aba5ec95fdfd902ade01188370db62dc58f11",
+            "sections/08_fixed_defect/06_proof.tex": "ff39870c4101fa1501f1c9116fd90fd9918b99d4fcdc16d426680e03650671ba",
+            "sections/08_fixed_defect/INTERFACE.md": "184f47b0aee772daa7688fe5a0a494d8207cce2afc8bed5cbab124ffa7aeee29",
+            "sections/08_fixed_defect/section.tex": "6a8dee6716bc1eca100d97d6b6b7d7eb20937730744a66bb1cbf55da7ca2e208",
+            "sections/08_fixed_defect/writer_handoff.md": "5e12cca7176ceea6bbc0adca3e8701b3eecd0459b3d08a927a1d20ec4a23c04e",
+            "sections/b_analytic_estimates/01_inverse_domains.tex": "806b7c79ef7fa0de1c54d27616a9c75dbaee76012813d746f18cc504f88908ba",
+            "sections/b_analytic_estimates/02_regular_transport.tex": "0a0b26a3685da9c358fff9b9d5a265b4a2c2fc1baed37d1d9a7445cb8faa00ea",
+            "sections/b_analytic_estimates/03_endpoint_bounds.tex": "b5a482298aa19478b1b1c8c6f0d642e524d7f75fa4761e018a3f7ed241360f16",
+            "sections/b_analytic_estimates/04_local_transport.tex": "1f46eeb0d93bf8f157c21b4ce58d8130367115903c109c43c886044010ed39ae",
+            "sections/b_analytic_estimates/05_negative_primitives.tex": "e871aba9df9fdb67afbc60361dde57a02784e7f177383ab898f49ed852ca1784",
+            "sections/b_analytic_estimates/INTERFACE.md": "7dbe4cb91e0509ab21f0c21de7894a1be5842e70dc655c462728d1c36c2e6085",
+            "sections/b_analytic_estimates/section.tex": "b8638ec5bfe09d553a25a2f0145dc4081c09cc75f30b58df06fb4a212c3a1232",
+            "sections/b_analytic_estimates/writer_handoff.md": "0e6069a1e3b1bc98fb74fed1076474613231ecae770c95a228c3e3948be5ecff",
+            "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+            "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+            "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+            "workflow/reviews/s08/r001/author_response.json": "222475632a2ba5c702addc3e31732ce0dcaf8d25af99e20d14812a7505698bbe",
+            "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+            "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+            "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+            "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+            "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+          },
+          "record_sha256": "18fc4e55de3be046df8aa2fd1277d07e1bba9f6418be7126486926fb20923e81",
+          "response_path": "workflow/reviews/s08/r001/author_response.json",
+          "reviews": {
+            "academic": {
+              "agent_id": "/root/s02_academic",
+              "path": "workflow/reviews/s08/r002/academic.json",
+              "sha256": "8f213a0177e7f3ed8bddb11fdcc5ca53f55eef9949f9d4a499e68ede10f40449",
+              "verdict": "pass"
+            },
+            "math": {
+              "agent_id": "/root/s02_math",
+              "path": "workflow/reviews/s08/r002/math.json",
+              "sha256": "76abfabf3485a71576a943d959d1d37dca121054031823df0516aea6e381d248",
+              "verdict": "pass"
+            },
+            "readability": {
+              "agent_id": "/root/s02_readability",
+              "path": "workflow/reviews/s08/r002/readability.json",
+              "sha256": "402d5587d97f5098683b9f8559a17b5e917cc2b29290c26b01374998d2759489",
+              "verdict": "pass"
+            }
+          },
+          "round": 2,
+          "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b"
+        }
+      ]
     }
   }
 }

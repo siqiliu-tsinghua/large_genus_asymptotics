@@ -1,0 +1,77 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/b",
+      "build/previews/b/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/b/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/b",
+      "build/previews/b/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/b",
+      "build/previews/b/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/b/preview.aux",
+    "build/previews/b/preview.bbl",
+    "build/previews/b/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/06_top_hodge/01_exact_vertices.tex",
+    "sections/06_top_hodge/02_bessel_critical_point.tex",
+    "sections/06_top_hodge/03_tree_tails.tex",
+    "sections/06_top_hodge/04_correction_and_proof.tex",
+    "sections/06_top_hodge/section.tex",
+    "sections/07_ilw_transport/01_hodge_potential.tex",
+    "sections/07_ilw_transport/02_specialization.tex",
+    "sections/07_ilw_transport/03_exact_transport.tex",
+    "sections/07_ilw_transport/04_borel_transform.tex",
+    "sections/07_ilw_transport/section.tex",
+    "sections/b_analytic_estimates/01_inverse_domains.tex",
+    "sections/b_analytic_estimates/02_regular_transport.tex",
+    "sections/b_analytic_estimates/03_endpoint_bounds.tex",
+    "sections/b_analytic_estimates/04_local_transport.tex",
+    "sections/b_analytic_estimates/05_negative_primitives.tex",
+    "sections/b_analytic_estimates/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/b/preview.pdf",
+  "pdf_sha256": "10d472b6aba9211a4c2dc7835e6d54069fe54bd0b1c145b0ff18bba207fee265",
+  "schema_version": 1,
+  "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871",
+  "source_hash": "404277907249b3e7606098a9fd8340b125b1212709ce29163351c54db6bade53",
+  "strict": true,
+  "time": "2026-11-15T09:45:44+00:00",
+  "unit": "b",
+  "with_dependencies": true
+}

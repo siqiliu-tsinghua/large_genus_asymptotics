@@ -1,0 +1,74 @@
+% !TeX root = ../../main.tex
+\subsection{A specialization producing the kappa background}
+\label{subsec:s07:02}
+
+Introduce a formal parameter $\theta$ and specialize the times to
+\begin{equation}\label{eq:s07:times}
+ t_0=x,\qquad t_1=-\theta,\qquad
+ t_d=\frac{(-1)^{d-2}}{(d-1)!}\quad(d\geq2).
+\end{equation}
+We denote the resulting coefficients by
+$\mathcal F_{g,h}(\theta;x)$ and $\mathcal G_{g,h}(\theta;x)$.
+For each coefficient of $x$ and $\theta$, dimension leaves only
+finitely many choices of the times with index at least two.
+The specialization is therefore defined formally before any analytic
+continuation is considered.
+
+For $g\geq h\geq0$ and $n\geq0$ with $2g-2+n>0$, put
+\begin{equation}\label{eq:s07:kappa-integrals}
+ T_{g,h,n}=\int_{\MM_{g,n}}\lambda_{g-h}e^{\kappa_1}.
+\end{equation}
+The exponential is truncated to the degree of the integral. The next
+identity explains the particular factorials and signs in
+\eqref{eq:s07:times}.
+
+\begin{prp}[Forgetting specialization]\label{prp:s07:specialization}
+For every stable target in \eqref{eq:s07:kappa-integrals},
+\begin{equation}\label{eq:s07:specialization}
+ \partial_x^n\mathcal F_{g,h}(0;0)=T_{g,h,n}.
+\end{equation}
+Under \eqref{eq:s07:times}, $v$ becomes the inverse germ $v_\theta$
+defined by
+\begin{equation}\label{eq:s07:specialized-inverse}
+ w_\theta(u)=w(u)+\theta u,\qquad
+ w_\theta(v_\theta(x))=x,\qquad v_\theta(0)=0.
+\end{equation}
+Its coefficients belong to $\mathbb Q[(1+\theta)^{-1}]$.
+\end{prp}
+\begin{prf}
+At $\theta=0$, each additional marking contributes
+\begin{equation}\label{eq:s07:new-marking}
+ \sum_{d\geq2}\frac{(-1)^{d-2}\psi^d}{(d-1)!}
+                    =\psi(1-e^{-\psi}).
+\end{equation}
+The $n$ derivatives retain $n$ labelled zero-degree markings. The
+factor $1/m!$ for the $m$ additional markings is exactly the factor
+in \eqref{eq:s02:kappa-exponential} with parameter one. The Hodge
+class pulls back under forgetting, so the projection formula gives
+\eqref{eq:s07:specialization}. Each added marking uses at least
+two powers of its cotangent class, whereas its addition increases
+dimension by one; thus this sum is finite for fixed $g,h,n$.
+
+For the inverse, insert \eqref{eq:s07:times} in
+\eqref{eq:s07:genus-zero-inverse}. The coefficient of $u^d$ in
+$W$ for $d\geq2$ is $(-1)^{d-1}/(d!(d-1)!)$, which is precisely
+the coefficient in $w(u)=u\Phi(u)$. The linear coefficient is
+$1+\theta$, proving \eqref{eq:s07:specialized-inverse}.
+Formal inversion only divides by powers of that coefficient.
+\end{prf}
+
+For each fixed real $\theta\geq0$, the inverse function theorem
+also makes $v_\theta$ an analytic germ at $x=0$, since
+$w_\theta'(0)=1+\theta$. This local observation does not assert a
+common global inverse domain. At $\theta=0$, the unmarked positive
+genus integrals needed later are
+\begin{equation}\label{eq:s07:unmarked}
+ T_{g,h,0}
+ =\frac1{(g_2+h)!}\int_{\MM_g}\lambda_{g-h}\kappa_1^{g_2+h}
+       \qquad(g\geq2,\ 0\leq h\leq g).
+\end{equation}
+Returning from this $\kappa_1$ background to $b_g(h)$ requires control
+of the boundary term in $12\lambda_1=\kappa_1+\delta$; this comparison
+is part of the next section. The raw potential $\mathcal F$,
+recovered by \eqref{eq:s07:inverse-miura}, has the direct intersection
+interpretation \eqref{eq:s07:specialization}.

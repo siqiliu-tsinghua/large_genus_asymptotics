@@ -1,0 +1,39 @@
+{
+  "agent_id": "REPLACE_WITH_REAL_AGENT_ID",
+  "checks": {
+    "dependencies": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "dimensions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "normalization": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "proof_logic": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "uniformity": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd",
+  "summary": "",
+  "unit": "s08",
+  "verdict": "FILL_IN"
+}

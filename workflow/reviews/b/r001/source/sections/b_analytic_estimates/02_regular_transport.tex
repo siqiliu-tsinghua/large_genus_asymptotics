@@ -1,0 +1,204 @@
+% !TeX root = ../../main.tex
+\subsection{Normal convergence away from a critical point}
+\label{subsec:b:regular}
+
+At a simple inverse branch, the coefficients $L_{g,h}$ have an
+unambiguous meaning before their Borel series is known to converge:
+evaluate the rational jet expressions of
+Lemma~\ref{lmm:s07:finite-jets} on that branch. Their characteristic
+identities remain identities of those rational expressions. We now
+use them to construct the actual holomorphic Borel functions.
+
+The first estimate is local and has no critical-point hypothesis. Its
+dependence on the inverse derivative is important: this derivative
+grows along a remote characteristic and on the negative real axis.
+
+\begin{lmm}[A regular disk]\label{lmm:b:regular-disk}
+Let $u_0\in\mathbb C$, $\theta_0\geq0$, $r>0$ and $\beta>0$,
+and suppose that
+\begin{equation}\label{eq:b:regular-hypothesis}
+ |w_{\theta_0}'(u)-\beta|\leq\beta/4
+                  \quad\text{on }\overline{\mathbb D(u_0,r)}.
+\end{equation}
+For every fixed integer $h\geq1$ there are positive constants
+$c_h,C_h$, depending only on $h$, such that, for every
+$\theta\geq\theta_0$, the Borel series $\mathcal L_h$ on this
+inverse branch converges normally when
+\begin{equation}\label{eq:b:regular-disk}
+ |x-w_\theta(u_0)|+|y|
+                  <c_h r(\beta+\theta-\theta_0).
+\end{equation}
+Its supremum there is at most
+$C_h(\beta+\theta-\theta_0)^{h-1}$. On a smaller disk, for every
+fixed pair of nonnegative integers $a,k$,
+\begin{equation}\label{eq:b:regular-derivatives}
+ |\partial_x^a\partial_y^k\mathcal L_h|
+ \leq C_{h,a,k}(\beta+\theta-\theta_0)^{h-1}
+                  [r(\beta+\theta-\theta_0)]^{-a-k}.
+\end{equation}
+The characteristic integrals defining these functions converge
+normally on smaller disks. The constants are independent of
+$u_0,r,\beta,\theta_0$ and of the genus.
+\end{lmm}
+\begin{prf}
+Write $s=\beta+\theta-\theta_0>0$ only within this proof.
+Condition~\eqref{eq:b:regular-hypothesis} bounds the derivative of
+$w_\theta$ above and below by fixed multiples of $s$, with
+positive real part. Radial integration and univalence give an inverse
+disk of radius a fixed multiple of $r s$. On a smaller
+disk, its derivative differs from its central value by a small fixed
+relative amount, by Cauchy's estimate. The normalized difference
+quotient in \eqref{eq:s07:logarithmic-kernel} is therefore bounded
+away from zero and has a bounded logarithm. Its odd difference at
+$y/m$ is $O(|y|/(m r s))$. Equation~\eqref{eq:s07:borel-one}
+and $\sum m^{-2}<\infty$ prove the assertion for $h=1$.
+
+Suppose the assertion holds below $h$. Choose the radius constant
+for layer $h$ smaller than fixed multiples of those lower-layer
+constants. Along a characteristic starting in this disk,
+\[
+ |v_\theta(x)-u_0|
+       \leq C|x-w_\theta(u_0)|/s,
+\]
+so its displacement from $w_{\theta+\sigma}(u_0)$ is at most
+$C|x-w_\theta(u_0)|(s+\sigma)/s$.
+All shifted lower-layer arguments thus remain in their smaller disks.
+
+The cubic shift remainder in $\mathcal K$ is bounded by the third
+$x$ derivative times $|(1-\tau)y/m|^3$; its outer factor $m$
+leaves a convergent $m^{-2}$ sum. The same estimate after one
+$y$ derivative bounds $1+y\partial_y$. Its normalized disk norm
+is $O((s+\sigma)^{h-2})$. In $\mathcal N_h$, the two
+$x$ derivatives cost $(r (s+\sigma))^{-2}$ and $y^2$
+restores those two powers. The lower-layer norms multiply to
+$O((s+\sigma)^{h-2})$ as well.
+
+Both sources vanish to order at least $3h-2$ in $y$, by the
+coefficient calculation in Proposition~\ref{prp:s07:borel-transport}.
+Cauchy's estimate on two nested disks therefore gives, on the
+starting smaller disk, the integrable majorant
+\begin{equation}\label{eq:b:regular-integral}
+ C_h (s+\sigma)^{h-2}
+         \left(\frac{s}{(s+\sigma)}\right)^{3h-2}.
+\end{equation}
+Its integral over $\sigma\geq0$ is
+$C_h s^{h-1}/(2h-1)$. The characteristic formula now
+defines a holomorphic function with the asserted norm. Normal
+convergence allows coefficient extraction; the coefficients are
+exactly those of \eqref{eq:s07:borel-transport}, so this function
+is the required Borel sum. This proves the induction.
+Ordinary Cauchy estimates on smaller disks give
+\eqref{eq:b:regular-derivatives}, including any fixed derivative
+orders. No infinite-genus interchange is assumed before this
+integrable majorant has been established.
+\end{prf}
+
+For a bounded convex domain $\Omega$ with
+$\operatorname{Re}w_{\theta_0}'>0$ in $\Omega$, and
+$\theta\geq\theta_0$, define the open tube
+\begin{equation}\label{eq:b:tube}
+ \mathfrak T_\theta^\Omega
+ =\{(x,y):x\in w_\theta(\Omega),\quad
+       |y|<\operatorname{dist}(x,\partial w_\theta(\Omega))\}.
+\end{equation}
+Assume $w$ is holomorphic on a neighborhood of the closure; the
+domains used here are disks, so this causes no boundary regularity
+issue. Compact subsets of these tubes are the convenient bulk
+domains for the kernel integrals.
+
+\begin{prp}[Holomorphic transport on inverse tubes]\label{prp:b:tube}
+Every $\mathcal L_h$, $h\geq1$, converges normally and is
+holomorphic on $\mathfrak T_\theta^\Omega$. Its characteristic
+integral and the scalar sums in the kernels converge normally on
+compact subsets. For the domains $D_\theta$ of
+Proposition~\ref{prp:b:inverse-budget}, and real $0\leq x<R_\theta$
+(also on the small negative interval admitted there),
+the function also extends jointly in $(x,y)$ across every point of
+$|y|=R_\theta-x$ other than $y=\pm(R_\theta-x)$.
+These continuation neighborhoods can be chosen uniformly when
+$\theta,x$ and the noncritical normalized arc range over compact
+subsets of their stated ranges.
+\end{prp}
+\begin{prf}
+The inverse is univalent, and its derivative has positive real part.
+For $h=1$ its normalized difference quotient has no zero for
+$|y|$ less than the inverse radius. It has a holomorphic logarithm
+obtained by continuation from $y=0$; equivalently, its nonvanishing
+argument is defined on a disk. The odd difference gives a normally
+convergent $m^{-2}$ majorant on compact subsets.
+
+Induct on $h$. A kernel shift satisfies $|c|+t\leq1$ and thus
+sends a point of the tube strictly into the corresponding
+lower-layer tube, by the triangle inequality for boundary distance.
+Characteristic transport does not decrease that distance, by the
+last argument of Lemma~\ref{lmm:b:cone-transport}, which applies
+unchanged to this convex $\Omega$. On a bounded interval of
+$\sigma$, the shifted arguments range over compact subsets of the
+lower-layer tubes. Their holomorphic norms and the cubic-difference
+$m^{-2}$ majorant are consequently uniform.
+
+For large $\sigma$, the inverse points remain in a compact subset
+of $\Omega$. Choose small disks about those points. After increasing
+the base parameter, the derivative on each such disk differs from
+that positive base parameter by at most one quarter of it. Apply
+Lemma~\ref{lmm:b:regular-disk}. Its radius grows linearly with
+$\sigma$, while the Borel argument stays bounded. The vanishing
+order $3h-2$ gives the same integrable bound as
+\eqref{eq:b:regular-integral}. Finitely many disks cover the compact
+inverse set. Thus the whole characteristic integral converges
+normally, and coefficient extraction identifies it with the formal
+series. This proves the first assertion without an assumed analytic
+Borel sum.
+
+For continuation across the indicated circle, first observe that
+the segment $\{x+c y:-1\leq c\leq1\}$ lies in $D_\theta$
+when $|y|=R_\theta-x$ and $y\ne\pm(R_\theta-x)$.
+This follows from the unique boundary contact in
+\eqref{eq:b:inverse-budget}. For $h=1$, both inverse arguments
+are interior points of $D_\theta$, and injectivity keeps their
+difference quotient nonzero; its logarithm therefore continues
+locally. For a higher layer, at $\sigma=0$ every shifted
+lower-layer disk has a strict radius budget, except for the
+unshifted endpoint at $t=1$. That endpoint is already continued
+by induction on $h$. At $t=0$ its center is an interior point of
+$D_\theta$ and its Borel variable is zero. The same reasoning
+applies to the two quadratic factors; their possible $t\tau=1$
+or $t(1-\tau)=1$ endpoint is again a lower layer.
+
+These facts provide open neighborhoods for every point of the compact
+finite-parameter integration set at $\sigma=0$. A finite subcover
+also works for small $\sigma$. For $\sigma$ bounded away from zero,
+the boundary-distance increase is strict, uniformly on compact
+sets; the original tube argument applies. Large $\sigma$ is
+controlled by the preceding regular-disk bound. Cauchy estimates on
+these neighborhoods justify the normally convergent $m$ sum and
+the joint holomorphic continuation. Parameter compactness proves
+the final uniformity assertion.
+\end{prf}
+
+\begin{crl}[Remote characteristics]\label{crl:b:remote}
+Fix a sufficiently small $\sigma_0>0$ and a finite layer $h\geq2$.
+For $\theta$ in a small compact interval and $v$ near
+$x_{*,\theta}$, the part of the layer-$h$ characteristic integral
+over $\sigma\geq\sigma_0$ is holomorphic in $(v,y)$ for $y$ in
+a fixed disk, and is $O_h(|y|^{3h-2})$. The same conclusion holds
+after any fixed number of derivatives on smaller disks.
+For real $x$ in a compact subinterval of $[0,R_\theta)$, that
+remote integral is also holomorphic in a neighborhood of
+$y=\pm(R_\theta-x)$, uniformly on such compact sets.
+\end{crl}
+\begin{prf}
+At $v=x_{*,\theta}$ the derivative of $w_{\theta+\sigma_0}$ is
+$\sigma_0$. On a fixed small disk about this point it differs
+from $\sigma_0$ by at most $\sigma_0/4$, uniformly in small
+$\theta$. The same holds for nearby inverse centers.
+Lemma~\ref{lmm:b:regular-disk}, applied from this base parameter,
+gives a radius comparable to $\sigma$ and the integrable source
+bound $C_h|y|^{3h-2}\sigma^{-2h}$. Normal convergence and Cauchy
+estimates prove the first assertion.
+For centers in the stated compact real interval, transport through
+$\sigma_0$ strictly increases the inverse-radius budget. The tube
+proposition therefore gives a common neighborhood of both endpoints;
+the same remote majorant controls its infinite end. No critical point
+at a large value of $\theta+\sigma$ is needed in either argument.
+\end{prf}

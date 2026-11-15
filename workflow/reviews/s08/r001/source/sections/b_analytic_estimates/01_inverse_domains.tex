@@ -1,0 +1,322 @@
+% !TeX root = ../../main.tex
+\subsection{Inverse domains and characteristic geometry}
+\label{subsec:b:domains}
+
+We use the entire Bessel series and the critical data of
+\eqref{eq:s06:critical-data}. Since $w''(x_*)<0$, the implicit
+function theorem defines, for real $\theta$ sufficiently close to zero,
+\begin{equation}\label{eq:b:critical-data}
+ w'(x_{*,\theta})+\theta=0,\qquad
+ x_{*,0}=x_*,\qquad R_\theta=w_\theta(x_{*,\theta}).
+\end{equation}
+These functions are real analytic. We will always shrink their
+parameter interval when necessary. For complex disks write
+$\mathbb D(c,r)=\{u\in\mathbb C:|u-c|<r\}$, where $r>0$.
+
+The construction has two separate steps. A derivative estimate makes
+the inverse single valued on a convex domain. A difference-quotient
+estimate then proves the full radius needed by the kernels; the latter
+does not follow from univalence alone.
+
+Only in this subsection, for integers $k\geq0$, put
+\[
+ M_k(u)=\sum_{a\geq0}\frac{(-u)^a}{a!(a+k)!}.
+\]
+Thus $M_0=w'$ and $w^{(k+1)}=(-1)^kM_k$.
+
+\begin{lmm}[Angular bounds]\label{lmm:b:angular}
+One has $x_*<1.446$. For $0\leq r\leq x_*$, $|u|=r$ and
+every integer $k\geq0$,
+\begin{equation}\label{eq:b:angular}
+ \operatorname{Re}M_k(u)\geq M_k(r).
+\end{equation}
+If $r>0$ and $u\ne r$, the inequality is strict. For $k\geq1$
+and $0\leq r\leq1.447$ one also has
+\begin{equation}\label{eq:b:derivative-signs}
+ 0<\frac1{k!}-\frac r{(k+1)!}
+                  \leq M_k(r)\leq\frac1{k!}.
+\end{equation}
+\end{lmm}
+\begin{prf}
+The even partial sum through degree six of $M_0(1.446)$ is less
+than $-8\cdot10^{-5}$. Its tail is alternating with decreasing
+terms, so $M_0$ has a positive zero before $1.446$. This bounds
+the first zero, which is $x_*$.
+
+For $k=0$, write $u=re^{i\varphi}$ and $c=\cos\varphi$.
+Define the Chebyshev polynomials by
+$T_a(\cos\varphi)=\cos(a\varphi)$, and put
+$\mathcal U_r(c)=\sum_{a\geq0}(-r)^aT_a(c)/(a!)^2$.
+The finite sine-quotient formula gives
+$|T_a'|\leq a^2$ and
+$|T_a''|\leq a^2(a^2-1)/3$ on $[-1,1]$.
+Consequently, for $0<r\leq1.45$,
+\[
+ r^{-2}\mathcal U_r''(c)
+ =1-\frac{2r c}{3}
+       +r^2\left(\frac{c^2}{6}-\frac1{36}\right)+E_r(c),
+ \qquad |E_r(c)|<0.049.
+\]
+For completeness, the terms of the absolute tail at $a=5,6$ are
+less than $0.042343$ and $0.003582$. After $a=6$ their consecutive
+ratio is at most
+$1.45(a+2)/(a(a^2-1))<0.056$; this proves the stated tail bound.
+The displayed polynomial decreases in $c$ on $[-1,1]$, since
+its $c$ derivative is $r(rc-2)/3<0$. At $c=1$ it also decreases for
+$0<r\leq1.45$, and its minimum is $937/2880>0.325$.
+Thus $\mathcal U_r''>0$. Moreover
+$\mathcal U_r'(1)=-rM_0(r)\leq0$ for $r\leq x_*$.
+It follows that $\mathcal U_r(c)>\mathcal U_r(1)$ when $c<1$.
+
+For $k\geq1$, the first odd term of
+$\operatorname{Re}M_k(re^{i\varphi})-M_k(r)$ is
+$r(1-\cos\varphi)/(k+1)!$; every other odd term is nonnegative.
+Using $1-\cos(a\varphi)\leq a^2(1-\cos\varphi)$, the sum of the
+possible negative even terms divided by that first term is at most
+\[
+ \frac{2r}{3}+\frac{r^3}{90}
+       +\sum_{\substack{a\geq6\\a\ \text{even}}}
+                         \frac{2a^2r^{a-1}}{a!(a+1)!}<1
+                       \qquad(0\leq r\leq1.447).
+\]
+Indeed the last sum is less than $0.0002$: its first term is
+$r^5/50400$ and its successive ratios are at most
+$1.447^2/(a^2(a+1)(a+3))<0.001$.
+This also proves strictness. Finally, the alternating terms of
+$M_k(r)$ decrease from the first term for the range in question;
+the first two partial sums give \eqref{eq:b:derivative-signs}.
+\end{prf}
+
+\begin{lmm}[A common convex inverse domain]\label{lmm:b:convex-domain}
+There are $a_*\in(0,x_*/2)$ and $\theta_*>0$ such that, for
+$0\leq\theta\leq\theta_*$, the disk
+\begin{equation}\label{eq:b:omega}
+ \Omega_\theta=\mathbb D(a_*,x_{*,\theta}-a_*)
+\end{equation}
+contains zero and satisfies
+$\operatorname{Re}w_\theta'(u)>0$ on its closure except at
+$u=x_{*,\theta}$. For every $\sigma\geq0$, $w_{\theta+\sigma}$
+is injective on $\overline\Omega_\theta$ and its inverse has positive
+derivative real part in its image.
+\end{lmm}
+\begin{prf}
+Choose a positive $a_*$ as small as necessary below.
+At $\theta=0$, the closed disk lies in $|u|\leq x_*$, and
+Lemma~\ref{lmm:b:angular} gives strict positivity except at $x_*$.
+Near the moving right endpoint write
+$u=x_{*,\theta}-A+iB$, with $A\geq0$. The disk condition gives
+$B^2\leq2(x_{*,\theta}-a_*)A-A^2$. The Bessel equation, obtained
+also by differentiating the series, is
+\begin{equation}\label{eq:b:bessel-ode}
+ u w'''(u)+w''(u)+w'(u)=0.
+\end{equation}
+At the endpoint it gives
+\[
+ -w''(x_{*,\theta})
+ -(x_{*,\theta}-a_*)w'''(x_{*,\theta})
+                      =a_*w'''(x_{*,\theta})-\theta.
+\]
+The right side is positive when $\theta$ is small, since
+$w'''(x_*)=-w''(x_*)/x_*>0$. Taylor expansion therefore bounds
+$\operatorname{Re}w_\theta'(u)$ below by a positive multiple of
+$A$, on a fixed small endpoint neighborhood. The remainder is
+$O(A|u-x_{*,\theta}|)$, because $|u-x_{*,\theta}|^2\leq C A$.
+On the rest of the closed disk, strict positivity at $\theta=0$
+and compactness give the conclusion after reducing $\theta_*$.
+
+Adding $\sigma$ preserves the positive real part. For distinct
+$u,v$ in the closed disk,
+\[
+ \frac{w_{\theta+\sigma}(u)-w_{\theta+\sigma}(v)}{u-v}
+ =\int_0^1w_{\theta+\sigma}'(v+t(u-v))\,\dd t
+\]
+has positive real part, since the open segment lies in the disk.
+This proves injectivity even on its closure. The reciprocal of a
+number with positive real part also has positive real part, proving
+the assertion about the inverse.
+\end{prf}
+
+\begin{prp}[The full inverse-radius budget]\label{prp:b:inverse-budget}
+The constants in Lemma~\ref{lmm:b:convex-domain} can be chosen so that,
+with $D_\theta=w_\theta(\Omega_\theta)$, every real
+$0\leq x<R_\theta$ satisfies
+\begin{equation}\label{eq:b:inverse-budget}
+ \operatorname{dist}(x,\partial D_\theta)=R_\theta-x.
+\end{equation}
+The closest boundary point is uniquely $R_\theta$. The same budget
+and unique contact hold on a sufficiently small fixed negative real
+interval, uniformly in $\theta$. The inverse
+$v_\theta$ extends across every other point of $|x|=R_\theta$.
+At the remaining point it has the convergent local expansion
+\begin{equation}\label{eq:b:morse-inverse}
+ v_\theta(R_\theta-S)
+ =x_{*,\theta}
+       -\sqrt{\frac{2S}{-w''(x_{*,\theta})}}+O(S),
+\end{equation}
+on sectors $|\arg S|<\pi-\gamma$, for each fixed $\gamma>0$.
+The coefficients and local bounds are uniform for small
+$0\leq\theta\leq\theta_*$. Square roots in this appendix use the
+branch positive on the positive real axis.
+\end{prp}
+\begin{prf}
+First let $x=w_\theta(v)$ with $a_*\leq v<x_{*,\theta}$ and put
+$r=x_{*,\theta}-v$. The disk $\mathbb D(v,r)$ is contained in
+$\Omega_\theta$ and tangent to its boundary at the critical point.
+The difference quotient on its boundary is
+\[
+ \frac{w_\theta(v+s)-w_\theta(v)}s
+ =w_\theta'(v)+\sum_{k\geq1}
+                       \frac{(-1)^kM_k(v)s^k}{(k+1)!}.
+\]
+Its real part is minimized at $s=r$. To check this directly, divide
+the possible negative even angular differences by
+$M_1(v)r(1-\cos\varphi)/2$.
+By \eqref{eq:b:derivative-signs} their sum is at most
+\[
+ \frac{2x_{*,\theta}}3+\frac{x_{*,\theta}^3}{90}+0.0002<1.
+\]
+Here $r/(1-v/2)\leq x_{*,\theta}$, and we shrink $\theta_*$ so
+that $x_{*,\theta}<1.447$. This is the same even-term estimate as
+in Lemma~\ref{lmm:b:angular}, with the first odd term retained.
+It is strict unless $s=r$. Thus
+\[
+ |w_\theta(v+s)-x|\geq R_\theta-x\quad(|s|=r),
+\]
+with equality only at the tangency point. Univalence then shows that
+the image contains $\mathbb D(x,R_\theta-x)$, with no other
+boundary contact.
+
+We also need this conclusion at $v=0$. For $a_*=\theta=0$,
+\eqref{eq:s06:circle-bound} gives
+$|w(u)|>R$ on $|u|=x_*$ except at $u=x_*$. Away from that point
+the strict margin persists under a sufficiently small positive
+choice of $a_*$ and then a small $\theta$. Near the moving endpoint,
+the circle has $A=B^2/(2(x_{*,\theta}-a_*))+O(B^4)$, so
+\[
+ \operatorname{Re}(w_\theta(u)-R_\theta)
+             =-\tfrac12w''(x_{*,\theta})B^2+O(|B|^3)>0.
+\]
+This supplies the missing local strict margin at $x=0$.
+For $0\leq v\leq a_*$, fix a boundary image $z$ and observe that
+$|z-x|^2-(R_\theta-x)^2$ is affine in the real variable $x$.
+It is nonnegative at $x=0$ and at $x=w_\theta(a_*)$, and strictly
+positive there unless $z=R_\theta$. This completes
+\eqref{eq:b:inverse-budget}.
+
+The negative extension follows from the same affine expression.
+Near the critical boundary image we have just proved
+$\operatorname{Re}z>R_\theta$, so negative $x$ only improves it.
+Away from that point the strictly positive compact margin absorbs a
+sufficiently small negative $x$, uniformly in $\theta$. Such centers
+remain in $D_\theta$ because zero is an interior point.
+
+The closed-disk injectivity proved above identifies the boundary
+image without self-intersections. At its regular points the inverse
+function theorem gives continuation. At the critical point,
+$R_\theta-w_\theta(u)$ has a double zero with coefficient
+$-w''(x_{*,\theta})/2>0$. Taking the analytic square root of the
+nonvanishing factor and inverting the resulting local coordinate
+proves \eqref{eq:b:morse-inverse}, with its uniform sector bounds.
+\end{prf}
+
+For the characteristic geometry put $S=R_\theta-x$. We use the
+following two-distance cones. For $0<\gamma<\pi/2$, let
+$\mathcal C_\gamma$ consist of pairs $(S,y)$ with $S\ne0$,
+$S\pm y\notin(-\infty,0]$, for which
+\begin{equation}\label{eq:b:cone}
+ \max\{0,\arg(S-y),\arg(S+y)\}
+ -\min\{0,\arg(S-y),\arg(S+y)\}<\pi-\gamma.
+\end{equation}
+Arguments are principal. Positive linear combinations of the two
+distances and of positive real numbers stay in this cone. Their
+moduli are bounded below by a constant depending on $\gamma$ times
+the sum of the moduli. In particular $|y|\leq C_\gamma|S|$.
+
+\begin{lmm}[Shifts and characteristics]\label{lmm:b:cone-transport}
+Fix $0<\gamma<\pi/4$. Kernel shifts $(x,y)\mapsto(x+c y,t y)$, where $c$ is real,
+$0\leq t\leq1$ and $|c|+t\leq1$, preserve
+$\mathcal C_\gamma$. For $(S,y)\in\mathcal C_{2\gamma}$ with
+$|S|$ sufficiently small, $0\leq\theta\leq\theta_*/2$ and
+$0\leq\sigma\leq\sigma_0$, where $0<\sigma_0\leq\theta_*/2$ is small and fixed,
+put $v=v_\theta(x)$ and
+$S_\sigma=R_{\theta+\sigma}-(x+\sigma v)$. Then
+$(S_\sigma,y)\in\mathcal C_\gamma$ and
+\begin{equation}\label{eq:b:transport-distances}
+ \begin{aligned}
+ |S_\sigma|&\asymp |S|+\sigma\sqrt{|S|}+\sigma^2,\\
+ |S_\sigma\pm y|&\geq c_\gamma
+       \bigl(|S\pm y|+\sigma\sqrt{|S|}+\sigma^2\bigr).
+ \end{aligned}
+\end{equation}
+These estimates are uniform in the stated ranges. On the full
+convex image, characteristic transport also never decreases the
+distance from its center to the boundary.
+\end{lmm}
+\begin{prf}
+After a kernel shift, each new distance is a convex combination
+of $S-y$ and $S+y$, since $|c|+t\leq1$. This proves the first
+assertion and its modulus comparison.
+Differentiation at the critical point gives
+\[
+ R_\theta'=x_{*,\theta},\qquad
+ x_{*,\theta}'=-1/w''(x_{*,\theta})>0.
+\]
+Consequently the exact distance identity is
+\begin{equation}\label{eq:b:transport-distance-identity}
+ S_\sigma=S+\sigma(x_{*,\theta}-v)
+       +\int_0^\sigma(x_{*,\theta+t}-x_{*,\theta})\,\dd t.
+\end{equation}
+The last term is positive real and comparable to $\sigma^2$.
+By \eqref{eq:b:morse-inverse}, the middle coefficient equals a
+positive multiple of $\sqrt S$, with relative error $O(\sqrt{|S|})$.
+The argument of $\sqrt S$ lies between zero and that of $S$.
+The angular margin between $\mathcal C_{2\gamma}$ and
+$\mathcal C_\gamma$ absorbs this error, uniformly after reducing
+the small constants. Positive-cone addition in
+\eqref{eq:b:transport-distance-identity} proves
+\eqref{eq:b:transport-distances}.
+
+For the last assertion, use any $u,v\in\overline\Omega_\theta$,
+$u\ne v$, and set
+$A=\int_0^1w_\theta'(v+t(u-v))\,\dd t$.
+Its real part is positive, and
+\[
+ |w_{\theta+\sigma}(u)-w_{\theta+\sigma}(v)|
+              =|u-v|\,|A+\sigma|\geq|u-v|\,|A|.
+\]
+Taking the infimum over boundary $u$ proves the claim. It is strict
+for $\sigma>0$. This argument applies to every interior complex
+center, not only the real centers in \eqref{eq:b:inverse-budget}.
+\end{prf}
+
+\begin{lmm}[Disks on the negative axis]\label{lmm:b:negative-disks}
+For $u>0$, $w$ is univalent on $\mathbb D(-u,x_*)$, and
+\begin{equation}\label{eq:b:negative-radius}
+ \operatorname{dist}\bigl(w(-u),
+                   \partial w(\mathbb D(-u,x_*))\bigr)
+ \geq w(x_*-u)-w(-u)>R.
+\end{equation}
+The strict margins are uniform when $u$ ranges over a compact
+subinterval of $(0,\infty)$.
+\end{lmm}
+\begin{prf}
+The entire Taylor expansion in $u$ and
+Lemma~\ref{lmm:b:angular} give, for $|s|\leq x_*$,
+\[
+ \operatorname{Re}w'(-u+s)
+ =\sum_{k\geq0}\frac{u^k}{k!}\operatorname{Re}M_k(s)
+ \geq\sum_{k\geq0}\frac{u^k}{k!}M_k(|s|)
+ =w'(-u+|s|)>0.
+\]
+The segment argument proves univalence. On $|s|=x_*$, integrate
+this inequality along the radial segment to obtain the first bound
+in \eqref{eq:b:negative-radius}. Finally $w'$ is strictly decreasing
+on $(-\infty,x_*]$: for negative arguments this follows from its
+positive coefficient series, and for positive arguments it follows
+from \eqref{eq:b:derivative-signs}. Therefore
+\[
+ w(x_*-u)-w(-u)=\int_0^{x_*}w'(t-u)\,\dd t
+                           >\int_0^{x_*}w'(t)\,\dd t=R.
+\]
+Continuity on compact intervals proves uniformity.
+\end{prf}

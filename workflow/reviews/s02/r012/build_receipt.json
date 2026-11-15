@@ -1,0 +1,61 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02",
+      "build/previews/s02/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s02/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02",
+      "build/previews/s02/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s02",
+      "build/previews/s02/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s02/preview.aux",
+    "build/previews/s02/preview.bbl",
+    "build/previews/s02/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s02/preview.pdf",
+  "pdf_sha256": "281652da192931a902e75224a5dc0104162c8409142462f6f16c9448b002d5e1",
+  "schema_version": 1,
+  "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec",
+  "source_hash": "742455488b8da30d56d3c8f562e34ff21dbc36ef87180cf8a6ad9f6bbb11a239",
+  "strict": true,
+  "time": "2026-11-15T09:03:36+00:00",
+  "unit": "s02",
+  "with_dependencies": true
+}

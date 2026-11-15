@@ -1,0 +1,251 @@
+--- previous/sections/08_fixed_defect/04_coefficient_transfer.tex
++++ sections/08_fixed_defect/04_coefficient_transfer.tex
+@@ -88,21 +88,53 @@
+ The expansion at $-S$ is fixed by parity.
+ \end{prp}
+ \begin{prf}
+-Put $t_0=S-y$ and consider the positive $m=1$ term of
+-\eqref{eq:s08:inverse-kernel}. At its center $s=x+y-u$,
+-$R_\theta-s=t_0+u$, and its endpoint distance is always $t_0$.
+-The cone geometry in Lemma~\ref{lmm:b:cone-transport} gives
+-$|t_0+u|\asymp |t_0|+|u|$ on a smaller angular region.
+-All constants below are uniform on that region.
++Consider the positive $m=1$ term of
++\eqref{eq:s08:inverse-kernel}, with $u=\tau y$ and $0\leq\tau\leq1$.
++At its center $s=x+y-u$, the center distance is $S-y+u$
++and the endpoint distance remains $S-y$. Use a fixed angular
++reduction of the common dented neighborhood, so that $(S,y)$ lies
++strictly inside the larger two-distance cone used for the estimates
++in Proposition~\ref{prp:b:common-domains}.
++Lemma~\ref{lmm:b:cone-transport} preserves this angular margin
++under the shift $(x,y)\mapsto(x+(1-\tau)y,\tau y)$.
++All constants below are uniform on this smaller complex region.
+ 
+ \smallskip\noindent
+ \emph{The initial segment.}
+ Choose a sufficiently large fixed $C>0$ and split the segment at
+-$|u|=C|t_0|$. On its initial part, the normalized argument stays
+-in a fixed compact subregion of the inverse disk. The mixed bound
+-\eqref{eq:b:common-bounds} gives an integral
+-$O_h(|t_0|^{(h-1)/2})$. This is bounded for every $h\geq1$.
+-On the remaining segment, $|t_0/(t_0+u)|$ is small enough for
++$|u|=C|S-y|$. On its initial part $\tau<1/2$ once the endpoint
++neighborhood is small enough. The three distances satisfy
++\[
++ \begin{aligned}
++ R_\theta-s&=(1-\tau)(S-y)+\tau S,\\
++ (R_\theta-s)-u&=S-y,\\
++ (R_\theta-s)+u&=(1-\tau)(S-y)+\tau(S+y).
++ \end{aligned}
++\]
++Positive-cone addition bounds the moduli of the first and third
++expressions below by a fixed multiple of $|S-y|$, because
++$1-\tau\geq1/2$. Their upper bounds follow from
++$|u|\leq C|S-y|$. Consequently
++\[
++ |R_\theta-s|\asymp |S-y|,\qquad
++ |(R_\theta-s)\pm u|\asymp |S-y|.
++\]
++Both normalized endpoint distances $1\pm u/(R_\theta-s)$
++are therefore bounded above and away from zero.
++As $y\to S$, this is a small critical-center cone with fixed
++angular margins. Proposition~\ref{prp:b:common-domains} includes
++its holomorphic extension and its patching to the common complex
++region. Apply \eqref{eq:b:common-bounds} there with one center
++derivative and no Borel derivative:
++\[
++ |\partial_s\mathcal L_h(\theta;s,u)|
++       \leq C_{h,C}|S-y|^{(h-3)/2}.
++\]
++Multiplication by the path length $O(C|S-y|)$ gives the uniform
++initial integral $O_h(|S-y|^{(h-1)/2})$, bounded for all $h\geq1$.
++On the remaining segment, positive-cone addition gives
++$|S-y+u|\asymp |S-y|+|u|$, so that
++$|(S-y)/(S-y+u)|$ is small enough for
+ the endpoint expansion \eqref{eq:s08:leading-expansion} to apply.
+ 
+ \smallskip\noindent
+@@ -111,35 +143,35 @@
+ argument fixed. The square root contributes
+ \[
+  \frac12\sqrt{\frac{2}{-w''(x_{*,\theta})}}
+-               \frac{P_h(\theta,s)}{\sqrt{t_0}}.
++               \frac{P_h(\theta,s)}{\sqrt{S-y}}.
+ \]
+ Its integral is the term in \eqref{eq:s08:recovered-singularity}.
+ Indeed, extending the center path to the full segment from $x$ to
+ $R_\theta$ changes the numerator by
+-$O_h(|t_0|^{h/2})$, using
++$O_h(|S-y|^{h/2})$, using
+ $P_h(\theta,s)=O_h(|R_\theta-s|^{(h-2)/2})$.
+-After division by $\sqrt{t_0}$ this change is bounded.
++After division by $\sqrt{S-y}$ this change is bounded.
+ 
+ The derivative of the endpoint value integrates to a difference
+ of endpoint values and is bounded by their scale $(h-1)/2$.
+ The derivative of $P_h$ has an integral equal to a difference of
+-$P_h$ values, multiplied by $\sqrt{t_0}$, and is bounded as well.
++$P_h$ values, multiplied by $\sqrt{S-y}$, and is bounded as well.
+ For the remaining error, the mixed Cauchy bounds following
+ \eqref{eq:s08:leading-bounds} give
+ \[
+  |\partial_sE_h(\theta;s,u)|
+- \leq C_{h,\nu}|t_0|^{\nu-1}
+-                    |t_0+u|^{(h-1)/2-\nu}.
++ \leq C_{h,\nu}|S-y|^{\nu-1}
++                    |S-y+u|^{(h-1)/2-\nu}.
+ \]
+ The last exponent is greater than $-1$. Its integral is therefore
+-$O_{h,\nu}(|t_0|^{\nu-1})$, as required.
++$O_{h,\nu}(|S-y|^{\nu-1})$, as required.
+ 
+ \smallskip\noindent
+ \emph{The other branches.}
+ For the negative $m=1$ branch, and for either branch with $m\geq2$,
+ the critical endpoint is met only at $u=y$. Near it the first
+ center derivative has a bound by a constant times
+-$(|t_0|+|y-u|)^{-1/2}$; the remainder terms are integrable too.
++$(|S-y|+|y-u|)^{-1/2}$; the remainder terms are integrable too.
+ For $m\geq2$ the positive branch has the uniform distance factor
+ $1-1/m\geq1/2$. Their sums are bounded by the outer $m^{-2}$.
+ Away from this final segment all shifted arguments range in
+--- previous/sections/08_fixed_defect/05_background_comparison.tex
++++ sections/08_fixed_defect/05_background_comparison.tex
+@@ -212,8 +212,7 @@
+  \leq \exp\left(\frac{T_{g,h}^{\delta}}{T_{g,h}}\right)
+  =1+O_h(g^{-1}).
+ \end{equation}
+-The final step is Lemma~\ref{lmm:s08:one-node}.
+-The two endpoint identities now give
+-\eqref{eq:s08:background}. This controls the complete change of
+-background, rather than truncating its exponential at one node.
++Lemma~\ref{lmm:s08:one-node} gives the last estimate.
++The endpoint identities \eqref{eq:s08:mixed-endpoints} therefore
++prove \eqref{eq:s08:background} for the full background.
+ \end{prf}
+--- previous/sections/08_fixed_defect/INTERFACE.md
++++ sections/08_fixed_defect/INTERFACE.md
+@@ -31,7 +31,7 @@
+ | Hodge restriction and Mumford relation | eq:s02:hodge-normalization, eq:s02:hodge-factorization and eq:s02:chern-exponential; give the boundary splitting and c_t c_-t=1 |
+ | beta_g, Phi,w,x_*,R | s06.1--s06.2; eq:s06:beta-asymptotics, eq:s06:critical-data and eq:s06:critical-derivatives fix all constants |
+ | Exact top vertices and saddle | eq:s06:exact-vertex, eq:s06:vertex-bound, eq:s06:additive-saddle; supply h=0 and its fixed-marking bounds |
+-| Fcal,Gcal, their (g,h) components, theta,x,v_theta | s07.1--s07.2; exact potentials and inverse specialization |
++| Fcal,Gcal, their (g,h) components, theta,x,v_theta | s07.1--s07.2; exact potentials and inverse specialization; t_0=x remains the zero descendant time throughout |
+ | T_{g,h,n} | eq:s07:kappa-integrals and eq:s07:specialization; raw exponential kappa integral on each stable target |
+ | L_{g,h}, indexed calligraphic L_h | s07.3--s07.4; x derivative of Gcal and Borel normalization (2g+h-2)! |
+ | Exact inverse sine and Borel transport | eq:s07:inverse-miura, eq:s07:borel-one, eq:s07:linear-kernel, eq:s07:quadratic-kernel and eq:s07:borel-transport |
+@@ -72,6 +72,8 @@
+ criterion have only that sentence's scope, t is a local formal
+ Chern variable, and j is a Chern-class index. Geometry uses r,r_H
+ or a fixed positive c; epsilon retains its formal Hodge meaning.
++The recovered-singularity proof writes its endpoint distance S-y
++directly, without introducing an alias or reassigning t_0.
+ 
+ ## Exported results
+ 
+@@ -100,7 +102,14 @@
+    eq:s08:recovered-singularity: additive inverse-square-root
+    expansion, uniform for complex x near zero, small theta>=0
+    and fixed nu; the proof controls the full path including the
+-   critical-center initial segment.
++   critical-center initial segment. For u=tau y with
++   |u|<=C|S-y|, the center distance S-y+u and both endpoint
++   distances S-y, S-y+2u are comparable to |S-y| in a strictly
++   smaller critical cone. B's actual cone extension and
++   eq:b:common-bounds with one center derivative give the
++   integrand bound O(|S-y|^((h-3)/2)); its path length gives
++   O(|S-y|^((h-1)/2)). This uses complex cone bounds, not an
++   inverse-disk assertion.
+ 8. lmm:s08:transfer, eq:s08:two-point-transfer: uniform
+    two-singularity coefficient formula with additive O(N^-nu).
+    The actual parity makes the two dominant terms add.
+--- previous/sections/08_fixed_defect/writer_handoff.md
++++ sections/08_fixed_defect/writer_handoff.md
+@@ -109,3 +109,38 @@
+ reported directly to the coordinator after saving this handoff.
+ The writer stops edits and retains this context for original-author
+ revision when the three actual reviews are collected.
++
++## Original-author revision of formal r001
++
++Baseline snapshot:
++376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd.
++All three actual reports were read after the coordinator reopened
++the unit for revision. The response separately addresses MATH-001,
++READABILITY-001, READABILITY-002 and ACADEMIC-009.
++
++The initial-path inverse-disk assertion was false for complex
++dented approaches. It is replaced by positive-cone formulas for
++the center and both endpoint distances. On |u|<=C|S-y|, each is
++comparable to |S-y|; the normalized endpoint distances have uniform
++upper and positive lower bounds in a strictly smaller critical
++cone. B's actual critical-cone extension and its order-one center
++derivative estimate give O(|S-y|^((h-3)/2)); the path length gives
++the required O(|S-y|^((h-1)/2)) integral. The complex domain and
++additive recovered-singularity conclusion are retained.
++
++Every occurrence of the endpoint-distance alias t_0 is removed:
++the proof writes S-y directly, and the interface preserves the
++inherited t_0=x convention. The background-comparison proof has
++only a shorter closing summary, intended to keep the proof square
++on its normal final line. Its actual placement remains for the
++coordinator's native PDF check.
++
++The 33 numbered equation bodies, 13 principal statement bodies and
++all labels are byte-identical to r001. The other five unit TeX
++files, approved dependencies and shared inputs are unchanged.
++Draft-gate, four-issue response validation, unit validation,
++UTF-8/LF/control-character and scope checks passed; the frozen
++archive remains intact. No compilation, old computation or source
++search was rerun. The round response and designated round handoff
++are in workflow/reviews/s08/r001/. Stop for coordinator rebuilding
++and a new frozen review by the same three original reviewers.
+--- /dev/null
++++ workflow/reviews/s08/r001/author_response.json
+@@ -0,0 +1,46 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/08_fixed_defect/04_coefficient_transfer.tex",
++        "sections/08_fixed_defect/INTERFACE.md",
++        "sections/08_fixed_defect/writer_handoff.md"
++      ],
++      "explanation": "Replaced the false inverse-disk assertion by the actual critical-cone argument. Writing u=tau y, the proof displays the three distances as positive combinations of the original cone data. On |u|<=C|S-y|, tau<1/2, their moduli are comparable to |S-y| and both normalized endpoint distances are bounded above and away from zero with fixed angular margins. Lemma b:cone-transport and Proposition b:common-domains supply the preserved smaller cone and its holomorphic critical-center extension. Equation eq:b:common-bounds with one center derivative and no Borel derivative gives O(|S-y|^((h-3)/2)); integration over length O(|S-y|) gives O(|S-y|^((h-1)/2)). The remaining path and the proposition's common complex domain and additive conclusion are retained. All endpoint-distance occurrences are written S-y directly.",
++      "issue_id": "MATH-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/08_fixed_defect/04_coefficient_transfer.tex",
++        "sections/08_fixed_defect/INTERFACE.md",
++        "sections/08_fixed_defect/writer_handoff.md"
++      ],
++      "explanation": "Removed the proof-local assignment t_0=S-y and replaced every occurrence throughout the recovered-singularity proof by S-y directly. No new distance symbol is introduced. The interface explicitly preserves the inherited t_0=x zero-time convention and records this choice.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/08_fixed_defect/05_background_comparison.tex",
++        "sections/08_fixed_defect/writer_handoff.md"
++      ],
++      "explanation": "Shortened only the closing summary after the background squeeze to three source lines ending with 'prove [eq:s08:background] for the full background.' The one-node justification, endpoint identification and whole-background conclusion remain explicit, leaving a shorter final line for the right-hand proof square. No global proof macro, spacing, font or page setting changed. Native PDF confirmation is left to the coordinator as instructed.",
++      "issue_id": "READABILITY-002",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/08_fixed_defect/04_coefficient_transfer.tex",
++        "sections/08_fixed_defect/INTERFACE.md",
++        "sections/08_fixed_defect/writer_handoff.md"
++      ],
++      "explanation": "Kept t_0 exclusively as the inherited descendant time x. The endpoint distance is now written S-y in every path estimate, including square roots, powers, comparisons and nonprincipal-branch bounds. The notation ledger states that no endpoint-distance alias is retained. All numbered formulas, hypotheses and claimed asymptotic precision are unchanged.",
++      "issue_id": "ACADEMIC-009",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "s08"
++}

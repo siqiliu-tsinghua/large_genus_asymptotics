@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and s02 r012/s03 r009/A r009 acceptance are confirmed, and the same unused bibliography append adds no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific/calculation inputs and path sets preserve stability, core and descendant ranges, genus-correct loop contraction and fixed profile orders from r010.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Graph/loop factors, raw connectors, absolute Z/F coefficients, both (9/8)g^-1 terms, a_g/N_g restoration and the complete normalized higher-coefficient Remark remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, scopes, labels, interfaces, mathematical macros, proof spacing and the samepage Remark wrapper retain their original bytes.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact unused bibliography append changes no premise or inference of the finite-core synthesis, final theorem proof or supplementary coefficient reconstruction.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged M=3 whole-graph tail, legal-loop truncation and summable errors retain the strict final O(g^-3) conclusion and all supplementary remainder scopes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b; actual source SHA256 bfe128bc15d209d27399b4b8a23fa0db3016532d6dcf9498dbc5406b4644d4fe; actual PDF SHA256 fd1983ffa8195c52f5b9933acb3924417c2c898c305e38f242b0c70f8421776d; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r010, with identical input paths and exact 8323-byte prefix plus recorded append; its SHA256 equals the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, preserving the common four-key nonuse/no-wildcard analysis.",
+    "Saved text and independently extracted complete native PDF layout text equal r010, and the common writer ACK hash matches; no prior MATH issue was open and no B manuscript was reviewed.",
+    "Only these two reports were written, without old coefficient/macro recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 11,
+  "schema_version": 1,
+  "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b",
+  "summary": "Pass for s04 r011: the independently verified unused bibliography append preserves every scientific/calculation input, prior mathematical conclusion and complete native rendering.",
+  "unit": "s04",
+  "verdict": "pass"
+}

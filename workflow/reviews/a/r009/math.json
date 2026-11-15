@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and s02 r012/s03 r009 acceptance are confirmed, and the same unused bibliography append adds no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific and calculation inputs preserve all profile orders, low-genus degree constraints, genus-correct core types and q=0,1,2 ranges from r008.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Every signed moment, raw connector factor, flag automorphism, absolute/relative coefficient normalization and A.32/A.36/A.44 remainder grouping remains unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, local scopes, labels, interfaces, mathematical macros and proof spacing retain their r008 bytes without a symbol introduced by the uncited entries.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact unused bibliography append changes no input or inference of the exact recursions, moment calculations, coefficient extraction or finite-core deductions.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged fixed-order HMT control, coefficient-extraction arguments and summable loop/core errors retain their original remainder scopes and exchange justifications.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba; actual source SHA256 a0a002418853bcebcde0e5d0d9c7d205f0c49771101861a6ca028d7ac2cac8df; actual PDF SHA256 87c5112142de0bd2eb0d55b965504b4ce784079f13f3c256ac42e1c79647555b; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r008, with identical input paths and exact 8323-byte prefix plus the recorded append; its SHA256 equals the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, preserving the common four-key nonuse/no-wildcard analysis.",
+    "Saved text and independently extracted complete native PDF layout text equal r008, and the common writer ACK hash matches; no prior MATH issue was open and no B manuscript was reviewed.",
+    "Only these two reports were written, without old coefficient/macro recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba",
+  "summary": "Pass for Appendix A r009: the independently verified unused bibliography append preserves every scientific/calculation input, prior mathematical conclusion and complete native rendering.",
+  "unit": "a",
+  "verdict": "pass"
+}

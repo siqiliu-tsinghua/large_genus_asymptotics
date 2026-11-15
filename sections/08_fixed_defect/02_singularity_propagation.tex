@@ -2,4 +2,126 @@
 \subsection{Propagation of the leading singularity}
 \label{subsec:s08:02}
 
-% WORKFLOW-TODO: Write this subsection after the unit is assigned.
+Fix a positive defect $h$ and $1/2<\nu<1$, using common domains for
+all layers up to $h$ as in Corollary~\ref{crl:s08:domains}.
+Put $S=R_\theta-x$. At $y=S$, the value of $\mathcal L_h$ below
+means its continuous endpoint limit. The endpoint class of
+Appendix~\ref{subsec:b:endpoints} defines unique actual coefficient
+functions $P_h(\theta,x)$ by
+\begin{equation}\label{eq:s08:leading-expansion}
+ \begin{aligned}
+ \mathcal L_h(\theta;x,y)
+ ={}&\mathcal L_h(\theta;x,S)
+ -\sqrt{\frac{2}{-w''(x_{*,\theta})}}
+                    P_h(\theta,x)\sqrt{S-y}
+ +E_h(\theta;x,y).
+ \end{aligned}
+\end{equation}
+The remainder $E_h$ and the coefficient obey, uniformly on smaller
+domains,
+\begin{equation}\label{eq:s08:leading-bounds}
+ \begin{aligned}
+ |P_h(\theta,x)|&\leq C_h|S|^{(h-2)/2},\\
+ |S^k\partial_y^k E_h(\theta;x,y)|
+ &\leq C_{h,\nu,k}|S|^{(h-1)/2}|1-y/S|^{\nu-k}
+                                      \quad(k=0,1,2).
+ \end{aligned}
+\end{equation}
+All fixed higher or mixed derivatives are available after further
+angular reduction, by Cauchy's formula. Uniqueness of the
+square-root coefficient follows from $\nu>1/2$.
+The negative-endpoint expansion is determined by
+\eqref{eq:s07:borel-parity}.
+
+\begin{lmm}[The logarithmic seed]\label{lmm:s08:seed}
+On these inverse branches,
+\begin{equation}\label{eq:s08:seed}
+ P_1(\theta,x)=\frac1{x_{*,\theta}-v_\theta(x)}.
+\end{equation}
+\end{lmm}
+\begin{prf}
+In \eqref{eq:s07:borel-one}, only the positive $m=1$ term can
+meet the critical value when $y\to S$. Its logarithm is
+\[
+ \log\frac{v_\theta(x+y)-v_\theta(x)}
+                  {y\,\partial_xv_\theta(x)}.
+\]
+Insert \eqref{eq:s08:perturbed-inverse}. The numerator has
+constant term $x_{*,\theta}-v_\theta(x)$ and square-root term
+$-\sqrt{2/(-w''(x_{*,\theta}))}\sqrt{S-y}$.
+The denominator is analytic and nonzero at the endpoint.
+The square-root coefficient of the logarithm therefore gives
+\eqref{eq:s08:seed}. The negative branch and $m\geq2$ terms are
+analytic at this endpoint; their normal summability and the uniform
+remainder follow from the first-layer argument in
+Proposition~\ref{prp:b:common-domains}.
+\end{prf}
+
+The next calculation identifies the mechanism behind the higher
+coefficients. The principal linear branch keeps its critical
+distance fixed along its integration path. Characteristic
+integration then turns its inverse-square-root derivative back
+into a square root. The remaining branches have greater endpoint
+regularity.
+
+\begin{lmm}[Propagation of the principal coefficient]\label{lmm:s08:propagation}
+For every fixed $h\geq2$,
+\begin{equation}\label{eq:s08:theta-recurrence}
+ P_h(\theta,x)
+ =\frac1{x_{*,\theta}-v_\theta(x)}
+                         \int_x^{R_\theta}P_{h-1}(\theta,s)\,\dd s.
+\end{equation}
+For complex centers the integral is continued along the straight
+endpoint segment in the corresponding slit region.
+\end{lmm}
+\begin{prf}
+\emph{The principal linear branch.}
+In \eqref{eq:s07:linear-kernel}, its $m=1$ positive shift has
+center $x'=x+(1-\tau)y$ and Borel argument $\tau y$.
+Thus $R_\theta-x'-\tau y=S-y$ throughout the path.
+Lemma~\ref{lmm:b:linear-endpoint} gives its square-root coefficient
+by integrating the previous one at $y=S$; the coefficient is
+\[
+ -\sqrt{\frac{2}{-w''(x_{*,\theta})}}
+            \int_0^1P_{h-1}(\theta,x+(1-\tau)S)\,\dd\tau.
+\]
+The endpoint bound for $P_{h-1}$ has exponent $(h-3)/2>-1$, so
+the integral includes its critical end and is convergent there.
+
+\smallskip\noindent
+\emph{Characteristic recovery.}
+The linear source is acted on by $1+y\partial_y$ before the
+characteristic integral. Its differentiated square root has an
+inverse-square-root singularity. The lower end of that integral
+multiplies the original coefficient by
+$S/(x_{*,\theta}-v_\theta(x))$, exactly as in
+\eqref{eq:b:transport-endpoint-coefficient}.
+Changing variable in the preceding $\tau$ integral gives
+\eqref{eq:s08:theta-recurrence}.
+
+To verify the analytic hypotheses of this calculation, the previous
+layer has scale $(h-2)/2$ and remainder exponent $\nu$.
+The other linear branches have a bounded first normalized derivative,
+by Lemma~\ref{lmm:b:linear-endpoint}. The quadratic source has the
+same scale and zero square-root coefficient, by
+Lemma~\ref{lmm:b:quadratic-endpoint}: its two singular corners
+cannot be reached together. Both sources have order at least
+$3h-2>(h-1)/2$ at $y=0$, as checked in
+Proposition~\ref{prp:s07:borel-transport}. Thus
+Lemma~\ref{lmm:b:local-transport} applies, including its uniform
+remainder and derivative estimates. The remote integral is analytic
+at the endpoint by Corollary~\ref{crl:b:remote}; it contributes no
+square-root coefficient. All operations are consequently valid on
+the common complex regions, including their endpoint neighborhoods.
+\end{prf}
+
+For $\theta=0$ write $P_h(x)=P_h(0,x)$. In particular,
+\begin{equation}\label{eq:s08:principal-recurrence}
+ P_1(x)=\frac1{x_*-v_0(x)},\qquad
+ P_h(x)=\frac1{x_*-v_0(x)}\int_x^R P_{h-1}(s)\,\dd s
+                                      \quad(h\geq2).
+\end{equation}
+These coefficients are positive on the real interval $0\leq x<R$.
+Their growth at the critical endpoint is controlled by
+\eqref{eq:s08:leading-bounds}; the recurrence is therefore an
+ordinary convergent integral identity, not a formal prescription.

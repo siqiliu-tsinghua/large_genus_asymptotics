@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and actual s02 r012 acceptance are confirmed, and the same unused bibliography append adds no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve all stable vertex types, the unmarked exception, coefficient orders and the nonelliptic endpoint condition m>=2 from r005.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The lambda_g/beta normalization, exact Bessel factorials, tree automorphism weights, elliptic-leaf factor and final b_g/rho conversion remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, scopes, labels and interfaces retain g_2, z_{0,1}, Phi/w, x_*/R, beta_g and the distinct b_g/scalar b without reinterpretation.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact unused bibliography append changes no premise or inference of the exact-vertex, tree-reduction, saddle or elliptic-leaf proofs.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged all-type vertex bound, complete tree tail and two odd half-order cancellations retain their hypotheses and strict relative O(g_2^-2) conclusion.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot 6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de; actual source SHA256 8ab23285598d9f48162de99d116c1f9391867f72cd8ef37db14ecbd1fb8fd838; actual PDF SHA256 a42e70180fb5af2169a6b5cddc4d2d3be1ca38d734300dcb39ca7fd5121f5597; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r005, with identical input paths and exact 8323-byte prefix plus recorded append; its SHA256 equals the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, preserving the common four-key nonuse/no-wildcard analysis.",
+    "Saved text and independently extracted complete native PDF layout text equal r005, and the common writer ACK hash matches; no prior MATH issue was open and no B manuscript was reviewed.",
+    "Only these two reports were written, without old Bessel/tree/saddle recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 6,
+  "schema_version": 1,
+  "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de",
+  "summary": "Pass for s06 r006: the independently verified unused bibliography append preserves every scientific input, prior mathematical conclusion and complete native rendering.",
+  "unit": "s06",
+  "verdict": "pass"
+}

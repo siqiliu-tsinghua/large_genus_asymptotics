@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Archive/live/artifact, snapshot/source and native PDF/helper/entry hashes match, the original binding and s02 r012/s06 r006 acceptance are confirmed, and the same unused bibliography append adds no cited premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Identical scientific inputs and path sets preserve stable targets, genus/defect ranges, kappa degree g_2+h, finite-jet bounds and Borel minimum degree/parity from r003.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Positive Chern weights, sine/beta inversion, string cancellation, characteristic sign, Lagrange factorials and both Borel Beta factors including the quadratic half remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions, variable domains, inverse-branch conventions, derivative-before-composition rules, labels, interfaces and mathematical macros retain their original bytes.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The sole exact unused bibliography append changes no premise or inference of the string lemma, finite-jet constant argument, characteristic recovery or Borel proof chain.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Fixed-genus endpoint convergence and coefficientwise higher-Borel identities retain their original scope without acquiring an infinite-genus interchange or a Section 8 asymptotic claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh S08-SHARED signature on snapshot 01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53; actual source SHA256 2c66dcf1010d7f0254bfcc549cf1bf26107c7d7181badfbc66993b698141d419; actual PDF SHA256 e01e07c09623c822c55244cfae7f9909ba918ab6fe57180779d82e14bbf2bb6e; strict/layout diagnostics are empty.",
+    "Only references.bib differs from r003, with identical input paths and no new response-selection change; its exact 8323-byte prefix plus recorded append yields the previously audited 6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf, preserving the common four-key nonuse/no-wildcard analysis.",
+    "Saved text and independently extracted complete native PDF layout text equal r003, and the common writer ACK hash matches; no prior MATH issue was open and no B manuscript or new theorem application was reviewed.",
+    "Only these two reports were written, without old ILW/Borel recomputation, workflow/status commands, builds or source/state/old-record/shared-output edits."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53",
+  "summary": "Pass for s07 r004: the independently verified unused bibliography append preserves every scientific input, prior mathematical conclusion and complete native rendering.",
+  "unit": "s07",
+  "verdict": "pass"
+}

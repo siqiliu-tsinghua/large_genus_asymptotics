@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "ACADEMIC-009 is resolved: the recovered-singularity proof writes S-y directly throughout, introduces no replacement alias, and the interface explicitly retains t_0=x as the descendant zero time. Native pages 32--33 and 37 show the expanded initial-segment argument and shortened background-proof ending coherently grouped, with statement/proof adjacency and the local proof square preserved.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The added argument explicitly uses the accepted Appendix B shift lemma and common-domain proposition, and derives its three distance identities and path-length estimate here, rather than assigning them to FO90 or an unpublished calculation. The unchanged primary-source applications, semipositivity/boundary distinction and transfer-method credit retain the full r001 verification.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Checked the new application against Lemma B.4, Proposition B.12 and (B.28): c=1-tau, t=tau satisfy the shift condition, a smaller angular region supplies the required margin, and the critical-cone extension permits normalized endpoint distances bounded away from zero without assuming an inverse disk. Equation (B.28) with one center derivative and no Borel derivative gives exactly the claimed (h-3)/2 exponent; bibliography, external locators and all shared/dependency sources are unchanged.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "For |u|<=C|S-y| the displayed positive combinations and tau<1/2 make the center and both endpoint distances comparable to |S-y|, so the derivative bound integrates to O_h(|S-y|^((h-1)/2)) on the fixed smaller complex cone. The interface records this actual hypothesis and mechanism, while all 33 numbered formulas and 13 principal statements remain exact, including the additive recovered singularity, fixed-layer ranges, relative o(1) final equivalence and separate O_h(g^(-1)) background bound.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer recheck of r002/changes.diff, r001/author_response.json, revised interface and the full changed proof context; only ACADEMIC-009 is recorded as resolved by this role, with the other reviewers retaining responsibility for their own issue closures.",
+    "Verified every archived/live input and artifact fingerprint, recomputed snapshot and render-source hashes, checked actual native PDF/entry/helper hashes and the real reviewer binding with approved/fresh dependencies; the selected r001 author response is a new input, separate from the four changed local source/handoff paths.",
+    "The actual PDF SHA-256 is 3c1d58d015f614286748956881757ac9c5638fab87a06a34b12c88415a57972e and the render-source hash is beb41dd39572970ffd48c4fd66c1e01504682138c02fa49310a69fef73f288dc; the matching receipt is strict/pass with empty standard/layout diagnostics. The PDF has 53 pages; the final Section 8 proof continues onto page 38 before Appendix B, rather than ending on page 37.",
+    "Reused the independently verified unchanged primary sources without renewed browsing; only this round's reports and private ignored page images were written, with no source, state, old report or frozen output modified or rebuilt."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-009"
+  ],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b",
+  "summary": "Pass. ACADEMIC-009 is resolved, and the new initial-path cone argument is accurately attributed and applied within Appendix B's stated hypotheses without enlarging the claims or precision.",
+  "unit": "s08",
+  "verdict": "pass"
+}

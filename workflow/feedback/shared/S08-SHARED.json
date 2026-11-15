@@ -1,0 +1,32 @@
+{
+  "append_file": "build/s08-preparation/additions.bib",
+  "append_sha256": "aa3bc924207e54e543052ac69cac1e10447e34f972f22ef41dba13bff54109b2",
+  "baseline": "build/s08-preparation/shared-update/baseline.json",
+  "baseline_sha256": "728bff0eff2a51a209d275f3e3379e3559c741724df0007bc2efdb9412228bd3",
+  "constraints": [
+    "No change to old proofs, formulas, conventions, interfaces, reference entries or proof spacing.",
+    "The four new keys are unused in every previously accepted TeX closure; no wildcard citation.",
+    "Native preview layout text must equal the prior accepted version byte for byte.",
+    "No manual state edit, report imitation, bypass or frozen-history rewriting."
+  ],
+  "id": "S08-SHARED",
+  "objective": "Prepare the four original references required for Section 8, before freezing its supporting Appendix B.",
+  "order": [
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05",
+    "s06",
+    "s07"
+  ],
+  "original_agents": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "writer": "/root/s02_writer"
+  },
+  "procedure": "After the original author saves and stops the unfrozen first b draft, defer b using the CLI; append once; obtain the actual original-writer common acknowledgment; sequential real snapshots/original-role signatures/strict acceptance for all seven old units; restart b and retain all original contexts.",
+  "scope": "Append exactly FO90, CH88, Fuj78 and Kaw81 to references.bib; preserve the complete old bibliography prefix and every scientific input.",
+  "source_record": "workflow/feedback/shared/S08-SHARED_sources.json"
+}

@@ -1,0 +1,43 @@
+% !TeX root = ../../main.tex
+\subsection{Proof of Theorem 1.4}
+\label{subsec:s08:06}
+
+The coefficient asymptotic and the background comparison now apply
+to the same unmarked intersections. Two factorial ratios remain:
+one comes from recovering the raw potential at fixed defect, and
+one comes from replacing an exponential intersection by the power
+in $b_g(h)$. Keeping them separate explains the exponent $2h$ in
+the theorem.
+
+\begin{prfn}{Theorem~\ref{thm:fixed-defect}}
+For $h=0$ the ratio is identically one. Fix an integer $h\geq1$
+and let $g\to\infty$, so that $g\geq h$ eventually. Applying
+Proposition~\ref{prp:s08:background} at defects $h$ and $0$ gives
+\begin{equation}\label{eq:s08:final-factorials}
+ \frac{b_g(h)}{b_g}
+ =12^{-h}\frac{D_{g,h}!}{g_2!}\,
+            \frac{T_{g,h}}{T_{g,0}}\,(1+O_h(g^{-1})).
+\end{equation}
+Substitute \eqref{eq:s08:intersection-ratio} to obtain
+\begin{equation}\label{eq:s08:combined-ratio}
+ \frac{b_g(h)}{b_g}
+ \sim \frac1{h!}
+       \left(\frac{D_{g,h}!}{g_2!}\right)^2
+       \left(\frac{\mathcal B(0)}{12R}\right)^h
+       \sqrt{\frac{g_2}{D_{g,h}}}.
+\end{equation}
+Since $D_{g,h}=g_2+h$, each factorial ratio is asymptotic to
+$g_2^h$. Thus each of the two mechanisms contributes a factor
+of order $g^h$. Finally
+$\mathcal B(0)=1/(2R)$ and $\rho=12R$ imply
+$\mathcal B(0)/(12R)=6/\rho^2$. Since $g_2/g\to2$,
+\[
+ \frac{b_g(h)}{b_g}
+ \sim \frac1{h!}\left(\frac{6g_2^2}{\rho^2}\right)^h
+ \sim \frac1{h!}\left(\frac{24g^2}{\rho^2}\right)^h.
+\]
+This is \eqref{eq:gh11}. The coefficient transfer used
+$1/2<\nu<1$ and gives a relative $o(1)$ error. Although the
+background comparison has the stronger relative
+$O_h(g^{-1})$ bound, no such rate for the final ratio is asserted.
+\end{prfn}

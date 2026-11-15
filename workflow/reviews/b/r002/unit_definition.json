@@ -1,0 +1,33 @@
+{
+  "depends_on": [
+    "s07"
+  ],
+  "directory": "sections/b_analytic_estimates",
+  "id": "b",
+  "kind": "appendix",
+  "number": "B",
+  "outline_heading": "### 附录 B Analytic estimates for transport kernels",
+  "subsections": [
+    {
+      "path": "sections/b_analytic_estimates/01_inverse_domains.tex",
+      "title": "Inverse domains and characteristic geometry"
+    },
+    {
+      "path": "sections/b_analytic_estimates/02_regular_transport.tex",
+      "title": "Normal convergence away from a critical point"
+    },
+    {
+      "path": "sections/b_analytic_estimates/03_endpoint_bounds.tex",
+      "title": "Uniform bounds at the two kernel endpoints"
+    },
+    {
+      "path": "sections/b_analytic_estimates/04_local_transport.tex",
+      "title": "Local transport and common dented regions"
+    },
+    {
+      "path": "sections/b_analytic_estimates/05_negative_primitives.tex",
+      "title": "The negative-axis primitive and its coefficient bound"
+    }
+  ],
+  "title": "Analytic estimates for transport kernels"
+}

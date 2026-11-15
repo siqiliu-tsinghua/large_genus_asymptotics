@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read all five frozen subsections continuously against the s01/s02/s06/s07 interfaces. B.1 defines the moving critical point and value in (B.1), complex disks before Lemma B.1, and the two-distance cone in (B.8); Lemma B.6 binds its complex center, positive radius and derivative scale before its estimates. B.3 defines the endpoint class, exponent 1/2<nu<1, coefficient holomorphy, larger neighborhoods and derivative convention in (B.17)-(B.20) before either endpoint lemma. Lemma B.11 states the integer vanishing order and parameter-interval hypotheses; Proposition B.12 specifies the finite cap H and all center/parameter ranges, while B.5 defines I_k and binds the coefficient degree N before the primitive bound. Necessary assumptions remain in the main argument rather than an optional remark.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "B.1 inherits w, x_*, R and w_theta/v_theta from Sections 6-7; its new x_{*,theta}, R_theta agree at theta=0, and S=R_theta-x is maintained through the cone, endpoint and transport estimates. The fields L_{g,h}, calligraphic L_h and G_{g,h}, kernel operators and (2pi)^(-2g) normalization retain the Section 7 meanings, including the degree N=2g+h-2 in Proposition B.16. No alternative g_2, Hodge-index family, integral-family capitalization, Bernoulli font or Chow-coefficient convention is introduced; INTERFACE.md records the same inheritance and local scopes.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The entrance and B.1/B.2 openings proceed from the inherited Bessel inverse and exact transport without repeating g,n, moduli spaces or an inherited-symbol inventory. The two-step inverse-domain explanation has a concrete purpose: univalence alone does not give the full radius budget required by shifts. M_k is confined to repeated angular/derivative calculations in B.1; the endpoint class and generic H,J,Q inputs are reused in Lemmas B.9-B.11 and Proposition B.12, while the positive abbreviation s is explicitly confined to the regular-disk proof. Short normalized distances 1-y/S and 1+y/S remain written out instead of acquiring additional global names.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "section.tex explains the progression inverse-radius budget -> regular-disk control of the remote characteristic -> endpoint control of its initial part -> the negative-axis primitive, and reserves principal coefficients and asymptotic transfer for Section 8. B.2 explains why finite-genus rational coefficients can be used before Borel convergence is proved; B.3 distinguishes generic endpoint inputs from the actual fields of Proposition B.12. The B.4 opening identifies the three bounds needed for a common region, and B.5 separates the fixed-genus primitive from the uniform-genus estimate and names its three integration intervals.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All 16 main statements are followed directly by their proofs; no credit or notation interlude separates a statement from its argument. The geometry, regular convergence, linear/quadratic endpoint estimates, local transport and final coefficient estimate have distinct reusable outputs. Lemma B.11 separates the frozen singular term from the rest of the local characteristic; Proposition B.12 separates the base case, simultaneous induction, finite choices, common-region patching and complex-parameter continuation; Proposition B.16 visibly separates the near-zero, bounded-negative and infinite parts. Actual PDF pp.27-41 show readable normal-size formulas, intact equation tags, usable proof-end spacing and ordinary continuation across page boundaries without clipping or detached essential material.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The geometric radii r,r_H,r_0 leave the inherited formal epsilon untouched; theta/sigma describe the background and characteristic motion, S/S_sigma the corresponding distances, and gamma/nu the angular margin and remainder exponent. The generic holomorphic inputs use calligraphic H,J,Q, the finite defect cap uses H, and coefficient/vanishing orders N are explicitly local; derivative orders a,k are rebound in their estimates. Lemma B.6's positive scalar beta is locally typed and distinct from beta_g, and the inverse tube uses fraktur T whereas the truncated transport uses calligraphic T. Inspection of the rendered formulas, especially (B.23), (B.28) and (B.35), did not reveal a misleading collision of these roles.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The Section 7 conclusion and Appendix B entrance on PDF p.27 connect coefficientwise identities to the analytic work now required. The negative-disk lemma leads naturally to regular convergence, the remote-characteristic corollary isolates the part not needing endpoint calculus, and B.3 explicitly points to Proposition B.12 for application of its conditional class. B.4 explains that leading-coefficient identification is postponed, while the passage from Lemma B.14 to B.15 distinguishes a coefficient bound from the asymptotic transfer still needed in Section 8. These transitions preserve logical continuity without routine redefinitions or making a necessary input skippable.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Full first-round readability review of Appendix B only; this is not an unused-bibliography refresh and does not approve Section 8 or Theorem 1.4.",
+    "Verified the frozen snapshot, all archived/live input hashes and receipt artifacts; source SHA256 7f82decb3898d10d166ef8c0d16e674e3360a0549095be7925db20f21b8dc2b4 and native PDF SHA256 625520f822305c89dea820a12a12a3882b515e7bf0ecec87817d37fbe5d5c3c5 match the current receipt. Standard and layout diagnostics are empty.",
+    "Actually inspected every new Appendix B page, native PDF pp.27-41, using private renders under build/s08-preparation/readability-b-r001/; no shared PDF or build receipt was overwritten.",
+    "python scripts/validate.py --unit b passed. No manuscript, shared input, workflow state, older report or other role's report was edited."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "b6e1aa092e2ee935c285035e01288f27afe0c885ce9ef9092bb35e4f90a20aff",
+  "summary": "Appendix B presents a traceable analytic chain from inverse domains and normal convergence through endpoint transport to the uniformly bounded negative-axis primitive. New assumptions and symbols are locally specified, the technical proofs have useful functional divisions, and the frozen rendering is readable. No unresolved readability issue was found.",
+  "unit": "b",
+  "verdict": "pass"
+}

@@ -1,0 +1,37 @@
+{
+  "CH88": {
+    "downloaded": true,
+    "pdf": "refs/Cornalba_Harris_1988_Divisors.pdf",
+    "sha256": "83437ee5a37dc295566e3ad9c073383f4cc4b145ea3b0d6d7e65e39a6484a98e",
+    "text": "build/ref-text/CH88.txt",
+    "url": "https://numdam.org/item/10.24033/asens.1564.pdf",
+    "verified_locator": "Theorem (1.3), printed pp.457-458: a lambda-b delta ample iff a>11b>0."
+  },
+  "FO90": {
+    "downloaded": true,
+    "pdf": "refs/Flajolet_Odlyzko_1990_Singularity.pdf",
+    "publication_metadata": "Publisher-deposited Crossref record for 10.1137/0403019; cached at build/s08-preparation/FO90_crossref.json.",
+    "sha256": "118214169841146775943254fed9e3794d82f391909199e2332c79e0b690daf1",
+    "text": "build/ref-text/FO90.txt",
+    "text_extraction_reliable": false,
+    "url": "https://www-users.cse.umn.edu/~odlyzko/doc/arch/singularity.anal.pdf",
+    "version": "Author-hosted preprint; reversed page order. Rendered printed pages 1,4,25 inspected. Section 2 is A Basic Transfer Theorem."
+  },
+  "Fuj78": {
+    "downloaded": true,
+    "pdf": "refs/Fujita_1978_Kahler_fibers.pdf",
+    "sha256": "2e8cf671dc62183b2e5482063be7546f1f86d8f144a7e5a4a14b3dc03030eda7",
+    "text": "build/ref-text/Fuj78.txt",
+    "url": "https://www.jstage.jst.go.jp/article/jmath1948/30/4/30_4_779/_pdf",
+    "verified_locator": "Main Theorem (0.6), printed pp.779-780: numerical semipositivity of the relative dualizing direct image over a curve."
+  },
+  "Kaw81": {
+    "downloaded": true,
+    "pdf": "refs/Kawamata_1981_Abelian_varieties.pdf",
+    "sha256": "2239d4496505c21443b775c8472e77693363c175c3bf3a85ce3eb1169967de38",
+    "text": "build/ref-text/Kaw81.txt",
+    "url": "https://www.numdam.org/article/CM_1981__43_2_253_0.pdf",
+    "verified_locator": "Theorem 5, printed p.254: higher-dimensional base, SNC boundary and unipotent monodromy."
+  },
+  "existing_LX26b": "Section 4.2, Proposition 4.4 gives full boundary nefness; Proposition 6.1 m=0 gives smooth projective generically finite reduction."
+}

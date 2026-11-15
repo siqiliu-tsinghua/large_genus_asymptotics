@@ -1,0 +1,63 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the entry and all six frozen subsections continuously in the paper's order. Although Appendix B was reviewed first in the workflow, Section 8 precedes it in the manuscript: 01_analytic_domains.tex:5-14 and 55-71 appropriately give the first critical-branch and finite-cap/domain data here (PDF p.28). P_h and E_h are defined by their actual expansion and bounds before the seed/propagation lemmas (02:5-34, p.29); calligraphic B, Y_0 and H_a precede their uses (03:5-35, pp.30-31). D_{g,h}, F_h^+, its superscript and integration convention, T_{g,h}, T_{g,h}^delta, the quotient convention for p and xi, and C_k all have local definitions and ranges (04:12-39 and 200-225; 05:11-16, 141-145 and 168-184). The new distance t_0 is explicitly assigned before use, but its collision with inherited notation is recorded separately under consistency/design.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The section preserves g_2, z_{0,1}, R, rho, beta_g, the lowercase integral families and the Fcal/Gcal/L normalizations; the final proof retains g_2 rather than substituting a new global name. However, 04_coefficient_transfer.tex:91-142 (PDF pp.32-33) assigns t_0=S-y while the inherited specialization still fixes t_0=x (07_ilw_transport/01_hodge_potential.tex:8-9 and 02_specialization.tex:7). This avoidable reuse in the same potential/center argument is READABILITY-001 and requires a local notation change.",
+      "status": "issue"
+    },
+    "notation_economy": {
+      "evidence": "The theorem-first entrance has no renewed g,n/moduli/Hodge-bundle setup or inherited-symbol inventory (section.tex:5-22, PDF p.27). The new P_h, calligraphic B, D_{g,h} and F_h^+ each have repeated independent roles in propagation, ordered integration and recovery; T_{g,h}^delta and C_k similarly reduce the repeated boundary/mixed-intersection expressions. The brief recalls of the full inverse-radius budget (01:44-53), primitive constant (04:247-263) and ordered-branch stack factors (05:47-57) explain specific mechanisms. A repeated local distance abbreviation in Proposition 8.8 is reasonable, provided its conflicting name is fixed under READABILITY-001.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The opening first states that Section 8 proves Theorem 1.4, then connects the exact Section 7 equation, Section 6 inverse and Appendix B estimates before its four-step route (section.tex:5-22, PDF p.27). The propagation guide explains the conserved endpoint distance and lower characteristic end (02:60-65, pp.29-30); the recovery guide motivates control of the whole path before transfer (04:5-10 and 66-70, pp.31-32). The background-comparison opening distinguishes one-node control from the complete change, and 06:5-10 explains the two factorial ratios before the final proof (pp.34-37). These guides identify inputs, outputs and the different error strengths without overpromising a final O(1/g) rate.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All 13 principal statements have adjacent proofs, with 14 proofs including the named final theorem proof. Propagation separates the linear branch from characteristic recovery; Proposition 8.8 separates the initial segment, principal remaining segment and other branches; recovered intersections separates the primitive and fixed markings; the one-node and mixed-intersection proofs have useful functional divisions (PDF pp.29-37). The sole source remark follows the transfer proof and is genuinely optional (04:193-198, p.33). Actual inspection of every new page found formulas and tags inside the text block, but the square ending Proposition 8.13 falls alone at the left of a new line immediately before 8.6 (05:215-219, p.37): READABILITY-002 requests a local proof-ending repair.",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "The main groups are clear: x,y and normalized Y are analytic variables; h,H are defect/layer indices; a,c and D/M/N are explicitly scoped degrees; P_h is an endpoint coefficient; calligraphic B is distinct from ordinary Bernoulli B_n. The boundary insertion uses T^delta rather than overloading the ILW field U, and the quotient projective-bundle class xi is defined locally before use. The new t_0 distance in Proposition 8.8 nevertheless occupies the already fixed zero-time symbol t_0=x, so the otherwise useful grouping is broken at precisely that proof; see READABILITY-001. Formal epsilon and boundary delta retain their original roles.",
+      "status": "issue"
+    },
+    "transitions": {
+      "evidence": "The Section 7 conclusion and Section 8 entrance connect formal coefficients to actual analytic asymptotics on p.27. The logarithmic seed, invariant positive m=1 distance, greater regularity of the other/quadratic branches, and characteristic recovery are explained at the steps where they are used (02:43-115, pp.29-30). Ordered integrals explain the origin of 1/h! (03:21-29, p.30); recovered intersections explicitly combines parity at both endpoints to obtain the factor two (04:229-244, p.34). The one-node argument bounds the entire genus/defect sum, and the final proof displays the separate factorial ratios and their two g^h contributions before converting to 24g^2/rho^2 (05:60-86, p.35; 06:16-42, p.37). No essential hypothesis is hidden in the optional transfer-method remark.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/08_fixed_defect/04_coefficient_transfer.tex:91-142, Proposition 8.8 proof; native PDF pp.32-33. Compare sections/07_ilw_transport/01_hodge_potential.tex:8-9 and 02_specialization.tex:7.",
+      "message": "The proof introduces t_0=S-y as an endpoint distance, although t_0=x is the established zero descendant time for these same specialized potentials. The local assignment is explicit, but it makes a familiar inherited variable acquire an unrelated role while x remains in the argument. A reader following Sections 7-8 must unnecessarily reset that symbol.",
+      "requested_change": "Replace this proof-local distance name by a distinct explicitly scoped symbol, or write S-y directly, throughout the proof. Preserve the inherited t_0=x convention and all mathematical content; update the local notation record in INTERFACE.md if an abbreviation is retained. No earlier-section or shared-input change is needed."
+    },
+    {
+      "id": "READABILITY-002",
+      "severity": "minor",
+      "location": "sections/08_fixed_defect/05_background_comparison.tex:215-219, end of Proposition 8.13 proof; native PDF p.37 immediately before the 8.6 heading.",
+      "message": "The proof's closing square is pushed onto a separate line at the left margin. This differs from the other proof endings and leaves a detached symbol between the closing explanation and the final-theorem subsection. The empty overfull list does not reveal this visible local defect.",
+      "requested_change": "Locally shorten/reflow the closing summary, or adjust only this proof ending, so its square stays with the final line in the usual right-hand position. Preserve the estimate, references and mathematical meaning, and recheck the neighboring 8.6 transition in the new PDF. Keep the settled global prf/prfn spacing, font size, text width and bibliography settings unchanged."
+    }
+  ],
+  "notes": [
+    "First full formal readability review of Section 8, signed by the actually bound original reviewer /root/s02_readability. Read all six new subsections, entry, interface, outline, writer handoff and coordinator review focus; prior Appendix B acceptance was used only as a dependency, not as acceptance of this section.",
+    "Verified all 54 archived/live inputs and submission artifacts, recomputed the exact snapshot and source hash, and checked the native PDF/entry/helper hashes against the current receipt. Source SHA256 d85268f907c49a3f7f8da0b2df68407a2a7da826fddf4493524d7533bd4b2a7f; PDF SHA256 916aeb78405e3889fe64227bc9c3046509ae465a334f7c44316d3153fa6b3ba5. Strict diagnostics and layout_diagnostics are empty.",
+    "Actually inspected every new native page, pp.27-37, plus the final bibliography page p.53. The 10pt/no-showkeys/flush-left bibliography/proof-gap settings survive; shared main/preamble/bibliography inputs match accepted B r002. Private renders are confined to build/s08-preparation/readability-s08-r001/.",
+    "Independently counted 33 numbered equations, 13 principal statements and 14 proofs; python scripts/validate.py --unit s08 passed. Only this round's own report/handoff and ignored inspection products were written; no manuscript, state, another role's report or frozen build output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd",
+  "summary": "The theorem-first route and the explanations of endpoint propagation, ordered integration, the mirror factor two, full convolution and both final factorial ratios are usable. Two local repairs remain: avoid reusing the inherited zero-time t_0 as an endpoint distance, and restore the normal placement of the closing square before subsection 8.6.",
+  "unit": "s08",
+  "verdict": "changes_requested"
+}

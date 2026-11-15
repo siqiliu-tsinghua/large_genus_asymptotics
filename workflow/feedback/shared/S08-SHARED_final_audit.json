@@ -1,0 +1,200 @@
+{
+  "active_unit": null,
+  "all_native_layout_texts_byte_identical": true,
+  "all_seven_old_approvals_fresh": true,
+  "append_bytes": 1428,
+  "b_review_not_claimed": true,
+  "b_status": "planned",
+  "id": "S08-SHARED",
+  "new_keys_unused_in_old_tex_inputs": 38,
+  "old_bibliography_prefix_bytes": 8323,
+  "old_scientific_inputs_byte_identical": true,
+  "paused_b_complete_draft_preserved": true,
+  "source_record": "workflow/feedback/shared/S08-SHARED_sources.json",
+  "time": "2026-11-15T09:19:59+00:00",
+  "units": {
+    "a": {
+      "bundle": "workflow/reviews/a/r009",
+      "native_pdf_sha256": "87c5112142de0bd2eb0d55b965504b4ce784079f13f3c256ac42e1c79647555b",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/a/r009/academic.json",
+          "sha256": "7c03ced5a5024e13e1f899a86de2daaf6c47217dc659347926fc75b7feb75d2c",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/a/r009/math.json",
+          "sha256": "db0bfac99149eeeefb8c13125f5e48c6ccd53a0f16d26ce6be4f16d7e5597a6c",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/a/r009/readability.json",
+          "sha256": "1f853020fbc01210168fcd735dcc8eefe0c2fe148c1891b715404be5a584f8cd",
+          "verdict": "pass"
+        }
+      },
+      "round": 9,
+      "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba"
+    },
+    "s02": {
+      "bundle": "workflow/reviews/s02/r012",
+      "native_pdf_sha256": "c26f3482fd227864f98864595d47006b083603e315d10cce4978230e3b53e113",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s02/r012/academic.json",
+          "sha256": "600b3f49f59b9253712916cfbd8d1e776655d2c9b8f6ef07cd84c1a08ffcefbf",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s02/r012/math.json",
+          "sha256": "2109f756e65492b81e081de1f3b8ace80f9bd83eb415d79083f2bb6de33f39af",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s02/r012/readability.json",
+          "sha256": "7cc133c6811b5745b17ed79a800fe207901a9007276515fd131d70243469e473",
+          "verdict": "pass"
+        }
+      },
+      "round": 12,
+      "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec"
+    },
+    "s03": {
+      "bundle": "workflow/reviews/s03/r009",
+      "native_pdf_sha256": "fec0682c0cea3f288743e14abf23f9b8a0e55ffe278b93325c6071068c2d89ff",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s03/r009/academic.json",
+          "sha256": "a69c1fd7947a3abaf444865b5d5d6d42398875bf381d1647a95d9cc0ae807d98",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s03/r009/math.json",
+          "sha256": "21760631e3c6d6763421555c08cdc7449f5b19e7b1c912d790685756be0c7640",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s03/r009/readability.json",
+          "sha256": "01c396134853a907034458ae98f0c1c41084a251afd5ccfd32bb63f9fdeb96a0",
+          "verdict": "pass"
+        }
+      },
+      "round": 9,
+      "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4"
+    },
+    "s04": {
+      "bundle": "workflow/reviews/s04/r011",
+      "native_pdf_sha256": "fd1983ffa8195c52f5b9933acb3924417c2c898c305e38f242b0c70f8421776d",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s04/r011/academic.json",
+          "sha256": "ce4e998327ade024d3b1ae56ffc7db161e09f85009fde3c5622a40f674d013f7",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s04/r011/math.json",
+          "sha256": "643c341e413d612ab5a2cba0037e9991ddd25f295db112f85b1bf51f12bc3ff7",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s04/r011/readability.json",
+          "sha256": "fc265a69c4e8ec41a24044a7d4d76bb5e71502cf349cfe54ceef25ec368befe2",
+          "verdict": "pass"
+        }
+      },
+      "round": 11,
+      "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b"
+    },
+    "s05": {
+      "bundle": "workflow/reviews/s05/r008",
+      "native_pdf_sha256": "e7e0ab3da20e90692581b6af083e1f31d4a0482c20fc6e4e906986526563294d",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s05/r008/academic.json",
+          "sha256": "e0e1a61daf5dbd7905fea7992526fe0c39d29f67b089411c371df8ddb0c0cfc9",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s05/r008/math.json",
+          "sha256": "ec0d56a3723e25ffa3c007e020a822ebf7582c7a24b562663ca92648d7a9df1c",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s05/r008/readability.json",
+          "sha256": "0597eae7763f701eb3e053a6c7f463d60df3c504d1855354e729cc4b780704f8",
+          "verdict": "pass"
+        }
+      },
+      "round": 8,
+      "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3"
+    },
+    "s06": {
+      "bundle": "workflow/reviews/s06/r006",
+      "native_pdf_sha256": "a42e70180fb5af2169a6b5cddc4d2d3be1ca38d734300dcb39ca7fd5121f5597",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s06/r006/academic.json",
+          "sha256": "b54ed7029ee81e547103bce1dc8b7897ff70330c7656d0bffbedb7d0fdfded3a",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s06/r006/math.json",
+          "sha256": "ea0a782e09a506d458dc6afaf3c4ee2ed2d2181cc29f7d7aa7ee593c2503f289",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s06/r006/readability.json",
+          "sha256": "4cfac53a87d658f7b83207cc5b51f78601099fb0fff6535f38e14caa37db2d12",
+          "verdict": "pass"
+        }
+      },
+      "round": 6,
+      "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de"
+    },
+    "s07": {
+      "bundle": "workflow/reviews/s07/r004",
+      "native_pdf_sha256": "e01e07c09623c822c55244cfae7f9909ba918ab6fe57180779d82e14bbf2bb6e",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s07/r004/academic.json",
+          "sha256": "4aad8cb8872106cf1af9468d64da09757c3cc43cd087ee4fbc2329570e9b10a3",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s07/r004/math.json",
+          "sha256": "9c52c4e489fca759c3acb9b1ea479f499da682c264abafbf804d62268d0bf557",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s07/r004/readability.json",
+          "sha256": "7b8d1884e7e2e797d379bc3ad1005c0a0b80ad7c82ab33bc06f307277d86f0a3",
+          "verdict": "pass"
+        }
+      },
+      "round": 4,
+      "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53"
+    }
+  },
+  "writer_ack_sha256": "0d7b4d04b88a1cb3bb77b59ca5d2ad756116c70601b42bbb548f17231401ac0e"
+}

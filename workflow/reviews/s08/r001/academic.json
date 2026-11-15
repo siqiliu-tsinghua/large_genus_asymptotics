@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Read the complete entry, six subsections, interface and handoff and inspected native pages 31--33 and 36--37: the goal precedes the four-step route, all 13 principal statements have adjacent proofs, longer arguments have functional headings, and the short FO90 source remark follows its proof. Definitions and inherited conventions are generally economical, but the recovered-singularity proof reassigns the established descendant time t_0=x to the unrelated distance S-y, without an interface entry; ACADEMIC-009 requests removal of this notation conflict.",
+      "status": "issue"
+    },
+    "attribution": {
+      "evidence": "The exact ILW, top-Hodge, Mumford and Appendix B inputs retain their internal provenance, while the actual endpoint recurrence, ordered-integral factorial, inverse-sine kernel, two-point transfer, full node convolution and mixed-intersection argument are supplied as derivations here rather than borrowed assertions from notes. The manuscript credits Flajolet--Odlyzko for the contour method, Fujita/Kawamata for semipositivity, Liu--Xu for the boundary reduction and stack-cover argument, and Cornalba--Harris for ampleness; it does not substitute determinant nefness for full vector-bundle nefness or claim these classic inputs as new results.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Read the actual primary passages: rendered FO90 author-preprint PDF 22/21 (printed 4/5), Fuj78 (0.6) on printed 779--780, Kaw81 Theorem 5 on printed 254, LX26b Proposition 4.4 and (4.2)--(4.3) on PDF 7--8 and Proposition 6.1 on PDF 10, and CH88 Theorem (1.3) on printed 457--458. They match the applied indented-contour method, quotient-line semipositivity with the stated smooth/semistable, normal-crossing and unipotent conditions, labeled boundary reduction, m=0 cover with positive rational stack degree, and full-compactification ample criterion 12>11; official DLMF (10.8.2)/(10.5.2) also match the harmonic-number sign and positive Wronskian evaluation at z_{0,1}.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The text separates exact finite-genus identities, fixed finite-layer analytic estimates and fixed-h asymptotics, uses the accepted complex-domain/derivative hypotheses before transfer, and distinguishes the excluded genus-one primitive from finite low-genus marked cases. It retains both parity-related singularities, the two factorial ratios and the independent O_h(g^(-1)) whole-background comparison, then claims only the Introduction's asymptotic equivalence with relative o(1), with no growing-defect, growing-marking or next-order assertion; the interface exports agree with those bounds and proof statuses.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-009",
+      "severity": "minor",
+      "location": "sections/08_fixed_defect/04_coefficient_transfer.tex:91--151, proof of prp:s08:recovered-singularity (native pages 32--33)",
+      "message": "The proof begins 'Put t_0=S-y' and then uses t_0 throughout the path estimates. Section 7 has already defined the descendant times t_d and fixed x=t_0, which remains the zero-time convention in this same analytic route. Reassigning t_0 to an endpoint distance conflicts with that inherited meaning while the proof still uses x, and the new use is also absent from the interface ledger.",
+      "requested_change": "Keep t_0 exclusively as the inherited zero time. Write S-y directly in these estimates or choose an unused, explicitly scoped local distance symbol; if a dedicated symbol is retained, add its scope and purpose to INTERFACE.md. Preserve all bounds, powers, hypotheses and mathematical conclusions."
+    }
+  ],
+  "notes": [
+    "First complete academic review of the new Section 8, with no previous s08 issue to resolve; ACADEMIC-009 continues the original reviewer's stable sequence after the resolved Appendix B terminology issue.",
+    "Verified the real s08 binding, approved/fresh s02/s06/s07/b dependency chain, every archived/live input and artifact fingerprint, and recomputed snapshot/source hashes; all five dependency interfaces match the retained, previously reviewed B r002 closure.",
+    "The actual 53-page native PDF SHA-256 is 916aeb78405e3889fe64227bc9c3046509ae465a334f7c44316d3153fa6b3ba5 and matches the strict/pass receipt with empty standard/layout diagnostics; source hash d85268f907c49a3f7f8da0b2df68407a2a7da826fddf4493524d7533bd4b2a7f and archived entry/helper hashes also match. Counts independently checked: 13 principal statements, 13 adjacent proofs plus the final theorem proof, and 33 numbered equations.",
+    "FO90 content was checked in the cached author preprint, not an inaccessible journal PDF; published metadata was reused from the settled primary Crossref verification and no published theorem number is asserted. The four classical PDFs match the settled provenance hashes. Official new DLMF checks: https://dlmf.nist.gov/10.8.E2 and https://dlmf.nist.gov/10.5.E2.",
+    "Only this report, its handoff and private ignored page images were written; no source, shared input, state, historical record or frozen PDF/receipt was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd",
+  "summary": "Changes requested for minor ACADEMIC-009: remove the endpoint-distance reassignment of the inherited zero time t_0. Primary-source applicability, attribution and the stated precision/claim boundaries otherwise pass.",
+  "unit": "s08",
+  "verdict": "changes_requested"
+}

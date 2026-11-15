@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_writer",
+  "artifacts": {
+    "changes.diff": "620308b97e45ddd24df4fc85a18f6e518154ef1ead8849fd446d9dd178da46fe",
+    "outline.md": "f8fd72963db9b3925b4eacb4d27b3c4781669f8cb6e466d07473920e78a7bb87",
+    "unit_definition.json": "15a514dfc18563d58dd1dfe3bfb62b21a8a3efdb4175632bbf03d13c3892b725"
+  },
+  "files": {
+    "@outline": "f8fd72963db9b3925b4eacb4d27b3c4781669f8cb6e466d07473920e78a7bb87",
+    "@unit": "15a514dfc18563d58dd1dfe3bfb62b21a8a3efdb4175632bbf03d13c3892b725",
+    "AGENTS.md": "b669feb5e33756aa15d4bb2684752044546e4c0101a32d2bdbad885c515f2024",
+    "frontmatter/abstract.tex": "052a2930ec5130ce0a9cece48e91d1abec50461a4e583f5c36f097f52a5dfdc2",
+    "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+    "references.bib": "6b2682a0784d0bddc220b867dd672742c0066cb849cbcd2e030751bba3bd96bf",
+    "sections/01_introduction/INTERFACE.md": "676624a4d5cfa5e6fa8c4f9fb336df251c7b209904fcb07100c85d4eed9fdc0a",
+    "sections/01_introduction/section.tex": "3e563166d3e32c0bb738708678e58cd9c6dce5c8a29155f9f59db4cfe545ff2e",
+    "sections/02_notation/01_conventions.tex": "dea8a3b6734a6779095d1ab2d0a14d28c5238a577fd3f115770c010f108f1485",
+    "sections/02_notation/02_tautological_classes.tex": "fdc57bff226b1c1aa7a24c583240c9a2e5687ea0377e12272688c5002796774c",
+    "sections/02_notation/03_gluing.tex": "6cd702886ef5c4e00c163ac6fdefde7a7da75e2b6e56fc7fc2de90ea09ef8dbc",
+    "sections/02_notation/04_boundary_and_forgetting.tex": "f2cf7c7e217c822dea0e0700e87e26d50f429f8f2a3952aa37b3949589f40b12",
+    "sections/02_notation/INTERFACE.md": "edcdecb44241d6f230fdbe7f583bbb6519c5b9fdccac79829f8881bd3553c0e7",
+    "sections/02_notation/section.tex": "4fde3018799f8084d3ad4f2a75cff2fb838af08a11e2f8abdae1fe2b56fd7a41",
+    "sections/02_notation/writer_handoff.md": "9e00f001914745012ee97bc5362526bbc213797c45d1171474f2ee38ac2311a1",
+    "sections/03_graph_asymptotics/01_wp_inputs.tex": "793db9b8212c4a567e451eb02747f8404e5381a3063a7a66dc3f8709422222e2",
+    "sections/03_graph_asymptotics/02_deformation_and_loops.tex": "b4eba50bcb84c702bedfebcbd4d1724554bfbfc74ab0617b692f0d7f07d3bb0e",
+    "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex": "5137e2903f2e9320cdbcf9982d3e0b2894cfcea0c43540489c47d19f6212d36f",
+    "sections/03_graph_asymptotics/04_finite_cores.tex": "56431c3fe86e3ff295648993b58882a5165dd0218dfd403b3bac815c316556c8",
+    "sections/03_graph_asymptotics/INTERFACE.md": "588f31fe7fa1aac19ea1b1d28aee26ccf27f3a9a0698dbba6f2818bfbb37690f",
+    "sections/03_graph_asymptotics/section.tex": "9f796262373323a1567b398153c1182fc619659ee47db53cea6799aabe8d72e3",
+    "sections/03_graph_asymptotics/writer_handoff.md": "209c678223f328047fe1b0f64069b88ab689060618065ff204de1c073ffcdc89",
+    "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+    "workflow/PROTOCOL.md": "750c4bf3a7758988194aa057eaedae0fed93cf5c833aa69eb17f51c89f9df82e",
+    "workflow/context.md": "2475cec781d2ebb2528ab94f2840bc38d3711861e491f171a2d75c98e32cf2f3",
+    "workflow/roles/academic.md": "b0c9483b71d0903ef4348500ccc01f820f6567913478c16294167b079ac15480",
+    "workflow/roles/coordinator.md": "2efafb7bb38e7ca5833618ed4b9d58391d70d7eef1039978fb031d2837ff28fc",
+    "workflow/roles/math.md": "597956f4b0ffb625597bbf1b08fe69b6ee1c610ddced0aad07480978f9177b10",
+    "workflow/roles/readability.md": "ecd56957be45fae23b662c0ec523ff7d76d634b84da9b2e81a6f87a1e99552ee",
+    "workflow/roles/writer.md": "9d80ea6b125732613aa247ba561d3e49ddf2b5a0b532f3092d82798b8ac76dee"
+  },
+  "round": 9,
+  "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4",
+  "unit": "s03"
+}

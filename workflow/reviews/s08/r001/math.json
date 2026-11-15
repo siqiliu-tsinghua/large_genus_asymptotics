@@ -1,0 +1,52 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Independently verified all frozen/live input and artifact hashes, the canonical snapshot, actual math binding, accepted dependency freshness, and native PDF/entry/helper hashes against the receipt; validate.py --unit s08 passes. The needed s02 r012, s06 r006, s07 r004 and B r002 statements were compared with their uses, including B.12's critical-cone extension and complex-parameter patching. Direct primary checks confirm DLMF 10.8.2/10.5.2, FO90 Section 2, Fuj78 Main Theorem (0.6), Kaw81 Theorem 5, CH88 Theorem (1.3), and LX26b Propositions 4.4/6.1. The semipositivity argument includes boundary normalization, finite descent and the smooth projective cover; no WP result, internal note or unproved Theorem 1.4 is an input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The Borel degree D=g_2+h=2g+h-3, input degree N'=2g'+h-2 and inverse-kernel output N'+2k-1=D_{g'+k,h} are consistent, with parity h-1. The fixed-marking bound uses M=2g-3+h+n only for n in {0,1,2} and stable targets; h=0 uses the exact top-Hodge input, while the exceptional genus-one primitive is treated as a finite case. The one-node formula has nonseparating degree D-1 and separating degrees a=2G-2+i, c=2(g-G)-2+h-i, both nonnegative with a+c=D-1; all component genera and defect bounds are explicit. On P(E), xi exponent 2g-h-1 plus D equals 4g-4, and the Hodge-index cuts have total codimension 4g-6, leaving a surface.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Verified the negative square-root seed, the exact integral recurrence for P_h and the ordered-integral factor 1/h!. The inverse-sine kernel has alternating (-1)^(m-1), outer m^-2, a plus between shifts and derivatives before evaluation; its Beta integral gives precisely the required factorial without an extra two. The two endpoint amplitudes add because D has parity h-1, and the primitive is smaller by O(1/g). Ordered branches/components give both one-node halves, including diagonal splits. Quotient-projective pushforward is [t^j]c_{-t}(E)^-1=lambda_j by Mumford, so C_0=D!T and C_D=12^D b_g(h). Keeping both final factorial ratios, B(0)=1/(2R), rho=12R and g_2/g tending to 2 yields 24^h/(h! rho^(2h)); the independent rational guards also recover beta_1=1/24, beta_2=7/5760 and b_2=1/5760.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Checked first definitions and scopes in the complete frozen text and INTERFACE: the critical branch/value are introduced in eq:s08:critical-data; the finite cap H, nu, theta_H, r_H, gamma_H and S in crl:s08:domains; P_h and E_h in eq:s08:leading-expansion; the transport integral B in eq:s08:transport-integral; Y_0 and H_a before lmm:s08:bessel-constant; D and F_h^+ in eq:s08:degree and eq:s08:inverse-borel-definition. The unmarked shorthand T, boundary insertion T^delta, quotient map p, xi and mixed sequence C_k precede their uses, with local dummy ranges bound. The manuscript inherits the Introduction/s02/s06/s07 conventions without redefining the moduli setup and preserves g_2, z_{0,1}, rho, b, beta_g, ordinary Bernoulli B_n and lowercase b_g(h). The proof-local endpoint-distance t_0 is explicitly assigned, so its intended mathematical meaning is determinate; replacing that reused name during revision would avoid its visual collision with the inherited descendant coordinate.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read all six subsections, roadmap, interface and handoff. Independently checked the critical inverse, actual seed/propagation and lower characteristic endpoint, the harmonic-number/Wronskian evaluation, inverse-Miura coefficient extraction, the two-indent transfer proof, primitive/marked estimates, and the full-genus node convolution. The background argument correctly proves full-bundle nefness, uses a smooth projective cover, approximates all three nef classes upstairs, obtains log concavity by Hodge index, and squeezes the whole background polynomial using its first increment. However the initial-segment justification in Proposition 8.8 falsely places the shifted normalized argument in the inverse disk for complex dented endpoint approaches. MATH-001 requires the actual critical-cone argument before the recovered singularity and subsequent transfer are justified as written.",
+      "status": "issue"
+    },
+    "uniformity": {
+      "evidence": "The layer cap and nu are fixed; approved B supplies joint holomorphy, complex theta neighborhoods, all fixed mixed Cauchy derivatives and normal kernel/characteristic integrals. The nonprincipal inverse-kernel branches have an integrable endpoint bound and summable outer m^-2; the remaining principal-path error integrates |t|^(nu-1)|t+u|^((h-1)/2-nu), whose last exponent is greater than -1. The transfer lemma gives additive O(N^-nu) even with a zero amplitude, and fixed markings use a Cauchy radius of order 1/D rather than an uncontrolled genus-dependent derivative constant. The separating bound sums every genus via D^-1/binom(D-1,a), whose full inverse-binomial sum is bounded, and the mixed-intersection squeeze controls every background power simultaneously. The unresolved exception is MATH-001: the initial principal segment must be put in B's smaller critical cone, with both normalized endpoint distances bounded away from zero and the order-one mixed-derivative scale made explicit. The final theorem correctly claims only asymptotic equivalence, not relative O(1/g).",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "MATH-001",
+      "severity": "major",
+      "location": "sections/08_fixed_defect/04_coefficient_transfer.tex:100-104, Proposition 8.8 proof, 'The initial segment'; native PDF p.32",
+      "message": "The assertion that the normalized shifted argument lies in a fixed compact subregion of the inverse disk is false on the claimed complex dented neighborhood. Write t=S-y and S'=t+u for the principal m=1 shifted center; its normalized argument is u/(t+u). For real S>0, choose phi in (3pi/4,pi-gamma_H), t=epsilon exp(i phi), y=S-t and u=tau y with tau=-epsilon cos(phi)/S. As epsilon tends to zero, |u/(t+u)| tends to |cot(phi)|>1, although u is in the initial O(|t|) segment and y is in the stated dented region. Consequently the stated disk-based justification of the uniform initial integral is unavailable. Approved B contains the stronger cone estimates needed for a local repair, but their actual hypotheses and derivative scale must be applied here.",
+      "requested_change": "Replace the inverse-disk assertion by a proof that (S',u) remains in a strictly smaller small-|S'| critical two-distance cone, using the kernel-shift preservation in Lemma B.4 and the near-critical extension/patching in Proposition B.12. On |u|<=C|t|, verify |S'| is comparable to |t|, S'-u=t and S'+u=t+2u are separated from zero at that scale, with fixed angular margins. Then apply (B.28) on the larger cone to obtain |partial_s L_h(theta;s,u)|<=C|t|^((h-1)/2-1) (or the corresponding fixed mixed-derivative bound), and multiply by the O(|t|) path length. State the resulting uniform O(|t|^((h-1)/2)) bound before using the remaining-segment endpoint expansion. Keep the common complex domain and additive error claimed by Proposition 8.8; a real-axis-only argument does not suffice for coefficient transfer. Use an endpoint-distance name distinct from the inherited descendant t_0 while revising this local passage."
+    }
+  ],
+  "notes": [
+    "This is the first full scientific review of s08, not a reuse of the earlier unused-bibliography or Appendix B incremental signatures. No previous s08 MATH issue exists, so resolved_issue_ids is empty. One localized complex-domain proof defect remains; no incorrect final constant or factorial was found.",
+    "Native source SHA256 d85268f907c49a3f7f8da0b2df68407a2a7da826fddf4493524d7533bd4b2a7f; actual 53-page PDF SHA256 916aeb78405e3889fe64227bc9c3046509ae465a334f7c44316d3153fa6b3ba5. Snapshot, entry and helper hashes match the receipt; strict passed and diagnostics/layout_diagnostics are empty. The actual rendered p.32 was inspected for MATH-001.",
+    "Executed the private exact_guards.py successfully: eight inverse-sine/Bernoulli comparisons, 180 kernel degree/factorial/parity cases, 52 projective-dimension cases, a genus-two stack normalization check, the final constant normalization and an exact rational complex counterexample. The finite inverse-binomial guard is only an arithmetic supplement; the all-genus proof uses the analytic factorial bound in the text. Results are in build/s08-preparation/math-s08-r001/exact_guards.json.",
+    "The final use of positivity and nefness was checked on the complete compactification, including generically nodal boundary curves; determinant nefness alone is not substituted for bundle nefness, and generically finite pullback is used as nef, not assumed ample. No source, shared file, state, other role's report, older record or frozen build output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "376e26aba67c4b70f8ca635464c6b17beb4fd20806344c41da8fde23c9c8a9cd",
+  "summary": "Changes requested for MATH-001: Proposition 8.8's initial shifted segment need not lie in the inverse disk on complex dented approaches. Its uniform bound needs an explicit application of the already-approved critical-cone and mixed-derivative estimates. The remaining endpoint recurrence, both singularity contributions, factorial/stack normalizations, all-genus convolution and nef-background comparison were independently checked; the final constant 24 is consistent.",
+  "unit": "s08",
+  "verdict": "changes_requested"
+}
