@@ -10,8 +10,8 @@ not confer approval or a proof of the four complete introductory targets.
 The Introduction supplies the stack/Chow/complex-codimension conventions,
 Hodge notation, lowercase integral families, normalized bracket, `N_g`,
 `g_2=2g-3`, Bessel names and four target labels. These are inherited directly.
-The s02 dependency is the approved r005 snapshot
-`5634fa68be11f0aec6929967508aa7a9cb6b4140dddeba004534a06281f68f9d`.
+The s02 dependency is the approved r006 snapshot
+`a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91`.
 Its psi, logarithmic kappa, boundary, stable-graph, gluing and automorphism
 conventions are unchanged. We use its exact boundary formula, the unmarked
 `12lambda_1=kappa_1+delta` and factorial conversion. All estimates in s03

@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The sole paper addition is the short post-proof Remark 4.4 (Further coefficients), which states its normalization, displays the two values in order and explicitly omits the calculation details, as USER-006 authorizes. It introduces no coefficient alias or numbered equation, inherits the existing notation directly, and leaves statements adjacent to their proofs; the comma/period punctuation and roman Remark presentation render professionally on PDF page 40.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The Remark attributes the additional calculation to the paper's existing finite-core method rather than to an external higher-coefficient theorem. The archived calculation chain reconstructs new signed profiles, absolute volume inputs and core sums from the accepted exact-recursion/moment libraries; target constants occur only in the final driver comparison, and the original MZ/HMT, Wang et al., leading-constant and conditional EGGLS credit remains unchanged. Neither the withdrawn Huang claims nor historical notes or conditional resurgent predictions are calculation inputs.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All 45 protected dependency/shared inputs, including the bibliography, are unchanged from r001, and the new Remark makes no new external citation or locator claim; the previously verified primary-source versions, sign/complexity translation, low-mode and elliptic-stack conventions therefore remain applicable. Its sqrt(pi)*exp(-Cin(2*pi))*a_g/N_g normalization agrees exactly with USER-006, the absolute coefficient output and the verification record. Substitution P=pi^2 translates the reconstructed third and fourth Laurent polynomials to every displayed numerator, denominator, sign and power of pi; the quick verifier independently repeated both zero-difference comparisons against the saved reconstructed output.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The two values are reported as calculated coefficients with derivations explicitly omitted, not as conjectures, fitted numerical extrapolations or inputs to the original proof. The complete original proof is an exact byte prefix of 04_proof.tex, all other section TeX is unchanged, and its 15 numbered equations, three principal statements, M=3/K=2-q remainder argument and original Theorem 1.1 precision remain intact. The source-bound full-execution receipt and all five calculation-output hashes match the archived verification record; the inspected reconstruction/composition sources consume full e3/e4 and extra-order volume extraction before the final target comparisons, supporting the interface's separate supplementary-calculation scope without representing code or a receipt as a published proof or formal review signature.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is the original academic reviewer's formal s04 r002 delta review for snapshot 49709716eb7727c33aef75f4e58308d545d5fab65362602733660224dd29abc1. The r001 full review had no open academic issues, so resolved_issue_ids is empty. Prior source preparation and prior signatures were not treated as approval of this new Remark.",
+    "USER-006 and its normalization/independent-check follow-up were read; its SHA256 3aa8bcc06f1b167fa4ad9110efacf0b014a5f7c5bcb8203d7adb73b6f2b279fe matches the archived handoff. The explicit authorization to omit higher-order details and preserve the Introduction/main theorem is respected; this review does not request expanding Appendix A to print the supplementary derivation.",
+    "All submission source/artifact hashes match, all live submission inputs match the frozen archive, and the only changed existing files are 04_proof.tex, INTERFACE.md and writer_handoff.md; checks/ is new. The original proof prefix and all other TeX are byte-identical to r001. The 24 calculation-source fingerprints and saved execution-receipt hash match, as do profiles, volume3, volume4, core-block and final-output hashes. The quick --verify-existing command was run successfully; the long reconstruction was not repeated.",
+    "The strict receipt binds this snapshot and source hash 690b26c34008fc06a53743a7b97098a2ce33add3d7182b8d8ebfcb182f47e66c. PDF SHA256 4ef6e5d33a15e3fd4f3a1d82b4449d36235e34b25686d602d9d5f33dbf874f61 and helper/entry hashes match; the PDF has 65 pages, passed and strict are true, and both diagnostic arrays are empty. The new Remark was checked against the extracted PDF page 40 and its rendered image.",
+    "Only this academic.json and academic_handoff.md were written for this review. No manuscript, shared input, state, historical report or shared output was changed or rebuilt. This academic pass alone does not confer workflow acceptance or approve later units."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "49709716eb7727c33aef75f4e58308d545d5fab65362602733660224dd29abc1",
+  "summary": "Pass for s04 r002. The user-authorized post-proof Remark accurately reports the independently reconstructed coefficients in the stated normalization, explicitly omits their calculation details and preserves the original proof, source credit and theorem precision. No unresolved academic issue remains.",
+  "unit": "s04",
+  "verdict": "pass"
+}

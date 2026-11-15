@@ -2,7 +2,23 @@
 \section{Powers of the first Hodge class}
 \label{sec:s04}
 
-% WORKFLOW-TODO: Write a proof roadmap and section transitions.
+We now compute the two corrections in Theorem~\ref{thm:lambda-one}.
+The exact graph formula~\eqref{eq:s03:integrated-graph-formula} and
+the normalization~\eqref{eq:s03:normalization-links} reduce the problem
+to $Z_g(1)/F_g$. Theorem~\ref{thm:s03:graph-expansion} supplies an
+expansion whose coefficients can be calculated by the summable core
+rule~\eqref{eq:s03:coefficient-rule}. A core of complexity $q$ starts
+at order $g^{-q}$: the leading term comes from $q=0$, the first
+correction from $q=0,1$, and the second from $q=0,1,2$.
+
+We first organize the correlated degrees at the two ends of each root
+self-loop. These signed moments give the pure-loop corrections and,
+after the small vertices are integrated, the corrections of the other
+retained cores. We explain the coefficient mechanisms here and use
+Appendix~\ref{sec:appendix-a} for their longer finite verification.
+The final proof combines them with the absolute graph tail. Throughout
+the calculation we normalize by $F_g$; the relative coefficients of
+$Z_g/V_{g,0}$ will be distinguished explicitly.
 
 \input{sections/04_lambda_one/01_loop_moments}
 \input{sections/04_lambda_one/02_leading_and_first_correction}

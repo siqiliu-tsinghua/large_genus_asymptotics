@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "The interface now names the actually approved s02 r006 snapshot a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91; its TeX and scientific interface remain unchanged. The bibliography/context/TikZ and s02 handoff inputs exactly match the just-reviewed r006 inputs, and EGGLS24 supplies no premise to s03; prior primary-source reasoning therefore remains applicable.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 11 frozen Introduction/s02/s03 TeX files are byte-identical to r002, and the s03 interface differs only by the dependency version and hash. Stability, the valence cap, complexity and defect ranges, genus-correct contraction and the marked r shift retain their prior verification without any added hypothesis or enlarged parameter range.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The complete clean PDF text is byte-identical to r002 after the unused TikZ package addition. All descendant/length factorials, stack values, graph/loop symmetries and volume-path factors are unchanged; the new future absolute/relative guidance respects the existing definition of gamma_k as coefficients of Z_g/V_g0 and alters no s03 formula.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The accepted USER-005 opening and all first-definition locations, symbols, labels and statement/proof ordering remain unchanged. Future paired weights, low-degree counts and signed-functional/profile notation in context neither replace s03's local HMT eta_r nor rebind its F_g,Z_g,W,f,S,gamma families; the interface's notation ledger is otherwise identical.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Removing only the new dependency version/hash reproduces the previous s03 interface exactly, and both handoff changes are append-only metadata. No proof or scientific export changed, so the previously checked global Gaussian argument, exact core/ratio construction, coherent coefficients and marked/conditional-weight proof remain valid; future coefficient research is not used as a new input.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The whole-sum compact absolute bounds, three Gaussian regimes, two q-tail cases, all-legal loop tail and factorially summable remainders are unchanged. The marked count, conditional H^s loss, entire coefficients and Cauchy derivative conclusions therefore retain their prior justification; this refresh asserts no additional estimate for Appendix A/s04 research.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal s03 r003 shared/dependency impact signature by the original reviewer, retaining the r001/r002 substantive reasoning after independent delta verification. No prior MATH issue was open, so resolved_issue_ids=[].",
+    "Verified all archive/live hashes and the submission digest. Exactly six shared/provenance inputs changed, with none added or removed; all body TeX is unchanged and the scientific interface change is exactly the approved s02 dependency replacement.",
+    "The strict clean receipt matches snapshot 5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353, source hash ec6775b6649b4a627d4ed9c15a2d74469aa88854887dca5e6b8dd4ac83239521 and PDF hash 1d17213458cfcff6c0f2cfce6ef74a61652eeccad90b72295bd8553f2f2f7001. Entry/helper hashes match, with diagnostics=[] and layout_diagnostics=[].",
+    "The r002/r003 full PDF text extraction is byte-identical, SHA-256 802841ed8e23f2b63b92fc9dd6603db1a464d641fbc1191a432dff932130cefa. No unchanged proof or literature was reloaded or recomputed, and no source/shared/state/old record or shared output was changed or rebuilt.",
+    "This signature approves the stated s03 results on the refreshed inputs, not future Appendix A/s04 mathematics or source-status claims. Only the assigned r003 mathematical report and handoff were written."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353",
+  "summary": "Pass for formal s03 r003. The verified shared/dependency refresh preserves all existing mathematical content, proof dependencies and uniformity claims; no unresolved mathematical issue was found. Future Appendix A/s04 research is outside this signature.",
+  "unit": "s03",
+  "verdict": "pass"
+}

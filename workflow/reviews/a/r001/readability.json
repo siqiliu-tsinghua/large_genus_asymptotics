@@ -1,0 +1,64 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read A.1-A.4 continuously with the approved Introduction/s02/s03 interfaces. The local complexity k, fixed-tuple profiles, low-degree counts, kernel and dilaton weights, local ratio coefficients, signed loop functional and moment multi-indices are introduced before their computational uses; A.4 gives the root/vertex labels, multiplicity data, diagram legend and integral convention before the tables. Inherited moduli, Chow and Hodge definitions are used without restarting the basic setup. One first-use defect remains: a_l and the endpoint a_{-1} in the kernel translation after (A.13), 01_wp_coefficients.tex:245, have no definition anywhere in the frozen paper; the existing integral family a_g does not define this source sequence (READABILITY-001).",
+      "status": "issue"
+    },
+    "notation_consistency": {
+      "evidence": "The appendix retains the s03 factorial brackets, alpha, f/S, core genus convention and exact stack (1,1) polynomial. Statements in A.2 explicitly normalize by Z_g(1)/F_g, and Remark A.3 correctly distinguishes these absolute coefficients from gamma_r for Z_g/V_{g,0}; the inherited g_2, Hodge j_i/ell, lowercase integral families and Bernoulli/Chow conventions are not renamed. However the instruction after raw connector table (A.34), p.45, sends the reader to the half-weighted side-moment integral (A.27) without removing its loop factor 1/2. That recipe gives half the listed elliptic moment, so the computational normalization explanation is inconsistent even though the raw table values agree with the later core integral (READABILITY-002).",
+      "status": "issue"
+    },
+    "notation_economy": {
+      "evidence": "The opening explains the appendix's four computational tasks without a repeated g,n/moduli/Hodge inventory. The local U,V keep the long profile potential legible, while mu/nu, the two calligraphic ratios, w_ab and the signed functional each recur in a distinct extraction or summation role. Degree counts m_0,m_1,m_2 are retained because the low-mode terms actually enter the corrections; no positive-count alias is added. The finite core helpers are limited to expressing all integral rows, and inherited geometric recalls in A.3/A.4 directly explain the forgetting correction, genus contraction and symmetry factors. The one-off undefined source alias is addressed locally by READABILITY-001 rather than by adding a general notation inventory.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The appendix entry separates normalized descendants/absolute volumes, correlated loop moments, four small vertices and finite cores, and explains the relationship to s03 and future Section 4. A.1 progresses through pivot verification, exact recursion and remainder control, finite third-profile rules, three ratio rows and adjacent-genus matching; the unknown third volume coefficient's cancellation is made explicit. A.2 introduces the joint generator before Bell rules and coefficient tables, and motivates the q=1 calculation before its statement. A.4 proves completeness and automorphisms before the diagrams, then introduces edge integration before the contribution tables and final sum. These stages give the reader identifiable inputs and outputs without requiring an early proof of the Hodge theorem.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All ten principal statements A.1-A.10 are immediately followed by proofs. Pivot cases, kernel/dilaton moments, signed Bell rules, coefficient cancellations and valence enumeration are supplied in the text; the calculations README maps the seven reproductions to these rules and does not replace the proofs. I visually inspected every appendix-body page, pp.31-54, including the long recursions on pp.33/36/38/40, moment tables on pp.35/42/44-46, core diagrams on pp.50-51 and integral tables across pp.52-53. Text and tables use normal font sizes, the diagrams distinguish loops/multiple edges and root/small genera, and no material overflow or pagination defect was found. The remaining obstacle to reproducing a table from its stated local recipe is READABILITY-002.",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "The third adjacent-difference coefficient is calligraphic D_n(t), leaving ordinary D as total degree and ordinary J_n as the inherited Bessel family. The later calligraphic J_a and I_Gamma are defined local integration helpers, visually distinct from that Bessel notation and the pivot increment I_i; low pivot modes are conditions on t, not competing I_1/I_2 names. The final absolute coefficients r_1,r_2 are expressly confined to Remark A.3, and low-degree m_a counts are distinguished from the two-index graph multiplicities m_ij before use. Degrees, analytic parameters, loop/core counts and marking indices have identifiable roles. The undeclared source a_l requires READABILITY-001; it should not be interpreted as the already defined genus-indexed integral sequence.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The opening connects s03's summable whole-graph estimates to the explicit finite calculation. The text distinguishes fixed-tuple source coefficients from the uniform bounds needed for growing loop counts, conditional prediction from reconstruction, and exact low-genus intersections from asymptotic volume inputs. Identification, Prediction, Normalization, Conventions and Reproducibility Remarks have specific optional roles; essential formulas and hypotheses stay in the main argument. The q=1 passage nevertheless needs the explicit transition from loop-weighted side moments to undivided connector weights requested in READABILITY-002. The final summary reserves the Hodge reduction and application of the global tail for Section 4, consistently with this appendix's scope.",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/a_coefficients/01_wp_coefficients.tex:245; paragraph after eq:a:exact-adjacent, clean PDF p.36, after (A.13)",
+      "message": "The normalization explanation introduces mu_l=2(a_l-a_{l-1}) as MZ/HMT kernel notation without defining the source sequence a_l or its l=-1 endpoint. Searching all frozen manuscript TeX finds no inherited definition of this kernel sequence. The existing a_g integral family is a different object, so a reader cannot resolve the notation from the continuous paper.",
+      "requested_change": "Either define the source kernel sequence and its endpoint/range immediately before this use, with the precise source translation, or remove this one-off alias and explain the factors 4,8,8 using the already defined mu_l convention. Do not identify these source weights with the Hodge integral family a_g. Update the interface ledger if the source sequence is retained."
+    },
+    {
+      "id": "READABILITY-002",
+      "severity": "major",
+      "location": "sections/a_coefficients/02_loop_moments.tex:253; raw connector table eq:a:connector-moments and its following recipe, compared with eq:a:side-moments at line 62; clean PDF pp.42/45, (A.27)/(A.34)",
+      "message": "The instruction for obtaining the elliptic connector row by multiplying the integrand of (A.27) by the elliptic polynomial does not state that the loop factor 1/2 must be removed. At a=0,r=0 in (A.27), literal multiplication gives one half of integral f(t)W^WP_{1,1}(t)dt, namely (pi^2+4)/6, while the raw table correctly gives (pi^2+4)/3. The rational row likewise starts at 8 whereas M_{0,0}=4. This makes the stated finite reproduction rule ambiguous by a factor two precisely where it feeds the q=1 coefficients.",
+      "requested_change": "State the raw connector rule explicitly, for example using derivatives in the degree-generating parameter x at x=0 of the undivided integrals integral f(e^x t)dt and integral f(e^x t)W^WP_{1,1}(t)dt, with the zero-degree indicator moment specified separately; alternatively explain explicitly which a=0 side-moment expression is doubled before inserting the elliptic polynomial. Make clear that a connector has no loop branch factor 1/2, and verify the table and the subsequent q=1 prefactors against this convention. This can be repaired locally without changing the correctly raw table values."
+    }
+  ],
+  "notes": [
+    "First formal complete Appendix A review. Read all four subsection files, the entry roadmap, interface, writer handoff, target outline, current role/context and necessary dependency interfaces. The first-round changes.diff contains no textual delta, so no part of the new appendix was treated as previously accepted.",
+    "Verified all 47 archived input hashes, three artifact hashes, exact snapshot, source hash 3c8f3ca7c92d488755c659712f1693eb5092dcc03f7a974fe1b734079b2325e8, PDF hash 176afc0e33c6f3df68fd757840436b1ff292c2cba1842103f21d74fa57e0cc14, and helper/entry hashes. The 16 inherited section/interface/handoff inputs match approved s03 r003. The matching strict receipt has diagnostics=[] and layout_diagnostics=[].",
+    "The authoritative PDF has 56 pages; appendix prose occupies pp.31-54. Own renderings/text are confined to build/reviews/a/r001/readability-inspection/. No shared output was rebuilt. The calculation README was inspected for its proof mapping; scripts were not used as a substitute for reading or verifying the manuscript's finite rules.",
+    "The repeated bare W26 source shorthand is not the printed citation label [WLQ+26]. I independently regard its expansion to author names or actual citations as useful reader-facing source clarification; the academic reviewer is recording that point, so no duplicate READABILITY issue is assigned here.",
+    "No issue is raised for the absent Section 4 Hodge proof: the appendix explicitly exports finite WP/core coefficients and leaves that later argument outside its claim. There are no prior Appendix A readability issues, hence resolved_issue_ids=[]."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "8829f8569ae0992f73e8c1f9fe747101c6c661975bf0da5ea31265109124cb22",
+  "summary": "Changes requested for two localized reader-facing defects: the undeclared source kernel sequence a_l, and the missing distinction between half-weighted loop side moments and raw connector moments. The appendix's overall proof organization, normal-size diagrams/tables and actual layout are acceptable; the finite rules should be locally clarified before acceptance.",
+  "unit": "a",
+  "verdict": "changes_requested"
+}

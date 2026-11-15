@@ -1,0 +1,22 @@
+{
+  "changed_inputs": [
+    "references.bib",
+    "sections/02_notation/writer_handoff.md",
+    "sections/03_graph_asymptotics/INTERFACE.md",
+    "sections/03_graph_asymptotics/writer_handoff.md",
+    "tex/preamble.tex",
+    "workflow/context.md"
+  ],
+  "diagnostics": [],
+  "layout_diagnostics": [],
+  "pdf_sha256": "1d17213458cfcff6c0f2cfce6ef74a61652eeccad90b72295bd8553f2f2f7001",
+  "rendered_text_sha256": {
+    "r002": "802841ed8e23f2b63b92fc9dd6603db1a464d641fbc1191a432dff932130cefa",
+    "r003": "802841ed8e23f2b63b92fc9dd6603db1a464d641fbc1191a432dff932130cefa"
+  },
+  "round": 3,
+  "scope": "Shared/preceding dependency refresh only. All s01/s02/s03 TeX unchanged; s03 interface only updates exact s02 provenance.",
+  "snapshot": "5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353",
+  "source_hash": "ec6775b6649b4a627d4ed9c15a2d74469aa88854887dca5e6b8dd4ac83239521",
+  "unit": "s03"
+}

@@ -1,0 +1,21 @@
+{
+  "changed_inputs": [
+    "references.bib",
+    "sections/02_notation/writer_handoff.md",
+    "tex/preamble.tex",
+    "workflow/context.md"
+  ],
+  "clean_receipt": "build/reviews/s02/r006/build_receipt.json",
+  "diagnostics": [],
+  "layout_diagnostics": [],
+  "pdf_sha256": "3e7ea1b03e8eaf9d2a27b4e3689bd1ff967bfc943f385dfed28fa111c153612f",
+  "rendered_text_sha256": {
+    "r005": "55a1a62c692b75f43a617ada531165dff92f6aa7b7367d14447feb2378583f6e",
+    "r006": "55a1a62c692b75f43a617ada531165dff92f6aa7b7367d14447feb2378583f6e"
+  },
+  "round": 6,
+  "scope": "Shared-input-only refresh for Appendix A/s04; s02 TeX/interface unchanged.",
+  "snapshot": "a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91",
+  "source_hash": "d68a8f30e3b13a1ef05768a919f77689f5635e7c9103bc680b7b59e7527a0751",
+  "unit": "s02"
+}

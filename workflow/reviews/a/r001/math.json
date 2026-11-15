@@ -1,0 +1,60 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "The frozen s01/s02/s03 inputs match the approved dependency closure. The text accurately transfers W26 Lemma 7.2 and C.1 by fixed-tuple uniqueness to HMT's polynomial remainder bounds, uses the exact MZ/HMT genus/dilaton/adjacent recursions, and explicitly uses MZ through order three so the unknown c_3 cancels. The previously inspected primary W26/HMT/SW inputs were compared with the implementation; EGGLS24 PDF pp.45-46 was directly checked for the resurgence assumption before (6.6) and the matching (6.10), used only after reconstruction. No withdrawn algorithm or predicted coefficient is a proof input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The profile formulas are fixed-tuple coefficients in k=2G-2+n, with empty/zero tuples and negative or unstable children handled explicitly. The retained separating losses are exactly 2 and 3; the four small types have the stated dimensions and normalized node-degree cutoffs, including the negative merged kappa term on M_1,2. Root contraction preserves genus/complexity, the 1/3/13 lists exhaust the positive small-complexity partitions, and every listed n_0,c and restored root type agrees with the independent valence enumeration.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The profile signs and G/k conversion, recursion factors 4/8/8 with both separating orientations, paired-loop 1/2 and p!, signed-functional normalization, stack V_11 polynomial, core flag automorphisms and absolute-versus-relative conversion were independently verified. The displayed connector values and all resulting coefficients agree with exact calculation, but the instruction after eq:a:connector-moments obtains the elliptic row from the side-moment integrand without removing its loop factor 1/2; followed literally it gives half the stated raw moment. MATH-001 must correct that derivation rule.",
+      "status": "issue"
+    },
+    "notation": {
+      "evidence": "The appendix defines k,D,m_a, signed e_{n,r}, mu/nu weights, calligraphic ratios and the signed functional before their mathematical uses; it inherits the Introduction/s02/s03 conventions and preserves the distinct Hodge, Bernoulli and Bessel names. All 10 principal statements immediately precede their proofs. However the source a_l in mu_l=2(a_l-a_{l-1}) is not defined anywhere in the frozen manuscript, including the initial a_{-1} needed at l=0; MATH-002 concerns this first-use/source-conversion omission.",
+      "status": "issue"
+    },
+    "proof_logic": {
+      "evidence": "Read all four subsections, roadmap, interface and handoff. Independently verified the closed U,V potential and all four symbolic pivot reductions, the complete c_2(n) difference, the third-recursion prefactors/low modes/ratio shifts and c_2(0), all 15 second-loop-moment table entries and both q=1 averaged-polynomial cases. The Bell-rule and connector formulas otherwise reproduce all finite groups, and the core integrals and complete table give the stated totals without using them as inputs. The remaining local proof defect is MATH-001: the referenced half-weighted integral does not derive the asserted raw elliptic row as written.",
+      "status": "issue"
+    },
+    "uniformity": {
+      "evidence": "The extraction lemma controls the full omitted genus sums by the two shifted factorial tails beginning at complexities 3 and 4, with the square-root factor bounded on the larger component. HMT order-two child/ratio errors acquire the additional inverse-k prefactor; order-three actual profiles and factorially decaying dilaton weights justify coefficient extraction and averaging with polynomial majorants. The signed five-variable EGF is normally convergent on compact sets, retains the two endpoints' shared variable, and supplies all required degree-four polynomial moments. Section 3's all-legal loop tail and summable core remainder justify the later q=0/1 expansions and fixed-q leading integrations; no fixed-marking error is silently treated as growing-valence uniformity.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "MATH-001",
+      "severity": "major",
+      "location": "sections/a_coefficients/02_loop_moments.tex:253-254, immediately after eq:a:connector-moments; clean PDF p.45",
+      "message": "The sentence deriving the elliptic connector row by multiplying the integrand of eq:a:side-moments retains that formula's factor 1/2. A connector has no loop branch-exchange factor. Already at a=0 and derivative order zero the stated instruction gives (1/2) integral W_11(t) f(t) dt=(pi^2+4)/6, whereas the correct raw value in the table is (pi^2+4)/3. The table and subsequent q=1 calculations are correct, but their written derivation rule is off by two.",
+      "requested_change": "State the raw connector generator explicitly without the factor 1/2: use (z partial_z)^r integral_0^alpha W_11(t) f(zt) dt evaluated at z=1 for r=0,1,2, keeping W_11(t) outside the z scaling. Equivalently explain that the a=0 side expression must first be doubled before multiplying by the elliptic polynomial. Clarify the rational row as 2 M_0,r and the elliptic zero-degree indicator as integral W_11(t) dt, while retaining the already-correct table values and corrections."
+    },
+    {
+      "id": "MATH-002",
+      "severity": "minor",
+      "location": "sections/a_coefficients/01_wp_coefficients.tex:245, source-kernel comparison after eq:a:exact-adjacent",
+      "message": "The relation mu_l=2(a_l-a_{l-1}) introduces a_l without its definition or range anywhere in the frozen paper. In particular a_{-1} is needed for l=0, so the stated comparison does not by itself fix the initial normalization that yields mu_0=1 and the factors 4/8/8.",
+      "requested_change": "Define the local source sequence and its initial extension before the relation, for example a_{-1}=0, a_0=1/2 and a_l=(1-2^(1-2l)) zeta(2l) for integers l>=1, with the precise MZ/HMT locator. Alternatively remove the undeclared source symbol and explain the factor conversion entirely using the already-defined mu generator. Keep this a local source comparison, without changing the existing integral notation."
+    }
+  ],
+  "notes": [
+    "This is the first actual formal review of the complete Appendix A implementation. Earlier preparation was independently compared with the frozen proof chain and is not treated as a signature. No previous Appendix A MATH issue exists, so resolved_issue_ids=[].",
+    "Reran all seven frozen-equivalent calculation executables with python -B through calculations/run_all.py in the pinned workspace-local runtime; all completed successfully. The literal flag audit covers 17 graphs, the independent volume algorithm checks 57 literal profile increments, and the auxiliary 25-case numerical guard has discrepancy about 4.024e-44; numerical checks are not proof inputs.",
+    "Additional exact transcription checks compared the displayed U,V/e_1/e_2 formulas, four pivot reductions, c_2(n), every entry of the three second-moment coefficient columns, q=0 first moments and q=1 loop-averaged polynomial against their constructive rules. These all agree; the issues concern the written connector rule and missing source-sequence definition, not a discovered incorrect final numerical coefficient.",
+    "Verified archive/live/artifact hashes, snapshot digest and receipt source hash 3c8f3ca7c92d488755c659712f1693eb5092dcc03f7a974fe1b734079b2325e8. The 56-page clean PDF has SHA-256 176afc0e33c6f3df68fd757840436b1ff292c2cba1842103f21d74fa57e0cc14; helper/entry hashes match, the strict build passed, and diagnostics/layout_diagnostics are empty. Rendered pp.45 and 51 were inspected for the connector rule and core diagrams; all 59 labels are unique.",
+    "No manuscript/shared/state/old record was changed and no shared preview was rebuilt. Only this round's mathematical report/handoff were written; authorized certificate runs wrote their documented ignored build outputs. This review does not claim that Section 4's final Hodge proof has been completed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "8829f8569ae0992f73e8c1f9fe747101c6c661975bf0da5ea31265109124cb22",
+  "summary": "Changes requested for two local mathematical exposition defects: the raw elliptic connector derivation retains an erroneous side-moment factor 1/2, and the source kernel sequence a_l (including a_-1) is undeclared. The finite coefficient reconstruction, uniform remainder chain, signed moment evaluations and complete core enumeration otherwise agree with independent exact verification.",
+  "unit": "a",
+  "verdict": "changes_requested"
+}

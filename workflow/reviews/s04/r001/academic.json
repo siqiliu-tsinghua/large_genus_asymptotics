@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The section opens with the exact graph/normalization reduction and the q=0,1,2 proof route, inheriting the moduli and Hodge setup directly. It defines the paired weights, signed functional, profile coefficients and absolute Q groups before use; the interface correctly explains that these body definitions precede the physically later appendix. The three principal statements are immediately followed by proofs, source/convention material is in short post-proof Remarks, and the two Examples demonstrate moments and a negative core integral rather than repeat tables. Author names and actual citations replace internal source aliases; the new body pages inspected render the formulas, diagrams and final proof professionally.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Remark 4.1 assigns c_1(n) to Mirzakhani-Zograf Theorem 1.2/Remark 1.3 and the signed first profile to the negative of Wang et al.'s Lemma 7.2 deficit, with Appendix C.1 for the second profile and Appendix A for its closed low-mode verification. The body presents its coefficient mechanisms and explicitly uses the proved finite Appendix A results for the longer calculations; neither old notes nor CAS output is used as proof. The absolute-volume Remark credits the MZ/HMT exact recursions and describes EGGLS24 (6.10) only as a conditional comparison after reconstruction. The leading WP constant is inherited through the s03 result that already distinguishes the Liu-Xu and independent Wang et al. determinations.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The new MZ15, W26, HMT25 and EGGLS24 citations retain the previously verified versions, locators and hypotheses; each internal reference resolves uniquely to the stated approved dependency result. The profile sign and inverse-complexity conversion match Appendix A, including low modes; the small elliptic vertex retains the full stack polynomial, and the raw connector generator has no 1/2 with W^{WP}_{1,1}(t) held fixed under degree scaling. The c_2(n) discussion accurately recalls the actual third-order adjacent-genus match and cancellation of unknown c_3, while retaining the EGGLS resurgence assumption before (6.6). All cited-source and convention checks remain supported by the unchanged primary-source/dependency verification; the final stable label eq:111 correctly renders as (1.3), the target equation of Theorem 1.1.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The fixed-p O_p volume expansion is explicitly separated from the HMT/s03 bounds used to sum growing loop and degree data; paired endpoint correlation, absolute convergence and signed rather than probabilistic averaging are preserved. Absolute Q_{q,r} coefficients of Z/F are distinguished from relative gamma coefficients of Z/V, and the q=0/1/2 mechanisms and worked example support the stated finite sums through the proved appendix results. The named final proof uses the whole absolute graph tail with M=3, removes all legal large-loop tails before expansion, and applies K=2-q to obtain the factorially summable g^-3 remainder. Conversion by the fixed-n=0 absolute volume expansion then supplies 1/sqrt(pi), preserves O(g^-3), and the exact Hodge normalization/Cin identity produces the unchanged Theorem 1.1 target, without claiming the later theorems.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is the first formal whole-s04 academic review. All four subsections, entry, interface and author handoff were read against the outline and approved s03/Appendix A interfaces; an initial no-baseline diff or a prior source-preparation signature was not treated as approval of this new body. There are no prior s04 issues to resolve.",
+    "All protected dependency/shared files are byte-identical to the approved Appendix A r002 archive, including s03 and Appendix A mathematics. The three earlier Appendix A academic issues remain corrected; no source-key, kernel-normalization or raw-connector regression was introduced. No unchanged calculation algorithm or full reference library needed rerunning/reloading.",
+    "All archived/current submission fingerprints and artifact fingerprints match. The strict receipt binds snapshot 4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050 and source hash e0c123c63cdf7471e9f311c9e8943c8a310658445fc5c58e3361e1b550154332; helper/entry hashes and PDF SHA256 90f98a8f626d6f782b195f6fb9db69ba9d56c9fe18ea575e773abb24f4d38048 match. The PDF has 65 pages, passed/strict are true and both diagnostic arrays are empty. Pages 32,35,36,37,38,39 were visually inspected.",
+    "Only this report and academic_handoff.md were written. No manuscript, shared input, state or historical record was changed, and no shared preview was rebuilt. This role signature is not by itself workflow acceptance."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050",
+  "summary": "Pass for formal whole-s04 r001. Source credit and locators, inherited normalization translations, use of proved Appendix A computations, whole-graph remainder strength and professional proof organization support the submitted Theorem 1.1 proof; no unresolved academic issue remains.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "USER-007",
+  "unit": "s04",
+  "previous_round": 2,
+  "previous_snapshot": "49709716eb7727c33aef75f4e58308d545d5fab65362602733660224dd29abc1",
+  "request": "39页最下面那个公式 a_g=...中，把 \\frac{9}{8g}改成\\frac{9}{8}g^{-1}，这样好看一点。改完这个这一批就可以提交了，然后进入第5节。",
+  "changes": [
+    "Change only the first correction's typography in the final display of the Theorem 1.1 proof, from 9/(8g) to (9/8)g^{-1}.",
+    "Keep every coefficient, normalization, remainder and supplementary Remark unchanged.",
+    "Review the exact delta with the original three reviewers, commit the completed batch using the global Git identity, then begin Section 5."
+  ],
+  "constraints": [
+    "No shared manuscript inputs, Introduction or Appendix A changes.",
+    "No new long coefficient reconstruction is needed for this algebraically identical typography change.",
+    "Preserve all earlier frozen review rounds."
+  ]
+}

@@ -304,10 +304,13 @@ $$
 
 ### 4.3 The second correction
 
-**拟证明的计算命题 4.2，二阶系数。** 按
+**拟证明的计算命题 4.2，二阶系数。** 令下列 $Q_{q,r}$ 表示提取共同因子 $e^{S(1)}/\sqrt\pi$ 后、绝对展开 $Z_g(1)/F_g$ 中的核心分组贡献，按
 
 $$
-\gamma_2=Q_{0,2}+Q_{1,1}+Q_{2,0}
+\frac{Z_g(1)}{F_g}
+=\frac{e^{S(1)}}{\sqrt\pi}
+\left(1+\frac{9}{8g}
++\frac{Q_{0,2}+Q_{1,1}+Q_{2,0}}{g^2}+O(g^{-3})\right)
 $$
 
 组织计算：$q=0$ 展到二阶，$q=1$ 展到一阶，$q=2$ 只取首项。所有其他图由命题 3.2 以 $M=3$ 控制。
@@ -322,7 +325,7 @@ $$
 
 三行的有理代数和确为 $257/128+1/(8\pi^2)$，其中 $\pi^{-4}$ 项相消。需要补足的是每行的推导：从精确 WP 递推重建所需的 $c_2$ 和后裔二阶系数，计算低复杂度顶点多项式，并核对核心的自同构数。旧笔记报告 $q=2$ 有 13 个核心同构类，附录应逐张列出并复核此计数。
 
-将所需输入整理成一个命题，并对后裔低次数的特殊情形保留原递推中的区分。采用 [MZ15, §2] 所列的精确递推，亦见 [HMT25, Theorem 4.3]；逐阶提取的算法可参照 [Hua25, §§2.1, 3]。体积二阶系数应与 [EGGLS24, (6.10)] 的已有显式表达式核对并注明来源。本文只使用所需有限阶的递推与系数，不依赖旧笔记涉及的高阶系数环判断。
+将所需输入整理成一个命题，并对后裔低次数的特殊情形保留原递推中的区分。采用 [MZ15, §2] 所列的精确递推，亦见 [HMT25, Theorem 4.3]，以及 [W26, Lemma 7.2, Appendix C.1] 的已证后裔系数。绝对体积 $c_2(0)$ 由精确相邻次数递推再提一阶、dilaton 与相邻亏格比独立识别；比值匹配使用已证固定标记展开到三阶，未知的 $c_3$ 抵消。与 [EGGLS24, (6.10)] 的表达式交叉核对并注明其 resurgence 假设，不能把条件性预测作为无条件输入。Hua25 已撤稿，不再作证明依赖。本文只使用所需有限阶的递推与系数，不依赖旧笔记涉及的高阶系数环判断。
 
 ### 4.4 Proof of Theorem 1.1
 
@@ -776,6 +779,22 @@ $$
 
 小顶点的边界多项式可用低亏格交数直接计算，并与文献体积表交叉核对。候选二阶系数的正式计算应能独立于旧笔记中未附带的程序复查。
 
+#### A.1 Descendant and volume coefficients
+
+写出完整的二阶 profile 多项式，包括零、一、二次数的修正，并从 W26 的离散增量逐项验证。利用精确递推的下一阶、有限 kernel/dilaton 矩与相邻亏格比确定 $c_2(0)$，保留足以匹配三阶比值的严格余项；EGGLS24 仅为已注明条件的先前预测及交叉核对。
+
+#### A.2 Signed loop moments
+
+给出绝对收敛的成对自环权、低次数计数的联合生成函数和带符号线性泛函。展示所需矩的有限计算规则及代表性求值，保留同一自环两端的关联；程序复现不能代替正文的数学规则。
+
+#### A.3 Low-complexity vertex integrals
+
+从 string、dilaton 和第二节的忘点公式导出 $(0,3),(1,1),(0,4),(1,2)$ 的准确多项式，特别保持整个 $(1,1)$ 栈规范及 kappa 合并项的符号。
+
+#### A.4 Finite-core enumeration and contributions
+
+展示 $q=0,1,2$ 的全部核心小图及统一图例，列明顶点类型、重边、自环、自同构、亏格损失及所取精度。给出枚举完备性和每行积分规则，再汇总 $1,3,13$ 个同构类的贡献。正文和附录按功能分别成小节、各用独立文件；精确复现脚本随本单元保存并注明依赖版本。
+
 ### 附录 B Analytic estimates for transport kernels
 
 收录第八节共同复域的详细构造、Bessel 级数中的显式界、远端特征线积分、负实轴原函数的远端估计，以及 Beta 积分产生核的完整换指标。主文保留每条引理的完整假设、结论和在证明链中的作用。
@@ -809,8 +828,7 @@ $$
 | FP00 | C. Faber, R. Pandharipande, [Hodge integrals and Gromov–Witten theory](https://arxiv.org/html/math/9810173), Invent. Math. 139 (2000), 173–199，Proposition 1、Theorem 2 | 带标记 GRR、一点 Hodge 系数 |
 | FP03 | C. Faber, R. Pandharipande, [Hodge integrals, partition matrices, and the lambda g conjecture](https://annals.math.princeton.edu/2003/157-1/p03), Ann. of Math. 157 (2003), 97–124，Theorem 1 | 第 6 节的顶类多点交数 |
 | MZ15 | M. Mirzakhani, P. Zograf, [Towards large genus asymptotics of intersection numbers on moduli spaces of curves](https://arxiv.org/abs/1112.1151), GAFA 25 (2015), 1258–1289，Theorem 1.2、Remark 1.3、Corollary 1.5 | 固定标记数展开与一阶系数 |
-| Hua25 | X. Huang, [Asymptotic coefficients of Weil–Petersson volumes in the large genus](https://arxiv.org/html/2501.06421v1), v1，§§2.1、3 | 第 4 节所需的精确递推与系数算法 |
-| EGGLS24 | B. Eynard, E. García-Failde, P. Gregori, D. Lewański, R. Schiappa, [Resurgent asymptotics of Jackiw–Teitelboim gravity and the nonperturbative topological recursion](https://arxiv.org/html/2305.16940), Ann. Henri Poincaré 25 (2024), 4121–4193，(6.10) | 体积二阶系数的已有表达式与交叉核对 |
+| EGGLS24 | B. Eynard, E. García-Failde, P. Gregori, D. Lewański, R. Schiappa, [Resurgent asymptotics of Jackiw–Teitelboim gravity and the nonperturbative topological recursion](https://arxiv.org/html/2305.16940v2), Ann. Henri Poincaré 25 (2024), 4121–4193，§6.1、(6.10) | 注明 resurgence 假设的二阶预测及交叉核对；所需系数另由精确递推重建 |
 | SW25 | Y. Shen, Y. Wu, [Arbitrarily small spectral gaps for random hyperbolic surfaces with many cusps](https://arxiv.org/html/2203.15681v4), v4，Lemmas 14、18 | 统一体积上界 |
 | HMT25 | W. Hide, D. Macera, J. Thomas, [Spectral gap with polynomial rate for Weil–Petersson random surfaces](https://arxiv.org/html/2508.14874v2), v2，Theorem 4.2，A1、A3、A4 | 第 3、5 节的一致余项 |
 | LX26 | K. Liu, H. Xu, [Uniform asymptotics and the Weil–Petersson constant](https://arxiv.org/html/2610.33752v1), v1，Corollary 1.2 | WP 绝对常数 |

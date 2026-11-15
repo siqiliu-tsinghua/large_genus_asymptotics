@@ -1,0 +1,76 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s04",
+      "build/previews/s04/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s04/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s04",
+      "build/previews/s04/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s04",
+      "build/previews/s04/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s04/preview.aux",
+    "build/previews/s04/preview.bbl",
+    "build/previews/s04/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/03_graph_asymptotics/01_wp_inputs.tex",
+    "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+    "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+    "sections/03_graph_asymptotics/04_finite_cores.tex",
+    "sections/03_graph_asymptotics/section.tex",
+    "sections/04_lambda_one/01_loop_moments.tex",
+    "sections/04_lambda_one/02_leading_and_first_correction.tex",
+    "sections/04_lambda_one/03_second_correction.tex",
+    "sections/04_lambda_one/04_proof.tex",
+    "sections/04_lambda_one/section.tex",
+    "sections/a_coefficients/01_wp_coefficients.tex",
+    "sections/a_coefficients/02_loop_moments.tex",
+    "sections/a_coefficients/03_low_complexity_vertices.tex",
+    "sections/a_coefficients/04_finite_core_tables.tex",
+    "sections/a_coefficients/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s04/preview.pdf",
+  "pdf_sha256": "2e6b80e7fbcfe25bc55c82cfd987c3795667e209e0761e5ec3d54ff02b396355",
+  "schema_version": 1,
+  "snapshot": "4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050",
+  "source_hash": "e0c123c63cdf7471e9f311c9e8943c8a310658445fc5c58e3361e1b550154332",
+  "strict": true,
+  "time": "2026-11-14T17:09:09+00:00",
+  "unit": "s04",
+  "with_dependencies": true
+}

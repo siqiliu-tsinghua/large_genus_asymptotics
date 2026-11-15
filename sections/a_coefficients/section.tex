@@ -2,4 +2,22 @@
 \section{Coefficients and finite cores}
 \label{sec:appendix-a}
 
-\input{sections/a_coefficients/content}
+Section~\ref{sec:s03} justifies the asymptotic expansion of the complete
+graph sum. We supply here the finite coefficients needed to use that
+expansion through order $g^{-2}$ in Section~4. The calculation has four
+parts: normalized descendants and absolute cusp volumes, correlated
+self-loop moments, the four small vertex integrals, and the complete
+list of cores of complexity at most two. In particular, the absolute
+second volume coefficient is reconstructed from exact intersection
+recursions; it is not imported from a formal prediction.
+
+The formulas below are finite algebraic rules for every displayed
+coefficient. The accompanying calculations directory implements those
+rules, together with a separate enumeration by flag bijections. The
+scripts provide reproducibility; the coefficient identities and the
+estimates needed to extract them are proved in the text.
+
+\input{sections/a_coefficients/01_wp_coefficients}
+\input{sections/a_coefficients/02_loop_moments}
+\input{sections/a_coefficients/03_low_complexity_vertices}
+\input{sections/a_coefficients/04_finite_core_tables}

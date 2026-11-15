@@ -1,0 +1,241 @@
+{
+  "clean_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ],
+      [
+        "bibtex",
+        "build/previews/s04/preview"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "entry_sha256": "6a5e20bf9787ac6a51cfefdade61171fabc5d13da01c446b94df0a235af124c4",
+    "helper_sha256": "e037e496b29d9977c38d3b70b1cbb9a7b9d51b2865e8012657b1693dfd9b1bb6",
+    "layout_diagnostics": [],
+    "local_inputs": [
+      "build/previews/s04/preview.aux",
+      "build/previews/s04/preview.bbl",
+      "build/previews/s04/preview.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/reviews/s04/r002/preview.pdf",
+    "pdf_sha256": "4ef6e5d33a15e3fd4f3a1d82b4449d36235e34b25686d602d9d5f33dbf874f61",
+    "render_options": {
+      "showkeys": "final"
+    },
+    "schema_version": 1,
+    "snapshot": "49709716eb7727c33aef75f4e58308d545d5fab65362602733660224dd29abc1",
+    "source_hash": "690b26c34008fc06a53743a7b97098a2ce33add3d7182b8d8ebfcb182f47e66c",
+    "strict": true,
+    "time": "2026-11-14T18:10:44+00:00",
+    "unit": "s04",
+    "with_dependencies": true
+  },
+  "feedback": {
+    "path": "workflow/feedback/s04/USER-006.json",
+    "sha256": "3aa8bcc06f1b167fa4ad9110efacf0b014a5f7c5bcb8203d7adb73b6f2b279fe"
+  },
+  "higher_calculation": {
+    "coefficients": {
+      "3": {
+        "decimal": "4.22488624041117562771387801182090893602335616839331035415186",
+        "expression": "62909/15360 + 251/(192*P) - 5/(16*P**2)"
+      },
+      "4": {
+        "decimal": "9.70589643617510999932777712521564618375507587230831831739020",
+        "expression": "291371/32768 + 129871/(15360*P) - 277/(64*P**2) + 105/(64*P**3)"
+      }
+    },
+    "execution_receipt": {
+      "path": "build/s04-higher-check/verification_receipt.json",
+      "sha256": "af4326f2e414373a50f89881d2457b0242d1515e8fd05f975f962661e4f506da"
+    },
+    "record": "sections/04_lambda_one/checks/verification.json",
+    "record_sha256": "a27f1befb28ff54c2f5f9f988fd5ab9bb99140329c90e4a5f9f98238ff6cdbaa",
+    "result_sha256": "016c81cae9321dcff101c1352cb94fcd3d3fd686a93771a294ca97d8469d3ae8",
+    "scope": "Executable exact calculation evidence for a supplementary Remark; not a formal review signature",
+    "source_files": 24,
+    "source_manifest_sha256": "7b96d8c059819b2c80c488b815872009f847eab82ef926af3ce0fbea4bdd22fa",
+    "target_comparison_after_reconstruction": {
+      "3": "0",
+      "4": "0"
+    }
+  },
+  "included_units": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "a"
+  ],
+  "main_layout_diagnostics": [],
+  "main_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "bibtex",
+        "build/main"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "local_inputs": [
+      "build/main.aux",
+      "build/main.bbl",
+      "frontmatter/abstract.tex",
+      "main.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "sections/included.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/main.pdf",
+    "pdf_sha256": "30613a3801163f15a390a67dc449770b756cdbaed5bb4a57425de9252dae9785",
+    "schema_version": 1,
+    "snapshot": null,
+    "source_hash": "a3070bd57e404264157fd03547fe2cd1fef2e0db2f199bd31b13dd8a15a528b1",
+    "strict": true,
+    "time": "2026-11-14T18:16:44+00:00",
+    "unit": null,
+    "with_dependencies": false
+  },
+  "new_writing_committed": false,
+  "prior_batch_commit": "213c1ca",
+  "review_results": {
+    "academic": {
+      "agent_id": "/root/s02_academic",
+      "issues": [],
+      "verdict": "pass"
+    },
+    "math": {
+      "agent_id": "/root/s02_math",
+      "issues": [],
+      "verdict": "pass"
+    },
+    "readability": {
+      "agent_id": "/root/s02_readability",
+      "issues": [],
+      "verdict": "pass"
+    }
+  },
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "49709716eb7727c33aef75f4e58308d545d5fab65362602733660224dd29abc1",
+  "source_hash": "690b26c34008fc06a53743a7b97098a2ce33add3d7182b8d8ebfcb182f47e66c",
+  "status": "approved",
+  "time": "2026-11-14T18:19:44+00:00",
+  "unit": "s04",
+  "verification": {
+    "all_records_fresh": true,
+    "coordinator_visual_page": 40,
+    "git_diff_check": {
+      "output": "",
+      "passed": true
+    },
+    "original_proof_exact_prefix": true,
+    "protected_inputs_unchanged": 45,
+    "refs_build_tracked": false,
+    "static_LF_validation": {
+      "output": "Validation passed: text_files=951, sections=11, labels=217",
+      "passed": true
+    }
+  }
+}

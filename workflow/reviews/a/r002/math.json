@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read changes.diff and the original writer's r001 response. The new HMT kernel comparison gives the source series as the defined mu generator divided by 2(1-z), correctly producing the initial coefficient 1/2 and subtraction factors 4/8/8; formal Wang et al. attribution preserves the same precise source inputs. All dependency/shared files and scientific results are unchanged, so the prior direct W26/MZ/HMT/SW/EGGLS source checks remain applicable.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 44 numbered formulas and all ten principal statement blocks are byte-identical to r001, as are A.3/A.4, the section entry and every calculation source. No stability, degree, complexity, core range, retained separating type or error-order hypothesis changed; the added connector derivative orders are explicitly r=0,1,2.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "MATH-001 is resolved: the raw rational generator is explicitly 2M_0,r, and the elliptic generator is the integral of W_11(t)f(xt) with no branch half-factor and with W_11 unscaled. Direct Euler differentiation gives [8,-8,8-pi^2] and [(pi^2+4)/3,-8/3,(16-2pi^2)/3]; the separate zero-indicator integrals give 2pi^2 and pi^4/12. The source half-kernel check also reproduces mu_0/2 and its next two coefficients, without changing any existing table, symmetry factor or absolute/relative coefficient.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "MATH-002 is resolved by removing the undeclared a_l/a_-1 sequence entirely and using the previously defined mu generator with an explicitly formal z. The new raw-moment parameter x is declared locally near 1, distinct from the zero-degree indicator z; its scope and unscaled elliptic factor are synchronized in the interface. Inherited Hodge/Bernoulli/Bessel notation and all existing first-definition and proof-adjacency positions remain intact.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The connector derivation now actually yields the unchanged raw table, closing the former factor-two proof defect; the kernel paragraph explains both the positive-index conversion and initial term without an omitted extension. The remaining edits are accurate attribution/provenance changes. After exact diff and statement/formula checks, the r001 verification of the c_2 reconstruction, four profile cases, complete signed moments, core integrations and finite coefficient totals remains valid.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The new connector generators integrate entire f(xt) against a fixed polynomial on a finite interval, so the displayed finite derivatives are legitimate. No full-genus factorial tail, HMT polynomial remainder, signed dilaton averaging, loop convergence or summable-core estimate changed; the prior uniformity reasoning therefore survives the correction without a new limit or summation exchange.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal Appendix A r002 impact signature by the original mathematical reviewer. Both original issues are explicitly resolved: MATH-001 by unscaled raw connector generators and MATH-002 by the source half-kernel generating series.",
+    "Independently verified every archive/live/artifact hash and the snapshot digest. Only A.1/A.2, their synchronized interface and appended handoff changed; the r001 author response is the sole added snapshot input. The 44 numbered formulas, ten statement blocks, all calculation code and other manuscript/shared inputs are unchanged.",
+    "The strict clean receipt matches snapshot 8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf, source hash 2312384520fc5d610c90aa370419452523501a5ceb83b9826bef70a191e4e72a and PDF hash 54c82a2a7e6e420dadcb00963977a1cfb6e717824e99a60ff2a7c8cbcd1e2636. The source hash was recomputed using the builder's input closure; the response file is separately bound by the verified submission. Entry/helper hashes match and diagnostics/layout_diagnostics are empty.",
+    "Inspected the corrected rendered kernel and raw-connector rules on PDF pp.36 and 45. Performed direct exact checks of those new rules; no full rerun of the unchanged seven algorithms or unchanged-literature reload was needed. No source/shared/state/old record or shared preview was modified; only the assigned r002 report and handoff were written."
+  ],
+  "resolved_issue_ids": [
+    "MATH-001",
+    "MATH-002"
+  ],
+  "role": "math",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf",
+  "summary": "Pass for Appendix A r002. Both prior mathematical issues are resolved, the corrected rules reproduce the existing coefficients, and independent delta/integrity checks preserve the complete r001 mathematical verification. No unresolved mathematical issue remains.",
+  "unit": "a",
+  "verdict": "pass"
+}

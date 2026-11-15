@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The archived/live input hashes and frozen manifest agree, and the protected Introduction, s02, s03 and Appendix A inputs are unchanged from the approved dependency closure; the s04 interface binds s03 r003 and a r002 to their actual snapshots. The source translations retain the Mirzakhani-Zograf absolute volume normalization, the negative Wang et al. deficit convention, and Section 3's polynomial uniformity requirements rather than treating fixed-tuple expansions as uniform estimates. The unconditional c_2 input is the already-verified exact-recursion/HMT extraction in Appendix A, not the conditional EGGLS comparison, and the current proof uses only the established appendix/core exports at their stated orders."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "For the pure-loop graph the vertex type is (g-p,2p), so its complexity is exactly 2g-2 and its paired degree tuple has length 2p. The three complexity-one cores have connector valence n0=1 or 3 and shift c=(n0+1)/2; the complexity-two possibilities and the example with a four-valent rational vertex agree with the approved 13-core classification. The absolute groups have q=0,1,2 and 0<=r<=2-q, so q+r<=2 covers exactly the retained orders; legal finite-genus loop counts are discarded before any infinite coefficient extension."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "Equation (4.1) uses one common edge parameter and the branch factor 1/2, and (4.2) adds 1/p!, giving exactly 1/(2^p p!); connectors instead use the undivided integral with f and the unscaled W_1,1. The complexity-one automorphism factors 1,6,2, their three integrals, and the example factor 2!*2=4 reproduce the approved stack conventions, including the signed example value -1+4/pi^2. I checked the absolute volume/genus conversion, the extra e_1 term caused by expanding (2g-2)^-1 at second order, and the distinction between Q coefficients of Z_g/F_g and gamma coefficients of Z_g/V_g,0. The two coefficient sums are exactly 9/8 and 257/128+1/(8*pi^2), with cancellation of the pi^-4 terms, and the existing exact a_g/N_g=Z_g(1)/F_g identity restores the target normalization."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "Section 4.1 physically defines w_ab, the tuple counts D,m_0,m_1,m_2, the signed functional L and its independent complex moment fields before use; Section 4.2 defines the signed profiles e_n,r and their fixed-tuple scope before their calculations. Section 4.3 defines Q_q,r with its integer ranges and absolute normalization before stating the second correction, while inherited f,S,F_g,Z_g and the global Hodge/Chow conventions remain unchanged. The interface explicitly accounts for Section 4 preceding Appendix A in the printed paper, so no essential first definition is deferred to the appendix; all 36 distinct cross-reference targets used in s04 resolve uniquely in the frozen closure, and statements directly precede their proofs."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "I read the roadmap, all four subsections and interface, and checked their composition independently of the writer handoff: the joint generator follows by paired endpoint expansion and exponential summation, and the first correction combines the pure-loop and the three small-core calculations. For the second correction the displayed pure-loop product, full low-mode second profile, raw connector first corrections and 13-core leading calculation use the unchanged proved Appendix A inputs; the worked complexity-two example independently checks their sign and symmetry mechanism. Exact rational arithmetic verifies the displayed group cancellation, rather than assuming the target value. The final proof applies the full graph tail, loop tail and order K=2-q core expansions before collecting the absolute groups and using the exact normalization/Cin identities, with no circular use of Theorem 1.1."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The endpoint factorial series on a finite integration interval converges normally on compact sets of all five complex fields; exponential summation over p therefore justifies the entire joint generator and all polynomial moment derivatives. The final proof first uses the absolute whole-graph bound with M=3 and then removes every legal p>log g, including small-genus root vertices, before invoking the HMT-based core expansion at K=2-q. Its remaining error g^-3*C^(p+1)*(1+p)^s/p! is summed over p without replacing the polynomial by a power of log g; the coefficient bound also makes the extension to all p superpolynomially accurate. Multiplication by the actual fixed-n absolute volume expansion preserves this summable bound, so the stated O(g^-3) remainder has no residual logarithmic loss."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh complete-section mathematical signature for s04 r001 by the original bound reviewer /root/s02_math; this is not an automatic carryover from coefficient preparation or Appendix A approval. There were no prior s04 mathematical issues.",
+    "Independently checked archive/live hashes, the canonical submission digest and artifacts. The strict clean receipt matches snapshot 4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050, source hash e0c123c63cdf7471e9f311c9e8943c8a310658445fc5c58e3361e1b550154332 and PDF hash 90f98a8f626d6f782b195f6fb9db69ba9d56c9fe18ea575e773abb24f4d38048; entry/helper hashes also match, diagnostics=[] and layout_diagnostics=[].",
+    "The frozen PDF has 65 pages; I inspected the rendered signed joint generator, absolute second-order groups and final proof on pages 32, 36 and 39 against the source. All 23 local labels are unique and all s04 reference targets resolve.",
+    "The unchanged seven Appendix A calculation scripts and primary-source arguments were not rerun or reloaded without a new need. Their previously reviewed inputs were checked for preservation, while the present body combination and exact coefficient cancellations were independently audited.",
+    "Only this round's math.json and math_handoff.md were written. No manuscript, shared input, workflow state, old review or shared build output was edited or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050",
+  "summary": "Pass for the complete formal s04 r001 submission. The paired signed moments, absolute coefficient groups and final summable-error argument prove Theorem 1.1 with the stated O(g^-3) remainder from the unchanged approved inputs. No unresolved mathematical issue was found.",
+  "unit": "s04",
+  "verdict": "pass"
+}

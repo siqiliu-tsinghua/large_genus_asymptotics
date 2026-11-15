@@ -1,0 +1,69 @@
+{
+  "agent_id": "/root/s02_writer",
+  "responses": [
+    {
+      "changed_files": [
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
+      "issue_id": "MATH-001",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/01_wp_coefficients.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
+      "issue_id": "MATH-002",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/01_wp_coefficients.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
+      "issue_id": "READABILITY-001",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
+      "issue_id": "READABILITY-002",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/01_wp_coefficients.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
+      "issue_id": "ACADEMIC-002",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/INTERFACE.md"
+      ],
+      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
+      "issue_id": "ACADEMIC-003",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/a_coefficients/01_wp_coefficients.tex"
+      ],
+      "explanation": "Replaced all six bare W26 occurrences in A.1 prose by Wang et al. or an actual citation. The precise Lemma/Appendix/equation locators are retained, and the (C.1)--(C.3) increment is cited directly. W26 remains only a bibliography key inside citation commands, not an introduced prose alias.",
+      "issue_id": "ACADEMIC-004",
+      "resolution": "addressed"
+    }
+  ],
+  "round": 1,
+  "unit": "a"
+}

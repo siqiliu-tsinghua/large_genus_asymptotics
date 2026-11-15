@@ -69,3 +69,7 @@ The writer stops editing at handoff until the collected reviews or another expli
 ## Shared-input refresh for s03 preparation
 
 This dependency refresh adds only the coordinator-supplied bibliography entries Wol86, Mir07, MZ15, SW25, HMT25, LX26 and W26, which are not used in s02, and future s03 notation/core-contraction conventions in shared context. Every s02 TeX file and INTERFACE.md remains byte-identical to the approved source; no s02 mathematical recalculation is needed. Historical sources, reports and receipts remain immutable; the original reviewers will check this shared-input delta against the new snapshot.
+
+## Shared-input refresh for Appendix A and s04
+
+This refresh records three settled shared changes for Appendix A/s04: the EGGLS24 bibliography entry, unused in s02/s03; context's future loop/profile notation, source-status cautions and absolute/relative normalization distinction; and TikZ in the preamble for future core diagrams. Every s02 TeX file and INTERFACE.md remains byte-identical to approved r005; its mathematics and cited inputs are unchanged. Historical records remain immutable; the coordinator handles the new build, freeze and original-reviewer delta signatures.

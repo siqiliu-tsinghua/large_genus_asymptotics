@@ -1,0 +1,25 @@
+--- previous/sections/04_lambda_one/04_proof.tex
++++ sections/04_lambda_one/04_proof.tex
+@@ -48,7 +48,7 @@
+ $S(1)=\Cin(2\pi)$. Thus
+ \[
+  a_g=\frac{e^{\Cin(2\pi)}}{\sqrt\pi}N_g
+- \left[1+\frac9{8g}
++ \left[1+\frac{9}{8}g^{-1}
+      +\left(\frac{257}{128}+\frac1{8\pi^2}\right)g^{-2}
+      +O(g^{-3})\right],
+ \]
+--- previous/sections/04_lambda_one/writer_handoff.md
++++ sections/04_lambda_one/writer_handoff.md
+@@ -151,3 +151,11 @@
+ `writer_draft`, snapshot null and the actual saved-source hash. The
+ final check outcomes, visual inspection and hash are supplied in the
+ handoff message. Frozen review artifacts are untouched.
++
++## USER-007: final-display typography
++
++Feedback: `workflow/feedback/s04/USER-007.json`.
++Changed only `\frac9{8g}` to `\frac{9}{8}g^{-1}` in the final
++a_g display of `04_proof.tex`. All other TeX, the supplementary Remark,
++INTERFACE and check sources remain byte-identical. No coefficient
++computation was rerun.

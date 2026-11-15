@@ -1,0 +1,258 @@
+--- previous/sections/a_coefficients/01_wp_coefficients.tex
++++ sections/a_coefficients/01_wp_coefficients.tex
+@@ -25,8 +25,8 @@
+ For the empty tuple both coefficients are zero. The convention also
+ applies to the zero tuple of every positive length.
+ 
+-We first give a closed potential for W26's discrete second-coefficient
+-recursion. The low-degree counts in this potential will subsequently be
++We give a closed potential for Wang et al.'s second coefficient.
++The low-degree counts in this potential will subsequently be
+ summed, rather than discarded as exceptional modes.
+ 
+ \begin{prp}[The first two profiles]\label{prp:a:profiles}
+@@ -58,7 +58,7 @@
+ \end{equation}
+ \end{prp}
+ \begin{prf}
+-The first formula is W26's deficit with its sign reversed. Here is a
++The first formula is Wang et al.'s deficit with its sign reversed. Here is a
+ finite verification of the second, including all pivot degrees. Define
+ recursion coefficients $\mu_l$ and their tails by
+ \begin{equation}\label{eq:a:recursion-kernel}
+@@ -75,8 +75,9 @@
+ an indicator. Let $\mathbf d^{ij,l}$ merge entries $i,j$ into
+ $t+d_j+l-1$, and let $\mathbf d^{i;u,v}$ replace entry $i$ by $u,v$.
+ Only nonnegative resulting entries are included, and $\mathbf e_i$
+-denotes the $i$th unit vector. W26's (C.1)--(C.3)
+-give the increment $I_i=e_{n,2}(\mathbf d+\mathbf e_i)-e_{n,2}(\mathbf d)$
++denotes the $i$th unit vector. The recursion in
++\cite[(C.1)--(C.3)]{W26}
++gives the increment $I_i=e_{n,2}(\mathbf d+\mathbf e_i)-e_{n,2}(\mathbf d)$
+ as
+ \begin{align}
+  I_i={}&-\frac1{\pi^2}\sum_{j\ne i}(2d_j+1)
+@@ -141,13 +142,13 @@
+ \end{prf}
+ 
+ \begin{rmk}[Identification]
+-The source quantities in W26 are evaluated at its parameter $Y=0$ and
++The source quantities of Wang et al. are evaluated at $Y=0$ and
+ complexity $2G-2+n$. Its deficit is $-e_{n,1}$, and its second coefficient
+ is $e_{n,2}$. Lemma~C.1 itself fixes the number of markings. Uniqueness
+ of each fixed-tuple expansion identifies these formulas with the HMT
+ coefficients in~\eqref{eq:s03:hmt-descendant}. The polynomial remainders
+ and summable degree bounds proved in Section~\ref{sec:s03}, rather than
+-an unstated uniform version of W26, justify their later use when the
++an unstated uniform version of their fixed-marking result, justify their later use when the
+ loop count grows. The $m_1,m_2$ terms remain part of those coefficients.
+ \end{rmk}
+ 
+@@ -241,9 +242,18 @@
+ \end{align}
+ Negative degrees and unstable children contribute zero. This identity
+ is used for large $G$ with fixed $n$; the exceptional initial parent
+-types are not needed. The factors $4,8,8$ use
+-$\mu_l=2(a_l-a_{l-1})$ in the MZ/HMT kernel notation. The last sum is
+-ordered, so choosing the smaller component combines two orientations.
++types are not needed. The kernel in \cite[(4.4)--(4.7)]{HMT25} has
++the following generating series in the formal variable $z$:
++\[
++ \frac{\pi\sqrt z}{2\sin(\pi\sqrt z)}
++   =\frac1{2(1-z)}\sum_{l\geq0}\mu_l z^l.
++\]
++Subtracting adjacent degrees and shifting the index multiplies this
++series by $1-z$. Its coefficients therefore become $\mu_l/2$, so
++the source prefactors $8,16,16$ become $4,8,8$. The initial coefficient
++is $\mu_0/2=1/2$, covering index zero without a negative-index
++extension. The last sum is ordered, so choosing the smaller component
++combines two orientations.
+ 
+ We next justify extracting a coefficient from these infinite recursions.
+ This also controls components whose genus grows with the parent genus.
+@@ -483,6 +493,6 @@
+ The resurgence assumption appears in their Section~6.1 before (6.6).
+ We use that result for credit and a comparison after our calculation.
+ The unconditional inputs here
+-are the MZ/HMT recursions, W26's profiles, and the uniform bounds from
++are the MZ/HMT recursions, Wang et al.'s profiles, and the uniform bounds from
+ Section~\ref{sec:s03}.
+ \end{rmk}
+--- previous/sections/a_coefficients/02_loop_moments.tex
++++ sections/a_coefficients/02_loop_moments.tex
+@@ -241,8 +241,25 @@
+ Only elementary connector moments remain. For one connector let its
+ degree be $a$ and its zero indicator be $z=\mathbf1_{a=0}$. Sum its
+ negative-psi coefficient against $1$ or
+-$W^{\rm WP}_{1,1}(t)=(2\pi^2-t)/24$, respectively. The unnormalized
+-moments, including integration over $[0,\alpha]$, are
++$W^{\rm WP}_{1,1}(t)=(2\pi^2-t)/24$, respectively. Use $x$ locally
++as a complex degree-generating parameter near $1$. For degree orders
++$r=0,1,2$, the raw moments are the unscaled integrals
++\[
++\begin{aligned}
++ \text{rational:}\quad &2M_{0,r}
++ =\left.(x\partial_x)^r\int_0^\alpha f(xt)\,\dd t\right|_{x=1},\\
++ \text{elliptic:}\quad &\left.(x\partial_x)^r
++   \int_0^\alpha W^{\rm WP}_{1,1}(t)f(xt)\,\dd t\right|_{x=1}.
++\end{aligned}
++\]
++The elliptic polynomial $W^{\rm WP}_{1,1}(t)$ is not scaled with $x$. A connector
++has no loop branch-exchange factor $1/2$. The zero-indicator moments
++are separately
++\[
++ \int_0^\alpha 1\,\dd t=2\pi^2,\qquad
++ \int_0^\alpha W^{\rm WP}_{1,1}(t)\,\dd t=\frac{\pi^4}{12}.
++\]
++These give the following raw moment table:
+ \begin{equation}\label{eq:a:connector-moments}
+ \begin{array}{c|rrrr}
+  &1&a&a^2&z\\\hline
+@@ -250,8 +267,7 @@
+  \text{elliptic connector}&(\pi^2+4)/3&-8/3&(16-2\pi^2)/3&\pi^4/12
+ \end{array}
+ \end{equation}
+-For the second row, multiply the integrand
+-in~\eqref{eq:a:side-moments} by the elliptic polynomial. Always $z^r=z$
++Always $z^r=z$
+ for $r\geq1$, and $a^r z=0$ for $r\geq1$. For $m$ independent
+ connectors with raw moments $h_0,h_1,h_2,h_z$, product expansion gives
+ \begin{align*}
+--- previous/sections/a_coefficients/INTERFACE.md
++++ sections/a_coefficients/INTERFACE.md
+@@ -52,7 +52,7 @@
+ | restriction at q=r | Before the pure-loop calculation | Portion of exact graph sum with the indicated core complexity; used for q=0,1,2 only |
+ | E_r, v_1,v_2 | Before `eq:a:pure-loop-polynomials` | Local loop-profile and absolute volume coefficients; not the A.1 genus-ratio coefficient v_{r,n} |
+ | D_c,m_{0,c} | Before `eq:a:q-one-loop-average` | Connector total degree and number of zero root-connector degrees, independent of the root-loop statistics |
+-| a,z indicator,h_0,h_1,h_2,h_z,m | Before/after `eq:a:connector-moments` | Local single connector degree, zero indicator, four raw weighted moments and positive connector count; these are finite algebra variables |
++| a,z indicator,x,h_0,h_1,h_2,h_z,m | Before/after `eq:a:connector-moments` | Local single connector degree, zero indicator, complex degree-generating parameter near 1, four raw weighted moments and positive connector count. The rational raw degree moments are 2 M_{0,r}; the elliptic generator is the integral of W_11(t) f(xt), with W_11 unscaled and no loop factor 1/2. Zero-indicator integrals are specified separately |
+ | r_1,r_2 | Last A.2 Remark | Only that remark's complete absolute coefficients; do not use a_1,a_2, which collide with the integral sequence a_g |
+ | raw psi integrals | A.3 opening | Written as actual stack integrals, distinct from both normalized brackets already used in the paper |
+ | G_i,n_i,m_{ij},c,n_0 | A.4 opening, `eq:a:core-data` | Local small vertex data, two-index edge multiplicities, genus loss and root core valence. Root labelled 0, no root self-loop |
+@@ -82,7 +82,7 @@
+ | `prp:a:c-two`; `eq:a:c-two-zero`, `eq:a:c-two-n` | Unconditional c2(0) and exact all-fixed-n polynomial difference c2(n)-c2(0) |
+ | `lmm:a:joint-moments`; `eq:a:joint-egf`, `eq:a:side-table`, `eq:a:bell-rule` | Absolutely convergent correlated signed loop sum and finite evaluation rules |
+ | `prp:a:pure-loops`; `eq:a:q-zero` | Absolute q=0 coefficients through order g^-2 with O(g^-3), after extracting exp(S)/sqrt(pi) |
+-| `eq:a:q-one-loop-average`, `eq:a:connector-moments` | Complete first correction mechanism for all three q=1 cores |
++| `eq:a:q-one-loop-average`, `eq:a:connector-moments` | Complete first correction mechanism for all three q=1 cores, with explicit unscaled connector generators and separate zero-indicator integrals |
+ | `prp:a:q-one`; `eq:a:q-one-table`, `eq:a:q-one` | Individual and total absolute q=1 leading/first corrections, O(g^-3) after the common factor |
+ | `lmm:a:small-vertices`; `eq:a:small-vertices`, `eq:a:small-amplitudes` | Exact four low WP vertices, all stack factors, negative kappa merge term and normalized small amplitudes |
+ | `lmm:a:core-enumeration`; `eq:a:core-data`, `eq:a:core-aut` | Complete 1/3/13 enumeration, genus bookkeeping, vertex/edge/loop automorphism rule |
+@@ -105,8 +105,11 @@
+   its deficit is -e_{n,1}. No fixed-marking error is assumed growing-n.
+ - `MZ15`, Section 2, recursions (Ia),(II),(III), and `HMT25`, Theorem
+   4.3 (4.2)--(4.7), PDF pp.28--29: exact genus/dilaton/adjacent rules.
+-  Our recursion mu_l=2(a_l-a_{l-1}) gives subtraction factors 4,8,8;
+-  combining both orientations of a retained small split gives 16.
++  The source kernel series is (sum mu_l z^l)/(2(1-z)). Adjacent-degree
++  subtraction multiplies it by 1-z, giving mu_l/2 and translating the
++  source factors 8,16,16 into 4,8,8, including the initial coefficient
++  mu_0/2=1/2. No auxiliary source a_l or negative index is introduced.
++  Combining both orientations of a retained small split gives 16.
+ - `MZ15`, Theorem 1.2 and Remark 1.3, as exported by s03: actual
+   all-fixed-order volume expansion and c1(n). Order THREE, including
+   an O(g^-4) remainder, is required to identify c2 via genus ratios.
+--- previous/sections/a_coefficients/writer_handoff.md
++++ sections/a_coefficients/writer_handoff.md
+@@ -88,3 +88,29 @@
+ and the three independent review signatures belong to the coordinator.
+ No formal review of Appendix A has yet been claimed. After the final
+ saved-source checks the writer stops editing pending that frozen review.
++
++## Formal r001 revision
++
++All seven registered issues are answered separately in
++`workflow/reviews/a/r001/author_response.json`. MATH-001,
++READABILITY-002 and ACADEMIC-003 are addressed by explicit raw connector
++generators without the loop factor 1/2: the rational degree moments are
++2 M_{0,r}, and the elliptic generator integrates W_11(t) f(xt), keeping
++W_11 unscaled. The two zero-indicator integrals are stated separately.
++The existing raw table and every q=1 numerical coefficient are retained.
++
++MATH-002, READABILITY-001 and ACADEMIC-002 are addressed without a new
++source alias: the already defined mu generating function explains the
++source half-kernel, adjacent subtraction and factors 4/8/8, including
++the initial coefficient 1/2. The undefined source a_l comparison is
++removed and the interface source mapping is synchronized. ACADEMIC-004
++is addressed by replacing all six bare source keys in manuscript prose
++with Wang et al. or actual citations, retaining the precise locators.
++
++Only A.1, A.2, this handoff and the interface are changed in the unit.
++The entry, A.3, A.4, all 44 numbered equations, all ten
++principal statements and every calculation source remain byte-identical.
++Checks for this saved revision and its new label-free rendering are
++reported in the final handoff and the ignored r002-writer-draft receipt.
++The seven unchanged algorithms need no full rerun; the corrected raw
++connector generators are checked directly against their exact table.
+--- /dev/null
++++ workflow/reviews/a/r001/author_response.json
+@@ -0,0 +1,69 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/a_coefficients/02_loop_moments.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
++      "issue_id": "MATH-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/01_wp_coefficients.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
++      "issue_id": "MATH-002",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/01_wp_coefficients.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/02_loop_moments.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
++      "issue_id": "READABILITY-002",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/01_wp_coefficients.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Removed the undefined one-use source sequence a_l. The existing mu generating series now gives the source kernel as its quotient by 2(1-z); adjacent subtraction multiplies by 1-z and hence converts source factors 8,16,16 to 4,8,8. The initial coefficient mu_0/2=1/2 is explicit, so no negative index or competing a-family is needed. The interface source translation is synchronized.",
++      "issue_id": "ACADEMIC-002",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/02_loop_moments.tex",
++        "sections/a_coefficients/INTERFACE.md"
++      ],
++      "explanation": "Replaced the half-weighted side-moment recipe with explicit unscaled raw connector integrals. Rational degree moments are 2 M_{0,r}; elliptic moments are Euler derivatives of the integral of W_11(t) f(xt) at x=1, with W_11(t) unscaled and no factor 1/2. The rational and elliptic zero-indicator integrals are stated separately. All displayed raw moments, q=1 prefactors and contribution coefficients are unchanged; the interface records this convention.",
++      "issue_id": "ACADEMIC-003",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/a_coefficients/01_wp_coefficients.tex"
++      ],
++      "explanation": "Replaced all six bare W26 occurrences in A.1 prose by Wang et al. or an actual citation. The precise Lemma/Appendix/equation locators are retained, and the (C.1)--(C.3) increment is cited directly. W26 remains only a bibliography key inside citation commands, not an introduced prose alias.",
++      "issue_id": "ACADEMIC-004",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "a"
++}

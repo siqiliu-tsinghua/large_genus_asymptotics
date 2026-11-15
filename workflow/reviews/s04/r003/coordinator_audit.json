@@ -1,0 +1,205 @@
+{
+  "approved_dependencies_fresh": true,
+  "changes": [
+    "sections/04_lambda_one/04_proof.tex",
+    "sections/04_lambda_one/writer_handoff.md"
+  ],
+  "clean_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ],
+      [
+        "bibtex",
+        "build/previews/s04/preview"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s04",
+        "build/previews/s04/preview.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "entry_sha256": "6a5e20bf9787ac6a51cfefdade61171fabc5d13da01c446b94df0a235af124c4",
+    "helper_sha256": "e037e496b29d9977c38d3b70b1cbb9a7b9d51b2865e8012657b1693dfd9b1bb6",
+    "layout_diagnostics": [],
+    "local_inputs": [
+      "build/previews/s04/preview.aux",
+      "build/previews/s04/preview.bbl",
+      "build/previews/s04/preview.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/reviews/s04/r003/preview.pdf",
+    "pdf_sha256": "ff93d09057abd86e76d1c816d80bb376bb0933410eb4458cebb1b27f8a0e15cc",
+    "render_options": {
+      "showkeys": "final"
+    },
+    "schema_version": 1,
+    "snapshot": "172195b1a31c1584895d46b98f3c7790c556bc27b4302993f8eac254d897fbb9",
+    "source_hash": "a94a0e46a1d446f9b33eaed7e262f6944a85d66063cea65d679f18fdd5291ef1",
+    "strict": true,
+    "time": "2026-11-15T00:03:57+00:00",
+    "unit": "s04",
+    "with_dependencies": true
+  },
+  "commit_authorization": "User requested this completed batch be committed before starting Section 5.",
+  "coordinator_visual_page": 39,
+  "exact_single_typography_replacement": true,
+  "feedback": "workflow/feedback/s04/USER-007.json",
+  "git_diff_check": "passed",
+  "high_order_reconstruction_rerun": false,
+  "main_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "bibtex",
+        "build/main"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "local_inputs": [
+      "build/main.aux",
+      "build/main.bbl",
+      "frontmatter/abstract.tex",
+      "main.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "sections/included.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/main.pdf",
+    "pdf_sha256": "aa16d3c849d95882febb75cfb131d4659b72d0ec21e7cc52f905aebb4b8afbbd",
+    "schema_version": 1,
+    "snapshot": null,
+    "source_hash": "6ec0b7796e4c8961ce03b67ab38b5f3fc29dda4ec601ea3db6643975ab3a8179",
+    "strict": true,
+    "time": "2026-11-15T00:07:00+00:00",
+    "unit": null,
+    "with_dependencies": false
+  },
+  "refs_build_tracked": false,
+  "reviews": {
+    "academic": {
+      "agent_id": "/root/s02_academic",
+      "sha256": "69243dbc0bb6945503829495622ef6e53b7bef7ef6b75747f87869ae84cb5fd4",
+      "verdict": "pass"
+    },
+    "math": {
+      "agent_id": "/root/s02_math",
+      "sha256": "2738045f30081c799d77877385b783cd21a0819d155b7a9e67a92f7abdbd5cb7",
+      "verdict": "pass"
+    },
+    "readability": {
+      "agent_id": "/root/s02_readability",
+      "sha256": "1eb4e51881b1cb859300a0d0e17517eed178337c923830e48e3608913ad89182",
+      "verdict": "pass"
+    }
+  },
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "172195b1a31c1584895d46b98f3c7790c556bc27b4302993f8eac254d897fbb9",
+  "source_hash": "a94a0e46a1d446f9b33eaed7e262f6944a85d66063cea65d679f18fdd5291ef1",
+  "staged_whitespace_check": {
+    "LF_validation": "passed for all 1038 current text files before staging",
+    "command": "git -c core.whitespace=blank-at-eol,space-before-tab,-blank-at-eof diff --cached --check -- . :(exclude)workflow/reviews/**/changes.diff",
+    "status": "passed_with_documented_scope",
+    "unrestricted_findings": "The newly tracked historical diff artifacts contain intentional context-line spaces; immutable outlines and the accepted runtime file have final blank lines. No frozen bytes were changed to suppress these artifact/style-only findings."
+  },
+  "status": "approved",
+  "time": "2026-11-15T00:07:29+00:00",
+  "unchanged_input_count": 69,
+  "unit": "s04"
+}

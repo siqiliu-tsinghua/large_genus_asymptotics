@@ -142,3 +142,7 @@ complete s03 snapshot for the original three independent reviewers.
 ## USER-005 opening revision
 
 Feedback: `workflow/feedback/s03/USER-005.json`; SHA-256: `86ebc7b9672da44a277d5310ad7d44ad2684cc7d6e4490d88a173406cae5d321`. The opening now links s02's exact graph/GRR/degree identities to the uniform graph estimates, explains loop resummation, guides all four subsections, and identifies the later proofs of Theorems 1.1 and 1.2. Only the opening and this note change; subsection proofs, interface, assembly lines and protected sources remain unchanged from accepted r001. Scope and UTF-8/LF checks are performed; the coordinator handles the new builds, freeze and original-reviewer recheck.
+
+## Shared-input refresh after s02 r006
+
+The settled Appendix A/s04 inputs add EGGLS24, future context conventions and TikZ; s02 r006 changes only shared-input/provenance metadata, with its mathematical text unchanged. The s03 interface now records dependency snapshot `a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91`; its scientific exports are unchanged, and every s03 TeX file remains byte-identical to approved r002. Old records are immutable; the coordinator handles the new freeze and original-reviewer delta signatures.

@@ -16,6 +16,7 @@ The paper_outline.md plan defines the proof organization. Read only the target s
 - In the Bessel branch, keep z_{0,1} for the first positive zero of J_0(z). At their first use in Section 6, define x_* = z_{0,1}^2/4 and R = z_{0,1}*J_1(z_{0,1})/2 = rho/12. Do not give the zero an alias j.
 - All insertion indices, the defect h and requested truncation orders are fixed unless explicitly stated otherwise. Any stronger uniformity requires proof.
 - In the stable-graph analytic branch, Section 3 introduces $F_g$ for the WP factorial scale, $Z_g(u)$ for the boundary deformation, $W^{\rm WP}_{G,n}$ for its vertex integral, and $f(t),S(u)$ for the half-edge and loop functions. These objects have different recurring roles; define them in the manuscript before use. Keep $p$ for the number of self-loops on the large vertex and $q$ for the total complexity away from that vertex. A temporary scalar $H=2g-2$ is confined to the graph-counting estimates and is distinct from the flag set $H(\Gamma)$. Form the core by contracting those self-loops and increasing the vertex genus, preserving its complexity.
+- For the coefficient calculations, use $w_{ab}$ for paired loop weights and $m_a$ ($a=0,1,2$) for counts of low descendant degrees; the positive count is $n-m_0$. Use one explicitly defined signed linear functional $\mathcal L$ for repeated loop sums, with absolute convergence and normalization stated before use. It is not a probability expectation and is distinct from the normalized Hodge bracket. Write profile coefficients as $e_{n,r}(\mathbf d)$ when needed; the first is signed, so it is the negative of W26's deficit. Keep $\delta$ for the boundary and $h$ for Hodge defect. Source complexity variables must be translated into an explicitly scoped $k=2G-2+n$ or the established local $H$. Internal code aliases for $\pi^2$ are not manuscript notation.
 
 ## Notation policy
 
@@ -85,6 +86,14 @@ must preserve the previous mathematics and all historical reports.
 The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.
 
 The second lecture provides a route for all four theorems. It explicitly computes the first theorem only through the inverse-genus term. The second-order coefficient in the introduction needs a complete reconstruction of its WP inputs and q = 0, 1, 2 core contributions. The old table's arithmetic alone does not close this gap.
+
+For that reconstruction, use the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, then identify their coefficients with HMT's unique expansions before applying growing-valence bounds. Hua25 was withdrawn in arXiv:2501.06421v2 (2026-10-25) because a key lemma's proof has a substantive gap; do not use it as a proof input. EGGLS24, Section 6.1 and (6.10), gives a published resurgent prediction conditional on a resurgence assumption. Credit it as such and as a cross-check, rather than treating it as an unconditional absolute-volume input. The required $c_2(0)$ must be reconstructed from exact recursion. The source audit and current finite computations are in the ignored preparation directory and remain subject to formal Appendix A review.
+
+The already defined $\gamma_k(u)$ are coefficients of $Z_g(u)/V_{g,0}$.
+For $Z_g(1)/F_g$, combine with the absolute WP expansion: after factoring
+$e^{S(1)}/\sqrt\pi$, relative coefficients $r_1,r_2$ become
+$r_1+c_1(0)$ and $r_2+c_1(0)r_1+c_2(0)$. Do not relabel the old absolute
+core-group totals as the existing $\gamma_2$.
 
 For fixed low-index insertions, an order bound for odd Chern-character products reduces the stated precision to the two leading coefficients of ch_3. Do not import a full higher-order general formula when a focused proof suffices.
 

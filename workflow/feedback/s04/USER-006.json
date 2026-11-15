@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "USER-006",
+  "unit": "s04",
+  "previous_round": 1,
+  "previous_snapshot": "4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050",
+  "request": "可以增加一个remark，说进一步的展开也可用同样方法计算，比如接下来的两个系数是什么什么，具体证明这里就省略了。因为没给证明，所以引言中不提这个remark里的东西也合理。",
+  "followup": "291371/32768+129871/(15360pi^2)-277/(64pi^4)+105/(64pi^6)，但你要独立检查一下这两个系数，我怕传抄过程中有笔误。",
+  "normalization": "Coefficients inside the bracket after extracting exp(Cin(2*pi))*N_g/sqrt(pi) from a_g.",
+  "third_order_target": "62909/15360+251/(192*pi^2)-5/(16*pi^4)",
+  "fourth_order_target": "291371/32768+129871/(15360*pi^2)-277/(64*pi^4)+105/(64*pi^6)",
+  "changes": [
+    "Independently check both higher-order coefficients before reporting them.",
+    "Add one short Remark after the proof of Theorem 1.1, explaining that the same method gives further terms and reporting the next two coefficients.",
+    "Explicitly omit the details of the higher-order coefficient calculations from the paper, as requested by the user.",
+    "Update the Section 4 interface and handoff to distinguish the proved theorem from the additional calculations with details omitted."
+  ],
+  "constraints": [
+    "Leave the Introduction and Theorem 1.1 at their existing precision.",
+    "Do not reopen the long Appendix A proof merely to print these two extra terms; any computational verification can be documented separately.",
+    "Preserve all existing Section 4 proof statements, formulas and labels.",
+    "Reuse the original writer and three original reviewers and preserve all old rounds.",
+    "No new Git commit requested."
+  ]
+}

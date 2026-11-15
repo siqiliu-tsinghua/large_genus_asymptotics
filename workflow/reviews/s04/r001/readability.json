@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Checked the actual paper order: Section 4 occupies pp.31-39 and precedes Appendix A on p.40. Section 4.1 defines w_ab, the degree tuple/statistics, polynomial test function and signed functional before use, and specifies independent complex generator parameters before Lemma 4.1. Section 4.2 supplies the physical first definition of e_{n,r}, its fixed-tuple/inverse-complexity meaning and zero/empty conventions; Section 4.3 defines the restricted graph sum and Q_{q,r} with q/r ranges before the coefficient statement. Connector tuples, the local degree parameter near 1, example edge variables and final-proof constants have their scopes stated locally. No first definition is deferred to the later appendix, and the inherited g,n/moduli/alpha/F_g/Z_g/f/S setup is used directly.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The opening uses the existing exact graph formula (3.15), normalization (3.14), Theorem 3.11 and coefficient rule (3.34). Equations (4.10)-(4.14) consistently define absolute Q groups after extracting exp(S(1))/sqrt(pi) from Z_g(1)/F_g; the surrounding prose and Remark 4.2 distinguish relative gamma_r and give the first-order conversion explicitly. Paired loop weights contain 1/2, while connector integrations on pp.35/37 expressly do not; their elliptic polynomial remains unscaled in the degree generator. The endpoint/profile conventions agree with accepted Appendix A r002. No replacement for g_2, Hodge j_i/ell, the lowercase integrals, Bernoulli B_n, Chow coefficients or b/b_g/beta_g is introduced.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening explains the current reduction and needed core orders without repeating basic definitions or listing inherited notation. The paired weights, low-degree counts and one signed functional have distinct repeated computational uses; the Q indices make both core complexity and extra inverse-genus order visible and prevent confusing absolute groups with gamma_r. The author writes the pure-loop profile terms directly instead of introducing an E_1/E_2 alias, and adds no name for pi^2, the positive-degree count or the WP leading constant. The brief reminders of root type, genus loss and stack factors each explain a concrete coefficient mechanism; detailed profile polynomials and moment tables remain in the appendix's finite verification.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry identifies the exact reduction, the uniform core expansion and which q values enter each correction. Section 4.2 states the volume/profile split and the pure-loop-then-small-vertex route before Proposition 4.2; its proof first supplies the summable-error justification. Section 4.3 announces the three distinct second-order mechanisms before Proposition 4.3 and follows that division in the proof. Section 4.4 then names the remaining task and shows the full-tail cutoff M=3, retained-loop cutoff, per-core order K=2-q, factorial summation and absolute normalization in a clear sequence. Inputs, outputs and the source of the final O(g^-3) error are identifiable throughout.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All three new principal statements have immediately adjacent proofs, and the named proof of Theorem 1.1 is a focused final assembly. The body includes a joint generator proof, two worked moments, separate first-order volume/descendant averages, all three q=1 core integrals/automorphisms, the q=0 and q=1 second-order mechanisms, and a worked q=2 integral; it does not merely add appendix totals. Source/convention discussion follows proofs in short Remarks, while the two Examples illustrate calculations without hiding necessary hypotheses. I inspected all new body pages, pp.31-39, the appendix entry p.40 and representative appendix pp.59-63: equations, normal-size diagrams/tables, functional paragraphs and adjacent page transitions remain readable, with no material layout defect.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The letter roles remain distinguishable: p is the restored-loop count, q core complexity, r the extra coefficient order, d_i/a_i/b_i descendant degrees, and m_a the three low-degree counts. Analytic generator parameters are declared together; the local scale variable z near 1 in Example 4.1 and x near 1 for connectors are explicitly separated from the logarithmic degree field x in the joint generator. The connector tuple d_c is distinguished from the loop tuple, while the example's real edge variable s and the final proof's fixed polynomial exponent s have separate stated scopes. Auxiliary coefficients do not reuse the integral a_g, Bessel J_n, Bernoulli B_n or Hodge bracket, and the diagram legend identifies the large vertex and small genera before the table.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The section opening gives a concrete bridge from s03's exact identity and uniform estimates to the numerical corrections. The shared edge parameter motivates correlation before the square in the joint generator; Example 4.1 then connects differentiation to two explicit moments. First- and second-order calculations explain the inverse-complexity-to-genus conversion, root square-root corrections, raw connector factors and small-core roles before referring to the appendix's longer proofs. The negative q=2 example makes the signed contribution understandable, and the final proof visibly returns to the original a_g/N_g normalization and S(1)=Cin(2pi). Optional source/prediction Remarks can be skipped without losing operative assumptions, and the later appendix remains a usable verification reference.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "First formal whole-s04 readability review: read all four new subsections, entry, interface, writer handoff and target outline. The first-round changes.diff reports no textual delta, so all new Section 4 content was reviewed rather than treated as previously accepted. Retained original-reviewer context covers the unchanged approved dependencies and Appendix A r002.",
+    "Independently verified all 54 archived input hashes, three artifacts, exact snapshot, source hash e0c123c63cdf7471e9f311c9e8943c8a310658445fc5c58e3361e1b550154332, PDF hash 90f98a8f626d6f782b195f6fb9db69ba9d56c9fe18ea575e773abb24f4d38048, and entry/helper hashes. All 45 source inputs shared with the prior Appendix A archive are byte-identical, including accepted sections, appendix, role/context and shared conventions.",
+    "The exact clean receipt is strict/passed with diagnostics=[] and layout_diagnostics=[]. The 65-page PDF was actually inspected at every new body page (31-39), the appendix transition (40), and appendix core diagrams/integration tables with surrounding pages (59-63). Own images/text are confined to build/reviews/s04/r001/readability-inspection/; no shared output was rebuilt.",
+    "The new unit has 15 numbered equation labels, three principal statements with checked proof adjacency and the named proof of the original Theorem 1.1. No s04 readability issue is open; resolved_issue_ids=[] because this is its first formal round. This report is the readability judgment on the stated snapshot, not a substitute for the independent mathematical review or coordinator acceptance."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "4e6231907bb5784de1905d6c162f5a72c2e8ac815e689e456ef9d3080d8b0050",
+  "summary": "Pass for the complete new Section 4. Physical first definitions, absolute/relative normalization, core calculation mechanisms and the final uniform-error assembly are clear; the body and appendix provide a proportionate division of detail. No unresolved readability, notation or material layout issue was found.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_writer",
+  "responses": [
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "MATH-001",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "MATH-002",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "READABILITY-001",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "READABILITY-002",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "ACADEMIC-002",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "ACADEMIC-003",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "ACADEMIC-004",
+      "resolution": "FILL_IN"
+    }
+  ],
+  "round": 1,
+  "unit": "a"
+}

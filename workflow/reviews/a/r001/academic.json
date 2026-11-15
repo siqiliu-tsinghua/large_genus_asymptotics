@@ -1,0 +1,59 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "All ten principal statements are immediately followed by proofs, with identification, prediction and convention discussion in short post-proof Remarks. The opening identifies the actual MZ/HMT recursions and W26 profile input without repeating the inherited moduli setup; the loop functional is explicitly signed and the diagram legend/table columns have stated meanings. The publication prose nevertheless contains six undefined bare 'W26' references while the cited bibliography label is [WLQ+26], so the workspace shorthand needs replacement by author names or an actual citation (ACADEMIC-004).",
+      "status": "issue"
+    },
+    "attribution": {
+      "evidence": "The first/second profiles are explicitly identified with Wang et al.'s Lemma 7.2 and Appendix C.1 at Y=0, while the closed potential, its four pivot cases and the subsequent finite coefficient extraction are presented as calculations here. The exact recursions are assigned to MZ15 Section 2/HMT25 Theorem 4.3; HMT/s03 provide the uniform remainder input, and the signed moments, small-vertex derivations and core enumeration have their own arguments. EGGLS24 (6.10) is credited only after the independent calculation and expressly retains its Section 6.1 resurgence assumption; Hua25 is neither cited nor used. The manuscript and calculation README distinguish finite mathematical rules from auxiliary executable/numerical checks.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The primary comparisons support the Y=0 common-amplitude cancellation, reversed first-deficit sign, inverse-complexity to inverse-genus conversion, full low-degree increments and the W26 beta term with -1/2 outside its A braces. MZ15 Section 2 and HMT25 (4.2)-(4.7) support the dilaton/genus/adjacent recursions and the 4,8,8 subtraction factors; the fixed-order HMT quantifiers and s03 growing-loop bridge are kept separate. Mir07 is used with the entire elliptic polynomial halved, and the negative kappa merged block is inherited from the proved s02 inversion. However, the source-kernel explanation imports a_l and a_{l-1} without a definition or the index-zero convention; MZ defines its kernel only for nonnegative indices, so the comparison as written is incomplete (ACADEMIC-002).",
+      "status": "issue"
+    },
+    "claim_status": {
+      "evidence": "The c_2(0) proof writes finite moment/increment rules, retains the loss-two/three components, bounds the full omitted convolution and uses the actual MZ K=3 expansion with O(g^-4), explicitly cancelling unknown c_3(2). Fixed-tuple profile identification is separated from the HMT/s03 uniform estimates used to sum growing loops, and absolute Z/F coefficients are correctly distinguished from relative gamma coefficients. The core tables are preceded by completeness, automorphism and integration arguments, and their total is not passed off as an already completed Section 4 theorem. One derivation instruction remains inaccurate: multiplying the side-moment integrand by the elliptic polynomial retains its 1/2, whereas the raw connector table has no such factor; the table values are correct but the stated normalization step must be repaired (ACADEMIC-003).",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-002",
+      "severity": "minor",
+      "location": "sections/a_coefficients/01_wp_coefficients.tex:244-246; INTERFACE.md:106-109",
+      "message": "The explanation of the 4,8,8 factors invokes mu_l=2(a_l-a_{l-1}) in the source notation, but a_l is never defined in the manuscript and l=0 requires an additional a_{-1} convention. MZ15 defines its a_i only for i>=0. The independently defined mu generating function and the displayed recursion factors are correct; the source-convention comparison is not self-contained, and the unscoped a-family also resembles the established Hodge integrals a_g.",
+      "requested_change": "Explain the cited kernel normalization and its initial coefficient using the existing generating function, preferably avoiding a one-use source alias. If a_l is retained, explicitly identify it as local source notation, give its range/formula and the a_{-1}=0 convention needed at l=0, and distinguish it from a_g. Update the interface's source translation consistently; preserve the verified 4,8,8 factors."
+    },
+    {
+      "id": "ACADEMIC-003",
+      "severity": "minor",
+      "location": "sections/a_coefficients/02_loop_moments.tex:253-254, following eq:a:connector-moments",
+      "message": "The sentence directing the reader to obtain the elliptic connector row by multiplying the integrand of eq:a:side-moments by the elliptic polynomial omits a factor two. That side function contains 1/2, while the raw connector moments are unscaled edge integrals. Following the stated instruction therefore gives half the first three raw values in the table, although the displayed raw values themselves agree with direct integration.",
+      "requested_change": "State the raw connector rule directly from the unscaled integral integral_0^alpha f(z t) W^{WP}_{1,1}(t) dt and its Euler derivatives at z=1 (with the zero-indicator integral stated separately), or explicitly take twice the weighted a=0 side function. Keep the distinction between paired-loop half-weights and raw connector weights clear; no numerical fit or new source is needed."
+    },
+    {
+      "id": "ACADEMIC-004",
+      "severity": "minor",
+      "location": "sections/a_coefficients/01_wp_coefficients.tex:28,61,78,144,150,486; rendered PDF pp.32-34 and 41",
+      "message": "The published prose calls the source 'W26' six times, but this shorthand is not introduced anywhere in the frozen paper and is not its printed reference label: the Wang et al. entry renders as [WLQ+26]. It leaves an internal bibliography key in otherwise professional source attribution.",
+      "requested_change": "Replace the six bare W26 references with 'Wang et al.' or the appropriate rendered citation, preserving the existing precise Lemma/Appendix/equation locators. Avoid introducing another unnecessary alias merely to retain the workspace key."
+    }
+  ],
+  "notes": [
+    "First formal review of the complete Appendix A: all four subsections, entry, interface, author handoff and calculation README were read. Earlier source preparation is not treated as a signature. No prior Appendix A issue is open, so resolved_issue_ids is empty; numbering starts at ACADEMIC-002 to preserve the identity of the earlier resolved trial punctuation issue.",
+    "Primary source context was retained and relevant MZ/HMT recursive formulas were reinspected. In particular the factor 1/2 in the MZ/HMT dilaton identity yields the stated nu weights, and the ordered separating sum accounts for the doubled retained small component. The EGGLS24 version/metadata and explicit resurgence assumption remain as independently verified in preparation.",
+    "Static inspection of the reproducibility documentation and volume algorithms confirms that announced c_2 values appear as post-reconstruction checks. Calculation executables were not rerun by this academic review; they are not substituted for the manuscript arguments.",
+    "All archived/current submission fingerprints and frozen artifact fingerprints match. The strict receipt binds this snapshot and source hash 3c8f3ca7c92d488755c659712f1693eb5092dcc03f7a974fe1b734079b2325e8; helper/entry hashes and PDF SHA256 176afc0e33c6f3df68fd757840436b1ff292c2cba1842103f21d74fa57e0cc14 match. Passed/strict are true and both diagnostic arrays are empty. The PDF has 56 pages; pages 32,40,41,44,50,51,53 were visually inspected.",
+    "Only this report and academic_handoff.md were written in the review round. No manuscript, shared input, state or historical report was changed, and no shared preview was rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "8829f8569ae0992f73e8c1f9fe747101c6c661975bf0da5ea31265109124cb22",
+  "summary": "Changes requested for three localized source/presentation corrections: complete the source-kernel convention, repair the raw-connector normalization instruction, and replace the undefined W26 shorthand. The reviewed source allocation, conditional EGGLS credit, actual third-order extraction and absolute/relative claim boundaries are otherwise supported; the three minor issues remain unresolved.",
+  "unit": "a",
+  "verdict": "changes_requested"
+}

@@ -1,0 +1,30 @@
+{
+  "depends_on": [
+    "s03",
+    "a"
+  ],
+  "directory": "sections/04_lambda_one",
+  "id": "s04",
+  "kind": "body",
+  "number": 4,
+  "outline_heading": "## 第 4 节 Powers of the first Hodge class",
+  "subsections": [
+    {
+      "path": "sections/04_lambda_one/01_loop_moments.tex",
+      "title": "Signed loop moments"
+    },
+    {
+      "path": "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "title": "The leading term and the first correction"
+    },
+    {
+      "path": "sections/04_lambda_one/03_second_correction.tex",
+      "title": "The second correction"
+    },
+    {
+      "path": "sections/04_lambda_one/04_proof.tex",
+      "title": "Proof of Theorem 1.1"
+    }
+  ],
+  "title": "Powers of the first Hodge class"
+}

@@ -1,0 +1,40 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "ACADEMIC-004 is resolved: all six bare W26 references are replaced by Wang et al. or a rendered citation, with the precise source locators retained; PDF p.33 now shows [WLQ+26, (C.1)-(C.3)]. The ten principal statements remain immediately followed by proofs, and the new normalization explanations remain in the main argument where needed. The changed citation/kernel/connector pages 33,36,45 were inspected and introduce no publication-style or definition-scope issue.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The revised prose identifies Wang et al. directly and retains their first/second profile attribution, while the closed-potential verification and finite coefficient computations remain arguments supplied here. The MZ/HMT recursion credit is made more precise by the added (4.4)-(4.7) locator. The bibliography, independent-computation boundary, conditional EGGLS comparison and unused-withdrawn-source boundary are unchanged from the full r001 review.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "ACADEMIC-002 is resolved: the HMT kernel is explicitly written as pi*sqrt(z)/(2*sin(pi*sqrt(z))) = (sum mu_l*z^l)/(2(1-z)); adjacent subtraction yields mu_l/2, the initial coefficient 1/2, and factors 4,8,8 from 8,16,16. This matches the retained primary-source normalization without importing an undefined a_l or a negative index, and the interface records the same translation. The direct (C.1)-(C.3) citation for the Wang et al. increment renders correctly; all other source versions and normalization translations are unchanged.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "ACADEMIC-003 is resolved by explicit unscaled connector integrals: the rational moments are 2M_{0,r}, and the elliptic moments differentiate integral W^{WP}_{1,1}(t) f(xt) dt with the elliptic polynomial held fixed; both zero-indicator integrals are separate. These formulas reproduce the unchanged raw-moment normalization and add no loop half-factor. All 44 numbered equations, ten principal statements and calculation sources are unchanged, preserving the actual K=3/c_3 cancellation, fixed-marking versus HMT uniformity distinction, absolute/relative coefficients and conditional-only EGGLS credit.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "The original writer's responses to ACADEMIC-002, ACADEMIC-003 and ACADEMIC-004 were checked against the frozen revision. All three are resolved; no new academic issue was found.",
+    "Only A.1, A.2, the synchronized interface and append-only author handoff differ among common inputs. The archived r001 author response is the sole added input; the entry, A.3/A.4, shared/dependency inputs and all calculation files are byte-identical to r001. Numbered equation and principal statement blocks were independently compared in full.",
+    "All archived/current submission fingerprints and artifact fingerprints match. The strict receipt binds this snapshot and source hash 2312384520fc5d610c90aa370419452523501a5ceb83b9826bef70a191e4e72a; helper/entry hashes and PDF SHA256 54c82a2a7e6e420dadcb00963977a1cfb6e717824e99a60ff2a7c8cbcd1e2636 match. The PDF has 56 pages, passed/strict are true, and both diagnostic arrays are empty.",
+    "Unchanged primary-source checks and full-review reasoning are retained. No shared preview was rebuilt and no manuscript, shared input, state or historical report was edited."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-002",
+    "ACADEMIC-003",
+    "ACADEMIC-004"
+  ],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf",
+  "summary": "Pass for formal Appendix A r002. The source-kernel convention, raw-connector normalization instruction and source naming are corrected; ACADEMIC-002/003/004 are resolved, and no unresolved academic issue remains.",
+  "unit": "a",
+  "verdict": "pass"
+}

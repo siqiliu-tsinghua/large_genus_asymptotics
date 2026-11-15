@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "READABILITY-001 is resolved by the paragraph after (A.13), current PDF p.36: the undeclared a_l sequence is removed, the formal variable z is specified before the source generating series, and the initial coefficient mu_0/2=1/2 is explicit. Before the new connector formulas on p.45, x is explicitly assigned the local complex degree-generating scope near 1, and r=0,1,2 is stated. The existing indicator z and all inherited definition sites remain intact; the interface records the new local x scope.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "READABILITY-002 is resolved: rational raw moments are explicitly 2M_{0,r}; elliptic moments differentiate the undivided integral of W^WP_{1,1}(t)f(xt), with W^WP_{1,1}(t) unscaled. Euler differentiation supplies the degree powers, and integration by parts reproduces the three degree columns in (A.34); the two separate integrals reproduce its zero-indicator column. The no-loop-factor convention now agrees with the unchanged raw table and q=1 prefactors. All 44 numbered equations, ten principal statements and inherited normalization conventions remain byte-identical.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The kernel repair uses the existing mu_l rather than adding a source-weight sequence or negative-index convention. The connector repair reuses x with an explicit local scope and uses the already defined f and WP polynomial, adding only the formulas needed to reproduce the table. No repeated introductory setup, new global alias or source-symbol inventory is introduced; the r001 assessment of the remaining notation burden is unaffected.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The four-part entry roadmap, recursion/extraction route, signed-moment calculation and core enumeration/integration sequence are unchanged. The new kernel paragraph explains how the source prefactors become those of (A.13), immediately before the remainder argument; the connector prelude now gives the generators and indicator integrals before the moment table and q=1 calculation. These additions clarify local input-to-output links without changing the appendix's separation from the later Section 4 Hodge proof.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All ten statements still have immediately adjacent proofs, and the 42 numbered equation environments containing all 44 equation labels are exact r001 matches. I inspected current PDF pp.36-37, 45-47 and 49-54: the kernel explanation, raw generators, table on p.46 and subsequent proof remain readable across their page breaks. The core legend and all 17 diagrams on pp.50-51 and the integration rule/tables on pp.52-54 retain normal font size and clear grouping despite reflow. No new density or layout defect was found; all calculation sources and A.3/A.4 are unchanged.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The source a-family ambiguity is eliminated rather than reassigned to the inherited Hodge integrals. The new x scope near 1 is explicitly local and distinct from the connector's zero indicator z and the integration variable t; the elliptic polynomial depends only on t. The previously checked calligraphic D_n/integral helpers, ordinary Bessel J_n, pivot I_i, low-mode conditions, m_a versus m_ij and scoped r_1,r_2 are unchanged.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The transition from loop-weighted side moments to raw connector weights now expressly removes the branch-exchange factor 1/2 and states the degree and zero-indicator rules separately. The kernel conversion likewise explains its source normalization and zero endpoint before the next estimate. All six bare W26 prose aliases have been replaced by Wang et al. or actual citations, preserving source locators and making the references understandable from the printed paper. The existing optional Remarks and the final boundary between finite coefficients and the later Hodge application remain clear.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused original-reviewer recheck using the complete r001 reading context. Read the full diff, author response, revised paragraphs and interface mapping; only A.1, A.2, interface, appended writer handoff and the newly archived author response differ. Entry, A.3/A.4, dependencies, shared inputs, all numbered formulas/statements and calculation sources are unchanged.",
+    "READABILITY-001 and READABILITY-002 are both genuinely resolved. The source-name clarification noted alongside the academic review in r001 is also repaired; no additional readability issue is introduced.",
+    "Verified all 48 archived input hashes and three artifact hashes, and recomputed the exact snapshot. The build source hash is 2312384520fc5d610c90aa370419452523501a5ceb83b9826bef70a191e4e72a for the 47 build inputs, excluding the separately snapshot-bound author response according to the build fingerprint convention. PDF hash 54c82a2a7e6e420dadcb00963977a1cfb6e717824e99a60ff2a7c8cbcd1e2636 and entry/helper hashes match the exact strict receipt, whose standard/layout diagnostics are empty.",
+    "Actual revised PDF inspection covered pp.36-37, 45-47 and 49-54, including the core diagrams, integral tables and affected page transitions. Own images/text are only under build/reviews/a/r002/readability-inspection/; no shared output was rebuilt and no unchanged calculation script was used as a proof substitute."
+  ],
+  "resolved_issue_ids": [
+    "READABILITY-001",
+    "READABILITY-002"
+  ],
+  "role": "readability",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf",
+  "summary": "Pass. Both original readability issues are resolved by explicit, locally scoped kernel and raw-connector rules; the unchanged numerical tables now have an unambiguous reproduction recipe. Source references and affected layout are clear, with no new readability issue.",
+  "unit": "a",
+  "verdict": "pass"
+}
