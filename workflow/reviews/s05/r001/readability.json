@@ -1,0 +1,56 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete new Section 5 in continuous-paper order. The source count, fixed odd degrees and total weight precede (5.1); formal node variables, the symmetric polynomial, square-free labels, coefficient extraction and deformed kernel precede Lemma 5.1. Source subsets/partitions, forgetting-block counts, local H and the fixed-core marking count have explicit scopes; [r] inherits the [m]={1,...,m} convention already defined in s02.4. Section 5.2 defines the two source sums before (5.12), distinguishes the old tuple from the new degree d>=4, defines the entire degree generator before its use, and defines X_k for k>=0 before the recurrence/table. The normalization specifies 3g-3>=w, while the asymptotic statements keep the insertion data fixed. No needed new definition is postponed to a Remark or appendix, and no basic g,n/moduli setup is repeated.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The GRR prefactors use the inherited factorial-normalized characters and ordinary Bernoulli numbers; the source kernel and Boundary normalization Remark consistently distinguish graph automorphisms from the ordered-cover factor 1/2. Forgetting retains the new exponential leg factors, and q is explicitly the complexity of the original unmarked core. The normalized Hodge denominator remains a_g through (5.10), while the two raw source sums omit the Bernoulli factor until (5.12). The inverse-complexity first profile is converted with its factor 1/2; the specified-loop branch half is counted once. The concluding theorem and examples retain j_i/ell, F(j), G(j), and the original precision. No g_2, Bessel, lowercase-integral or Chow convention is renamed.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening starts from the useful lambda_3 identity and explains the filtration rather than inventorying inherited symbols. The node polynomial and deformed kernel recur in exact source extraction and bounds; T_g^free/T_g^edge separate contributions with different scales. The entire function varphi keeps the complete new-degree series visible through the profile average and Euler moments, and the rescaled X_k family has a concrete recurring role in the ODE table and coefficient substitutions. These names reduce repeated expressions without introducing a pi^2 alias, a competing Hodge bracket or unnecessary higher-character families. The brief recalls of normalization, original-core meaning and first-profile conversion each support a specific calculation.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry connects lambda_3, the character filtration and the one-character calculation, and explains the dependence on exact geometry, uniform estimates and signed moments. Section 5.1 gives the exact source/forgetting rules before counting complete graphs and fixed cores, then performs the algebraic reduction. Before Lemma 5.4 the text identifies free markings, common q=1 cancellation and the specified-loop remainder; the proof has four functional stage starts. The endpoint recurrence then supplies the finite substitutions before Proposition 5.6, and the last theorem proof is explicitly reduced to substitution. This route is understandable; READABILITY-001 concerns paragraph structure within the central cancellation stage, not a missing overall plan.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All six principal statements are immediately followed by proofs; source/Chow credit follows the first proof in a purposeful Remark, and the three final Examples are short optional checks. The exact identities, whole-graph/fixed-core estimates, one-source calculation and finite ODE evaluation have distinct outputs. I inspected every new body page, pp.40-49, plus adjacent appendix p.50: the 25 numbered formulas, recurrence table and page transitions show no material overflow, font-size or numbering defect. One local density problem remains: the entire common-q=1 discussion is a single long paragraph across pp.45-46, combining negligible terms, the common factor and quotient cancellation without internal paragraph boundaries (READABILITY-001).",
+      "status": "issue"
+    },
+    "symbol_design": {
+      "evidence": "The inherited Hodge indices j_i and product length ell stay distinct from fixed character-source degrees a_i and count r, descendant degrees d_i/d and total D, restored loops p and original-core complexity q. The calligraphic node polynomial/deformed series distinguish them from P(lambda), the earlier pairing polynomial and graph edge sets; the locally scoped scalar H is separated from H(Gamma). Formal x,y, square-free epsilon labels and the complex degree generator z have explicit different roles. The two source sums and derivative family X_k are visually and functionally distinct, with no reuse of a_g, B_n, J_n or scalar b for auxiliary coefficients.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The geometric source identity leads to the surviving exponential factors after forgetting, then to complete-sum bounds before any terms are discarded. The single-source proof explicitly separates truncation, common contributions, the new marking increment and the specified loop; profile differencing, cancellation of S(1), Euler moments, the ODE and final factorial conversion are connected in the text. The final theorem and three examples make the cubic index sum's role clear. However, the change from the negligible small-vertex case to the common leading factor, and then to denominator cancellation, is buried within the long paragraph at pp.45-46. The two local breaks in READABILITY-001 will expose those transitions without adding background or changing the argument.",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/05_fixed_insertions/02_single_character.tex:49; Lemma 5.4 proof, 'The common q=1 terms', lines 49-66; clean PDF foot of p.45 through top of p.46",
+      "message": "The central cancellation explanation is one uninterrupted paragraph spanning two pages. It moves from a negligible small-vertex marking to the large-vertex common factor and its unchanged graph data, then to cancellation on division, the surviving q=0 increment and a negligible specified-edge term. The stage heading alone does not make these different functions easy to scan, and the actual numerator/denominator cancellation is hard to locate within the dense block.",
+      "requested_change": "Add two local paragraph breaks: immediately before 'A free marking on the large vertex instead ...' and immediately before 'Consequently all q=1 contributions ...'. These separate the negligible case, the common leading-factor identity, and the quotient cancellation/remaining increment. Retain the specified-edge error statement and all mathematics. Ordinary local paragraphing is sufficient; no new environment, global spacing/font change or general rewrite is requested."
+    }
+  ],
+  "notes": [
+    "First formal complete-s05 review, not a Section 4 delta. Read current AGENTS/role/context, the target outline, entry, all three subsection files, interface and handoff, using retained approved dependency interfaces and targeted source checks. The first-round changes.diff contains no textual delta, so all new Section 5 content was independently assessed.",
+    "Verified all 77 archived input hashes, three artifacts, exact snapshot, source hash 0b4d4192f1d946d3d0f0ec44916013f894e9bb0ad6c2256c4e701c4cabd459ce, PDF hash b7802e15f0127f522ed589f204d280781df859b361775554624a130203675d70 and entry/helper hashes. The 69 source files shared with approved s04 r003 are byte-identical, including all shared policies and accepted dependencies.",
+    "The exact clean PDF has 74 pages; its strict receipt has diagnostics=[] and layout_diagnostics=[]. Actual visual inspection covered every new Section 5 page, pp.40-49, the boundary with the prior Remark and the appendix continuation on p.50, including the derivative table and long displays. Own inspection files are only in build/reviews/s05/r001/readability-inspection/; no shared output was rebuilt.",
+    "The requested repair is solely functional paragraph division in the proof. No additional notation, source-function or formula-layout revision is required by this review. This is the first s05 round and there are no prior s05 issues to resolve, so resolved_issue_ids=[]."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "ccc9f748fa39b46bdc2f1e300b4e57e5037b9bbf0337e0301d634725bb49e7f0",
+  "summary": "Changes requested for one localized structural issue: split the common-q=1 proof paragraph into its negligible-case, common-factor and quotient-cancellation functions. Definitions, notation economy/design, overall route, formulas and table presentation are otherwise clear; no mathematical rewrite is requested.",
+  "unit": "s05",
+  "verdict": "changes_requested"
+}

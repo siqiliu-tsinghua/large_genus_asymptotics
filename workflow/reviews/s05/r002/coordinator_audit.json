@@ -1,0 +1,225 @@
+{
+  "clean_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s05",
+        "build/previews/s05/preview.tex"
+      ],
+      [
+        "bibtex",
+        "build/previews/s05/preview"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s05",
+        "build/previews/s05/preview.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build/previews/s05",
+        "build/previews/s05/preview.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "entry_sha256": "3581c21dd154520a39c64a5eacb910db4c7abf00c068ce5fd99b34cfb714d253",
+    "helper_sha256": "c3003b7ead036e684f11c3ac940589bdb470438975948ded4dcacb2c133f4eef",
+    "layout_diagnostics": [],
+    "local_inputs": [
+      "build/previews/s05/preview.aux",
+      "build/previews/s05/preview.bbl",
+      "build/previews/s05/preview.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/05_fixed_insertions/01_character_filtration.tex",
+      "sections/05_fixed_insertions/02_single_character.tex",
+      "sections/05_fixed_insertions/03_proof_and_examples.tex",
+      "sections/05_fixed_insertions/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/reviews/s05/r002/preview.pdf",
+    "pdf_sha256": "a6e981eb7e27b3a22f24226191ecca9f45c5ee2d6347f19de067e91988d57906",
+    "render_options": {
+      "showkeys": "final"
+    },
+    "schema_version": 1,
+    "snapshot": "b4d5d1c3b0d565c49ad401b3490a8cd7bff561947c65bfde3b5a4259cb4aac13",
+    "source_hash": "8e7923c31467f10321e2bdc65243d1674838dab250ca929189c965d4c090a0b7",
+    "strict": true,
+    "time": "2026-11-15T00:40:36+00:00",
+    "unit": "s05",
+    "with_dependencies": true
+  },
+  "included_units": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "a"
+  ],
+  "main_layout_diagnostics": [],
+  "main_receipt": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "bibtex",
+        "build/main"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "local_inputs": [
+      "build/main.aux",
+      "build/main.bbl",
+      "frontmatter/abstract.tex",
+      "main.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/05_fixed_insertions/01_character_filtration.tex",
+      "sections/05_fixed_insertions/02_single_character.tex",
+      "sections/05_fixed_insertions/03_proof_and_examples.tex",
+      "sections/05_fixed_insertions/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "sections/included.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/main.pdf",
+    "pdf_sha256": "c2f4a2fadf6a2c12892f9bd8e5f31f2f3c566b78158d8c18158f996e3753a46d",
+    "schema_version": 1,
+    "snapshot": null,
+    "source_hash": "ef21a566973e82b1687b54988d539a593c75485720098726ae6bff9d8aaf26b4",
+    "strict": true,
+    "time": "2026-11-15T00:44:21+00:00",
+    "unit": null,
+    "with_dependencies": false
+  },
+  "preparation_record": "build/s05-preparation/math/verification.json",
+  "preparation_record_sha256": "553d2a819e10f140bc1aac9914c597b26f78348cd81fe195a7856ce31fc8899c",
+  "prior_batch_commit": "fef9a026c888685a81b3e5c6bb48a2881dfc6d6f",
+  "resolved_readability_issue": {
+    "first_round": 1,
+    "id": "READABILITY-001",
+    "original_reviewers_reused": true,
+    "repair": "Two functional paragraph breaks in the common-q=1 proof stage"
+  },
+  "review_results": {
+    "academic": {
+      "agent_id": "/root/s02_academic",
+      "report_sha256": "397ca47e1e19da9bc94cffca602a186f11ef520b14c79a7f89bc517e0e3a1f0a",
+      "verdict": "pass"
+    },
+    "math": {
+      "agent_id": "/root/s02_math",
+      "report_sha256": "b18b5b64f7d4c4be2e5b84e610e249b0e7e3d7d9e2dde7c664aa382dad42a8c0",
+      "verdict": "pass"
+    },
+    "readability": {
+      "agent_id": "/root/s02_readability",
+      "report_sha256": "70f85267fce5786eb7ebef3eaa5fc5766de5c725d2e6c9f1cce59d3c5d2e294c",
+      "verdict": "pass"
+    }
+  },
+  "round": 2,
+  "schema_version": 1,
+  "scope": "Theorem 1.2 at the original fixed-index O(g^-4) precision",
+  "section5_committed": false,
+  "snapshot": "b4d5d1c3b0d565c49ad401b3490a8cd7bff561947c65bfde3b5a4259cb4aac13",
+  "source_hash": "8e7923c31467f10321e2bdc65243d1674838dab250ca929189c965d4c090a0b7",
+  "status": "approved",
+  "time": "2026-11-15T00:44:50+00:00",
+  "unit": "s05",
+  "verification": {
+    "all_records_fresh": true,
+    "coordinator_visual_pages": [
+      48,
+      49
+    ],
+    "git_diff_check": "passed",
+    "index_empty": true,
+    "refs_build_tracked": false,
+    "static_LF_validation": "Validation passed: text_files=1220, sections=11, labels=248"
+  }
+}

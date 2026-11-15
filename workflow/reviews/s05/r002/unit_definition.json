@@ -1,0 +1,26 @@
+{
+  "depends_on": [
+    "s03",
+    "s04"
+  ],
+  "directory": "sections/05_fixed_insertions",
+  "id": "s05",
+  "kind": "body",
+  "number": 5,
+  "outline_heading": "## 第 5 节 Fixed degree Hodge insertions",
+  "subsections": [
+    {
+      "path": "sections/05_fixed_insertions/01_character_filtration.tex",
+      "title": "A filtration by odd Chern characters"
+    },
+    {
+      "path": "sections/05_fixed_insertions/02_single_character.tex",
+      "title": "The two leading coefficients of a single character"
+    },
+    {
+      "path": "sections/05_fixed_insertions/03_proof_and_examples.tex",
+      "title": "Proof of Theorem 1.2 and examples"
+    }
+  ],
+  "title": "Fixed degree Hodge insertions"
+}

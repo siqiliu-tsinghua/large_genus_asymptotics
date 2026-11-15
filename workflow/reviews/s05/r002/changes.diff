@@ -1,0 +1,60 @@
+--- previous/sections/05_fixed_insertions/02_single_character.tex
++++ sections/05_fixed_insertions/02_single_character.tex
+@@ -49,14 +49,18 @@
+ \emph{The common $q=1$ terms.}
+ A free marking on a small vertex of a $q=1$ core has $s=0$ in
+ \eqref{eq:s05:decorated-core-bound}, so it is already
+-$O(F_g g^{-1})$. A free marking on the large vertex instead
++$O(F_g g^{-1})$.
++
++A free marking on the large vertex instead
+ multiplies the leading contribution of that same core by
+ $8\pi^2g f^{(4)}(\alpha)$. Indeed its leading volume ratio is
+ $8\pi^2g$, and its differentiated leg factor is
+ $f^{(4)}(\alpha)$. The core, its small-vertex integrals, its
+ loop weights and its automorphism factor are unchanged.
+ This is an additive identity of leading terms for each core and
+-loop count, without division by a leg factor. Consequently all
++loop count, without division by a leg factor.
++
++Consequently all
+ $q=1$ contributions to $T_g^{\rm free}/(8\pi^2g)$ equal
+ $f^{(4)}(\alpha)$ times their denominator contributions at order
+ $g^{-1}$ and cancel on dividing by $Z_g(1)$. The unmodified
+--- previous/sections/05_fixed_insertions/writer_handoff.md
++++ sections/05_fixed_insertions/writer_handoff.md
+@@ -112,3 +112,14 @@
+ with only the equivalent Q typography normalized for comparison. No
+ calculation is rerun. The coordinator will check the clean rendering
+ before freezing; the writer stops after this preflight correction.
++
++## Formal r001 revision: READABILITY-001
++
++Reviewed all three r001 reports for snapshot
++`ccc9f748fa39b46bdc2f1e300b4e57e5037b9bbf0337e0301d634725bb49e7f0`.
++Added only the two requested paragraph breaks in the common-q=1 stage:
++after the small-vertex case and before the quotient-cancellation paragraph.
++Every word, formula and label is preserved; whitespace-normalized s05.2
++matches the frozen source. All 25 numbered formulas and six principal
++statements are unchanged. No computation or build is rerun; the
++coordinator will construct and freeze r002 for the original reviewers.
+--- /dev/null
++++ workflow/reviews/s05/r001/author_response.json
+@@ -0,0 +1,17 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/05_fixed_insertions/02_single_character.tex",
++        "sections/05_fixed_insertions/writer_handoff.md"
++      ],
++      "explanation": "Inserted exactly the two requested paragraph breaks in Lemma 5.4's common-q=1 stage: before 'A free marking on the large vertex instead' and before 'Consequently all'. These separate the negligible small-vertex case, common leading-factor identity and quotient cancellation. Every word, mathematical expression, label and the specified-edge error sentence is retained. Removing all whitespace from the full s05.2 source gives exact equality with frozen r001; all 25 numbered formulas and six principal statements are unchanged. No computation or build was rerun.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "s05",
++  "snapshot": "ccc9f748fa39b46bdc2f1e300b4e57e5037b9bbf0337e0301d634725bb49e7f0"
++}

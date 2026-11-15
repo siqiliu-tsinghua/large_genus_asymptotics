@@ -121,7 +121,8 @@
       "kind": "body",
       "outline_heading": "## 第 5 节 Fixed degree Hodge insertions",
       "depends_on": [
-        "s03"
+        "s03",
+        "s04"
       ],
       "subsections": [
         {
