@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "Appendix A r006 is actually accepted at the checked snapshot, with three original-role pass-report fingerprints verified and both adopted files matching that submission; current dependencies are fresh. Archive/live/artifact, canonical snapshot/source, native PDF/helper/entry hashes, real reviewer binding and focused validation --unit s04 pass, with shared 10pt/no-showkeys style unchanged."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "For the inherited stable unmarked range g>=2, 9/(8g)=(9/8)g^-1 exactly; no degree, stability, complexity or parameter range changes. All other s04 mathematical source and all original theorem hypotheses remain unchanged."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "Equation 4.7 keeps the same e^{S(1)}/sqrt(pi) factor, coefficient 9/8, sign and O(g^-2) remainder in the same parentheses. The adopted A.32/A.36/A.44 files are exactly those independently reviewed in accepted A r006, preserving every coefficient, common factor and remainder grouping; all supplementary coefficient normalization is unchanged."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The rewritten reciprocal introduces no new symbol, and eq:s04:first-correction still renders as 4.7. The original first definitions, interfaces and labels are unchanged; the accepted samepage wrapper and intact normalized Further coefficients Remark remain on PDF p.30."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "Reversing the single requested replacement restores the entire s04.2 file byte for byte to r007, while all other s04 unit files are unchanged. The two Appendix files match the actually accepted r006 hashes and their previously verified equivalent mathematical tokens, so no premise or inference in the finite-core proof or supplementary reconstruction changes."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The first-correction order and its O(g^-2) scope are identical, and the complete M=3 graph tail, legal-loop truncation and strict O(g^-3) final proof are untouched. Appendix layout changes preserve all remainder orders/groupings, adding no range or limit/summation exchange claim."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature by original reviewer /root/s02_math. There was no open MATH issue; issues=[] and resolved_issue_ids=[]. FORMAT-002 is user feedback, not an unresolved prior mathematical issue.",
+    "Snapshot 550042872db2611eac69413aa49ac3582bac0a14581157232f3b39ce69cec55d; source SHA256 47df7b274c4172dcf9088c20263c840d4a924c2c64110cdb5aafdbb2993bb898; PDF SHA256 1b19e7246317e08bf0df85dae9b2e6de88352e9689396769bc87fd4d077d32b8. Actual native helper/entry hashes and strict receipt match; diagnostics=[] and layout_diagnostics=[].",
+    "There are exactly three changed common source paths: s04.2 and the two A r006 display-layout files. The previous non-rendered workflow/reviews/s04/r006/author_response.json is excluded only from current input selection; its actual file and r007 archived copy retain the old hash. All other common inputs, including samepage proof/Remark, handoff, IF, shared style and calculation files, are unchanged.",
+    "Confirmed Appendix A r006 accepted snapshot 12f26ed367466968aa45b8bd66a85ae101c53ca98fbb9d23c92780e973625aa2 and the actual three original-role report hashes. The coordinator content_check records the same three source differences; my independent reverse-substitution/hash checks agree. The current s04 writer response SHA256 is b0a749dc9ff17a9b2b1660e0bb3737a6ea477636c7611d39a8670cdd6442e9a8.",
+    "Native aux confirms equation 4.7, and actual PDF extraction confirms the complete accepted Further coefficients Remark remains on p.30. No old mathematical algorithm, full proof or primary literature was rerun or reread.",
+    "python -B scripts/validate.py --unit s04 passes. Only this round math.json/math_handoff.md were written; no source, state, shared input, old report or shared build output was edited or rebuilt. The reviewer has stopped."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "550042872db2611eac69413aa49ac3582bac0a14581157232f3b39ce69cec55d",
+  "summary": "Pass for s04 r008. The requested 9/(8g) presentation is exactly equivalent to (9/8)g^-1, and the only mathematical dependency changes adopt the already reviewed and actually accepted A r006 display layouts. All proof content, remainder strength, labels and supplementary coefficients remain valid on this newly verified snapshot.",
+  "unit": "s04",
+  "verdict": "pass"
+}

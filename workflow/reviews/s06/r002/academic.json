@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The added sentence immediately after eq:s06:beta-definition is a concise, reader-visible source-notation conversion; the beta_0 convention and genus-zero explanation remain clear. PDF pp.15, 17 and 18 display the conversion and corrected locators properly. The inherited notation, post-proof Remarks and statement/proof adjacency are unaffected.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The opening still distinguishes FP03, Theorem 1, as the proved multipoint result from FP00, Theorem 2 and (6), as the earlier one-point calculation. The two MaZ locator corrections preserve the classical inverse/critical-point credit and the explicit statement that the uniform vertex and complete-tree estimates are proved here. No new source or priority claim was introduced.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "ACADEMIC-005 is resolved by 01_exact_vertices.tex:12-13: FP00's b_G is explicitly renamed beta_G, citing (3)/(6), consistently with the original source verified in r001 and the distinct existing b_g integral. ACADEMIC-006 is resolved at 01_exact_vertices.tex:155 and 02_bessel_critical_point.tex:57: both now cite Proof 6.3, accurately identifying MaZ00's numbered proof of Theorem 6.1 on journal pp.529-530 / PDF pp.12-13; Section 6 and (17) remain where applicable. INTERFACE records the same conversion and locator; unchanged bibliography and other primary-source checks retain the r001 verification.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Reversing exactly the added source-notation sentence and the two locator substitutions reproduces both r001 TeX files byte for byte; every other section TeX input is unchanged. All 26 numbered equation blocks, nine principal statement blocks, proofs and labels retain their previous content, so stability ranges, numerical rather than Chow genus-zero reduction, all-type/all-tree uniformity and the stated asymptotic precision are unchanged. This recheck signs the new s06 snapshot without extending its scope to fixed defect.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Verified the active non-stale s06 round-2 binding to /root/s02_academic. Recomputed snapshot 4bb8352fa042967d3b07c95fdda28dac0ff63eb650d68cf7ba4aecf615b24bb7; every frozen file matches both archive and live input, and all submission artifact hashes match.",
+    "Recomputed build-source hash bac92c1be72988abb85e79e292330216775ea747653a7b98ecf7b25cefdd6be7 using the build fingerprint, which excludes the separately archived author response. Verified PDF SHA256 5b05b07da5310cd69666f90943f27c27aadaf81614db7a3fc6f6a603a04b177d and receipt entry/helper hashes. The receipt records strict=true, passed=true and empty standard/layout diagnostics.",
+    "python scripts/validate.py --unit s06 passed. Reviewed the changed PDF passages and existing page images; no shared output was rebuilt. Unchanged primary-source verification is retained from the full r001 review; this is an independent impact assessment of the current frozen revision."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-005",
+    "ACADEMIC-006"
+  ],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "4bb8352fa042967d3b07c95fdda28dac0ff63eb650d68cf7ba4aecf615b24bb7",
+  "summary": "Pass. Both prior academic issues are resolved: the FP00 b_G-to-beta_G conversion is now explicit in the manuscript, and both MaZ00 citations identify Proof 6.3 correctly. The narrow revision preserves all mathematical content, source credit and claim boundaries.",
+  "unit": "s06",
+  "verdict": "pass"
+}

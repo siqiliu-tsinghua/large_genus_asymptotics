@@ -1,0 +1,174 @@
+--- previous/main.tex
++++ main.tex
+@@ -1,5 +1,5 @@
+ % !TeX program = xelatex
+-\documentclass[a4paper,12pt]{article}
++\documentclass[a4paper,10pt]{article}
+ \input{tex/preamble}
+ 
+ \begin{document}
+--- previous/sections/06_top_hodge/INTERFACE.md
++++ sections/06_top_hodge/INTERFACE.md
+@@ -6,14 +6,20 @@
+ 
+ ## Dependency and scope
+ 
+-Approved s02 r008 snapshot:
+-`389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab`.
++Approved s02 r009 snapshot:
++`33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084`.
+ The closure consists of s01 and s02. The proof uses no result, coefficient,
+ notation definition or unresolved label from the WP Sections 3--5 or
+ Appendix A. It proves the original `thm:top-hodge` / `eq:g111`, with
+ relative O(g_2^-2), and preserves every target constant and normalization.
+ The Bessel/genus-zero data below are available for future fixed-defect
+ work; no positive-defect asymptotic is proved here.
++
++The entry immediately after `sec:s06` states Theorem 1.3 as its goal,
++then explains the top-class/tree reduction and the exact-vertex,
++uniform-circle/tree-tail and saddle/elliptic-leaf strategy. Its last
++paragraph identifies the retained fixed-defect data. This roadmap
++revision changes no scientific export below.
+ 
+ ## Inherited notation
+ 
+--- previous/sections/06_top_hodge/section.tex
++++ sections/06_top_hodge/section.tex
+@@ -2,24 +2,25 @@
+ \section{The top Hodge class and Bessel asymptotics}
+ \label{sec:s06}
+ 
+-The top-class restriction in
+-Corollary~\ref{crl:s02:defect-allocation} removes every graph with a
+-cycle and factors $\lambda_g$ over the remaining trees. Combined
+-with the boundary exponential~\eqref{eq:s02:boundary-exponential},
+-it turns the integral defining $b_g$
+-into a sum of top-Hodge vertex integrals. This gives a proof of
+-Theorem~\ref{thm:top-hodge} using the geometry of
+-Section~\ref{sec:s02} and classical Hodge and Bessel formulas.
++This section proves Theorem~\ref{thm:top-hodge}. The top-class
++restriction in Corollary~\ref{crl:s02:defect-allocation} removes
++every graph with a cycle and factors $\lambda_g$ over the remaining
++trees. Together with degree conversion from
++Section~\ref{sec:s02}, the boundary exponential
++\eqref{eq:s02:boundary-exponential} turns the integral defining $b_g$
++into a sum of top-Hodge vertex integrals.
+ 
+-There are four steps. The $\lambda_g$ theorem first reduces each
+-vertex to a one-variable coefficient. A strict modulus estimate on
+-a Bessel circle then bounds all stable vertex types at once. This
+-uniform estimate controls the entire tree tail, leaving only the
+-tree with no edges and an elliptic leaf at the precision of the theorem.
+-Finally a two-term saddle calculation and the leaf integral give
+-the three contributions to the scalar $b$. The exact genus-zero
+-reduction, Bessel inverse and critical-point data are retained for
+-the later fixed-defect analysis.
++We first use the $\lambda_g$ theorem to reduce each vertex to a
++one-variable coefficient. A strict modulus estimate on a Bessel
++circle gives a bound uniform in all stable vertex types. This bound
++controls the complete tree tail, leaving only the tree with no
++edges and an elliptic leaf at the required precision. A two-term
++saddle calculation and the leaf integral then determine the three
++terms in the scalar $b$.
++
++The exact genus-zero reduction, classical Bessel inverse and
++critical-point data are also retained for the later fixed-defect
++analysis.
+ 
+ \input{sections/06_top_hodge/01_exact_vertices}
+ \input{sections/06_top_hodge/02_bessel_critical_point}
+--- previous/sections/06_top_hodge/writer_handoff.md
++++ sections/06_top_hodge/writer_handoff.md
+@@ -6,8 +6,8 @@
+ belongs to the coordinator and `workflow/state.json`; no review signature
+ is conferred by this submission.
+ 
+-The approved geometric dependency is s02 r008 snapshot
+-`389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab`,
++The approved geometric dependency is s02 r009 snapshot
++`33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084`,
+ with s01 inherited. There is no WP/Section 3--5/Appendix A proof input.
+ The target `thm:top-hodge` / `eq:g111`, g_2, z_(0,1), rho and scalar b
+ are preserved. No shared notation, package or bibliography edit is needed.
+@@ -122,3 +122,25 @@
+ All 26 numbered formulas, nine principal statements, ten proof bodies and
+ labels remain byte-identical. No computation, build or literature search
+ is repeated. This author response awaits a new frozen recheck.
++
++## FORMAT-001: Section 6 opening revision
++
++Feedback: `workflow/feedback/shared/FORMAT-001.json`, SHA256
++`6510ef40876c0fac89177d795cf2687fdb371f223bcf22b953126d93ab1fbedd`.
++The separately authorized opening now starts by stating that this
++section proves Theorem 1.3, followed by the tree-reduction idea and
++concrete exact-vertex/circle-bound/full-tree-tail/saddle/leaf strategy.
++A third short paragraph retains the fixed-defect purpose. The entry
++label, title and four inputs remain unchanged, and no later-defined
++Bessel symbol is used prematurely. INTERFACE records the roadmap
++position and the current s02 r009 dependency above.
++
++The four subsection sources match approved s06 r002 byte for byte;
++all 26 numbered formulas, nine statements, ten proof bodies, hypotheses,
++constants and labels are preserved. The user-feedback response is
++`workflow/feedback/s06/FORMAT-001_writer_response.md`, SHA256
++`04ef57378627954f0b493de0d59bfe127a66d3298125b1907541b516c67a962e`.
++Only the entry, necessary interface/current handoff and that response
++are edited. Final static outcomes are reported at handoff; no native
++build, mathematical reconstruction or literature search is rerun.
++The coordinator handles preflight, freeze and original-role recheck.
+--- previous/tex/preamble.tex
++++ tex/preamble.tex
+@@ -11,9 +11,22 @@
+ ]
+ \setmathfont{texgyrepagella-math.otf}
+ 
++% Retain the page width used by the previous 12pt article layout.
++\setlength{\textwidth}{390pt}
++\setlength{\oddsidemargin}{\dimexpr(\paperwidth-\textwidth)/2-1in\relax}
++\setlength{\evensidemargin}{\oddsidemargin}
++% Allow a fallback line break for paragraphs containing long inline formulas.
++\setlength{\emergencystretch}{3em}
++
+ \numberwithin{equation}{section}
+ 
+-\usepackage{showkeys}
++% Keep bibliography labels on the first line and continuation lines flush left.
++\makeatletter
++\renewcommand{\@openbib@code}{%
++  \setlength{\itemindent}{\leftmargin}%
++  \setlength{\leftmargin}{0pt}%
++}
++\makeatother
+ 
+ \newcommand{\MM}{\overline{\mathcal{M}}}
+ \newcommand{\EE}{\mathbb{E}}
+--- previous/workflow/reviews/s06/r001/author_response.json
++++ /dev/null
+@@ -1,27 +0,0 @@
+-{
+-  "agent_id": "/root/s02_writer",
+-  "responses": [
+-    {
+-      "changed_files": [
+-        "sections/06_top_hodge/01_exact_vertices.tex",
+-        "sections/06_top_hodge/INTERFACE.md"
+-      ],
+-      "explanation": "Added a single reader-visible sentence immediately after eq:s06:beta-definition stating that FP00's b_G coefficients are denoted beta_G here, with locators (3)/(6). The beta_G definition precedes the sentence; the beta_0 convention and its genus-zero explanation are retained without repeating the established integral families. INTERFACE now identifies this conversion's actual body location. No mathematical formula or hypothesis changed.",
+-      "issue_id": "ACADEMIC-005",
+-      "resolution": "addressed"
+-    },
+-    {
+-      "changed_files": [
+-        "sections/06_top_hodge/01_exact_vertices.tex",
+-        "sections/06_top_hodge/02_bessel_critical_point.tex",
+-        "sections/06_top_hodge/INTERFACE.md"
+-      ],
+-      "explanation": "Changed both MaZ00 body locators from 'proof of 6.3' to 'Proof~6.3', preserving the existing Section 6 references and equation (17) in the critical-value Remark. INTERFACE now identifies Proof 6.3 of Theorem 6.1 and its journal/PDF pages. All mathematical statements, proofs, numbered formulas and labels remain unchanged; no bibliography or source was replaced.",
+-      "issue_id": "ACADEMIC-006",
+-      "resolution": "addressed"
+-    }
+-  ],
+-  "round": 1,
+-  "unit": "s06",
+-  "snapshot": "cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b"
+-}

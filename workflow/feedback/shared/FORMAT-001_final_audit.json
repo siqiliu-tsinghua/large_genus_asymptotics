@@ -1,0 +1,431 @@
+{
+  "coordinator": "/root",
+  "feedback_id": "FORMAT-001",
+  "final_validation": {
+    "font_size": 10,
+    "fresh_approved_rounds": {
+      "a": 5,
+      "s02": 9,
+      "s03": 6,
+      "s04": 7,
+      "s05": 4,
+      "s06": 3
+    },
+    "included_units": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05",
+      "s06",
+      "a"
+    ],
+    "layout_diagnostics": [],
+    "main_pages": 65,
+    "main_pdf_sha256": "69071a44825dc9aac4d79c6758708b36578a57357f325021ac4a1f13103261be",
+    "main_source_hash": "50c198acc972a5c037fe5748c11ae23714cfd89440c49e7243b95c74a08349a7",
+    "references_start_page": [
+      63
+    ],
+    "s06_goal_first_page": [
+      37
+    ],
+    "same_page_remark": {
+      "291371": [
+        30
+      ],
+      "62909": [
+        30
+      ],
+      "Further coefficients": [
+        30
+      ],
+      "We omit the details of these calculations.": [
+        30
+      ]
+    },
+    "showkeys_loaded": false,
+    "standard_diagnostics": []
+  },
+  "kind": "coordinator_format_acceptance_audit",
+  "main": {
+    "commands": [
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "bibtex",
+        "build/main"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ],
+      [
+        "xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-recorder",
+        "-output-directory=build",
+        "main.tex"
+      ]
+    ],
+    "diagnostics": [],
+    "local_inputs": [
+      "build/main.aux",
+      "build/main.bbl",
+      "frontmatter/abstract.tex",
+      "main.tex",
+      "sections/01_introduction/section.tex",
+      "sections/02_notation/01_conventions.tex",
+      "sections/02_notation/02_tautological_classes.tex",
+      "sections/02_notation/03_gluing.tex",
+      "sections/02_notation/04_boundary_and_forgetting.tex",
+      "sections/02_notation/section.tex",
+      "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "sections/03_graph_asymptotics/section.tex",
+      "sections/04_lambda_one/01_loop_moments.tex",
+      "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "sections/04_lambda_one/03_second_correction.tex",
+      "sections/04_lambda_one/04_proof.tex",
+      "sections/04_lambda_one/section.tex",
+      "sections/05_fixed_insertions/01_character_filtration.tex",
+      "sections/05_fixed_insertions/02_single_character.tex",
+      "sections/05_fixed_insertions/03_proof_and_examples.tex",
+      "sections/05_fixed_insertions/section.tex",
+      "sections/06_top_hodge/01_exact_vertices.tex",
+      "sections/06_top_hodge/02_bessel_critical_point.tex",
+      "sections/06_top_hodge/03_tree_tails.tex",
+      "sections/06_top_hodge/04_correction_and_proof.tex",
+      "sections/06_top_hodge/section.tex",
+      "sections/a_coefficients/01_wp_coefficients.tex",
+      "sections/a_coefficients/02_loop_moments.tex",
+      "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "sections/a_coefficients/04_finite_core_tables.tex",
+      "sections/a_coefficients/section.tex",
+      "sections/included.tex",
+      "tex/preamble.tex"
+    ],
+    "passed": true,
+    "pdf": "build/main.pdf",
+    "pdf_sha256": "69071a44825dc9aac4d79c6758708b36578a57357f325021ac4a1f13103261be",
+    "schema_version": 1,
+    "snapshot": null,
+    "source_hash": "50c198acc972a5c037fe5748c11ae23714cfd89440c49e7243b95c74a08349a7",
+    "strict": true,
+    "time": "2026-11-15T04:09:16+00:00",
+    "unit": null,
+    "with_dependencies": false
+  },
+  "notes": [
+    "Every final unit has actual original-role signatures and real strict-build acceptance; first-round s04 readability rejection and author response remain intact.",
+    "s04 adds only a local samepage wrapper around its existing short Remark; stripping those two lines restores the complete baseline proof file. The accepted dependency changes are explicitly adopted in s05.",
+    "s06 rewrites only its roadmap and collaboration records; all four mathematical subsection files remain byte-identical.",
+    "Introduction remains a baseline, not a new formal scientific approval. No git commit was requested or made for this batch."
+  ],
+  "schema_version": 1,
+  "shared_hashes": {
+    "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+    "tex/preamble.tex": "79f6624fd2f06162a58aecd319d824f6d59d1cdb4e06c66cccff17a80fe87c28"
+  },
+  "time": "2026-11-15T04:12:08+00:00",
+  "units": {
+    "a": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/a/r005/build_receipt.json",
+        "receipt_sha256": "66f91dd1056bc4480966bb46881dca88ad69bc477ba62d0b8f1c960b49cdc4a5",
+        "round": 5,
+        "snapshot": "d5310ba65f6a63b2b4a61591d7a9e1eb87f7b1f1f645b5c1841f10d62b4274a4"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 4,
+      "baseline_snapshot": "f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/a/r005/build_receipt.json",
+      "native_receipt_sha256": "db1aeabbe63f18a65820edf776d9fd15905a3d911870374545ece4fc2e19e7ae",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/a/r005/academic.json",
+          "sha256": "f1300a9b07dd65c957424fd4c3fd0692da82e6b711dcee0b84c5f01d9ca2ae64",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/a/r005/math.json",
+          "sha256": "82e40c72d668d04fe70a90fa3392e3d67c6bd8ece8350c2ac30212cd4ac1d1e6",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/a/r005/readability.json",
+          "sha256": "799c19612f5284545dc5d7707ab8be96f1382deb8769fad223d71cb540cef7c0",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [],
+      "selected_removed_but_preserved_inputs": []
+    },
+    "s02": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s02/r009/build_receipt.json",
+        "receipt_sha256": "95603209f2c78e3f493ace921b74cc59879e94ea8df050eac796b6b8cde7c8a3",
+        "round": 9,
+        "snapshot": "33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 8,
+      "baseline_snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/s02/r009/build_receipt.json",
+      "native_receipt_sha256": "d534a062e98d7bafbfc4323cfd8a501d222b188b657d292e05b9c5778811656e",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s02/r009/academic.json",
+          "sha256": "624c1465d2f48c41159f20034881957d4bdf0ddc82901e6610dbf56bb950c9d2",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s02/r009/math.json",
+          "sha256": "344728f9e009a2e76aa09acc13b58d5bd6c1d4347d1f570ab68e881e37fb3a47",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s02/r009/readability.json",
+          "sha256": "4129602d696ea31f9d96e963c980a777d45097e298391b984ab81b97ac041133",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [],
+      "selected_removed_but_preserved_inputs": []
+    },
+    "s03": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s03/r006/build_receipt.json",
+        "receipt_sha256": "276d504c4690d8c7a2093eaf652b1b0c30acd873a6f2286923077c61ed614ed1",
+        "round": 6,
+        "snapshot": "d86fab7f015c9fb54955b1fd54314f150ff5939350d6c49f661ceb450a6f9553"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 5,
+      "baseline_snapshot": "28da12ef8b2efef53cdffbe753fc578491d7ad15c948d349b20ecd5a518c647e",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/s03/r006/build_receipt.json",
+      "native_receipt_sha256": "c935455de5fdf2edfc434d707665a6e93f0734718450946142bb58a412337cb3",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s03/r006/academic.json",
+          "sha256": "6bd400704ecf01fdee9946337d901f6e5bc8797e045c2a12d10c3b04dce2bf87",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s03/r006/math.json",
+          "sha256": "dccf669c0c8a7c0a4f6d1e65c53d04c7a0c1704ea837cb4ca9018e1296532518",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s03/r006/readability.json",
+          "sha256": "1c807f21a1d2922061546dfa6c17bd03450bfe332580c7fb9a5844b9fcaa495f",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [],
+      "selected_removed_but_preserved_inputs": []
+    },
+    "s04": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s04/r007/build_receipt.json",
+        "receipt_sha256": "47776b152ce1a8ddb87da1f2ca5cb24fa55fb6d689427e2f4599f30551f542e4",
+        "round": 7,
+        "snapshot": "30ca4bc71f3b58a2761eaf2d4af51de1ddfcb12cfdfdc396b61bf226dd286e99"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 5,
+      "baseline_snapshot": "9965599ac13d7b39cca42c64959fb9e4e5b4689910541f7d6d37f037d7d08f78",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "sections/04_lambda_one/04_proof.tex",
+        "sections/04_lambda_one/writer_handoff.md",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/s04/r007/build_receipt.json",
+      "native_receipt_sha256": "0974307f286bb970f3484a68fef7f08667fb62ee97663fab4f1643ec12b890cb",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s04/r007/academic.json",
+          "sha256": "7895ba62c7cd03759274aebc167231dd73d12b96f58134be8467620430e27dd2",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s04/r007/math.json",
+          "sha256": "79a1234fecf5eb5123b70875361eb55a944e84f85bf466ceacbf4913181fc3fa",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s04/r007/readability.json",
+          "sha256": "3950f3d6c5c507eab0e86bace588e701d7366f13e1a696804f7608dc9cc17e5e",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [
+        "workflow/reviews/s04/r006/author_response.json"
+      ],
+      "selected_removed_but_preserved_inputs": []
+    },
+    "s05": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s05/r004/build_receipt.json",
+        "receipt_sha256": "21e2181c1fad20c5f0507ea921543df30bb0e700f58157683537949e70b3444d",
+        "round": 4,
+        "snapshot": "a8c71b26c85cccba7000fb0b266c336f474b477ce8cc9831c876b51a00230b0e"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 3,
+      "baseline_snapshot": "5cc5b7091e630b4e40905178d0cbb8f9e48afe6a7732fc2655e9bede7f0f9e41",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "sections/04_lambda_one/04_proof.tex",
+        "sections/04_lambda_one/writer_handoff.md",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/s05/r004/build_receipt.json",
+      "native_receipt_sha256": "a9b9fb1d9d476792d432794301634a5db95545f4e1c9dec4d269e61bcee0d98b",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s05/r004/academic.json",
+          "sha256": "37c2a18b102bd80928d050c389ba26caa8cc2b496fb3ae4310ca228584bc4eeb",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s05/r004/math.json",
+          "sha256": "4d9880b6f7d6d5d599a91c7c3ab8ea3c4c912b2bfef14406bef76bfaae817d1f",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s05/r004/readability.json",
+          "sha256": "52d2d69c23075f4f043457250640471c31803cd8f497193df30f28daec51a931",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [],
+      "selected_removed_but_preserved_inputs": []
+    },
+    "s06": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s06/r003/build_receipt.json",
+        "receipt_sha256": "a4d6b5e96b15020edd4e5b8f3f5bec0ba5b886660ed1800b70ea60fb1cc5e68e",
+        "round": 3,
+        "snapshot": "3bb0091152f459efb5cb63ee188e913e5e3e2ea163126c82245a77f52ad02ec7"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "baseline_round": 2,
+      "baseline_snapshot": "4bb8352fa042967d3b07c95fdda28dac0ff63eb650d68cf7ba4aecf615b24bb7",
+      "changed_inputs_using_baseline_response_selection": [
+        "main.tex",
+        "sections/06_top_hodge/INTERFACE.md",
+        "sections/06_top_hodge/section.tex",
+        "sections/06_top_hodge/writer_handoff.md",
+        "tex/preamble.tex"
+      ],
+      "native_receipt": "build/reviews/s06/r003/build_receipt.json",
+      "native_receipt_sha256": "b137481ca5fdf5452d3b8c80a2e759003b0bfefca10853929e47f0001189bbb7",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s06/r003/academic.json",
+          "sha256": "c11622f30fef1f4a4197e135d8448dad3da006d065685da6879d0dedc0ff01a9",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s06/r003/math.json",
+          "sha256": "fff4bcdd7661bbb8cb8d0a935d130b33f380b309c071dbcc7d6a2632c2deeaf0",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s06/r003/readability.json",
+          "sha256": "3c96fc60c5498021657499d1a437730a12e267171a48605283c7bdc45b4516be",
+          "verdict": "pass"
+        }
+      },
+      "selected_added_inputs": [],
+      "selected_removed_but_preserved_inputs": [
+        "workflow/reviews/s06/r001/author_response.json"
+      ]
+    }
+  },
+  "writer_ack": {
+    "path": "workflow/feedback/shared/FORMAT-001_writer_handoff.md",
+    "sha256": "dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4"
+  }
+}

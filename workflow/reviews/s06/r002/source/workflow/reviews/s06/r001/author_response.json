@@ -1,0 +1,27 @@
+{
+  "agent_id": "/root/s02_writer",
+  "responses": [
+    {
+      "changed_files": [
+        "sections/06_top_hodge/01_exact_vertices.tex",
+        "sections/06_top_hodge/INTERFACE.md"
+      ],
+      "explanation": "Added a single reader-visible sentence immediately after eq:s06:beta-definition stating that FP00's b_G coefficients are denoted beta_G here, with locators (3)/(6). The beta_G definition precedes the sentence; the beta_0 convention and its genus-zero explanation are retained without repeating the established integral families. INTERFACE now identifies this conversion's actual body location. No mathematical formula or hypothesis changed.",
+      "issue_id": "ACADEMIC-005",
+      "resolution": "addressed"
+    },
+    {
+      "changed_files": [
+        "sections/06_top_hodge/01_exact_vertices.tex",
+        "sections/06_top_hodge/02_bessel_critical_point.tex",
+        "sections/06_top_hodge/INTERFACE.md"
+      ],
+      "explanation": "Changed both MaZ00 body locators from 'proof of 6.3' to 'Proof~6.3', preserving the existing Section 6 references and equation (17) in the critical-value Remark. INTERFACE now identifies Proof 6.3 of Theorem 6.1 and its journal/PDF pages. All mathematical statements, proofs, numbered formulas and labels remain unchanged; no bibliography or source was replaced.",
+      "issue_id": "ACADEMIC-006",
+      "resolution": "addressed"
+    }
+  ],
+  "round": 1,
+  "unit": "s06",
+  "snapshot": "cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b"
+}

@@ -1,0 +1,45 @@
+\usepackage{amsmath,amsthm}
+\usepackage{tikz}
+
+\usepackage{fontspec,unicode-math}
+\setmainfont{texgyrepagella}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\setmathfont{texgyrepagella-math.otf}
+
+\numberwithin{equation}{section}
+
+\usepackage{showkeys}
+
+\newcommand{\MM}{\overline{\mathcal{M}}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\dd}{\mathrm{d}}
+
+\DeclareMathOperator{\Cin}{\mathrm{Cin}}
+
+% Keep the existing mathematical headings; optional exposition has roman bodies.
+\newtheoremstyle{paperplain}
+  {\topsep}{\topsep}{\itshape}{}{\bfseries}{}{.5em}
+  {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+\newtheoremstyle{paperremark}
+  {\topsep}{\topsep}{\normalfont}{}{\bfseries}{}{.5em}
+  {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{paperplain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{lmm}[thm]{Lemma}
+\newtheorem{prp}[thm]{Proposition}
+\newtheorem{crl}[thm]{Corollary}
+
+\theoremstyle{paperremark}
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{exm}{Example}[section]
+\theoremstyle{paperplain}
+
+\newenvironment{prf}{\noindent \textbf{Proof: }}{\hfill $\mdlgwhtsquare$}
+\newenvironment{prfn}[1]{\vskip 1em \noindent \textbf{Proof of #1: }}{\hfill $\mdlgwhtsquare$}

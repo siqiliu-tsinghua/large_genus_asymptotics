@@ -1,0 +1,155 @@
+% !TeX root = ../../main.tex
+\subsection{Top Hodge intersections and exact vertices}
+\label{subsec:s06:01}
+
+We use Faber--Pandharipande's multipoint theorem
+\cite[Theorem~1]{FP03}, together with their earlier one-point
+calculation \cite[Theorem~2, (6)]{FP00}. Set $\beta_0=1$ by
+convention and, for an integer $G\geq1$, define
+\begin{equation}\label{eq:s06:beta-definition}
+ \beta_G=\int_{\MM_{G,1}}\lambda_G\psi_1^{2G-2}.
+\end{equation}
+In particular $\beta_0$ is not an integral on a genus-zero one-point
+space.
+
+\begin{thm}[Top Hodge intersections]\label{thm:s06:lambda-g}
+For integers $G\geq1$, $N\geq1$ and nonnegative integers
+$d_1,\ldots,d_N$ with $\sum_i d_i=2G-3+N$,
+\begin{equation}\label{eq:s06:lambda-g}
+ \int_{\MM_{G,N}}\lambda_G\prod_{i=1}^N\psi_i^{d_i}
+ =\beta_G\frac{(2G-3+N)!}{\prod_{i=1}^N d_i!}.
+\end{equation}
+The same formula holds for $G=0$, $N\geq3$ with $\beta_0=1$.
+For a formal variable $z$,
+\begin{equation}\label{eq:s06:beta-series}
+ \sum_{G\geq0}\beta_Gz^{2G}=\frac{z/2}{\sin(z/2)}.
+\end{equation}
+As $G\to\infty$,
+\begin{equation}\label{eq:s06:beta-asymptotics}
+ \beta_G=2(2\pi)^{-2G}(1+O(4^{-G})),\qquad
+ \frac{\beta_{G-1}}{\beta_G}=(2\pi)^2(1+O(4^{-G})).
+\end{equation}
+There are absolute constants $c,C>0$ such that
+$c(2\pi)^{-2G}\leq\beta_G\leq C(2\pi)^{-2G}$ for every $G\geq0$.
+\end{thm}
+\begin{prf}
+The positive-genus formula is \cite[Theorem~1]{FP03}; the
+stable genus-zero formula is its equation~(1). The generating
+series is \cite[Theorem~2, (6)]{FP00}, whose genus-zero value is
+one. For real $s>1$, write
+$\zeta(s)=\sum_{k\geq1}k^{-s}$ for the Riemann zeta function.
+The Bernoulli evaluation in \cite[\S 4.2, Lemma~1]{FP00}
+and \cite[(25.6.2)]{DLMF} give, for $G\geq1$,
+\[
+ \beta_G=(1-2^{1-2G})\frac{|B_{2G}|}{(2G)!}
+       =2(1-2^{1-2G})\zeta(2G)(2\pi)^{-2G}.
+\]
+The Dirichlet series \cite[(25.2.1)]{DLMF} implies
+$\zeta(2G)=1+O(4^{-G})$ as $G\to\infty$.
+This proves both asymptotics and the uniform comparison, extending
+the constants to the finitely many small genera and $G=0$.
+\end{prf}
+
+For $x\in\mathbb C$, define the entire function
+\begin{equation}\label{eq:s06:phi}
+ \Phi(x)=\sum_{a\geq0}\frac{(-1)^a x^a}{a!(a+1)!}
+        =\frac{J_1(2\sqrt x)}{\sqrt x}.
+\end{equation}
+The quotient and every subsequent square-root expression in Bessel
+functions mean their entire power series.
+
+For a stable pair $(G,n)$, let $\mathbf s=(s_1,\ldots,s_n)$
+be a complex vector and set
+\begin{equation}\label{eq:s06:vertex-definition}
+ W^{\rm top}_{G,n}(\mathbf s)
+  =\int_{\MM_{G,n}}\lambda_G
+                   e^{\kappa_1-\sum_{i=1}^n s_i\psi_i}.
+\end{equation}
+The superscript distinguishes this vertex integral from other
+intersection generating functions. The local coefficient order
+$m=2G-3+n$ is nonnegative for every stable type.
+
+The whole exponential specialization
+\eqref{eq:s02:kappa-exponential} is especially useful here. It
+replaces the background by new cotangent insertions, after which
+\eqref{eq:s06:lambda-g} determines every coefficient.
+
+\begin{prp}[Exact vertices]\label{prp:s06:exact-vertex}
+For every stable pair $(G,n)$, with $m=2G-3+n$,
+\begin{equation}\label{eq:s06:exact-vertex}
+ W^{\rm top}_{G,n}(\mathbf s)
+ =\beta_G m![x^m]\Phi(x)^{-m-1}
+                       \prod_{i=1}^n J_0(2\sqrt{s_i x}).
+\end{equation}
+\end{prp}
+\begin{prf}
+Apply \eqref{eq:s02:kappa-exponential} with scalar parameter one.
+A term with $k\geq0$ forgotten points has coefficient $1/k!$ and
+new-point factor $\psi(1-e^{-\psi})$ at each point.
+The Hodge insertion pulls back unchanged. The new powers have
+minimum degree two, so Lemma~\ref{lmm:s02:rational-tail-degree}
+replaces the old cotangent pullbacks by their intrinsic classes.
+This is the inversion of the entire kappa background; there is no
+further background exponential to pull back.
+
+The multinomial formula contributes $\beta_G(m+k)!$ and a
+factorial denominator for each descendant degree. Thus the old
+marking $i$ contributes
+\[
+ \sum_{a\geq0}\frac{(-s_i x)^a}{(a!)^2}
+       =J_0(2\sqrt{s_i x}),
+\]
+whereas a new marking contributes
+\[
+ \sum_{a\geq1}\frac{(-1)^{a-1}x^{a+1}}{a!(a+1)!}
+       =x(1-\Phi(x)).
+\]
+After removing $x^k$ from the coefficient extraction, the vertex
+integral is therefore
+\[
+ \beta_G[x^m]\prod_{i=1}^nJ_0(2\sqrt{s_i x})
+       \sum_{k\geq0}\frac{(m+k)!}{k!}(1-\Phi(x))^k.
+\]
+This sum is coefficientwise finite because $1-\Phi(x)$ has zero
+constant term. The binomial series makes it
+$m!\Phi(x)^{-m-1}$, proving the formula.
+
+For an unmarked vertex $G\geq2$, one has $m\geq1$. Its $k=0$
+term vanishes by degree, and every nonzero term has at least one
+marking, as required by the positive-genus multipoint theorem.
+For $G=0$ the original stability already gives $n\geq3$.
+These observations cover the ranges excluded from a literal
+application of \eqref{eq:s06:lambda-g} with $N=0$.
+\end{prf}
+
+\begin{crl}[Numerical genus-zero reduction]\label{crl:s06:genus-zero}
+For every stable type,
+\begin{equation}\label{eq:s06:genus-zero}
+ W^{\rm top}_{G,n}(\mathbf s)
+ =\beta_G W^{\rm top}_{0,2G+n}(\mathbf s,0,\ldots,0).
+\end{equation}
+\end{crl}
+\begin{prf}
+The type on the right is stable since $2G+n=m+3\geq3$.
+It has the same coefficient order $m$, and its additional $2G$
+old-marking factors are $J_0(0)=1$ in
+\eqref{eq:s06:exact-vertex}. Its one-point convention is $\beta_0=1$.
+\end{prf}
+
+\begin{rmk}[Classical inverse]
+This is an equality of numerical generating functions on different
+moduli spaces. The inverse of $x\mapsto x\Phi(x)$ is the classical
+genus-zero kappa series of \cite[(0.8)]{KMZ96v1}, with its earlier
+Zograf attribution. For a formal variable $t$ and an integer $N\geq3$,
+Lagrange inversion and \eqref{eq:s06:exact-vertex} give its
+$t^{N-2}$ coefficient as
+\[
+ \frac{W^{\rm top}_{0,N}(\mathbf0)}{(N-2)!}
+ =\frac{\displaystyle\int_{\MM_{0,N}}\kappa_1^{N-3}}
+        {(N-2)!(N-3)!}.
+\]
+This makes the conversion from raw kappa powers to exponential
+integrals explicit. The inverse and critical behavior are also
+analyzed in \cite[\S 6, proof of 6.3]{MaZ00}. The uniform vertex
+and complete tree estimates needed here will be proved directly.
+\end{rmk}

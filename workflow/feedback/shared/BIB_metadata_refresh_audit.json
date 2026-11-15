@@ -1,0 +1,250 @@
+{
+  "author_audits": [
+    {
+      "path": "workflow/feedback/shared/BIB-001_writer_handoff.md",
+      "sha256": "fab11a0e02489f0d192a765a906328e46ad3d30e0a59bbd5ce372cdbc6f424de"
+    },
+    {
+      "path": "workflow/feedback/shared/BIB-002_writer_handoff.md",
+      "sha256": "2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302"
+    }
+  ],
+  "bibliography_sha256": "33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4",
+  "coordinator": "/root",
+  "events": [
+    "BIB-001",
+    "BIB-002"
+  ],
+  "kind": "coordinator_metadata_refresh_audit",
+  "notes": [
+    "BIB-001 intermediate approvals s02 r007, s03 r004, a r003, s04 r004 are preserved; s05 had not been refreshed at the compatibility correction.",
+    "The cited-entry smoke exposed alpha.bst truncation of an ungrouped DLMF key. BIB-002 adds only the literal outer group; the actual three-key protected-label smoke passes with no diagnostics.",
+    "No old scientific manuscript, interface, formula, macro, algorithm, dataset or author-response file changed. Historical author-response unselection in a/s05 is not deletion; original files and archives remain hash-identical.",
+    "All five metadata units were independently reviewed by their original three roles and actually accepted in dependency order. Global validate passed before s06 began.",
+    "This coordinator audit does not replace any reviewer report or approve s06."
+  ],
+  "prior_batch_commit": "1dc5722",
+  "schema_version": 1,
+  "time": "2026-11-15T02:03:47+00:00",
+  "units": {
+    "a": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/a/r004/build_receipt.json",
+        "receipt_sha256": "72a7797ca5afd313963411bcdecc8d27b27144070da74a3e992a92492e586ff7",
+        "round": 4,
+        "snapshot": "f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "clean_receipt": "build/reviews/a/r004/build_receipt.json",
+      "clean_receipt_sha256": "0cb88a2abc9149d4cafa51b44e9cdf4b786f1fe73d440ac3c10c891fcb7e0ea9",
+      "complete_rendered_text_identical": true,
+      "input_selection_added": [],
+      "input_selection_removed": [
+        "workflow/reviews/a/r001/author_response.json"
+      ],
+      "only_changed_scientific_source_input": "references.bib",
+      "rendered_text_sha256": "88aa3ce777dd2fc7df708985a96e5310e5f068608de136ed13d8f1b5056e5635",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/a/r004/academic.json",
+          "sha256": "a0565fd18f65b1aebd5315ffff37cbfb613b8fc8a3bc9add83c9a33c5e49d812",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/a/r004/math.json",
+          "sha256": "890aae5264042026dd826fdd170a19c821bc1b8e3cbcb5c3cede6cc59778fc9c",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/a/r004/readability.json",
+          "sha256": "bbeebf16842e58522f4499ee703dc0e7a120128d8a8b2af8593950871d756f39",
+          "verdict": "pass"
+        }
+      },
+      "scientific_baseline_round": 2,
+      "scientific_baseline_snapshot": "8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf"
+    },
+    "s02": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s02/r008/build_receipt.json",
+        "receipt_sha256": "982b92c25ce7156b622de4b0d8153c88bd871371567f30dbbec26196ddd3cfd0",
+        "round": 8,
+        "snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "clean_receipt": "build/reviews/s02/r008/build_receipt.json",
+      "clean_receipt_sha256": "380a408bb8947c972fdf7996bf5860558b2b72cb285291ce71300b9679247977",
+      "complete_rendered_text_identical": true,
+      "input_selection_added": [],
+      "input_selection_removed": [],
+      "only_changed_scientific_source_input": "references.bib",
+      "rendered_text_sha256": "28e825235bbd3783f1d1c52006b7ecccf305aea8fff9dbba2a8a0d0ed4ce08d9",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s02/r008/academic.json",
+          "sha256": "30350cff2047c166dbc70bff2016ebb90a57a3078bd2b7ae4af68462291e2b3d",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s02/r008/math.json",
+          "sha256": "26d332fcc6551dfd2a6bd1864d15b38ed41eb0c1ff13e06cd57fd86522dde763",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s02/r008/readability.json",
+          "sha256": "a50d7ff52df900d5a8bfe43ed3662edb310b7d394a61283ba5bb88ebb59a8f98",
+          "verdict": "pass"
+        }
+      },
+      "scientific_baseline_round": 6,
+      "scientific_baseline_snapshot": "a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91"
+    },
+    "s03": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s03/r005/build_receipt.json",
+        "receipt_sha256": "bf5d2f9fa3b4aef1609c33958c4c1779e9a4dd98d528335557f21ae8172b13ba",
+        "round": 5,
+        "snapshot": "28da12ef8b2efef53cdffbe753fc578491d7ad15c948d349b20ecd5a518c647e"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "clean_receipt": "build/reviews/s03/r005/build_receipt.json",
+      "clean_receipt_sha256": "7f91ab1c3424305ee7bb1e9f09e27095a439e5c8d622b88bee7ef4799ffd5d0b",
+      "complete_rendered_text_identical": true,
+      "input_selection_added": [],
+      "input_selection_removed": [],
+      "only_changed_scientific_source_input": "references.bib",
+      "rendered_text_sha256": "dfa36d11bb195b3528e5c47d7f478b580138639a4e4cd5cb9ee7add05bc17bdb",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s03/r005/academic.json",
+          "sha256": "f85b3f943b37c36db730fd433661bf3e9114e9f20aa3004c7309206cc7060f06",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s03/r005/math.json",
+          "sha256": "f862397f9a0dcf7e46446b2ba9a75cd5718a4d31f85a7f3e7dd6566abe358660",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s03/r005/readability.json",
+          "sha256": "409b5203ac7dc6e53413ebbe67d382772a8a05efe89775a5c856d5f8f140575f",
+          "verdict": "pass"
+        }
+      },
+      "scientific_baseline_round": 3,
+      "scientific_baseline_snapshot": "5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353"
+    },
+    "s04": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s04/r005/build_receipt.json",
+        "receipt_sha256": "de684e2e219e9bef62e005368c1c69b1d2122d60e1c4b76d469420c7af8bfe39",
+        "round": 5,
+        "snapshot": "9965599ac13d7b39cca42c64959fb9e4e5b4689910541f7d6d37f037d7d08f78"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "clean_receipt": "build/reviews/s04/r005/build_receipt.json",
+      "clean_receipt_sha256": "b37ef61e9c7e09b88e815b500121465b5e6a6e5028961fab0e162f9bb3d0f434",
+      "complete_rendered_text_identical": true,
+      "input_selection_added": [],
+      "input_selection_removed": [],
+      "only_changed_scientific_source_input": "references.bib",
+      "rendered_text_sha256": "8dce60a8cf708b324e9d941c77e618284f64a9d4ffcf66f6cce9531bd7f5f745",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s04/r005/academic.json",
+          "sha256": "572d88230993a4ad63eec3769d1421f1453237ad277834bfa5bf2eb1813b52fa",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s04/r005/math.json",
+          "sha256": "652a1d158fb6d7f4d12ca04d1f2dce4aa843044328b0b7ac767b5edf6a08c054",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s04/r005/readability.json",
+          "sha256": "2de1603c7ea28a5ca9c1cb4a526c8f370f8f614be1aa6baa6e14afff4c59cc1a",
+          "verdict": "pass"
+        }
+      },
+      "scientific_baseline_round": 3,
+      "scientific_baseline_snapshot": "172195b1a31c1584895d46b98f3c7790c556bc27b4302993f8eac254d897fbb9"
+    },
+    "s05": {
+      "accepted": {
+        "receipt_path": "workflow/reviews/s05/r003/build_receipt.json",
+        "receipt_sha256": "e19f36f7b0adfd0941a0dbfb7191ba75639a69a1f5ecf3e66add25d091905bd2",
+        "round": 3,
+        "snapshot": "5cc5b7091e630b4e40905178d0cbb8f9e48afe6a7732fc2655e9bede7f0f9e41"
+      },
+      "agents": {
+        "academic": "/root/s02_academic",
+        "math": "/root/s02_math",
+        "readability": "/root/s02_readability",
+        "writer": "/root/s02_writer"
+      },
+      "clean_receipt": "build/reviews/s05/r003/build_receipt.json",
+      "clean_receipt_sha256": "8e3d06e4cb9eb6d307f18036333f94bf2199eaa7c4a3fb9d7604ba0ac4bfb286",
+      "complete_rendered_text_identical": true,
+      "input_selection_added": [],
+      "input_selection_removed": [
+        "workflow/reviews/s05/r001/author_response.json"
+      ],
+      "only_changed_scientific_source_input": "references.bib",
+      "rendered_text_sha256": "436c3a132022465b26aa7ea4bfff3bd31724b38c9da12e40dbe4196d42c4c880",
+      "reviews": {
+        "academic": {
+          "agent_id": "/root/s02_academic",
+          "path": "workflow/reviews/s05/r003/academic.json",
+          "sha256": "1181969fc034d53b639552762303ace6873a476846f1242ac6c737d0918682ff",
+          "verdict": "pass"
+        },
+        "math": {
+          "agent_id": "/root/s02_math",
+          "path": "workflow/reviews/s05/r003/math.json",
+          "sha256": "a2316e327e325d72480d000098ec10d189a29a47167550ee4656579e03ec684f",
+          "verdict": "pass"
+        },
+        "readability": {
+          "agent_id": "/root/s02_readability",
+          "path": "workflow/reviews/s05/r003/readability.json",
+          "sha256": "1e8941a379d0208bd653277bd768643721402b36b1cea88172ab0a9ca894137b",
+          "verdict": "pass"
+        }
+      },
+      "scientific_baseline_round": 2,
+      "scientific_baseline_snapshot": "b4d5d1c3b0d565c49ad401b3490a8cd7bff561947c65bfde3b5a4259cb4aac13"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "In 01_exact_vertices.tex:7-70, beta_0 is explicitly a convention, beta_G is a stable one-point integral for G>=1, the multipoint degrees/ranges are stated, zeta(s) is defined for real s>1, Phi is an entire series, and W^top has a complex parameter tuple and nonnegative local order m before use. Critical data and positive R are introduced in (6.9); flag parameters, m_v, the positive comparison scale, edge count and fixed tail threshold are scoped in 6.3. Lemma 6.8 states P's closed-disk neighborhood and positive-integer m range before the coefficient formula; its proof binds theta, x_theta, amplitude, local logarithm, rescaled t and Q_1/Q_2/Q_3 before their expansions. The continuous Introduction/2/6 reading supplies the inherited stack, degree, class, graph and forgetting definitions without a repeated basic setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The proof preserves the Introduction's g_2, z_{0,1}, rho and scalar b, with R=rho/12 and the final formula exactly in those names; m remains the general stable-vertex coefficient order, while the unmarked calculation uses g_2. Beta_G, b_g and scalar b retain different definitions, ordinary B_{2G} uses the earlier Bernoulli convention, and the whole-kappa inversion uses the new factor psi(1-exp(-psi)) without an extra background exponential. Original graph automorphism weights are retained through (6.15), the ordered one-edge half is explained in (6.19), and the two elliptic placements remove it once; the final factorial restoration and the genus-two example agree with the inherited power/exponential normalization.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening recalls only the top-class restriction and boundary identity needed to start this independent route, rather than reintroducing g,n, moduli spaces, the Hodge bundle or a symbol inventory. Phi, W^top, w/R and the comparison scale have recurring roles across exact extraction, uniform bounds, tree tails and the final coefficient comparison. The saddle's local amplitude/phase and three product polynomials make the two odd half-orders and the even correction auditable; their use is clear and no extra Gaussian-moment functional, alias for the Bessel zero or pi^2 abbreviation is introduced. The numerical genus-zero reduction is explicitly retained for later fixed-defect work, giving its separate result a stated purpose.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The section entry connects the Section 2 tree restriction to four steps: exact vertices, a strict circle estimate uniform in type, the complete tree tail, and the two retained coefficient calculations. Proposition 6.6's proof separates the finite-genus identity, the positive majorant over every shape/genus assignment and the full edge-count sum, so its output is visibly a whole-sum remainder. The 6.4 opening distinguishes the two-term no-edge calculation from the additive leading-amplitude estimate for an elliptic leaf; Lemma 6.8 then has separate outer-arc, local-Taylor and symmetry/correction stages. The final proof identifies the source of all three terms in b and restores the Introduction's scale.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All nine principal results are immediately followed by proofs, and the 26 numbered formula labels are distinct. The exact vertex proof, uniform circle/vertex bounds, complete tree estimate, nonelliptic split estimate and saddle/leaf calculations have separate reusable outputs; the two short source/convention Remarks and genus-two Example serve clear optional purposes. I rendered and viewed every new body page, pp.14-25, including the theorem/vertex pages 15-16, tree pages 19-21, Taylor/saddle/leaf pages 22-24 and conclusion p.25. The normal-size long polynomial block and local expansion on p.23, statement continuations and final proof page transition are readable, with no material overflow, crowding or navigation defect.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "Global Hodge indices j_i/ell are not borrowed for Bessel zeros: z_{1,k} is explicitly defined for the J_1 zeros, alongside the inherited z_{0,1}. Component genus G/g_v, valence n/n_v, coefficient orders m/m_v, total M, edge count E and fixed threshold K have distinguishable roles and ranges. The local analytic amplitude P is typed separately from the Introduction's Hodge polynomial P(lambda), and calligraphic A_P/H/Q_1,Q_2,Q_3 distinguish amplitude, phase and Taylor-product data from graph flags and earlier classes. Formal variables in the source Remark and the real saddle coordinate have explicit local scopes; no letter or font collision obscures a calculation.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The exact kappa inversion explains why the multinomial theorem applies, including the unmarked k=0 exception, before the coefficient formula is used analytically. The strict circle estimate leads directly to the all-type vertex bound, and the plane-tree count plus factorial convolution makes the passage from individual vertices to every tree explicit. After the nonelliptic estimate, the reader sees why only no-edge and elliptic-leaf terms remain; Q_1/Q_3 parity and Q_2 Gaussian moments then lead to the first correction, while the leaf calculation uses the separately stated additive amplitude version. The comparison-scale paragraph before the final proof connects absolute tree errors to relative precision, and the conclusion explains both the scalar b and the later fixed-defect inputs without hiding essential assumptions in optional Remarks.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "First formal review of the complete new scientific Section 6, not a bibliography-impact recheck. Read the frozen target outline, entry, all four subsections, interface and writer handoff, plus the full Introduction and Section 2 text/interfaces in continuous 1/2/6 order against the retained role/context policies. The first-round changes.diff says No textual changes; it does not limit this review to a delta.",
+    "Independently verified all 30 frozen input hashes and every non-alias live input, all three submission artifacts, exact snapshot cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b, source hash 78cee27c5319e00aaeecf641a06ec26f86934c4e5875d5e4f264e5de2a14c9dd, PDF SHA bf56c0ee0863f3198910540ab844349461c1be43bd5b01bc39a903e95e2024d8, and entry/helper hashes. All shared non-alias dependency fingerprints match accepted s02 r008; read-only workflow status confirms active s06 r001 and the real original readability binding /root/s02_readability.",
+    "The authoritative clean PDF has 26 pages; its strict receipt has diagnostics=[] and layout_diagnostics=[]. Actual visual inspection covered every new body page 14-25, including all requested dense statements, proofs and neighboring page transitions. The nine statement/proof adjacencies and 26 equation labels were also checked directly in source. python scripts/validate.py --unit s06 passed.",
+    "No unresolved readability issue was found. This is the first formal s06 round, so issues=[] and resolved_issue_ids=[]. Own extracted text and page images are confined to build/reviews/s06/r001/readability-inspection/. Only this report and its handoff were written in the review records; no manuscript, shared input, state, other review, old record or shared preview was edited or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b",
+  "summary": "Pass. The complete Section 6 has clear first-use definitions, economical and consistent notation, a traceable exact-to-uniform-to-saddle route, modular adjacent proofs and readable actual layout. The whole-tree remainder and the separate no-edge/elliptic contributions are explained at the needed precision.",
+  "unit": "s06",
+  "verdict": "pass"
+}

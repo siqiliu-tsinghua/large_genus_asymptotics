@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The real reviewer binding, archive/live/artifact hashes, canonical snapshot/source digests, PDF/helper/entry hashes and focused validation --unit s04 all pass; s02 r008, s03 r005 and Appendix A r004 are actually accepted and fresh. All 24 bound calculation-source hashes, existing output/receipt hashes and the shared BIB-002 handoff hash match, so the original source and calculation verification remains applicable."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All Section 4 TeX, interfaces and calculation inputs are byte-identical to r004. The reviewed stable vertex types, root complexity, core ranges and supplementary q+r order restrictions retain their exact hypotheses; grouping the unused bibliography label alters no degree or range."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "The a_g/N_g normalization, absolute Q versus relative gamma distinction, paired-loop/Aut factors and unscaled raw connector rules are unchanged. The post-proof Remark still uses sqrt(pi)*exp(-Cin(2*pi))*a_g/N_g, and both coefficient values and their recorded output hashes match the preserved certificate and identical full PDF text."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "Only the DLMF alpha-style label gains an outer TeX group; its citation key and metadata are unchanged. The paired-moment definitions in 4.1, the Q-group definitions/scopes in 4.2-4.3, the normalized Remark in 4.4 and inherited Introduction/s02 conventions retain their reviewed meanings, with no new symbol, range or first-use assumption."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "I verified the exact single brace-pair replacement in references.bib and equality of every other current snapshot input, with no added or removed input. FP03/MaZ00/DLMF remain uncited, so neither the finite-core theorem proof nor the independently reconstructed supplementary calculation receives a new premise; targets remain confined to post-reconstruction comparison in the unchanged bundle."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The M=3 whole-graph tail, all-legal-loop truncation before HMT, factorial summation and strict O(g^-3) theorem proof retain their previous justification. Supplementary fixed-order extraction, degree moments and summable-error reasoning are unchanged, with no new range or interchange claim."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh BIB-002 impact signature by original reviewer /root/s02_math. r004 had no open MATH issue; issues=[] and resolved_issue_ids=[]. This is a new snapshot signature, not an automatic carry of the old pass.",
+    "Snapshot 9965599ac13d7b39cca42c64959fb9e4e5b4689910541f7d6d37f037d7d08f78; source SHA256 f4f0a025d9cb56e2f75f472aedf83adcbc7c58e66188a3be20b18fac2e4fa089; PDF SHA256 6f7c3219ec9f073f035b1295e554b44cd33824a3bd0c6ee78c6cba0a5f632445. Actual entry/helper hashes and strict clean receipt agree; diagnostics=[] and layout_diagnostics=[].",
+    "Only references.bib differs from r004, after exactly one outer brace-pair insertion in the DLMF key. The original 6058-byte prefix is unchanged; no new-key or wildcard citation occurs in the TeX closure, and no scientific, interface, handoff, calculation or shared macro/package input changed.",
+    "I reproduced full Unix-layout PDF text equality with r004 and approved r003, SHA256 8dce60a8cf708b324e9d941c77e618284f64a9d4ffcf66f6cce9531bd7f5f745, and verified preview.txt and metadata_refresh. The shared original-writer handoff SHA256 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302 matches.",
+    "The preserved result SHA256 is 016c81cae9321dcff101c1352cb94fcd3d3fd686a93771a294ca97d8469d3ae8. All 24 bound sources and actual calculation-output/execution-receipt hashes were checked without rerunning algorithms; the post-reconstruction comparisons remain zero.",
+    "python -B scripts/validate.py --unit s04 passes. No unchanged proof, algorithm or original literature was rerun or reread. Only this round math.json and math_handoff.md were written; no source, state, historical record or shared build output was edited or rebuilt. This signature covers s04 only."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "9965599ac13d7b39cca42c64959fb9e4e5b4689910541f7d6d37f037d7d08f78",
+  "summary": "Pass for formal s04 r005. The independently verified BIB-002 correction protects only an uncited DLMF bibliography label. All scientific inputs, supplementary coefficient evidence and complete rendered text remain unchanged, with refreshed accepted dependencies, preserving the original mathematical reasoning on this new snapshot.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,87 @@
+% !TeX root = ../../main.tex
+\subsection{The Bessel critical point and uniform bounds}
+\label{subsec:s06:02}
+
+Using the zero fixed in the Introduction, define
+\begin{equation}\label{eq:s06:critical-data}
+ x_* =\frac{z_{0,1}^2}{4},\qquad
+ w(x)=x\Phi(x),\qquad
+ R=w(x_*)=\frac{z_{0,1}J_1(z_{0,1})}{2}=\frac{\rho}{12}.
+\end{equation}
+The strict circle estimate below makes this positive point the
+unique dominant point of the Cauchy integral. It also supplies a
+bound that is uniform when both the genus and the valence vary.
+
+\begin{lmm}[Critical circle]\label{lmm:s06:critical-circle}
+The function $\Phi$ has no zero on $|x|\leq x_*$, and
+\begin{equation}\label{eq:s06:critical-derivatives}
+ w'(x)=J_0(2\sqrt x),\quad w'(x_*)=0,\quad
+ w''(x_*)=-\frac{2J_1(z_{0,1})}{z_{0,1}}<0.
+\end{equation}
+There is a constant $a>0$ such that, for $-\pi\leq\theta\leq\pi$,
+\begin{equation}\label{eq:s06:circle-bound}
+ |\Phi(x_*e^{i\theta})|
+       \geq\Phi(x_*)e^{a\theta^2}.
+\end{equation}
+In particular $R>0$.
+\end{lmm}
+\begin{prf}
+For an integer $k\geq1$, let $z_{1,k}$ be the $k$th positive zero
+of $J_1$. The product \cite[(10.21.15)]{DLMF} gives
+\begin{equation}\label{eq:s06:phi-product}
+ \Phi(x)=\prod_{k\geq1}\left(1-\frac{4x}{z_{1,k}^2}\right).
+\end{equation}
+Interlacing \cite[(10.21.2)]{DLMF} gives
+$z_{0,1}<z_{1,1}$. Thus all factors are positive at $x_*$ and all
+zeros of $\Phi$ lie outside its closed disk.
+The derivative identities \cite[(10.6.6), (10.6.3)]{DLMF} give
+\eqref{eq:s06:critical-derivatives}. Also $J_1$ is positive between
+zero and $z_{1,1}$, so $J_1(z_{0,1})>0$ and $R>0$.
+
+For $0<u<1$ one has
+\[
+ |1-ue^{i\theta}|^2=(1-u)^2+2u(1-\cos\theta).
+\]
+Consequently each factor of \eqref{eq:s06:phi-product} has modulus
+at least its value at $x_*$. For the first factor, the logarithm
+of the ratio divided by $\theta^2$ extends to a strictly positive
+continuous function at zero and is positive elsewhere on
+$[-\pi,\pi]$. Its positive minimum gives $a$ in
+\eqref{eq:s06:circle-bound}; the other factors only improve the
+bound. The convergent product permits passage from finite products
+to $\Phi$.
+\end{prf}
+
+\begin{rmk}[Critical-value convention]
+The critical value denoted $x_0$ in
+\cite[\S 6, (17) and proof of 6.3]{MaZ00} is our $R$.
+Our positive critical argument $x_*$ and its derivative properties
+are fixed by \eqref{eq:s06:critical-data} and proved above.
+\end{rmk}
+
+\begin{lmm}[All stable vertex types]\label{lmm:s06:vertex-bound}
+There is a constant $C>0$, independent of the stable type $(G,n)$,
+such that for $s_i\in[0,1]$ and $m=2G-3+n$,
+\begin{equation}\label{eq:s06:vertex-bound}
+ |W^{\rm top}_{G,n}(\mathbf s)|
+ \leq C^{n+1}\beta_G\frac{m!R^{-m}}{\sqrt{m+1}}.
+\end{equation}
+\end{lmm}
+\begin{prf}
+On $|x|=x_*$, the entire series for $J_0$ gives the bound
+\[
+ |J_0(2\sqrt{s x})|
+ \leq\sum_{k\geq0}\frac{x_*^k}{(k!)^2}
+ \qquad(0\leq s\leq1).
+\]
+Its right side is a fixed finite constant. Cauchy's formula and
+\eqref{eq:s06:circle-bound} bound the coefficient in
+\eqref{eq:s06:exact-vertex} by
+\[
+ C^n x_*^{-m}\Phi(x_*)^{-m-1}
+ \frac1{2\pi}\int_{-\pi}^{\pi}e^{-a(m+1)\theta^2}\dd\theta
+ \leq\frac{C^{n+1}R^{-m}}{\sqrt{m+1}}.
+\]
+Multiplication by $\beta_Gm!$ proves the assertion, also for $m=0$.
+The constants depend only on the fixed circle, not on $G$ or $n$.
+\end{prf}

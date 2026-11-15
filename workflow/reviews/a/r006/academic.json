@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Inspected the current renderings on pp.33, 35 and 41: A.32/A.36 use genuine aligned continuations without manual offsets, and A.44 fits on one display line. All three retain their equation numbers, statement punctuation and immediate following proofs; the native 10pt/no-showkeys receipt has no standard or layout diagnostics.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Only 02_loop_moments.tex and 04_finite_core_tables.tex differ from approved r005, solely in the three displayed formulas' layout. All source-credit prose, proof arguments, interfaces and calculation inputs remain unchanged, preserving the prior distinction between cited volume/profile results, the appendix's finite-core derivations and computational checks.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "No citation, locator, bibliography field or source-notation translation changed, and the complete label sequences in both edited files match r005. Removing only the documented environment, alignment, spacing and delimiter-size commands yields identical content in each whole file, so the original primary-source and convention checks remain applicable without a new search.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Every coefficient, sign, normalization and O(g^-3) order in A.32/A.36/A.44 is preserved. In A.32/A.36 the remainder remains inside the common square bracket and prefactor; in A.44 it remains outside the coefficient parentheses, so neither the absolute-normalization claim nor remainder ownership changes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read FORMAT-002, the dispatch and FORMAT-002_a_writer_response.md (SHA256 64a1a6419876e8ca701aed7539f5d91e04ca54f04176cbdac259c1b1423aeb12). The current frozen path set is unchanged from r005, with exactly two changed inputs; shared files, interface, bibliography and algorithms are unchanged.",
+    "Recomputed snapshot 12f26ed367466968aa45b8bd66a85ae101c53ca98fbb9d23c92780e973625aa2 and source hash 8503f7d71c41df0c301f5cc016303f9a155d7adc1df4544127ba0196b7243404. All 47 fingerprint entries and submission artifact hashes match archived/live inputs. The actual /root/s02_academic binding is correct for active, non-stale a r006; s02 r009 and s03 r006 are approved and fresh.",
+    "Verified PDF SHA256 4af0ab47b5d694792b3bc620a9e7b5cfc161594185b8daec75df6e399d516223 and the receipt entry/helper hashes. The matching 42-page receipt is strict/pass with empty standard/layout diagnostics. python scripts/validate.py --unit a passed. No source search, coefficient calculation or shared build was repeated."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 6,
+  "schema_version": 1,
+  "snapshot": "12f26ed367466968aa45b8bd66a85ae101c53ca98fbb9d23c92780e973625aa2",
+  "summary": "Pass. The three local display-layout changes preserve mathematical content, statement/proof structure, source attribution and remainder grouping while improving alignment and keeping A.44 on one line.",
+  "unit": "a",
+  "verdict": "pass"
+}

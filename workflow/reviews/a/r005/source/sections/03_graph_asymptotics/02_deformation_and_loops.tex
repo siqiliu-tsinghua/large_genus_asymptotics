@@ -1,0 +1,108 @@
+% !TeX root = ../../main.tex
+\subsection{The boundary deformation and the loop contribution}
+\label{subsec:s03:02}
+
+For $g\geq2$ and $u\in\mathbb C$, put
+\begin{equation}
+\label{eq:s03:deformation}
+F_g=\frac{(2g-3)!(4\pi^2)^{2g-3}}{\sqrt g},
+\qquad
+Z_g(u)=\int_{\MM_g}e^{\alpha\kappa_1+\alpha u\delta}.
+\end{equation}
+At fixed genus $Z_g$ is a polynomial in $u$. For a stable vertex type
+and $\mathbf t=(t_1,\ldots,t_n)\in\mathbb C^n$, define
+\begin{equation}
+\label{eq:s03:vertex-function}
+W^{\rm WP}_{G,n}(\mathbf t)
+=\int_{\MM_{G,n}}e^{\alpha\kappa_1-\sum_i t_i\psi_i}
+=\sum_{\mathbf d\geq0}[\tau_{\mathbf d}]_{G,n}
+  \prod_{i=1}^n\frac{(-t_i/2)^{d_i}}{(2d_i+1)!}.
+\end{equation}
+The second equality follows from \eqref{eq:s03:descendants}; its sum
+is finite. The superscript distinguishes this function from the
+top-Hodge vertex functions used later.
+
+\begin{lmm}[Exact deformation]
+\label{lmm:s03:exact-deformation}
+One has
+\begin{equation}
+\label{eq:s03:normalization-links}
+Z_g(0)=V_{g,0},\qquad
+\frac{Z_g(1)}{F_g}=\frac{a_g}{N_g}.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:s03:integrated-graph-formula}
+Z_g(u)=\sum_{\Gamma\in\mathcal G_{g,0}}
+ \frac{(\alpha u)^{|E(\Gamma)|}}{|\operatorname{Aut}\Gamma|}
+ \int_{[0,1]^{E(\Gamma)}}
+ \prod_{v\in V(\Gamma)}
+ W^{\rm WP}_{g_v,n_v}
+       \bigl((\alpha u s_e)_{f\text{ at }v,\ f\in e}\bigr)
+ \,\prod_{e\in E(\Gamma)}\dd s_e.
+\end{equation}
+The two flags of an edge share its variable $s_e$. The term with no
+edges has integral $V_{g,0}$, and every empty product is one.
+\end{lmm}
+\begin{prf}
+The first equality in \eqref{eq:s03:normalization-links} is immediate.
+For the second, \eqref{eq:s02:lambda-one-grr} gives
+$\alpha(\kappa_1+\delta)=24\pi^2\lambda_1$ on $\MM_g$.
+Apply the degree conversion \eqref{eq:s02:exp-to-power} and the
+definitions of $F_g,N_g$.
+
+In Proposition~\ref{prp:s02:boundary-exponential} take the boundary
+coefficient to be $\alpha u$ and the kappa coefficient to be $\alpha$.
+For formal variables $x,y$ its edge kernel is
+$K_{\alpha u}(x,y)=\alpha u\int_0^1e^{-\alpha u s(x+y)}\dd s$.
+Integrate the resulting class identity, then apply the projection
+formula on each labelled vertex product. This yields
+\eqref{eq:s03:integrated-graph-formula}, including at $u=0$; no division
+by $u$ is involved.
+\end{prf}
+
+Define the entire half-edge and loop functions by
+\begin{equation}
+\label{eq:s03:loop-functions}
+f(t)=\sum_{d=0}^{\infty}\frac{(-t/2)^d}{(2d+1)!},
+\qquad
+S(u)=\frac12\int_0^{\alpha u}f(t)^2\,\dd t.
+\end{equation}
+The integral may be taken along the straight segment, or along any path
+with the same endpoints. The series for $f$ gives, for $t\in\mathbb C$,
+\begin{equation}
+\label{eq:s03:sine-function}
+f(t)=\frac{\sin\sqrt{t/2}}{\sqrt{t/2}},
+\end{equation}
+where the quotient means its power series at zero, with value one there.
+For real $u\geq0$ one also has
+\begin{equation}
+\label{eq:s03:cin-identity}
+S(u)=\Cin(2\pi\sqrt u).
+\end{equation}
+To check this identity, substitute $t=2x^2$ into the
+integral for $S$ and use $2\sin^2x=1-\cos(2x)$. For complex $u$ we use
+the entire function in \eqref{eq:s03:loop-functions}; the right side of
+\eqref{eq:s03:cin-identity} then denotes its continuation in powers of
+$u$, with no choice of square root.
+
+\begin{exm}[A fixed number of loops]
+The graph with one vertex and $p\geq0$ self-loops has vertex type
+$(g-p,2p)$ and automorphism order $2^p p!$. For fixed $p$, the inputs
+of Proposition~\ref{prp:s03:wp-inputs} and the factorial series in
+\eqref{eq:s03:vertex-function} imply, uniformly on compact parameter
+sets,
+\[
+\frac{W^{\rm WP}_{g-p,2p}(\mathbf t)}{V_{g,0}}
+\longrightarrow\prod_{i=1}^{2p}f(t_i).
+\]
+Indeed, finitely many genus-exchange ratios tend to one, each fixed
+descendant ratio tends to one, and
+\eqref{eq:s03:all-type-input} dominates the degree sum.
+Its graph contribution in \eqref{eq:s03:integrated-graph-formula},
+divided by $V_{g,0}$, therefore tends to $S(u)^p/p!$.
+
+Thus the candidate leading sum is $\sum_{p\geq0}S(u)^p/p!=e^{S(u)}$.
+The next two subsections justify summing this limit over all graphs;
+the fixed-$p$ computation alone does not do so.
+\end{exm}

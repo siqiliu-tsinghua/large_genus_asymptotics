@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The s04 adoption record matches its actual r007 source hashes, accepted snapshot and all three original-role report hashes, and s02 r009/s03 r006/Appendix A r005/s04 r007 are actually accepted and fresh. Archive/live/artifact, canonical snapshot/source, native PDF/helper/entry hashes, original reviewer binding and focused validation --unit s05 all pass; no assertion is made that all dependency bytes equal the old version."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "Every s05 scientific subsection and interface is byte-identical to r003. Fixed odd-character ranges, insertion weights, stability, original graph defect and forgotten-marking complexity increments retain their exact hypotheses; the adopted s04 pagination group changes no mathematical degree or range."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "The Bernoulli source factors, profile-to-genus half, Euler moments, specified-loop half, factorial correction and final ch3/Hodge coefficients are unchanged. The shared FORMAT-001 pair and accepted s04 samepage wrapper affect typesetting only, preserving all dependency normalization data and counters."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "First definitions and scopes of insertion/source data in 5.1, free-marking and Euler quantities in 5.2, and the Chern reduction in 5.3 are unchanged, with inherited Hodge/Chow notation retained. The local s04 Remark grouping introduces no mathematical symbol or definition and preserves mathematical numbering; the shared macros/font families are unchanged."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The actual four-input delta is main/preamble plus s04 04_proof.tex and its handoff; removing only the samepage lines restores that dependency proof file exactly, while the handoff is append-only. These already approved changes supply no new premise to the unchanged labelled-source, graph-filtration, q=1 cancellation and Chern-algebra arguments in s05."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The weighted whole-graph majorant, Gamma increments, all-legal-loop truncation and polynomial degree-error summation are unchanged. Thus the fixed O(g^(r-w)) bound, common-factor cancellation and strict O(g^-4) character remainder retain their original whole-sum justification; neither layout change enlarges their scope."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature by original reviewer /root/s02_math. No MATH issue was open; issues=[] and resolved_issue_ids=[]. This is the s05 impact signature, not a global acceptance operation.",
+    "Snapshot a8c71b26c85cccba7000fb0b266c336f474b477ce8cc9831c876b51a00230b0e; source SHA256 3ef3684d8c34e4c0accc2b66f44317ef81fda83f80d82433afad36a07fa88580; PDF SHA256 658e876d0edf6415421800e80e8bd39aa9ac863937130b443c1571ece8eb4ed9. Actual native helper/entry hashes and strict receipt match; diagnostics=[] and layout_diagnostics=[].",
+    "Input path sets equal r003, but exactly four fingerprints change: main.tex, tex/preamble.tex, sections/04_lambda_one/04_proof.tex and sections/04_lambda_one/writer_handoff.md. All s05 scientific/interface inputs and all calculation sources/data are unchanged; the dependency proof delta is exactly the two samepage lines and its handoff is append-only.",
+    "The shared code equals the FORMAT-001 pair independently audited in s02 r009; the dependency repair equals s04 r007, already independently reviewed here for local penalty semantics, unchanged mathematical numbering and intact normalized coefficients. The adoption record SHA256 is 94e9c48cf2f91e571fe5422a015d83516b9ba33355452bfd1b21d0896e3bd366, with actual source/snapshot and three original-role report fingerprints verified.",
+    "The common writer ACK SHA256 dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4 matches. Native runtime confirms size10.clo and no showkeys.sty; historical scientific interface provenance is retained while actual workflow approval/freshness follows the checked new accepted records.",
+    "python -B scripts/validate.py --unit s05 passes. No unchanged long proof, calculation or source search was rerun. Only this round math.json/math_handoff.md were written; no manuscript, shared input, state, older record or shared preview was edited or rebuilt. The reviewer has stopped."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "a8c71b26c85cccba7000fb0b266c336f474b477ce8cc9831c876b51a00230b0e",
+  "summary": "Pass for s05 r004. All s05 mathematics is unchanged; the actual four changed inputs consist of the verified shared FORMAT-001 pair and the separately approved s04 samepage repair/handoff. Their mathematical equivalence and real dependency approvals were checked on the new snapshot, preserving the original complete reasoning.",
+  "unit": "s05",
+  "verdict": "pass"
+}

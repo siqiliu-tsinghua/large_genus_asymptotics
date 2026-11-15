@@ -1,0 +1,51 @@
+{
+  "baseline_file": "build/layout-20261115/baseline.json",
+  "baseline_units": {
+    "a": {
+      "round": 4,
+      "snapshot": "f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad"
+    },
+    "s02": {
+      "round": 8,
+      "snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab"
+    },
+    "s03": {
+      "round": 5,
+      "snapshot": "28da12ef8b2efef53cdffbe753fc578491d7ad15c948d349b20ecd5a518c647e"
+    },
+    "s04": {
+      "round": 5,
+      "snapshot": "9965599ac13d7b39cca42c64959fb9e4e5b4689910541f7d6d37f037d7d08f78"
+    },
+    "s05": {
+      "round": 3,
+      "snapshot": "5cc5b7091e630b4e40905178d0cbb8f9e48afe6a7732fc2655e9bede7f0f9e41"
+    },
+    "s06": {
+      "round": 2,
+      "snapshot": "4bb8352fa042967d3b07c95fdda28dac0ff63eb650d68cf7ba4aecf615b24bb7"
+    }
+  },
+  "coordinator": "/root",
+  "id": "FORMAT-001",
+  "kind": "user_requested_layout_and_roadmap_revision",
+  "requested_changes": [
+    "Change the article document class from 12pt to 10pt.",
+    "Reduce bibliography paragraph indentation: retain alpha labels on the first line and let continuation lines use the full text width.",
+    "Remove the showkeys package from the live preamble.",
+    "Reorganize the Section 6 opening: first state that this section proves Theorem 1.3, then explain the basic idea and concrete strategy."
+  ],
+  "reviewers": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability"
+  },
+  "schema_version": 1,
+  "shared_scope": [
+    "main.tex",
+    "tex/preamble.tex"
+  ],
+  "time": "2026-11-15T03:12:50+00:00",
+  "writer": "/root/s02_writer",
+  "writer_scope": "Shared-format impact acknowledgment first; Section 6 entry/interface/handoff only when s06 is reopened. No mathematical formula, theorem hypothesis, label, bibliography entry or accepted earlier prose is to be revised."
+}

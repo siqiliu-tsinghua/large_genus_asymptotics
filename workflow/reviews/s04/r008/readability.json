@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The sole Section 4 change in eq:s04:first-correction replaces 9/(8g) with (9/8)g^-1; it adds no object, hypothesis, range or repeated setup. All first-use definitions and scopes retain their reviewed positions, and the two Appendix A inputs exactly match accepted a r006.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "Reversing exactly the requested substitution restores the entire r007 02_leading_and_first_correction.tex byte for byte. On p.25 the absolute normalization Z_g(1)/F_g and common factor remain clear, and the coefficient presentation now matches the unchanged final theorem proof on p.29; all other Section 4 notation, labels and interfaces are unchanged.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No symbol, alias, explanatory sentence or recalled definition is added. The coefficient and inverse-genus order are written directly, while the accepted Appendix A alignment changes introduce no additional notation.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The pure-loop/three-core calculation guide before Proposition 4.2 and the finite-coefficient/uniform-estimate route in Section 4.4 are byte-identical to r007. The changed coefficient display does not change their inputs, outputs or order, and the supplementary Remark remains outside the main proof.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Actually viewed frozen pp.25, 29 and 30: (4.7) fits clearly on one line with a normal right-hand tag, and Proposition 4.2 still leads directly into its proof. Remark 4.4 remains complete on p.30 with its normalization, both coefficient displays and closing sentence; the accepted local samepage wrapper is byte-identical, and the preceding proof closure and following appendix entrance have no new crowding or break defect.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The same coefficient 9/8 now sits beside g^-1, making the inverse-genus order legible alongside O(g^-2) on p.25. No letter, index, font, normalization role or scope changes, so the existing distinctions among graph counts, degrees and Hodge notation remain intact.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The inspected p.25 retains the profile-input explanation, short core strategy, proposition and immediate proof in their existing sequence. Pages 29-30 retain the closed main proof, complete optional Remark and Appendix A entrance; only p.25 changes within Section 4 in the independent layout-text comparison.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Focused FORMAT-002 recheck in the original full-Section-4 context. Read the dispatch, feedback/author response, changes.diff and content_check.json. Independently confirmed exactly three changed common inputs: the single requested Section 4 substitution and the two already accepted a r006 formatting files. All other common input fingerprints, including Section 4 proof, samepage wrapper, interface, handoff, calculations and shared style, are unchanged. The r006 author_response.json is no longer selected as an input; its historical file still exists.",
+    "Verified all 71 archived input hashes and every non-alias live input, three artifacts, exact snapshot 550042872db2611eac69413aa49ac3582bac0a14581157232f3b39ce69cec55d, source hash 47df7b274c4172dcf9088c20263c840d4a924c2c64110cdb5aafdbb2993bb898, PDF SHA 1b19e7246317e08bf0df85dae9b2e6de88352e9689396769bc87fd4d077d32b8, and entry/native-helper hashes. All selected Appendix A inputs match the actually accepted a r006 archive.",
+    "The frozen PDF remains 49 pages. Independent full layout-text comparison with r007 changes only pp.25, 40, 42, 47-49: p.25 contains the requested Section 4 presentation and the later changes concern the accepted Appendix A reflow. Actually rendered and viewed pp.25, 29 and 30; the latter two have unchanged extracted layout text. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s04 passed.",
+    "Read-only state inspection confirms the original readability binding and approved dependencies s02 r009, s03 r006 and a r006. No prior readability issue is open: READABILITY-001 was resolved at r007 and is not closed again here. No old long proof, calculation or literature review was repeated.",
+    "Only this report, its handoff and own inspection files under build/equation-layout-20261115/readability-s04/ were written. No source, state, old report or shared output was edited, and no build or workflow state command was run."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "550042872db2611eac69413aa49ac3582bac0a14581157232f3b39ce69cec55d",
+  "summary": "Pass. Equation (4.7) clearly displays the equivalent (9/8)g^-1 form; Remark 4.4 remains complete on one page. Definitions, notation, proof organization and neighboring flow are preserved.",
+  "unit": "s04",
+  "verdict": "pass"
+}

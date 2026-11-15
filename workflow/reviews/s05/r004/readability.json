@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All s05 scientific sources and INTERFACE.md are byte-identical to r003, preserving the reviewed source degrees, labels, source sums, degree generator and X_k ranges before use. The shared format and accepted s04 samepage wrapper introduce no mathematical object or repeated setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The four changed inputs match the settled shared format and accepted s04 r007 repair; no s05 formula, normalization, label or symbol changes. The GRR/Bernoulli convention, a_g denominator, original-core q, specified-loop half and final F(j)/G(j) formula retain their r003 meanings, with matching dependency source fingerprints.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No s05 name, alias, prose recall or inherited-symbol inventory is added. Its useful source kernel, free/edge sums, degree generator and finite derivative family remain unchanged, while the dependency wrapper adds no reader-facing explanation or notation.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The exact-source/filtration/one-character/ODE/theorem route is unchanged. Actual p.34 retains the functional single-source proof stages, and p.36 still connects the finite derivative calculation to the coefficient conversion and complete Theorem 1.2 proof before the optional examples.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All s05 statement/proof organization is unchanged. I inspected current pp.34, 36-37: the common-q=1 discussion retains its three clear functional paragraphs, the derivative table and coefficient displays remain readable at 10pt, the theorem proof closes on p.36, and all three short examples remain complete and separate on p.37 before the appendix. No new material crowding, clipping, numbering or module-splitting issue was found; strict/layout diagnostics are empty.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No letter role, font family or index convention changes. On the inspected pages, Hodge j_i/ell, descendant d/D, loop p/core q, X_k table headers, inverse-genus powers and pi-power coefficients remain distinguishable and legible in the same settled 10pt format.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The repaired negligible-case/common-factor/cancellation sequence remains visible on p.34 and leads directly to the free-marking increment. The theorem conclusion on p.36, three complete optional examples on p.37 and following appendix entrance retain a clear reading sequence; the preceding s04 local repair is exactly the separately accepted dependency change.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "FORMAT-001 impact review in the original complete-s05 context. Read the current dispatch, diff and approved_layout_dependencies.json. The r003/r004 path sets are identical, with exactly four changed inputs: main.tex, tex/preamble.tex, the s04 proof's two-line native samepage wrapper, and its appended writer handoff. All other 73 fingerprints are unchanged, including every s05 source, interface and handoff. Removing the wrapper reproduces the old s04 proof bytes, preserving the r003 scientific baseline.",
+    "Verified all 77 archived input hashes and every non-alias live input, three artifacts, exact snapshot a8c71b26c85cccba7000fb0b266c336f474b477ce8cc9831c876b51a00230b0e, source hash 3ef3684d8c34e4c0accc2b66f44317ef81fda83f80d82433afad36a07fa88580, PDF SHA 658e876d0edf6415421800e80e8bd39aa9ac863937130b443c1571ece8eb4ed9, and entry/build_native.py helper hashes. The shared writer ACK retains SHA dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4.",
+    "Independently verified the registered s04 r007 snapshot, its two source-file hashes and all three original-role report hashes/pass verdicts. Shared dependency source fingerprints match accepted s02 r009/s03 r006/a r005/s04 r007; the separately bound s04 author response is outside this unit's build-input selection. Read-only workflow status confirms those dependencies are approved/fresh and the original readability ID remains bound to active s05 r004.",
+    "The authoritative PDF has 56 pages with the same 10pt/390pt/no-showkeys/flush-left-reference settings already reviewed in this event. Actually rendered and viewed current pp.34, 36-37, including the old repaired proof paragraphs, derivative table, final coefficient calculation, theorem proof, three examples and appendix entrance. Reused prior shared-format and accepted dependency observations without rereading old long proofs or rerunning calculations. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s05 passed.",
+    "The original s05 READABILITY-001 was resolved in r002 and remains resolved; no issue is newly resolved here. The s04 issue was closed in its own accepted r007 report and is not re-closed in this unit. Thus issues=[] and resolved_issue_ids=[]. Only this report, its handoff and own ignored inspection files were written; no source, state, old record, other report or shared preview was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "a8c71b26c85cccba7000fb0b266c336f474b477ce8cc9831c876b51a00230b0e",
+  "summary": "Pass for the s05 FORMAT-001/dependency refresh. Own scientific sources are unchanged, accepted dependency changes match, and representative new-format proof, table and example pages retain clear organization without a new readability issue.",
+  "unit": "s05",
+  "verdict": "pass"
+}

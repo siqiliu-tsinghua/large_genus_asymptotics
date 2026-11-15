@@ -1,0 +1,54 @@
+--- previous/sections/04_lambda_one/04_proof.tex
++++ sections/04_lambda_one/04_proof.tex
+@@ -55,6 +55,7 @@
+ which is~\eqref{eq:111}.
+ \end{prfn}
+ 
++\begin{samepage}
+ \begin{rmk}[Further coefficients]\label{rmk:s04:further-coefficients}
+ The same finite-core method gives further terms. For the normalized
+ quantity $\sqrt\pi\,e^{-\Cin(2\pi)}a_g/N_g$, the coefficients of
+@@ -66,3 +67,4 @@
+ \end{gather*}
+ We omit the details of these calculations.
+ \end{rmk}
++\end{samepage}
+--- previous/sections/04_lambda_one/writer_handoff.md
++++ sections/04_lambda_one/writer_handoff.md
+@@ -159,3 +159,16 @@
+ a_g display of `04_proof.tex`. All other TeX, the supplementary Remark,
+ INTERFACE and check sources remain byte-identical. No coefficient
+ computation was rerun.
++
++## Formal r006 revision: READABILITY-001
++
++All three r006 reports were read for snapshot
++`8d7fad68e232e834d08de4909cccc97aaa76b5ffb1b892bbcc9f3be6b983cd3c`.
++The complete short Further coefficients Remark is wrapped locally in the
++native samepage environment, including its heading, normalized quantity,
++order assignment, both displays and closing sentence. Removing only this
++wrapper restores the complete original 04_proof.tex byte for byte; the
++main proof and literal (9/8)g^-1 presentation are untouched. INTERFACE and
++all other unit/scientific/shared inputs are unchanged. No computation or
++build is rerun. The coordinator will verify the actual same-page grouping
++before freezing the revision for the original reviewers.
+--- /dev/null
++++ workflow/reviews/s04/r006/author_response.json
+@@ -0,0 +1,17 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/04_lambda_one/04_proof.tex",
++        "sections/04_lambda_one/writer_handoff.md"
++      ],
++      "explanation": "Wrapped the entire Further coefficients Remark in one local native samepage environment so its heading, normalization/order sentence, both displays and closing sentence are kept together. The wrapper changes page-break penalties locally; it adds no forced page, package, font or global spacing change. Removing only the two wrapper lines restores all of 04_proof.tex byte for byte, preserving the proof, (9/8)g^-1 form, every original word, coefficient and label. INTERFACE and all other scientific inputs are unchanged. Static preservation checks pass; the coordinator will verify the actual rendered grouping before freezing. No build, coefficient reconstruction or source search was rerun.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 6,
++  "unit": "s04",
++  "snapshot": "8d7fad68e232e834d08de4909cccc97aaa76b5ffb1b892bbcc9f3be6b983cd3c"
++}

@@ -1,0 +1,21 @@
+{
+  "affected_units": [
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05"
+  ],
+  "cause": "A cited-entry smoke build found that alpha.bst truncates an unprotected control sequence in the DLMF key to an undefined control sequence.",
+  "change": "Add literal outer TeX braces to key: {\\relax DLMF} -> {{\\relax DLMF}}. The complete DLMF label is preserved and no new macro/package is needed.",
+  "id": "BIB-002",
+  "metadata_unchanged": "Authors, titles, versions, dates, DOI, URL and all scientific/cited old bibliography entries are unchanged. Only a BibTeX label field is protected.",
+  "new_bibliography_sha256": "33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4",
+  "old_bibliography_sha256": "64ce27872d52b51ad18fa76900b991159e034c9219ffb79fd5ab41083ec3e940",
+  "original_scientific_baseline": "build/s06-preparation/bibliography-refresh/baseline.json",
+  "related_feedback": "BIB-001",
+  "schema_version": 1,
+  "time": "2026-11-15T01:42:38+00:00",
+  "validation": "build/s06-preparation/bib-smoke/protected-receipt.json",
+  "workflow": "Reopen affected units in dependency order; new original-role signatures are still required. All BIB-001 rounds remain historical records; do not edit them."
+}

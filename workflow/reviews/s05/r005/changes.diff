@@ -1,0 +1,79 @@
+--- previous/sections/04_lambda_one/02_leading_and_first_correction.tex
++++ sections/04_lambda_one/02_leading_and_first_correction.tex
+@@ -35,7 +35,7 @@
+ \begin{equation}\label{eq:s04:first-correction}
+  \frac{Z_g(1)}{F_g}
+  =\frac{e^{S(1)}}{\sqrt\pi}
+-       \left(1+\frac9{8g}+O(g^{-2})\right).
++       \left(1+\frac{9}{8}g^{-1}+O(g^{-2})\right).
+ \end{equation}
+ After extracting the common factor $e^{S(1)}/\sqrt\pi$, the pure-loop
+ part contributes $1$ at order zero and
+--- previous/sections/a_coefficients/02_loop_moments.tex
++++ sections/a_coefficients/02_loop_moments.tex
+@@ -152,15 +152,15 @@
+ 
+ \begin{prp}[Pure-loop coefficients]\label{prp:a:pure-loops}
+ The pure-loop contribution in the absolute normalization is
+-\begin{align}
++\begin{equation}\label{eq:a:q-zero}
++\begin{aligned}
+  \left.\frac{Z_g(1)}{F_g}\right|_{q=0}
+- =\frac{e^{S(1)}}{\sqrt\pi}\left[1
+- +\frac{1/12-65/(6\pi^2)}g\right.\qquad\notag\\
+- \left.\hspace{18mm}
+- +\frac{43/288-469/(36\pi^2)+5665/(72\pi^4)}{g^2}
+- +O(g^{-3})\right].
+- \label{eq:a:q-zero}
+-\end{align}
++ &=\frac{e^{S(1)}}{\sqrt\pi}\Bigl[1
++   +\frac{1/12-65/(6\pi^2)}g\\
++ &\quad+\frac{43/288-469/(36\pi^2)+5665/(72\pi^4)}{g^2}
++   +O(g^{-3})\Bigr].
++\end{aligned}
++\end{equation}
+ \end{prp}
+ \begin{prf}
+ Sum~\eqref{eq:a:pure-loop-polynomials} with $\mathcal L$.
+@@ -296,15 +296,15 @@
+ \end{array}
+ \end{equation}
+ Consequently the complete complexity-one part is
+-\begin{align}
++\begin{equation}\label{eq:a:q-one}
++\begin{aligned}
+  \left.\frac{Z_g(1)}{F_g}\right|_{q=1}
+- =\frac{e^{S(1)}}{\sqrt\pi}\left[
+- \frac{25/24+65/(6\pi^2)}g\right.\qquad\notag\\
+- \left.\hspace{13mm}
+- +\frac{73/288-1843/(144\pi^2)-6565/(36\pi^4)}{g^2}
+- +O(g^{-3})\right].
+- \label{eq:a:q-one}
+-\end{align}
++ &=\frac{e^{S(1)}}{\sqrt\pi}\Bigl[
++   \frac{25/24+65/(6\pi^2)}g\\
++ &\quad+\frac{73/288-1843/(144\pi^2)-6565/(36\pi^4)}{g^2}
++   +O(g^{-3})\Bigr].
++\end{aligned}
++\end{equation}
+ \end{prp}
+ \begin{prf}
+ Insert the connector moments into~\eqref{eq:a:q-one-loop-average}.
+--- previous/sections/a_coefficients/04_finite_core_tables.tex
++++ sections/a_coefficients/04_finite_core_tables.tex
+@@ -280,13 +280,10 @@
+ \begin{prp}[Finite contribution summary]\label{prp:a:finite-summary}
+ The complexity-two leading group is
+ \begin{equation}\label{eq:a:q-two}
+-\begin{aligned}
+  \left.\frac{Z_g(1)}{F_g}\right|_{q=2}
+- &=\frac{e^{S(1)}}{\sqrt\pi g^2}
++ =\frac{e^{S(1)}}{\sqrt\pi g^2}
+  \left(\frac{1849}{1152}+\frac{3737}{144\pi^2}
+-                             +\frac{7465}{72\pi^4}\right)\\
+- &\quad+O(g^{-3}).
+-\end{aligned}
++                             +\frac{7465}{72\pi^4}\right)+O(g^{-3}).
+ \end{equation}
+ Together with~\eqref{eq:a:q-zero} and~\eqref{eq:a:q-one}, the finite
+ groups have total coefficients $9/8$ at $g^{-1}$ and

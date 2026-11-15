@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The literal outer group fixes alpha.bst's DLMF label without adding a macro or package; the actually cited smoke bibliography retains the complete DLMF label. All s02 prose and formatting are unchanged, with exact full PDF text equality across r006/r007/r008.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "No scientific source, author credit or published metadata changes: the only delta is protection of the DLMF label field. None of the three new bibliography keys is cited or wildcard-selected in s02, so the established literature-versus-derived-result attribution remains intact.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Applying only key={\\relax DLMF} to key={{\\relax DLMF}} reproduces the entire new bibliography exactly; authors, titles, DOI, versions and dates remain as independently verified in preparation. The smoke source actually cites all three entries, its bibliography copy matches production, and the generated bbl preserves \\bibitem[{\\relax DLMF}]{DLMF}; existing s02 locators and reference text are unchanged.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Every mathematical input, hypothesis, interface export and scientific handoff remains byte-identical to r007 and the original scientific baseline. This compatibility-only signature changes no theorem precision, imports no source misprint and does not approve a future s06 implementation; historical interface snapshot identifiers retain their provenance role.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "1. Identity/provenance: original reviewer /root/s02_academic, formal s02 r008 for BIB-002; the shared writer-handoff SHA256 matches 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302. No prior open academic issue exists, so resolved_issue_ids is empty.",
+    "2. Exact delta: only references.bib differs, with no added or removed input path. The sole pair of literal outer braces changes 7476 bytes to 7478 bytes, preserving all publication fields and the original bibliography prefix; no old scientific citation or source changes.",
+    "3. Freshness: every archived/live source and artifact fingerprint matches. Independently recomputed snapshot 389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab and source hash c6fba3ca61f17108f2ae35d13e1248d65a8434f61736078b10da7c92cfc2acd3 agree with the receipt.",
+    "4. Rendering: PDF SHA256 202594eb276c86aada597263cb7990e3d89347e76de8fcdc0f3fd2049066c90f and entry/helper hashes match; strict/pass are true and diagnostics are empty. Independently extracted all three complete 15-page PDFs and reproduced identical text hash 28e825235bbd3783f1d1c52006b7ecccf305aea8fff9dbba2a8a0d0ed4ce08d9.",
+    "5. Cited-entry compatibility: production bibliography SHA256 is 33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4. The existing protected smoke receipt hash 3c72643386864a3d5188ed7d21bd0a6af99a4fccc4d39f7fcfb1fa94e48bf210 and actual PDF hash 79e76e4b414d6536266110f92ac97d3dee69d3b48c3f2e57abb7769996f94bc3 match; actual cite commands and the protected full label were inspected. No smoke build was rerun.",
+    "6. Focus/scope: python scripts/validate.py --unit s02 passed. Only academic.json and academic_handoff.md were written; no source, shared file, state, historical record or output was changed or rebuilt, and unchanged primary literature was not reloaded. This academic pass is not workflow acceptance."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab",
+  "summary": "Pass for s02 r008. The protected DLMF key fixes the cited alpha-style label while preserving all publication metadata, scientific inputs and rendered s02 text.",
+  "unit": "s02",
+  "verdict": "pass"
+}

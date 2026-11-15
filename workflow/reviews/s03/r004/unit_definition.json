@@ -1,0 +1,29 @@
+{
+  "depends_on": [
+    "s02"
+  ],
+  "directory": "sections/03_graph_asymptotics",
+  "id": "s03",
+  "kind": "body",
+  "number": 3,
+  "outline_heading": "## 第 3 节 Uniform asymptotics for stable graph sums",
+  "subsections": [
+    {
+      "path": "sections/03_graph_asymptotics/01_wp_inputs.tex",
+      "title": "Weil–Petersson inputs in a common convention"
+    },
+    {
+      "path": "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+      "title": "The boundary deformation and the loop contribution"
+    },
+    {
+      "path": "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+      "title": "A uniform vertex bound and concentration on a large vertex"
+    },
+    {
+      "path": "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "title": "Finite cores and summable remainders"
+    }
+  ],
+  "title": "Uniform asymptotics for stable graph sums"
+}

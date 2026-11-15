@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "All mathematical prose, notation, statement/proof modules and interfaces are unchanged. The complete 56-page PDF text is identical to r002/r003; protecting an uncited DLMF label has no effect on the approved presentation.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The exact delta is one literal brace pair in DLMF's key field, with no publication or source-credit change and no new-key/wildcard citation. MZ/HMT/Wang attribution, the paper's finite computations and EGGLS's conditional-comparison-only role remain intact; both fresh dependencies match their accepted source inventories.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The sole key replacement reproduces the entire new bibliography, preserving all existing entries, versions, locators and normalization translations. Production bibliography hash 33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4 is the same protected-label version already verified in the cited-entry smoke evidence, so no renewed metadata search is needed.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Scientific TeX, calculations, verification records and exported hypotheses are unchanged from r003. All coefficient/error claims and the distinction between exact reconstruction and conditional prediction retain their reviewed meaning; this label/dependency refresh approves no s06 result or stronger mathematical input.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original academic reviewer; Appendix a r004 BIB-002 impact review under the designated academic dispatch. Read-only status confirms /root/s02_academic is bound to this nonstale in_review snapshot. No prior issue is open, so issues and resolved_issue_ids are empty. Shared writer-handoff SHA256 remains 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302.",
+    "All frozen/live source and artifact fingerprints match; references.bib is the only changed input and no path is added or removed. Accepted s02 r008 and s03 r005 real-input inventories both match this archive. Recomputed snapshot f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad and source hash 4554a8808cd505af556d3a5578f2a1d3a70743e4476e8b00f4801cf3119e41e1 match the strict receipt.",
+    "PDF SHA256 95a85695bbe5cf070e936210db1f0cf0141e538128a9da04d71d6212afc60c35 and helper/entry hashes match; diagnostics are empty and showkeys is final. Independently extracted all r002/r003/r004 PDFs and reproduced their identical complete-text hash 88aa3ce777dd2fc7df708985a96e5310e5f068608de136ed13d8f1b5056e5635. Targeted python scripts/validate.py --unit a passed.",
+    "Only academic.json and academic_handoff.md were written. No source, shared file, state, historical record or output was edited or rebuilt, and no original-source search, old proof reread or coefficient calculation was repeated. Historical interface identifiers remain scientific provenance; workflow acceptance is separate."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad",
+  "summary": "Pass for Appendix a r004. DLMF label protection and fresh dependencies leave source precision, scientific claim boundaries, computations and complete rendered text unchanged.",
+  "unit": "a",
+  "verdict": "pass"
+}

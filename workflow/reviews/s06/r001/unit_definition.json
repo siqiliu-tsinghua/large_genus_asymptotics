@@ -1,0 +1,29 @@
+{
+  "depends_on": [
+    "s02"
+  ],
+  "directory": "sections/06_top_hodge",
+  "id": "s06",
+  "kind": "body",
+  "number": 6,
+  "outline_heading": "## 第 6 节 The top Hodge class and Bessel asymptotics",
+  "subsections": [
+    {
+      "path": "sections/06_top_hodge/01_exact_vertices.tex",
+      "title": "The lambda g theorem and an exact vertex formula"
+    },
+    {
+      "path": "sections/06_top_hodge/02_bessel_critical_point.tex",
+      "title": "The Bessel critical point and a uniform coefficient bound"
+    },
+    {
+      "path": "sections/06_top_hodge/03_tree_tails.tex",
+      "title": "Stable trees and their tails"
+    },
+    {
+      "path": "sections/06_top_hodge/04_correction_and_proof.tex",
+      "title": "The first correction and proof of Theorem 1.3"
+    }
+  ],
+  "title": "The top Hodge class and Bessel asymptotics"
+}

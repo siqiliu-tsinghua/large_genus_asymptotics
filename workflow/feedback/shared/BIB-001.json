@@ -1,0 +1,31 @@
+{
+  "affected_units": [
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05"
+  ],
+  "cause": "User requested committing the approved Section 5 batch and proceeding to Section 6 to prove Theorem 1.3.",
+  "change": "Append three verified primary-source entries; every pre-existing bibliography byte is preserved as a prefix.",
+  "constraints": [
+    "No scientific TeX, theorem, macro or notation changes to accepted units.",
+    "Existing interface snapshot identifiers remain historical scientific provenance; live approval and freshness are in workflow/state.json.",
+    "Reopen one unit at a time in dependency order and obtain fresh original-role signatures; do not reuse old signatures on a changed shared-input fingerprint.",
+    "Writer may confirm unchanged scientific files once in the designated shared handoff; no section rewrite is needed for uncited appended entries.",
+    "New Section 6 writing starts only after the approved prefix is fresh again."
+  ],
+  "id": "BIB-001",
+  "new_bibliography_sha256": "64ce27872d52b51ad18fa76900b991159e034c9219ffb79fd5ab41083ec3e940",
+  "new_keys": [
+    "DLMF",
+    "FP03",
+    "MaZ00"
+  ],
+  "old_bibliography_sha256": "7f9bba35b9417ed36e26380e91cfadd94665e092d851fad7b1cb4836e83e72d6",
+  "preparation_author": "/root/s02_academic",
+  "preparation_entries": "build/s06-preparation/academic/entries.bib",
+  "prior_batch_commit": "1dc5722",
+  "schema_version": 1,
+  "time": "2026-11-15T01:18:19+00:00"
+}

@@ -1,0 +1,100 @@
+--- previous/sections/06_top_hodge/01_exact_vertices.tex
++++ sections/06_top_hodge/01_exact_vertices.tex
+@@ -9,6 +9,8 @@
+ \begin{equation}\label{eq:s06:beta-definition}
+  \beta_G=\int_{\MM_{G,1}}\lambda_G\psi_1^{2G-2}.
+ \end{equation}
++We write $\beta_G$ for the coefficients denoted by $b_G$ in
++\cite[(3), (6)]{FP00}.
+ In particular $\beta_0$ is not an integral on a genus-zero one-point
+ space.
+ 
+@@ -150,6 +152,6 @@
+ \]
+ This makes the conversion from raw kappa powers to exponential
+ integrals explicit. The inverse and critical behavior are also
+-analyzed in \cite[\S 6, proof of 6.3]{MaZ00}. The uniform vertex
++analyzed in \cite[\S 6, Proof~6.3]{MaZ00}. The uniform vertex
+ and complete tree estimates needed here will be proved directly.
+ \end{rmk}
+--- previous/sections/06_top_hodge/02_bessel_critical_point.tex
++++ sections/06_top_hodge/02_bessel_critical_point.tex
+@@ -54,7 +54,7 @@
+ 
+ \begin{rmk}[Critical-value convention]
+ The critical value denoted $x_0$ in
+-\cite[\S 6, (17) and proof of 6.3]{MaZ00} is our $R$.
++\cite[\S 6, (17) and Proof~6.3]{MaZ00} is our $R$.
+ Our positive critical argument $x_*$ and its derivative properties
+ are fixed by \eqref{eq:s06:critical-data} and proved above.
+ \end{rmk}
+--- previous/sections/06_top_hodge/INTERFACE.md
++++ sections/06_top_hodge/INTERFACE.md
+@@ -83,12 +83,16 @@
+   Its source-header journal typo is not used as bibliography metadata.
+ - `FP00`, Theorem 2, equation (6) (p.175 / PDF p.3): one-point series;
+   Section 4.2, Lemma 1 (p.194 / PDF p.22): Bernoulli evaluation. Its b_G
+-  is translated to beta_G. The multipoint proof is credited to FP03.
++  is explicitly translated to beta_G immediately after
++  `eq:s06:beta-definition` in the body, citing (3)/(6). The multipoint
++  proof is credited to FP03.
+ - `KMZ96v1`, (0.8): classical genus-zero inverse and earlier Zograf
+   attribution. The Remark explicitly converts its raw kappa-power
+   coefficient to Wtop_(0,N)(0)/(N-2)! by Lagrange inversion.
+-- `MaZ00`, Section 6, (17), proof 6.3: inverse/critical analysis. Its x_0
+-  is our R; the positive x_* is independently defined and proved here.
++- `MaZ00`, Section 6, (17), Proof 6.3 of Theorem 6.1 (journal
++  pp.529--530 / PDF pp.12--13): inverse/critical analysis. Both body
++  citations identify the numbered Proof 6.3. Its x_0 is our R; the
++  positive x_* is independently defined and proved here.
+   The printed negative y_0 in (17) is not imported. No published erratum
+   is asserted and no fixed-genus marking asymptotic is used as a uniform
+   all-type estimate.
+--- previous/sections/06_top_hodge/writer_handoff.md
++++ sections/06_top_hodge/writer_handoff.md
+@@ -110,3 +110,15 @@
+ No formula, hypothesis, result, source locator or label was changed.
+ The final unchanged-source native rerun supplies the actual build outcome
+ and receipt reported at handoff; the clean PDF is left to the coordinator.
++
++## Formal r001 revision: ACADEMIC-005 and ACADEMIC-006
++
++All three r001 reports were read at snapshot
++`cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b`.
++After the beta_G definition, one short sentence now maps FP00's b_G to
++beta_G, with the existing genus-zero convention retained. Both MaZ
++locators now say Proof 6.3, keeping Section 6 and (17) where present.
++INTERFACE records the body conversion location and numbered proof locator.
++All 26 numbered formulas, nine principal statements, ten proof bodies and
++labels remain byte-identical. No computation, build or literature search
++is repeated. This author response awaits a new frozen recheck.
+--- /dev/null
++++ workflow/reviews/s06/r001/author_response.json
+@@ -0,0 +1,27 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/06_top_hodge/01_exact_vertices.tex",
++        "sections/06_top_hodge/INTERFACE.md"
++      ],
++      "explanation": "Added a single reader-visible sentence immediately after eq:s06:beta-definition stating that FP00's b_G coefficients are denoted beta_G here, with locators (3)/(6). The beta_G definition precedes the sentence; the beta_0 convention and its genus-zero explanation are retained without repeating the established integral families. INTERFACE now identifies this conversion's actual body location. No mathematical formula or hypothesis changed.",
++      "issue_id": "ACADEMIC-005",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/06_top_hodge/01_exact_vertices.tex",
++        "sections/06_top_hodge/02_bessel_critical_point.tex",
++        "sections/06_top_hodge/INTERFACE.md"
++      ],
++      "explanation": "Changed both MaZ00 body locators from 'proof of 6.3' to 'Proof~6.3', preserving the existing Section 6 references and equation (17) in the critical-value Remark. INTERFACE now identifies Proof 6.3 of Theorem 6.1 and its journal/PDF pages. All mathematical statements, proofs, numbered formulas and labels remain unchanged; no bibliography or source was replaced.",
++      "issue_id": "ACADEMIC-006",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "s06",
++  "snapshot": "cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b"
++}

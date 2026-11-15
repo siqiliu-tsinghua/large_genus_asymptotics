@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The shared main/preamble bytes exactly match the FORMAT-001 implementation already checked in s02 r009; no mathematical environment, terminology or source-credit paragraph changes. The actual PDF references on pp.41-42 preserve complete entries and first-line labels with the requested flush-left continuation lines, while the current strict receipt has no standard or layout diagnostics.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Only main.tex and tex/preamble.tex differ from approved a r004; all frozen scientific/calculation inputs, interfaces, handoffs and dependency sources are byte-identical. The prior separation of Wang et al. profile inputs, MZ/HMT exact recursions, the appendix's coefficient/core derivations and computational checks is therefore preserved, as is EGGLS24's explicitly conditional comparison status.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All source locators, versioned citations and bibliography fields retain their previous bytes, with references.bib at SHA256 33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4. The established source-kernel explanation, signed/complexity profile translation, full elliptic stack convention and raw connector normalization remain unchanged; the original source checks apply without another search or calculation.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Every frozen formula, hypothesis, proof, table, calculation source and interface export matches r004, so no coefficient, quantifier, remainder strength or proof status has changed. In particular, exact-recursion reconstruction remains distinct from conditional EGGLS prediction and from reproducibility code, and no withdrawn source has been introduced.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Recomputed snapshot d5310ba65f6a63b2b4a61591d7a9e1eb87f7b1f1f645b5c1841f10d62b4274a4 and source hash 1cab7dad02cae4e5c75da29f1a042ff5134dd565d89b4199cace14bb84b49e5c. All 47 fingerprint entries and submission artifact hashes match archive/live inputs, and the path set is unchanged. The original reviewer /root/s02_academic is bound to active, non-stale a r005; s02 r009 and s03 r006 are approved and fresh.",
+    "Common FORMAT-001 writer acknowledgment SHA256 dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4 matches. Verified PDF SHA256 e93e748a9864dcf1726c41f9de1d5197dceaa118158d688c5b1d56cf24cbf8f6 and entry/helper hashes. The current 42-page receipt matches the snapshot and records strict/pass, 10pt, no showkeys and empty standard/layout diagnostics.",
+    "python scripts/validate.py --unit a passed. This is a current-snapshot format-impact signature reusing prior source/normalization and shared-style verification; no long proof, coefficient computation or shared build was repeated. No previously closed academic issue is reopened or resolved again."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "d5310ba65f6a63b2b4a61591d7a9e1eb87f7b1f1f645b5c1841f10d62b4274a4",
+  "summary": "Pass. The shared-format refresh preserves Appendix A's source attribution, precise convention translations, calculation evidence and claim boundaries; no new academic issue is present.",
+  "unit": "a",
+  "verdict": "pass"
+}

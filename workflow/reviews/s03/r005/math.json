@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The actual original reviewer binding, archive/live/artifact hashes, canonical snapshot/source digests and clean PDF/helper/entry hashes match; current s01/s02 dependencies are fresh after acceptance of s02 r008. Focused validation --unit s03 passes, the shared BIB-002 writer-handoff hash is verified, and no formerly used primary source or convention changed."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All scientific TeX and interfaces are byte-identical to r004. The reviewed stability, valence bounds, complexity/defect ranges, genus-correct contraction of large-vertex loops and fixed-marked complexity shift therefore retain their exact hypotheses."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "No formula, macro, graph weight or cited source changed, and the complete clean PDF text agrees with r004 and the r003 scientific baseline. Descendant/length factorials, graph and loop symmetries, volume-path factors, marked-leg scaling and gamma_k as coefficients of Z_g/V_{g,0} are unaffected by protecting an unused bibliography label."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The sole source edit groups the DLMF alpha-style key; the citation key and publication metadata are unchanged. Definitions and scopes in 3.1 (WP volumes/descendants), 3.2 (F_g,Z_g,W,f,S), 3.3 (H and q) and 3.4 (cores, gamma_k and marked variables), together with the inherited Introduction/s02 conventions, are unchanged; no first-use assumption or symbol is introduced."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "I verified the exact one-brace-pair replacement in references.bib and equality of every other archive/live snapshot input, with no added or removed input. FP03/MaZ00/DLMF remain absent from the TeX citation closure, including wildcard citations, so the global Gaussian bound, core construction, coefficient coherence and marked/weighted arguments gain no premise or altered inference."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The full compact sum of sup absolute contributions, three Gaussian regimes, two q-tail cases, all-legal-loop tail and factorially summable remainders are unchanged. The fixed-marked extension, explicit H^s weighted-majorant condition, entire coefficients and Cauchy derivative conclusions retain their previously verified bounds and scope."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh BIB-002 impact signature by original reviewer /root/s02_math, using the dispatched r005 identity and scope. No prior MATH issue was open; issues=[] and resolved_issue_ids=[]. No other pending unit is accepted by this review.",
+    "Snapshot 28da12ef8b2efef53cdffbe753fc578491d7ad15c948d349b20ecd5a518c647e; source SHA256 8e38d36b05e883ff0fde8887d0dc4368f29effcc5f88adea1823bdfa69114088; PDF SHA256 5105dbb5ad3df6f8a888d805c0a7782eab8387a4e934cfade36a0343a249d386. Actual entry/helper hashes and strict clean receipt agree; diagnostics=[] and layout_diagnostics=[].",
+    "The exact only changed input is references.bib, whose original 6058-byte prefix remains unchanged. I reproduced complete Unix-layout PDF text equality with r004 and r003, SHA256 dfa36d11bb195b3528e5c47d7f478b580138639a4e4cd5cb9ee7add05bc17bdb, and verified preview.txt and metadata_refresh.",
+    "The shared original-writer handoff SHA256 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302 matches the actual file. The unchanged three-key citation-smoke evidence, independently verified in this same BIB-002 review context, protects the complete DLMF label; none of the three keys supplies an s03 input.",
+    "python -B scripts/validate.py --unit s03 passes. Existing interface snapshot labels remain historical scientific provenance; actual workflow freshness follows the accepted dependency record. No unchanged proof, calculation or original literature was reprocessed.",
+    "Only this round math.json and math_handoff.md were written. No manuscript, shared input, state, older record or shared build output was edited or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "28da12ef8b2efef53cdffbe753fc578491d7ad15c948d349b20ecd5a518c647e",
+  "summary": "Pass for formal s03 r005. The independently verified BIB-002 outer-brace correction affects only an uncited DLMF label. All scientific inputs and complete rendered text remain unchanged, and the refreshed s02 dependency is fresh, preserving the original mathematical reasoning on this new snapshot.",
+  "unit": "s03",
+  "verdict": "pass"
+}

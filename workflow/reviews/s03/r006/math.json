@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The actual s01/s02 closure is fresh after acceptance of s02 r009, and cited sources/bibliography are unchanged. Archive/live/artifact, canonical snapshot/source, native PDF/helper/entry hashes, shared writer ACK, real reviewer binding and focused validation --unit s03 all pass; runtime confirms 10pt and no showkeys."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All scientific TeX and interfaces are byte-identical to r005. Stability, valence caps, complexity/defect ranges, genus-correct loop contraction and the fixed-marked complexity shift retain their original hypotheses; physical font/page changes introduce no mathematical range."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "Descendant/length factorials, graph/loop symmetries, volume-path factors, marked-leg scaling and gamma_k as coefficients of Z_g/V_{g,0} are unchanged. The identical previously checked FORMAT-001 code only adjusts font/layout and bibliography indentation, leaving mathematical macros, counters and citation content intact."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The first definitions and local scopes in 3.1-3.4, inherited Hodge/Chow conventions and statement/proof placement are unchanged. Removal of showkeys hides debug keys only; no manuscript symbol, label, font family or notation definition changed."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The actual fingerprint delta contains exactly main.tex and tex/preamble.tex, with no added or removed input, and their hashes equal the shared pair independently audited in s02 r009. Thus the Gaussian whole-sum proof, exact finite cores, coefficient coherence and marked/weighted arguments gain no premise or altered inference."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The compact sum of sup absolute contributions, three Gaussian regimes, two q-tail cases, all-legal-loop tail and factorially summable remainders are unchanged. The fixed-marked extension, H^s majorant condition, entire coefficients and Cauchy derivative conclusions preserve their previously checked scope, with no stronger assertion from this format refresh."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature by original reviewer /root/s02_math. No prior MATH issue was open; issues=[] and resolved_issue_ids=[]. This review covers s03 only, with no role decision on other pending format refreshes.",
+    "Snapshot d86fab7f015c9fb54955b1fd54314f150ff5939350d6c49f661ceb450a6f9553; source SHA256 19d41cb400355b2ee1e590635d42a24d90fa571ba7e02d61fa3e38f25fcb5dec; PDF SHA256 adbc4f98f22bc623fcdb2fd5d56311bad7ee59300293ed628126d3bb2da7f7c3. Actual native helper/entry hashes and strict receipt match; diagnostics=[] and layout_diagnostics=[].",
+    "Input path sets are identical to r005 and every fingerprint except main/preamble is unchanged. Shared main aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f and preamble 79f6624fd2f06162a58aecd319d824f6d59d1cdb4e06c66cccff17a80fe87c28 exactly match the native TeX semantics already independently checked in s02 r009; no repeat research or new package is involved.",
+    "Original-writer FORMAT-001 ACK SHA256 dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4 matches. Historical interface provenance remains unchanged; actual dependency approval/freshness is verified from the accepted s02 r009 record.",
+    "python -B scripts/validate.py --unit s03 passes. No old proof, calculation or original literature was rerun or reread. Only this round math.json/math_handoff.md were written; no source, shared input, state, old report or shared preview was edited or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 6,
+  "schema_version": 1,
+  "snapshot": "d86fab7f015c9fb54955b1fd54314f150ff5939350d6c49f661ceb450a6f9553",
+  "summary": "Pass for s03 r006 FORMAT-001 impact review. The sole source delta is the previously verified shared typesetting pair; all scientific inputs and interfaces are unchanged from r005. The original complete mathematical reasoning remains valid on this independently checked snapshot with a fresh s02 dependency.",
+  "unit": "s03",
+  "verdict": "pass"
+}

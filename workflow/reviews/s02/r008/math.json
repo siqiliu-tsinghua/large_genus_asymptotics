@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The real reviewer binding, archive/live/artifact hashes, canonical snapshot/source digests, PDF/helper/entry hashes and current dependency freshness were independently verified; focused validation --unit s02 passes. The actual three-key citation smoke has a complete grouped DLMF label and matching strict receipt/PDF hashes, while these entries remain unused in s02; this signature covers no other unit or future mathematics."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All scientific TeX and the s02/Introduction interfaces are byte-identical to r007. The reviewed stability, graph-product dimensions, character codimensions, defect ranges and forgetting-degree cutoffs therefore retain their exact hypotheses; grouping an unused bibliography label changes none of them."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "No mathematical display, coefficient, macro or cited source changed, and the full clean PDF text agrees with r007 and the r006 scientific baseline. The ordered-node half, graph/loop automorphism factors, exponential factorials, forgetting signs and rational-Chow normalization remain as previously verified."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "The sole delta is key = {{\\relax DLMF}} in references.bib, protecting its alpha-style label without changing the citation key or metadata. Introduction still supplies the global integral/Chow conventions, 2.1 the formal-exponential conventions and 2.2 the psi/kappa/Chern definitions; the graph definitions in 2.3 and local bounds in 2.4 are unchanged, with no new symbol, scope or first-use assumption."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "I verified that r008 equals r007 after exactly one outer brace-pair insertion in the DLMF key and that all other snapshot inputs are identical. FP03/MaZ00/DLMF remain absent from the s02 TeX citation closure, including wildcard citations, so this label fix supplies no premise or altered inference to the previously checked Chow, Hodge, boundary and partition-inversion proofs."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "s02 still exports exact finite-genus identities and adds no limit or interchange claim. In particular every new psi exponent >=1 in the tail argument, the retained negative new-psi kappa contribution, the >=2 start of the exponential specialization and the finite forgetting cutoff are unchanged; the original complete verification continues to apply."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh impact review by original reviewer /root/s02_math; no prior MATH issue was open. The r007 signature is not reused as a signature for r008.",
+    "Snapshot 389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab; source SHA256 c6fba3ca61f17108f2ae35d13e1248d65a8434f61736078b10da7c92cfc2acd3; PDF SHA256 202594eb276c86aada597263cb7990e3d89347e76de8fcdc0f3fd2049066c90f. The actual strict clean receipt, entry/helper hashes and metadata_refresh match; diagnostics=[] and layout_diagnostics=[].",
+    "Independently extracted full Unix-layout PDF text equals r007 and the r006 baseline, SHA256 28e825235bbd3783f1d1c52006b7ecccf305aea8fff9dbba2a8a0d0ed4ce08d9; preview.txt also matches. The original 6058-byte bibliography prefix and all non-bibliography inputs remain unchanged.",
+    "The BIB-002 original-writer handoff SHA256 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302 and actual protected-smoke receipt SHA256 3c72643386864a3d5188ed7d21bd0a6af99a4fccc4d39f7fcfb1fa94e48bf210 were verified. The smoke cites/renders FP03, MaZ00 and DLMF and its DLMF bibitem preserves the full grouped label.",
+    "Only this round math.json and math_handoff.md were written. No unchanged proof, algorithm or primary literature was rerun or reread; no source, state, historical record or shared build output was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab",
+  "summary": "Pass for formal s02 r008. The exact BIB-002 outer-brace correction affects only an unused DLMF bibliography label. All scientific inputs and the complete rendered text are unchanged, so the original mathematical reasoning remains valid on this independently verified new snapshot.",
+  "unit": "s02",
+  "verdict": "pass"
+}

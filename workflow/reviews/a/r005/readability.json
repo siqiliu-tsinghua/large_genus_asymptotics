@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All A.1-A.4 text and interfaces are byte-identical to r004, preserving the mu-series initial value, local generator scope and other reviewed first-use ranges. Actual p.34 keeps x near 1, degree orders and the zero indicator before the raw-moment formulas/table; format controls introduce no mathematical object or repeated setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "Only the same FORMAT-001 main/preamble files change, matching accepted s02 r009 and s03 r006. The unscaled raw connector convention, separate graph half-factor, source translations and relative/absolute table normalizations are unchanged; current pp.34 and 40 keep the rules and corresponding columns readable together.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No source family, alias, explanatory recall or inherited-symbol inventory is added. The repaired use of the existing mu series and local connector generator is retained, and the shared font/bibliography controls add no reader-facing notation or background burden.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The four-part coefficient/moment/small-vertex/core roadmap and all proof guides remain byte-identical. The layout refresh adds no input or result and preserves the appendix's finite-coefficient purpose and its distinction from subsequent applications.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The ten statement/proof adjacencies and all recurrence, table and diagram modules retain their reviewed source. I rendered and viewed current pp.34 and 40: the raw connector moment table, endpoint formulas and long multi-line core-integral entries fit at normal 10pt with clear columns and no material crowding or clipping. Strict/layout diagnostics are empty; the same-event full-preflight core-diagram and table/bibliography observations remain applicable to unchanged diagram code and shared format.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No mathematical letter, font family, index convention or diagram code changes. On p.34 local x, zero indicator z, integration t and degree/zero-count symbols remain distinguishable; on p.40 calligraphic integral helpers, endpoint powers and rational fractions are legible. The earlier calligraphic D_n/Bessel J_n and local r_1/r_2 distinctions are preserved.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The source-kernel and connector reproduction explanations remain in their prior order without inserted background. The inspected p.34 rules lead directly into their raw table, and p.40 places endpoint evaluation and normalization before the grouped core table, preserving the input-to-output links under reflow; optional Remarks and source credit are unchanged.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Pure FORMAT-001 impact recheck in the retained original full-appendix context. Read the current dispatch and diff. Complete r004/r005 input maps have identical paths and differ only at main.tex and tex/preamble.tex; the other 45 fingerprints, including every scientific TeX/interface, original handoff, calculation input and diagram code, are unchanged. The two format files match the accepted refreshed dependencies.",
+    "Verified all 47 archived input hashes and every non-alias live input, three artifacts, exact snapshot d5310ba65f6a63b2b4a61591d7a9e1eb87f7b1f1f645b5c1841f10d62b4274a4, source hash 1cab7dad02cae4e5c75da29f1a042ff5134dd565d89b4199cace14bb84b49e5c, PDF SHA e93e748a9864dcf1726c41f9de1d5197dceaa118158d688c5b1d56cf24cbf8f6, and entry/build_native.py helper hashes. The common writer ACK retains SHA dc6a3d7c9ecf2ac7319c132a0b618eb80e29b09f76bd12f855b86c3ef2eb6bd4.",
+    "The current PDF has 42 pages and the same already-reviewed 10pt/390pt/no-showkeys/flush-left-bibliography format. Actually rendered and viewed two representative current pages, p.34 raw connector moments and p.40 core integral tables. Reused the earlier FORMAT-001 unapproved full-preflight diagram/table/reference observations solely as shared-format evidence, without repeating complete proof reading, calculations or diagram enumeration.",
+    "Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit a passed. Read-only workflow status confirms the original reviewer binding and approved fresh s02 r009/s03 r006, with matching shared dependency fingerprints. The original readability issues remain resolved from earlier rounds; nothing is newly resolved here, so issues=[] and resolved_issue_ids=[]. Only this report, its handoff and own ignored inspection files were written; source, state, old records and shared outputs remain untouched."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "d5310ba65f6a63b2b4a61591d7a9e1eb87f7b1f1f645b5c1841f10d62b4274a4",
+  "summary": "Pass for the Appendix A FORMAT-001 refresh. Definitions, normalization repairs, notation and proof modules are unchanged; representative new-format moment/core tables remain clear, with no new readability issue.",
+  "unit": "a",
+  "verdict": "pass"
+}

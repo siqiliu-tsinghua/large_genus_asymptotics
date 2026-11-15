@@ -159,3 +159,16 @@ Changed only `\frac9{8g}` to `\frac{9}{8}g^{-1}` in the final
 a_g display of `04_proof.tex`. All other TeX, the supplementary Remark,
 INTERFACE and check sources remain byte-identical. No coefficient
 computation was rerun.
+
+## Formal r006 revision: READABILITY-001
+
+All three r006 reports were read for snapshot
+`8d7fad68e232e834d08de4909cccc97aaa76b5ffb1b892bbcc9f3be6b983cd3c`.
+The complete short Further coefficients Remark is wrapped locally in the
+native samepage environment, including its heading, normalized quantity,
+order assignment, both displays and closing sentence. Removing only this
+wrapper restores the complete original 04_proof.tex byte for byte; the
+main proof and literal (9/8)g^-1 presentation are untouched. INTERFACE and
+all other unit/scientific/shared inputs are unchanged. No computation or
+build is rerun. The coordinator will verify the actual same-page grouping
+before freezing the revision for the original reviewers.

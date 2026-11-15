@@ -1,0 +1,19 @@
+{
+  "agent_id": "/root/s02_writer",
+  "responses": [
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "ACADEMIC-005",
+      "resolution": "FILL_IN"
+    },
+    {
+      "changed_files": [],
+      "explanation": "",
+      "issue_id": "ACADEMIC-006",
+      "resolution": "FILL_IN"
+    }
+  ],
+  "round": 1,
+  "unit": "s06"
+}

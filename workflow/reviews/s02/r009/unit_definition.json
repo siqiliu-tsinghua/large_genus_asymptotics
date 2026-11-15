@@ -1,0 +1,29 @@
+{
+  "depends_on": [
+    "s01"
+  ],
+  "directory": "sections/02_notation",
+  "id": "s02",
+  "kind": "body",
+  "number": 2,
+  "outline_heading": "## 第 2 节 Notation and geometric identities",
+  "subsections": [
+    {
+      "path": "sections/02_notation/01_conventions.tex",
+      "title": "Intersection conventions and normalization"
+    },
+    {
+      "path": "sections/02_notation/02_tautological_classes.tex",
+      "title": "Tautological classes and the GRR formula"
+    },
+    {
+      "path": "sections/02_notation/03_gluing.tex",
+      "title": "Gluing maps and restrictions of Hodge classes"
+    },
+    {
+      "path": "sections/02_notation/04_boundary_and_forgetting.tex",
+      "title": "Boundary exponentials and forgetting markings"
+    }
+  ],
+  "title": "Notation and geometric identities"
+}

@@ -1,0 +1,88 @@
+{
+  "feedback": "FORMAT-002",
+  "units": {
+    "s02": {
+      "round": 9,
+      "snapshot": "33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084"
+    },
+    "s03": {
+      "round": 6,
+      "snapshot": "d86fab7f015c9fb54955b1fd54314f150ff5939350d6c49f661ceb450a6f9553"
+    },
+    "a": {
+      "round": 6,
+      "snapshot": "12f26ed367466968aa45b8bd66a85ae101c53ca98fbb9d23c92780e973625aa2"
+    },
+    "s04": {
+      "round": 8,
+      "snapshot": "550042872db2611eac69413aa49ac3582bac0a14581157232f3b39ce69cec55d"
+    },
+    "s05": {
+      "round": 5,
+      "snapshot": "34149dcfb5525f0c5017bf9b2b9356ba1fc14923034aed477560abbfc453e15e"
+    },
+    "s06": {
+      "round": 3,
+      "snapshot": "3bb0091152f459efb5cb63ee188e913e5e3e2ea163126c82245a77f52ad02ec7"
+    }
+  },
+  "targets": {
+    "eq:s04:first-correction": {
+      "number": "4.7",
+      "page": 25
+    },
+    "eq:a:q-zero": {
+      "number": "A.32",
+      "page": 55
+    },
+    "eq:a:q-one": {
+      "number": "A.36",
+      "page": 57
+    },
+    "eq:a:q-two": {
+      "number": "A.44",
+      "page": 63
+    }
+  },
+  "all_equation_and_result_numbers_unchanged": true,
+  "label_count": 269,
+  "pdf_sha256": "36d6bb9adb7b5457d64ee205ace8c8f618ce70daa81181790939d9eddb2e5a2b",
+  "source_hash": "554dbd823a996d1e200647b7d7197432730d353d5a101f454810b2626acb66c4",
+  "diagnostics": [],
+  "overfull_boxes": [],
+  "content_equivalence": "build/equation-layout-20261115/content_check.json",
+  "snapshot_input_selection_deltas": {
+    "a": {
+      "changed_common_paths": [
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/04_finite_core_tables.tex"
+      ],
+      "removed_from_selection_but_original_preserved": [],
+      "added_to_selection": []
+    },
+    "s04": {
+      "changed_common_paths": [
+        "sections/04_lambda_one/02_leading_and_first_correction.tex",
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/04_finite_core_tables.tex"
+      ],
+      "removed_from_selection_but_original_preserved": [
+        "workflow/reviews/s04/r006/author_response.json"
+      ],
+      "added_to_selection": []
+    },
+    "s05": {
+      "changed_common_paths": [
+        "sections/04_lambda_one/02_leading_and_first_correction.tex",
+        "sections/a_coefficients/02_loop_moments.tex",
+        "sections/a_coefficients/04_finite_core_tables.tex"
+      ],
+      "removed_from_selection_but_original_preserved": [],
+      "added_to_selection": []
+    }
+  },
+  "original_writer_responses": {
+    "workflow/feedback/shared/FORMAT-002_a_writer_response.md": "64a1a6419876e8ca701aed7539f5d91e04ca54f04176cbdac259c1b1423aeb12",
+    "workflow/feedback/shared/FORMAT-002_s04_writer_response.md": "b0a749dc9ff17a9b2b1660e0bb3737a6ea477636c7611d39a8670cdd6442e9a8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "bibliography_note": "BIB-002 protects the final DLMF key with literal outer grouping. Production references.bib is authoritative over unprotected preparation entries; actual citations of all three added keys have passed strict compilation.",
+  "coordinator": "/root",
+  "critical_checks": [
+    "FP03 proven multipoint theorem, FP00 one-point series; beta_0 is convention, never an unstable M_0,1 integral.",
+    "Derive the whole kappa exponential vertex formula, without the different Section 5 extra new-leg exponential.",
+    "All stable types and all tree edge/genus/valence distributions require a uniform absolute tail bound.",
+    "Nonelliptic one-edge endpoint degrees are >=2, not >=3; O(g_2^-3) relative tail suffices.",
+    "A symmetric saddle expansion must explicitly control both odd half-orders to justify relative O(m^-2).",
+    "Preserve notation and original-role revision/review workflow; no shared-file modification without coordinator handling."
+  ],
+  "dependency": "approved s02 r008 and inherited Introduction; independent of WP Sections 3-5",
+  "id": "TASK-001",
+  "kind": "author_work_instruction",
+  "prior_commit": "1dc5722",
+  "reviewers": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability"
+  },
+  "schema_version": 1,
+  "source_audit": {
+    "archive_path": "workflow/feedback/s06/primary_source_audit.md",
+    "original_agent": "/root/s02_academic",
+    "original_path": "build/s06-preparation/academic/source_memo.md",
+    "sha256": "08097a1fb0df8a0f30015b5bf7ea3e2f32cbd6d6e829237f6a55ab158c0015cb",
+    "status": "exact copy of the actual original academic preparation output; not a formal s06 review"
+  },
+  "target": "s06: complete the unchanged Theorem thm:top-hodge / eq:g111",
+  "time": "2026-11-15T02:06:51+00:00",
+  "write_scope": "sections/06_top_hodge/ only, including INTERFACE.md and writer_handoff.md",
+  "writer": "/root/s02_writer",
+  "writing_brief": {
+    "path": "workflow/feedback/s06/writing_brief.md",
+    "sha256": "a5dddd8a0be556c8cec5aa8bc10a9374b8120879ddfe384395c710135ca61698",
+    "status": "coordinator work instruction, not a proof or review signature"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The Introduction, all s02 subsections and INTERFACE.md are byte-identical to r007 and the scientific r006 baseline. Protecting an uncited BibTeX label field creates no manuscript object, parameter or scope, so the reviewed first-use definitions for classes, graphs and forgetting data remain intact without repeated setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The exact delta is one added brace pair around the DLMF key field; citation keys and every other bibliography byte remain unchanged from r007. No DLMF citation occurs in the frozen TeX, and no shared macro or package changes, so all existing mathematical notation, source conventions and normalizations remain verbatim.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "No manuscript explanation, alias, recall or inherited-symbol inventory is added. The label repair uses only bibliography grouping and requires no fallback macro; the current reader encounters exactly the prior notation and background burden.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The section entry and all proof guides are unchanged, retaining the progression through conventions, tautological classes, gluing, boundary and forgetting identities. The unused label-field repair adds no result, proof step or dependency to this route.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Independent complete layout-text extraction is identical across r006/r007/r008, page by page for all 15 pages. Statement/proof adjacency, functional paragraphs, optional modules, formula wrapping, numbering and pagination are preserved, and current strict/layout diagnostics are empty.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No mathematical letter, index or font changes, preserving the distinct roles of Hodge indices, markings, flags, defect and partitions. DLMF remains a bibliography key rather than a mathematical symbol; the existing cited-entry test's generated bibitem preserves its full label and contains no truncated control sequence.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The continuous-paper transitions, classical-convention comparison, post-proof source Remarks and forgetting-map motivation remain verbatim. The repaired entry is uncited in this unit and adds no source detour or repeated background; identical rendered text confirms no interruption to the existing reading sequence.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "BIB-002 metadata-only recheck in the retained original whole-s02 context. Complete r007/r008 input maps have identical paths and only references.bib differs; all other 22 fingerprints are unchanged. Replacing the single unprotected DLMF key field with its grouped form reproduces the current file exactly, increasing 7476 bytes to 7478. The original 6058-byte scientific bibliography prefix is still preserved; none of FP03/MaZ00/DLMF or a wildcard is cited in the frozen TeX.",
+    "Verified all 23 archived input hashes and every non-alias live input, three artifacts, exact snapshot 389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab, production bibliography SHA 33f3b50ab92ad38e93e03b1c0c6cae0230f4f557ba8a133241df2f6a84ba2aa4, source hash c6fba3ca61f17108f2ae35d13e1248d65a8434f61736078b10da7c92cfc2acd3, PDF SHA 202594eb276c86aada597263cb7990e3d89347e76de8fcdc0f3fd2049066c90f, and entry/helper hashes. BIB-002 writer-handoff SHA 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302 and feedback SHA were also verified.",
+    "Independently reproduced the complete 15-page Unix layout-text equality with both r006 and r007, SHA 28e825235bbd3783f1d1c52006b7ecccf305aea8fff9dbba2a8a0d0ed4ce08d9, matching receipt.metadata_refresh. Strict diagnostics=[] and layout_diagnostics=[]; python scripts/validate.py --unit s02 passed. No repeat rendering, old proof/calculation rerun or shared rebuild was needed.",
+    "Read the existing cited-entry smoke evidence without rerunning it: verified receipt SHA 3c72643386864a3d5188ed7d21bd0a6af99a4fccc4d39f7fcfb1fa94e48bf210, actual smoke PDF hash, byte-identical production bibliography copy, source citations of all three keys and the complete protected DLMF bibitem with no truncated control sequence. No new mathematical claim is being reviewed here.",
+    "No prior s02 readability issue is open; issues=[] and resolved_issue_ids=[]. Only this report and its handoff were written. Source, state, older records and shared outputs remain untouched."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "389580d8ae9aaf5b35dee26978a8385c87e9c8fb63036825f76d2c566084ecab",
+  "summary": "Pass for the s02 BIB-002 refresh. The protected, uncited DLMF label leaves all definitions, notation, proof organization, transitions and rendered presentation unchanged.",
+  "unit": "s02",
+  "verdict": "pass"
+}

@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The original reviewer binding, archive/live/artifact and canonical snapshot/source hashes, PDF/helper/entry hashes and shared writer-handoff provenance were independently checked. The unchanged old bibliography sources retain their previous primary-source verification; the new keys prepare future work and supply no input to s02. Focused validation with python -B scripts/validate.py --unit s02 passes; this signature makes no acceptance or freshness decision for the remaining affected units."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All Introduction/s02 TeX, interface and existing shared inputs other than the appended bibliography are byte-identical to r006. The reviewed stability, graph-product dimensions, character codimensions, defect/index ranges and forgetting-degree cutoffs therefore retain their exact hypotheses."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "Every original bibliography byte and every mathematical display is unchanged; the complete clean PDF text also agrees with r006. The previously checked ordered-node half, graph/loop automorphisms, Chern/exponential factorials and forgetting signs are unaffected by these three uncited entries."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "No manuscript definition, label, statement/proof ordering, macro or interface changed. The inherited lowercase integral/Chow conventions, g_2/j_i/ell, and first psi/kappa/Chern definitions remain as reviewed; FP03,MaZ00,DLMF introduce no s02 symbol or convention."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The snapshot comparison shows references.bib is the sole changed input, with no added or removed snapshot input. Its old 6058 bytes are an exact prefix and no added key occurs in a citation or wildcard citation, so the existing Chow, Hodge-normalization, boundary and partition-inversion proofs gain no premise or altered inference."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "s02 continues to export exact finite-genus identities, with no new asymptotic or interchange claim. The every-new-psi>=1 condition, retained negative new-psi kappa contribution, >=2 start of the exponential specialization and finite forgetting cutoff are unchanged, preserving the prior complete verification."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal s02 r007 BIB-001 impact signature by the original reviewer /root/s02_math. No prior MATH issue was open, so resolved_issue_ids=[]. The existing interfaces retain historical scientific provenance; live workflow approval is maintained by the coordinator.",
+    "Verified the exact old 6058-byte bibliography prefix, the three distinct added keys FP03/MaZ00/DLMF, absence of duplicate keys and their absence from the TeX citation closure, including wildcard citations. Every other source and provenance input is unchanged.",
+    "Snapshot 41134ee4b02d97cc622205835173839e0dce4f969d51b84c22eb401b70db1876 and source hash 94d4866773d145bb8df0c3873f9e858d7ba94c6fa1f697298e11070c2ebbbb6b match the actual frozen records. PDF SHA256 743c46b6ccba86e589921143ab5ba19fb3736e39e30ab68eecca4392fc34ca54 and entry/helper hashes match the strict clean receipt; diagnostics=[] and layout_diagnostics=[].",
+    "The receipt metadata_refresh correctly names r006 snapshot a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91, its only changed input references.bib, and the equal full Unix-layout PDF text SHA256 28e825235bbd3783f1d1c52006b7ecccf305aea8fff9dbba2a8a0d0ed4ce08d9. I independently reproduced that complete text equality and verified preview.txt.",
+    "The shared original-writer handoff SHA256 fab11a0e02489f0d192a765a906328e46ad3d30e0a59bbd5ce372cdbc6f424de and its feedback hash match. No unchanged mathematics, calculation or literature was rederived or rerun for this impact review.",
+    "Only this round's math.json and math_handoff.md were written. No manuscript, shared source, state, old report or shared build output was changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "41134ee4b02d97cc622205835173839e0dce4f969d51b84c22eb401b70db1876",
+  "summary": "Pass for formal s02 r007. The verified BIB-001 append-only bibliography refresh changes no scientific text, existing source, proof or normalization in s02. Its three added keys are uncited, the complete rendered text is identical to approved r006, and the original mathematical reasoning remains valid on the newly bound snapshot.",
+  "unit": "s02",
+  "verdict": "pass"
+}

@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "The real reviewer binding, archive/live/artifact hashes, canonical snapshot/source digests and PDF/helper/entry hashes were independently verified. Current s01/s02/s03 dependencies are fresh after s02 r008 and s03 r005 acceptance, focused validation --unit a passes, and the shared BIB-002 handoff hash matches; no formerly used primary source or calculation input changed."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All four mathematical subsections, entry, interface and calculation inputs are byte-identical to r003. Thus the 44 numbered formulas, ten statements, stability/degree ranges, low-profile cases and 1/3/13 core classification retain their exact hypotheses; the unused bibliography-label grouping changes none of them."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "The corrected raw connector recipe still has no loop-branch half, keeps W_{1,1} unscaled and uses the rational 2M moments; the source half-kernel, graph automorphisms and absolute/relative coefficient conventions also remain unchanged. Full clean PDF text equality confirms that no displayed factor, sign, factorial or value is altered."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "Only the DLMF alpha-style label receives an outer TeX group; its citation key and publication metadata are unchanged. A.1 profile/kernel definitions, A.2 signed moments and raw connector definitions, A.3 low-complexity polynomials and A.4 core data retain their reviewed types and scopes; the undeclared source sequence remains removed and no first-use assumption is introduced."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "I verified the exact single brace-pair replacement and equality of all other current snapshot inputs, including calculation sources/certificates, with no input-selection change from r003. The three new keys are uncited, so the exact-recursion c2 extraction, complete profile cases, signed moments and finite-core integration proofs gain no premise or altered inference; the historical author response also retains its recorded hash."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The factorial genus-convolution tails, HMT polynomial remainders, signed dilaton averaging and normal convergence of loop/connector series are unchanged. This label correction asserts no new order, range or limit/summation exchange, preserving the previously checked finite coefficient-extraction argument."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh impact signature by original reviewer /root/s02_math. r003 had no open MATH issue; resolved_issue_ids=[] does not reopen or re-close the already resolved r002 corrections.",
+    "Snapshot f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad; source SHA256 4554a8808cd505af556d3a5578f2a1d3a70743e4476e8b00f4801cf3119e41e1; PDF SHA256 95a85695bbe5cf070e936210db1f0cf0141e538128a9da04d71d6212afc60c35. Actual entry/helper hashes and strict clean receipt agree; diagnostics=[] and layout_diagnostics=[].",
+    "Every snapshot input except references.bib is identical to r003, with no added or removed input. The bibliography equals r003 after exactly one outer brace-pair insertion in the DLMF key, its original 6058-byte prefix is unchanged, and no FP03/MaZ00/DLMF or wildcard citation occurs in the TeX closure. The old r001 author response and its archived r002 copy retain the exact recorded hash.",
+    "I reproduced full Unix-layout PDF text equality with r003 and approved r002, SHA256 88aa3ce777dd2fc7df708985a96e5310e5f068608de136ed13d8f1b5056e5635, and verified preview.txt and metadata_refresh. The shared BIB-002 original-writer handoff SHA256 2073f5dc518f4c5094875f108b5190d9d39992b119ff651590be726673e09302 matches.",
+    "python -B scripts/validate.py --unit a passes. No unchanged algorithm, long proof or original literature was rerun or reread. This signature covers Appendix A only; no workflow action or acceptance is made for other pending units.",
+    "Only this round math.json and math_handoff.md were written. No manuscript, shared input, state, historical record or shared build output was edited or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "f7b152601398dee2bb942d333e74a603f952b9b3cac49b25035de9c04395bfad",
+  "summary": "Pass for formal Appendix A r004. The independently verified BIB-002 correction only protects an uncited DLMF bibliography label. All scientific and calculation inputs, prior corrections and complete rendered text are unchanged, so the original mathematical verification remains valid on this fresh snapshot.",
+  "unit": "a",
+  "verdict": "pass"
+}

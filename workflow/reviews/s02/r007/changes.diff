@@ -1,0 +1,46 @@
+--- previous/references.bib
++++ references.bib
+@@ -181,3 +181,43 @@
+   note    = {Cited numbering follows arXiv:2305.16940v2},
+   url     = {https://arxiv.org/abs/2305.16940v2}
+ }
++
++@article{FP03,
++  author  = {Faber, Carel and Pandharipande, Rahul},
++  title   = {{Hodge} integrals, partition matrices, and the {$\lambda_g$}
++             conjecture},
++  journal = {Annals of Mathematics},
++  volume  = {157},
++  number  = {1},
++  year    = {2003},
++  pages   = {97--124},
++  doi     = {10.4007/annals.2003.157.97},
++  eprint  = {math/9908052},
++  url     = {https://annals.math.princeton.edu/2003/157-1/p03},
++  note    = {Cited numbering follows arXiv:math/9908052v3, published version}
++}
++
++@article{MaZ00,
++  author  = {Manin, Yuri I. and Zograf, Peter},
++  title   = {Invertible cohomological field theories and
++             {Weil--Petersson} volumes},
++  journal = {Annales de l'Institut Fourier},
++  volume  = {50},
++  number  = {2},
++  year    = {2000},
++  pages   = {519--535},
++  doi     = {10.5802/aif.1764},
++  eprint  = {math/9902051},
++  url     = {https://aif.centre-mersenne.org/articles/10.5802/aif.1764/}
++}
++
++@misc{DLMF,
++  key          = {\relax DLMF},
++  title        = {{NIST Digital Library of Mathematical Functions}},
++  howpublished = {\texttt{https://dlmf.nist.gov/}, Release 1.2.8 of 2026-09-15},
++  url          = {https://dlmf.nist.gov/},
++  note         = {F. W. J. Olver, A. B. Olde Daalhuis, D. W. Lozier,
++                  B. I. Schneider, R. F. Boisvert, C. W. Clark,
++                  B. R. Miller, B. V. Saunders, H. S. Cohl,
++                  and M. A. McClain, eds.; accessed 2026-11-15}
++}

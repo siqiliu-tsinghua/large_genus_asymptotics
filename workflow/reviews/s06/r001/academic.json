@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The entry gives the tree/vertex/uniform-tail/saddle route without reopening the basic moduli setup. The nine principal statements are immediately followed by proofs; the numerical genus-zero interpretation and critical-value comparison are short post-proof Remarks, and the genus-two Example checks the stack half and 12-power conversion. New functions, coefficient orders, analytic domains and bound ranges are introduced before use, while g_2, z_{0,1}, rho and scalar b retain their inherited meanings. Inspected pages 15,17,20,23,25 present the definitions, complete-tree argument, Taylor calculation and references professionally; the source-specific corrections below are recorded under citation_precision.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The positive-genus multipoint formula is correctly assigned to FP03 Theorem 1, with stable genus zero assigned to its equation (1); FP00 Theorem 2/(6) supplies only the one-point series, and its Section 4.2 Lemma 1 supplies the Bernoulli values. KMZ's classical inverse and earlier Zograf attribution are retained, with raw kappa powers versus exponential integrals explicitly distinguished. The all-type vertex estimate, full edge/genus/valence tree majorant, retained saddle remainder and elliptic correction are proved here rather than attributed to MaZ's fixed-genus large-marking theorem. Neither preparation notes nor finite symbolic/numerical checks replace these arguments.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The FP03 marked range, beta_0 convention and unmarked k=0 exception are correct. KMZ (0.8)'s two-factorial normalization and MaZ (17)'s x_0=R mapping are accurate; the negative printed y_0 and FP03's incorrect PDF header are not imported. DLMF product/interlacing, derivative and zeta locators match their actual specializations, and the complete protected DLMF label prints correctly. Two minor source-presentation corrections remain: the body does not explicitly tell readers that FP00's b_G is this paper's beta_G despite the existing different b_g (ACADEMIC-005), and both MaZ citations say 'proof of 6.3' although the source heading is 'Proof 6.3 of Theorem 6.1' (ACADEMIC-006).",
+      "status": "issue"
+    },
+    "claim_status": {
+      "evidence": "The exact vertex derivation is coefficientwise finite, distinguishes numerical reduction from an inter-moduli Chow identity, and covers all stable types including m=0. The uniform vertex bound is independent of genus/valence; the tree proof sums all genus assignments and legal edge counts before its tail conclusion, and the nonelliptic one-edge claim is the justified O(g_2^-3), not the stronger lecture claim. The saddle has a closed-disk analytic hypothesis, additive leading error and an integrable two-term remainder with both odd half-orders retained. The elliptic leaf keeps its exact 1/24 and orientation weight, and the final factorial/12/rho/beta restoration recovers the unchanged Theorem 1.3 with relative O(g_2^-2), without asserting positive-defect results.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-005",
+      "severity": "minor",
+      "location": "sections/06_top_hodge/01_exact_vertices.tex:5-13 (eq:s06:beta-definition; PDF p.15)",
+      "message": "The mathematical definition of beta_G is correct, but the paper's classical-source recall never explicitly maps FP00's notation b_G to beta_G. FP00 defines b_G in (3) and uses it in (6), whereas this paper already reserves b_g for a different unmarked top-Hodge integral. The interface records the mapping, but that is not reader-visible manuscript text; this actual source-notation difference should be stated briefly where the formula is recalled.",
+      "requested_change": "Add one short opening clause or sentence identifying beta_G as the quantity denoted b_G in FP00. Preserve the existing symbols, genus-zero explanation and formulas; no repeated inventory of the integral families is needed."
+    },
+    {
+      "id": "ACADEMIC-006",
+      "severity": "minor",
+      "location": "sections/06_top_hodge/01_exact_vertices.tex:153; sections/06_top_hodge/02_bessel_critical_point.tex:57",
+      "message": "Both MaZ00 citations use 'proof of 6.3', which reads as the proof of a numbered result 6.3. The actual published heading on journal p.529 / PDF p.12 is 'Proof 6.3 of Theorem 6.1', with the relevant inverse analysis continuing on p.530 / PDF p.13. The locator should identify the numbered proof itself.",
+      "requested_change": "Change both locators to 'Proof 6.3' (or 'Proof 6.3 of Theorem 6.1'), retaining the existing Section 6 and equation (17) references where applicable. No bibliography or mathematical change is required."
+    }
+  ],
+  "notes": [
+    "First formal whole-s06 academic review by the original bound reviewer /root/s02_academic. All four subsections, entry, interface and writer handoff were read against the frozen outline and relevant approved s02 results. The initial no-baseline diff and earlier source preparation/BIB signatures were not treated as approval of this new scientific text. There are no prior s06 issues to resolve, so resolved_issue_ids is empty.",
+    "The primary-source preparation and its archived audit agree; actual hashes match the handoff for TASK-001, writing_brief and primary_source_audit. The FP03 v3 and published MaZ00 PDF hashes match the verified originals. For the two requested corrections, FP00 (3)/(6) and the MaZ published Proof 6.3 heading were independently checked again against the local primary text/PDF context. No new metadata search is needed.",
+    "Every archived/live source and artifact fingerprint matches, including accepted s02 r008 dependency inputs. Independently recomputed snapshot cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b and source hash 78cee27c5319e00aaeecf641a06ec26f86934c4e5875d5e4f264e5de2a14c9dd match the strict receipt. PDF SHA256 bf56c0ee0863f3198910540ab844349461c1be43bd5b01bc39a903e95e2024d8 and helper/entry hashes match; the 26-page PDF has empty diagnostic arrays and showkeys final. Read-only status confirms the actual reviewer binding and a nonstale in_review snapshot.",
+    "Targeted python scripts/validate.py --unit s06 passed. Formal outputs are only academic.json and academic_handoff.md; selected pages were rendered solely in build/s06-preparation/academic/review-r001-pages for inspection. No manuscript, shared input, state, old record, other review or shared preview was edited or rebuilt. These two minor source fixes require a new frozen recheck; no mathematical rewrite is requested by this report."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "cfb093e818c9075659e789f7d65fccdeecf64e662a39eb24f7f449f0e491257b",
+  "summary": "Changes requested for two minor source-presentation issues: explicitly map FP00's b_G to beta_G in the paper and correct both MaZ locators to Proof 6.3. The remaining attribution, claim-scope and professional-presentation checks pass.",
+  "unit": "s06",
+  "verdict": "changes_requested"
+}
