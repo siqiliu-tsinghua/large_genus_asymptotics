@@ -1,7 +1,7 @@
-"""Export the approved article as one TeX file with its bibliography inlined.
+"""Export the approved article as one standalone TeX source and its final PDF.
 
-The development/export tooling is internal. The resulting source needs only
-XeLaTeX and standard TeX distribution packages/fonts to compile.
+The source needs only XeLaTeX and standard TeX distribution packages/fonts.
+The PDF is copied from the strict complete manuscript build.
 """
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import uuid
 
 from workflow import Engine, ROOT, WorkflowError, atomic_write, digest, encoded, require, stamp
 
@@ -118,7 +119,8 @@ def export(output: Path, root: Path = ROOT) -> dict:
     require(build['unit'] is None and build['strict'] and build['passed']
             and not build['diagnostics'] and build['source_hash'] == source_hash,
             'Run the strict complete manuscript build before exporting.')
-    require(digest(engine.safe(build['pdf']).read_bytes()) == build['pdf_sha256'],
+    pdf_data = engine.safe(build['pdf']).read_bytes()
+    require(digest(pdf_data) == build['pdf_sha256'],
             'The reviewed manuscript PDF was changed.')
     bbl = engine.safe('build/main.bbl')
     expander = Expander(engine.root, bbl.read_text(encoding='utf-8'))
@@ -139,21 +141,34 @@ def export(output: Path, root: Path = ROOT) -> dict:
     require(output.parent != engine.root and not any(
         output.is_relative_to(engine.safe(folder)) for folder in ('sections','tex','frontmatter','workflow')),
         'Choose a separate submission directory for the generated file.')
-    extras = [path for path in output.parent.iterdir() if path != output] if output.parent.exists() else []
-    require(not extras, 'Submission directory must contain only the single TeX file.')
+    pdf_output = output.with_suffix('.pdf')
+    extras = [path for path in output.parent.iterdir() if path not in {output, pdf_output}] if output.parent.exists() else []
+    require(not extras, 'Submission directory may contain only the standalone TeX source and its PDF.')
     previous = engine.safe('build/export_receipt.json')
+    old = json.loads(previous.read_text(encoding='utf-8')) if previous.is_file() else None
     if output.exists() and output.read_text(encoding='utf-8') != source:
-        require(previous.is_file(), 'Refusing to overwrite an unrecognized existing submission source.')
-        old = json.loads(previous.read_text(encoding='utf-8'))
+        require(old is not None, 'Refusing to overwrite an unrecognized existing submission source.')
         require(old['output'] == engine.relative(output)
                 and digest(output.read_bytes()) == old['output_sha256'],
                 'The previous submission source was edited; preserve those edits before exporting.')
+    if pdf_output.exists():
+        require(pdf_output.is_file(), 'The companion PDF path is not a regular file.')
     atomic_write(output, source)
+    # The companion PDF is a generated artifact, refreshed on every export.
+    temporary_pdf = pdf_output.with_name('.workflow-' + uuid.uuid4().hex + '.tmp')
+    try:
+        temporary_pdf.write_bytes(pdf_data)
+        temporary_pdf.replace(pdf_output)
+    finally:
+        temporary_pdf.unlink(missing_ok=True)
     require(source_hash == digest(encoded({uid:engine.fingerprint(uid) for uid in included})),
             'Article changed while exporting.')
+    require(digest(engine.safe(build['pdf']).read_bytes()) == build['pdf_sha256'],
+            'The reviewed manuscript PDF changed while exporting.')
     result = {'schema_version':1,'time':stamp(),'source_hash':source_hash,
         'source_pdf':build['pdf'],'source_pdf_sha256':build['pdf_sha256'],
         'output':engine.relative(output),'output_sha256':digest(output.read_bytes()),
+        'pdf_output':engine.relative(pdf_output),'pdf_output_sha256':digest(pdf_output.read_bytes()),
         'expanded_inputs':expander.inputs,'bibliography_sha256':digest(bbl.read_bytes()),
         'single_file':True,'engine':'xelatex',
         'requires_project_files_or_bibtex':False,'isolated_compilation_pending':True}

@@ -45,6 +45,14 @@ def check_reference_pdf(engine, exported):
     require(path == engine.safe('build/main.pdf'), 'Expected the complete approved manuscript PDF.')
     require(digest(path.read_bytes()) == exported['source_pdf_sha256'],
             'Approved manuscript PDF changed since export.')
+    if 'pdf_output' in exported:
+        companion = engine.safe(exported['pdf_output'])
+        require(companion == engine.safe(exported['output']).with_suffix('.pdf'),
+                'Expected the companion PDF beside the standalone source.')
+        require(companion.is_file()
+                and digest(companion.read_bytes()) == exported['pdf_output_sha256']
+                == exported['source_pdf_sha256'],
+                'Published companion PDF differs from the approved manuscript.')
     return path
 
 

@@ -1,58 +1,97 @@
-# Pure Hodge integrals at large genus
+# On Large Genus Asymptotics of Pure Hodge Integrals
 
-This repository contains the manuscript and its section-by-section writing and review workflow.
+**[Download the paper (PDF)](submission/paper.pdf?raw=true)** | [Standalone LaTeX source](submission/paper.tex)
 
-## Manuscript layout
+This repository contains the paper *On Large Genus Asymptotics of Pure Hodge Integrals* by Si-Qi Liu and the working record of an AI-assisted mathematical research and writing project.
 
-- main.tex assembles the manuscript.
-- tex/preamble.tex holds shared packages, notation and theorem environments.
-- frontmatter/abstract.tex contains the abstract.
-- sections/ has one directory per section and one file per subsection.
-- paper_outline.md maps the completed proof structure and current finalization scope.
-- workflow/sections.json defines the units, dependencies and file order.
-- workflow/state.json records assignments, submissions, reviews and acceptance.
-- references.bib is the bibliography. Entries must be verified before use.
+The project is also a demonstration of how AI can be used to prepare a mathematical paper through explicit writing standards, coordinated subagents, incremental review and revision. Its workflow configuration, scripts, writing and review records, and complete Git history are retained alongside the paper as a reference for researchers who want to develop high-quality mathematical manuscripts with AI.
 
-The abstract, Introduction, Sections 2--8 and Appendices A/B are complete and have passed the section review workflow. Current acceptance and freshness are reported by `python scripts/workflow.py status`. Reopening a section or changing a shared input requires a new review of the affected snapshots; existing approval does not cover later changes.
+## The paper
 
-The generated assembly includes the continuous approved body prefix and available supporting appendices. Appendix C is retired and is excluded from the manuscript and export. Its sources and frozen reviews remain internal history; see workflow/RETIREMENT.md.
+The article studies large-genus asymptotics of pure Hodge integrals in four regimes: powers of the first Hodge class, fixed-degree Hodge insertions, the top Hodge class, and fixed defects from the top class. The proofs combine uniform stable-graph estimates, finite coefficient calculations, Bessel analysis and identities from the intermediate long-wave (ILW) equation.
 
-## Build and checks
+The Introduction includes detailed acknowledgments and an AI disclosure describing the roles of Claude Opus 5.5, GPT-6-Astra, GPT-6.1-Sol and the human author. The results have not been formally verified in Lean.
 
-Use Python 3.10 or newer and TeX Live with XeLaTeX and BibTeX on PATH.
+- [submission/paper.pdf](submission/paper.pdf) is the finished paper, available directly from the repository.
+- [submission/paper.tex](submission/paper.tex) is its single-file source, with the preamble, all sections, TikZ figures and bibliography inline. It can be compiled independently with XeLaTeX and standard TeX distribution packages and fonts.
 
-    python scripts/build.py --strict
-    python scripts/build.py --unit s02
-    python scripts/validate.py
-    python -m unittest discover -s tests -v
+## A demonstration of AI-assisted mathematical writing
 
-The build script runs at least two XeLaTeX passes; when citations require BibTeX, it also runs BibTeX and an additional XeLaTeX pass. All products go to build/. A unit preview uses its intended section number and the same preamble and bibliography. References into other, excluded sections can remain unresolved in an isolated preview; acceptance also builds an integrated preview of the candidate and its prerequisites.
+The human author wrote the initial Introduction, established the writing standards, designed the multi-subagent workflow, and supervised the research and manuscript preparation. The repository makes that process inspectable through its instructions, section interfaces, frozen drafts, review reports, revision records and Git history.
 
-Read the current PDF at build/main.pdf. Root-level compilation products are not manuscript inputs or submission files.
+The central workflow decisions are:
 
-Writing follows the dependency graph rather than the printed order: complete Appendix A before Section 4 and Appendix B before Section 8. Integrated previews retain the intended section and appendix numbers. Strict acceptance rejects unresolved references and citations.
+- Work on one section at a time, drafting each subsection in its own file.
+- Give each section a writer and three reviewers with distinct responsibilities.
+- Review a frozen source snapshot so that all reviewers assess the same text.
+- Send revisions back to the original writer and re-review to the original reviewers, preserving their contexts.
+- Require a new set of current reviews when a section or its dependencies change.
+- Record actual agent identities, review issues, source fingerprints and build receipts.
 
-## Single-file submission
+Writing standards are part of the workflow: define symbols before use, inherit existing definitions without unnecessary repetition, keep notation consistent and economical, introduce a proof strategy before a long argument, split proofs into useful modules, and credit the precise literature results and versions being used.
 
-After all published units have passed their current reviews, build and export the complete article:
+The records show the checks and reviews actually performed. The scripts enforce workflow consistency and build requirements; they do not formally prove the mathematics.
 
-    python -B scripts/validate.py
-    python -B scripts/build.py --strict
-    python -B scripts/export_tex.py
-    python -B scripts/verify_submission.py
+## Roles and review cycle
 
-submission/paper.tex is the sole submission source. Its preamble, all sections, TikZ figures and bibliography are inline. The verification command copies that file alone into a new temporary directory, compiles it with XeLaTeX without BibTeX or project files, and compares its text and label numbers with the current manuscript. Receipts and the preview PDF stay under build/. The internal programs, data-check instructions and workflow records are not article attachments.
+| Role | Responsibility | Instructions |
+| --- | --- | --- |
+| Coordinator | Maintain shared conventions, check dependencies, freeze submissions, record reviews and run acceptance checks. | [Coordinator](workflow/roles/coordinator.md) |
+| Writer | Draft explanations and modular proofs, maintain the section interface, and respond to review issues. | [Writer](workflow/roles/writer.md) |
+| Mathematical reviewer | Check definitions, hypotheses, normalizations, proof logic and uniform estimates. | [Mathematics](workflow/roles/math.md) |
+| Readability reviewer | Check notation, proof guides, structure and transitions from the reader's perspective. | [Readability](workflow/roles/readability.md) |
+| Academic-writing reviewer | Check attribution, precise citations, scholarly presentation and the distinction between proved results and conjectures. | [Academic writing](workflow/roles/academic.md) |
 
-## Collaboration
+A section passes through drafting, build and static checks, a frozen submission, three independent reviews, revision, re-review and acceptance. When a reviewer requests changes, all reports are collected before the original writer revises. All three reviewers must sign the new snapshot, including reviewers who passed the previous one.
 
-Read AGENTS.md, workflow/PROTOCOL.md and the relevant role file before starting. A writer and the three reviewers keep their identities and original contexts through all revisions of one section. The coordinator uses the script to prepare prompts, record real agent IDs, freeze submissions and enforce review gates.
+The coordinator uses the workflow script to prepare prompts and record real agent IDs. The script emits collaboration-tool arguments; the coordinator invokes the actual tools. Agent sessions belong to their originating conversation. Archived prompts, IDs and handoffs document the process without implying that a saved ID can recreate a live session elsewhere.
 
-The script emits collaboration tool calls; it does not invoke a model API or manage a hidden agent service. Agent IDs belong to the actual parent conversation. Persisted files make the work inspectable and support context restoration without claiming that live agent memory survives a lost session.
+## Exploring or adapting the project
 
-Frozen rounds archive source, the relevant outline, the unit definition and revision differences. Explicit local TeX inputs are followed recursively, and recorded compilation inputs are checked against that closure. Interrupted submissions can be retried; stale review rounds can be invalidated without replacing their original agents.
+| Material | Where to start |
+| --- | --- |
+| Collaboration and writing rules | [AGENTS.md](AGENTS.md) |
+| Paper structure and proof dependencies | [paper_outline.md](paper_outline.md) |
+| Shared context and notation policy | [workflow/context.md](workflow/context.md) |
+| Detailed workflow protocol and report formats | [workflow/PROTOCOL.md](workflow/PROTOCOL.md) |
+| Reusable workflow, build, validation and export scripts | [scripts/](scripts/) |
+| Section interfaces, modular source and calculation scripts | [sections/](sections/) |
+| Frozen submissions, reviewer reports and revision differences | [workflow/reviews/](workflow/reviews/) |
+| Recorded feedback and project decisions | [workflow/feedback/](workflow/feedback/) |
+| Workflow and export tests | [tests/](tests/) |
 
-## Local references and generated files
+The full Git history is preserved. Use the repository's commit history to follow the development, or inspect it locally:
 
-refs/ and build/ are intentionally ignored by Git. Local reference PDFs are optional author materials, not compilation inputs or article attachments. The bibliography, structure map and source locators in the section interfaces remain versioned. Scripts do not download papers or claim a source has been checked when it is unavailable. Root-level main.aux, main.log, main.pdf and main.synctex.gz are also ignored; use build/main.pdf as the development preview.
+```sh
+git log --oneline
+git log -p -- sections/
+```
 
-Text files use UTF-8 and LF, enforced by .gitattributes, .editorconfig, the VS Code workspace setting and scripts/validate.py.
+Historical drafts and reports remain unchanged. Appendix C was retired and is excluded from the current paper; its source and reviews are retained as part of that history. Current acceptance and source freshness are reported by `python -B scripts/workflow.py status`.
+
+To adapt the workflow to another manuscript, establish that manuscript's own outline, research context, role assignments and workflow state. The existing acceptance records describe this paper.
+
+## Build and verify
+
+For the modular project, use Python 3.10 or newer and TeX Live with XeLaTeX and BibTeX on `PATH`. The workflow scripts use the Python standard library. Isolated PDF comparison also uses `pdftotext`.
+
+```sh
+python -B scripts/workflow.py status
+python -B scripts/validate.py
+python -B scripts/build.py --strict
+python -m unittest discover -s tests -v
+```
+
+The development PDF is generated at `build/main.pdf`. Each section has an entry file and separate subsection files under [sections/](sections/); [main.tex](main.tex) assembles the accepted manuscript, [tex/preamble.tex](tex/preamble.tex) holds shared definitions, and [references.bib](references.bib) supplies the development bibliography.
+
+To regenerate both published paper files and check the standalone source:
+
+```sh
+python -B scripts/build.py --strict
+python -B scripts/export_tex.py
+python -B scripts/verify_submission.py
+```
+
+The exporter writes `submission/paper.tex` and refreshes `submission/paper.pdf` from the approved complete build. The verifier copies the TeX file alone into an isolated directory, compiles it without BibTeX or project files, and compares its PDF text and label numbers with the approved manuscript. It also checks that the published PDF is the approved compiled copy. Build products and receipts stay under `build/`.
+
+Local reference PDFs in `refs/` and generated files in `build/` are excluded from Git. They are not needed to read or compile the standalone paper. The repository retains the bibliography, source locators, calculation scripts and collaboration records. Versioned text uses UTF-8 and LF.
