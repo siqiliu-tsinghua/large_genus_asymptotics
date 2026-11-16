@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "All nine Appendix B inputs remain byte-identical to r007, preserving adjacent proofs and explicit domain hypotheses; the reviewed author-history addition creates no internal-program obligation, and the actual native last page 45 presents the supplied address cleanly below the bibliography."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The inherited disclosure leaves DLMF?s Bessel identities and the exact Section 6/7 inputs distinct from the appendix?s text-proved inverse-domain, normal-convergence, endpoint, characteristic and primitive estimates; the author?s model-role account is not new mathematical authority."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The bibliography, DLMF 10.25.2/10.32.3 locators, inherited Bessel/ILW conventions and forward-versus-inverse derivative distinction are unchanged; the shared dataset citation neither supports these analytic estimates nor verifies the private development history."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "No conditional endpoint assumption, larger-neighborhood/Cauchy budget, finite-layer common-domain scope or genus-one primitive exception changes, and the metadata adds no infinite-genus interchange, stronger remainder or premature Section 8 conclusion."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual academic dispatch and checked the four changed/four added inherited paths, nine unchanged own inputs/bibliography, current snapshot/archive/live/artifacts, real reviewer binding and original-writer ACK/archive hash. S1 r008, S2 r018, S6 r013 and S7 r010 are approved/fresh with actual three-role passes.",
+    "Native and common current-layout receipts/artifacts/helper/pin match; native raw inputs equal the frozen fingerprint (source 5a30a9587d7d06e46b7e49b9f9dd481d0715b2641aa11d77eff92adf1a30b622, PDF 061e85695752ce249bfa84631665773ea4d7171badd3aca6892f7871aeb50e66). Strict/layout diagnostics are empty and focused validation passed. No proof/whole-paper rereading, source/model/data computation or build rerun, source/state/history edit, or approval of pending S8/future export; the common companion remains current-layout evidence only."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "5e03419add995fb38970c80ea66e56a2526c54f212713d7e2808cac436a426cc",
+  "summary": "The verified author-disclosure/contact refresh preserves Appendix B scholarly credit and all stated analytic scopes.",
+  "unit": "b",
+  "verdict": "pass"
+}

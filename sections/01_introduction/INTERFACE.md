@@ -4,13 +4,16 @@ Scientific interface for the Introduction.
 Live review, freshness and acceptance status belongs to
 workflow/state.json; this document is not an approval signature.
 The four complete theorem environments, including definitions,
-labels, constants, ranges and error terms, are byte-identical to
-Git baseline fa2f374 for the current final-polish round.
+labels, constants, ranges and error terms, remain byte-identical to
+Git baseline fa2f374.
 
 ## Current prose scope and assembly
 
-The single section.tex remains the entire Introduction; no formal
-subsections, extra inputs or manifest change is needed. The prose
+The complete preceding Introduction is retained byte-for-byte as the
+prefix of section.tex. After its organization paragraph, that entry
+now inputs 01_acknowledgments.tex and 02_ai_disclosure.tex, each using
+an unnumbered subsection heading. No mathematical result or formula
+counter is changed. The retained mathematical prose
 provides the motivation for four results grouped into two broad
 index settings (first Hodge class powers/fixed-index insertions and
 the top class/fixed defects),
@@ -30,13 +33,40 @@ The applied abstract is already in the shared frontmatter/abstract.tex.
 It has 144 words, no citations and no mathematical symbols, and expands
 intermediate long-wave (ILW) at first use. It reports the four theorem
 regimes at their original precision without promoting supplementary
-coefficients or the fixed-defect conjecture. This final-polish reading
-proposes no abstract change and does not edit the shared file.
+coefficients or the fixed-defect conjecture. The disclosure addition
+does not change the abstract or edit its shared source.
 
-The present prose revision makes the first Hodge class explicit in the
+The retained mathematical overview makes the first Hodge class explicit in the
 opening, identifies the last two results by indices growing with genus,
 and separately identifies the fixed insertion list and fixed defect.
 It does not describe the top index g as a fixed insertion index.
+
+## Acknowledgments and AI provenance
+
+The new unnumbered subsections implement the explicit author request
+ACK-AI-DISCLOSURE, superseding the earlier no-acknowledgments preference.
+The first thanks only Di Yang and Yunhui Wu for helpful discussions.
+The second records the author's supplied account of discovery, proof
+and writing roles: Claude Opus 5.5 found N_g but could not identify
+the expansion constants; GPT-6-Astra identified those constants
+without supplying a proof; GPT-6.1-Sol supplied the proof and discovered
+and proved the following three main theorems, and wrote most of the
+manuscript. The human role is the initial Introduction, writing
+standards, design of the multi-subagent writing workflow and supervision.
+
+The disclosure explicitly assigns scholarly credit to GPT-6.1-Sol,
+states that the human releases the paper solely for knowledge sharing
+and claims neither scholarly credit nor priority, and warns that the
+results have not been formally verified in Lean and may contain errors.
+Readers are explicitly asked to exercise caution and examine the arguments.
+No journal-policy or legal-authorship claim is added.
+
+The sole added citation is the existing LiuData26 entry, identifying
+the public hodge_data dataset. It is not evidence for the model-role
+account, which is supplied by the author, or a substitute for any proof.
+The inherited N_g and existing theorem labels are used without new
+definitions, macros, numbered formulas or labels. The author-address
+block after the bibliography is coordinated outside this section.
 
 ## Global conventions at first use
 

@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The two new unnumbered subsections follow the preserved Introduction organization paragraph and use clear, professional English: a concise acknowledgment and four functional disclosure paragraphs. Inspected native pages 4?5 and current-layout companion pages 1, 4 and 101: both headings are distinct, the entire disclosure is readable, the title/byline and generic format are preserved, and the supplied affiliation/address/email appear after the bibliography at the bottom of the last page. Mentioning the development workflow implements the new explicit author request and creates no reader obligation to use internal programs or collaboration files."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Compared every disclosure component with the author-supplied request: Claude Opus 5.5 found N_g from hodge_data but not the expansion constants; GPT-6-Astra identified constants without a proof; GPT-6.1-Sol supplied that proof, discovered/proved the following three theorems and wrote most of the manuscript. The human roles in the initial Introduction, writing standards, workflow design and supervision are retained, as are Di Yang and Yunhui Wu in the acknowledgments. The deliberate allocation of scholarly credit to GPT-6.1-Sol and the human?s knowledge-sharing-only, no-credit/no-priority statement remain explicit; the preceding scholarly source attributions are byte-identical and are not displaced."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "LiuData26 is the sole added citation and identifies the already verified public dataset, using the unchanged bibliography and fixed source identity; it is not authority for the private model-role narrative or any proof. The model names and roles are treated as the author?s supplied provenance, without inventing a model-capability, publisher-policy, formal-verification or coauthorship source. The preserved Introduction prefix retains all earlier literature citations and locators; the supplied author-information block matches the requested name, department, postal address and email exactly."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The disclosure expressly states that the results have not been formally verified in Lean, may contain errors and should be examined carefully; it does not claim machine-checked verification. Its development-history statements do not alter the four theorem statements, six numbered formulas, fixed-parameter scopes, original error strengths, supplementary coefficient status or closing conjecture. The complete-paper companion was checked only for the requested current layout and disclosure/address placement; other units remain metadata-stale pending their actual refresh reviews, so this is neither a new whole-paper approval nor a future export signature."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Independently verified the real reviewer binding, new submission snapshot, live/archive/artifact fingerprints, exact 9,330-byte old Introduction prefix, unchanged abstract/bibliography and preservation of 111 own scientific/interface/handoff/auxiliary files across the other nine units. The removed response is only excluded from selection; its original and archived copy still exist.",
+    "Verified both receipt hashes, raw-current-input/source hashes, PDF/entry/text artifact hashes, helper hash, pin and real writer ACK/archive hash. The native receipt is legitimately pre-submit with snapshot null and source hash 92bbae10843a063fe7bfbfecbaa9ae9989f3697d961226bb9c2ee58f4f9360d7; its raw inputs match this frozen submission. The 101-page current-layout companion explicitly names the r008 snapshot and has source hash ac1263c003ad140c49f99dbb94a523b6a360394826f9442b64d05e6a6afc8420.",
+    "Native PDF SHA is ce4132c8559aa877daf24211b7cb360c9a8071da5fb4cdb1bf162f2c2462392e; current-layout companion PDF SHA is 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd. Both strict receipts have empty standard/layout diagnostics. Focused validation passed; no model/policy research, mathematical rerun, source/state change or frozen-output rebuild was performed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "9c83806c88905e174abf2c508386866e8fcc7c5eb6849bfc3b947aec02779705",
+  "summary": "The current acknowledgments, AI provenance and author-address addition faithfully implements the explicit new request, preserves existing scholarly credit and mathematical claims, and is professionally presented in both actual previews.",
+  "unit": "s01",
+  "verdict": "pass"
+}

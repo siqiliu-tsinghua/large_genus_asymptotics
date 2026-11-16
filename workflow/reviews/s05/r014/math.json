@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, 91 archive/live inputs and artifacts, original-writer ACK and fresh approved S1 r008/S2 r018/S3 r015/S4 r017/A r015; the disclosure/footer adds no insertion or volume input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven S5 files equal r013, preserving the fixed positive j_i list and ell, character weight w, stable source/forgotten-marking ranges and the degree-to-power factorial domains.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The identical source retains the a_g-normalized bracket, factorial Chern convention, square-free labels, q=1 denominator cancellation, specified-loop half and single-ch3 coefficients through g^-3.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and proofs preserve the separate roles of j_i/ell, character exponents, free markings, beta_g and g_2, while the added unnumbered S1 metadata introduces no new mathematical symbol or counter.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained full assessment of the written labeled-source/forgetting rules, original-graph majorant, ch3 calculation and fixed-list Chern reduction remains valid independently of author-supplied AI credit or dataset history, with no program or attribution replacing a proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged weighted whole-graph bound, all-legal loop cutoff and summable core errors retain fixed-list O(g^-4), no g^-1 term and the printed g^-2/g^-3 coefficients; metadata adds no stronger rate or growing-list claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta is four inherited changes and four additions with no removal, identical to the already reviewed common update; all seven own files remain unchanged. Actual writer ACK/archived-copy SHA256 c02e6a2c70c14645b6ed06bfc81ecaf60402961b56e0bdb6759b36987c2cdc43.",
+    "Native source SHA256 ac32137fafaa9bd9f86fcd81fca714a6aa056c6a537ce09393da35b5b2100ebb; PDF 12d5664e07a5f88924e2eb2eba9e78a3f040de9d352884004a0c3c67f471ba0f. Verified the summary-pinned receipt/artifacts/helper/main hashes and exact render/frozen file-map equality, with explicit pre-submit snapshot=null provenance and empty strict/layout diagnostics; native text includes the common metadata and final-page address.",
+    "The S1 current-layout companion identity remains unchanged and is not new full-paper approval. Retained the complete prior mathematical reasoning without rereading unchanged proofs or rerunning science; only these two reports were written, without source/state/history/output changes or future-unit/export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "7e5515d7823dba181271b1d20d26b443e43546fd98d738e05e2cc50c9e6e48c2",
+  "summary": "Pass on S5 r014: the exact metadata-only dependency update preserves the fixed-list character/Chern proof, normalization and O(g^-4) precision.",
+  "unit": "s05",
+  "verdict": "pass"
+}

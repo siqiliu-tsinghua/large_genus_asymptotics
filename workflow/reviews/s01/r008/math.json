@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual /root/s02_math binding, canonical snapshot, all 24 selected archive/live input hashes, artifacts and original-writer ACK; the native and current-layout companion receipts match actual source and artifact hashes. The added LiuData26 citation identifies the public dataset in the author-supplied provenance account, adding no proof premise or reader dependency on internal software; the nine later metadata-stale units are intentionally outside this approval.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The preceding 9330 Introduction bytes are an exact prefix, retaining all stable-target, codimension, rank, fixed-list and fixed-defect ranges; both new subsections are unnumbered and the address has no mathematical counter or dimension effect.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The new N_g mention points to the already defined normalization in Theorem 1.1 without redefining it or identifying it with the leading constant; all four complete theorem blocks, six numbered equations and eleven labels remain unchanged, including their factorials, denominator a_g, rho and error terms.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "N_g is defined before the disclosure and the actual native/companion label maps resolve the four referenced results to Theorems 1.1-1.4; the new headings introduce no symbol, parameter, alias or numbered result and preserve g_2, j_i/ell, beta_g, b_g and scalar b.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The added paragraphs record the explicit author-provided research/writing/credit account and expressly say the results have not been formally verified in Lean and may contain errors; they neither claim formal verification nor replace any mathematical argument by attribution, numerical evidence or a program. The retained original full mathematical and integrated assessments therefore remain applicable to the unchanged science, without treating this metadata reading as a new whole-paper approval.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The exact preserved theorem statements retain respectively relative O(g^-3), fixed-list O(g^-4), relative O(g_2^-2) and fixed-h asymptotic equivalence; the provenance wording about successive expansion constants adds no all-orders, growing-parameter, convergence, next-coefficient or stronger-remainder assertion.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Inspected the actual request, diff, new unnumbered subsections, revised interface/context and original-writer disclosure_handoff.md (SHA256 e505d714fe2466de558af1fdd16a25d0e151c623fcfd88a8cb024831b3e359cc), including its archived ACK copy. The model history/credit position is the author's supplied account; no external model-capability research was needed or performed.",
+    "Exact selected-input delta from r007: five changed entries including @unit, four additions and the removal of the previously selected r006 author_response path only. The actual historical response and its r007 archived copy remain byte-identical. Independently confirmed the full 9330-byte old Introduction prefix and 119 non-S1 section files against baseline 6ebf350; no old mathematical calculation was rerun.",
+    "Native render source SHA256 92bbae10843a063fe7bfbfecbaa9ae9989f3697d961226bb9c2ee58f4f9360d7; PDF ce4132c8559aa877daf24211b7cb360c9a8071da5fb4cdb1bf162f2c2462392e. The pre-submit native receipt has snapshot=null, transparently bound here by its exact equality to the frozen current file map and the verified summary/receipt hashes.",
+    "Current-layout companion source SHA256 ac1263c003ad140c49f99dbb94a523b6a360394826f9442b64d05e6a6afc8420; PDF 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd. Both native and companion have empty strict/layout diagnostics, verified PDF/entry/text/aux/helper/main hashes and resolved theorem/equation numbers. Actually viewed native pages 4-5 and companion pages 4 and 101: both unnumbered subsections follow the organization paragraph and the supplied address follows the bibliography at the bottom of the final page.",
+    "This signature covers S1 r008 and the requested metadata placement checks, not fresh workflow approval of the later nine units, a new integrated mathematical signature or a future export. Only this round's math.json and math_handoff.md were written; no source, state, history, shared report or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "9c83806c88905e174abf2c508386866e8fcc7c5eb6849bfc3b947aec02779705",
+  "summary": "Pass on the exact S1 r008 snapshot: the author-requested acknowledgments, AI provenance/credit/caution and after-bibliography address preserve the complete preceding Introduction and all mathematical definitions, theorem statements, proof premises and precision. The current-layout companion was inspected for these additions only; later units still require their own metadata-refresh signatures.",
+  "unit": "s01",
+  "verdict": "pass"
+}

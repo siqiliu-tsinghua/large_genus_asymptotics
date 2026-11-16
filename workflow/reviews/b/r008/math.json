@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual original binding, canonical snapshot, 61 archive/live inputs and artifacts, writer ACK and fresh approved S1 r008/S2 r018/S6 r013/S7 r010; the metadata introduces no Bessel, ILW or analytic premise and B still does not depend on S8.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All nine B files equal r007, retaining fixed finite h/H, minimum Borel degree 3h-2, the local vanishing-order threshold and primitive range g>=max(2,h), with the genus-one logarithm excluded.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged source preserves forward w_theta' versus reciprocal inverse v_theta', Morse/cone signs, the intact cubic shift and its m^-2 factor, and the primitive (2pi)^(-2g) N! R^(-N) N^(-5/2) scale.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged B interface and first definitions preserve inherited x_*, R, beta_g and the distinct local derivative scale, S/cone/complex-theta ranges and fixed derivative orders; unnumbered disclosure/footer metadata adds no mathematical alias or counter.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The actual complete r007 assessment of univalence plus full image radius, normal-convergence construction, conditional endpoint/local-transport induction, complex-domain patching and negative-axis primitive remains valid on identical source, independently of AI attribution, data history or a program.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved full-sigma majorants, mixed-Cauchy derivative budgets, finite-layer domain reductions and all three negative-axis intervals keep their proved uniform constants; no metadata wording enlarges a domain, parameter range or remainder strength.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "All nine own files equal r007; exact delta is four changed inherited paths and four additions, with no removal, matching the already reviewed shared update. Writer ACK/archived-copy SHA256 02c7fe4201ae785da8adaa37a1780e7fe4f88c3b1daefa9a03485f992f4f78a2.",
+    "Native source SHA256 5a30a9587d7d06e46b7e49b9f9dd481d0715b2641aa11d77eff92adf1a30b622; PDF 061e85695752ce249bfa84631665773ea4d7171badd3aca6892f7871aeb50e66. Verified summary-pinned receipt/artifacts/helper/main hashes and exact render/frozen-map equality, with explicit pre-submit snapshot=null provenance and empty strict/layout diagnostics; native text includes the metadata and final-page address.",
+    "The unchanged S1 current-layout companion receipt/PDF identity was checked, without a new whole-paper or pending-S8 approval. No mathematical proof, source investigation, data/scientific computation or build was repeated; only this round's two reports were written, with no source/state/history/output edit or future-export signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "5e03419add995fb38970c80ea66e56a2526c54f212713d7e2808cac436a426cc",
+  "summary": "Pass on B r008: the verified disclosure/address metadata refresh preserves the complete inverse-domain, Borel/kernel and primitive arguments, with unchanged finite-layer, derivative and genus scopes.",
+  "unit": "b",
+  "verdict": "pass"
+}

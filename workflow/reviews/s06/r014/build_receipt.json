@@ -1,0 +1,68 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s06/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s06/preview.aux",
+    "build/previews/s06/preview.bbl",
+    "build/previews/s06/preview.tex",
+    "sections/01_introduction/01_acknowledgments.tex",
+    "sections/01_introduction/02_ai_disclosure.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/06_top_hodge/01_exact_vertices.tex",
+    "sections/06_top_hodge/02_bessel_critical_point.tex",
+    "sections/06_top_hodge/03_tree_tails.tex",
+    "sections/06_top_hodge/04_correction_and_proof.tex",
+    "sections/06_top_hodge/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s06/preview.pdf",
+  "pdf_sha256": "f8bde09a8c729b53289287a34d4b49b86d9c53a7894a14298ff8512f79ac3165",
+  "schema_version": 1,
+  "snapshot": "ce44a263d072907341620df78a05b94c5a9fb691851ed95f47ebecb24c79416f",
+  "source_hash": "34bdcac109fb774273139c439b05b1ff568fb673e73a6c9951e0748540cc3082",
+  "strict": true,
+  "time": "2026-11-16T12:31:58+00:00",
+  "unit": "s06",
+  "with_dependencies": true
+}

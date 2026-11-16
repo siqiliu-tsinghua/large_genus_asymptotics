@@ -1,0 +1,73 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s07/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s07/preview.aux",
+    "build/previews/s07/preview.bbl",
+    "build/previews/s07/preview.tex",
+    "sections/01_introduction/01_acknowledgments.tex",
+    "sections/01_introduction/02_ai_disclosure.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/06_top_hodge/01_exact_vertices.tex",
+    "sections/06_top_hodge/02_bessel_critical_point.tex",
+    "sections/06_top_hodge/03_tree_tails.tex",
+    "sections/06_top_hodge/04_correction_and_proof.tex",
+    "sections/06_top_hodge/section.tex",
+    "sections/07_ilw_transport/01_hodge_potential.tex",
+    "sections/07_ilw_transport/02_specialization.tex",
+    "sections/07_ilw_transport/03_exact_transport.tex",
+    "sections/07_ilw_transport/04_borel_transform.tex",
+    "sections/07_ilw_transport/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s07/preview.pdf",
+  "pdf_sha256": "6fea0bf7fadcbdfb20a80bb7f74f2596fe3159c23284c7ea1f15671f3471cbfe",
+  "schema_version": 1,
+  "snapshot": "449cdc4fe9f1920aeabf0c4775a4c55390cde48a2fc7fa98e0fc863b5aa79158",
+  "source_hash": "cc66420635c69cfb77c66f957d30bbb4820970ff692fadb66e592a3c419e11e8",
+  "strict": true,
+  "time": "2026-11-16T12:35:14+00:00",
+  "unit": "s07",
+  "with_dependencies": true
+}

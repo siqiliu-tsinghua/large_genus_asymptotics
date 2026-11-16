@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "status": "pass",
+      "evidence": "The new disclosure (02_ai_disclosure.tex:4-12) uses only N_g and Theorems 1.1-1.4, all defined earlier in the byte-preserved Introduction; it adds no mathematical object, range or hypothesis. The four original theorem blocks, six numbered formulas and first-use setup remain in their original order, and all 430 complete-layout label numbers match the previously signed companion."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "N_g remains the normalization in Theorem 1.1, without a renamed scale or a new claim about its expansion precision. The exact requested model names and existing LiuData26 reference are consistent between the disclosure and interface; the inherited a_g,b_g(h),b_g, g_2, j_i/ell, z_{0,1}, Chow coefficient placement and b/beta_g roles remain untouched in the preserved mathematical prefix."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "The two short additions inherit N_g and use direct theorem references instead of restating formulas or basic moduli notation; no model acronym, mathematical alias or extra numbered result is introduced. The public hodge_data name identifies the existing cited dataset, and the expressly requested workflow-provenance sentence adds no reader obligation to access internal files or software."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "section.tex retains the entire two-route reading guide as its exact old byte prefix and then inputs the two unnumbered subsections. In the actual companion p.4, that guide remains above the disclosures and the Section 2 opening remains below them; no mathematical step, result destination or proof guide is displaced into the personal account."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "01_acknowledgments.tex has a single acknowledgment sentence; 02_ai_disclosure.tex has four purposeful paragraphs covering discovery/proof roles, writing and human supervision, scholarly credit/priority, and the Lean/error caution. The wording explicitly assigns scholarly credit to GPT-6.1-Sol, denies both human scholarly credit and priority, and distinguishes the human 'I' from the named models; both headings and all four paragraphs are complete and legible on p.4 of the native and current-layout companion PDFs, with no proof interruption or engineering-material dependency."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "The only mathematical symbol in the added prose is the already established N_g, whose subscripted form and theorem link are preserved; model names stay ordinary textual proper names. The new author-information block consists of the four supplied text lines, not new notation, so the existing divisions among Hodge indices, counts, analytic variables and constants are unchanged."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "I inspected native pp.1,4-5 and current-layout companion pp.4-5,101: the title/abstract are intact, the optional end-of-Introduction material is visibly separated from the Section 2 heading and next-page conventions, and neither heading is stranded. Both actual last pages show exactly the supplied four author-information lines after the bibliography at the bottom above the page number; the affiliation and email are readable, without a detached extra page, collision or overflow. This supports the S1 addition/layout review only, while later-unit metadata freshness remains pending."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Reviewed the exact ACK-AI-DISCLOSURE request, r008 dispatch/diff/template, updated context and interface, new subsection sources, actual original-writer disclosure_handoff.md and archived ACK. This is the supplied author account; no external model-capability, authorship-policy or historical-provenance verification is claimed.",
+    "Verified the actual /root/s02_readability binding, current snapshot 9c83806c88905e174abf2c508386866e8fcc7c5eb6849bfc3b947aec02779705 and all 24 archived/live review inputs. The preceding Introduction is an exact byte prefix; the retained files in all nine other scientific unit directories match their signed baselines. The old s01 r006 author response merely leaves input selection, not its historical archive.",
+    "Independently checked both receipt hashes from s01-r008-summary.json, their source fingerprints, PDF/TeX/text/aux/helper/main hashes, label maps and fresh pdftotext output. The five-page native PDF SHA256 is ce4132c8559aa877daf24211b7cb360c9a8071da5fb4cdb1bf162f2c2462392e, source 92bbae10843a063fe7bfbfecbaa9ae9989f3697d961226bb9c2ee58f4f9360d7. It was built before submit, so its null snapshot field is correctly bound through its exact frozen/current input map rather than misrepresented as a post-submit build.",
+    "The 101-page CURRENT-LAYOUT companion SHA256 is 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd, source ac1263c003ad140c49f99dbb94a523b6a360394826f9442b64d05e6a6afc8420; its receipt records this exact frozen S1 snapshot. All 430 label numbers agree with the preceding signed full companion. Both receipts are strict, with empty standard/overfull diagnostics. Actual private inspection images are in build/ack-ai-20261116/readability-s01-r008/.",
+    "python -B scripts/validate.py --unit s01 passed. Prior S1 readability issues were already closed, so no issue is newly resolved here. No old report, paper/shared source, state or frozen output was changed or rebuilt. No new global report is issued: the companion is layout evidence, not new workflow approval for the nine metadata-stale units, and no future export is pre-signed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "9c83806c88905e174abf2c508386866e8fcc7c5eb6849bfc3b947aec02779705",
+  "summary": "Pass for the narrow author-requested acknowledgments, AI disclosure and author-information addition. The requested meaning, first-person voice, two unnumbered placements and actual last-page address layout are clear; the preserved mathematical text and numbering remain unaffected.",
+  "unit": "s01",
+  "verdict": "pass"
+}

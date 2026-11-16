@@ -1,0 +1,319 @@
+% !TeX root = ../../main.tex
+\subsection{Boundary exponentials and forgetting markings}
+\label{subsec:s02:04}
+
+We first expand the boundary exponential using the normal line of a
+node.  We then recall the forgetting formulas and invert their cycle
+sum.  A degree lemma isolates the rational-tail corrections, so that
+the final exponential specialization can also be used with existing
+cotangent and kappa insertions.
+
+For formal variables $x,y$ and a scalar parameter $a$, define the
+symmetric edge kernel
+\begin{equation}
+\label{eq:s02:edge-kernel}
+K_a(x,y)=\sum_{r=1}^{\infty}\frac{a^r(-x-y)^{r-1}}{r!}
+=\frac{1-e^{-a(x+y)}}{x+y}
+=\int_0^a e^{-t(x+y)}\,\dd t.
+\end{equation}
+Here $r$ runs over the positive integers, and the integral is formal
+termwise integration in $t$.  The numerator of the fraction is
+divisible by $x+y$, so no inversion of a cotangent class is involved.
+
+\begin{prp}[Boundary exponential]
+\label{prp:s02:boundary-exponential}
+Let $a,c$ be scalar parameters, and let $d_1,\ldots,d_n$ be
+nonnegative integers.  Then
+\begin{equation}
+\label{eq:s02:boundary-exponential}
+\begin{split}
+&e^{a\delta+c\kappa_1}\prod_{i=1}^n\psi_i^{d_i}\\
+&=\sum_{\Gamma\in\mathcal G_{g,n}}
+\frac{1}{|\operatorname{Aut}\Gamma|}\,
+(\xi_\Gamma)_*\left[
+\prod_{v\in V(\Gamma)}e^{c\kappa_1^{(v)}}
+\prod_{i=1}^n\psi_i^{d_i}
+\prod_{\{f,f'\}\in E(\Gamma)}K_a(\psi_f,\psi_{f'})
+\right].
+\end{split}
+\end{equation}
+All classes in brackets lie on $\MM_\Gamma$; a leg class is on its
+incident factor.  Both sides are truncated by codimension.  The graph
+with no edges contributes the original vertex expression.
+\end{prp}
+
+\begin{prf}
+The smoothing parameter of the node for $\{f,f'\}$ belongs to the
+tensor product of its two tangent lines.  Its normal line therefore
+has first Chern class $-\psi_f-\psi_{f'}$.  In a product of boundary
+divisors, repeating this node $r$ times contributes
+$(-\psi_f-\psi_{f'})^{r-1}$ after the gluing pushforward.
+
+\smallskip\noindent Distinct nodes intersect as the corresponding boundary branches.
+Grouping the terms of the exponential by their graph of distinct
+nodes gives at each edge the series
+$\sum_{r\geq1}a^r(-\psi_f-\psi_{f'})^{r-1}/r!$, which is
+\eqref{eq:s02:edge-kernel}.  The factorial of the exponential cancels
+the orderings of the chosen divisor factors; passing from distinguished
+graph labels to graph isomorphism classes leaves
+$1/|\operatorname{Aut}\Gamma|$.
+
+\smallskip\noindent These are algebraic self-intersection and pushforward calculations,
+valid in rational Chow on the moduli stack.  Finally, the projection
+formula and \eqref{eq:s02:tautological-gluing} supply the vertex
+exponentials and leg factors in \eqref{eq:s02:boundary-exponential}.
+\end{prf}
+
+\begin{rmk}[Boundary source]
+\label{rmk:s02:boundary-source}
+We use the constant edge series $a$ and a vertex series linear with
+coefficient $c$ in Andersen et al.'s formula
+\cite[Lemma 3.10, (3.18)--(3.22)]{ABCDGLW23}.
+Their weighted one-edge pushforward is our $\delta$.
+
+The cited statement is in cohomology.  The proof above uses algebraic
+normal-line self-intersection and pushforward, giving the stated
+identity in rational Chow.
+\end{rmk}
+
+\begin{exm}[One-edge weights]
+\label{exm:s02:one-edge-weights}
+On $\MM_{1,1}$, the loop graph with vertex type $(0,3)$ and one leg
+has two automorphisms, exchanging its loop flags.  Its contribution
+to the bare boundary exponential is $(a/2)(\xi_\Gamma)_*1$.
+On $\MM_{0,4}$, the separating edge with leg sets $\{1,2\}$ and
+$\{3,4\}$ has trivial automorphism group and contributes
+$a(\xi_\Gamma)_*1$.
+
+A separating-edge swap must preserve genera and every leg label;
+the unmarked equal-genus case therefore has weight $1/2$.
+Ordered separating splittings always require a prefactor $1/2$,
+since unequal sides occur twice.  This agrees with
+$\delta=\frac12\xi_*1$ in \eqref{eq:s02:ordered-boundary}.
+\end{exm}
+
+\paragraph{Forgetting maps.}
+To express kappa insertions by additional cotangent markings, we will
+use the following forgetting maps.
+For an integer $m\geq1$, write
+$\pi_m=\pi_{n+m,n}:\MM_{g,n+m}\to\MM_{g,n}$, with
+$\pi_0$ the identity.  In a pullback formula, classes inside
+$\pi_m^*$ are on the base, and classes outside it are intrinsic to
+the source.
+
+\paragraph{One-point comparisons.}
+For $1\leq i\leq n$, let
+$D_{0,\{i,n+1\}}$ be the divisor whose rational tail carries exactly
+the markings $i,n+1$.  The one-point identities used below are
+\begin{equation}
+\label{eq:s02:one-point-comparison}
+\pi_1^*\psi_i=\psi_i-D_{0,\{i,n+1\}},\qquad
+\pi_1^*\kappa_a=\kappa_a-\psi_{n+1}^a
+\quad(1\leq i\leq n,\ a\geq0).
+\end{equation}
+\begin{prf}
+The natural map from the pulled-back old cotangent line to the
+source cotangent line is an isomorphism away from this three-pointed
+tail and vanishes to order one along its divisor. This gives the
+first identity.
+
+For the kappa comparison, consider the universal curve over
+$\MM_{g,n+1}$ and its stabilization to the pulled-back universal
+curve over $\MM_{g,n}$.  On the former, let $D$ be the new section
+divisor and let $\mathcal L$ be the pullback of the old logarithmic
+dualizing line.  The contracted rational components have degree zero
+for the dualizing line with only the old markings; stabilization
+therefore identifies that line with $\mathcal L$.  The new
+logarithmic dualizing line is $\mathcal L(D)$.  On $D$, the class
+$c_1(\mathcal L)$ restricts to $\psi_{n+1}$, while the section's
+self-intersection is $-\psi_{n+1}$.  The projection formula and flat
+base change identify the pushforward of $c_1(\mathcal L)^{a+1}$
+with $\pi_1^*\kappa_a$.  Expanding $c_1(\mathcal L(D))^{a+1}$ adds
+\[
+\psi_{n+1}^a\sum_{k=1}^{a+1}(-1)^{k-1}\binom{a+1}{k}
+=\psi_{n+1}^a.
+\]
+This proves the kappa comparison in Chow without appealing to
+injectivity of the cycle map.
+\end{prf}
+
+\begin{rmk}[Comparison source]
+\label{rmk:s02:comparison-source}
+The kappa identity is \cite[(2.10)]{KMZ96v1} in the logarithmic
+convention; the proof above establishes it in Chow.
+\end{rmk}
+
+\begin{lmm}[Rational-tail degree]
+\label{lmm:s02:rational-tail-degree}
+Fix $m\geq1$ and integers $r_1,\ldots,r_m\geq1$, and set
+$W=\prod_{k=1}^m\psi_{n+k}^{r_k}$ on $\MM_{g,n+m}$.  Then
+\begin{equation}
+\label{eq:s02:tail-comparisons}
+\begin{split}
+W\pi_m^*\psi_i&=W\psi_i\quad(1\leq i\leq n),\\
+W\pi_m^*\kappa_1
+&=W\left(\kappa_1-\sum_{k=1}^m\psi_{n+k}\right).
+\end{split}
+\end{equation}
+The same replacements hold in any polynomial or codimension-truncated
+formal series in the old cotangent classes and $\kappa_1$, after
+multiplication by $W$.
+\end{lmm}
+
+\begin{prf}
+Before multiplication by $W$, iterating
+\eqref{eq:s02:one-point-comparison} expresses the comparison errors
+in \eqref{eq:s02:tail-comparisons} as linear combinations of
+rational-tail divisors contracted by $\pi_m$.  For an old cotangent
+class these tails carry that old marking; the remaining boundary
+terms in the kappa comparison carry only new markings.  Pulling back a comparison
+divisor at an intermediate forgetting step produces divisors of this
+same kind.  Comparing an intermediate new cotangent class with its
+class on the final source also produces only these divisors; this
+gives the surviving sum of new cotangent classes in the second line.
+
+Such a tail has $k$ new markings and $\epsilon$ old markings, where
+$k\geq1$ and $\epsilon\in\{0,1\}$.  Its moduli factor is
+$\MM_{0,k+\epsilon+1}$.  With one old marking its dimension is
+$k-1$; with none it is $k-2$.  Only stable factors occur.  On this
+factor, the new cotangent powers from $W$ have total degree at least
+$k$ and hence vanish.  The projection formula shows that $W$
+annihilates the divisor class and the ideal generated by all these
+comparison divisors.  This proves the two equalities.  Multiplication
+modulo that ideal gives the polynomial statement; codimension
+truncation gives the formal-series statement.
+\end{prf}
+
+In particular, for scalar parameters $c,t_1,\ldots,t_n$ the lemma gives
+\begin{equation}
+\label{eq:s02:tail-exponential}
+W\pi_m^*e^{c\kappa_1+\sum_{i=1}^nt_i\psi_i}
+=W e^{c\kappa_1-c\sum_{k=1}^m\psi_{n+k}+\sum_{i=1}^nt_i\psi_i}.
+\end{equation}
+The term $-c\sum_k\psi_{n+k}$ remains.  This statement requires a
+positive cotangent power at every forgotten marking, as in the lemma.
+
+Let $[m]=\{1,\ldots,m\}$ and let $\mathfrak S_m$ be its permutation
+group.  For $\sigma\in\mathfrak S_m$, denote by
+$\operatorname{Cyc}(\sigma)$ its set of cycles, viewed as subsets of
+$[m]$.  A set partition $\mathcal P$ of $[m]$ consists of unordered
+nonempty blocks.  When writing its blocks as $C_1,\ldots,C_k$, with
+$k=|\mathcal P|$, any ordering may be chosen.
+
+\begin{lmm}[Forgetting and partition inversion]
+\label{lmm:s02:forgetting-inversion}
+For $m\geq1$ and nonnegative integers $a_1,\ldots,a_m$,
+\begin{equation}
+\label{eq:s02:forgetting-permutations}
+(\pi_m)_*\prod_{i=1}^m\psi_{n+i}^{a_i+1}
+=\sum_{\sigma\in\mathfrak S_m}
+\prod_{C\in\operatorname{Cyc}(\sigma)}\kappa_{\sum_{i\in C}a_i}.
+\end{equation}
+Its inverse is
+\begin{equation}
+\label{eq:s02:partition-inversion}
+\prod_{i=1}^m\kappa_{a_i}
+=\sum_{\mathcal P\text{ a partition of }[m]}
+(-1)^{m-|\mathcal P|}(\pi_{|\mathcal P|})_*
+\prod_{k=1}^{|\mathcal P|}
+\psi_{n+k}^{\,1+\sum_{i\in C_k}a_i}.
+\end{equation}
+The pushforward is independent of the chosen ordering of the blocks.
+\end{lmm}
+
+\begin{prf}
+The geometric inputs are one-point forgetting and the logarithmic
+comparison \eqref{eq:s02:one-point-comparison}.  The old cotangent
+pullback corrections are killed by the positive power at the point
+being forgotten.  Thus the push-pull computation recorded in
+\cite[(2.9)--(2.11)]{KMZ96v1} applies in Chow as well as cohomology.
+It gives a recursion for the left side of
+\eqref{eq:s02:forgetting-permutations}: the last label either supplies
+its own kappa factor, or its degree is added at one of the other
+labels.  These alternatives correspond exactly to the last label
+being a singleton cycle or being inserted after a specified label in
+a cycle.  Starting with $m=1$ proves the permutation formula.
+
+To verify the inverse, substitute the permutation formula into its
+right side and group by the resulting blocks of original labels.  A
+block formed from $k$ intermediate blocks acquires the cycle factor
+$(k-1)!$.  The signed generating series for one intermediate nonempty
+block of labeled elements is $1-e^{-z}$, for a formal variable $z$.
+Consequently, the generating series for each resulting block is
+\[
+\sum_{k=1}^{\infty}\frac{(1-e^{-z})^k}{k}
+=-\log(e^{-z})=z.
+\]
+Here division by $k!$ for unordered intermediate blocks combines with
+$(k-1)!$ to give $1/k$.  Only singleton resulting blocks survive,
+with coefficient one, proving \eqref{eq:s02:partition-inversion}.
+\end{prf}
+
+\begin{rmk}[KMZ source]
+\label{rmk:s02:forgetting-source}
+The formulas are recalled from Kaufmann--Manin--Zagier
+\cite[Theorem 2.2, (2.6), and Lemma 2.2.1, (2.8)]{KMZ96v1}.
+They credit Arbarello--Cornalba for the geometric cycle formula and
+note its earlier unpublished derivation by Faber--Zagier.
+
+Their $\omega_n(a_1,\ldots,a_m)$ in (2.4) is the left side of
+\eqref{eq:s02:forgetting-permutations}, and $\omega_n(a)=\kappa_a$.
+Their ordered-block inverse has a factor $1/k!$; unordered partitions
+give \eqref{eq:s02:partition-inversion}.
+\end{rmk}
+
+For instance, for nonnegative integers $a,c$,
+\begin{equation}
+\label{eq:s02:two-kappas}
+\kappa_a\kappa_c
+=(\pi_2)_*(\psi_{n+1}^{a+1}\psi_{n+2}^{c+1})
+-(\pi_1)_*\psi_{n+1}^{a+c+1}.
+\end{equation}
+The inverse has no block factorials; the factorials $(|C|-1)!$ occur
+only when cycles with the same underlying block are counted in the
+forward permutation sum.
+
+\begin{crl}[Exponential kappa specialization]
+\label{crl:s02:kappa-exponential}
+For a scalar parameter $s$,
+\begin{equation}
+\label{eq:s02:kappa-exponential}
+e^{s\kappa_1}
+=\sum_{m=0}^{\infty}\frac{1}{m!}(\pi_m)_*
+\prod_{i=1}^m\psi_{n+i}(1-e^{-s\psi_{n+i}}).
+\end{equation}
+The empty product is one.  At $s=1$ this is the desired expansion of
+$e^{\kappa_1}$ by additional cotangent insertions.  At fixed $(g,n)$
+the right side is finite after codimension truncation.
+\end{crl}
+
+\begin{prf}
+Expand $e^{s\kappa_1}$ and apply
+\eqref{eq:s02:partition-inversion} to each power of $\kappa_1$.
+If a partition has $m$ blocks of sizes $r_1,\ldots,r_m\geq1$, its
+contribution, after cancelling the factorial for the original labels,
+has coefficient
+\[
+\frac{1}{m!}\prod_{i=1}^m
+\frac{(-1)^{r_i-1}s^{r_i}}{r_i!}.
+\]
+The corresponding new marking carries $\psi_{n+i}^{r_i+1}$.
+For $1\leq i\leq m$, summing its block size gives
+\[
+\sum_{r=1}^{\infty}\frac{(-1)^{r-1}s^r}{r!}\psi_{n+i}^{r+1}
+=\psi_{n+i}(1-e^{-s\psi_{n+i}}).
+\]
+This proves \eqref{eq:s02:kappa-exponential}, including all block
+and marking factorials.  Each new factor has minimum degree two;
+forgetting $m$ markings lowers codimension by $m$, so its pushforward
+has minimum degree $m$.  Thus terms with $m>3g-3+n$ vanish.
+\end{prf}
+
+The projection formula allows multiplication by a Hodge insertion and
+old cotangent factors.  Hodge classes pull back unchanged.  Each new
+factor has degree at least two, so
+Lemma~\ref{lmm:s02:rational-tail-degree} replaces the old cotangent
+pullbacks by their classes on the source.  An additional kappa
+background requires exactly \eqref{eq:s02:tail-exponential}.
+These finite-genus identities do not supply the uniform bounds needed
+when the summed data grow with genus.

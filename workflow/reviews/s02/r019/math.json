@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual original binding, canonical snapshot, 33 archive/live inputs and artifacts, writer ACK and fresh approved S1 r009; the inherited layout changes introduce no new geometric or literature premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight S2 files equal r018, preserving stability, complex-codimension ranges, node/section degrees and every rational-tail/new-marking hypothesis.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The identical source retains logarithmic kappa, factorial Chern normalization, ordered-branch halves, marking corrections and exponential-to-power factorials; the TOC and footer spacing change no coefficient or mathematical counter.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Unchanged S2 text/interface and inherited mathematical definitions preserve psi/kappa/Bernoulli first use, g_2, j_i/ell and rational Chow notation; multi-subagent is only disclosure wording and the common companion retains all 430 label numbers.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete assessment of the written GRR-convention, Hodge gluing, boundary and forgetting arguments remains valid on identical source, with contents navigation and contact spacing supplying no proof step or reader dependency.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same finite-genus identities, new-psi bounds, retained kappa pullback correction and finite exponential cutoff keep their original quantifiers; no cosmetic change enlarges a range or strengthens an estimate.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta from r018 is five inherited changes plus the new S1 layout_handoff.md, with no removal; each matches the already reviewed S1 r009 inputs. All eight own files are unchanged. Actual writer ACK SHA256 c3be06e3c8ba552f61250f6dd214299e4465afb0ac9af8a5ad656d033f7c6993.",
+    "Actual standard source SHA256 243cf6f8f7a7232184ef706d89f6a4a52832ac51609b23aa1d8e73b1b558543e equals the new frozen fingerprint; PDF c2b44276a6d23e35f4da1b6205448e090bf9dd14bf15b892ffc5e555f656990e matches the strict/passed/with-dependencies receipt and empty diagnostics. The receipt retains the pre-submit r018 snapshot field, transparently distinguished from this exact r019 signature.",
+    "Verified unchanged common companion record/artifact hashes, source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc and PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a; reused the actual S1 TOC/footer/430-label inspection without repeated images. No proof/source research, mathematics, build or old-proof reading was repeated. Only these two reports were written, with no source/state/history/output edits or pending-unit/future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 19,
+  "schema_version": 1,
+  "snapshot": "1f6ffe2759cf413ffde85f4d83d46007f7a25fe0f355a238758d3e35ebabc05e",
+  "summary": "LAYOUT-TWEAKS: pass on S2 r019. The exact inherited wording/TOC/footer changes and fresh S1 r009 dependency preserve all S2 geometric identities, conventions and mathematical scopes.",
+  "unit": "s02",
+  "verdict": "pass"
+}

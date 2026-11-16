@@ -12,7 +12,8 @@
     "workflow/roles/math.md",
     "workflow/roles/readability.md",
     "workflow/roles/academic.md",
-    "workflow/PROTOCOL.md"
+    "workflow/PROTOCOL.md",
+    "backmatter/author_information.tex"
   ],
   "units": [
     {
@@ -22,7 +23,16 @@
       "kind": "body",
       "number": 1,
       "outline_heading": null,
-      "subsections": [],
+      "subsections": [
+        {
+          "path": "sections/01_introduction/01_acknowledgments.tex",
+          "title": "Acknowledgments"
+        },
+        {
+          "path": "sections/01_introduction/02_ai_disclosure.tex",
+          "title": "AI disclosure"
+        }
+      ],
       "title": "Introduction"
     },
     {

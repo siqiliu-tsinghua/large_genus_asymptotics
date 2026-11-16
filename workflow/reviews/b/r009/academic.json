@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The nine unchanged Appendix B inputs preserve explicit hypotheses and adjacent proofs while inheriting only the already inspected TOC, multi-subagent terminology and 2em author-information spacing."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The cosmetic delta leaves DLMF?s Bessel identities and the Section 6/7 exact inputs distinct from the appendix?s own inverse-domain, kernel, endpoint and primitive estimates."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The bibliography, DLMF locators and inherited Bessel/ILW convention translations are unchanged, with all 430 label numbers preserved in the identical verified common companion despite page-reference shifts."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The finite-layer common domains, larger-neighborhood derivative budgets and genus-one primitive exception retain their scopes, without a new interchange, stronger remainder or approval of pending units/future export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual d81c3ab51c87 academic dispatch and verified summary/delta, original ACK/hash, real binding, live/archive/submission/artifacts, nine unchanged own inputs/bibliography and all four dependencies? actual three-role approval/freshness.",
+    "Standard PDF/source match the frozen fingerprint: source e94a1a4089089f394f40700278869c3fcac560dd5b15c7d47eca0042b99f04f4, PDF bbd7b5f4accd4bc02eef24ef0ec26bab435224d22f79da846771c0bed91a906d; the strict pre-submit receipt retains its r008 snapshot field and has no diagnostics. Common post-freeze companion inputs/artifacts/hash match the previously inspected shared layout. No proof/whole-paper reread, research, scientific calculation, build, repeated picture or source/state/history edit, and no future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "dc3de6c832d847d21b37b6cc173126a3951c02ea955d6939dbaa04c508ce20c1",
+  "summary": "LAYOUT-TWEAKS preserves Appendix B source distinctions and analytic scopes on the verified new snapshot.",
+  "unit": "b",
+  "verdict": "pass"
+}

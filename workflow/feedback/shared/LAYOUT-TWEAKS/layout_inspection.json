@@ -1,0 +1,22 @@
+{
+  "observer": "/root",
+  "classification": "Actual visual inspection of current-layout companion, not final workflow approval",
+  "source_hash": "2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc",
+  "actual_pages_viewed": [
+    1,
+    2,
+    102
+  ],
+  "observations": [
+    "Page 1: title, author, abstract, then Contents; TOC is legible and stays within margins.",
+    "Page 2: remaining TOC entries followed by Introduction; no extra page break inserted.",
+    "Page 102: references end normally, then four exact author-information lines separated by the requested vertical gap; the block is no longer bottom-aligned."
+  ],
+  "latex_passes_to_stability": 4,
+  "label_numbers_preserved_from_previous_canonical_pdf": 430,
+  "artifacts": {
+    "build/layout-tweaks-20261116/layout-3826cdf4eff6/page-1.png": "287b127aed8526bc3af91f369eb448f97066800254e89a3f4dc2315e8d2b7ca0",
+    "build/layout-tweaks-20261116/layout-3826cdf4eff6/page-2.png": "8dd6be7f35751b8e97f13e3c962104d9b0c7c7b3dd389544ffb1b7c9592a4f4e",
+    "build/layout-tweaks-20261116/layout-3826cdf4eff6/page-102.png": "fb6e983b1a5d4b8430b10304b33470a055bc25c42a370d3c95b9dc76d40172ce"
+  }
+}

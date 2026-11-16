@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 45 archive/live inputs and artifacts, writer ACK and fresh approved S1 r009/S2 r019; the cosmetic update adds no FP, Bessel or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All twelve S6 files equal r013, preserving stable vertex ranges including genus zero/m=0, full-tree degree/edge bounds and the nonelliptic endpoint order at least two.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged source retains beta_g versus b_g/scalar b, R=rho/12, elliptic-leaf symmetry and both factorials; the contents and footer gap change no coefficient or mathematical counter.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Unchanged S6 text/interface retains g_2, z_{0,1}, Phi/w and local amplitude scopes, while multi-subagent is only disclosure wording and the common companion retains all 430 previously verified label numbers.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The original complete assessment of exact vertices, all-type circle bounds, whole-tree summation and saddle/elliptic recovery applies to identical source, with supplemental coefficients still separately reported and details omitted.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved full-tree tail and odd-half-order saddle cancellations retain original relative O(g_2^-2) and fixed-amplitude scopes, with no stronger remainder or growing-parameter claim from the cosmetic changes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta from r013 is five inherited changes plus one new S1 layout handoff, with no removal; all twelve own files remain unchanged and inherited bytes match S2 r019. Actual writer ACK SHA256 28655dce367bc45830695cde3f5c974e5e583cc9d2a4c7ef23a86fe1a0b67f89.",
+    "Actual standard source SHA256 34bdcac109fb774273139c439b05b1ff568fb673e73a6c9951e0748540cc3082 equals the new frozen fingerprint; PDF cf72d7046525aa80881e4195536d6dc090dc184061b2cbeceea9747311673f27 matches its strict/passed/with-dependencies receipt and empty diagnostics. Its snapshot field is the pre-submit r013 ID, distinct from the actual r014 signature.",
+    "The common companion record/artifact hashes remain source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc and PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a. Reused the complete prior mathematical/common-layout assessments without proof/section rereading, research, calculations, builds or pictures; only these two current reports were written, with no source/state/history/output change or future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "ce44a263d072907341620df78a05b94c5a9fb691851ed95f47ebecb24c79416f",
+  "summary": "LAYOUT-TWEAKS: pass on S6 r014. The exact inherited cosmetic changes preserve the independent top-Hodge proof, Bessel normalization, relative O(g_2^-2) precision and separate supplementary coefficients.",
+  "unit": "s06",
+  "verdict": "pass"
+}

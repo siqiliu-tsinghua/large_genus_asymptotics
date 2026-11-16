@@ -1,0 +1,246 @@
+% !TeX root = ../../main.tex
+\subsection{The two leading coefficients of a single character}
+\label{subsec:s05:02}
+
+For one source of degree three, let $T_g^{\rm free}$ and
+$T_g^{\rm edge}$ denote the graph sums in
+\eqref{eq:s05:source-graphs} with that source assigned, respectively,
+to a vertex or to an edge, omitting the Bernoulli prefactor. Thus
+\begin{equation}\label{eq:s05:single-source}
+ \int_{\MM_g}e^{12\alpha\lambda_1}\mathrm{ch}_3
+       =-\frac1{720}(T_g^{\rm free}+T_g^{\rm edge}).
+\end{equation}
+A free marking gives the leading term. At the next order, terms
+from free markings on the $q=1$ cores cancel against the corresponding
+denominator terms.
+A specified self-loop on the $q=0$ core remains. We calculate both
+parts before conversion to the normalized Hodge bracket.
+
+\begin{lmm}[One source]\label{lmm:s05:single-source}
+As $g\to\infty$,
+\begin{align}
+ \frac{T_g^{\rm free}}{8\pi^2gZ_g(1)}
+ &=f^{(4)}(\alpha)-\frac{5f^{(4)}(\alpha)}{4g}\notag\\
+ &\quad-\frac{9f^{(4)}(\alpha)
+          +\tfrac{15}{2}\alpha f^{(5)}(\alpha)
+          +\alpha^2 f^{(6)}(\alpha)}{\pi^2g}
+          +O(g^{-2}),
+ \label{eq:s05:free-ratio}\\
+ \frac{T_g^{\rm edge}}{Z_g(1)}
+ &=-\frac12 f'(\alpha)^2+O(g^{-1}).
+ \label{eq:s05:edge-ratio}
+\end{align}
+\end{lmm}
+\begin{prf}
+\emph{Truncation before expansion.}
+Use \eqref{eq:s05:source-tail} with $r=1$ and $M=2$.
+All graphs with no large vertex or with $q\geq2$ contribute
+$O(F_g g^{-1})$ to either source sum. On the remaining cores,
+\eqref{eq:s05:decorated-core-bound} discards every legal
+$p>\log g$ before a large-genus expansion is used. For
+$p\leq\log g$ the large genus is $g-O(\log g)$ and its valence is
+$O(\log g)$. The HMT thresholds and summable remainder argument in
+Proposition~\ref{prp:s03:core-expansion} therefore apply, also after
+the fixed derivatives just used in the majorant proof.
+Lemma~\ref{lmm:s03:degree-moments} sums their polynomial degree
+errors. In this way a relative error $O(g^{-2})$ in a free-marking
+term of size $F_g g$ is $O(F_g g^{-1})$ after summation. Only leading
+terms are needed for the specified-edge part of size $F_g$.
+
+\emph{The common $q=1$ terms.}
+A free marking on a small vertex of a $q=1$ core has $s=0$ in
+\eqref{eq:s05:decorated-core-bound}, so it is already
+$O(F_g g^{-1})$.
+
+A free marking on the large vertex instead
+multiplies the leading contribution of that same core by
+$8\pi^2g f^{(4)}(\alpha)$. Indeed its leading volume ratio is
+$8\pi^2g$, and its differentiated leg factor is
+$f^{(4)}(\alpha)$. The core, its small-vertex integrals, its
+loop weights and its automorphism factor are unchanged.
+This is an additive identity of leading terms for each core and
+loop count, without division by a leg factor.
+
+Consequently all $q=1$ contributions to $T_g^{\rm free}/(8\pi^2g)$ equal
+$f^{(4)}(\alpha)$ times their denominator contributions at order
+$g^{-1}$ and cancel on dividing by $Z_g(1)$. The unmodified
+first corrections on the $q=0$ graph cancel in the same way.
+We are left with the increment caused by the new marking on that
+graph. A specified edge on a $q=1$ core is
+$O(F_g g^{-1})$ and needs no coefficient calculation.
+
+\emph{The free-marking increment.}
+Write $G=g-p$ and $n=2p$ on the one-vertex graph, and let
+$\mathbf d$ be its old degree tuple, with total $D$ and zero count
+$m_0$. The first volume coefficient \eqref{eq:s03:c-one} gives
+\begin{equation}\label{eq:s05:one-mark-volume}
+ \frac{V_{G,n+1}}{8\pi^2G V_{G,n}}
+ =1+\frac{n/2-5/4+(2-n)/\pi^2}{G}+O(G^{-2}).
+\end{equation}
+For fixed $n$ this follows directly by dividing
+\eqref{eq:s03:fixed-n-volume}; on the retained growing valences its
+coefficients and polynomial remainders have the uniform meaning
+established in Section~\ref{sec:s03}. Including $G/g=1-p/g$, the
+extra volume factor at order $g^{-1}$ is
+$-5/4+(2-2p)/\pi^2$.
+
+The new marking in \eqref{eq:s05:free-markings} has a factor
+$\psi_{n+1}^4e^{-\alpha\psi_{n+1}}$. Its descendant degree
+$d\geq4$ is therefore always positive, and $m_0$ does not change.
+The first profile \eqref{eq:a:first-profile} gives the exact
+polynomial difference
+\begin{align}
+ &e_{n+1,1}(\mathbf d,d)-e_{n,1}(\mathbf d)\notag\\
+ &\quad=-\frac{4Dd+2d^2+2D+(2n-3)d-n+2}{\pi^2}.
+ \label{eq:s05:profile-increment}
+\end{align}
+This also holds for the empty old tuple. By
+\eqref{eq:a:profile-genus-conversion}, half this difference is the
+increment of the coefficient of $G^{-1}$; its source expansion is
+in $(2G-2+n)^{-1}$, rather than $G^{-1}$.
+
+For a complex degree-generating variable $z$, put
+$\varphi(z)=z^4f^{(4)}(\alpha z)$. Its coefficient of $z^d$
+is the weight of the new degree $d$, since differentiating a term
+$t^d$ four times leaves degree-counting factor $z^d$.
+All these series, also with any fixed degree moment, converge
+absolutely. The joint generator of Lemma~\ref{lmm:s04:loop-moments}
+gives $\mathcal L[p]=S(1)$, while
+\eqref{eq:s04:representative-moments} gives
+$\mathcal L[D]=-S(1)$. Substituting $n=2p$ into
+\eqref{eq:s05:profile-increment} yields, for each integer $d\geq4$,
+\begin{equation}\label{eq:s05:averaged-increment}
+ \frac12\mathcal L\left[
+   e_{2p+1,1}(\mathbf d,d)-e_{2p,1}(\mathbf d)\right]
+ =\frac{2S(1)-d^2+3d/2-1}{\pi^2}.
+\end{equation}
+The volume increment contributes
+$[-5/4+(2-2S(1))/\pi^2]\varphi(1)$.
+Adding \eqref{eq:s05:averaged-increment} with weights
+$[z^d]\varphi(z)$ cancels $S(1)$. The first correction in the
+free ratio is consequently
+\begin{equation}\label{eq:s05:free-moment}
+ -\frac54\varphi(1)+\frac1{\pi^2}
+ \left[\varphi(1)+\left.
+  \left(\frac32z\partial_z-(z\partial_z)^2\right)
+                  \varphi(z)\right|_{z=1}\right].
+\end{equation}
+Here
+\begin{align*}
+ \varphi(1)&=f^{(4)}(\alpha),\\
+ (z\partial_z)\varphi(z)|_{z=1}
+       &=4f^{(4)}(\alpha)+\alpha f^{(5)}(\alpha),\\
+ (z\partial_z)^2\varphi(z)|_{z=1}
+       &=16f^{(4)}(\alpha)+9\alpha f^{(5)}(\alpha)
+                                     +\alpha^2f^{(6)}(\alpha).
+\end{align*}
+Substitution proves \eqref{eq:s05:free-ratio}.
+
+\emph{The specified self-loop.}
+By \eqref{eq:s05:tagged-edge}, the edge coefficient is
+\[
+ \mathcal P_3(x,y)e^{-\alpha(x+y)},\qquad
+ \mathcal P_3(x,y)=x^2-xy+y^2.
+\]
+There is no remaining factor $1/(x+y)$ and no integration in the
+specified edge parameter.
+For $p\geq1$ loops, specifying one of them changes the symmetry
+factor by
+\begin{equation}\label{eq:s05:specified-loop-weight}
+ \frac{p}{2^pp!}=\frac1{2\,2^{p-1}(p-1)!}.
+\end{equation}
+The other loops sum to $e^{S(1)}$. The specified loop therefore
+contributes the factor
+\[
+ \frac12\left(2f(\alpha)f''(\alpha)-f'(\alpha)^2\right)
+       =-\frac12f'(\alpha)^2,
+\]
+where $f(\alpha)=0$ was used. Its branch-exchange factor $1/2$
+has been counted exactly once in
+\eqref{eq:s05:specified-loop-weight}. Dividing by the leading
+$e^{S(1)}V_{g,0}$ cancels the other loops and the volume factor.
+The already controlled remainder is $O(g^{-1})$, proving
+\eqref{eq:s05:edge-ratio}.
+\end{prf}
+
+Only finitely many derivatives are now needed. For each integer
+$k\geq0$ define
+\begin{equation}\label{eq:s05:endpoint-derivatives}
+ X_k=(8\pi^2)^k f^{(k)}(\alpha).
+\end{equation}
+
+\begin{lmm}[Endpoint derivatives]\label{lmm:s05:endpoint-derivatives}
+These values satisfy
+\begin{equation}\label{eq:s05:derivative-recurrence}
+ X_0=0,\quad X_1=-2,\qquad
+ X_{k+2}=-(4k+6)X_{k+1}-4\pi^2X_k\quad(k\geq0).
+\end{equation}
+The required finite list is
+\begin{center}
+\begin{tabular}{c|l}
+$k$ & $X_k$ \\\hline
+$0$ & $0$ \\
+$1$ & $-2$ \\
+$2$ & $12$ \\
+$3$ & $8(\pi^2-15)$ \\
+$4$ & $1680-160\pi^2$ \\
+$5$ & $-32(\pi^4-105\pi^2+945)$ \\
+$6$ & $1344(\pi^4-60\pi^2+495)$
+\end{tabular}
+\end{center}
+\end{lmm}
+\begin{prf}
+The series \eqref{eq:s03:loop-functions} gives
+$8tf''(t)+12f'(t)+f(t)=0$. Differentiating $k$ times gives
+$8tf^{(k+2)}+(8k+12)f^{(k+1)}+f^{(k)}=0$.
+At $t=\alpha=2\pi^2$ this is precisely the recurrence after the
+rescaling \eqref{eq:s05:endpoint-derivatives}.
+The sine formula gives $f(\alpha)=0$ and
+$f'(\alpha)=-1/(4\pi^2)$, hence the two initial values.
+Successive substitution gives the table.
+\end{prf}
+
+The next calculation includes the factorial conversion in the free
+term. Both contributions then have the Hodge bracket normalization.
+
+\begin{prp}[The third character]\label{prp:s05:third-character}
+As $g\to\infty$,
+\begin{equation}\label{eq:s05:third-character}
+ \langle\mathrm{ch}_3\rangle_g
+ =\frac{2\pi^2-21}{9g^2}
+       +\frac{2(\pi^2-10)}{3g^3}+O(g^{-4}).
+\end{equation}
+\end{prp}
+\begin{prf}
+The factor in \eqref{eq:s05:character-normalization} is
+\begin{equation}\label{eq:s05:factorial-three}
+ (12\alpha)^3\frac{(3g-6)!}{(3g-3)!}
+ =\frac{(8\pi^2)^3}{g^3}
+             \left(1+\frac4g+O(g^{-2})\right).
+\end{equation}
+Combining \eqref{eq:s05:single-source} and
+\eqref{eq:s05:free-ratio}, the leading coefficient of $g^{-2}$
+is $-X_4/720=(2\pi^2-21)/9$.
+
+The free-marking coefficient at order $g^{-3}$, including the
+$4/g$ in \eqref{eq:s05:factorial-three}, is
+\begin{equation}\label{eq:s05:free-coefficient}
+ -\frac1{720}\left[
+ \frac{11}{4}X_4-
+ \frac{9X_4+15X_5/8+X_6/16}{\pi^2}\right]
+ =\frac{29\pi^2}{45}-\frac{20}{3}.
+\end{equation}
+
+For the specified loop, \eqref{eq:s05:edge-ratio} gives
+\begin{equation}\label{eq:s05:loop-coefficient}
+ -\frac{(8\pi^2)^3}{720}
+           \left(-\frac12f'(\alpha)^2\right)=\frac{\pi^2}{45}.
+\end{equation}
+
+Adding the last two values gives $2(\pi^2-10)/3$.
+The $O(g^{-1})$ error before degree conversion, including all graph,
+loop and degree tails in Lemma~\ref{lmm:s05:single-source}, becomes
+$O(g^{-4})$. The unused second relative term of
+\eqref{eq:s05:factorial-three} has the same order after multiplication
+by the leading free term. This proves the proposition.
+\end{prf}

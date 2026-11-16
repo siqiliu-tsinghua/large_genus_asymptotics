@@ -1,0 +1,29 @@
+{
+  "acknowledge": [
+    "Di Yang",
+    "Yunhui Wu"
+  ],
+  "author_information": [
+    "Si-Qi Liu",
+    "Department of Mathematical Sciences, Tsinghua University",
+    "Beijing 100084, P.R. China",
+    "liusq@tsinghua.edu.cn"
+  ],
+  "author_supplied_provenance": [
+    "Claude Opus 5.5 identified Theorem 1.1 N_g while analyzing hodge_data, but not the constants",
+    "GPT-6-Astra identified the constants but did not prove them",
+    "GPT-6.1-Sol supplied the proof and discovered/proved the following three theorems",
+    "GPT-6.1-Sol did most writing; human wrote initial Introduction, set writing rules, designed multi-agent workflow and supervised whole manuscript",
+    "scholarly credit belongs to GPT-6.1-Sol; human releases solely for knowledge sharing, claiming no scholarly credit or priority",
+    "no formal Lean verification; possible errors and reader caution"
+  ],
+  "baseline_commit": "6ebf35034d61bc1bbf3a4a64126e9eec60636939",
+  "change_id": "ACK-AI-DISCLOSURE",
+  "policy": "New explicit user instructions supersede prior author-name-only/no-acknowledgments preference and allow the requested AI provenance/workflow disclosure; no added reader dependency on internal programs. No mathematical changes or new model-capability research.",
+  "requested_placement": {
+    "acknowledgments": "two unnumbered subsections at end of Introduction",
+    "ai_disclosure": "two unnumbered subsections at end of Introduction",
+    "author_information": "after bibliography, at bottom of last page"
+  },
+  "time": "2026-11-16T10:27:32+00:00"
+}

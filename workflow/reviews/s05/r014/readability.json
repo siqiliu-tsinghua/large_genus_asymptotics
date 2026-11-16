@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "status": "pass",
+      "evidence": "All seven S5 files equal r013 byte for byte, preserving the odd source degrees and formal variables, graph assignments, degree generator and endpoint derivatives before use; the added S1 disclosure references only earlier N_g/theorem definitions and adds no S5 object or hypothesis."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "The fixed j_1,...,j_ell list and ell, F(j),G(j), a_g-normalized insertion bracket and O(g^-4) conclusion remain unchanged; new prose about N_g does not change that bracket denominator or any Chern-character normalization, and all 229 native label numbers match the unchanged companion."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "S5 still opens with the useful lambda_3/odd-character mechanism rather than repeated genus/moduli setup, and its existing source functions and reused X_k derivatives keep their calculation roles; the new author account adds no mathematical alias or internal-file reader obligation."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "Native p.32 retains the route from odd-character filtration and complete decorated-graph bounds to free-marking/specified-loop calculations and the final algebraic reduction; neither the S1 additions nor the optional S4 further coefficients become new premises."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "All S5 result/proof adjacency, common-correction paragraph divisions and finite calculations are preserved; actual native p.39 shows the direct Theorem 1.2 proof and all three short examples, with normal QED/formula placement and no omitted-detail or provenance text inserted into the proof."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "Hodge indices j_i and product length ell remain distinct from odd source degrees a_i, source count r, degree d/D and loop p/core q; the metadata adds textual model/contact names, not competing mathematical letters or changed variable scopes."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "Viewed native pp.32,39,59: S4's completed proof/Remark leads clearly into S5, its theorem/examples finish before Appendix A, and exactly four readable author lines sit after the bibliography at the bottom of the last page; the already inspected 101-page companion is reused only as CURRENT-LAYOUT evidence."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "The authoritative snapshot was read from actual summary, submission and template and recomputed canonically; the hand-typed dispatch hash was not used. Verified original binding, all 91 frozen/live review inputs, and fresh approved S1 r008/S2 r018/S3 r015/S4 r017/A r015. All seven own paths match r013, and current changes.diff equals the already-read S4 r017 event diff: four changed shared/S1 paths and four additions, none removed.",
+    "Read the exact current dispatch, summary, outline and external original-writer ACK; live/archived ACK hashes agree. Retained the just-read request/current context, actual S1 disclosure/layout assessment and complete S5 r013 reading, without a whole-book or old-proof reread.",
+    "Independently verified both receipt hashes, source fingerprints, PDF/entry/text/aux/helper/main hashes and fresh pdftotext equality. Native source SHA256 ac32137fafaa9bd9f86fcd81fca714a6aa056c6a537ce09393da35b5b2100ebb; native PDF SHA256 12d5664e07a5f88924e2eb2eba9e78a3f040de9d352884004a0c3c67f471ba0f, 59 pages. Its pre-submit null snapshot is bound by the exact frozen input map. Standard/overfull lists are empty; validate.py --unit s05 passed.",
+    "The same companion PDF SHA256 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd and receipt SHA256 2cef5d967593c271d2d995e28a464745eb8d40b74e58e1e05d015f2b8fa75732 are unchanged and verified; recent actual S1 placement/footer inspection is reused. Current private native PNGs: build/ack-ai-20261116/readability-s05-r014/.",
+    "No open or newly resolved issue; old S5 readability matters remain closed. No source/state/history/frozen output was changed or rebuilt. The current unit signature is not new complete-paper workflow approval or a future export signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "7e5515d7823dba181271b1d20d26b443e43546fd98d738e05e2cc50c9e6e48c2",
+  "summary": "Pass for the metadata-only ACK-AI-DISCLOSURE refresh. The preserved fixed-index notation, finite calculation route and O(g^-4) theorem retain their complete r013 assessment, with no new entry/ending/footer readability issue.",
+  "unit": "s05",
+  "verdict": "pass"
+}

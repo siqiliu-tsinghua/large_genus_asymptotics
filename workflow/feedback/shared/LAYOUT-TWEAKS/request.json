@@ -1,0 +1,12 @@
+{
+  "task": "LAYOUT-TWEAKS",
+  "request": "Author-requested cosmetic follow-up to ACK-AI-DISCLOSURE",
+  "changes": [
+    "Use multi-subagent in the AI disclosure",
+    "Replace author footer bottom alignment with \\vskip 2em immediately after the bibliography",
+    "Insert \\tableofcontents between abstract and Introduction"
+  ],
+  "scientific_scope": "Preserve all mathematics, theorem and equation numbers, citations and historical reviews; no recomputation or model research.",
+  "roles": "Reuse the original writer and three original reviewers; inspect only actual new differences and effects.",
+  "commit_requested": false
+}

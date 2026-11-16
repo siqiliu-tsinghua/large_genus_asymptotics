@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "status": "pass",
+      "evidence": "All 12 S6 paths equal r012 byte for byte, retaining beta_g and Phi before the exact vertices, x_*/R before the Bessel bounds and the stated closed-disk saddle-amplitude scope; the new inherited disclosure adds no symbol, local hypothesis or analytic assumption for this route."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "The distinction between beta_g, integral b_g and scalar b, and the inherited g_2,z_{0,1},rho names and normalizations remain unchanged; the author narrative's N_g reference creates no new WP input, and all 98 native label numbers match the unchanged layout companion."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "The theorem-first S6 entry still inherits the geometry directly, with no repeated basic setup or additional alias; its existing Bessel/vertex/tree names keep their repeated roles, while the optional provenance adds no reader dependency on internal checks or software."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "Actual native p.13 preserves the requested Theorem 1.3 -> basic idea -> exact vertices/uniform trees/saddle/elliptic-leaf strategy, with the independent S1/S2 route and later fixed-defect use explicit; the metadata adds no scientific step or dependence on WP corrections."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "On native p.21 the earlier elliptic-leaf repair survives with its QED at the right end of the final text line, followed by the main theorem proof and the complete same-page Further coefficients Remark; the relative O(g_2^-2) theorem and separate omitted-details status of the reported coefficients are unchanged."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "The preserved genus/marking counts, coefficient-extraction degree, analytic variables, critical constants and saddle polynomials retain their separate stated roles; added textual model/contact names do not occupy those letters or blur beta_g versus b_g versus b."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "Viewed native pp.13,21,23: finite geometry leads clearly into S6, the leaf/main-proof/optional-Remark sequence and References transition remain readable, and exactly four author lines appear at the bottom after the bibliography without collision or an extra address-only page; the companion remains CURRENT-LAYOUT evidence only."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, outline, external original-writer ACK and precise diff tail. The shared/S1 diff prefix equals the already-read S5 event diff. Verified all 44 frozen/live inputs, canonical snapshot/current binding, fresh approved S1 r008/S2 r018 and the live/archived ACK hashes; all 12 S6 files match r012.",
+    "The exact path delta is four shared/S1 changes and four additions, plus deselection of workflow/reviews/s06/r011/author_response.json; the original response still exists with its old recorded hash, and the r012 frozen copy remains present. No scientific path is removed, but the entire selected-input path set is not claimed identical.",
+    "Independently verified both receipt hashes, current source fingerprints, PDF/entry/text/aux/helper/main hashes and fresh pdftotext equality. Native source SHA256 b00864ee9e050fa421147bd92e8f0c15ba444c074de70456233de4c1b8f6df30; native PDF SHA256 c682ea31899e00e8d04005576b93eb11a4cca38efcbf0ac9875a04db6ec62673, 23 pages. Its pre-submit null snapshot binds through the exact frozen input map. Standard/overfull lists are empty; validate.py --unit s06 passed.",
+    "The same 101-page CURRENT-LAYOUT companion PDF SHA256 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd and receipt SHA256 2cef5d967593c271d2d995e28a464745eb8d40b74e58e1e05d015f2b8fa75732 remain verified. Reused my full r011 reading/r012 repair assessment and actual S1 layout inspection; only the new representative native pages were rendered under build/ack-ai-20261116/readability-s06-r013/.",
+    "The prior READABILITY-001 was already resolved in r012, so it is not newly closed here; no current issue remains. No old proof reread, scientific rerun, source/state/history edit, frozen rebuild, new global report or future export approval was performed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "0a071c2151d9b2986aa65b18e8c602e2575d3385febe3dd32f1ceb0488f65881",
+  "summary": "Pass for the metadata-only ACK-AI-DISCLOSURE refresh. The independent top-Hodge route, existing proof-ending repair and complete reported-coefficient Remark retain their approved behavior on the verified new snapshot.",
+  "unit": "s06",
+  "verdict": "pass"
+}

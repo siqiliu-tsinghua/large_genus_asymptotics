@@ -1,0 +1,498 @@
+% !TeX root = ../../main.tex
+\subsection{Descendant and volume coefficients}
+\label{subsec:a:01}
+
+We use the normalized intersection recursions of
+\cite[Section~2]{MZ15}, in the form recalled in
+\cite[Theorem~4.3]{HMT25}. The factorial-normalized brackets are those
+of~\eqref{eq:s03:descendants}. To identify their first two coefficients
+we use \cite[Lemma~7.2 and Appendix~C.1]{W26}; its common amplitude
+factor at the WP specialization cancels in the quotient by $V_{G,n}$.
+Throughout this subsection put $k=2G-2+n$. For a nonnegative integer
+tuple $\mathbf d=(d_1,\ldots,d_n)$ put
+\[
+ D=\sum_{i=1}^n d_i,\qquad
+ m_a=\#\{i:d_i=a\}\quad(a=0,1,2).
+\]
+Thus the number of positive entries is $n-m_0$. Define the signed
+coefficients $e_{n,r}(\mathbf d)$, for integers $r\geq1$, in the
+unique full fixed-tuple expansion supplied by HMT. Its first terms are
+\begin{equation}\label{eq:a:profile-definition}
+ \frac{[\tau_{\mathbf d}]_{G,n}}{V_{G,n}}
+ =1+\frac{e_{n,1}(\mathbf d)}k
+     +\frac{e_{n,2}(\mathbf d)}{k^2}+O_{n,\mathbf d}(k^{-3}).
+\end{equation}
+For the empty tuple both coefficients are zero. The convention also
+applies to the zero tuple of every positive length.
+
+We give a closed potential for Wang et al.'s second coefficient.
+The low-degree counts in this potential will subsequently be
+summed, rather than discarded as exceptional modes.
+
+\begin{prp}[The first two profiles]\label{prp:a:profiles}
+For every fixed $n\geq1$ and $\mathbf d\in\mathbb Z_{\geq0}^n$,
+form the following local polynomials in its statistics:
+\begin{align*}
+ U={}&24D^2+24Dn-50D+m_0^3-19m_0-n^3+19n+6m_1,\\
+ V={}&80D^3+(120n-372)D^2+(60n^2-372n+754)D\\
+ &+8m_0^3+(36D+18m_1+18n-141)m_0^2\\
+ &+(-180D-90m_1-90n+547)m_0\\
+ &-26n^3+231n^2-547n+102m_1+30m_2.
+\end{align*}
+Then
+\begin{align}
+ e_{n,1}(\mathbf d)
+ &=-\frac{2D^2+(2n-5)D+(m_0^2-5m_0-n^2+5n)/2}{\pi^2},
+ \label{eq:a:first-profile}\\
+ e_{n,2}(\mathbf d)
+ &=\frac{e_{n,1}(\mathbf d)^2}{2}+\frac{n-m_0}{16}
+                  -\frac{U}{12\pi^2}-\frac{V}{12\pi^4}.
+ \label{eq:a:second-profile}
+\end{align}
+In an expansion in $G^{-1}$ the second coefficient is
+\begin{equation}\label{eq:a:profile-genus-conversion}
+ \frac{[\tau_{\mathbf d}]_{G,n}}{V_{G,n}}
+ =1+\frac{e_{n,1}(\mathbf d)}{2G}
+ +\frac{e_{n,2}(\mathbf d)-(n-2)e_{n,1}(\mathbf d)}{4G^2}
+ +O_{n,\mathbf d}(G^{-3}).
+\end{equation}
+\end{prp}
+\begin{prf}
+The first formula is Wang et al.'s deficit with its sign reversed. Here is a
+finite verification of the second, including all pivot degrees. Define
+recursion coefficients $\mu_l$ and their tails by
+\begin{equation}\label{eq:a:recursion-kernel}
+ \sum_{l\geq0}\mu_l z^l
+ =(1-z)\frac{\pi\sqrt z}{\sin(\pi\sqrt z)},\qquad
+ T_j=\sum_{l\geq\max(0,j)}\mu_l\quad(j\in\mathbb Z).
+\end{equation}
+The quotient is interpreted by its power series at zero. In particular
+$\mu_0=1$, $\mu_1=\pi^2/6-1$, and
+$\mu_2=7\pi^4/360-\pi^2/6$.
+
+Fix a pivot $i$, write $t=d_i$, and let $z_0=m_0-\mathbf1_{t=0}$ be
+the number of zero entries away from it. The symbol $\mathbf1$ denotes
+an indicator. Let $\mathbf d^{ij,l}$ merge entries $i,j$ into
+$t+d_j+l-1$, and let $\mathbf d^{i;u,v}$ replace entry $i$ by $u,v$.
+Only nonnegative resulting entries are included, and $\mathbf e_i$
+denotes the $i$th unit vector. The recursion in
+\cite[(C.1)--(C.3)]{W26}
+gives the increment $I_i=e_{n,2}(\mathbf d+\mathbf e_i)-e_{n,2}(\mathbf d)$
+as
+\begin{align}
+ I_i={}&-\frac1{\pi^2}\sum_{j\ne i}(2d_j+1)
+  \sum_{l\geq\max(0,1-t-d_j)}\mu_l
+  \left[\frac32+\frac{2n-6}{\pi^2}
+                 +e_{n-1,1}(\mathbf d^{ij,l})\right]\notag\\
+ &-\frac2{\pi^2}\sum_{l\geq\max(0,2-t)}\mu_l
+  \sum_{\substack{u+v=t+l-2\\u,v\geq0}}
+  \left[\frac32+\frac{4-2n}{\pi^2}
+                 +e_{n+1,1}(\mathbf d^{i;u,v})\right]\notag\\
+ &-\frac1{\pi^4}
+ \left[\left(\binom{z_0}{2}+\frac{\pi^2}{12}\right)T_{2-t}
+                                      +\frac12 T_{3-t}\right].
+ \label{eq:a:second-increment}
+\end{align}
+The merging sum is absent for $n=1$.
+
+We reduce the increment to four cases. For $t\geq3$ its value is
+\begin{align*}
+ I_*={}&-\frac{4D+2n-13/6}{\pi^2}+\frac1{\pi^4}
+ \bigl[8D^3+(12n-38)D^2\\
+ &+(2m_0^2-10m_0+2n^2-18n+45)D
+ +(n-9/2)m_0^2\\
+ &+(-5n+45/2)m_0-n^3+7n^2/2+15n/2-34\bigr].
+\end{align*}
+The two positive low modes satisfy
+\[
+ I_i-I_*=\frac{\pi^2+3m_0^2-15m_0+12}{2\pi^4}\ (t=1),\qquad
+ I_i-I_*=\frac5{2\pi^4}\ (t=2).
+\]
+For the zero mode the reduction is
+\begin{align*}
+ 16\pi^4(I_i-I_*)={}&(-32m_0+96)D^2
+ +(-32m_0n+112m_0+96n-336)D\\
+ &+\pi^4+(4m_0^2-4m_0-32)\pi^2
+ +(48m_0-144)m_1\\
+ &-8m_0^3+80m_0^2+(8n^2-24n-264)m_0\\
+ &-24n^2+72n+288\qquad(t=0).
+\end{align*}
+To obtain these four expressions one needs only the moments
+$\sum\mu_l l^j$ for $0\leq j\leq3$ in the table below. The ordered
+pair sum has two endpoint pairs and $N-1$ interior pairs when its total
+degree $N\geq1$; its $N=0$ value is evaluated separately.
+
+On the proposed potential, incrementing the pivot changes the statistics
+by the following amounts:
+\[
+\begin{array}{c|rrrr}
+ t&\Delta D&\Delta m_0&\Delta m_1&\Delta m_2\\\hline
+ 0&1&-1&1&0\\
+ 1&1&0&-1&1\\
+ 2&1&0&0&-1\\
+ t\geq3&1&0&0&0
+\end{array}
+\]
+Substitution in~\eqref{eq:a:second-profile} gives $I_i$ in each of
+the four cases. This verifies every coordinate increment, rather
+than fitting values at a collection of tuples. The potential vanishes
+at $D=0,m_0=n,m_1=m_2=0$; the increment recursion therefore determines
+it uniquely on all nonnegative tuples. Finally expand
+$k^{-1}=(2G)^{-1}-(n-2)(2G)^{-2}+O(G^{-3})$.
+\end{prf}
+
+\begin{rmk}[Identification]
+The source quantities of Wang et al. are evaluated at $Y=0$ and
+complexity $2G-2+n$. Their deficit is $-e_{n,1}$, and their second coefficient
+is $e_{n,2}$. Lemma~C.1 itself fixes the number of markings. Uniqueness
+of each fixed-tuple expansion identifies these formulas with the HMT
+coefficients in~\eqref{eq:s03:hmt-descendant}. The polynomial remainders
+and summable degree bounds proved in Section~\ref{sec:s03}, rather than
+an unstated uniform version of their fixed-marking result, justify their later use when the
+loop count grows. The $m_1,m_2$ terms remain part of those coefficients.
+\end{rmk}
+
+The absolute second cusp-volume coefficient requires one more order of
+an exact recursion. We give the extraction rule explicitly before its
+evaluation. All auxiliary ratios and coefficients in the rest of this
+subsection are local to this calculation.
+
+Define the signed dilaton weights
+\begin{equation}\label{eq:a:dilaton-weights}
+ \nu_d=\frac{2(-1)^{d-1}d\pi^{2d}}{(2d+1)!}\quad(d\geq1),\qquad
+ \sum_{d\geq1}\nu_d z^d
+   =f(2\pi^2z)-\cos(\pi\sqrt z).
+\end{equation}
+The kernel and dilaton moments needed below are finite evaluations of
+their generating functions at $z=1$:
+\begin{equation}\label{eq:a:finite-moments}
+\begin{array}{c|c|c}
+ j&\sum_{l\geq0}\mu_l l^j&\sum_{d\geq1}\nu_d d^j\\\hline
+0&2&1\\
+1&3/2&-1/2\\
+2&\pi^2/6+5/4&(1-\pi^2)/4\\
+3&5\pi^2/8+9/8&-\pi^2/4-1/8\\
+4&7\pi^4/120+5\pi^2/3+17/16&(\pi^4-5\pi^2+1)/16\\
+5&49\pi^4/96+125\pi^2/32+33/32&(9\pi^4-10\pi^2-1)/32\\
+6&\text{not needed}&(-\pi^6+56\pi^4-21\pi^2+1)/64
+\end{array}
+\end{equation}
+For example, with the local variable $r=\sqrt z-1$, the two generating
+functions become
+\[
+ (2+3r+r^2)\frac{\pi r}{\sin(\pi r)},\qquad
+ \cos(\pi r)-\frac{\sin(\pi r)}{\pi(1+r)}.
+\]
+Applying $(z\partial_z)^j$ proves every entry of the table.
+
+Write the two exact volume ratios as
+\begin{equation}\label{eq:a:local-ratios}
+ \mathcal C_n(k)=4\pi^2 k\frac{V_{G,n}}{V_{G,n+1}},\qquad
+ \mathcal V_n(k)=\frac{V_{G-1,n+2}}{V_{G,n}},
+ \qquad k=2G-2+n,
+\end{equation}
+and denote their coefficients of $k^{-r}$ by $u_{r,n}$ and $v_{r,n}$.
+In the remaining rules write $e_{n,r}(a)$ for
+$e_{n,r}(a,0^{n-1})$ and $e_{n,r}(a,b)$ for
+$e_{n,r}(a,b,0^{n-2})$, where the latter requires $n\geq2$.
+An overbar means the signed single-degree sum
+$\overline{e_{n,r}}=\sum_{d\geq1}\nu_d e_{n,r}(d)$.
+The exact dilaton identity is
+\begin{equation}\label{eq:a:exact-cusp}
+ \mathcal C_n(k)
+ =\sum_{d\geq1}\nu_d
+       \frac{[\tau_d\tau_0^n]_{G,n+1}}{V_{G,n+1}}.
+\end{equation}
+Dimensionally inadmissible brackets are zero. Its child complexity is
+$k+1$, so, with an order-three profile coefficient supplied by HMT,
+\begin{align}
+ u_{1,n}&=\overline{e_{n+1,1}}
+                 =\frac12+\frac{2n-4}{\pi^2},\notag\\
+ u_{2,n}&=-\overline{e_{n+1,1}}+\overline{e_{n+1,2}},\notag\\
+ u_{3,n}&=\overline{e_{n+1,1}}-2\overline{e_{n+1,2}}
+                                      +\overline{e_{n+1,3}}.
+ \label{eq:a:cusp-extraction}
+\end{align}
+
+Here are the exact recursions that determine the remaining coefficients.
+For $n\geq2$ the genus identity is
+\begin{equation}\label{eq:a:exact-genus}
+ \frac{[\tau_1\tau_0^{n-1}]_{G,n}}{V_{G,n}}
+ =\mathcal V_n(k)+\frac6{V_{G,n}}
+ \sum_{\substack{G_1+G_2=G\\I\sqcup J=\{1,\ldots,n-2\}}}
+        V_{G_1,|I|+2}V_{G_2,|J|+2}.
+\end{equation}
+Only stable factors are included. To state the adjacent-degree identity,
+take the first entry $t$ of a tuple as pivot. Subtract the MZ recursion
+at $t+1$ from that at $t$, and shift its kernel index. The result is
+\begin{align}
+ &[\tau_{\mathbf d}]_{G,n}
+       -[\tau_{\mathbf d+\mathbf e_1}]_{G,n}\notag\\
+ &\quad=4\sum_{j=2}^n(2d_j+1)\sum_{l\geq0}\mu_l
+                            [\tau_{\mathbf d^{1j,l}}]_{G,n-1}\notag\\
+ &\qquad+8\sum_{l\geq0}\mu_l
+       \sum_{\substack{u+v=t+l-2\\u,v\geq0}}
+                   [\tau_u\tau_v\prod_{i=2}^n\tau_{d_i}]_{G-1,n+1}\notag\\
+ &\qquad+8\sum_{l\geq0}\mu_l
+       \sum_{\substack{u+v=t+l-2\\u,v\geq0}}
+       \sum_{\substack{G_1+G_2=G\\I\sqcup J=\{2,\ldots,n\}}}
+       [\tau_u\prod_{i\in I}\tau_{d_i}]_{G_1,|I|+1}
+       [\tau_v\prod_{i\in J}\tau_{d_i}]_{G_2,|J|+1}.
+ \label{eq:a:exact-adjacent}
+\end{align}
+Negative degrees and unstable children contribute zero. This identity
+is used for large $G$ with fixed $n$; the exceptional initial parent
+types are not needed. The kernel in \cite[(4.4)--(4.7)]{HMT25} has
+the following generating series in the formal variable $z$:
+\[
+ \frac{\pi\sqrt z}{2\sin(\pi\sqrt z)}
+   =\frac1{2(1-z)}\sum_{l\geq0}\mu_l z^l.
+\]
+Subtracting adjacent degrees and shifting the index multiplies this
+series by $1-z$. Its coefficients therefore become $\mu_l/2$, so
+the source prefactors $8,16,16$ become $4,8,8$. The initial coefficient
+is $\mu_0/2=1/2$, covering index zero without a negative-index
+extension. The last sum is ordered, so choosing the smaller component
+combines two orientations.
+
+We next justify extracting a coefficient from these infinite recursions.
+This also controls components whose genus grows with the parent genus.
+
+\begin{lmm}[Remainders in the finite extraction]\label{lmm:a:extraction-tail}
+For fixed marking numbers and fixed pivot degree, extracting
+\eqref{eq:a:exact-adjacent} through order $k^{-3}$ has remainder
+$O(k^{-4})$. In its separating sum it suffices to retain components
+with loss $2j+s\leq3$, where $j$ is their genus and $s$ the number
+of nonpivot labels on them. In~\eqref{eq:a:exact-genus} at $n=2$,
+only the $(1,2)$ component contributes through that order.
+Polynomially weighted kernel sums and the signed dilaton average
+preserve these remainder orders.
+\end{lmm}
+\begin{prf}
+The singularity at $z=1$ in~\eqref{eq:a:recursion-kernel} is removable;
+the next one is at $z=4$. Thus $\sum|\mu_l|(1+l)^a<\infty$ for every
+fixed nonnegative integer $a$. HMT's order-two descendant and ratio
+remainders are polynomial in the child degrees. Their volume prefactors
+in~\eqref{eq:a:exact-adjacent} are $O(k^{-1})$, so their summed errors
+are $O(k^{-4})$. Terms beyond a dimension cutoff have exponentially
+small kernel weight. The HMT order-three expansion likewise supplies
+the actual third profile and its polynomial majorant. Finally
+$\sum|\nu_d|(1+d)^a<\infty$ at every fixed $a$.
+
+We bound the full omitted genus sum by factorials. If the smaller child
+has complexity $b$ in the adjacent identity,
+the other has complexity $k-1-b$. The all-type volume bound and the
+fixed-marking lower asymptotic give
+\[
+ \frac{V_{j,s+1}V_{G-j,n-s}}{V_{G,n}}
+ \leq C_n\frac{\Gamma(b)\Gamma(k-1-b)}{\Gamma(k)}.
+\]
+The square-root genus factor is bounded because the other child has
+at least half the total complexity. There are finitely many label
+subsets, and normalized descendant brackets are at most one.
+The omitted losses have $b\geq3$. Put $N=k-1$; the consecutive ratio
+of $\Gamma(b)\Gamma(N-b)$ is $b/(N-b-1)$. Up to $N/4$ it is at
+most $1/2$ for large $N$, and from $N/4$ to $N/2$ the terms decrease.
+Consequently
+\[
+ \sum_{3\leq b\leq(k-1)/2}
+ \frac{\Gamma(b)\Gamma(k-1-b)}{\Gamma(k)}=O(k^{-4}).
+\]
+More explicitly, the interval $N/4\leq b\leq N/2$ is bounded by
+$N$ times its term at $\lfloor N/4\rfloor$, which is exponentially
+small relative to the term at $b=3$. The ordered node-degree count
+only adds a polynomial kernel moment.
+For loss two use a first profile correction, and for loss three use
+the leading profile; their errors also have order $k^{-4}$.
+
+In the genus identity the complexities sum to $k$. After removing
+the $(1,2)$ component the smaller complexity is at least four.
+The same ratio argument gives
+$\sum_{4\leq b\leq k/2}\Gamma(b)\Gamma(k-b)/\Gamma(k)=O(k^{-4})$.
+This proves the asserted error for all separating genera together.
+For the dilaton average use HMT's order-three remainder, polynomial
+in the single degree, and the factorial tail of $\nu_d$; thus the
+averaged error has a uniform summable majorant, rather than a
+degree-dependent fixed-tuple constant.
+\end{prf}
+
+We describe the finite calculation of the third profile.
+For $n\geq2$ the first two genus-ratio coefficients are
+\begin{align}
+ v_{1,n}&=-\frac{4n-6}{\pi^2},\notag\\
+ v_{2,n}&=e_{n,2}(1)
+ -\frac{3(n-2)}{\pi^2}(1+u_{1,n-1})
+ -\frac{3}{2\pi^2}\binom{n-2}{2}-\frac3{16}.
+ \label{eq:a:genus-first-two}
+\end{align}
+These follow by retaining $(0,3),(0,4),(1,2)$ in
+\eqref{eq:a:exact-genus}. For $n=2$ the precise retained term is
+\begin{equation}\label{eq:a:genus-small-split}
+ \frac{12V_{1,2}V_{G-1,2}}{V_{G,2}}
+   =\frac3{16k^2}+\frac3{4k^3}+O(k^{-4}),\qquad
+ v_{3,2}=e_{2,3}(1)-\frac34.
+\end{equation}
+The value $V_{1,2}=\pi^4/4$ is derived in
+Subsection~\ref{subsec:a:03} without using any asymptotic coefficient.
+
+For the one-positive tuple put
+\[
+ M_1=1+u_{1,n-1},\quad M_2=1+2u_{1,n-1}+u_{2,n-1},
+\]
+\[
+ N_1=1+u_{1,n+1}+v_{1,n},\quad
+ N_2=1+2u_{1,n+1}+u_{2,n+1}+v_{2,n}
+                              +v_{1,n}(1+u_{1,n+1}).
+\]
+They give the prefactor expansions
+\begin{align*}
+ 4\frac{V_{G,n-1}}{V_{G,n}}
+ &=\frac1{\pi^2k}\left(1+\frac{M_1}{k}+\frac{M_2}{k^2}
+                                      +O(k^{-3})\right),\\
+ 8\frac{V_{G-1,n+1}}{V_{G,n}}
+ &=\frac2{\pi^2k}\left(1+\frac{N_1}{k}+\frac{N_2}{k^2}
+                                      +O(k^{-3})\right).
+\end{align*}
+Both child complexities are $k-1$.
+
+Let $\mathcal D_n(t)$ denote the coefficient of $k^{-3}$ in the normalized
+adjacent difference at $(t,0^{n-1})$. Its merging and nonseparating
+parts are, respectively,
+\begin{align}
+ &\frac{n-1}{\pi^2}\sum_{l\geq0}\mu_l
+ \left[M_2+(M_1+1)e_{n-1,1}(t+l-1)
+                            +e_{n-1,2}(t+l-1)\right],\notag\\
+ &\frac2{\pi^2}\sum_{l\geq0}\mu_l
+ \sum_{\substack{u+v=t+l-2\\u,v\geq0}}
+ \left[N_2+(N_1+1)e_{n+1,1}(u,v)+e_{n+1,2}(u,v)\right].
+ \label{eq:a:third-merge-split}
+\end{align}
+An entire bracket with negative degree is zero. The loss-two separating
+parts, with the same convention, are
+\begin{align}
+ &\frac{\binom{n-1}{2}}{\pi^4}\sum_l\mu_l
+ \left[4+\frac{4n-14}{\pi^2}+e_{n-2,1}(t+l-2)\right],\notag\\
+ &\frac1{12\pi^2}\sum_l\mu_l[4+e_{n,1}(t+l-2)],\qquad
+ \frac1{2\pi^4}\sum_l\mu_l[4+e_{n,1}(t+l-3)].
+ \label{eq:a:third-loss-two}
+\end{align}
+The sphere expression is absent when $n<3$. The loss-three parts are
+\begin{align}
+ &\binom{n-1}{3}\left(\frac{T_{2-t}}{2\pi^4}
+                                      +\frac{3T_{3-t}}{\pi^6}\right),\notag\\
+ &(n-1)\left(\frac{T_{2-t}}{16\pi^2}
+             +\frac{T_{3-t}}{2\pi^4}+\frac{5T_{4-t}}{2\pi^6}\right).
+ \label{eq:a:third-loss-three}
+\end{align}
+Adding these expressions gives $\mathcal D_n(t)$, and hence
+\begin{equation}\label{eq:a:third-primitive}
+ e_{n,3}(d,0^{n-1})=-\sum_{t=0}^{d-1}\mathcal D_n(t).
+\end{equation}
+The sphere term in~\eqref{eq:a:third-loss-two} has relative volume
+correction $4+(4n-14)/\pi^2$. For the torus it is $4$. Multiply the
+small-type brackets in~\eqref{eq:a:small-amplitudes} by $16$ for both
+orientations to obtain the displayed coefficients. At loss three the
+same rule gives~\eqref{eq:a:third-loss-three}. Every small type and
+every small node degree is retained.
+
+These are finite rules: in each ordered pair sum the two endpoint pairs
+have one positive entry, and the other $a-1$ pairs have two when their
+total degree is $a\geq3$. There are two entries equal to one and two
+equal to two across these interior pairs. Thus the pair sum of
+$e_{n,2}$ is its one-positive value twice, plus $a-1$ times its
+two-positive value with $m_1=m_2=0$, plus twice each of the $m_1,m_2$
+coefficients. At $a=0,1,2$ use the actual tuples. The analogous rule
+for $e_{n,1}$ has no $m_1,m_2$ terms. It follows that $\mathcal D_n(t)$ is a
+polynomial of degree at most five for $t\geq5$, with only the five
+corrections $t=0,\ldots,4$. Sum its polynomial primitive by the usual
+power sums and use~\eqref{eq:a:finite-moments}. A correction at $t=j$
+is averaged with $\sum_{d>j}\nu_d=1-\sum_{d=1}^j\nu_d$.
+This specifies the calculation without truncating an infinite sum.
+
+\begin{prp}[Second volume coefficient]\label{prp:a:c-two}
+The fixed-marking coefficients in~\eqref{eq:s03:fixed-n-volume} satisfy
+\begin{align}
+ c_2(0)&=\frac{145}{288}-\frac{395}{72\pi^2}
+                                  +\frac{1513}{72\pi^4},
+ \label{eq:a:c-two-zero}\\
+ c_2(n)-c_2(0)&=\frac{3n^2}{32}-\frac{29n}{64}
+ +\frac{17n^3/48-67n^2/24+7n}{\pi^2}\notag\\
+ &\hspace{15mm}
+ +\frac{n^4/8-2n^3+271n^2/24-79n/3}{\pi^4}
+ \qquad(n\geq0).
+ \label{eq:a:c-two-n}
+\end{align}
+\end{prp}
+\begin{prf}
+The preceding rules give the following three expansions in each ratio's
+own parent complexity. They are displayed through the order needed to
+identify an absolute second coefficient:
+\begin{align}
+ \mathcal C_2(k)={}&1+\frac1{2k}
+ +\frac{5\pi^4+36\pi^2-48}{48\pi^4k^2}\notag\\
+ &-\frac{11\pi^6-138\pi^4+792\pi^2-2016}{96\pi^6k^3}
+ +O(k^{-4}),\notag\\
+ \mathcal C_3(k)={}&1+\frac{\pi^2+4}{2\pi^2k}
+ +\frac{5\pi^4+108\pi^2+48}{48\pi^4k^2}\notag\\
+ &-\frac{41\pi^6-324\pi^4-336\pi^2-4608}{288\pi^6k^3}
+ +O(k^{-4}),\notag\\
+ \mathcal V_2(k)={}&1-\frac2{\pi^2k}
+ -\frac{3\pi^4+80\pi^2-96}{24\pi^4k^2}\notag\\
+ &-\frac{86\pi^6+663\pi^4-2052\pi^2+6192}{144\pi^6k^3}
+ +O(k^{-4}).
+ \label{eq:a:three-ratios}
+\end{align}
+Each entry is obtained by the two finite moment columns in
+\eqref{eq:a:finite-moments}, the low-mode corrections just specified,
+and~\eqref{eq:a:cusp-extraction} or
+\eqref{eq:a:genus-small-split}. Lemma~\ref{lmm:a:extraction-tail}
+shows that these are coefficients of actual volume ratios.
+
+Put $k=2g$. The exact telescoping identity is
+\begin{equation}\label{eq:a:adjacent-genus-match}
+ \frac{V_{g+1,2}}{(4\pi^2)^2 k(k+1)V_{g,2}}
+ =\frac1{\mathcal C_2(k)\mathcal C_3(k+1)\mathcal V_2(k+2)}.
+\end{equation}
+The three nonconstant coefficients on its right are
+\[
+ -1,\qquad \frac{7\pi^2-4}{6\pi^2},\qquad
+                    -\frac{3\pi^4+2\pi^2-24}{3\pi^4}.
+\]
+Apply the actual fixed-$n$ MZ expansion through order three, with
+remainder $O(g^{-4})$. Its unknown $c_3(2)$ cancels in this adjacent
+ratio. The coefficient of $k^{-3}$ on the left is therefore
+\[
+ -\frac52+12c_1(2)+8c_1(2)^2-16c_2(2).
+\]
+The first two coefficients check $-1$ and $3/2-4c_1(2)$ independently.
+The third determines
+$c_2(2)=-(2\pi^4-13\pi^2+35)/(72\pi^4)$.
+
+Finally the cusp ratio through second order gives
+\[
+ c_2(n+1)-c_2(n)=-\frac{u_{2,n}}4
+ -\left(\frac{2-n}{2}+c_1(n+1)\right)
+                         (c_1(n)-c_1(n+1)).
+\]
+Substitute~\eqref{eq:a:second-profile} into
+\eqref{eq:a:cusp-extraction} and use the dilaton moment table.
+For $n=0,1$ the increments are respectively
+\[
+ -\frac{69\pi^4-876\pi^2+3248}{192\pi^4},\qquad
+ -\frac{33\pi^4-212\pi^2+880}{192\pi^4}.
+\]
+Subtracting them from $c_2(2)$ proves~\eqref{eq:a:c-two-zero}.
+Summing the same polynomial increment from $0$ to $n-1$ proves
+\eqref{eq:a:c-two-n}. No absolute second coefficient was used in
+constructing the three ratio rows.
+\end{prf}
+
+\begin{rmk}[Source comparison]
+The coefficient agrees with the prediction in \cite[(6.10)]{EGGLS24}.
+The resurgence assumption appears in their Section~6.1 before (6.6).
+Wang et al.\ give a broader all-order absolute expansion, including
+the unmarked case \cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
+The unconditional inputs to our reconstruction remain the MZ/HMT
+recursions, Wang et al.'s fixed-marking profiles, and the uniform
+bounds from Section~\ref{sec:s03}.
+\end{rmk}

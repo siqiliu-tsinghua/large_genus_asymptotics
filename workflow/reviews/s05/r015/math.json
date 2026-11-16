@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 92 archive/live inputs and artifacts, writer ACK and fresh approved S1 r009/S2 r019/S3 r016/S4 r018/A r016; the layout changes add no insertion or volume premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven S5 files equal r014, preserving the fixed j_i/ell list, character weights, stable forgotten-marking ranges and degree-to-power domains.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged source retains the a_g-normalized bracket, factorial Chern convention, source labels, denominator cancellation and specified-loop half; contents/footer formatting changes no coefficient or mathematical counter.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions retain insertion, degree, marking and character scopes, while multi-subagent is only disclosure wording and all 430 common-companion label numbers remain previously verified.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior assessment of the written source/forgetting rules, original-graph majorant, single-ch3 calculation and Chern reduction applies to identical source without a new premise from the cosmetic edits.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved whole-graph/loop/core estimates retain fixed-list O(g^-4), no g^-1 term and the original g^-2/g^-3 coefficients, with no stronger error or growing-list claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta from r014 is five inherited changes plus one new S1 layout handoff, no removal; all seven own files are unchanged and inherited bytes match S4 r018. Actual writer ACK SHA256 4de76c67a43bb38c93ec000fed7114cec8a16adaea4f7cdcf40c6e75ff21a2c7.",
+    "Actual standard source SHA256 61b5d96fc4f9a54de33c63244ab1dc6ddd8131a1e829676f59eb6cd64d30b338 equals the new frozen fingerprint; PDF e3d4edf393adcedbb4f14356cd88338d37e13aec5422bb1ab1915942a0c264b5 matches the strict/passed/with-dependencies receipt with empty diagnostics. The receipt retains its pre-submit r014 snapshot field, distinct from this actual r015 signature.",
+    "The common companion record/artifact hashes remain source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc and PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a. Reused prior proof and common-layout assessments without repeated proofs, mathematics, calculations, research, builds or pictures; only these two reports were written, with no source/state/history/output edits or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 15,
+  "schema_version": 1,
+  "snapshot": "af273ecd8da2456b7c6d6e6e26917610bb291518e73c90e46b57a456e26586fe",
+  "summary": "LAYOUT-TWEAKS: pass on S5 r015. The exact inherited cosmetic delta preserves the fixed-index proof, character/Chern normalization and original O(g^-4) precision.",
+  "unit": "s05",
+  "verdict": "pass"
+}

@@ -1,0 +1,29 @@
+% !TeX root = ../../main.tex
+\section{Singularity analysis and Hodge integrals at fixed defect}
+\label{sec:s08}
+
+This section proves Theorem~\ref{thm:fixed-defect}. The exact Borel
+equation \eqref{eq:s07:borel-transport} reduces the problem to the
+singularities of the inverse Bessel function from
+Section~\ref{subsec:s06:02}. Appendix~\ref{sec:appendix-b} supplies
+the common complex domains and uniform integral estimates needed to
+turn that equation into coefficient asymptotics.
+
+We proceed in four steps. First we identify the square-root term in
+each defect layer and its propagation through the positive linear
+branch. Next we solve the resulting ordered-integral recurrence,
+which produces the factor $1/h!$, and evaluate its Bessel constant.
+The inverse sine transformation then recovers the unmarked
+$\kappa_1$ integrals; both dominant singularities and the free-energy
+primitive enter this step. Finally, a one-node estimate and nef
+intersection inequalities compare the entire $\kappa_1$ and Hodge
+backgrounds. The last step has a relative $O_h(g^{-1})$ bound;
+the preceding coefficient transfer yields the asymptotic equivalence
+required by the theorem.
+
+\input{sections/08_fixed_defect/01_analytic_domains}
+\input{sections/08_fixed_defect/02_singularity_propagation}
+\input{sections/08_fixed_defect/03_transport_constant}
+\input{sections/08_fixed_defect/04_coefficient_transfer}
+\input{sections/08_fixed_defect/05_background_comparison}
+\input{sections/08_fixed_defect/06_proof}

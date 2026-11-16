@@ -1,0 +1,254 @@
+% !TeX root = ../../main.tex
+\subsection{Local transport and common dented regions}
+\label{subsec:b:local-transport}
+
+We next integrate the endpoint bounds along a characteristic. The
+small part of this integral gains half a power of $S$. Its complement
+is controlled by the order of vanishing at $y=0$, and then by the
+regular-disk estimate. These three bounds are needed together; a
+fixed-characteristic formal identity alone would not give convergence
+on a common complex region.
+
+\begin{lmm}[The local transport bound]\label{lmm:b:local-transport}
+Let $\mathcal H$ have scale-$a$ endpoint bounds, $a\geq0$, and
+let $\mathcal Q$ have the same bounds with zero square-root
+coefficients. Suppose both vanish to an integer order
+$N>a+1/2$ at $y=0$. Assume their bounds on a parameter interval
+containing $[\theta,\theta+\sigma_0]$, where $\sigma_0>0$ is fixed
+and sufficiently small. Then
+\begin{equation}\label{eq:b:local-transport}
+ \mathcal T(\theta;x,y)
+ =\int_0^{\sigma_0}
+       [(1+y\partial_y)\mathcal H+\mathcal Q]
+       (\theta+\sigma;x+\sigma v_\theta(x),y)\,\dd\sigma
+\end{equation}
+has scale-$(a+1/2)$ endpoint bounds on every strictly smaller cone,
+after reducing the small-$|S|$ range. Its coefficient of
+$\sqrt{S\mp y}$ is
+\begin{equation}\label{eq:b:transport-endpoint-coefficient}
+ \frac{S}{x_{*,\theta}-v_\theta(x)}H_1^\pm(\theta,S).
+\end{equation}
+The value remainder has exponent $\nu$, and hence on smaller
+domains obeys \eqref{eq:b:remainder-derivatives} with any fixed
+derivative order, in particular orders one and two. Constants depend
+only on the input bounds, $a,N,\nu$, the angular margins and the
+fixed parameter intervals.
+\end{lmm}
+\begin{prf}
+We give the positive-endpoint argument; the other sign is identical.
+Write $d=x_{*,\theta}-v_\theta(x)$ locally, so
+$|d|\asymp\sqrt{|S|}$ and $\operatorname{Re}d\geq c\sqrt{|S|}$.
+For $\sigma$ at most a small multiple of $\sqrt{|S|}$,
+Lemma~\ref{lmm:b:cone-transport} keeps the arguments in the larger
+input cone and gives
+\[
+ |S_\sigma-y|\geq c\bigl(|S-y|+\sigma\sqrt{|S|}\bigr),
+ \qquad S_\sigma-y=(S-y)+\sigma d+O(\sigma^2).
+\]
+The scale of the integrand is $|S|^a$, times an inverse square root
+in the normalized distance, or a less singular remainder.
+Its integral is bounded by $C|S|^{a+1/2}$.
+
+\smallskip\noindent
+\emph{The frozen singular term.}
+The only nonintegrated square-root term differentiated by
+$y\partial_y$ is $-yH_1^+(\theta,S)/(2\sqrt{S-y})$.
+Freeze its numerator at $\sigma=0,y=S$ and its distance at
+$(S-y)+\sigma d$. The model is
+\begin{equation}\label{eq:b:frozen-model}
+ -\frac{S H_1^+(\theta,S)}2
+       \int_0^{c\sqrt{|S|}}
+                  ((S-y)+\sigma d)^{-1/2}\,\dd\sigma.
+\end{equation}
+The upper-end value of its elementary primitive is analytic in $y$
+near $S$. Its lower-end value is exactly
+\eqref{eq:b:transport-endpoint-coefficient} times $\sqrt{S-y}$.
+No coefficient is divided out in this calculation, so it also applies
+when $H_1^+$ vanishes.
+
+Here are uniform error bounds for these replacements. Put
+$u=\sigma/\sqrt{|S|}$ only in this estimate. Cauchy's bounds for
+the numerator give the additive error
+\[
+ |yH_1^+(\theta+\sigma,S_\sigma)-S H_1^+(\theta,S)|
+       \leq C|S|^{a+1/2}(u+|1-y/S|).
+\]
+The distance error is $O(|S|u^2)$. After one normalized
+$y$ derivative, each resulting error density is bounded, apart
+from its factor $C|S|^a$, by
+$(|1-y/S|+u)^{-1/2}$.
+For the distance error this follows from
+$u^2(|1-y/S|+u)^{-5/2}\leq(|1-y/S|+u)^{-1/2}$;
+the numerator error is bounded in the same way.
+These bounds are integrable in $u$. After subtracting their endpoint
+values the errors are $O(|S|^{a+1/2}|1-y/S|)$.
+
+For the input remainder, the normalized derivative of its Euler term
+has majorant
+$C|S|^a(|1-y/S|+u)^{\nu-2}$.
+Its integral is $O(|S|^{a+1/2}|1-y/S|^{\nu-1})$.
+Integration in the endpoint variable gives a value remainder
+$O(|S|^{a+1/2}|1-y/S|^\nu)$.
+The undifferentiated square-root term and $\mathcal Q$ have bounded
+first normalized derivative after the $u$ integration, and therefore
+give only a constant and a remainder of this size.
+
+\smallskip\noindent
+\emph{The rest of the local characteristic.}
+Between $c\sqrt{|S|}$ and $C\sqrt{|S|}$, with fixed positive
+$c,C$, the endpoint distances are bounded below by a multiple of
+$|S|$. This part is analytic near $y=S$ and has norm
+$O(|S|^{a+1/2})$. Choose $C$ large. Beyond $C\sqrt{|S|}$ the
+ratio $|y/S_\sigma|$ is uniformly less than one, by
+\eqref{eq:b:transport-distances}. The vanishing order $N$ and
+Cauchy's estimate on a larger inner disk give the bound
+\begin{equation}\label{eq:b:intermediate-transport}
+ C|S|^N\int_{C\sqrt{|S|}}^{\sigma_0}
+                    (\sqrt{|S|}+\sigma)^{2a-2N}\,\dd\sigma
+                 \leq C|S|^{a+1/2}.
+\end{equation}
+The integral converges uniformly at its scaled upper end because
+$N>a+1/2$. The same estimate on slightly larger endpoint
+neighborhoods shows that this part contributes an analytic constant
+and an $O(|S|^{a+1/2}|1-y/S|)$ variation.
+This argument does not assume that $|S_\sigma|$ increases along a
+complex characteristic; only the two-distance bounds are used.
+
+Together these estimates prove the value expansion and coefficient
+claimed. Away from the endpoints the normalized arguments range over
+a compact set; the same three characteristic estimates apply with
+their endpoint factors omitted. Normal convergence makes its endpoint
+coefficients analytic
+in the remaining parameters. On smaller angular domains Cauchy's
+formula regenerates every fixed derivative bound from the value
+remainder, including the third order needed in a subsequent layer.
+This completes the proof.
+\end{prf}
+
+The next proposition records analytic existence and uniform bounds
+for the actual fields, without identifying their leading coefficients.
+That identification and its iterated integral are used in Section 8.
+For real parameters $r>0$, $0<\gamma<\pi/4$ and $S>0$,
+a doubly dented disk below means the open set
+\begin{equation}\label{eq:b:dented-disk}
+ |y|<(1+r)S,\qquad
+ |\arg(S-y)|<\pi-\gamma,\qquad
+ |\arg(S+y)|<\pi-\gamma.
+\end{equation}
+The two endpoints themselves are omitted. For a sufficiently small
+$r>0$, this set lies in a smaller two-distance cone than
+the one used for its estimates. To see this, use compactness on
+$|y|\leq S$ away from the endpoints; near an endpoint one distance
+has argument close to zero, and the other has the displayed fixed
+margin from the negative axis. Both observations persist after a
+small enlargement of the normalized radius.
+
+\begin{prp}[Common Borel domains]\label{prp:b:common-domains}
+For every fixed integer $H\geq1$ and $1/2<\nu<1$ there are
+$\theta_H,r_H>0$ and $0<\gamma_H<\pi/4$ such that, for $1\leq h\leq H$,
+$0\leq\theta\leq\theta_H$ and real
+$-r_H\leq x<R_\theta$, the actual Borel series
+$\mathcal L_h(\theta;x,y)$ converges for $|y|<S=R_\theta-x$.
+It extends holomorphically to \eqref{eq:b:dented-disk} with
+$r=r_H,\gamma=\gamma_H$. These extensions are joint
+in $x,y$ on complex neighborhoods of the indicated real centers.
+Near the critical center they include the smaller two-distance
+cones above, with all constants uniform. One has
+\begin{equation}\label{eq:b:common-bounds}
+ \begin{aligned}
+ |\mathcal L_h|&\leq C_H|S|^{(h-1)/2},\\
+ |\partial_x^a\partial_y^k\mathcal L_h|
+ &\leq C_{H,a,k}|S|^{(h-1)/2-a-k}
+   \left(1+|1-y/S|^{1/2-a-k}
+            +|1+y/S|^{1/2-a-k}\right)
+                  \quad(a+k\geq1).
+ \end{aligned}
+\end{equation}
+Here $a,k$ are fixed nonnegative integers and derivative estimates
+use smaller angular domains. The finite-order remainder class
+\eqref{eq:b:endpoint-class} holds with scale $(h-1)/2$ and exponent
+$\nu$. All kernel sums and characteristic integrals converge
+normally on compact subsets of these regions.
+\end{prp}
+\begin{prf}
+For $h=1$, insert the local square-root inverse
+\eqref{eq:b:morse-inverse} into the exact log quotient. Its leading
+local expression, up to bounded analytic terms, is
+\[
+ \log\frac{2\sqrt S}{\sqrt{S-y}+\sqrt S}.
+\]
+The odd difference removes every term independent of $y$.
+It is uniformly bounded on the two-distance cones, with a
+square-root endpoint expansion and scale zero. The $m\geq2$
+terms are analytic at the two endpoints and are normally summable:
+their odd differences have the additional $m^{-1}$ factor.
+The same argument at a real center away from the critical point
+uses an analytic nonzero difference quotient and the local
+square-root expansion of its endpoint inverse. Its constants are
+uniform on compact center intervals. This proves the initial
+endpoint class as well as its local holomorphic extension.
+
+Induct simultaneously on normal convergence and this endpoint class.
+If the lower-layer scales are $(i-1)/2$,
+Lemmas~\ref{lmm:b:linear-endpoint} and
+\ref{lmm:b:quadratic-endpoint} give scale $(h-2)/2$ for the two
+sources. Their exact order at $y=0$ is at least $N=3h-2$, so
+$N>(h-2)/2+1/2$. Lemma~\ref{lmm:b:local-transport} applies to
+the initial characteristic segment. Its complement is the normally
+convergent remote integral of Corollary~\ref{crl:b:remote}; near
+the critical center it is $O(|y|^N)$ and has no endpoint singularity.
+We obtain the scale $(h-1)/2$ and the claimed remainder class.
+The resulting functions agree with the formal coefficients on a
+small inverse disk, by normal coefficient extraction, and hence
+with the actual series already constructed in
+Proposition~\ref{prp:b:tube}.
+
+The choices can be made in a finite order: use successively smaller
+cones, $S$ neighborhoods and $\theta$ intervals for increasing $h$.
+At a new layer choose $\sigma_0$ so small that the lower-layer
+parameter interval contains $[\theta,\theta+\sigma_0]$ and that
+the moving critical points stay in their Morse neighborhoods.
+The remote estimate needs no critical point beyond this interval.
+Choose the new $\theta$ interval inside half the preceding one.
+Since $H$ is fixed, all resulting constants are positive.
+Value remainders on the larger cone give every fixed derivative
+order on a smaller one, so this construction does not consume a
+finite stock of derivative estimates.
+
+\smallskip\noindent
+\emph{Patching the common complex region.}
+For real centers bounded away from the critical point, the inverse
+radius and the noncritical-circle continuation are provided by
+Propositions~\ref{prp:b:inverse-budget} and \ref{prp:b:tube}.
+Their compact normalized arcs have common neighborhoods.
+Near $y=S$, the principal shifted center has
+$S'=\tau S+(1-\tau)(S-y)$ and its new endpoint distance is
+$S-y$. If $\tau$ is at most a fixed multiple of $|1-y/S|$,
+both belong to the small critical cone already constructed.
+Otherwise the center is a small complex perturbation of the real
+segment, and its normalized endpoint distance is smaller by a
+factor comparable to $\tau$. This is precisely the split used in
+Lemma~\ref{lmm:b:linear-endpoint}; it supplies the joint endpoint
+neighborhoods with uniform bounds. The negative branch is identical.
+All other shifted arguments have a strict budget except at lower-layer
+endpoints, and the quadratic endpoint corners are covered by
+Lemma~\ref{lmm:b:quadratic-endpoint}. A finite cover joins these
+endpoint patches to the noncritical arcs. Small negative real centers
+are allowed by the negative extension of the inverse-radius budget.
+Finally take the minimum of these finitely many normalized radius
+and angle margins and the small-critical cone margins.
+This gives \eqref{eq:b:dented-disk} uniformly, including centers
+tending to the critical point.
+
+The same constructions are holomorphic in $\theta$ near its compact
+real interval. In the critical patches this follows directly from
+the analytic Morse coordinate: $x_{*,\theta}'$ remains close to a
+positive real number, so the two-distance estimates retain their
+angular margins for a small complex parameter perturbation. The
+remaining compact inverse patches and the regular remote bounds
+persist under that perturbation as well. Thus Cauchy's formula
+justifies the parameter and coefficient derivatives used in the
+induction. Formula~\eqref{eq:b:input-derivatives} gives
+\eqref{eq:b:common-bounds}. This completes the analytic construction
+without assuming convergence or continuation of a higher Borel layer.
+\end{prf}

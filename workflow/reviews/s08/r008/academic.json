@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "All fifteen S8 inputs remain byte-identical to accepted r007, preserving adjacent proofs and the distinct closing conjecture/table; the reviewed disclosure creates no internal-program obligation, and the actual native page 56 presents the supplied address cleanly below the bibliography."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The author-supplied provenance does not displace Buryak?s formal input, MaZ/KMZ inverse background, Appendix B?s actual analytic estimates, FO90 transfer method, DLMF identities or the precisely credited semipositivity/nef-cover inputs; the article?s own propagation, two-point transfer and background squeeze retain their roles."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The bibliography and every S8 source locator, convention and fixed dataset identity remain unchanged; the new inherited LiuData26 citation identifies public data, while the existing closing citation supports numerical observations rather than model-history verification or a proof."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "Fixed h, the final relative o(1), the separate O_h(g^-1) background bound and the unchanged h=1 conjecture/open-problem status remain distinct; neither the model-role disclosure nor its no-Lean caution adds a premise, a stronger rate or proof of the numerical refinement."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual prepared academic dispatch and checked the four changed/four added inherited paths, fifteen unchanged S8 inputs/bibliography, current snapshot/archive/live/artifacts, real reviewer binding and original-writer ACK/archive hash. S1 r008, S2 r018, S6 r013, S7 r010 and B r008 are approved/fresh with actual three-role passes.",
+    "Native and common current-layout receipts/artifacts/helper/pin match; native raw inputs equal the frozen fingerprint (source 577af887a9a6f4a988f63140148231c2541360ee21efd369cbd80c3d2ddacc59, PDF 210f9e6c7be8577a99cfe79cb579ba478ad4cc1d06fa1f346ee1d5d889868895). Strict/layout diagnostics are empty and focused validation passed. No whole-paper/proof reread, literature/model research, scientific/data computation, build, source/state/archive edit or future-export approval; the unchanged companion remains current-layout evidence only."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "c76b514723eed1ff7571dcde9956483ad33309aa04d8a0f463e08567fb8c2f7a",
+  "summary": "The verified disclosure/address metadata refresh preserves Section 8 source credit, analytic scopes, final precision and conjectural-data boundary.",
+  "unit": "s08",
+  "verdict": "pass"
+}

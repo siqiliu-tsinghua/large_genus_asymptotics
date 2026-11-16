@@ -1,0 +1,236 @@
+--- /dev/null
++++ backmatter/author_information.tex
+@@ -0,0 +1,13 @@
++% !TeX root = ../main.tex
++\par
++\vfill
++\noindent
++\begin{minipage}{\textwidth}
++\small
++\raggedright
++Si-Qi Liu\\
++Department of Mathematical Sciences, Tsinghua University\\
++Beijing 100084, P.R. China\\
++\texttt{liusq@tsinghua.edu.cn}
++\end{minipage}
++\par
+--- previous/main.tex
++++ main.tex
+@@ -16,4 +16,6 @@
+ \bibliographystyle{alpha}
+ \bibliography{references}
+ 
++\input{backmatter/author_information}
++
+ \end{document}
+--- /dev/null
++++ sections/01_introduction/01_acknowledgments.tex
+@@ -0,0 +1,4 @@
++% !TeX root = ../../main.tex
++\subsection*{Acknowledgments}
++
++I thank Di Yang and Yunhui Wu for helpful discussions.
+--- /dev/null
++++ sections/01_introduction/02_ai_disclosure.tex
+@@ -0,0 +1,25 @@
++% !TeX root = ../../main.tex
++\subsection*{AI disclosure}
++
++Claude Opus 5.5 discovered the normalization $N_g$ in
++Theorem~\ref{thm:lambda-one} while analyzing the public
++\texttt{hodge\_data} dataset~\cite{LiuData26}, but could not
++identify the constants at the successive orders of the asymptotic
++expansion.
++GPT-6-Astra identified the constants but did not provide a proof.
++GPT-6.1-Sol supplied the proof and discovered and proved
++Theorems~\ref{thm:fixed-insertions}, \ref{thm:top-hodge}
++and~\ref{thm:fixed-defect}.
++
++GPT-6.1-Sol also wrote most of the manuscript. I wrote the initial
++draft of the Introduction, established the writing standards,
++designed the multi-agent writing workflow, and supervised
++GPT-6.1-Sol throughout the writing of the paper.
++
++The scholarly credit for this work should go to GPT-6.1-Sol.
++I release this paper solely for knowledge sharing and claim
++neither scholarly credit nor priority for this work.
++
++The results have not been formally verified in Lean and may
++contain errors. Readers should exercise caution and examine
++the arguments carefully.
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -4,13 +4,16 @@
+ Live review, freshness and acceptance status belongs to
+ workflow/state.json; this document is not an approval signature.
+ The four complete theorem environments, including definitions,
+-labels, constants, ranges and error terms, are byte-identical to
+-Git baseline fa2f374 for the current final-polish round.
++labels, constants, ranges and error terms, remain byte-identical to
++Git baseline fa2f374.
+ 
+ ## Current prose scope and assembly
+ 
+-The single section.tex remains the entire Introduction; no formal
+-subsections, extra inputs or manifest change is needed. The prose
++The complete preceding Introduction is retained byte-for-byte as the
++prefix of section.tex. After its organization paragraph, that entry
++now inputs 01_acknowledgments.tex and 02_ai_disclosure.tex, each using
++an unnumbered subsection heading. No mathematical result or formula
++counter is changed. The retained mathematical prose
+ provides the motivation for four results grouped into two broad
+ index settings (first Hodge class powers/fixed-index insertions and
+ the top class/fixed defects),
+@@ -30,13 +33,40 @@
+ It has 144 words, no citations and no mathematical symbols, and expands
+ intermediate long-wave (ILW) at first use. It reports the four theorem
+ regimes at their original precision without promoting supplementary
+-coefficients or the fixed-defect conjecture. This final-polish reading
+-proposes no abstract change and does not edit the shared file.
+-
+-The present prose revision makes the first Hodge class explicit in the
++coefficients or the fixed-defect conjecture. The disclosure addition
++does not change the abstract or edit its shared source.
++
++The retained mathematical overview makes the first Hodge class explicit in the
+ opening, identifies the last two results by indices growing with genus,
+ and separately identifies the fixed insertion list and fixed defect.
+ It does not describe the top index g as a fixed insertion index.
++
++## Acknowledgments and AI provenance
++
++The new unnumbered subsections implement the explicit author request
++ACK-AI-DISCLOSURE, superseding the earlier no-acknowledgments preference.
++The first thanks only Di Yang and Yunhui Wu for helpful discussions.
++The second records the author's supplied account of discovery, proof
++and writing roles: Claude Opus 5.5 found N_g but could not identify
++the expansion constants; GPT-6-Astra identified those constants
++without supplying a proof; GPT-6.1-Sol supplied the proof and discovered
++and proved the following three main theorems, and wrote most of the
++manuscript. The human role is the initial Introduction, writing
++standards, design of the multi-agent writing workflow and supervision.
++
++The disclosure explicitly assigns scholarly credit to GPT-6.1-Sol,
++states that the human releases the paper solely for knowledge sharing
++and claims neither scholarly credit nor priority, and warns that the
++results have not been formally verified in Lean and may contain errors.
++Readers are explicitly asked to exercise caution and examine the arguments.
++No journal-policy or legal-authorship claim is added.
++
++The sole added citation is the existing LiuData26 entry, identifying
++the public hodge_data dataset. It is not evidence for the model-role
++account, which is supplied by the author, or a substitute for any proof.
++The inherited N_g and existing theorem labels are used without new
++definitions, macros, numbered formulas or labels. The author-address
++block after the bibliography is coordinated outside this section.
+ 
+ ## Global conventions at first use
+ 
+--- /dev/null
++++ sections/01_introduction/disclosure_handoff.md
+@@ -0,0 +1,75 @@
++# Introduction acknowledgments and AI-disclosure delivery
++
++Actual agent: /root/s02_writer. Unit: s01, r008 author phase.
++Actual dispatch: build/ack-ai-20261116/s01-writer-dispatch.json.
++Request: workflow/feedback/shared/ACK-AI-DISCLOSURE/request.json.
++The request baseline is 6ebf35034d61bc1bbf3a4a64126e9eec60636939.
++The prior approved r007 snapshot is
++728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981.
++Live status belongs to the workflow; this is not a review signature.
++
++## Exact assigned addition
++
++The original Introduction is retained as an exact byte prefix of
++section.tex, followed only by the inputs for the two new files:
++
++- 01_acknowledgments.tex: one unnumbered Acknowledgments subsection,
++  thanking only Di Yang and Yunhui Wu for helpful discussions.
++- 02_ai_disclosure.tex: one unnumbered AI disclosure subsection,
++  with four short English paragraphs covering research roles, writing
++  and human supervision, scholarly credit/priority, and the Lean/error
++  caution.
++
++The account preserves the exact model names and distinct roles requested
++by the author: Claude Opus 5.5 discovered N_g from hodge_data analysis
++but could not identify the expansion constants; GPT-6-Astra identified
++the constants without a proof; GPT-6.1-Sol supplied the proof and
++discovered and proved the following three main theorems. Most writing
++is credited to GPT-6.1-Sol. The human's stated role is the initial
++Introduction, writing standards, multi-agent workflow design and
++supervision of the whole paper.
++
++The credit paragraph is explicit: scholarly credit should go to
++GPT-6.1-Sol; the human releases the paper solely for knowledge sharing
++and claims neither scholarly credit nor priority. The final paragraph
++states that the results have not been formally verified in Lean,
++may contain errors, and require reader caution and careful examination.
++It does not invent extra verification, model roles, journal approval,
++coauthorship policy or legal status.
++
++LiuData26 is the sole added citation, identifying the already cited
++public hodge_data dataset. The provenance narrative is the author's
++supplied account, not an independently sourced model-capability claim.
++No internal program/file is made a reader obligation or a proof premise.
++
++## Preserved sources and validation boundary
++
++The pre-addition entry SHA256 is
++df6ec44b044816835005e6c68a27a3abfcfcae1c14d00adfd0452383996db67b.
++Static checks preserve that full prefix, all four complete theorem
++environments, all six numbered equations and existing labels/earlier
++prose. No new mathematical notation, model macro, stable label or
++numbered result is introduced. INTERFACE records the new assembly
++and author-disclosure scope. All old handoffs and frozen archives
++remain untouched.
++
++Only the assigned Introduction entry, two new subsections, interface,
++this new handoff and the designated external ACK are edited. Shared
++main/preamble/bibliography/abstract, manifest and the coordinator's
++author-address backmatter are not edited. No scientific calculation,
++state command, reviewer file or export is run or prepared. No model
++capability or journal-policy search is needed for the author-provided
++account. UTF-8/LF, source-prefix and formula/counter guards accompany
++delivery. The coordinator performs the real full-paper layout preview
++and subsequent frozen review. No extra source or package is requested.
++STOP.
++
++## Pre-freeze wording clarification
++
++Only two phrases in 02_ai_disclosure.tex are refined: the unidentified
++constants are explicitly those at the successive orders of the
++asymptotic expansion, without an all-orders formula claim; the human
++role explicitly says supervised GPT-6.1-Sol throughout the writing of
++the paper. The original Introduction prefix, acknowledgment, interface
++and all other disclosure wording remain unchanged. Historical handoffs
++are not edited. Static scope and UTF-8/LF guards precede STOP.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -204,3 +204,6 @@
+ Theorems~\ref{thm:top-hodge} and~\ref{thm:fixed-defect}
+ may proceed directly to Sections~6--8; these sections do not use
+ the Weil--Petersson correction coefficients.
++
++\input{sections/01_introduction/01_acknowledgments}
++\input{sections/01_introduction/02_ai_disclosure}
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -151,6 +151,8 @@
+ 
+ Introduction, Sections 2--8 and Appendices A/B are the reviewed article. Appendix C is retired: its known low-genus examples are not proof premises, and its old source/reviews remain internal historical records. Section 6 keeps an independently derived genus-two example; the closing Section 8 conjecture directly cites LiuData26 for numerical evidence.
+ 
+-The finalization scope beginning at Git baseline fa2f374 is to update obsolete working descriptions, polish English and presentation, verify bibliography and publication details, conduct an integrated final reading, then rebuild/export/compile the single TeX source in isolation and commit the finished version. The user has explicitly retained the existing author-name-only signature and generic article format; do not add affiliation, email, acknowledgments, funding, classifications or a journal template without new information.
++The finalization beginning at Git baseline fa2f374 was completed at commit 6ebf350. Its earlier author-name-only preference has now been superseded by the user's explicit acknowledgments, AI-disclosure and author-information request, recorded in workflow/feedback/shared/ACK-AI-DISCLOSURE/request.json. Keep the generic article format and existing title-page byline; put two unnumbered subsections at the end of the Introduction and the supplied affiliation, postal address and email after the bibliography at the bottom of the last page. No funding, classification or journal template has been requested.
++
++The AI disclosure records the author's supplied account of Claude Opus 5.5, GPT-6-Astra and GPT-6.1-Sol, including discovery/proof/writing roles, the human author's role, the stated allocation of scholarly credit and disclaimer of human credit or priority, and the absence of formal Lean verification with the requested reader caution. Preserve the exact model names and the substance of every requested attribution; no external model-capability or journal-policy investigation is needed to edit this author-provided account. This explicitly requested development history is allowed in the paper and creates no reader obligation to consult internal programs or workflow files. Existing literature credit and the mathematical statements remain intact. The public hodge_data dataset can be identified through the existing LiuData26 citation.
+ 
+ Keep all four main theorem statements and the user's notation and typography intact. Section 4 and Section 6 higher-coefficient Remarks explicitly omit calculations by user instruction; the final h=1 refinement is explicitly a conjecture. These are not unfinished parts of the four theorem proofs and must not silently strengthen their error estimates. Any new substantive change uses the original author and reviewers; current status comes from the actual workflow, not descriptive prose in an old handoff.
+--- previous/workflow/reviews/s01/r006/author_response.json
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{
+-  "agent_id": "/root/s02_writer",
+-  "responses": [],
+-  "round": 6,
+-  "unit": "s01"
+-}

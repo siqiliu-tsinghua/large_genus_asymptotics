@@ -1,0 +1,82 @@
+% !TeX root = ../../main.tex
+\subsection{Analytic domains of the inverse Bessel function}
+\label{subsec:s08:01}
+
+For small real $\theta\geq0$, let $x_{*,\theta}$ be the critical
+branch determined by
+\begin{equation}\label{eq:s08:critical-data}
+ w_\theta'(x_{*,\theta})=0,\qquad x_{*,0}=x_*,\qquad
+ R_\theta=w_\theta(x_{*,\theta}).
+\end{equation}
+The nonzero second derivative in
+\eqref{eq:s06:critical-derivatives} makes this branch real analytic.
+In particular $R_0=R$. The inverse branch is always the continuation
+of $v_\theta(0)=0$ fixed in \eqref{eq:s07:specialized-inverse}.
+
+\begin{lmm}[The inverse singularity]\label{lmm:s08:inverse}
+The Taylor series of $v_0$ has radius of convergence $R$, extends
+across every other point of its convergence circle, and satisfies
+\begin{equation}\label{eq:s08:inverse-singularity}
+ v_0(x)=x_*-\frac{z_{0,1}}{\sqrt2}\sqrt{1-x/R}+O(1-x/R)
+                                      \quad(x\longrightarrow R).
+\end{equation}
+For small $\theta\geq0$ the analogous inverse expansion is
+\begin{equation}\label{eq:s08:perturbed-inverse}
+ v_\theta(R_\theta-S)
+ =x_{*,\theta}-\sqrt{\frac{2}{-w''(x_{*,\theta})}}\sqrt S+O(S).
+\end{equation}
+It is uniform on each fixed sector $|\arg S|<\pi-\gamma$,
+$\gamma>0$, with the square root positive for $S>0$.
+\end{lmm}
+\begin{prf}
+Proposition~\ref{prp:b:inverse-budget} constructs a univalent inverse
+image containing $|x|<R_\theta$, whose circle has its unique boundary
+contact at $R_\theta$. Its Morse coordinate gives
+\eqref{eq:s08:perturbed-inverse}; the nonzero square-root coefficient
+precludes holomorphy at that point. Thus the radius is exactly $R$
+at $\theta=0$, and the other circle points are regular.
+Finally \eqref{eq:s06:critical-data} and
+\eqref{eq:s06:critical-derivatives} give
+$2R/(-w''(x_*))=z_{0,1}^2/2$, proving
+\eqref{eq:s08:inverse-singularity} with the stated coefficient.
+\end{prf}
+
+The geometric issue for the kernels is a radius budget, rather than
+univalence alone. Appendix~\ref{subsec:b:domains} uses a fixed
+positive disk center in the inverse variable: at a real center $x$
+the image contains the full disk of radius $R_\theta-x$, touching
+the critical value only once. Kernel shifts send the two distances
+$R_\theta-x-y$ and $R_\theta-x+y$ to positive combinations of
+the same distances. A characteristic increases the boundary-distance
+budget, and its remote part is controlled on regular inverse disks.
+These facts explain why the same complex regions work at every
+fixed finite set of defect layers.
+
+\begin{crl}[Common analytic regions]\label{crl:s08:domains}
+Fix an integer $H\geq1$ and a real $1/2<\nu<1$. There are
+$\theta_H,r_H>0$ and $0<\gamma_H<\pi/4$ such that, for
+$1\leq h\leq H$, $0\leq\theta\leq\theta_H$ and real
+$-r_H\leq x<R_\theta$, the Borel function
+$\mathcal L_h(\theta;x,y)$ is holomorphic for $|y|<S=R_\theta-x$
+and extends to
+\begin{equation}\label{eq:s08:dented-domains}
+ |y|<(1+r_H)S,\qquad
+ |\arg(S-y)|<\pi-\gamma_H,\qquad
+ |\arg(S+y)|<\pi-\gamma_H.
+\end{equation}
+The extensions are joint in complex neighborhoods of the real
+centers and in the parameter. The endpoint class and all fixed
+derivative bounds of Proposition~\ref{prp:b:common-domains} hold
+there on smaller angular regions. The kernel sums and full
+characteristic integrals converge normally on compact subsets.
+\end{crl}
+\begin{prf}
+Apply Proposition~\ref{prp:b:common-domains} with this fixed cap
+$H$ and remainder exponent $\nu$. Its proof combines the
+two-distance geometry with the regular-disk and endpoint estimates;
+in particular it establishes convergence of the actual Borel
+series, rather than assuming it for the formal identities of
+Section~\ref{sec:s07}. The joint parameter neighborhoods and normal
+convergence asserted here are part of that result. There is no
+growing-defect uniformity in this application.
+\end{prf}

@@ -1,0 +1,19 @@
+{
+  "depends_on": [],
+  "directory": "sections/01_introduction",
+  "id": "s01",
+  "kind": "body",
+  "number": 1,
+  "outline_heading": null,
+  "subsections": [
+    {
+      "path": "sections/01_introduction/01_acknowledgments.tex",
+      "title": "Acknowledgments"
+    },
+    {
+      "path": "sections/01_introduction/02_ai_disclosure.tex",
+      "title": "AI disclosure"
+    }
+  ],
+  "title": "Introduction"
+}

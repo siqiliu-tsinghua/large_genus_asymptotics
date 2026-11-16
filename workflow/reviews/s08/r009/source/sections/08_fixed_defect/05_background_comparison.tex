@@ -1,0 +1,218 @@
+% !TeX root = ../../main.tex
+\subsection{Comparing the kappa and Hodge backgrounds}
+\label{subsec:s08:05}
+
+The relation $12\lambda_1=\kappa_1+\delta$ changes the entire
+background, not just one coefficient. We first estimate a single
+boundary insertion, summing over every genus split. A monotone,
+log-concave sequence of mixed intersections will then control all
+boundary insertions at once.
+
+For $g\geq2$ and $0\leq h\leq g$, set
+\begin{equation}\label{eq:s08:node-definition}
+ T_{g,h}^{\delta}
+   =\int_{\MM_g}\lambda_{g-h}\delta e^{\kappa_1}.
+\end{equation}
+As usual the top-degree part is selected by the integral.
+
+\begin{lmm}[A single node]\label{lmm:s08:one-node}
+For these indices one has the exact decomposition
+\begin{equation}\label{eq:s08:one-node}
+ \begin{aligned}
+ T_{g,h}^{\delta}
+ ={}&
+ \begin{cases}
+  \tfrac12 T_{g-1,h-1,2},&h\geq1,\\
+  0,&h=0
+ \end{cases}\\
+ &+\frac12\sum_{G=1}^{g-1}
+   \ \sum_{\substack{0\leq i\leq h\\ i\leq G,\ h-i\leq g-G}}
+                    T_{G,i,1}\,T_{g-G,h-i,1}.
+ \end{aligned}
+\end{equation}
+For every fixed $h\geq0$, as $g\to\infty$,
+\begin{equation}\label{eq:s08:node-bound}
+ |T_{g,h}^{\delta}|=O_h(g^{-1}T_{g,h}).
+\end{equation}
+\end{lmm}
+\begin{prf}
+\emph{The restriction formula.}
+On the normalization of a one-node stratum, the logarithmic
+dualizing line restricts to the logarithmic dualizing line of each
+component, with the branches counted as markings. Pushing its
+square down the universal curve shows that $\kappa_1$ restricts
+additively. Equation~\eqref{eq:s02:hodge-factorization} gives the
+corresponding Hodge restriction.
+
+For a nonseparating node the normalization has genus $g-1$ and two
+markings. Its class $\lambda_{g-h}$ has defect $h-1$ and vanishes
+when $h=0$. For a separating node the two defects sum to $h$,
+giving the inner range in \eqref{eq:s08:one-node}. An unmarked
+one-valent component cannot be rational, so $1\leq G\leq g-1$.
+The first factor $1/2$ exchanges the two branches of the loop.
+The second accounts for ordering the two separating components;
+it also gives the correct factor when their genera coincide.
+These are the ordered-branch stack conventions of
+\eqref{eq:s02:ordered-boundary}. Thus no additional factor is
+hidden in the vertex integrals.
+
+\smallskip\noindent
+\emph{The full genus sum.}
+For this estimate abbreviate $D=D_{g,h}$. The degree of the
+nonseparating vertex is $D-1$. Its bound in
+\eqref{eq:s08:marked-bound}, the positive asymptotic
+\eqref{eq:s08:intersection-asymptotic}, and the bounded ratio
+$\beta_{g-1}/\beta_g$ give $O_h(T_{g,h}/D)$.
+
+In a separating term put
+$a=2G-2+i$ and $c=2(g-G)-2+h-i$. They are nonnegative integers
+and $a+c=D-1$. The uniform comparison for $\beta_G$ in
+Theorem~\ref{thm:s06:lambda-g} gives
+$\beta_G\beta_{g-G}\leq C\beta_g$, independently of $G$.
+Since $(a+1)(c+1)\geq D$, the two marked bounds yield
+\begin{equation}\label{eq:s08:node-convolution}
+ \frac{|T_{G,i,1}T_{g-G,h-i,1}|}{T_{g,h}}
+ \leq \frac{C_h}{D\binom{D-1}{a}}.
+\end{equation}
+For every integer $N\geq0$,
+$\sum_{a=0}^N\binom Na^{-1}\leq4$. For $N\geq4$, separate
+the two endpoints and their neighbors; every remaining binomial
+coefficient is at least $N(N-1)/2$, which proves the bound.
+The smaller $N$ are immediate. For each fixed $i$, the values of
+$a$ coming from the allowed genera form a subset of
+$\{0,\ldots,D-1\}$. There are at most $h+1$ choices of $i$.
+Summing \eqref{eq:s08:node-convolution} therefore proves
+\eqref{eq:s08:node-bound} for the whole boundary, including all
+small components.
+\end{prf}
+
+We next use nefness of the full Hodge bundle. A vector bundle is
+nef here when its tautological quotient line bundle is nef.
+The needed semipositivity applies on the compactification, including
+test curves contained in the boundary.
+
+\begin{lmm}[Nef classes on the compactification]\label{lmm:s08:nef}
+The Hodge bundle $\EE$ and its determinant are nef on $\MM_g$,
+and $\kappa_1=12\lambda_1-\delta$ is ample as a rational divisor
+class. Intersection inequalities for nef divisors on smooth
+projective varieties may be applied after a common smooth
+projective generically finite cover of $\MM_g$ and its Hodge
+projective bundle.
+\end{lmm}
+\begin{prf}
+Fujita's semipositivity theorem \cite[Main Theorem (0.6)]{Fuj78}
+applies to the relative dualizing direct image over a smooth
+projective curve. The stable family is replaced by a semistable
+resolution; its Hodge bundle is unchanged. Kawamata's
+\cite[Theorem 5]{Kaw81} gives the corresponding statement over a
+smooth projective base with a normal-crossing discriminant and
+unipotent local monodromy. These hypotheses hold after semistable
+reduction; quotient-line nonnegativity descends under finite
+covers of a test curve.
+
+For a test curve contained generically in the boundary, first make
+a finite cover labeling its generic graph and lift it to the
+product of the component moduli stacks. The component families
+have smooth generic fibers. Their Hodge bundles are nef by the
+preceding result. Partial normalization gives the exact sequence
+\eqref{eq:s02:hodge-normalization}, with a trivial cycle-space
+quotient on this labeled cover. Extensions and direct sums of nef
+bundles on a curve are nef, so the original Hodge bundle is nef as
+well. This is the boundary reduction in
+\cite[Proposition 4.4]{LX26b}. Its determinant is nef: on each
+test curve its degree is the top self-intersection of the
+tautological nef class on the projective bundle.
+
+The ampleness assertion follows from
+\cite[Theorem (1.3)]{CH88}: for real coefficients $a,c$,
+$a\lambda_1-c\delta$ is ample precisely when $a>11c>0$.
+Take $a=12$, $c=1$, and use
+\eqref{eq:s02:lambda-one-grr} with no markings.
+Finally \cite[Proposition 6.1, $m=0$]{LX26b} supplies a smooth
+projective generically finite cover of the stack. Pulling back
+$\EE$ and then taking its projective bundle gives the corresponding
+smooth projective cover upstairs. Top intersections are multiplied
+by their common positive degree, including the generic stack
+stabilizer factor, so inequalities descend by division. Pullback
+preserves nefness; ampleness after this generically finite
+pullback is not needed.
+\end{prf}
+
+For the remainder of this subsection let
+$p:\mathbb P(\EE)\longrightarrow\MM_g$ parametrize one-dimensional
+quotients, and put $\xi=c_1(\mathcal O_{\mathbb P(\EE)}(1))$.
+Every base class in an intersection on this projective bundle is
+pulled back by $p$.
+
+\begin{prp}[Replacing the background]\label{prp:s08:background}
+For each fixed integer $h\geq0$, as $g\to\infty$,
+\begin{equation}\label{eq:s08:background}
+ b_g(h)=12^{-D_{g,h}}D_{g,h}!\,T_{g,h}
+                                      (1+O_h(g^{-1})).
+\end{equation}
+\end{prp}
+\begin{prf}
+\emph{Chern classes as projective intersections.}
+For a local formal variable $t$, the projective bundle formula and
+\eqref{eq:s02:chern-exponential} give
+\begin{equation}\label{eq:s08:projective-pushforward}
+ p_*\xi^{g-1+j}
+ =[t^j]\,c_{-t}(\EE)^{-1}
+ =[t^j]\,c_t(\EE)=\lambda_j
+                                      \qquad(0\leq j\leq g).
+\end{equation}
+The middle equality uses the absence of even Chern characters:
+$c_t(\EE)c_{-t}(\EE)=1$. It is a special Hodge-bundle identity,
+not an identification of arbitrary Segre and Chern classes.
+
+In this proof put $D=D_{g,h}$. For integers $0\leq k\leq D$ define
+the mixed intersections
+\begin{equation}\label{eq:s08:mixed-intersections}
+ C_k=\int_{\mathbb P(\EE)}
+       \xi^{2g-h-1}\,p^*(12\lambda_1)^k\,p^*\kappa_1^{D-k}.
+\end{equation}
+Their total degree is $4g-4=\dim\mathbb P(\EE)$. All three divisor
+classes are nef by Lemma~\ref{lmm:s08:nef}. Since $\delta$ is
+effective, their intersections on its pullback show that
+$C_{k+1}\geq C_k$. The pushforward formula identifies their
+endpoints and first difference:
+\begin{equation}\label{eq:s08:mixed-endpoints}
+ C_0=D!\,T_{g,h},\qquad
+ C_D=12^D b_g(h),\qquad
+ C_1-C_0=(D-1)!\,T_{g,h}^{\delta}.
+\end{equation}
+Here $D\geq1$ for every unmarked stable target under consideration.
+The positive asymptotic in
+\eqref{eq:s08:intersection-asymptotic} ensures $C_0>0$ for all
+sufficiently large $g$.
+
+\smallskip\noindent
+\emph{The mixed sequence is log-concave.}
+On the smooth projective cover from Lemma~\ref{lmm:s08:nef},
+approximate each of the three nef classes by adding a small
+positive multiple of a fixed ample class. For rational
+approximations, take sufficiently divisible very ample multiples.
+For $1\leq k<D$, cut a smooth surface by
+$2g-h-1$ copies of the approximated $\xi$,
+$k-1$ copies of the approximated $p^*(12\lambda_1)$, and
+$D-k-1$ copies of the approximated $p^*\kappa_1$.
+The Hodge index theorem on that surface gives
+$C_k^2\geq C_{k-1}C_{k+1}$ after the approximation tends to zero.
+Dividing by the common cover degree preserves this homogeneous
+inequality. Thus the positive ratios $C_{k+1}/C_k$ decrease.
+
+\smallskip\noindent
+\emph{All boundary powers at once.}
+Using monotonicity, log-concavity and
+\eqref{eq:s08:mixed-endpoints}, we obtain
+\begin{equation}\label{eq:s08:background-squeeze}
+ 1\leq\frac{C_D}{C_0}
+ \leq\left(\frac{C_1}{C_0}\right)^D
+ =\left(1+\frac{T_{g,h}^{\delta}}{D\,T_{g,h}}\right)^D
+ \leq \exp\left(\frac{T_{g,h}^{\delta}}{T_{g,h}}\right)
+ =1+O_h(g^{-1}).
+\end{equation}
+Lemma~\ref{lmm:s08:one-node} gives the last estimate.
+The endpoint identities \eqref{eq:s08:mixed-endpoints} therefore
+prove \eqref{eq:s08:background} for the full background.
+\end{prf}

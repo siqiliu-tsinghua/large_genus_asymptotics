@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, 84 archive/live inputs and artifacts, original-writer ACK and fresh approved S1 r008/S2 r018/S3 r015/A r015; the same disclosure/footer update supplies no new premise to T1.1.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All twenty-five S4 files equal r016, preserving low-complexity vertex dimensions, q=0,1,2 retained-core ranges, genus-correct loops and the legal parameter ranges in the final proof.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The identical source retains absolute Q=Z/F rather than relative gamma, correlated loop/connector factors, the N_g conversion and both (9/8)g^-1 forms; the new author account references the existing N_g without redefining it or the leading constant.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged S4 interface and proofs preserve inherited g_2, alpha, scalar/core and signed-functional scopes, lowercase a_g and existing coefficient labels; unnumbered S1 metadata and the address introduce no mathematical alias or counter change.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The original complete assessment of the written S3/A inputs, q=0/1/2 assembly and complete T1.1 proof remains valid on identical source, independently of AI attribution or data provenance; the supplemental higher coefficients still explicitly omit details and are not a main-proof premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved M=3 whole-graph tail, all-legal large-loop cutoff before HMT and K=2-q factorially summable errors retain relative O(g^-3) without logarithmic loss; metadata adds no stronger precision, convergence or formal-verification claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Verified four changed inherited paths and four additions with no removal, each equal to the reviewed A r015 common update; all twenty-five own files, including internal checks, remain unchanged. Actual writer ACK/archived-copy SHA256 0731d86ea3d0275ab2ba30138e09b063b6562238c2c62a3027aa98bab739e1a0.",
+    "Native source SHA256 a75a78cc78d8ae3fe2c6e1afc60942ecc7a7d52cae52220983f41e7217615632; PDF 56c6a52fd86097cbe6bf799e7c78aecbf14725676b6c3b3eff64f64e928862c2. Receipt/artifact/helper/main hashes and exact render/frozen-map equality match, with explicit pre-submit snapshot=null provenance and empty strict/layout diagnostics; native text contains the common metadata and final-page address.",
+    "The same S1 current-layout companion receipt/PDF identity was verified without granting new whole-paper approval. No unchanged scientific check or proof was rerun/reread; only the current two math reports were written, with no source/state/history/output edits or later-unit/export signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "10a1ab0aaee9dc95ab94b67d3b19808d2296f662364fd72650aa393d8fdea42f",
+  "summary": "Pass on S4 r017: the verified metadata-only dependency refresh preserves the complete Theorem 1.1 coefficient/proof chain, absolute normalization and remainder, with the supplementary reported coefficients retaining their separate status.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,258 @@
+% !TeX root = ../../main.tex
+\subsection{A filtration by odd Chern characters}
+\label{subsec:s05:01}
+
+We use the boundary exponential in
+\cite[Lemma~3.10, (3.18)--(3.21)]{ABCDGLW23} for a general symmetric
+node series. Its scalar specialization was proved in
+Proposition~\ref{prp:s02:boundary-exponential}. We state the labeled
+specialization and give its algebraic proof.
+
+Fix an integer $r\geq1$ and odd integers $a_1,\ldots,a_r\geq3$,
+and put $w=\sum_{i=1}^r a_i$. For an odd integer $a\geq3$ and formal variables $x,y$, define
+the symmetric polynomial
+\begin{equation}\label{eq:s05:node-polynomial}
+ \mathcal P_a(x,y)=\sum_{c=0}^{a-1}(-1)^c x^c y^{a-1-c}.
+\end{equation}
+Let $\varepsilon_1,\ldots,\varepsilon_r$ be commuting formal
+variables with $\varepsilon_i^2=0$. Coefficient extraction refers to
+this square-free algebra. Set
+\begin{equation}\label{eq:s05:source-kernel}
+\begin{split}
+ \mathcal E(x,y)&=\alpha+
+       \sum_{i=1}^r\varepsilon_i\mathcal P_{a_i}(x,y),\\
+ K_{\mathcal E}(x,y)&=
+       \frac{1-e^{-(x+y)\mathcal E(x,y)}}{x+y}.
+\end{split}
+\end{equation}
+The quotient is a formal series: its numerator is divisible by $x+y$.
+All Chow series in the next identity are truncated by codimension.
+
+\begin{lmm}[Labeled sources]\label{lmm:s05:labelled-sources}
+For $g\geq2$,
+\begin{align}
+ &\int_{\MM_g}e^{12\alpha\lambda_1}
+              \prod_{i=1}^r\mathrm{ch}_{a_i}\notag\\
+ &=\left(\prod_{i=1}^r\frac{B_{a_i+1}}{(a_i+1)!}\right)
+ [\varepsilon_1\cdots\varepsilon_r]
+ \sum_{\Gamma\in\mathcal G_{g,0}}
+ \frac1{|\operatorname{Aut}\Gamma|}\notag\\
+ &\qquad\times\int_{\MM_\Gamma}
+ \prod_{v\in V(\Gamma)}
+  \exp\left(\alpha\kappa_1^{(v)}+
+          \sum_{i=1}^r\varepsilon_i\kappa_{a_i}^{(v)}\right)
+ \prod_{\substack{e\in E(\Gamma)\\e=\{f,f'\}}}
+       K_{\mathcal E}(\psi_f,\psi_{f'}).
+ \label{eq:s05:source-graphs}
+\end{align}
+\end{lmm}
+\begin{prf}
+On the unmarked space, \eqref{eq:s02:grr} writes each character as
+$B_{a+1}/(a+1)!$ times
+$\kappa_a+\tfrac12\xi_*\mathcal P_a(\psi_+,\psi_-)$.
+Also $12\alpha\lambda_1=\alpha\kappa_1+\alpha\delta$.
+The coefficient of the product of all the sources in the
+exponential of these classes is their product, with no $r!$.
+
+The normal line of a boundary branch has first Chern class
+$-(x+y)$. Repeating that branch $k\geq1$ times in the exponential
+therefore gives
+\[
+ \sum_{k\geq1}\frac{(-(x+y))^{k-1}\mathcal E(x,y)^k}{k!}
+ =K_{\mathcal E}(x,y).
+\]
+Distinct nodes give the product of these factors, exactly as in the
+proof of Proposition~\ref{prp:s02:boundary-exponential}. The
+logarithmic dualizing line restricts to the logarithmic dualizing
+line on each component, with the branches included among its
+markings. Integrating its powers on the normalized universal curve
+thus gives $\xi_\Gamma^*\kappa_a=\sum_v\kappa_a^{(v)}$.
+The projection formula supplies the displayed vertex exponentials.
+
+Finally, passing from labeled vertex and flag products to graph
+isomorphism classes gives $1/|\operatorname{Aut}\Gamma|$.
+The source labels remain distinct. Equivalently, grouping their
+assignments into orbits gives the stabilizer of each decorated
+graph; no permutation factor for the source labels is introduced.
+All steps are self-intersection and pushforward operations in Chow,
+so integration proves \eqref{eq:s05:source-graphs}.
+\end{prf}
+
+\begin{rmk}[Boundary normalization]
+The cited lemma is stated in cohomology. Its normal-line proof,
+spelled out above in the required specialization, is algebraic.
+The source's boundary pushforward is the sum over one-edge graphs
+with their automorphism factors. This equals our
+$\tfrac12\xi_*$ on symmetric branch classes, already used in
+\eqref{eq:s02:ordered-boundary}; no additional factor $1/2$ belongs
+in \eqref{eq:s05:source-kernel}.
+\end{rmk}
+
+A source is assigned either to an edge or to a vertex. If a nonempty set
+$J\subseteq[r]$ is assigned to one edge, its coefficient is
+\begin{equation}\label{eq:s05:tagged-edge}
+ [\textstyle\prod_{i\in J}\varepsilon_i]K_{\mathcal E}(x,y)
+ =(-1)^{|J|-1}(x+y)^{|J|-1}e^{-\alpha(x+y)}
+       \prod_{i\in J}\mathcal P_{a_i}(x,y).
+\end{equation}
+The polynomial multiplying the exponential has degree
+$\sum_{i\in J}a_i-1$. An edge with no source retains
+$K_\alpha(x,y)=\int_0^\alpha e^{-t(x+y)}\dd t$.
+
+If a set $I\subseteq[r]$ is assigned to a vertex of type $(G,n)$,
+use the partition inversion \eqref{eq:s02:partition-inversion}.
+For each partition $\mathcal A$ of $I$, order its blocks as
+$C_1,\ldots,C_m$, where $m=|\mathcal A|$; the expression is
+independent of this order. For any polynomial, or
+codimension-truncated series, $Q$ in the old cotangent classes,
+\begin{align}
+ &\int_{\MM_{G,n}}e^{\alpha\kappa_1}Q
+                   \prod_{i\in I}\kappa_{a_i}\notag\\
+ &=\sum_{\mathcal A\text{ a partition of }I}(-1)^{|I|-m}
+   \int_{\MM_{G,n+m}}
+    e^{\alpha\kappa_1-\alpha\sum_{k=1}^m\psi_{n+k}}
+    Q
+    \prod_{k=1}^m\psi_{n+k}^{\,1+\sum_{i\in C_k}a_i}.
+ \label{eq:s05:free-markings}
+\end{align}
+For $I$ empty this means the original integral. Every new cotangent
+power is at least four. Lemma~\ref{lmm:s02:rational-tail-degree}
+therefore replaces the pullbacks of $Q$ by the intrinsic old classes
+and replaces the pulled-back background by the exponential displayed
+in \eqref{eq:s05:free-markings}. In particular the new factors
+$e^{-\alpha\psi_{n+k}}$ survive. The inverse has the sign shown and
+has no block factorials.
+
+Each free new marking can return only one power of $g$ against the
+loss $g^{-a}$ from degree conversion for a character of degree $a$.
+We now justify this count for the complete graph sum, before using
+it to discard any terms.
+
+\begin{lmm}[Character filtration]\label{lmm:s05:character-filtration}
+For the fixed indices above, as $g\to\infty$,
+\begin{equation}\label{eq:s05:character-bound}
+ \left\langle\prod_{i=1}^r\mathrm{ch}_{a_i}\right\rangle_g
+       =O_{a_1,\ldots,a_r}(g^{r-w}).
+\end{equation}
+\end{lmm}
+\begin{prf}
+\emph{Uniform bounds on the original graphs.}
+Estimate each term of \eqref{eq:s05:source-graphs} on its original
+unmarked graph.
+Let $s_v$ be the number of forgetting blocks at vertex $v$ and
+$m=\sum_v s_v\leq r$. All cotangent insertions in
+\eqref{eq:s05:tagged-edge} and \eqref{eq:s05:free-markings} are
+fixed derivatives of vertex functions. Their total derivative order
+is bounded in terms of the fixed $a_i$. Applying the multivariable
+Cauchy formula on fixed discs to
+Lemma~\ref{lmm:s03:vertex-bound} bounds each such derivative by the
+same vertex majorant, with changed constants independent of the
+stable type. Edge parameters lie in $[0,\alpha]$ or equal $\alpha$;
+the discs lie in one fixed compact set. At a vertex with $s_v$ new
+markings the factorial part changes by at most
+\[
+ \frac{\Gamma(k_v+s_v)}{\sqrt{k_v+s_v}}
+ \leq(k_v+r)^{s_v}\frac{\Gamma(k_v)}{\sqrt{k_v}},
+ \qquad k_v=2g_v-2+n_v\geq1.
+\]
+The other new factors are bounded constants depending on the indices.
+
+In this counting paragraph put $H=2g-2$. Summing the assignments of
+$m$ labeled blocks to vertices costs at most
+\[
+ \left(\sum_v(k_v+r)\right)^m
+ \leq((r+1)H)^m,
+\]
+since $\sum_v k_v=H$ and $|V(\Gamma)|\leq H$.
+There are only finitely many partitions of the fixed source labels.
+Assigning the remaining labels to at most $r$ specified edges costs
+at most $C_r(1+|E(\Gamma)|)^r$. This is absorbed into
+$T^{|E(\Gamma)|}$ for a fixed $T>1$, rather than into another power
+of $H$. Thus, even when absolute values are taken before the finite
+source and partition sums, the complete graph term is bounded by
+\begin{equation}\label{eq:s05:source-majorant}
+ \frac{C(1+H)^rT^{|E(\Gamma)|}}{|\operatorname{Aut}\Gamma|}
+ \prod_{v\in V(\Gamma)}
+ \frac{C_1B^{n_v}(4\pi^2)^{k_v-1}\Gamma(k_v)}{\sqrt{k_v}}.
+\end{equation}
+All constants are independent of $g$ and $\Gamma$.
+
+For every fixed integer $M\geq1$,
+Corollary~\ref{crl:s03:marked-extension}\textup{(ii)}, applied to
+these original graphs with no external legs and polynomial loss $r$,
+now bounds the absolute contribution of graphs with no large vertex
+or with $q\geq M$ by
+\begin{equation}\label{eq:s05:source-tail}
+ O_{a_1,\ldots,a_r,M}(F_g g^{r-M}).
+\end{equation}
+
+\emph{Fixed cores and all legal loop counts.}
+Here $q$ and the core refer to the original unmarked graph, before
+adding forgetting markings. Fix one core, a source assignment and
+its partitions, and let $s$ be the number of their new markings at
+the large vertex, so $0\leq s\leq r$. Its complexity after these
+markings is $2g-2-q+s$, independently of the restored loop count
+$p$. The all-type bound of Lemma~\ref{lmm:s03:vertex-bound} gives
+the factorial ratio
+$\Gamma(2g-2-q+s)/\Gamma(2g-2)=O(g^{s-q})$.
+The small vertices have fixed types, and choices of specified
+restored loops add only a fixed polynomial in $p$. Therefore, for
+constants $C>0$ and an integer $A\geq0$ depending on these fixed
+data, the absolute contribution with any legal $p$ is at most
+\begin{equation}\label{eq:s05:decorated-core-bound}
+ F_g g^{s-q}\frac{C^{p+1}(1+p)^A}{p!}.
+\end{equation}
+The all-type bound applies even when the large vertex's genus is
+small. Summing over legal $p>\log g$ gives a remainder smaller
+than any prescribed inverse power. Only after that truncation may
+one use HMT's expansions on $p\leq\log g$, as in
+Proposition~\ref{prp:s03:core-expansion}. In particular the bound
+summed over all legal $p$ is $O(F_g g^{s-q})$.
+
+Take $M=1$ in \eqref{eq:s05:source-tail}. The remaining finitely
+many core assignments have $q=0$ and $s\leq r$, so their total is
+$O(F_g g^r)$. Together with the tail this bounds the entire
+integral in \eqref{eq:s05:source-graphs} by $O(F_g g^r)$.
+Finally, for $3g-3\geq w$, degree conversion gives
+\begin{equation}\label{eq:s05:character-normalization}
+ \left\langle\prod_{i=1}^r\mathrm{ch}_{a_i}\right\rangle_g
+ =(12\alpha)^w\frac{(3g-3-w)!}{(3g-3)!}
+ \frac{\displaystyle\int_{\MM_g}e^{12\alpha\lambda_1}
+                    \prod_{i=1}^r\mathrm{ch}_{a_i}}
+      {Z_g(1)}.
+\end{equation}
+The factorial prefactor is $O(g^{-w})$.
+Theorem~\ref{thm:s03:graph-expansion} gives
+$Z_g(1)\sim e^{S(1)}V_{g,0}$.
+Since $V_{g,0}\asymp F_g$, this proves
+\eqref{eq:s05:character-bound}.
+\end{prf}
+
+The Chern exponential now reduces the theorem to one character.
+
+\begin{crl}[Algebraic reduction]\label{crl:s05:algebraic-reduction}
+For the fixed product in Theorem~\ref{thm:fixed-insertions},
+\begin{equation}\label{eq:s05:algebraic-reduction}
+ F(j)\langle P(\lambda)\rangle_g
+ =1+2G(j)\langle\mathrm{ch}_3\rangle_g+O(g^{-4}).
+\end{equation}
+\end{crl}
+\begin{prf}
+For a homogeneous Hodge polynomial $Q$ and an integer $c\geq0$
+with $\deg Q+c\leq3g-3$, the definition of the normalized bracket
+gives the exact identity
+$\langle\lambda_1^c Q\rangle_g=\langle Q\rangle_g$.
+In \eqref{eq:s02:chern-exponential}, the term with no character of
+degree at least three contributes $\lambda_1^{j_k}/j_k!$ to
+$\lambda_{j_k}$. The term with one $\mathrm{ch}_3$ contributes
+$2\mathrm{ch}_3\lambda_1^{j_k-3}/(j_k-3)!$ when $j_k\geq3$.
+Multiplying the fixed factors and then $F(j)$ gives the coefficient
+$2\sum_{k=1}^{\ell}j_k(j_k-1)(j_k-2)=2G(j)$.
+
+Every other nonconstant term has either one odd character of degree
+at least five, or at least two characters of degrees at least three.
+Lemma~\ref{lmm:s05:character-filtration} makes each such normalized
+term $O(g^{-4})$. There are only finitely many terms, since the
+$j_k$ are fixed. Indices below three simply supply no
+$\mathrm{ch}_3$ term, completing the proof.
+\end{prf}

@@ -1,0 +1,311 @@
+% !TeX root = ../../main.tex
+\subsection{Finite-core enumeration and contributions}
+\label{subsec:a:04}
+
+We use the cores of Subsection~\ref{subsec:s03:04}: root self-loops
+have been contracted, increasing the root genus. The distinguished
+root is labeled $0$; the small vertices are labeled $1,\ldots,v$
+temporarily for describing their edge matrix. Let $m_{ij}$ be the edge
+multiplicity for $i\ne j$, and $m_{ii}$ the number of self-loops at
+vertex $i$. These two-index multiplicities are distinct from the
+low-degree counts $m_a$ used above. If the small genera are $G_i$,
+then
+\begin{equation}\label{eq:a:core-data}
+\begin{gathered}
+ n_i=2m_{ii}+\sum_{j\ne i}m_{ij},\qquad
+ q=\sum_{i=1}^v(2G_i-2+n_i),\\
+ c=\sum_{i=1}^vG_i+b_1(\Gamma_{\rm c})=\frac{q+n_0}{2}.
+\end{gathered}
+\end{equation}
+The root has genus $g-c$ in the core. Restoring $p$ root loops gives
+type $(g-c-p,n_0+2p)$ and automorphism factor $2^pp!$ in addition
+to that of the core.
+
+The enumeration is short because each small vertex has positive
+complexity. We prove its completeness and the symmetry rule before
+listing any contributions.
+
+\begin{lmm}[The cores of complexity at most two]\label{lmm:a:core-enumeration}
+There are respectively $1,3,13$ core types at $q=0,1,2$. For every
+core, the automorphism order is
+\begin{equation}\label{eq:a:core-aut}
+ |\operatorname{Aut}\Gamma_{\rm c}|=
+ |\operatorname{Aut}_V\Gamma_{\rm c}|
+       \prod_{i<j}m_{ij}!\prod_{i=0}^v2^{m_{ii}}m_{ii}!,
+\end{equation}
+where $\operatorname{Aut}_V$ fixes the root and consists of the
+permutations of small vertices preserving genera and the multiplicity
+matrix. Here $m_{00}=0$.
+\end{lmm}
+\begin{prf}
+For fixed vertices, parallel edges may be permuted freely. A family
+of $m_{ii}$ self-loops has $m_{ii}!$ permutations and two branch
+exchanges per loop. A compatible vertex permutation lifts to a flag
+bijection in precisely the same number of ways. This proves
+\eqref{eq:a:core-aut}, including exchanges of identical small vertices.
+
+At $q=0$ no small vertex exists. At $q=1$ the sole small vertex has
+type $(0,3)$ or $(1,1)$. The equation $m_{01}+2m_{11}=n_1$,
+with $m_{01}\geq1$, gives two possibilities for the former and one
+for the latter.
+
+At $q=2$ there is one complexity-two vertex or two complexity-one
+vertices. A single $(0,4)$ vertex gives two possibilities and a single
+$(1,2)$ gives one; type $(2,0)$ cannot connect to the root. For two
+vertices put $a=m_{01}$, $b=m_{02}$, $d=m_{12}$, and $l_i=m_{ii}$.
+The equations are
+\[
+ a+2l_1+d=n_1,\qquad b+2l_2+d=n_2.
+\]
+For two rational trivalent vertices, $d=0,1,2$ gives respectively
+three, two, and one possibilities up to vertex exchange; $d=3$
+disconnects the root. One rational trivalent and one elliptic univalent
+vertex give two possibilities at $d=0$ and one at $d=1$. Two elliptic
+univalent vertices have just their two separate root edges. Hence
+$3+6+3+1=13$, and positivity of the small complexities excludes any
+further vertex. The lists below give all the solutions.
+\end{prf}
+
+In the diagrams a solid square is the root, and a circle contains its
+small vertex genus. For two small vertices the upper one is $1$ and
+the lower one is $2$; for one small vertex it is $1$. All omitted
+edge multiplicities are zero. A superscript $2$ on a small type denotes
+two vertices of that type. The data column is
+$(n_0,c;|\operatorname{Aut}\Gamma_{\rm c}|)$.
+
+\begingroup
+\newcommand{\aOne}[2]{\begin{tikzpicture}[x=1.05cm,y=.7cm,baseline=-.5ex]
+ \node[rectangle,fill,minimum size=3.2mm,inner sep=0pt] (v0) at (0,0) {};
+ \node[circle,draw,inner sep=1.2pt] (v1) at (1,0) {$#1$};#2
+ \end{tikzpicture}}
+\newcommand{\aTwo}[3]{\begin{tikzpicture}[x=1.05cm,y=.7cm,baseline=-.5ex]
+ \node[rectangle,fill,minimum size=3.2mm,inner sep=0pt] (v0) at (0,0) {};
+ \node[circle,draw,inner sep=1.2pt] (v1) at (1,.65) {$#1$};
+ \node[circle,draw,inner sep=1.2pt] (v2) at (1,-.65) {$#2$};#3
+ \end{tikzpicture}}
+\begin{center}
+\begin{tabular}{cclc}
+ Core&Diagram&Small types and nonzero multiplicities&Data\\\hline
+ $0.1$&\tikz[baseline=-.5ex]\node[rectangle,fill,minimum size=3.2mm]{};
+   &none&$(0,0;1)$\\[2mm]
+ $1.1$&\aOne{0}{\draw (v0)--(v1);\draw (v1) edge[loop right] (v1);}
+   &$(0,3)$: $m_{01}=m_{11}=1$&$(1,1;2)$\\[2mm]
+ $1.2$&\aOne{0}{\draw (v0)--(v1);\draw (v0) to[bend left=30] (v1);\draw (v0) to[bend right=30] (v1);}
+   &$(0,3)$: $m_{01}=3$&$(3,2;6)$\\[2mm]
+ $1.3$&\aOne{1}{\draw (v0)--(v1);}
+   &$(1,1)$: $m_{01}=1$&$(1,1;1)$
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cclc}
+ Core&Diagram&Small types and nonzero multiplicities&Data\\\hline
+ $2.1$&\aOne{0}{\draw (v0) to[bend left=22] (v1);\draw (v0) to[bend right=22] (v1);\draw (v1) edge[loop right] (v1);}
+  &$(0,4)$: $m_{01}=2,\ m_{11}=1$&$(2,2;4)$\\[2mm]
+ $2.2$&\aOne{0}{\draw (v0) to[bend left=12] (v1);\draw (v0) to[bend right=12] (v1);\draw (v0) to[bend left=40] (v1);\draw (v0) to[bend right=40] (v1);}
+  &$(0,4)$: $m_{01}=4$&$(4,3;24)$\\[2mm]
+ $2.3$&\aOne{1}{\draw (v0) to[bend left=22] (v1);\draw (v0) to[bend right=22] (v1);}
+  &$(1,2)$: $m_{01}=2$&$(2,2;2)$\\[2mm]
+ $2.4$&\aTwo{0}{0}{\draw (v0) to[bend left=18] (v1);\draw (v0) to[bend right=18] (v1);\draw (v1)--(v2);\draw (v2) edge[loop right] (v2);}
+  &$(0,3)^2$: $m_{01}=2,\ m_{12}=m_{22}=1$&$(2,2;4)$\\[2mm]
+ $2.5$&\aTwo{0}{0}{\draw (v0)--(v1);\draw (v0)--(v2);\draw (v1) to[bend left=20] (v2);\draw (v1) to[bend right=20] (v2);}
+  &$(0,3)^2$: $m_{01}=m_{02}=1,\ m_{12}=2$&$(2,2;4)$\\[2mm]
+ $2.6$&\aTwo{0}{0}{\draw (v0)--(v1);\draw (v0)--(v2);\draw (v1) edge[loop right] (v1);\draw (v2) edge[loop right] (v2);}
+  &$(0,3)^2$: $m_{01}=m_{02}=m_{11}=m_{22}=1$&$(2,2;8)$
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cclc}
+ Core&Diagram&Small types and nonzero multiplicities&Data\\\hline
+ $2.7$&\aTwo{0}{0}{\draw (v0)--(v1);\draw (v0) to[bend left=28] (v1);\draw (v0) to[bend right=28] (v1);\draw (v0)--(v2);\draw (v2) edge[loop right] (v2);}
+  &$(0,3)^2$: $m_{01}=3,\ m_{02}=m_{22}=1$&$(4,3;12)$\\[2mm]
+ $2.8$&\aTwo{0}{0}{\draw (v0) to[bend left=18] (v1);\draw (v0) to[bend right=18] (v1);\draw (v0) to[bend left=18] (v2);\draw (v0) to[bend right=18] (v2);\draw (v1)--(v2);}
+  &$(0,3)^2$: $m_{01}=m_{02}=2,\ m_{12}=1$&$(4,3;8)$\\[2mm]
+ $2.9$&\aTwo{0}{0}{\draw (v0)--(v1);\draw (v0) to[bend left=28] (v1);\draw (v0) to[bend right=28] (v1);\draw (v0)--(v2);\draw (v0) to[bend left=28] (v2);\draw (v0) to[bend right=28] (v2);}
+  &$(0,3)^2$: $m_{01}=m_{02}=3$&$(6,4;72)$\\[2mm]
+ $2.10$&\aTwo{0}{1}{\draw (v0)--(v1);\draw (v0)--(v2);\draw (v1) edge[loop right] (v1);}
+  &$(0,3),(1,1)$: $m_{01}=m_{02}=m_{11}=1$&$(2,2;2)$\\[2mm]
+ $2.11$&\aTwo{0}{1}{\draw (v0) to[bend left=18] (v1);\draw (v0) to[bend right=18] (v1);\draw (v1)--(v2);}
+  &$(0,3),(1,1)$: $m_{01}=2,\ m_{12}=1$&$(2,2;2)$\\[2mm]
+ $2.12$&\aTwo{0}{1}{\draw (v0)--(v1);\draw (v0) to[bend left=28] (v1);\draw (v0) to[bend right=28] (v1);\draw (v0)--(v2);}
+  &$(0,3),(1,1)$: $m_{01}=3,\ m_{02}=1$&$(4,3;6)$\\[2mm]
+ $2.13$&\aTwo{1}{1}{\draw (v0)--(v1);\draw (v0)--(v2);}
+  &$(1,1)^2$: $m_{01}=m_{02}=1$&$(2,2;2)$
+\end{tabular}
+\end{center}
+\endgroup
+
+For example the two rational vertices of core $2.9$ can be exchanged,
+in addition to permuting both triples of parallel edges: its order is
+$2(3!)^2=72$. Core $2.4$ has no vertex exchange and has order
+$2!\cdot2=4$. Both elliptic vertices of core $2.13$ can be exchanged,
+giving its order two. These distinctions matter even though no
+markings occur in these graphs.
+
+We next give the edge integration rule and its complete evaluation.
+For a complex upper endpoint $z$, integration is along the straight
+segment from zero to $z$. Put, for $a=0,1,2$,
+\begin{equation}\label{eq:a:core-edge-moments}
+ \mathcal J_a(z)=\int_0^z t^a f(t)\,\dd t,\qquad
+ E_f(z)=\frac{\pi^2\mathcal J_0(z)}{12}
+                         -\frac{\mathcal J_1(z)}{24},\qquad
+ E_0(z)=\frac{\pi^2z}{12}-\frac{z^2}{48}.
+\end{equation}
+These are entire functions. The two $E$ functions integrate the
+elliptic univalent vertex on a root edge, with its factor $f$, or on
+an edge between small vertices, respectively. They and $\mathcal J_a$
+are used only to state the following core integrals.
+
+Define $\mathcal I_{\Gamma_{\rm c}}(z)$ by attaching $f(t_e)$ to
+every root flag, the exact polynomial~\eqref{eq:a:small-vertices}
+to every small vertex, integrating $t_e$ over $[0,z]$ for every core
+edge, and dividing by $|\operatorname{Aut}\Gamma_{\rm c}|$. A small
+self-loop supplies the same $t_e$ twice to its vertex polynomial.
+There is no additional vertex-label factorial.
+
+\begin{lmm}[Leading core integration]\label{lmm:a:core-integration}
+For a fixed core of complexity $q$, the leading contribution to
+$Z_g(u)/V_{g,0}$ is
+\begin{equation}\label{eq:a:leading-core}
+ \frac{e^{S(u)}}{(8\pi^2g)^q}
+           \mathcal I_{\Gamma_{\rm c}}(\alpha u).
+\end{equation}
+For the absolute normalization multiply by $1/\sqrt\pi$. The error
+in either normalization is $O(g^{-q-1})$, locally uniformly in complex $u$.
+\end{lmm}
+\begin{prf}
+The exact core volume path~\eqref{eq:s03:core-volume-path} has
+leading scale $(8\pi^2g)^{-q}$, independently of the restored loop
+count $p$. The leading root profile is a product of $f$ over its
+flags. Integrating the $p$ restored root loops, and using their factor
+$2^pp!$, gives
+\[
+ \frac1{p!}\left(\frac12\int_0^{\alpha u}f(t)^2\dd t\right)^p
+ =\frac{S(u)^p}{p!}.
+\]
+The remaining integrals are precisely $\mathcal I_{\Gamma_{\rm c}}$.
+The summable core remainder from Section~\ref{sec:s03} proves that
+the sum over all legal $p$ has the asserted error, and permits extending
+it to the entire exponential series. Finally use
+$V_{g,0}/F_g=\pi^{-1/2}(1+O(g^{-1}))$.
+\end{prf}
+
+The endpoint evaluations needed in all rows are especially simple:
+\begin{equation}\label{eq:a:endpoint-moments}
+\begin{gathered}
+ z=\alpha=2\pi^2,\qquad \mathcal J_0=8,\qquad
+ \mathcal J_1=8\pi^2-32,\\
+ \mathcal J_2=16\pi^4-192\pi^2+768,\qquad
+ E_f=(\pi^2+4)/3,\qquad E_0=\pi^4/12.
+\end{gathered}
+\end{equation}
+Indeed $t=2y^2$ gives
+$\mathcal J_a(\alpha)=2^{a+2}\int_0^\pi y^{2a}\sin y\dd y$.
+The latter integral is $2$ at $a=0$, and successive integration by
+parts subtracts $(2a)(2a-1)$ times the preceding integral from
+$\pi^{2a}$. This proves all the displayed values.
+
+In the tables below $\mathcal J_a,E_f,E_0$ are evaluated at the
+variable $z$ in the integral column and at $z=\alpha$ in the last
+column. The last column is always
+$\mathcal I_{\Gamma_{\rm c}}(\alpha)/(8\pi^2)^q$. Thus it is the
+coefficient of $e^{S(1)}g^{-q}$ in the relative normalization, or of
+$e^{S(1)}g^{-q}/\sqrt\pi$ in the absolute normalization.
+
+\begin{center}
+\begin{tabular}{ccl}
+ Core&$\mathcal I_{\Gamma_{\rm c}}(z)$&Normalized endpoint\\[1mm]\hline
+ \noalign{\smallskip}
+ $0.1$&$1$&$1$\\[1mm]
+ $1.1$&$z\mathcal J_0/2$&$1$\\[1mm]
+ $1.2$&$\mathcal J_0^3/6$&$32/(3\pi^2)$\\[1mm]
+ $1.3$&$E_f$&$1/24+1/(6\pi^2)$
+\end{tabular}
+\end{center}
+
+The three rows with a single complexity-two vertex are
+\begin{center}
+\begin{tabular}{ccl}
+ Core&$\mathcal I_{\Gamma_{\rm c}}(z)$&Normalized endpoint\\[1mm]\hline
+ \noalign{\smallskip}
+ $2.1$&$\bigl[(2\pi^2z-z^2)\mathcal J_0^2
+                              -2z\mathcal J_0\mathcal J_1\bigr]/4$
+ & $-1+4/\pi^2$\\[2mm]
+ $2.2$&$\bigl[2\pi^2\mathcal J_0^4
+                         -4\mathcal J_0^3\mathcal J_1\bigr]/24$
+ & $-16/(3\pi^2)+128/(3\pi^4)$\\[2mm]
+ $2.3$&$\begin{gathered}
+ \pi^4\mathcal J_0^2/8-\pi^2\mathcal J_0\mathcal J_1/6\\
+              +(\mathcal J_0\mathcal J_2+\mathcal J_1^2)/48
+ \end{gathered}$
+ & $1/48+7/(3\pi^4)$
+\end{tabular}
+\end{center}
+
+The six rows with two rational trivalent vertices are
+\begin{center}
+\begin{tabular}{ccl}
+ Core&$\mathcal I_{\Gamma_{\rm c}}(z)$&Normalized endpoint\\[1mm]\hline
+ \noalign{\smallskip}
+ $2.4$&$z^2\mathcal J_0^2/4$&$1$\\[1mm]
+ $2.5$&$z^2\mathcal J_0^2/4$&$1$\\[1mm]
+ $2.6$&$z^2\mathcal J_0^2/8$&$1/2$\\[1mm]
+ $2.7$&$z\mathcal J_0^4/12$&$32/(3\pi^2)$\\[1mm]
+ $2.8$&$z\mathcal J_0^4/8$&$16/\pi^2$\\[1mm]
+ $2.9$&$\mathcal J_0^6/72$&$512/(9\pi^4)$
+\end{tabular}
+\end{center}
+
+Finally the three mixed rows and the two-elliptic row are
+\begin{center}
+\begin{tabular}{ccl}
+ Core&$\mathcal I_{\Gamma_{\rm c}}(z)$&Normalized endpoint\\[1mm]\hline
+ \noalign{\smallskip}
+ $2.10$&$z\mathcal J_0E_f/2$&$1/24+1/(6\pi^2)$\\[1mm]
+ $2.11$&$\mathcal J_0^2E_0/2$&$1/24$\\[1mm]
+ $2.12$&$\mathcal J_0^3E_f/6$&$4/(9\pi^2)+16/(9\pi^4)$\\[1mm]
+ $2.13$&$E_f^2/2$&$1/1152+1/(144\pi^2)+1/(72\pi^4)$
+\end{tabular}
+\end{center}
+
+Every integral column follows by multiplying the small vertex
+polynomials. For instance, in core $2.1$ the small loop has parameter
+$t$ twice, so integrating the polynomial
+$2\pi^2-t_1-t_2-2t$ over this loop gives
+$(2\pi^2z-z^2)-z(t_1+t_2)$. The two root edges then give the first
+integral in that table, with automorphism divisor four. This explains
+in particular its negative contribution at $z=\alpha$.
+
+\begin{prp}[Finite contribution summary]\label{prp:a:finite-summary}
+The complexity-two leading group is
+\begin{equation}\label{eq:a:q-two}
+ \left.\frac{Z_g(1)}{F_g}\right|_{q=2}
+ =\frac{e^{S(1)}}{\sqrt\pi g^2}
+ \left(\frac{1849}{1152}+\frac{3737}{144\pi^2}
+                             +\frac{7465}{72\pi^4}\right)+O(g^{-3}).
+\end{equation}
+Together with~\eqref{eq:a:q-zero} and~\eqref{eq:a:q-one}, the finite
+groups have total coefficients $9/8$ at $g^{-1}$ and
+$257/128+1/(8\pi^2)$ at $g^{-2}$, after extracting
+$e^{S(1)}/\sqrt\pi$.
+\end{prp}
+\begin{prf}
+The complete table, whose completeness was proved above, gives
+\begin{align*}
+ \sum_{\Gamma_{\rm c}:\,q=1}\mathcal I_{\Gamma_{\rm c}}(\alpha)
+                 &=\frac{25\pi^2+260}{3},\\
+ \sum_{\Gamma_{\rm c}:\,q=2}\mathcal I_{\Gamma_{\rm c}}(\alpha)
+                 &=\frac{1849\pi^4}{18}
+                         +\frac{14948\pi^2}{9}+\frac{59720}{9}.
+\end{align*}
+Here each sum runs over core types of the indicated complexity, once
+each. Divide the second by $(8\pi^2)^2$ and apply
+Lemma~\ref{lmm:a:core-integration}. The first agrees independently
+with the leading column of~\eqref{eq:a:q-one-table}.
+For the claimed totals, add the proved $q=0,1,2$ coefficients. Their
+$\pi^{-4}$ terms cancel at second order, and their $\pi^{-2}$ terms
+leave $1/8$. The global tail for $q\geq3$ and graphs without a large
+vertex is supplied by~\eqref{eq:s03:graph-tail}; its application to
+the Hodge normalization is made in Section~4.
+\end{prf}

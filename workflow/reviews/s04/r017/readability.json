@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "status": "pass",
+      "evidence": "All 25 S4 files equal r016 byte for byte: the paired weights, signed functional and core contributions still follow their definitions, while the inherited disclosure uses only previously defined N_g/theorem references and adds no proof hypothesis."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "The new shared/S1 prose and footer change neither a_g/N_g nor the absolute Q versus relative gamma coefficients, and preserve the user-specified (9/8)g^-1 forms; all 194 native label numbers match the unchanged layout companion."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "No mathematical alias, formula restatement or basic-symbol inventory is added, and the existing moment/core names retain their recurring calculation roles; the optional author account supplies no internal-file or software obligation."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "Actual native p.25 retains the transition from the summable-core theorem to the q=0/1/2 correction route; the earlier unnumbered personal subsections neither alter that guide nor add a mathematical step."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "S4 statements/proofs, source modules and figures are unchanged; on native p.32 the main theorem closes normally and the entire normalized higher-coefficient Remark remains together afterward with its explicit omitted-details sentence, preserving the theorem's original precision."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "The preserved degree/low-mode statistics, loop p/core q, paired endpoint indices and integration parameters remain distinct, with inherited g_2,j_i/ell,B_n,b,b_g,beta_g meanings untouched; model/contact names are text rather than competing notation."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "Viewed native pp.25,32,52: entrance, final proof/optional Remark into Appendix A, and bibliography into the bottom four-line author block are readable without clipping or an address-only extra page; the already inspected 101-page companion remains CURRENT-LAYOUT evidence only."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Verified the exact r017 dispatch/summary, actual external writer ACK and its archived hash, original binding, all 84 frozen/live input hashes and snapshot 10a1ab0aaee9dc95ab94b67d3b19808d2296f662364fd72650aa393d8fdea42f. S1 r008/S2 r018/S3 r015/A r015 are approved and fresh. All 25 own files match r016; current changes.diff equals the already-read A r015 event diff: four changed shared/S1 paths, four additions, no removal.",
+    "Independently checked native/companion receipt hashes, current source fingerprints, PDF/entry/text/aux/helper/main hashes and fresh pdftotext equality. Native source SHA256 a75a78cc78d8ae3fe2c6e1afc60942ecc7a7d52cae52220983f41e7217615632; native PDF SHA256 56c6a52fd86097cbe6bf799e7c78aecbf14725676b6c3b3eff64f64e928862c2, 52 pages. The pre-submit null snapshot is bound by the exact frozen input map. Standard/overfull lists are empty; validate.py --unit s04 passed.",
+    "The same CURRENT-LAYOUT companion PDF SHA256 0ae52ee24d1519646978560c54e987db5262371524682da2b9f87a50a2e241bd and receipt SHA256 2cef5d967593c271d2d995e28a464745eb8d40b74e58e1e05d015f2b8fa75732 remain verified; reused its actual S1 placement/footer inspection and the complete S4 r016 reading. Current private native PNGs are under build/ack-ai-20261116/readability-s04-r017/.",
+    "No open or newly resolved issue. No old proof reread or scientific rerun was needed, and source/state/history/frozen outputs were untouched. This is the new S4 signature and limited metadata/layout assessment, not new complete-paper workflow approval or a future export signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "10a1ab0aaee9dc95ab94b67d3b19808d2296f662364fd72650aa393d8fdea42f",
+  "summary": "Pass for the metadata-only ACK-AI-DISCLOSURE refresh. S4 mathematics, notation, precision and optional-Remark status are unchanged, and actual entrance/ending/footer inspection reveals no new readability issue.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,81 @@
+--- previous/backmatter/author_information.tex
++++ backmatter/author_information.tex
+@@ -1,6 +1,6 @@
+ % !TeX root = ../main.tex
+ \par
+-\vfill
++\vskip 2em
+ \noindent
+ \begin{minipage}{\textwidth}
+ \small
+--- previous/main.tex
++++ main.tex
+@@ -11,6 +11,9 @@
+ \maketitle
+ 
+ \input{frontmatter/abstract}
++
++\tableofcontents
++
+ \input{sections/included}
+ 
+ \bibliographystyle{alpha}
+--- previous/sections/01_introduction/02_ai_disclosure.tex
++++ sections/01_introduction/02_ai_disclosure.tex
+@@ -13,7 +13,7 @@
+ 
+ GPT-6.1-Sol also wrote most of the manuscript. I wrote the initial
+ draft of the Introduction, established the writing standards,
+-designed the multi-agent writing workflow, and supervised
++designed the multi-subagent writing workflow, and supervised
+ GPT-6.1-Sol throughout the writing of the paper.
+ 
+ The scholarly credit for this work should go to GPT-6.1-Sol.
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -52,7 +52,7 @@
+ without supplying a proof; GPT-6.1-Sol supplied the proof and discovered
+ and proved the following three main theorems, and wrote most of the
+ manuscript. The human role is the initial Introduction, writing
+-standards, design of the multi-agent writing workflow and supervision.
++standards, design of the multi-subagent writing workflow and supervision.
+ 
+ The disclosure explicitly assigns scholarly credit to GPT-6.1-Sol,
+ states that the human releases the paper solely for knowledge sharing
+--- /dev/null
++++ sections/01_introduction/layout_handoff.md
+@@ -0,0 +1,23 @@
++# LAYOUT-TWEAKS: Introduction original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s01. Read the new request and
++updated context; verified the active original-writer binding.
++Baseline: accepted r008, snapshot
++9c83806c88905e174abf2c508386866e8fcc7c5eb6849bfc3b947aec02779705,
++as captured in build/layout-tweaks-20261116/baseline.json.
++
++The only paper edit is the single exact multi-agent -> multi-subagent
++replacement in 02_ai_disclosure.tex. The matching phrase in
++INTERFACE.md receives the same single replacement. Every other byte
++of both files is retained, as are the complete entry, acknowledgments,
++four theorem environments, six numbered equations, labels, references
++and all previous handoffs, including disclosure_handoff.md.
++
++The table of contents after the abstract and footer spacing change
++are the coordinator's shared edits, not writer edits. This terminology
++change creates no symbol, counter, proof premise or source claim and
++changes no intellectual-credit or caution statement in the disclosure.
++No scientific reading, calculation, build, state command, shared edit
++or historical-record edit is performed. Static exact-delta and UTF-8/LF
++checks accompany delivery. This author handoff is not a reviewer
++signature. STOP.
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -151,7 +151,7 @@
+ 
+ Introduction, Sections 2--8 and Appendices A/B are the reviewed article. Appendix C is retired: its known low-genus examples are not proof premises, and its old source/reviews remain internal historical records. Section 6 keeps an independently derived genus-two example; the closing Section 8 conjecture directly cites LiuData26 for numerical evidence.
+ 
+-The finalization beginning at Git baseline fa2f374 was completed at commit 6ebf350. Its earlier author-name-only preference has now been superseded by the user's explicit acknowledgments, AI-disclosure and author-information request, recorded in workflow/feedback/shared/ACK-AI-DISCLOSURE/request.json. Keep the generic article format and existing title-page byline; put two unnumbered subsections at the end of the Introduction and the supplied affiliation, postal address and email after the bibliography at the bottom of the last page. No funding, classification or journal template has been requested.
++The finalization beginning at Git baseline fa2f374 was completed at commit 6ebf350. Its earlier author-name-only preference has now been superseded by the user's explicit acknowledgments, AI-disclosure and author-information request, recorded in workflow/feedback/shared/ACK-AI-DISCLOSURE/request.json. Keep the generic article format and existing title-page byline; put two unnumbered subsections at the end of the Introduction, use "multi-subagent" in the AI disclosure, and place the supplied affiliation, postal address and email immediately after the bibliography, separated by \vskip 2em. Insert \tableofcontents between the abstract and the Introduction. No funding, classification or journal template has been requested.
+ 
+ The AI disclosure records the author's supplied account of Claude Opus 5.5, GPT-6-Astra and GPT-6.1-Sol, including discovery/proof/writing roles, the human author's role, the stated allocation of scholarly credit and disclaimer of human credit or priority, and the absence of formal Lean verification with the requested reader caution. Preserve the exact model names and the substance of every requested attribution; no external model-capability or journal-policy investigation is needed to edit this author-provided account. This explicitly requested development history is allowed in the paper and creates no reader obligation to consult internal programs or workflow files. Existing literature credit and the mathematical statements remain intact. The public hodge_data dataset can be identified through the existing LiuData26 citation.
+ 

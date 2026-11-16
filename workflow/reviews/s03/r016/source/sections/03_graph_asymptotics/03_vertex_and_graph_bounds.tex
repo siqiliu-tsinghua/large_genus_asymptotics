@@ -1,0 +1,289 @@
+% !TeX root = ../../main.tex
+\subsection{A uniform vertex bound and concentration on a large vertex}
+\label{subsec:s03:03}
+
+Write $Z_\Gamma(u)$ for the summand of
+\eqref{eq:s03:integrated-graph-formula} indexed by $\Gamma$.
+We first bound every vertex, then sum over labeled pairings. A short
+factorial-series estimate will control the resulting Gaussian integral,
+including graphs with arbitrarily many vertices or large valences.
+
+\begin{lmm}[Uniform vertex bound]
+\label{lmm:s03:vertex-bound}
+For each $T\geq0$ there are constants $C,B>0$, independent of the
+stable type $(G,n)$, such that, for $|t_i|\leq T$ and $k=2G-2+n$,
+\begin{equation}
+\label{eq:s03:vertex-bound}
+|W^{\rm WP}_{G,n}(\mathbf t)|
+\leq CB^n(4\pi^2)^{k-1}\frac{\Gamma(k)}{\sqrt{k}}.
+\end{equation}
+One may take $B=e^{\sqrt{T/2}}$.
+\end{lmm}
+\begin{prf}
+For $n\geq1$, \eqref{eq:s03:vertex-function} and
+\eqref{eq:s03:all-type-input} give
+\[
+|W^{\rm WP}_{G,n}(\mathbf t)|
+\leq V_{G,n}\prod_{i=1}^n
+ \sum_{d\geq0}\frac{(|t_i|/2)^d}{(2d+1)!}
+\leq V_{G,n}e^{n\sqrt{T/2}}.
+\]
+For $n=0$ the vertex function is $V_{G,0}$. The volume bound in
+\eqref{eq:s03:all-type-input} now proves the assertion, including
+the two complexity-one types.
+\end{prf}
+
+\begin{rmk}[Real-length comparison]
+Replacing $-t_i$ by $|t_i|$ in the finite descendant sum gives a
+length polynomial. Its lengths are $\sqrt{2|t_i|}$.
+Bounding its brackets by $V_{G,n}$ then gives the infinite product.
+The real-length estimate
+\cite[Lemma~14(1)]{SW25} gives the same exponential bound.
+The coefficientwise bracket bound is stronger than a bound on values
+of a volume polynomial and is what also permits degree moments below.
+\end{rmk}
+
+In the counting estimates of this subsection only, put $H=2g-2$.
+The complexity of a vertex is the positive integer $k_v=2g_v-2+n_v$.
+By \eqref{eq:s02:graph-stability-sum}, their sum is $H$.
+A vertex with complexity greater than $H/2$ will be called the large
+vertex. It is unique if it exists; in that case let $q$ be the sum
+of the complexities at the other vertices.
+
+The next lemma keeps the bound $n_v\leq k_v+2$. Replacing all valence
+sums by an unrestricted exponential at this stage would lose the
+control needed when the vertex number grows.
+
+\begin{lmm}[Pairing majorant]
+\label{lmm:s03:pairing-majorant}
+Fix a compact set $\mathcal K\subset\mathbb C$. There are constants
+$C_0,\sigma>0$, depending only on $\mathcal K$, with the following
+property. Let $X$ be the absolute value of a centered real Gaussian
+variable of variance $\sigma^2$, and write $\mathbb E$ for expectation.
+Its density on $x\geq0$ is
+$\sqrt{2/\pi}\,\sigma^{-1}e^{-x^2/(2\sigma^2)}$.
+Define, for integers $m\geq0$ and $k\geq1$,
+\begin{equation}
+\label{eq:s03:counting-polynomials}
+P_m(x)=\sum_{r=0}^m\frac{x^r}{r!},\qquad
+U_k(x)=\Gamma(k)P_{k+2}(x).
+\end{equation}
+For any restriction on the vertex-complexity list, the sum of
+$\sup_{u\in\mathcal K}|Z_\Gamma(u)|/F_g$ over the corresponding
+graphs is bounded by the same restriction in
+\begin{equation}
+\label{eq:s03:gaussian-majorant}
+\frac1{\Gamma(H)}\mathbb E
+ \sum_{m=1}^H\frac{C_0^m}{m!}
+ \sum_{\substack{k_1+\cdots+k_m=H\\k_i\geq1}}
+ \prod_{i=1}^m U_{k_i}(X).
+\end{equation}
+The bound remains valid when the absolute value is taken inside
+the edge integrals defining each $Z_\Gamma$.
+\end{lmm}
+\begin{prf}
+Choose $T\geq\sup_{u\in\mathcal K}|\alpha u|$ and use
+Lemma~\ref{lmm:s03:vertex-bound}. Label the $m$ vertices and the
+$n_i$ incident flags at vertex $i$. After summing over ordered type
+lists, division by $m!\prod_i n_i!$ gives precisely
+$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labeled
+realizations of a graph is $m!\prod_i n_i!/|\operatorname{Aut}\Gamma|$
+by orbit-stabilizer. Summing ordered lists is essential when types
+repeat. Stack stabilizers inside a vertex integral have already been
+included in its volume and do not enter this graph-labeling count.
+
+If there are $2E$ flags, with an integer $E\geq0$, there are
+$(2E-1)!!$ pairings, with one empty pairing when $E=0$.
+Choose $\sigma^2\geq B^2\max(1,T)$. Then
+\[
+B^{2E}T^E(2E-1)!!\leq\mathbb E X^{2E}.
+\]
+Dropping connectivity, parity and genus-integrality conditions only
+increases this positive sum. For given $k_i,n_i$, the putative genus
+is $(k_i+2-n_i)/2$, so it is enough to sum $0\leq n_i\leq k_i+2$.
+Adding odd total flag numbers also only increases the Gaussian
+majorant. The valence sums give the polynomials $P_{k_i+2}$.
+
+It remains to control the factors outside these polynomials. Their
+power of $4\pi^2$, after division by $F_g$, is $(4\pi^2)^{1-m}$.
+Moreover, since some $k_i\geq H/m$ and all $k_i\geq1$,
+\[
+\frac{\sqrt g}{\prod_i\sqrt{k_i}}
+\leq\sqrt{\frac{gm}{H}}\leq\sqrt m\qquad(g\geq2).
+\]
+Absorb this factor and the per-vertex constants into $C_0^m$.
+This proves \eqref{eq:s03:gaussian-majorant}. All the bounds apply
+to absolute integrands uniformly on $\mathcal K$, giving both versions.
+\end{prf}
+
+We will evaluate the small-complexity generating series at $2/H$
+and $3/H$. The latter value is larger than $e/H$, which will make
+the coefficient bound for graphs without a large vertex decay.
+
+\begin{lmm}[Short factorial series]
+\label{lmm:s03:short-series}
+There is $\epsilon_0>0$ such that, for $c\in\{2,3\}$ and every
+fixed integer $M\geq1$, there is $C_M$ with
+\begin{equation}
+\label{eq:s03:short-series}
+T_{M,c}(H,x):=\sum_{M\leq k\leq H/2}U_k(x)(c/H)^k
+\leq C_MH^{-M}(1+x)^{M+2}
+\end{equation}
+for integers $H\geq2$ and $0\leq x\leq\epsilon_0H$.
+The same constants work when $\epsilon_0$ is decreased.
+\end{lmm}
+\begin{prf}
+Choose $\eta>0$ so that $3e^2\eta<1/2$. We split the integers $k$
+into three ranges; all constants below are independent of $H,x$.
+
+If $k+2\leq x/2$, successive terms of $P_{k+2}(x)$, read backwards
+from its last term, have ratio at most $1/2$. Hence
+$P_{k+2}(x)\leq2x^{k+2}/(k+2)!$. Since
+$\Gamma(k)/(k+2)!\leq1$, this part of the sum is at most
+$2x^2\sum_{k\geq M}(cx/H)^k$. Taking $3\epsilon_0\leq1/2$
+bounds it by $4c^MH^{-M}x^{M+2}$.
+
+If $k+2>x/2$ and $k\leq\eta H$, then
+$P_{k+2}(x)\leq e^x\leq e^{2k+4}$. The positive comparison terms
+$\Gamma(k)(ce^2/H)^k$ have consecutive ratio
+$kce^2/H\leq1/2$ in this range. Their sum starting at $M$ is
+$O_M(H^{-M})$.
+
+Finally, for $\eta H<k\leq H/2$, Stirling's inequality gives
+\[
+\Gamma(k)(c/H)^k
+\leq Ck^{-1/2}\left(\frac{c}{2e}\right)^k.
+\]
+Here $c\leq3<2e$. Multiplication by
+$P_{k+2}(x)\leq e^{\epsilon_0H}$ still leaves exponential decay
+if $\epsilon_0<\eta\log(2e/3)/2$. This is $O_M(H^{-M})$.
+Increasing $C_M$ handles the finite initial values of $H$ and empty
+ranges. All the choices are upper bounds on $\epsilon_0$, so its
+later decrease does not change these constants.
+\end{prf}
+
+To prove the full tail estimate, we first discard large Gaussian
+values, where the density controls the whole polynomial degree.
+At the remaining values, coefficient extraction handles graphs
+without a large vertex. When a large vertex exists, either one of
+the other complexities reaches the prescribed tail threshold,
+or several smaller complexities add up to it. We estimate these
+cases separately.
+
+\begin{prp}[Absolute graph tail]
+\label{prp:s03:graph-tail}
+For every compact $\mathcal K\subset\mathbb C$ and fixed integer
+$M\geq1$,
+\begin{equation}
+\label{eq:s03:graph-tail}
+\sum_{\substack{\Gamma\text{ has no large vertex}\\
+ \text{or has }q\geq M}}
+ \sup_{u\in\mathcal K}|Z_\Gamma(u)|
+=O_{\mathcal K,M}(F_g g^{-M}).
+\end{equation}
+The sum over all graphs is $O_{\mathcal K}(F_g)$.
+Both conclusions hold with absolute values inside all edge integrals.
+\end{prp}
+\begin{prf}
+Use the majorant \eqref{eq:s03:gaussian-majorant}. First fix the
+constants in Lemma~\ref{lmm:s03:short-series}. For any
+$0<\epsilon\leq\epsilon_0$ and $x\leq\epsilon H$, it gives
+\begin{equation}
+\label{eq:s03:gaussian-absorption}
+T_{1,c}(H,x)\leq\frac{C(1+x)^3}{H}
+\leq C'(1+\epsilon x^2),\qquad c=2,3.
+\end{equation}
+The second inequality follows from
+$(1+x)^3\leq8(1+x^3)$ and $x/H\leq\epsilon$.
+Choose $\epsilon$ so small that the quadratic part of
+$C_0T_{1,c}$ is at most $x^2/(8\sigma^2)$. This choice leaves a
+Gaussian integrable majorant even after multiplication by $e^x$ and
+any fixed power of $1+x$.
+
+\smallskip\noindent
+\emph{Large Gaussian values.}
+For positive parts $k_i$ of $H$,
+$\prod_i\Gamma(k_i)\leq\Gamma(H)$ and
+$P_{k_i+2}(x)\leq(1+x)^{k_i+2}$.
+There are at most $2^{H-1}$ ordered compositions of $H$, and
+$\sum_i(k_i+2)\leq3H$. Thus the contribution of $X>\epsilon H$
+in \eqref{eq:s03:gaussian-majorant} is at most the following bound,
+where $\mathbf1_A$ denotes the indicator of an event $A$:
+\[
+C_1^H\mathbb E\bigl[(1+X)^{3H}\mathbf1_{X>\epsilon H}\bigr].
+\]
+For all sufficiently large $H$ and all $x\geq\epsilon H$,
+$H\log C_1+3H\log(1+x)\leq x^2/(4\sigma^2)$:
+use $H\leq x/\epsilon$ and $\log(1+x)/x\longrightarrow0$.
+Multiplication by the Gaussian density therefore bounds this range
+by $O(e^{-c_1H^2})$, for some $c_1>0$.
+
+\smallskip\noindent
+\emph{No large vertex.}
+For fixed $x$, the restricted composition sum is the coefficient of
+$z^H$ in the following formal series in $z$:
+\[
+\exp\left(C_0\sum_{1\leq k\leq H/2}U_k(x)z^k\right).
+\]
+All coefficients are nonnegative. Evaluating at $z=3/H$ bounds
+the coefficient by
+\[
+(H/3)^H\exp(C_0T_{1,3}(H,x)).
+\]
+By \eqref{eq:s03:gaussian-absorption}, the expectation of the last
+factor on $X\leq\epsilon H$ is bounded independently of $H$.
+Stirling's inequality now gives
+\[
+\frac{(H/3)^H}{\Gamma(H)}
+=O\bigl(\sqrt H(e/3)^H\bigr).
+\]
+Since $e<3$, this is smaller than every fixed inverse power of $H$.
+
+\smallskip\noindent
+\emph{A large vertex and $q\geq M$.}
+Mark the unique large vertex. The choice cancels one factor in
+$m!$. Since its complexity is $H-q>H/2$,
+\[
+\frac{\Gamma(H-q)}{\Gamma(H)}
+=\prod_{j=1}^q(H-j)^{-1}\leq(2/H)^q,
+\qquad P_{H-q+2}(x)\leq e^x.
+\]
+The other vertices are consequently controlled by the exponential
+series with weights $C_0U_k(x)(2/H)^k$, $k\leq H/2$.
+If one of them has $k\geq M$, marking such a vertex bounds this
+part by
+\[
+C_0^2e^x T_{M,2}(H,x)\exp(C_0T_{1,2}(H,x)).
+\]
+Its Gaussian expectation on $X\leq\epsilon H$ is $O_M(H^{-M})$
+by \eqref{eq:s03:short-series} and the absorption already arranged.
+
+Suppose instead that every other $k<M$, but their sum is at least
+$M$. On $x\leq H^{1/4}$ put $y=H/(1+x)^3$, which is at least
+one for large $H$. For each $k\geq1$,
+\[
+U_k(x)(2/H)^ky^k
+\leq2^k\Gamma(k)(1+x)^{2-2k}
+\leq2^k\Gamma(k).
+\]
+The weighted exponential series, now with only $1\leq k<M$, is
+bounded by a constant depending on $M$. Removing its weight costs
+at most $y^{-M}$, because its total complexity is at least $M$.
+This gives
+$C_MH^{-M}e^x(1+x)^{3M}$, with bounded Gaussian integral.
+For $M=1$ this subcase is empty.
+
+On the remaining range $H^{1/4}<x\leq\epsilon H$, discard the
+complexity restriction and use
+$e^{x+C_0T_{1,2}(H,x)}$. The Gaussian absorption bounds its tail
+by $O(e^{-c_2\sqrt H})$, again smaller than every fixed inverse
+power. These cases exhaust $q\geq M$.
+
+Finally, without any restriction on $q$, the large-vertex part is
+bounded by a constant times
+$\mathbb E[\mathbf1_{X\leq\epsilon H}
+ e^{X+C_0T_{1,2}(H,X)}]$, which is bounded.
+Combine this with the other ranges and use $H=2g-2$.
+Lemma~\ref{lmm:s03:pairing-majorant} gives both absolute-value
+versions of the conclusions.
+\end{prf}

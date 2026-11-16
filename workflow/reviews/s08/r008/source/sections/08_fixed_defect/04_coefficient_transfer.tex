@@ -1,0 +1,331 @@
+% !TeX root = ../../main.tex
+\subsection{Inverting the sine transform and transferring coefficients}
+\label{subsec:s08:04}
+
+We must recover the raw potential, including its constant in $x$.
+The inverse sine operator produces the dominant coefficient; the
+constant of its transformed primitive is smaller, but its size does
+not follow from the differential equation alone. We first give an
+integral form of the inverse operator, then control its whole path
+before extracting coefficients.
+
+For $g\geq h\geq1$ put
+\begin{equation}\label{eq:s08:degree}
+ D_{g,h}=g_2+h=2g+h-3.
+\end{equation}
+Define the Borel series of the difference of potentials by
+\begin{equation}\label{eq:s08:inverse-borel-definition}
+ \mathcal F_h^+(\theta;x,y)
+ =\sum_{g\geq h}(2\pi)^{2g}
+   (\mathcal F_{g,h}-\mathcal G_{g,h})(\theta;x)
+                       \frac{y^{D_{g,h}}}{D_{g,h}!}.
+\end{equation}
+Its superscript refers to the strictly positive powers of the inverse
+operator, not to a positivity assertion. Its parity is $(-1)^{h-1}$.
+
+\begin{lmm}[The inverse sine kernel]\label{lmm:s08:inverse-kernel}
+For each fixed $h\geq1$, one has the exact identity
+\begin{equation}\label{eq:s08:inverse-kernel}
+ \begin{aligned}
+ \mathcal F_h^+(\theta;x,y)
+ =\sum_{m\geq1}\frac{(-1)^{m-1}}{m^2}\int_0^y
+ \bigl[&\partial_x\mathcal L_h(\theta;x+(y-u)/m,u)\\
+       &+\partial_x\mathcal L_h(\theta;x-(y-u)/m,u)\bigr]\,\dd u.
+ \end{aligned}
+\end{equation}
+Here $u$ runs along the segment from $0$ to $y$, and the derivatives
+are taken before evaluation at the shifted centers. The identity
+holds first as a formal series and then by normal convergence on
+the common analytic regions near $x=0$.
+\end{lmm}
+\begin{prf}
+The evaluation of $\beta_k$ in Theorem~\ref{thm:s06:lambda-g} gives
+$(2\pi)^{2k}\beta_k
+=2\sum_{m\geq1}(-1)^{m-1}m^{-2k}$ for $k\geq1$.
+In the two shifts in \eqref{eq:s08:inverse-kernel}, only even Taylor
+degrees remain. Write that degree as $a=2k-2$ and the input Borel
+degree as $N'=2g'+h-2$. The elementary integral
+\[
+ \int_0^y u^{N'}(y-u)^a\,\dd u
+       =\frac{N'!a!}{(N'+a+1)!}y^{N'+a+1}
+\]
+changes the factorial to $(N'+2k-1)!=D_{g'+k,h}!$.
+The two shifts contribute $2m^{-2k}$, and their derivative is
+$\partial_x^{2k-1}L_{g',h}=\partial_x^{2k}\mathcal G_{g',h}$.
+Thus every coefficient is exactly the $k\geq1$ part of
+\eqref{eq:s07:inverse-miura}.
+
+For the analytic assertion, the shifted radius budget is the same
+one as in Lemma~\ref{lmm:b:cone-transport}. On compact subsets the
+derivatives are bounded uniformly in $m$, and the outer $m^{-2}$
+is summable. The regular patches and endpoint bounds of
+Proposition~\ref{prp:b:common-domains} continue this normally
+convergent identity to the stated regions.
+\end{prf}
+
+The positive $m=1$ branch is singular along the entire path when
+$y$ reaches $R_\theta-x$. Its short initial segment approaches the
+critical center itself. It is therefore essential to treat that
+segment separately, rather than insert a fixed-center expansion
+under the integral without a uniform bound.
+
+\begin{prp}[The recovered singularity]\label{prp:s08:recovered-singularity}
+Fix $h\geq1$ and $1/2<\nu<1$. Uniformly for $x$ in a sufficiently
+small complex neighborhood of $0$ and small real $\theta\geq0$,
+with $S=R_\theta-x$, one has
+\begin{equation}\label{eq:s08:recovered-singularity}
+ \begin{aligned}
+ \mathcal F_h^+(\theta;x,y)
+ ={}&\frac{1}{2}\sqrt{\frac{2}{-w''(x_{*,\theta})}}
+       \frac{\displaystyle\int_x^{R_\theta}P_h(\theta,s)\,\dd s}
+            {\sqrt{S-y}}\\
+ &\quad+O_{h,\nu}(|1-y/S|^{\nu-1})
+                         \qquad(y\longrightarrow S).
+ \end{aligned}
+\end{equation}
+The expansion holds on a common dented complex neighborhood, with
+an additive error even when the displayed integral vanishes.
+The expansion at $-S$ is fixed by parity.
+\end{prp}
+\begin{prf}
+Consider the positive $m=1$ term of
+\eqref{eq:s08:inverse-kernel}, with $u=\tau y$ and $0\leq\tau\leq1$.
+At its center $s=x+y-u$, the center distance is $S-y+u$
+and the endpoint distance remains $S-y$. Use a fixed angular
+reduction of the common dented neighborhood, so that $(S,y)$ lies
+strictly inside the larger two-distance cone used for the estimates
+in Proposition~\ref{prp:b:common-domains}.
+Lemma~\ref{lmm:b:cone-transport} preserves this angular margin
+under the shift $(x,y)\mapsto(x+(1-\tau)y,\tau y)$.
+All constants below are uniform on this smaller complex region.
+
+\smallskip\noindent
+\emph{The initial segment.}
+Choose a sufficiently large fixed $C>0$ and split the segment at
+$|u|=C|S-y|$. On its initial part $\tau<1/2$ once the endpoint
+neighborhood is small enough. The three distances satisfy
+\[
+ \begin{aligned}
+ R_\theta-s&=(1-\tau)(S-y)+\tau S,\\
+ (R_\theta-s)-u&=S-y,\\
+ (R_\theta-s)+u&=(1-\tau)(S-y)+\tau(S+y).
+ \end{aligned}
+\]
+Positive-cone addition bounds the moduli of the first and third
+expressions below by a fixed multiple of $|S-y|$, because
+$1-\tau\geq1/2$. Their upper bounds follow from
+$|u|\leq C|S-y|$. Consequently
+\[
+ |R_\theta-s|\asymp |S-y|,\qquad
+ |(R_\theta-s)\pm u|\asymp |S-y|.
+\]
+Both normalized endpoint distances $1\pm u/(R_\theta-s)$
+are therefore bounded above and away from zero.
+As $y\to S$, this is a small critical-center cone with fixed
+angular margins. Proposition~\ref{prp:b:common-domains} includes
+its holomorphic extension and its patching to the common complex
+region. Apply \eqref{eq:b:common-bounds} there with one center
+derivative and no Borel derivative:
+\[
+ |\partial_s\mathcal L_h(\theta;s,u)|
+       \leq C_{h,C}|S-y|^{(h-3)/2}.
+\]
+Multiplication by the path length $O(C|S-y|)$ gives the uniform
+initial integral $O_h(|S-y|^{(h-1)/2})$, bounded for all $h\geq1$.
+
+On the remaining segment, positive-cone addition gives
+$|S-y+u|\asymp |S-y|+|u|$, so that
+$|(S-y)/(S-y+u)|$ is small enough for
+the endpoint expansion \eqref{eq:s08:leading-expansion} to apply.
+
+\smallskip\noindent
+\emph{The principal term on the remaining segment.}
+Differentiate that expansion in its center while holding its Borel
+argument fixed. The square root contributes
+\[
+ \frac12\sqrt{\frac{2}{-w''(x_{*,\theta})}}
+               \frac{P_h(\theta,s)}{\sqrt{S-y}}.
+\]
+Its integral is the term in \eqref{eq:s08:recovered-singularity}.
+Indeed, extending the center path to the full segment from $x$ to
+$R_\theta$ changes the numerator by
+$O_h(|S-y|^{h/2})$, using
+$P_h(\theta,s)=O_h(|R_\theta-s|^{(h-2)/2})$.
+After division by $\sqrt{S-y}$ this change is bounded.
+
+The derivative of the endpoint value integrates to a difference
+of endpoint values and is bounded by their scale $(h-1)/2$.
+The derivative of $P_h$ has an integral equal to a difference of
+$P_h$ values, multiplied by $\sqrt{S-y}$, and is bounded as well.
+For the remaining error, the mixed Cauchy bounds following
+\eqref{eq:s08:leading-bounds} give
+\[
+ |\partial_sE_h(\theta;s,u)|
+ \leq C_{h,\nu}|S-y|^{\nu-1}
+                    |S-y+u|^{(h-1)/2-\nu}.
+\]
+The last exponent is greater than $-1$. Its integral is therefore
+$O_{h,\nu}(|S-y|^{\nu-1})$, as required.
+
+\smallskip\noindent
+\emph{The other branches.}
+For the negative $m=1$ branch, and for either branch with $m\geq2$,
+the critical endpoint is met only at $u=y$. Near it the first
+center derivative has a bound by a constant times
+$(|S-y|+|y-u|)^{-1/2}$; the remainder terms are integrable too.
+For $m\geq2$ the positive branch has the uniform distance factor
+$1-1/m\geq1/2$. Their sums are bounded by the outer $m^{-2}$.
+Away from this final segment all shifted arguments range in
+regular compact inverse patches, where
+Proposition~\ref{prp:b:tube} applies.
+
+For negative centers bounded
+away from zero, Lemma~\ref{lmm:b:negative-disks} supplies an inverse
+radius strictly larger than $R$; compact perturbation preserves the
+required margin. Thus those centers use regular patches, not a
+positive-center endpoint expansion. This proves the bound on the whole path and its normal
+continuation. Parity follows from the defining Borel degrees.
+\end{prf}
+
+We use the following two-point form of singularity transfer. Its
+short proof also records the error strength actually available here.
+
+\begin{lmm}[Two singularities]\label{lmm:s08:transfer}
+Let $1/2<\nu<1$. Suppose a function $H(Y)$ is holomorphic in
+$|Y|<1$ and in a doubly dented enlargement as in
+\eqref{eq:s08:dented-domains}, with $S=1$. Suppose, at its two
+endpoints, respectively,
+\[
+ H(Y)=A_+(1-Y)^{-1/2}+O(|1-Y|^{\nu-1}),\qquad
+ H(Y)=A_-(1+Y)^{-1/2}+O(|1+Y|^{\nu-1}),
+\]
+where $A_+,A_-\in\mathbb C$. As integers $N\to\infty$,
+\begin{equation}\label{eq:s08:two-point-transfer}
+ [Y^N]H(Y)=\frac{A_++(-1)^NA_-}{\sqrt{\pi N}}
+                                     +O(N^{-\nu}).
+\end{equation}
+The assertion is uniform for common domains, bounded amplitudes
+and uniform error and compact-subset bounds.
+\end{lmm}
+\begin{prf}
+Subtract both displayed inverse square roots. The resulting function
+has order $|1\mp Y|^{\nu-1}$ at each endpoint. Deform its Cauchy
+contour to two indented contours with tip radii $1/N$. Each tip
+contributes $O(N^{-\nu})$. On each outgoing ray take
+$1-Y=t e^{\pm i\varphi}$, with a fixed
+$\pi/2<\varphi<\pi-\gamma$, and reflect these rays at the
+negative endpoint. For small fixed $t>0$ one has
+$|Y|^{-N}\leq e^{-cNt}$, $c>0$. Their contributions are bounded by
+$C\int_{1/N}^{r}t^{\nu-1}e^{-cNt}\,\dd t=O(N^{-\nu})$.
+The remaining contour is outside the unit circle by a fixed margin
+and gives an exponentially small term. Finally
+$[Y^N](1-Y)^{-1/2}=\binom{2N}{N}/4^N
+=(\pi N)^{-1/2}(1+O(N^{-1}))$.
+This proves \eqref{eq:s08:two-point-transfer} with the stated
+uniformity.
+\end{prf}
+
+\begin{rmk}[Transfer method]
+This is the contour method of Flajolet--Odlyzko
+\cite[\S 2]{FO90}, applied at two isolated singularities. The common
+dented regions above supply its complex-domain hypothesis; real-axis
+asymptotics alone would not supply it.
+\end{rmk}
+
+For $g\geq2$ and $0\leq h\leq g$, write
+$T_{g,h}=T_{g,h,0}$, with the integral defined in
+\eqref{eq:s07:kappa-integrals}. For $h=0$ we also use
+$D_{g,0}=g_2$, extending \eqref{eq:s08:degree} to this case.
+
+\begin{prp}[Recovered intersections]\label{prp:s08:intersections}
+For each fixed integer $h\geq0$, as $g\to\infty$,
+\begin{equation}\label{eq:s08:intersection-asymptotic}
+ T_{g,h}\sim
+ \frac{\beta_g D_{g,h}!R^{-D_{g,h}}}
+      {J_1(z_{0,1})\sqrt{2\pi D_{g,h}}}
+                       \frac{\mathcal B(0)^h}{h!}.
+\end{equation}
+In particular,
+\begin{equation}\label{eq:s08:intersection-ratio}
+ \frac{T_{g,h}}{T_{g,0}}
+ \sim\frac{D_{g,h}!}{g_2!}R^{-h}
+             \frac{\mathcal B(0)^h}{h!}
+             \sqrt{\frac{g_2}{D_{g,h}}}.
+\end{equation}
+For every fixed $h\geq0$ and $n\in\{0,1,2\}$ there is $C_{h,n}>0$
+such that, whenever $g\geq\max\{1,h\}$ and $2g-2+n>0$,
+with $M=2g-3+h+n$,
+\begin{equation}\label{eq:s08:marked-bound}
+ |T_{g,h,n}|\leq C_{h,n}\beta_g
+                          \frac{M!R^{-M}}{\sqrt{M+1}}.
+\end{equation}
+\end{prp}
+\begin{prf}
+For $h\geq1$, set $\theta=x=0$ in
+\eqref{eq:s08:recovered-singularity} and use
+\eqref{eq:s08:ordered-integrals}. The amplitude multiplying
+$(1-y/R)^{-1/2}$ is
+\[
+ \frac{z_{0,1}}{2\sqrt2 R}\,
+                         \frac{\mathcal B(0)^h}{h!}.
+\]
+At the negative endpoint it is multiplied by $(-1)^{h-1}$.
+Since $D_{g,h}$ has parity $h-1$, both endpoints give the same
+coefficient: their sum has a factor two. Applying
+Lemma~\ref{lmm:s08:transfer} and then
+\eqref{eq:s06:beta-asymptotics} gives the right-hand side of
+\eqref{eq:s08:intersection-asymptotic} for
+$(\mathcal F_{g,h}-\mathcal G_{g,h})(0;0)$.
+Here $R=z_{0,1}J_1(z_{0,1})/2$ converts the constant.
+
+\smallskip\noindent
+\emph{The primitive constant.}
+Proposition~\ref{prp:b:primitive-bound}, with $N=D_{g,h}+1$, gives
+\[
+ |\mathcal G_{g,h}(0;0)|
+ \leq C_h(2\pi)^{-2g}(D_{g,h}+1)!
+                  R^{-D_{g,h}-1}(D_{g,h}+1)^{-5/2}.
+\]
+It is smaller by $O_h(g^{-1})$ than the scale just found.
+Its proof uses the geometric primitive on the negative real axis,
+not an arbitrary choice of integration constant. The genus-one
+logarithm is excluded from that bound and does not affect this
+large-genus assertion. Equation~\eqref{eq:s07:specialization}
+now identifies $\mathcal F_{g,h}(0;0)$ with $T_{g,h}$.
+For $h=0$, the same asymptotic follows directly from
+\eqref{eq:s06:exact-vertex} and \eqref{eq:s06:additive-saddle}
+with amplitude one. Taking their ratio proves
+\eqref{eq:s08:intersection-ratio}.
+
+\smallskip\noindent
+\emph{Fixed markings.}
+The proof of \eqref{eq:s08:recovered-singularity} is uniform for
+complex $x$ near zero. Lemma~\ref{lmm:s08:transfer}, normalized by
+$Y=y/(R-x)$, therefore bounds the coefficients of
+$\mathcal F_h^+$ by
+\[
+ C_h(2\pi)^{-2g}D_{g,h}!|R-x|^{-D_{g,h}}
+                                      (D_{g,h}+1)^{-1/2}.
+\]
+Cauchy's formula on $|x|=c/(D_{g,h}+1)$, with a small fixed
+$c>0$, costs at most $C_n(D_{g,h}+1)^n$ for $n$ derivatives.
+The factor $|R-x|^{-D_{g,h}}$ is at most a constant times
+$R^{-D_{g,h}}$ on this circle.
+
+For the transformed part and
+$n\geq1$, use $\partial_x\mathcal G_{g,h}=L_{g,h}$ and
+Lemma~\ref{lmm:b:coefficient-bound} on the same parameter circles.
+This gives a bound by
+\[
+ C_{h,n}(2\pi)^{-2g}(D_{g,h}+1)!R^{-D_{g,h}-1}
+                  (D_{g,h}+1)^{-3/2+n-1},
+\]
+which is smaller than the required scale. For $n=0$ use the
+primitive estimate instead. Fixed factorial shifts and the uniform
+comparison for $\beta_g$ turn these bounds into
+\eqref{eq:s08:marked-bound}. If $h=0$, use
+Lemma~\ref{lmm:s06:vertex-bound} at zero cotangent parameters.
+The finitely many stable low genera, including $(g,h)=(1,1)$,
+are absorbed by enlarging the constants. No bound for a growing
+number of markings is asserted here.
+\end{prf}

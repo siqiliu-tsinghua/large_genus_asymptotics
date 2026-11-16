@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 53 archive/live inputs and artifacts, writer ACK and fresh approved S1 r009/S2 r019/S6 r014; the cosmetic delta adds no geometric, Bessel or ILW premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight S7 files equal r010, preserving stable descendant ranges, positive fixed defect, finite-jet degree constraints, genus-one exception and Borel minimum degree 3h-2.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains genus/defect conversion, the string anomaly cancellation, inverse-sine beta factors and Borel/Beta factorials including the quadratic half; contents/footer formatting changes no factor or mathematical counter.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Unchanged definitions/interface retain x=t_0, theta, W/w/v, indexed L_h and g_2 scopes, while multi-subagent is only disclosure wording and the common companion keeps the previously checked 430 label numbers.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior assessment of written finite jets, jet-kernel constants, characteristic recovery and Borel coefficient identities applies to identical source with no proof step supplied or removed by the cosmetic update.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged section retains coefficientwise/formal identities and fixed-genus characteristic convergence, without importing B/S8 common-domain or infinite-genus conclusions or adding a stronger rate.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta from r010 is five inherited changes plus one new S1 layout handoff, no removal; all eight own files are unchanged and inherited bytes match S6 r014. Actual writer ACK SHA256 c35d2784be6668b39a157b92160710cfb32d5612a06ef5f7461358bade71d6dc.",
+    "Actual standard source SHA256 cc66420635c69cfb77c66f957d30bbb4820970ff692fadb66e592a3c419e11e8 equals the new frozen fingerprint; PDF 3370a713c877d60f3a9451a46bed4097917ac53a83534c11b50f87ccb27a407c matches the strict/passed/with-dependencies receipt with empty diagnostics. Its snapshot field is the pre-submit r010 ID, distinct from the actual r011 signature.",
+    "Common companion record/artifact hashes retain source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc and PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a. Reused complete prior mathematical/common-layout assessments without proof rereading, scientific computation, research, builds or repeated pictures; only these two reports were written, with no source/state/history/output edits or future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 11,
+  "schema_version": 1,
+  "snapshot": "449cdc4fe9f1920aeabf0c4775a4c55390cde48a2fc7fa98e0fc863b5aa79158",
+  "summary": "LAYOUT-TWEAKS: pass on S7 r011. The exact inherited cosmetic update preserves ILW normalization, integration constants, characteristic identities and the original formal/fixed-genus scopes.",
+  "unit": "s07",
+  "verdict": "pass"
+}

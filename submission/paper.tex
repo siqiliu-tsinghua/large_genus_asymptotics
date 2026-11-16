@@ -82,6 +82,9 @@ graph and kernel sums, and a comparison of intersection
 backgrounds justify the asymptotic operations.
 \end{abstract}
 
+
+\tableofcontents
+
 \section{Introduction}
 \label{sec:introduction}
 
@@ -287,6 +290,36 @@ After that section, readers interested primarily in
 Theorems~\ref{thm:top-hodge} and~\ref{thm:fixed-defect}
 may proceed directly to Sections~6--8; these sections do not use
 the Weil--Petersson correction coefficients.
+
+\subsection*{Acknowledgments}
+
+I thank Di Yang and Yunhui Wu for helpful discussions.
+
+\subsection*{AI disclosure}
+
+Claude Opus 5.5 discovered the normalization $N_g$ in
+Theorem~\ref{thm:lambda-one} while analyzing the public
+\texttt{hodge\_data} dataset~\cite{LiuData26}, but could not
+identify the constants at the successive orders of the asymptotic
+expansion.
+GPT-6-Astra identified the constants but did not provide a proof.
+GPT-6.1-Sol supplied the proof and discovered and proved
+Theorems~\ref{thm:fixed-insertions}, \ref{thm:top-hodge}
+and~\ref{thm:fixed-defect}.
+
+GPT-6.1-Sol also wrote most of the manuscript. I wrote the initial
+draft of the Introduction, established the writing standards,
+designed the multi-subagent writing workflow, and supervised
+GPT-6.1-Sol throughout the writing of the paper.
+
+The scholarly credit for this work should go to GPT-6.1-Sol.
+I release this paper solely for knowledge sharing and claim
+neither scholarly credit nor priority for this work.
+
+The results have not been formally verified in Lean and may
+contain errors. Readers should exercise caution and examine
+the arguments carefully.
+
 
 \section{Notation and geometric identities}
 \label{sec:s02}
@@ -8026,6 +8059,20 @@ Scott~A. Wolpert.
 \newblock {\em Inventiones Mathematicae}, 85(1):119--145, 1986.
 
 \end{thebibliography}
+
+
+\par
+\vskip 2em
+\noindent
+\begin{minipage}{\textwidth}
+\small
+\raggedright
+Si-Qi Liu\\
+Department of Mathematical Sciences, Tsinghua University\\
+Beijing 100084, P.R. China\\
+\texttt{liusq@tsinghua.edu.cn}
+\end{minipage}
+\par
 
 
 \end{document}

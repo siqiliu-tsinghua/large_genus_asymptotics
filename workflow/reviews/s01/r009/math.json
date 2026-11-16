@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual /root/s02_math binding, canonical frozen snapshot, all 25 archive/live inputs, artifacts and original-writer layout ACK; these three cosmetic edits add no mathematical source, proof premise or reader software dependency.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The full S1 entry remains byte-identical to r008, preserving stability, complex-codimension, rank and fixed-list/defect ranges; the contents and footer spacing introduce no mathematical condition or result counter.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All four complete theorems and six numbered equations are unchanged, retaining N_g, bracket/factorial conventions, rho and the printed constants, and all 430 full-companion label numbers match the previous canonical layout.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The sole AI wording replacement multi-agent to multi-subagent and its interface mirror introduce no mathematical object or alias, while the unchanged entry preserves first definitions and the table of contents repeats only existing headings and references.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete mathematical assessments remain applicable because the contents and vertical spacing only change navigation/placement and the disclosure correction leaves credit, Lean caution and every actual proof argument unchanged.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The exact preserved statements keep the original O(g^-3), fixed-list O(g^-4), O(g_2^-2) and fixed-h asymptotic-equivalence scopes; no cosmetic edit strengthens a remainder, uniformity range or verification claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact r008 delta independently checked: five changed paths (footer, main, disclosure, interface, context), one new layout_handoff.md and no removal; the summary lists changes and the addition together. Actual writer ACK SHA256 83e7e0e3e0b7b86b445268b985a6b8ef4b392f8cd435d6eb6b2f7314625d1227.",
+    "Actual standard-build source SHA256 46665639790badd568b61e7955920dfecae7e4eda3fff903372407768e839751 equals the current frozen file-map fingerprint; archived standard PDF SHA256 e3be48477814b7840970699c221972d5c266cac5416ad3a9fda70141dc453e11 matches its strict, passed, with-dependencies receipt and empty diagnostics. The receipt truthfully retains the build-time r008 snapshot field; its current source/PDF match, rather than that old field, binds the reused pre-submit build to r009.",
+    "Verified the genuinely post-freeze current-layout companion record, all artifact hashes and current render maps: source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc; PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a. Four passes stabilized the contents; all 430 old label numbers are identical, and the final log has no overfull, undefined-reference/citation or rerun warning. Actually viewed the recorded, hash-verified pages 1, 2 and 102: abstract then contents, remaining contents then Introduction, and the address immediately after references with the requested gap.",
+    "Reused the original proof assessments without mathematical reruns, model/literature research, builds or whole-proof rereading. Only this round's math.json and math_handoff.md were written. The companion remains current-layout evidence, not premature approval of the nine pending units or a future export; no source/state/history/frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "23a01eee352c86a70308c495c6bac5ce6c3888e75852b573e0a8bcb50f9f315a",
+  "summary": "LAYOUT-TWEAKS: pass on S1 r009. The exact multi-subagent correction, table of contents and after-bibliography spacing preserve all mathematics, definitions, theorem/formula numbering and proof scopes; the actual new snapshot and layout artifacts match.",
+  "unit": "s01",
+  "verdict": "pass"
+}

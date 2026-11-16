@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 62 archive/live inputs and artifacts, writer ACK and fresh approved S1 r009/S2 r019/S6 r014/S7 r011; the cosmetic update supplies no new analytic or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All nine B files equal r008, retaining finite h/H, minimum Borel degree, local vanishing-order threshold and primitive g>=max(2,h) range with the genus-one logarithm excluded.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source preserves forward versus reciprocal inverse derivatives, Morse/cone signs, intact cubic differences and the primitive factorial/radius scale; the TOC and footer gap change no factor or mathematical counter.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions retain Bessel data, local derivative scales, S/cone/complex-theta scopes and fixed derivative orders, while the disclosure wording adds no symbol and the common companion retains the verified 430 label numbers.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior assessment of inverse-radius geometry, normal-convergence construction, endpoint/local-transport induction, complex-domain patching and negative-axis primitives applies to identical source without a new cosmetic-dependent premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved full-sigma bounds, mixed-derivative budgets, finite-layer reductions and all negative-axis intervals keep their original uniform constants and ranges, with no stronger remainder or domain claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact delta from r008 is five inherited changes plus one new S1 layout handoff, no removal; all nine own files are unchanged and inherited bytes match S7 r011. Actual writer ACK SHA256 9380e1c1aac4c7321c8cb09ebc32c0d58161e106d4a4083cf617a3614eadadbd.",
+    "Actual standard source SHA256 e94a1a4089089f394f40700278869c3fcac560dd5b15c7d47eca0042b99f04f4 equals the new frozen fingerprint; PDF bbd7b5f4accd4bc02eef24ef0ec26bab435224d22f79da846771c0bed91a906d matches its strict/passed/with-dependencies receipt and empty diagnostics. Its snapshot field is the pre-submit r008 ID, distinct from the actual r009 signature.",
+    "The common companion record/artifact hashes remain source 2e1a05d5d85d1f39c359c6f28a17cbd7abda6d6c6fbfbf93efa56137cda86ecc and PDF dc28753d12dc659f462775e899822c0017589edea7a455de13b3a0cc282d4b3a. Reused prior complete mathematical/common-layout assessments without proof/section rereading, research, calculations, builds or pictures; only these two current reports were written, with no source/state/history/output change or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "dc3de6c832d847d21b37b6cc173126a3951c02ea955d6939dbaa04c508ce20c1",
+  "summary": "LAYOUT-TWEAKS: pass on B r009. The exact inherited cosmetic update preserves all analytic domains, kernel/transport estimates, derivative budgets and primitive scopes.",
+  "unit": "b",
+  "verdict": "pass"
+}

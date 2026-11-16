@@ -1,0 +1,180 @@
+% !TeX root = ../../main.tex
+\subsection{Weil–Petersson inputs in a common convention}
+\label{subsec:s03:01}
+
+We use Mirzakhani's length polynomial \cite[Theorem~4.4]{Mir07}.
+Its logarithmic intersection normalization is that of Mirzakhani and
+Zograf \cite[Section~2]{MZ15}. Put $\alpha=2\pi^2$.
+For a stable pair $(G,n)$ and real lengths
+$\mathbf y=(y_1,\ldots,y_n)\in\mathbb R_{\geq0}^n$, define
+\begin{equation}
+\label{eq:s03:wp-definition}
+V_{G,n}(\mathbf y)
+=\int_{\MM_{G,n}}\exp\left(\alpha\kappa_1+
+  \frac12\sum_{i=1}^ny_i^2\psi_i\right),
+\qquad V_{G,n}=V_{G,n}(\mathbf0).
+\end{equation}
+For a tuple $\mathbf d=(d_1,\ldots,d_n)$ of nonnegative integers, write
+$|\mathbf d|=\sum_i d_i$ and set
+\begin{equation}
+\label{eq:s03:descendants}
+[\tau_{\mathbf d}]_{G,n}
+=\prod_{i=1}^n4^{d_i}(2d_i+1)!!
+  \int_{\MM_{G,n}}e^{\alpha\kappa_1}\prod_{i=1}^n\psi_i^{d_i}.
+\end{equation}
+This bracket is zero when $|\mathbf d|>3G-3+n$; the empty tuple gives
+$V_{G,0}$. Expanding the exponential, and using
+$2^d d!(2d+1)!!=(2d+1)!$, gives the finite identity
+\begin{equation}
+\label{eq:s03:length-polynomial}
+V_{G,n}(2\mathbf y)
+=\sum_{\mathbf d\geq0}[\tau_{\mathbf d}]_{G,n}
+  \prod_{i=1}^n\frac{y_i^{2d_i}}{(2d_i+1)!}.
+\end{equation}
+The low-complexity values in this convention are, for $y\geq0$,
+\begin{equation}
+\label{eq:s03:low-types}
+V_{0,3}=1,\qquad
+V_{1,1}(y)=\frac{\pi^2}{12}+\frac{y^2}{48}.
+\end{equation}
+
+The following inputs have different roles. Fixed-marking expansions
+identify coefficients; bounds over all stable types control the graph
+tail; explicit remainder bounds permit the retained valences to grow.
+Euler's gamma function satisfies $\Gamma(k)=(k-1)!$ for a positive
+integer $k$.
+For the uniform inputs fix an integer $c_{\mathrm H}>600$ which also
+exceeds the constant in \cite[Lemma~2.6]{HMT25}.
+
+\begin{prp}[WP inputs]
+\label{prp:s03:wp-inputs}
+The volumes and brackets above have the following properties.
+
+\textup{(i)} For fixed integers $n,K\geq0$ there are coefficients
+$c_r(n)$, independent of $G$, such that
+\begin{equation}
+\label{eq:s03:fixed-n-volume}
+V_{G,n}
+=\frac{(2G-3+n)!(4\pi^2)^{2G-3+n}}{\sqrt{\pi G}}
+ \left(1+\sum_{r=1}^K\frac{c_r(n)}{G^r}
+ +O_{n,K}(G^{-K-1})\right).
+\end{equation}
+Each $c_r(n)$ is a polynomial in $n$ of degree $2r$, and
+\begin{equation}
+\label{eq:s03:c-one}
+c_1(n)=-\frac{n^2}{2\pi^2}
+-\left(\frac14-\frac{5}{2\pi^2}\right)n
++\frac7{12}-\frac{17}{6\pi^2}.
+\end{equation}
+
+\textup{(ii)} There is an absolute constant $C$ such that, for every
+stable pair and $k=2G-2+n\geq1$,
+\begin{equation}
+\label{eq:s03:all-type-input}
+V_{G,n}\leq C(4\pi^2)^{k-1}\frac{\Gamma(k)}{\sqrt{k}},
+\qquad
+0\leq[\tau_{\mathbf d}]_{G,n}\leq V_{G,n}\quad(n\geq1).
+\end{equation}
+
+\textup{(iii)} In each of the following three cases the indicated
+quantity $T_{G,n}$ has coherent expansions
+\begin{equation}
+\label{eq:s03:hmt-form}
+T_{G,n}=1+\sum_{r=1}^K\eta_rG^{-r}+\varepsilon_K
+\qquad(K\geq0).
+\end{equation}
+The coefficients $\eta_r$ refer separately to the quantity in that case;
+they depend on its discrete indices but not on $G$ or $K$.
+For $r\geq1$ the bounds are as follows.
+
+For the descendant ratio, let $n\geq1$, $D=|\mathbf d|$, and put
+$T_{G,n}=[\tau_{\mathbf d}]_{G,n}/V_{G,n}$. If
+$G>(n+K+1)(c_{\mathrm H}(K+1))^{c_{\mathrm H}}$, then
+\begin{equation}
+\label{eq:s03:hmt-descendant}
+\begin{split}
+|\varepsilon_K|&\leq
+ \frac{(c_{\mathrm H}(K+1))^{c_{\mathrm H}(K+1)}
+       (n+K+1)^{K+1}}{G^{K+1}}
+ \sum_{m=0}^{2K+2}\frac{D^m}{m!},\\
+|\eta_r|&\leq(c_{\mathrm H}r)^{c_{\mathrm H}r}(n+r)^r
+ \sum_{m=0}^{2r}\frac{D^m}{m!}.
+\end{split}
+\end{equation}
+For the inverse cusp ratio
+$T_{G,n}=4\pi^2(2G-2+n)V_{G,n}/V_{G,n+1}$, if
+$G>500(n+K+2)(c_{\mathrm H}(K+1))^{c_{\mathrm H}}$, then
+\begin{equation}
+\label{eq:s03:hmt-cusp}
+\begin{split}
+|\varepsilon_K|&\leq
+ \frac{500(c_{\mathrm H}(K+1))^{c_{\mathrm H}(K+1)}
+       (n+K+2)^{K+1}}{G^{K+1}},\\
+|\eta_r|&\leq500(c_{\mathrm H}r)^{c_{\mathrm H}r}(n+r+1)^r.
+\end{split}
+\end{equation}
+For the genus-exchange ratio $T_{G,n}=V_{G-1,n+2}/V_{G,n}$, if
+$G>(n+K+1)(c_{\mathrm H}(K+1))^{c_{\mathrm H}}$, then
+\begin{equation}
+\label{eq:s03:hmt-genus}
+\begin{split}
+|\varepsilon_K|&\leq
+ \frac{(c_{\mathrm H}(K+1))^{c_{\mathrm H}(K+1)}
+       (n+K+1)^{K+1}}{G^{K+1}},\\
+|\eta_r|&\leq(c_{\mathrm H}r)^{c_{\mathrm H}r}(n+r)^r.
+\end{split}
+\end{equation}
+In the last two cases $n\geq0$ and all intermediate types are stable.
+\end{prp}
+\begin{prf}
+Mirzakhani--Zograf prove the fixed-$n$ expansion and give
+\eqref{eq:s03:c-one} in \cite[Theorem~1.2 and Remark~1.3]{MZ15}.
+Their leading constant is determined as $1/\sqrt\pi$ by Liu--Xu
+\cite[Corollary~1.2]{LX26}; Wang et al.
+\cite[Corollary~1.2]{W26} give an independent determination.
+These statements include the unmarked leading term.
+
+The volume bound for $k\geq2$ is Shen--Wu
+\cite[Lemma~18]{SW25}. The two types with $k=1$ are precisely
+$(0,3)$ and $(1,1)$, so \eqref{eq:s03:low-types} includes them after
+increasing $C$. For the bracket bound use Wang et al.
+\cite[Lemma~6.1, (6.7)]{W26} at parameter $Y=0$. Their
+normalization in (4.4), (4.6) and (6.1) multiplies every bracket of a
+fixed type by the same factor $4^{-(3G-3+n)}$. Thus their profile ratio
+is exactly the ratio in \eqref{eq:s03:all-type-input}.
+
+Part~\textup{(iii)} is Hide--Macera--Thomas
+\cite[Theorem~4.2, A1, A3, A4]{HMT25}, with their integer $c$ written
+as $c_{\mathrm H}$. For nonnegative integers $a_1,\ldots,a_n$,
+the coefficient at $\prod_i d_i^{a_i}$ in the A1 majorant is
+\[
+\frac{(c_{\mathrm H}(K+1))^{c_{\mathrm H}(K+1)}(n+K+1)^{K+1}}
+     {\prod_i a_i!}
+\qquad\left(\sum_i a_i\leq2K+2\right).
+\]
+For every integer $m\geq0$, the multinomial identity
+\[
+\sum_{\sum_i a_i=m}\prod_i\frac{d_i^{a_i}}{a_i!}=\frac{D^m}{m!}
+\]
+gives \eqref{eq:s03:hmt-descendant} and the analogous coefficient
+bound. A3 and A4 give the other two displays directly.
+\end{prf}
+
+\begin{rmk}[Normalization and ranges]
+Wolpert's unmarked class identity is
+$[\omega_{\mathrm{WP}}]=2\pi^2\kappa_1$
+\cite[Section~5.1, p.~138]{Wol86}; the marked logarithmic convention
+is the one in \cite[Section~2]{MZ15}. Mirzakhani's
+\cite[Theorem~4.4 and the discussion on p.~4]{Mir07} must be read
+with its elliptic-involution convention: its $(1,1)$ length polynomial
+is twice \eqref{eq:s03:low-types}. We use the whole stack polynomial,
+including its $y^2$ coefficient. The finite exception does not alter the
+large-$G$ inputs and was checked separately in the all-type bound.
+
+The fixed-$n$ error in \eqref{eq:s03:fixed-n-volume} is not uniform
+in growing $n$. That uniformity is supplied by
+\eqref{eq:s03:hmt-descendant}--\eqref{eq:s03:hmt-genus}.
+For fixed $K$, their thresholds allow $n=O(\log g)$ and
+$G=g-O(\log g)$. We will retain their polynomial dependence on $n,D$
+until after summation, rather than absorbing it into powers of $\log g$.
+\end{rmk}

@@ -1,0 +1,28 @@
+% !TeX root = ../../main.tex
+\section{The top Hodge class and Bessel asymptotics}
+\label{sec:s06}
+
+This section proves Theorem~\ref{thm:top-hodge}. The top-class
+restriction in Corollary~\ref{crl:s02:defect-allocation} removes
+every graph with a cycle and factors $\lambda_g$ over the remaining
+trees. Together with degree conversion from
+Section~\ref{sec:s02}, the boundary exponential
+\eqref{eq:s02:boundary-exponential} turns the integral defining $b_g$
+into a sum of top-Hodge vertex integrals.
+
+We first use the $\lambda_g$ theorem to reduce each vertex to a
+one-variable coefficient. A strict modulus estimate on a Bessel
+circle gives a bound uniform in all stable vertex types. This bound
+controls the complete tree tail, leaving only the tree with no
+edges and an elliptic leaf at the required precision. A two-term
+saddle calculation and the leaf integral then determine the three
+terms in the scalar $b$.
+
+The exact genus-zero reduction, classical Bessel inverse and
+critical-point data are also retained for the later fixed-defect
+analysis.
+
+\input{sections/06_top_hodge/01_exact_vertices}
+\input{sections/06_top_hodge/02_bessel_critical_point}
+\input{sections/06_top_hodge/03_tree_tails}
+\input{sections/06_top_hodge/04_correction_and_proof}
