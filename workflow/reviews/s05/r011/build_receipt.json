@@ -1,0 +1,80 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s05",
+      "build/previews/s05/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s05/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s05",
+      "build/previews/s05/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s05",
+      "build/previews/s05/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s05/preview.aux",
+    "build/previews/s05/preview.bbl",
+    "build/previews/s05/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/03_graph_asymptotics/01_wp_inputs.tex",
+    "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+    "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+    "sections/03_graph_asymptotics/04_finite_cores.tex",
+    "sections/03_graph_asymptotics/section.tex",
+    "sections/04_lambda_one/01_loop_moments.tex",
+    "sections/04_lambda_one/02_leading_and_first_correction.tex",
+    "sections/04_lambda_one/03_second_correction.tex",
+    "sections/04_lambda_one/04_proof.tex",
+    "sections/04_lambda_one/section.tex",
+    "sections/05_fixed_insertions/01_character_filtration.tex",
+    "sections/05_fixed_insertions/02_single_character.tex",
+    "sections/05_fixed_insertions/03_proof_and_examples.tex",
+    "sections/05_fixed_insertions/section.tex",
+    "sections/a_coefficients/01_wp_coefficients.tex",
+    "sections/a_coefficients/02_loop_moments.tex",
+    "sections/a_coefficients/03_low_complexity_vertices.tex",
+    "sections/a_coefficients/04_finite_core_tables.tex",
+    "sections/a_coefficients/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s05/preview.pdf",
+  "pdf_sha256": "e43454fd842dcfa25448c7b046663af4e95961919c77dda5eceb8de70378e583",
+  "schema_version": 1,
+  "snapshot": "4f18091e872d527fd6e05549c3c55ef93a4afeaaecc6de6cbfeca80969d38547",
+  "source_hash": "75b2826ea238d4a46db417bc82c4be3e7e4359e5346666f108e96656844f5096",
+  "strict": true,
+  "time": "2026-11-15T18:34:45+00:00",
+  "unit": "s05",
+  "with_dependencies": true
+}

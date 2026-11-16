@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Inspected actual native page 3: deleting the optional C guide leaves a concise, natural organization paragraph ending with the independent Sections 6--8 route, without a dangling appendix promise, redundant replacement paragraph or engineering reader obligation.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "All preceding source-credit prose and bibliography remain unchanged, so editorial removal of optional known low-genus examples erases no attribution used by the four proofs and leaves S8's properly credited public numerical evidence distinct from a proof premise.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Every original source locator and convention is preserved, specifically Wang et al.'s cited Appendix C.1, which refers to that source rather than this article, while no remaining manuscript TeX references the retired article-C mathematical labels.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The four complete theorem blocks, six numbered equations, all other displays, fixed-parameter/precision statements, abstract and user typography are unchanged, with no proof gap or software obligation created by removing nonessential C and no claim that numerical evidence proves a rate or that final single-file isolation has already been verified.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, frozen diff, original-writer ACK, new retirement handoff and protocol's real RETIREMENT.md link; independently confirmed only the S1 source/interface and protocol change, one handoff is added and no selected input is removed, with the S1 source exactly recovered as the old prefix through its final WP sentence.",
+    "Verified the actual retired C state and editorial retirement reason, together with its preserved previous approval receipt and academic-report fingerprints; this removal does not rewrite the historical mathematical reviews or reclassify their results as invalid.",
+    "Checked remaining TeX for references to C's section/subsection/equation/proposition labels and found none; retained the original complete proof/source assessments without new literature or data checks.",
+    "Verified archived/live inputs and artifacts, recomputed snapshot/render fingerprints, actual original binding and native PDF/entry/helper hashes; the strict/pass receipt and preserved preflight/sealing record agree with empty standard/layout diagnostics.",
+    "No academic issue is open; only these reports and a private ignored page image were written, without source/state/history/other-report/frozen-output changes, and the eventual single-TeX isolated build is not preapproved by this scoped signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "620b75b92dc1c56b58b10004fabd1a33e2d31e7b3e6e77327047c7bd94fad5dd",
+  "summary": "Pass. Removing the optional C description improves economy while preserving the four proofs, source attribution, publication independence and original theorem precision, with retirement/history correctly distinguished.",
+  "unit": "s01",
+  "verdict": "pass"
+}

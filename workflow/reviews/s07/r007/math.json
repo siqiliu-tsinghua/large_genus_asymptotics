@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified binding, canonical snapshot, archive/live/artifact/native hashes, author ACK and approved/fresh S1 r004/S2 r015/S6 r009; the unchanged Bur15/Bur16 citations and exact S6 beta/Bessel data supply the transport inputs in text, without software or S6's higher coefficients as premises.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven S7 files are byte-identical to r006, preserving stable low-genus exceptions, g>=h layer ranges, Borel degree 2g+h-2, minimum degree 3h-2 and parity under the shared publication changes.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The ILW variable/sign conversion, inverse-sine beta factorials, raw string anomaly cancellation, primitive constants and Dirichlet/Beta kernel weights remain unchanged, including the quadratic half and derivatives evaluated before characteristic substitution.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original first-use definitions of z,eta,theta,x,y,W,v and fixed defect retain their formal/analytic types and local scopes together with inherited lowercase integrals and g_2, and the S1 guide and URL wrapping introduce no alias or missing definition.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review establishes the written string/dilaton and finite-jet arguments, determination of free-energy constants, differential transport, inverse-branch characteristic recovery and Beta/Borel coefficient extraction, so the unchanged paper requires no program/private record to complete these steps and the new independence rule deletes no premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Coefficientwise formal identities, fixed-genus characteristic convergence and separately stated local analytic/normal-convergence conclusions retain their original distinct scopes, with no whole-genus convergence or stronger asymptotic precision inferred from the shared update or supplemental S6 report.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S7 r007 using the retained complete original mathematical assessment; no prior MATH issue is open and resolved_issue_ids is empty. Publication independence is substantively covered by dependencies/proof_logic.",
+    "The only closure changes are the ten already-reviewed S1/shared paths and added S1 standalone handoff, with no removal; all seven S7 files are unchanged and their manuscript contains no engineering-material promise. Original-writer ACK SHA256 d10ed88eddfa8ac55ee94dbdb495729508d2c5edc9c2504ed35b60ed37cb1bfd matches the actual scope.",
+    "Source SHA256 40884cd70adada086ead566c002b067f3a444d93e7f37db1ba9ee2693ea4eb5b; actual native PDF SHA256 d3c22dca81a26e4626cced332a2cfd5939606a8fe693eeaa113196400dcde59c. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, strict/layout diagnostics are empty and pre-submit/equal-source sealing is explicit.",
+    "Only assigned reports were written; no unchanged proof or calculation was repeated and no source/state/historical/other-role or frozen-output file changed. Unfrozen C work and the final isolated single-TeX delivery remain outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "a642af1792256b9aa1ed8d3db5fec3ae632a7636309c938141318454b967542e",
+  "summary": "Pass on S7 r007: shared publication changes preserve the self-contained ILW, string/finite-jet, constant-recovery, characteristic and Borel arguments and their formal/analytic scopes. Actual frozen inputs/native receipt match, no software obligation is introduced and no mathematical issue remains.",
+  "unit": "s07",
+  "verdict": "pass"
+}

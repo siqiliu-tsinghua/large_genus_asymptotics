@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Applied the new publication-independence requirements and inspected actual native page 3: the organization paragraph now describes C's direct mathematical derivation of low-genus identities, removes the promise of reproduction instructions and offers no program, README, directory or source package as article content or a reader obligation.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The revised C guide accurately points to finite-genus formulas and their in-text derivations, preserving the original source credit throughout the preceding Introduction and keeping private checking material distinct from scholarly authority rather than replacing or suppressing proper literature/data attribution.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All S1 citations, versions and convention translations are unchanged, and removing only the two added allowbreak commands recovers references.bib exactly, so LiuData26's previously verified author, fixed commit and source identity are preserved while its URL gains permissible line breaks.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Publication independence is preserved substantively: the closing examples complement rather than supply the asymptotic proofs, no internal file or executable is a missing proof premise, and all four complete theorem blocks, six numbered formulas, other displays, fixed-parameter/precision statements and abstract remain unchanged without claiming that the later isolated single-TeX delivery is already complete.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the revised AGENTS/context/academic-role publication clauses, actual dispatch, STANDALONE-ARTICLE plan, original-writer ACK, frozen differences and new standalone handoff; independently confirmed the ten changed existing inputs and one added handoff match the summary, with no removals and only the final organization prose changed in the S1 manuscript.",
+    "Verified all archived/live inputs and artifacts, recomputed snapshot/render fingerprints, actual original binding and native PDF/entry/helper hashes; the strict/pass receipt has empty standard/layout diagnostics, and the preserved preflight record agrees on equal-source pre-submit construction and subsequent sealing.",
+    "The abstract, original writer handoff, main and preamble are byte-preserved, including the user's and/quad/mbox typography; the already inspected actual S1 r003 title/abstract companion remains evidence for that unchanged front matter, while this round's unit PDF supplies the revised organization page.",
+    "This signature covers current S1 and the shared-policy/URL delta, not future A/C revisions or a not-yet-produced merged submission file; retain the original complete source assessment without repeated source searches or computation, with ACADEMIC-010 still resolved and no open academic issue.",
+    "Only this round's two reports and a private ignored page image were written; no manuscript, shared source, state, other report, historical record or frozen output was modified or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "dbf3850e378cf25c155e1abdba8c31929f4cfdbff7541b4e921fd9479f286efd",
+  "summary": "Pass. S1 now describes Appendix C by its mathematical content, preserves proper source credit and all theorem precision, and meets the new scoped publication-independence requirement without promising engineering attachments.",
+  "unit": "s01",
+  "verdict": "pass"
+}

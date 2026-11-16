@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Removing the entry's software promise and final engineering Remark removes no mathematical definition or hypothesis; the unchanged A.1-A.3 sources and preserved A.4 proof text retain the reviewed first-use scopes of descendant coefficients, signed moments, low-type integrals and core data.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "All retained mathematical source is unchanged, preserving profile signs, raw-integral versus loop-weight normalization, correlated moments, automorphism factors and inherited integral names; the common bibliography edit only introduces URL break opportunities.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The two deletions introduce no name or alias and shorten the four-task entrance without repeating inherited notation (native p25); A.2's existing X and N serve the explicit finite recurrence and are not software-specific objects (02_loop_moments.tex:109-122).",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The revised entrance still identifies descendant/volume coefficients, joint loop moments, four small vertices and complete low-complexity cores as the inputs for the second correction, while explicitly placing the coefficient identities and extraction estimates in the text (native p25).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The independent mathematical basis remains in A.1-A.4, including the finite moment recurrence, core-completeness proof, automorphism rule, edge integrations and worked row; the deleted unlabelled engineering Remark supplied no proof step, and actual native pp25,43 show a clear entrance and proof ending without a program, Markdown or installation obligation.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No deletion or shared update reassigns a mathematical letter, so the reviewed separation of Hodge indices, profile statistics, degree variables, loop weights/counts and core complexity remains intact; all diagram, moment-table and integral-table source is unchanged.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The new entry passes directly from the four mathematical tasks to A.1, and the end now passes from the finite-contribution proof and its global-tail input to References with a clear right-hand proof square (native pp25,43); A.2's For explicit reproduction introduces the in-paper recurrence, not a local-file dependency.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE impact review against accepted a r011, retaining the complete Appendix A assessment. Read the exact dispatch, summary, diff, original-writer acknowledgment, revised entry/interface/handoff and prior report; the shared publication-independence requirements and S1 revision were already personally reviewed.",
+    "Verified all 50 frozen/live input hashes, artifacts, exact snapshot and current Engine fingerprint. Thirteen existing inputs changed and S1/A standalone handoffs were added, with no removal. Of A's 17 previous inputs only the entry, final-subsection tail and interface changed; A now has 18 selected files. The A.4 source before the deleted engineering Remark is exactly preserved and A.1-A.3, diagrams, calculation sources and records are unchanged.",
+    "Verified native receipt/PDF/entry/helper hashes and sealed equal-source pre-submit build provenance. Source SHA256: 6c83ac383b381cd383c57eaa14cae7c9694189529ae788c1ea8f69ee52da312a; native PDF SHA256: 3c570d22d250643a3655c0679e401fb4269e712656cf6c63770f69f2d2ea1a3c. Strict/layout diagnostics are empty, with 10pt, no showkeys and flush-left bibliography continuations retained.",
+    "Independently extracted current and r011 native PDFs: both have 44 pages, only pp3,25,43,44 differ, and every A page from 26 through 42 is text-identical. Actually viewed current pp25 and43 in build/standalone-20261116/readability-a-r012/: entrance, long profile display and final proof/References transition are clear. Unchanged tables, core diagrams and long formulas on pp26-42 retain the original actual visual assessment without another render.",
+    "Checked the retained A.2 passage at 02_loop_moments.tex:109-122: its reproduction language supplies the mathematical Bell recurrence, initial value and examples entirely in the article. No reader-facing program, Markdown, installation or calculation-directory promise remains in the manuscript. Final single-TeX export and isolated compilation remain the coordinator's later delivery task, outside this unit signature.",
+    "Read-only status confirms the actual /root/s02_readability binding to a r012 and S1 r004/S2 r015/S3 r012 approved/fresh; inherited inputs match S3 r012. python scripts/validate.py --unit a passes. No prior readability issue remains open, so issues and resolved_issue_ids are empty."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "c6cfefa61218d91d50b07dfc3a062c29a9f41744ca56e1af1aa525ede3858b96",
+  "summary": "Pass. The local deletions remove engineering promises while preserving the appendix's mathematical rules, proofs, notation and tables; the revised entrance and ending read naturally and the retained reproduction passage is an in-text finite recurrence.",
+  "unit": "a",
+  "verdict": "pass"
+}

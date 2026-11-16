@@ -1,0 +1,38 @@
+{
+  "depends_on": [
+    "s07",
+    "b"
+  ],
+  "directory": "sections/08_fixed_defect",
+  "id": "s08",
+  "kind": "body",
+  "number": 8,
+  "outline_heading": "## 第 8 节 Singularity analysis and Hodge integrals at fixed defect",
+  "subsections": [
+    {
+      "path": "sections/08_fixed_defect/01_analytic_domains.tex",
+      "title": "Analytic domains of the inverse Bessel function"
+    },
+    {
+      "path": "sections/08_fixed_defect/02_singularity_propagation.tex",
+      "title": "Propagation of the leading singularity"
+    },
+    {
+      "path": "sections/08_fixed_defect/03_transport_constant.tex",
+      "title": "The transport constant and its factorial"
+    },
+    {
+      "path": "sections/08_fixed_defect/04_coefficient_transfer.tex",
+      "title": "Inverting the sine transform and transferring coefficients"
+    },
+    {
+      "path": "sections/08_fixed_defect/05_background_comparison.tex",
+      "title": "Comparing the kappa and Hodge backgrounds"
+    },
+    {
+      "path": "sections/08_fixed_defect/06_proof.tex",
+      "title": "Proof of Theorem 1.4"
+    }
+  ],
+  "title": "Singularity analysis and Hodge integrals at fixed defect"
+}

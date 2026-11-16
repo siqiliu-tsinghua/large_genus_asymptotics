@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All seven S7 files are unchanged, retaining the reviewed first-use scopes of times, x=t_0, potentials, jets, characteristics and kernels without reintroducing basic notation; the shared S1 edit removes no definition used here.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The exact S7 source preserves ILW variable conversion, potential/characteristic/Borel normalizations and the distinction between fixed-genus formal identities and locally analytic recovery, while accepted S6 r009 changes none of its exact inputs.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The shared publication rules, URL wrapping and S1 guide add no mathematical name or alias to S7, whose entrance still recalls only the top-sector input needed to motivate positive-defect transport (native pp20-21).",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged ILW-to-specialization-to-characteristics-to-Borel route keeps continuation and uniform singularity estimates for the later analytic work, without importing supplementary S6 coefficients or engineering material as premises.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Identical native pp20-28 preserve the actually inspected string Lemma, separate transport/recovery results and adjacent proofs, whose necessary equations and arguments are in the article or precise literature citations without a program, Markdown or attachment obligation.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No changed input reassigns a letter, preserving the formal variable z, zero time x=t_0, auxiliary theta and potential/kernel families, visibly distinct from the inherited Bessel zero z_{0,1}.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The identical entrance and closing discussion retain the passage from S6's completed top-Hodge argument to exact transport and then to the analytic tasks ahead (native pp20-21,28), keeping the reader within mathematical reasoning rather than local files or software instructions.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE impact review against accepted s07 r006, retaining the complete S7 assessment and personally inspected target pages. Read the exact dispatch, summary, differences, original-writer acknowledgment and prior report; publication-independence rules and the accepted S1/S6 revisions were already reviewed.",
+    "Verified all 43 frozen/live input hashes, artifacts, exact snapshot, current fingerprint and native PDF/entry/helper hashes, including sealed equal-source pre-submit provenance. Ten existing shared/S1 inputs changed, one S1 standalone handoff was added, none removed, and all seven S7 files are unchanged; inherited inputs match accepted S6 r009.",
+    "Source SHA256: 40884cd70adada086ead566c002b067f3a444d93e7f37db1ba9ee2693ea4eb5b; native PDF SHA256: d3c22dca81a26e4626cced332a2cfd5939606a8fe693eeaa113196400dcde59c. Strict/layout diagnostics are empty and settled 10pt/no-showkeys/flush-left bibliography settings survive.",
+    "Independent extraction confirms both native PDFs have 30 pages, only Introduction p3 changes, and all pages from p4 onward are text-identical, including every S7 page. Reused the actual r006 inspection of pp20-22,26,28 without another render or unchanged proof reading; no reader-facing engineering obligation occurs in S7.",
+    "Read-only status confirms /root/s02_readability bound to s07 r007 with S1 r004/S2 r015/S6 r009 approved/fresh; python scripts/validate.py --unit s07 passes. Earlier readability issues were already closed, so issues/resolved_issue_ids remain empty; final merged single-TeX export and isolated compilation remain later coordinator tasks."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "a642af1792256b9aa1ed8d3db5fec3ae632a7636309c938141318454b967542e",
+  "summary": "Pass. The shared editorial updates preserve S7's definitions, exact mathematical route and formal/analytic scope; identical target-page text retains the original visual assessment without creating an engineering dependency.",
+  "unit": "s07",
+  "verdict": "pass"
+}

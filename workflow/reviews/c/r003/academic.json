@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Publication independence is implemented by C's mathematical title/short guide and complete removal of C.2 and its input, with retained C.1 statement/proof adjacency and legible full-manuscript pages 98--99, while a full-text scan finds no internal-program, Markdown, directory or attachment instruction and the data reference wraps cleanly on page 101.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Byte-preserved C.1 retains FP03/FP00 through the exact S6 formulas and Mumford/S2 credit for the Chern relations, with the finite tree/normalization deductions supplied by the paper rather than machine checks, while legitimate public-data credit remains in S8 and the bibliography without becoming a premise of these exact identities.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "C.1's original locators, labels, beta conventions, six vertex polynomials, shared-edge integrals, reciprocal Aut weights, 1!/3! recovery and finite-rank Chern specialization are unchanged, and the new one-subsection outline/manifest and complete native assembly match the actual retained mathematical source without dropping a cited proof input.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The article itself retains complete genus-two/three tree classification, exact extraction/integration and rank-based normalization, so deleting engineering directions leaves no code-dependent proof gap, and the finite identities remain examples rather than evidence for an asymptotic rate or inputs to the supplementary S6 coefficients or S8 conjecture, with final isolated single-TeX delivery expressly outside this signature.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, author ACK, current outline/unit definition, new entry/interface/standalone handoff and complete retained C.1; independently confirmed fifteen changed existing paths, three added handoffs, two changed metadata items and removal only of the current C.2 source, whose r002 historical copy remains intact.",
+    "The entire C.1 file and unaffected old C files, including internal checks and original writer handoff, remain byte-identical; proof completeness is assessed from its mathematical text rather than those preserved checking records, without rerunning code or retrieving unchanged primary sources.",
+    "Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, original binding and all ten genuinely approved/fresh predecessors, matching their actual accepted scientific inputs to the current closure; retained the completed A independence and S6/S8 status reviews.",
+    "Both native PDF/entry/helper receipts bind the exact current snapshot and source hash 127171298758a90ee63730c595e0e634e79d7ba1e74f8bb973e16645bde05e13 with empty standard/layout diagnostics; the full companion preserves frozen main except declared assembly, actually includes title/abstract and eleven units without C.2, has 101 pages and PDF SHA ca7939842c47c67ebc6e2d1d98ffb5c93cc21715e16e78e7551e3f38ef37f84e, while unit preflight/sealing evidence also matches.",
+    "Read full-manuscript A entry/end passages on pages 66/83--84, visually inspected C on 98--99 and the data reference on 101, and scanned the full extracted manuscript for engineering references; the previous URL overflow is genuinely absent rather than hidden by an exception.",
+    "No academic issue is open; the coordinator's single-TeX export and actual isolated compilation remain future work, and only these reports and private ignored page images were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "ed6d87e6e1d3fe8d44fa97c2a23198c2a08fa5f04e389e3f68e0cefba9c7d2c5",
+  "summary": "Pass. C is now a mathematical appendix with its complete exact proof and scholarly credit intact, and the bound full manuscript meets the reviewed textual-independence scope without relying on engineering attachments or preapproving a future isolated export.",
+  "unit": "c",
+  "verdict": "pass"
+}

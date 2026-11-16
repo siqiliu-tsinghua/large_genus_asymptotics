@@ -1,0 +1,66 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s06/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s06",
+      "build/previews/s06/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s06/preview.aux",
+    "build/previews/s06/preview.bbl",
+    "build/previews/s06/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/06_top_hodge/01_exact_vertices.tex",
+    "sections/06_top_hodge/02_bessel_critical_point.tex",
+    "sections/06_top_hodge/03_tree_tails.tex",
+    "sections/06_top_hodge/04_correction_and_proof.tex",
+    "sections/06_top_hodge/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s06/preview.pdf",
+  "pdf_sha256": "040811e3412bb8fdde2fef57416f2d926f7986112bf9dc25e8929b3e6141f74f",
+  "schema_version": 1,
+  "snapshot": "7a3f3275cbfd1badd0b7e4529a607d8e81f788f65a5eeb764f2e599adce99e19",
+  "source_hash": "89623f6bd0790047980ca44840d8229080caa15688757890cc22fd1f9eeef6f2",
+  "strict": true,
+  "time": "2026-11-15T13:30:30+00:00",
+  "unit": "s06",
+  "with_dependencies": true
+}

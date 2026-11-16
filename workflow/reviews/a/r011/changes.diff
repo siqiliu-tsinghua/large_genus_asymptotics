@@ -1,0 +1,29 @@
+--- previous/references.bib
++++ references.bib
+@@ -298,3 +298,13 @@
+   pages   = {253--276},
+   url     = {https://www.numdam.org/item/CM_1981__43_2_253_0/}
+ }
++
++@misc{LiuData26,
++  author       = {Liu, Si-Qi},
++  title        = {{Hodge} integral data},
++  year         = {2026},
++  howpublished = {\texttt{github.com/siqiliu-tsinghua/hodge\_data}},
++  note         = {Exact rational tables for genera 2--20,
++                  commit \texttt{88dd4a5}},
++  url          = {https://github.com/siqiliu-tsinghua/hodge_data/tree/88dd4a501ecf3fbc124a823ad1589911f86a14e5}
++}
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -89,8 +89,8 @@
+ \begin{thm}
+ \label{thm:lambda-one}
+ For real $x\geq0$, define
+-\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \qquad
+-N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
++\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \quad
++\mbox{and } N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+ As $g\to \infty$, we have
+ \begin{equation}
+ a_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g

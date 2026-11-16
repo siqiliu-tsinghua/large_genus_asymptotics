@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read the complete new text, interface, handoff, checker, README and verification record, and checked the actual frozen s06 exact-vertex/tree identities and s02 Chern relation used here. All 117 archive/live input hashes, artifacts, canonical snapshot, actual binding and both native PDF/entry/helper receipts match; all ten dependency units are approved and fresh. The new calculation needs only exact s01/s02/s06 inputs, not any main asymptotic theorem, resurgent prediction, preparation table or old A/S4 output. The documented longer entrypoints and pinned dependencies already belong to the unchanged reviewed bundles.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The exact identity sum_v(2g_v-3+n_v)=g_2-E bounds E by 1 in genus two and 3 in genus three. Stability forces positive-genus leaves and bivalent vertices; E=3 in genus three forces zero vertex orders, hence the rational trivalent center and three elliptic leaves. This exhausts respectively two and four classes. The six stable vertex types have orders 1,3,0,0,2,1, so degree-three series truncation suffices, including both zero-order cases. All final integrals have degree 3g-3; the lambda_3 bracket in genus three has the required lambda_1^3 background, and table defects satisfy 1<=h<=g.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Independently extracted all six vertex polynomials from beta_G m![x^m]Phi^(-m-1) times the J_0 factors, and obtained beta_1=1/24, beta_2=7/5760, beta_3=31/967680. The pair has Aut=2; the genus-three one-vertex, mixed edge, chain and star have orders 1,1,2,6. Shared edge integration gives 7/6 for the mixed polynomial and zero for the chain. The reconstructed tree sums are 1/480 and 1/2520; restoring 1!/12 and 3!/12^3 yields b_2=1/5760 and b_3=1/725760. The two Chern relations yield a_2=2b_2, a_3=8b_3, defect ratios (2,2)/(4,8,8) and the bracket 1/8, exactly as displayed.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The appendix inherits a_g, b_g(h), b_g, the normalized bracket, beta_G, Phi, W^top, g_2 and rational stack degrees from their established definitions. It binds E and m_v at the classification, s,t,u in [0,1] before the vertex display, and h in the finite table; x is the inherited coefficient variable of the exact vertex formula. No new global family or competing meaning is introduced. In particular beta_0=1 is used only through the already-approved stable genus-zero convention, not an unstable one-point integral, and scalar b is not confused with b_g.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The proposition has an adjacent complete proof: exhaustive tree classification precedes exact vertices, all classes are integrated with their graph weights, and the chain is retained before its integral cancels. The rank-three degree-four identity is multiplied by lambda_1^2 to obtain a_3=8b_3; no cancellation or division by a Chow class is required. Inspected every checker operation: Pruefer enumeration and weak genus compositions cover the exact tree bound, one variable is shared at both edge ends, division by the vertex-count factorial gives 1/Aut, and a separate permutation stabilizer check confirms the weights. Numerical targets and class counts occur only after reconstruct() returns. An independent edge-subset/Bernoulli/negative-binomial implementation reproduces all vertex, class, weight, integral and normalization outputs before its final comparison.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Every calculation is finite and exact: stability and E<=g_2 bound the complete tree lists, the needed coefficient orders are at most three, and the unit constant term of Phi makes higher Taylor terms irrelevant to these coefficients. Edge integration is polynomial integration over a finite cube, and both implementations use Fraction arithmetic without rounding or a fitted parameter. The text and documentation explicitly deny any finite-window inference of a rate or replacement of the main uniform graph/kernel/remainder proofs; no asymptotic scope or error strength is enlarged.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "First complete formal review of Appendix C, not a reuse of a frontmatter signature. No prior C MATH issue exists, so resolved_issue_ids is empty. The one proposition, three numbered formulas, all eight source/documentation files and full native C pages 98-99 were inspected.",
+    "Actually executed a byte-identical copy of the frozen checker at build/closing-writing/math-c-r001/isolated/sections/c_exact_checks/checks/run.py with python -B, using a private root so the author's generated output was untouched. Source SHA256 d80607341d6d81db41376fea2386bb7528590361d6c9929c8b4c3ae349909b5b and actual output SHA256 0f6655b1cb27ef66190ab96f2440a8d40a1e057bdbcfd8539f03da9411a1669d match the tracked computation-only record; Python is 3.14.10. All post-reconstruction comparisons passed.",
+    "Separately executed build/closing-writing/math-c-r001/independent_exact.py. It enumerates connected edge subsets instead of Pruefer codes, derives beta via Bernoulli coefficients, and uses direct negative-binomial Phi powers. It reproduces both labeled counts 2/10, unlabelled counts 2/4, every automorphism and integrated class contribution, all six polynomials and every final value. The other output is read only after this reconstruction is complete. Finite exact checks supplement the paper's classification/algebraic proof and are not evidence for an asymptotic rate.",
+    "Actual source SHA256 27f0f5e339e10c06fa5b216cccefd2d0828c4fa9d45a106c69d632e3171fb6cc. Standard 101-page PDF SHA256 9c17a93cbd69454a6fdb399801f3b985f0c82d5b2d6e77db30690acbf2146609; full title/abstract/manuscript 101-page PDF SHA256 c31f2039fcf9fa30da3d5a96e10fe8ee8e936e3193e973d1fcd6e9c21bebd585. Both receipts bind snapshot 13570207b4cdb59aee7e4720a5ac1b2cc51f89ec8b10d68fcf3e64a03e7659ab, actual entry/helper hashes and strict native builds with empty standard/layout diagnostics. The full entry differs from frozen main.tex only by its explicit complete assembly. Focused C validation passes.",
+    "No A/S4 long algorithm was rerun. Only the assigned reports and authorized ignored private checks/renderings were written; manuscript, shared inputs, state, other reports, historical records, author-generated computation evidence and frozen build outputs were not changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "13570207b4cdb59aee7e4720a5ac1b2cc51f89ec8b10d68fcf3e64a03e7659ab",
+  "summary": "Pass on the complete Appendix C r001. Independent exact reconstruction confirms the exhaustive trees, six vertices, automorphism weights, edge integrations, factorial/12 conversions, Chern relations and every displayed normalization. The frozen Fraction checker was actually rerun and checked against a different implementation; finite checks remain separate from asymptotic-rate proofs. No unresolved mathematical issue.",
+  "unit": "c",
+  "verdict": "pass"
+}

@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The table binds g by its two rows and h by 1<=h<=g; a_g, b_g(h), b_g and the insertion bracket inherit the Introduction's definitions directly. In the proof, E is introduced as the edge count and m_v=2g_v-3+n_v is specified before the completeness argument (01_exact_values.tex:28–40); s,t,u are assigned [0,1] before the vertex formulas, and x retains the coefficient-variable role of (6.7), explicitly identified in the extraction paragraph (lines43–64). No new global object, missing range or unsupported first-use definition was found.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The table and (C.1) use the existing integral and bracket normalizations: a_2=2b_2, a_3=8b_3 and <lambda_3>_3=b_3/a_3, with the finite defect lists ordered by the header's h range (01:95–104; full PDF pp98–99). The exact tree scale (6.15), beta coefficients and recovered 1!/3! factors are carried consistently into (C.3), distinguishing beta_g from b_g and preserving g_2. C.2 and the README also retain Section 4's supplementary-coefficient status and do not strengthen a main theorem.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The entrance explains the purpose of the finite checks without restarting the basic moduli/Hodge setup or listing inherited notation. E and m_v serve the short completeness proof, while the six vertex polynomials and three beta values are used directly in the edge integrals and weighted sums; no graph-contribution aliases or additional families are introduced. The algorithm, commands and provenance details are kept in C.2/README rather than interrupting the proof.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entrance limits the appendix to exact checks from Sections 2 and 6, and the paragraph before Proposition C.1 explicitly gives the route: classify all small trees, integrate exact vertices with automorphism weights, then use the Chern relation for the remaining normalizations (section.tex:5–9; 01:5–10). The four functional proof headings implement that route, including why the chain remains in the complete list even though its integral vanishes. C.2 then maps the same operations to the reproducibility bundle without treating computation as a substitute for the proof.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Proposition C.1 is followed immediately by its proof; completeness, exact vertices, edge weights and Chern normalizations are separate, proportionate stages, and no essential step is hidden in an optional remark or code file. Personally inspected full-manuscript pp98–99: the four-column table and (C.1)–(C.3) are readable at the normal size, the p98 edge-integral display continues naturally into the chain cancellation on p99, and the proof closes clearly before C.2. The B-to-C and C-to-References boundaries on pp97–100 show no new overflow, stranded heading or unclear proof ending.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "Local edge count E and vertex orders m_v are visually distinct from the inherited genus/valence pair g_v,n_v, and the edge parameters s,t,u are bound together before use. The coefficient variable x belongs to the explicitly identified vertex-extraction stage; the later formal t in the inherited Chern polynomial has a separate, clear Chern-normalization scope. Integral names remain lowercase, beta_g retains its one-point role, and no Bessel, Bernoulli, defect or global Hodge-index name is repurposed.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The move from Appendix B's analytic estimates to C's finite checks is clearly signaled by the new heading and scope paragraph (full pp97–98). Within C, exact vertex extraction leads to weighted edge integration and then to the original normalizations, after which C.2 explains the shared edge parameter, labeled-tree factorial weighting and post-reconstruction comparisons. Its final paragraph and README:28–45,80–85 separate exact computation evidence, supplementary calculations and the main uniform asymptotic proofs without introducing a finite-window inference.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "First full readability review of Appendix C, not a shared-input refresh. Read AGENTS.md, the current role/context, the frozen unit outline, complete C entry/two subsections/interface/README/writer handoff, and the new checker and verification record; consulted the needed S1 definitions, S2 Chern relation, S6 exact vertices/tree formulas, and existing A/S4 reproducibility instructions.",
+    "Verified all 117 frozen/live input hashes, frozen artifacts and the snapshot; all 95 owned scientific/interface/source-bundle files of the ten approved fresh dependencies match their accepted snapshots. Read-only status confirms current c r001 binding to /root/s02_readability.",
+    "Verified both native receipts, PDFs, entry/helper hashes and their common source SHA256 27f0f5e339e10c06fa5b216cccefd2d0828c4fa9d45a106c69d632e3171fb6cc. Unit PDF SHA256: 9c17a93cbd69454a6fdb399801f3b985f0c82d5b2d6e77db30690acbf2146609; full-manuscript PDF SHA256: c31f2039fcf9fa30da3d5a96e10fe8ee8e936e3193e973d1fcd6e9c21bebd585. The full entry equals frozen main.tex with only its declared all-unit assembly replacement; both strict/layout diagnostic lists are empty.",
+    "Actually viewed authoritative full-manuscript pp97–100, including all new C material on pp98–99, using private images under build/closing-writing/readability-c-r001/. The 101-page native manuscript retains the established 10pt/no-showkeys/proof-gap and flush-left bibliography presentation. This report signs Appendix C, not a new review of all old mathematical proofs.",
+    "The standard-library checker source and existing generated-output hashes match checks/verification.json; read its reconstruction-before-comparison flow and the README's actual commands and pinned existing dependencies. No calculation was rerun or represented as an independent mathematical verification. python scripts/validate.py --unit c passes; this first C round has no prior readability issue to resolve."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "13570207b4cdb59aee7e4720a5ac1b2cc51f89ec8b10d68fcf3e64a03e7659ab",
+  "summary": "Pass. The two-page appendix supplies a complete, modular low-genus proof with clearly normalized exact values and a concise reproducibility guide. Definitions and local scopes are adequate, notation is economical and consistent, and the authoritative full-manuscript rendering is readable without implying an asymptotic error rate from finite data.",
+  "unit": "c",
+  "verdict": "pass"
+}

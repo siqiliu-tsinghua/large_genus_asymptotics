@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Under publication independence, the fourteen unchanged s08 files retain in-text mathematical exposition and a clearly explained numerical table without promising programs, selected-data files or attachments, and actual bibliography page 55 now wraps the complete LiuData26 address without the former URL excess.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The original exact/analytic/geometric source roles and this paper's own transfer/background derivations are unchanged, while LiuData26 remains properly credited as public numerical evidence rather than an internal engineering authority or proof of the h=1 limit.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All precise source locators, nefness/cover and DLMF conventions remain unchanged, the data entry preserves the already verified author and fixed commit after adding only URL break opportunities, and the unchanged residual/extrapolation definitions and table agree with the substantively checked r004 version.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Theorem 1.4 retains its in-article proof and relative o(1) conclusion separately from the O_h(g^(-1)) background bound without software filling a step, and the explicitly conjectural h=1 refinement remains finite-data evidence with neither a remainder estimate, general-h formula nor private-file reader obligation.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and r004 result; independently confirmed fourteen local files unchanged, ten changed shared/S1 inputs, one added S1 handoff and no removals, applying the new publication criterion to the retained full assessment.",
+    "The frozen-TeX scan found no engineering reader obligation; retained the original source/proof review and r004's personally checked selected-source provenance and finite arithmetic without reaccessing or rerunning data, while ACADEMIC-009 stays resolved.",
+    "Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, original binding and all five approved/fresh parents; actual native PDF/entry/helper and preserved preflight/sealing hashes agree with the strict/pass receipt, whose standard and layout diagnostics are genuinely empty in this round.",
+    "Independently inspected current bibliography page 55: the old 3.50723pt URL exception is no longer needed, with complete address, metadata and punctuation retained; old receipts remain historical and unchanged.",
+    "No issue is open; this scoped signature does not certify future isolated single-TeX delivery, and only these reports and a private ignored page image were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "a794b71511c2c2e1338fe3b3bd4736bf94e2ffa01b2aa109e115dced60da9fba",
+  "summary": "Pass. S8 preserves self-contained proof and explicit numerical-conjecture boundaries, retains proper public-data credit without attachments and now renders its data reference without overflow.",
+  "unit": "s08",
+  "verdict": "pass"
+}

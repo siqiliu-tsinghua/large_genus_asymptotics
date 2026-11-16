@@ -1,0 +1,203 @@
+% !TeX root = ../../main.tex
+\subsection{The negative-axis primitive and its coefficient bound}
+\label{subsec:b:primitives}
+
+We first fix the primitive geometrically at each genus. Uniformity
+in the genus is a separate step: it uses a small interval near zero,
+larger inverse disks on a compact negative interval, and growing
+regular disks at negative infinity.
+
+For integers $k\geq0$ and real $u>0$, the modified Bessel functions
+in the following argument are defined by
+\begin{equation}\label{eq:b:modified-bessel}
+ I_k(2\sqrt u)=\sum_{a\geq0}\frac{u^{a+k/2}}{a!(a+k)!}.
+\end{equation}
+We use their elementary integral representation
+\cite[(10.25.2), (10.32.3)]{DLMF}; the estimates needed from it
+are included in the proof.
+
+\begin{lmm}[Growing regular disks]\label{lmm:b:growing-disks}
+For $u\geq1$ and integers $k\geq0$,
+\begin{equation}\label{eq:b:modified-bounds}
+ |(w')^{(k)}(-u)|=u^{-k/2}I_k(2\sqrt u)
+                  \leq u^{-k/2}I_0(2\sqrt u),\qquad
+ \tfrac13e^{\sqrt u}\leq I_0(2\sqrt u)\leq e^{2\sqrt u}.
+\end{equation}
+On $\mathbb D(-u,\sqrt u/10)$ the derivative $w'$ differs
+from $I_0(2\sqrt u)$ by less than a quarter of that positive
+number. Consequently, for each fixed $h\geq1$,
+$\mathcal L_h(0;w(-u),y)$ is holomorphic for
+\begin{equation}\label{eq:b:growing-radius}
+ |y|<c_h\sqrt u\,I_0(2\sqrt u),
+ \qquad |\mathcal L_h|\leq C_h I_0(2\sqrt u)^{h-1},
+\end{equation}
+with constants independent of $u$.
+\end{lmm}
+\begin{prf}
+Termwise differentiation of $w'$ proves the equality in
+\eqref{eq:b:modified-bounds}. For real $z>0$, the integral formula
+is
+\[
+ I_k(z)=\frac1\pi\int_0^\pi e^{z\cos\varphi}
+                                      \cos(k\varphi)\,\dd\varphi.
+\]
+Positivity follows from the series, and the integral gives
+$I_k(z)\leq I_0(z)$. The upper exponential bound is immediate.
+On $0\leq\varphi\leq\pi/3$, $\cos\varphi\geq1/2$, giving the
+lower bound in \eqref{eq:b:modified-bounds}.
+Taylor's formula now gives
+\[
+ |w'(-u+s)-I_0(2\sqrt u)|
+       \leq I_0(2\sqrt u)(e^{|s|/\sqrt u}-1).
+\]
+For $|s|\leq\sqrt u/10$, the parenthesis is at most $1/9<1/4$;
+one may use $e^t\leq(1-t)^{-1}$ for $0\leq t<1$.
+Apply Lemma~\ref{lmm:b:regular-disk} with
+$\beta=I_0(2\sqrt u)$ and $r=\sqrt u/10$ to conclude.
+\end{prf}
+
+\begin{lmm}[The geometric primitive]\label{lmm:b:primitive}
+For integers $g\geq h\geq1$ with $g\geq2$,
+\begin{equation}\label{eq:b:primitive}
+ \mathcal G_{g,h}(0;0)
+                     =\int_{-\infty}^0 L_{g,h}(0;x)\,\dd x.
+\end{equation}
+The integral is absolutely convergent at each such $g,h$. The
+genus-one term $\mathcal G_{1,1}$ is excluded from this assertion.
+\end{lmm}
+\begin{prf}
+On the negative axis write $x=w(-u)$, $u>0$. This parametrizes
+the full axis: $w'(-u)=I_0(2\sqrt u)>0$, and its integral tends
+to infinity by \eqref{eq:b:modified-bounds}.
+In the finite formula \eqref{eq:s07:finite-jets},
+$W_1=I_0(2\sqrt u)$ and
+\[
+ |W_d|\leq u^{-(d-1)/2}I_0(2\sqrt u)\qquad(d\geq2).
+\]
+Thus each term for genus $G\geq2$ is bounded by a constant times
+$I_0(2\sqrt u)^{-2G+2}u^{-(2G-3+h)/2}$.
+The derivative $\partial_x=-I_0(2\sqrt u)^{-1}\partial_u$
+and \eqref{eq:b:modified-bounds} show by induction that, for every
+fixed integer $m\geq0$,
+\[
+ |\partial_x^m\mathcal F_{G,h}(0;w(-u))|
+             \leq C_{G,h,m}I_0(2\sqrt u)^{-2G+2-m}
+                         \qquad(u\geq1).
+\]
+All powers of $u$ produced by differentiation are nonpositive and
+may be discarded in this bound. The genus-one logarithm satisfies
+the corresponding estimate for $m\geq1$:
+$|\partial_x^m\log W_1|\leq C_m I_0(2\sqrt u)^{-m}$.
+
+In the finite sine transformation for $\mathcal G_{g,h}$, a
+genus-$G=g-k$ term has $2k$ derivatives. Its exponential factor
+is therefore $I_0(2\sqrt u)^{-2g+2}$. A term with $G=1$
+can occur only for $h=1$, and then $2k=2g-2\geq2$, so the
+logarithm has already been differentiated. Hence
+$\mathcal G_{g,h}(0;w(-u))\to0$ as $u\to\infty$.
+An additional $x$ derivative gives an absolutely integrable bound
+after multiplication by $|\dd x|=I_0(2\sqrt u)\,\dd u$.
+The fundamental theorem of calculus proves \eqref{eq:b:primitive}.
+For $g=h=1$, the undifferentiated expression is
+$-\log I_0(2\sqrt u)/24$ and has no finite limit at infinity;
+this explains the stated exception.
+\end{prf}
+
+The next elementary coefficient estimate is sufficient for the
+primitive bound. The asymptotic transfer of a specified principal
+term is a different statement and is used in Section 8.
+
+\begin{lmm}[A two-endpoint coefficient bound]\label{lmm:b:coefficient-bound}
+Let $\mathcal H(Y)$ be holomorphic in the unit disk and continue
+across its circle except at $Y=\pm1$, with dented neighborhoods
+there. Suppose on the circle and these neighborhoods that
+\begin{equation}\label{eq:b:coefficient-hypothesis}
+ \begin{aligned}
+ |\mathcal H'(Y)|&\leq C
+       (1+|1-Y|^{-1/2}+|1+Y|^{-1/2}),\\
+ |\mathcal H''(Y)|&\leq C
+       (1+|1-Y|^{-3/2}+|1+Y|^{-3/2}).
+ \end{aligned}
+\end{equation}
+Then for integers $N\geq1$,
+\begin{equation}\label{eq:b:coefficient-bound}
+ |[Y^N]\mathcal H(Y)|\leq C' N^{-3/2},
+\end{equation}
+with $C'$ uniform for uniform hypotheses and angular margins.
+\end{lmm}
+\begin{prf}
+The first derivative is integrable at each endpoint, so
+$\mathcal H$ has matching continuous boundary values there.
+Its circle restriction is absolutely continuous. Integrate its
+Fourier coefficient once by parts, obtaining an outer factor
+$1/N$ and the Fourier integral of the circle derivative
+$\frac{\dd}{\dd\varphi}\mathcal H(e^{i\varphi})$.
+Here $\varphi$ is a real circle parameter. On arcs of length
+$1/N$ about the two endpoints, the integral of its absolute value is
+$O(N^{-1/2})$, by the first bound in
+\eqref{eq:b:coefficient-hypothesis}. On the complementary arcs,
+integrate once more by parts. Their boundary terms are
+$O(N^{-1/2})$, and the integral of its next derivative divided by $N$ is also
+$O(N^{-1/2})$, since
+$N^{-1}\int_{1/N}^1t^{-3/2}\,\dd t=O(N^{-1/2})$.
+The original outer factor gives \eqref{eq:b:coefficient-bound}.
+The Fourier representation follows either by radial limits in
+Cauchy's formula or by the integrable derivative bounds just used.
+Every estimate is uniform in the indicated constants.
+\end{prf}
+
+\begin{prp}[The unmarked primitive bound]\label{prp:b:primitive-bound}
+For each fixed integer $h\geq1$ there is $C_h>0$ such that, for
+$g\geq\max\{2,h\}$ and $N=2g+h-2$,
+\begin{equation}\label{eq:b:primitive-bound}
+ |\mathcal G_{g,h}(0;0)|
+ \leq C_h(2\pi)^{-2g}N!R^{-N}N^{-5/2}.
+\end{equation}
+The bound is absolute; it does not require positivity of the
+transformed coefficients.
+\end{prp}
+\begin{prf}
+Choose a small fixed $r_0>0$ for which
+Proposition~\ref{prp:b:common-domains} applies on $[-r_0,0]$.
+On this interval put $S=R-x$. After scaling $y=S Y$, its first
+two derivative bounds give the uniform hypotheses of
+Lemma~\ref{lmm:b:coefficient-bound}. Thus
+\[
+ |L_{g,h}(0;x)|\leq C_h(2\pi)^{-2g}N!
+                       (R-x)^{-N}N^{-3/2}.
+\]
+Since $N\geq3$,
+$\int_{-r_0}^0(R-x)^{-N}\,\dd x\leq C R^{-N}/N$.
+The near-zero part of \eqref{eq:b:primitive} has the bound
+\eqref{eq:b:primitive-bound}.
+
+\smallskip\noindent
+\emph{The bounded negative interval.}
+Let $u_{r_0}>0$ satisfy $w(-u_{r_0})=-r_0$ and choose
+$U>u_{r_0}$. Lemma~\ref{lmm:b:negative-disks} gives a uniform
+inverse radius strictly larger than $R$ for
+$u\in[u_{r_0},U]$. Its lower bound increases with $u$, so
+this radius may be chosen independently of $U$. Proposition~\ref{prp:b:tube} makes the
+actual Borel functions holomorphic and bounded on a common circle
+of radius $R_1>R$. Cauchy's estimate bounds this integral, after
+division by $(2\pi)^{-2g}N!$, by $C_hR_1^{-N}$.
+
+\smallskip\noindent
+\emph{Negative infinity.}
+Increase $U$ until $c_h\sqrt u I_0(2\sqrt u)>2R_1$ for every
+$u\geq U$. By Lemma~\ref{lmm:b:growing-disks}, the remaining
+integral after the same division is bounded by
+\[
+ C_h\int_U^\infty I_0(2\sqrt u)^h
+              [c_h\sqrt u I_0(2\sqrt u)]^{-N}\,\dd u.
+\]
+Because $N\geq h+2$, reserve $h+2$ powers of the bracket to make
+the integral finite. The reserved integrand is a constant times
+$u^{-(h+2)/2}I_0(2\sqrt u)^{-2}$, which is integrable by
+\eqref{eq:b:modified-bounds}. Bound every remaining power by
+$(2R_1)^{-1}$. This proves an $O_h(R_1^{-N})$ bound for this
+part as well. Its exponential advantage over $R^{-N}$ absorbs
+any fixed power of $N$. Combining the three pieces with
+Lemma~\ref{lmm:b:primitive} proves the proposition, including all
+finitely many small genera by enlarging $C_h$.
+\end{prf}

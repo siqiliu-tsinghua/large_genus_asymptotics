@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Only the final Appendix C description changes in the manuscript; all preceding source, four theorem blocks, six numbered equations and the user's Cin/N_g conjunction/spacing are byte-identical to r003, preserving every reviewed first-use definition, type and range.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The revised paragraph and matching interface introduce no mathematical notation or normalization and preserve the fixed-index/fixed-defect scopes and theorem precision; the bibliography change only inserts two allowbreak points in the existing LiuData26 display URL without changing its metadata.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The ending removes the software/reproduction promise and describes the genus-two/three identities directly, adding no alias, inherited-symbol inventory or repeated setup (section.tex:202–205; native p3).",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The two proof routes and independent entry after Section 2 remain unchanged, while the Appendix C guide now accurately identifies direct finite-genus mathematical derivations and retains the distinction from uniform asymptotic remainder estimates.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Publication independence is satisfied within this Introduction: its mathematical exposition/citations remain intact and it no longer offers project programs, Markdown, directories, installations or source packages to complete an argument. Actual native p3 shows a readable complete ending; the four-page preview changes text only on p3, while unchanged title/abstract and mathematics retain their earlier actual visual assessment.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The prose-only scope change adds or repurposes no letter, index or font, preserving the reviewed genus/marking, Hodge-index/product-length, degree, Bessel, lowercase integral and scalar-correction roles.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The final reading guide now leads to Appendix C's mathematical identities rather than engineering instructions, without requiring knowledge of local files or execution (native p3). Its last sentence still explains how finite examples complement the asymptotic proofs without supplying their uniform estimates, so the scholarly narrative remains complete after the deletion.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE incremental recheck against accepted s01 r003. Read the exact dispatch, summary, differences, updated interface, standalone_handoff and original-writer acknowledgment, together with the added publication-independence instructions in AGENTS, context and role documents; explicitly applied the new structure/transitions duties.",
+    "Verified all 18 current frozen/live input hashes and artifacts, exact snapshot and Engine fingerprint. Changed and added inputs match the summary, with none removed; all Introduction source before the Appendix C tail, four complete theorem blocks, six numbered equations, actual main/title and abstract are unchanged. The bibliography is recovered exactly by reversing its two new URL allowbreak insertions.",
+    "Verified native receipt/PDF/entry/helper hashes and actual equal-source pre-submit build provenance, including sealed PDF byte identity with its preflight artifact. Source SHA256: 8058902c9c20711448745f9e32d013c5c3c38de82e880ab7687db8d001f34b72; PDF SHA256: 8f9d5acc2cba7169498c3567635ff64d07c8066e207e2f3a18562a6fc7fdd0c9. Strict/layout diagnostics are empty.",
+    "Independently extracted current and r003 native PDFs: both have four pages and only p3 differs. Personally viewed current p3 using build/standalone-20261116/readability-s01-r004/page-3.png; unchanged title/abstract layout retains the prior companion visual assessment rather than a claim that this unit preview contains front matter.",
+    "This signature covers S1's scholarly text and revised C description. The staged removal of C's engineering subsection and the coordinator's final merged single-TeX export/isolated compilation are not represented as completed by this S1 review; the existing mathematical low-genus derivation remains the basis of the guide.",
+    "Read-only status confirms /root/s02_readability bound to s01 r004; python scripts/validate.py --unit s01 passes. No open prior S1 readability issue remains, so issues/resolved_issue_ids are empty."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "dbf3850e378cf25c155e1abdba8c31929f4cfdbff7541b4e921fd9479f286efd",
+  "summary": "Pass. The organization paragraph now describes Appendix C as a self-contained mathematical derivation without a software promise; definitions, theorems, precision and reading routes are preserved, and the inspected ending remains clear.",
+  "unit": "s01",
+  "verdict": "pass"
+}

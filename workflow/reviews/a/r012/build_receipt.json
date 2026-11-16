@@ -1,0 +1,71 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/a",
+      "build/previews/a/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/a/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/a",
+      "build/previews/a/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/a",
+      "build/previews/a/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/a/preview.aux",
+    "build/previews/a/preview.bbl",
+    "build/previews/a/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/03_graph_asymptotics/01_wp_inputs.tex",
+    "sections/03_graph_asymptotics/02_deformation_and_loops.tex",
+    "sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex",
+    "sections/03_graph_asymptotics/04_finite_cores.tex",
+    "sections/03_graph_asymptotics/section.tex",
+    "sections/a_coefficients/01_wp_coefficients.tex",
+    "sections/a_coefficients/02_loop_moments.tex",
+    "sections/a_coefficients/03_low_complexity_vertices.tex",
+    "sections/a_coefficients/04_finite_core_tables.tex",
+    "sections/a_coefficients/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/a/preview.pdf",
+  "pdf_sha256": "afb4f583c9709a54fc07d74a919f2f6f9d22ae233082b783db26088c6d765941",
+  "schema_version": 1,
+  "snapshot": "c6cfefa61218d91d50b07dfc3a062c29a9f41744ca56e1af1aa525ede3858b96",
+  "source_hash": "6c83ac383b381cd383c57eaa14cae7c9694189529ae788c1ea8f69ee52da312a",
+  "strict": true,
+  "time": "2026-11-15T18:25:27+00:00",
+  "unit": "a",
+  "with_dependencies": true
+}

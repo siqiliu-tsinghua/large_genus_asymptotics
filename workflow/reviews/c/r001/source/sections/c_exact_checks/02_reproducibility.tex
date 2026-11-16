@@ -1,0 +1,30 @@
+% !TeX root = ../../main.tex
+\subsection{Reproducible finite calculations}
+\label{subsec:c:02}
+
+The accompanying source bundle contains a self-contained
+standard-library checker, \texttt{checks/run.py}, for
+Proposition~\ref{prp:c:low-genus}. It extracts the sine, $\Phi$
+and $J_0$ coefficients in rational arithmetic, generates all
+vertex-labeled trees by Pr\"ufer sequences, assigns all genus
+compositions and rejects unstable vertices. Each edge monomial
+is integrated exactly, using the same parameter at its two ends.
+A genus-decorated tree has one labeling for each vertex
+permutation modulo its automorphism group; dividing the labeled
+sum by the factorial of the number of vertices therefore recovers the
+reciprocal automorphism weight. Announced values are compared
+only after reconstruction.
+
+The source instructions in \texttt{checks/README.md} also give
+the existing Appendix~A and Section~4 calculation entrypoints
+and their pinned symbolic dependencies. Appendix~A's programs
+reproduce its finite coefficient and core derivations. Section~4's
+supplementary bundle checks the additional reported coefficients;
+their paper derivations remain omitted, and they do not enter
+Theorem~\ref{thm:lambda-one}.
+
+Exact outputs and source fingerprints distinguish calculation
+evidence from the proofs. The new checker writes generated data
+only under the build directory. No small-genus comparison or
+finite-window fit is used to infer a convergence rate or replace
+the uniform graph, kernel and remainder estimates in the main text.

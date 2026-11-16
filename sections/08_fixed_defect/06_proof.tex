@@ -41,3 +41,35 @@ $1/2<\nu<1$ and gives a relative $o(1)$ error. Although the
 background comparison has the stronger relative
 $O_h(g^{-1})$ bound, no such rate for the final ratio is asserted.
 \end{prfn}
+
+\begin{samepage}
+\begin{rmk}[Further asymptotics]\label{rmk:s08:further-asymptotics}
+The present proof does not determine higher-order terms.
+For $h=1$, we conjecture that
+\[
+ \begin{aligned}
+ \lim_{g\to\infty}
+ g\left(\frac{\rho^2b_g(1)}{24g^2b_g}-1\right)
+ &=-2+\frac{J_1(z_{0,1})^2}{2}\\
+ &\quad+\frac{\pi^2z_{0,1}^2J_1(z_{0,1})^4}{2}.
+ \end{aligned}
+\]
+Using the exact rational observations in \cite{LiuData26}, the
+middle column evaluates the expression inside the limit; the
+last column extrapolates it linearly in $1/g$ from the consecutive
+genera $g-1$ and $g$:
+\[
+ \begin{array}{c|cc}
+ g&\text{Scaled residual}&\text{Adjacent extrapolation}\\ \hline
+ 10&0.136921&0.195400\\
+ 15&0.158393&0.203572\\
+ 20&0.170045&0.205670
+ \end{array}
+\]
+The proposed limit is
+$0.207760231708\ldots$, computed from the Bessel values rather
+than fitted to the data. These observations support the conjecture
+but do not establish a remainder estimate. Proving this refinement
+and finding higher-order terms for general fixed $h$ remain open.
+\end{rmk}
+\end{samepage}

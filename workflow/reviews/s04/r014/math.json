@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, archive/live/artifact/native hashes, author ACK and approved/fresh S1 r004/S2 r015/S3 r012/A r012; S4 still uses the in-text A profiles, ratio reconstruction, moment rules and core tables plus S3's proved full tails, without requiring an internal program to supply an input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 24 S4 files are byte-identical to r013, preserving defect/valence ranges, legal loop genera, marked dimensions and q=0,1,2 core contributions; A's engineering deletions leave all mathematical statements and degree conditions intact.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The absolute Z_g/F_g meaning of Q, paired-loop/Aut factors, raw connectors and final a_g/N_g conversion remain unchanged, including the original (9/8)g^-1 presentation and the separate higher Remark's sqrt(pi)*exp(-Cin(2pi)) normalization.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged scientific source/interface retains inherited g_2,j_i/ell and lowercase integrals plus the local signed functional, graph weights and Q scopes; neither the shared independence rule nor A's deletion removes a first definition or introduces an alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "A r012 retains its written finite profile/volume extraction, Bell moments, vertex derivations and complete core/flag-Aut/edge rules, so deleting its directory promise and engineering Remark removes no S4 proof step; the unchanged supplementary higher-coefficient Remark explicitly omits details as authorized and neither replaces the main argument nor promises software to complete it.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The retained complete graph tail, all-legal loop truncation and summable core errors still prove the original theorem through g^-2 with strict O(g^-3), while the separately reported g^-3/g^-4 coefficients do not strengthen that main-theorem error or turn internal finite checks into uniform estimates.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S4 r014 using the retained complete scientific assessment and just-completed substantive A r012 review; no prior MATH issue is open and resolved_issue_ids is empty.",
+    "All 24 S4 files, including the 17 internal check files, are unchanged and were not rerun. The closure has the thirteen already-reviewed S1/A/shared path changes and two new standalone handoffs, with no removal. The manuscript makes no program/Markdown/directory/installation/source-package promise; the preserved Further coefficients Remark was directly checked for its normalization and explicit omission. Original-writer ACK SHA256 9bd9d86264de303a2338fef8ca73339f7587ec4fa17fc9b8b9b59ca41eadced0 matches this scope.",
+    "Actual source SHA256 9814fa535fbaf5e7b5cec2fce6ed5c8ca451cc15be7edad8331a5bb3d2fdc450; native PDF SHA256 85a9dd5032278ae2ecfb2d46be547ff3d0915c26e79f304bf53cb5a8e7f999c1. Current and preserved preflight receipts agree on source/PDF with actual entry/helper hashes verified, empty strict/layout diagnostics and explicit pre-submit/equal-source sealing provenance.",
+    "No old proof, coefficient algorithm or primary-source search was repeated; only the assigned reports were written, without source/state/historical/other-role or frozen-output changes. Unfrozen C work and the final single-TeX export/isolated compilation are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "4709cf252e7d3c15a36c3b105c9240ff8b1b5bc0ad051c8f72369b9782f71b9e",
+  "summary": "Pass on S4 r014: the shared independence update and removal of A's engineering descriptions preserve the written inputs, normalization and complete uniform proof of the original theorem; the existing higher Remark retains its authorized omitted-detail status without a software obligation or precision upgrade. Actual frozen inputs/native receipt match, with no mathematical issue remaining.",
+  "unit": "s04",
+  "verdict": "pass"
+}

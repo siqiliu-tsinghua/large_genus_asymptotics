@@ -427,6 +427,100 @@ class WorkflowTests(unittest.TestCase):
         self.assertIn("a", actual.dependencies("s04"))
         self.assertIn("b", actual.dependencies("s08"))
 
+    def approved_last_appendix(self):
+        self.freeze()
+        self.approve_reviews()
+        self.engine.accept("s02", builder=self.successful_build)
+        path = self.root / "workflow/sections.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["units"][-1].update(kind="appendix", number="A")
+        atomic_write(path, encoded(manifest))
+        self.engine = Engine(self.root)
+        self.freeze("s06")
+        self.approve_reviews("s06")
+        self.engine.accept("s06", builder=self.successful_build)
+
+    def test_retirement_preserves_approval_archives_and_excludes_publication(self):
+        self.approved_last_appendix()
+        approved = copy.deepcopy(self.engine.state["units"]["s06"])
+        sources = {p: p.read_bytes() for p in (self.root / "sections/s06").rglob("*") if p.is_file()}
+        self.engine.retire("s06", "Optional known examples are not used by the proofs.")
+        retired = self.engine.state["units"]["s06"]
+        for key in ("accepted", "submissions", "agents"):
+            self.assertEqual(approved[key], retired[key])
+        self.assertEqual(sources, {p: p.read_bytes() for p in sources})
+        self.assertEqual(self.engine.included_units(), ["s01", "s02"])
+        self.assertNotIn("s06", self.engine.publication_units())
+        self.assertNotIn("sections/s06", (self.root / "sections/included.tex").read_text(encoding="utf-8"))
+        self.assertFalse(self.engine.status("s06")["units"][0]["stale"])
+        self.assertEqual(retired["retirement"]["last_approved_snapshot"], approved["accepted"]["snapshot"])
+        self.engine.audit_records()
+        with self.assertRaises(WorkflowError):
+            self.engine.start("s06")
+
+    def test_retirement_rejects_active_unit_nonappendix_and_empty_reason(self):
+        self.approved_last_appendix()
+        for uid, reason in (("s02", "Not an appendix"), ("s06", " ")):
+            before = self.engine.state_path.read_bytes()
+            with self.assertRaises(WorkflowError):
+                self.engine.retire(uid, reason)
+            self.assertEqual(before, self.engine.state_path.read_bytes())
+        self.engine.start("s03")
+        before = self.engine.state_path.read_bytes()
+        with self.assertRaises(WorkflowError):
+            self.engine.retire("s06", "Cannot interrupt active work")
+        self.assertEqual(before, self.engine.state_path.read_bytes())
+
+    def test_retirement_rejects_existing_dependents_and_stale_source(self):
+        self.approved_last_appendix()
+        path = self.root / "workflow/sections.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["units"][2]["depends_on"].append("s06")
+        atomic_write(path, encoded(manifest))
+        self.engine = Engine(self.root)
+        with self.assertRaises(WorkflowError):
+            self.engine.retire("s06", "Still used")
+        manifest["units"][2]["depends_on"].remove("s06")
+        atomic_write(path, encoded(manifest))
+        self.engine = Engine(self.root)
+        atomic_write(self.root / "sections/s06/content.tex", "Changed after approval.\n")
+        with self.assertRaises(WorkflowError):
+            self.engine.retire("s06", "Cannot hide unreviewed changes")
+
+    def test_retirement_rejects_nonterminal_appendix(self):
+        self.approved_last_appendix()
+        path = self.root / "workflow/sections.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["units"].append({**manifest["units"][-1], "id": "last", "number": "B"})
+        atomic_write(path, encoded(manifest))
+        state = json.loads(self.engine.state_path.read_text(encoding="utf-8"))
+        state["units"]["last"] = {"status": "planned", "agents": dict.fromkeys(("writer", *REVIEWERS)),
+                                  "submissions": [], "accepted": None}
+        atomic_write(self.engine.state_path, encoded(state))
+        self.engine = Engine(self.root)
+        with self.assertRaises(WorkflowError):
+            self.engine.retire("s06", "Would leave a gap in appendix numbering")
+
+    def test_retirement_rejects_undeclared_explicit_input(self):
+        self.approved_last_appendix()
+        # A later planned section is not a declared dependent, but still inputs it.
+        atomic_write(self.root / "sections/s03/content.tex", "\\input{sections/s06/content}\n")
+        before = self.engine.state_path.read_bytes()
+        with self.assertRaisesRegex(WorkflowError, "Withdrawn appendix"):
+            self.engine.retire("s06", "Explicit input must be removed first")
+        self.assertEqual(before, self.engine.state_path.read_bytes())
+
+    def test_retired_runtime_inputs_are_rejected_even_if_previously_allowed(self):
+        self.approved_last_appendix()
+        allowed = self.engine.fingerprint("s06")
+        self.engine.retire("s06", "Optional example")
+        directory = self.root / "build/preview"
+        atomic_write(directory / "preview.tex", "Generated entry.\n")
+        fls = directory / "preview.fls"
+        atomic_write(fls, "INPUT sections/s06/content.tex\n")
+        with self.assertRaisesRegex(WorkflowError, "Withdrawn appendix"):
+            validate_recorded_inputs(self.engine, fls, allowed, directory / "preview.tex", directory)
+
     def test_acceptance_requires_successful_current_build(self):
         self.freeze()
         self.approve_reviews()

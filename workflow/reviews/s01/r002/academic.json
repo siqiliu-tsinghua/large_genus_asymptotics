@@ -1,0 +1,38 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The revised opening explicitly groups the four results into two broad index settings and names both cases in each, consistently orienting the reader to the unchanged abstract and theorem statements; actual companion pages 1--2 show the new opening and source paragraph clearly without added notation or setup repetition.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "ACADEMIC-010 is resolved: the Introduction now credits Mirzakhani's comparisons as recalled in SW25 Lemma 14 and separately identifies Shen--Wu's Lemma 18 all-type bound, matching the original source verified in r001; the interface and author response preserve the same distinction.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The previously combined SW25 citation is correctly split into its two actual lemma locators, with no bibliography, version or mathematical input change; the retained primary-source checks for all other WP, GRR, top-Hodge, inverse, ILW and transfer references remain applicable.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The 144-word abstract, four complete theorem blocks, six numbered equation blocks and original mathematical setup remain byte-identical, while the opening changes only their grouping and the literature paragraph changes only credit; fixed parameters, the final equivalence without a relative rate, conditional EGGLS status, independent Section 6 route and confined higher-order Remark scope are preserved.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer incremental recheck of changes.diff, r001/author_response.json and the revised interface, retaining r001's actual primary-source verification without unrelated rereading or browsing; only ACADEMIC-010 is resolved by this academic report.",
+    "Verified all archived/live input and artifact hashes, recomputed the snapshot and render-source fingerprint, and checked the real s01 binding; only the Introduction, interface and writer handoff differ among existing inputs, with the r001 author response newly selected and no removed input.",
+    "Both standard and title/abstract companion PDFs, their entries and helpers match their respective current strict/pass receipts with empty standard/layout diagnostics. The companion's entry still makes only the authorized frozen-main assembly substitution, and its actual fls includes the unchanged abstract, S1 and preamble; the modified pages were visually inspected in a private ignored cache.",
+    "No source, state, other report or frozen output was modified or rebuilt; only this round's reports and private ignored page images were written."
+  ],
+  "resolved_issue_ids": [
+    "ACADEMIC-010"
+  ],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "dbb15031e72a3d989d76ff25624953fc5f92dbae55f241483e939b5db1438c00",
+  "summary": "Pass. ACADEMIC-010 is resolved by separating the original Mirzakhani comparison credit from Shen--Wu's all-type bound; the clarified opening adds no mathematical claim or precision change.",
+  "unit": "s01",
+  "verdict": "pass"
+}

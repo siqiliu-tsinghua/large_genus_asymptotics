@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 38 frozen/live inputs, artifacts, canonical snapshot, actual binding, writer ACK and native PDF/entry/helper hashes; S1 r002, S2 r013 and S6 r007 are approved and fresh, and the changed/added frontmatter paths match accepted S1 exactly.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven s07 files and other old scientific inputs are unchanged, preserving stable targets, g>=h ranges, kappa degree g_2+h, finite-jet bounds and Borel minimum degree/parity; the fixed-defect overview changes no range or low-genus exception.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged source retains positive Chern weights, z/eta conversion, sine/beta inversion, raw string anomaly and cancellation, characteristic sign, Lagrange factorials and both Borel Beta factors with the ordered quadratic half; the new prose introduces no numerical or operator convention.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The preserved introductory definitions and unchanged s07 interface keep z/eta, x=t_0, theta=-t_1, full/inverse jets, indexed potentials and Borel series in their original scopes; the new guide adds no alias or early technical definition and preserves derivative-before-evaluation and inverse-branch conventions.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The accepted overview correctly attributes Buryak's relation and s07's exact transport/Borel identities, with free-energy constants justified by the unchanged finite-jet and genus-one seed arguments rather than the field alone. It assigns actual common complex domains, uniform primitive/kernel bounds and asymptotic transfer to B/8, leaving the string, rational-jet constant and characteristic-recovery chain intact.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The fixed-genus characteristic convergence and coefficientwise higher-Borel identities retain their original scopes, with no infinite-genus interchange inferred from them. The new fixed-h prose neither asserts all-layer convergence within s07 nor strengthens the final fixed-defect error rate; analytic convergence and asymptotics remain separate later results.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT impact signature on s07 r005, retaining the original full mathematical review after independently checking the present delta. No prior MATH issue is open; issues and resolved_issue_ids are empty. No old ILW, jet, characteristic or Borel calculation was rerun.",
+    "Exactly the abstract and S1 source/interface changed among old inputs; only the S1 handoff was added, with no removal. All seven s07 files, other old scientific/shared inputs, bibliography, macros, outline and unit definition are unchanged. Writer ACK SHA256 c69e95d1ee8c3479659684266b01d1e2071c04ee299ae6b54e0dabe6b9e32859 matches.",
+    "Actual render source SHA256 dd4a2cd31b7da1550e217dc647c45e9f19288a4195ef9e590dbae65b80b73138; actual 29-page PDF SHA256 ee793927da24a9afda85f2062c067ad432bc91b2f96d4ddac41cb533e1fd2d8e. Receipt binds snapshot 02f4f49b6e444b70c4eac5fe4d5d9b020d5613d7d588ec61bf3c3e4ce0f6c86b, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused s07 validation passes.",
+    "The unit rendering omits the abstract; reused the already-inspected accepted S1 companion at SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. Only these reports and an authorized ignored byte audit were written; no source/state/old report/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "02f4f49b6e444b70c4eac5fe4d5d9b020d5613d7d588ec61bf3c3e4ce0f6c86b",
+  "summary": "Pass on s07 r005. The accepted frontmatter preserves exact formal identities, fixed-genus recovery and free-energy constant handling without promoting them to uniform analytic or asymptotic conclusions. All scientific inputs and conventions remain unchanged; no unresolved mathematical issue.",
+  "unit": "s07",
+  "verdict": "pass"
+}

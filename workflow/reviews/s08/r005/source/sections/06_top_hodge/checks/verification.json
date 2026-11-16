@@ -1,0 +1,33 @@
+{
+  "command": "python -B sections/06_top_hodge/checks/run.py",
+  "compact_reported_coefficients": [
+    "b**2/2 + b + 1/4 - (2*b + 2/3)/z01**2",
+    "b**3/6 + 16*b**2/5 + 47*b/20 + 103/240 + (192*b**2 - 592*b - 187)/(120*z01**2) + (152*b/15 + 152/45)/z01**4"
+  ],
+  "dependency_versions": {
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0"
+  },
+  "independent_review_or_acceptance": false,
+  "manuscript_scope": "Supplementary reported coefficients; paper details omitted; original theorem unchanged.",
+  "numeric_coefficients": {
+    "g_2^-2": "0.30472431059522700631788618109503624345716928507531",
+    "g_2^-3": "0.83396718314779282089845542187193683972375687288646"
+  },
+  "output": {
+    "path": "build/s06-higher-check/results.json",
+    "sha256": "7f64a84a9508f7190ad498a6f0dd8bab1457ff8bd89518b563fc76ef3d4d7d75"
+  },
+  "passed": true,
+  "postcomparison_differences": [
+    "0",
+    "0"
+  ],
+  "rooted_tree_types": 7,
+  "schema_version": 1,
+  "source_sha256": {
+    "sections/06_top_hodge/checks/run.py": "f14e748dbecbd3a63b51d81416b5e0f41da446aa0638f289630a840adbe84f3b"
+  },
+  "stage": "computation_only",
+  "targets_used_only_after_reconstruction": true
+}

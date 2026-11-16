@@ -130,14 +130,16 @@ manuscript should cite stable labels.
   low kappa/psi computations, including the negative two-input merged
   block term. No future Appendix C input is used.
 
-## Reproducibility and remaining work
+## Self-contained mathematical basis and internal checks
 
-`calculations/README.md` maps every source script to its finite proof and
-pins SymPy 1.14.0/mpmath 1.3.0 in an ignored workspace-local target. The
-standard-library core enumerator is independent of those packages. It
-checks literal flag bijections for all 17 graphs. All scripts disable
-bytecode and write only to console or ignored build outputs; no production
-script imports the preparation directory. Numerical checks are auxiliary.
+Every finite coefficient has a mathematical rule and derivation in the
+appendix: A.1 supplies the profiles, recursion and tail bounds; A.2 gives
+the joint moment generator and finite recurrence; A.3 proves the small
+vertex formulas; A.4 proves enumeration completeness, the automorphism
+rule and edge integration before evaluating the tables. No program or
+installation instruction is needed to complete these arguments.
+The existing calculations files and verification records are preserved
+unchanged as internal author checks, not as promised submission content.
 
 The full mathematical appendix, core diagrams and finite rules are supplied.
 No known source gap remains in these statements, subject to independent

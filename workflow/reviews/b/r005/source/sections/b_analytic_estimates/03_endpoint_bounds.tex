@@ -1,0 +1,184 @@
+% !TeX root = ../../main.tex
+\subsection{Uniform bounds at the two kernel endpoints}
+\label{subsec:b:endpoints}
+
+Here the remainder exponent is a fixed real number
+$1/2<\nu<1$. Angular domains are always used in nested pairs:
+estimates on a smaller cone are obtained from holomorphic functions
+on a larger one. This convention permits Cauchy estimates of any
+fixed order, and avoids a loss of derivatives in a finite-layer
+induction. The bounds below concern general input functions;
+Proposition~\ref{prp:b:common-domains} applies them to the actual
+Borel series.
+
+Put $S=R_\theta-x$. We say that a holomorphic input
+$\mathcal H(\theta;x,y)$ has \emph{scale-$a$ endpoint bounds},
+where $a\geq0$ is real, if it is bounded by $C|S|^a$ on the small-$|S|$
+part of $\mathcal C_\gamma$, and has the expansions
+\begin{equation}\label{eq:b:endpoint-class}
+ \mathcal H
+ =H_0^\pm(\theta,S)+\sqrt{S\mp y}\,H_1^\pm(\theta,S)+E^\pm
+                 \quad\text{near }y=\pm S,
+\end{equation}
+with
+\begin{equation}\label{eq:b:endpoint-norms}
+ |H_0^\pm|\leq C|S|^a,\qquad
+ |H_1^\pm|\leq C|S|^{a-1/2},\qquad
+ |E^\pm|\leq C|S|^a|1\mp y/S|^\nu.
+\end{equation}
+The coefficient functions are holomorphic in the slit $S$ sector
+and in a complex neighborhood of the compact $\theta$ interval
+under consideration. Their bounds hold on slightly larger sectors
+and parameter neighborhoods as well. Constants are uniform there.
+All statements about this class allow a fixed reduction of those
+neighborhoods.
+
+In particular, Cauchy's formula, applied with radius a fixed
+multiple of $|S\mp y|$, gives for every fixed integer $k\geq0$
+\begin{equation}\label{eq:b:remainder-derivatives}
+ |S^k\partial_y^k E^\pm|
+       \leq C_k|S|^a|1\mp y/S|^{\nu-k}.
+\end{equation}
+The coefficient functions have the corresponding bounds after any
+fixed number of $S\partial_S$ and $\theta$ derivatives. These are
+consequences of the larger-domain value bounds, not extra regularity
+assumptions at the endpoints. For example, for every fixed $k\geq1$,
+\begin{equation}\label{eq:b:input-derivatives}
+ |\partial_x^k\mathcal H|+|\partial_y^k\mathcal H|
+ \leq C_k|S|^{a-k}
+ \left(1+|1-y/S|^{1/2-k}+|1+y/S|^{1/2-k}\right).
+\end{equation}
+For $x$ derivatives, differentiate the coefficients and
+$S=R_\theta-x$ in \eqref{eq:b:endpoint-class}; the remainder is
+estimated on the same nested cones. Mixed derivatives obey the
+same bound with their total order in place of $k$.
+
+\begin{lmm}[The linear endpoint integral]\label{lmm:b:linear-endpoint}
+Suppose $\mathcal H$ has scale-$a$ endpoint bounds, $a\geq0$.
+Then $\mathcal K\mathcal H$ has such bounds with the same scale,
+and near the positive endpoint its square-root coefficient is
+\begin{equation}\label{eq:b:linear-endpoint}
+ \begin{aligned}
+ (\mathcal K\mathcal H)(\theta;x,y)
+ =K_0^+(\theta,S)
+   +\sqrt{S-y}\int_0^1H_1^+(\theta,\tau S)\,\dd\tau+E_K^+,\\
+ |E_K^+|\leq C|S|^a|1-y/S|^\nu.
+ \end{aligned}
+\end{equation}
+Here $|K_0^+|\leq C|S|^a$. At the negative endpoint the analogous
+square-root coefficient is
+$-\int_0^1H_1^-(\theta,\tau S)\,\dd\tau$.
+Every part except the $m=1$ branch with the corresponding sign
+has a bounded first normalized $y$ derivative at that endpoint.
+The remainder estimates hold with any fixed number of derivatives
+on smaller angular domains.
+\end{lmm}
+\begin{prf}
+Away from the two endpoint neighborhoods, cone comparison and the
+cubic Taylor remainder give the scale bound directly. We concentrate
+on $y=S$.
+For the positive $m=1$ branch, write
+\[
+ S'=S-(1-\tau)y,\qquad
+ S'-\tau y=S-y.
+\]
+Cone addition gives
+$|S'|\asymp |S|(\tau+|1-y/S|)$ near $y=S$.
+Insert \eqref{eq:b:endpoint-class} into this branch. The integral
+of its remainder is bounded by
+\[
+ C|S|^a|1-y/S|^\nu
+       \int_0^1(\tau+|1-y/S|)^{a-\nu}\,\dd\tau,
+\]
+which is uniform because $a-\nu>-1$.
+
+To freeze the square-root coefficient at $y=S$, split the
+$\tau$ interval at $|1-y/S|$. On the first part, both the input
+and the proposed frozen term have integral
+$O(|S|^a|1-y/S|^{a+1})$. On the second part, the coefficient
+change is bounded by its $S$ derivative. Its integral is at most
+\[
+ C|S|^a|1-y/S|^{3/2}
+      \int_{|1-y/S|}^1\tau^{a-3/2}\,\dd\tau.
+\]
+This is $O(|S|^a|1-y/S|^\nu)$. Freezing the constant coefficient
+similarly costs at most
+$C|S|^a|1-y/S|(1+|\log|1-y/S||)$, which obeys the same bound.
+The coefficient integral in \eqref{eq:b:linear-endpoint} converges
+at zero because $a-1/2>-1$.
+
+For $m=1$ the other branch can meet this endpoint only at
+$\tau=1$. Its first normalized derivative has an integrable bound
+$C|S|^a(|1-y/S|+1-\tau)^{-1/2}$.
+The subtracted first-order term has the extra factor $1-\tau$;
+its derivative is bounded by the integral of
+\[
+ C|S|^a(1-\tau)
+                  (|1-y/S|+1-\tau)^{-3/2},
+\]
+which is also uniform. For $m\geq2$ keep the entire cubic
+difference together; its individual linear terms must not be
+summed separately. Taylor's integral remainder and
+\eqref{eq:b:input-derivatives} bound its first normalized derivative,
+before the outer factor $m$, by a constant times
+\[
+ |S|^a m^{-3}(1-\tau)^3
+                  (|1-y/S|+1-\tau)^{-7/2}.
+\]
+The $\tau$ integral is uniform, and the remaining $m^{-2}$ sum
+converges. Hence these nonprincipal parts have a finite endpoint
+limit and an $O(|S|^a|1-y/S|)$ variation. This proves the value
+estimate in \eqref{eq:b:linear-endpoint}. The negative endpoint
+follows by exchanging the two branches, including their opposite
+signs. Cauchy's formula on smaller cones then gives every fixed
+derivative bound, in particular the third derivative required by
+the next transport step.
+\end{prf}
+
+\begin{lmm}[The quadratic endpoint integral]\label{lmm:b:quadratic-endpoint}
+Let $\mathcal H$ and $\mathcal J$ have endpoint scales $a,c\geq0$.
+The function
+\begin{equation}\label{eq:b:quadratic-input}
+ \mathcal Q=y^2\int_0^1\int_0^1
+ t\,\partial_x\mathcal H(\theta;x,t\tau y)
+       \partial_x\mathcal J(\theta;x,t(1-\tau)y)
+                              \,\dd\tau\,\dd t
+\end{equation}
+has scale $a+c$. At either endpoint it has a constant term and
+a remainder bounded by $C|S|^{a+c}|1\mp y/S|^\nu$, with zero
+square-root coefficient. Its first normalized $y$ derivative is
+bounded by $C|S|^{a+c}$; its second is bounded by
+$C|S|^{a+c}(1+|1\mp y/S|^{-1/2})$.
+The value remainder again gives every fixed derivative estimate
+on smaller cones.
+\end{lmm}
+\begin{prf}
+The two $x$ derivatives cost $|S|^{-2}$, and the prefactor $y^2$
+restores that scale. Cone addition gives
+\[
+ |S-t\tau y|\geq c_\gamma
+       \bigl((1-t\tau)|S|+t\tau|S-y|\bigr),
+\]
+and the corresponding inequality for all other signs and factors.
+Since $t\tau+t(1-\tau)=t\leq1$, the two factors cannot both
+approach the same endpoint. In fact at least one of the two
+coefficients is at most $1/2$, and its distance is bounded below
+by a fixed multiple of $|S|$. The same argument excludes
+simultaneous approach to opposite endpoints.
+
+A singular factor can occur only at the corner $(t,\tau)=(1,1)$
+or $(1,0)$. For its first normalized $y$ derivative the largest
+local bound, apart from $C|S|^{a+c}$, is
+\[
+ (|1-y/S|+(1-t)+(1-\tau))^{-3/2}
+\]
+at the first corner, and the corresponding bound at the second.
+This is integrable in two variables, uniformly up to the endpoint.
+For a second derivative the exponent is $-5/2$, whose integral is
+$O(1+|1-y/S|^{-1/2})$. The remainder terms with exponent $\nu$
+are less singular because $\nu>1/2$. Thus the first derivative
+is bounded and the endpoint value exists, with a remainder
+$O(|S|^{a+c}|1-y/S|)$. It is therefore also $O(|S|^{a+c}|1-y/S|^\nu)$.
+Normal convergence proves holomorphy, and the larger-domain
+Cauchy argument proves the remaining assertions.
+\end{prf}

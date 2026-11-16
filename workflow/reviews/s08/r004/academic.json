@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Read the complete added Remark, interface extension, handoff, selected-data archive, README and checker, and inspected native pages 39 and 55: the short closing Remark follows the completed proof, explains both numerical columns before the table, inherits existing symbols and ends with the open problem; the recorded 3.50723pt bibliography URL excess leaves all characters visible without overlap and is not a blocking presentation issue.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The observations are explicitly credited to LiuData26 at the supplied fixed commit, whereas the Bessel candidate is the paper's conjectural expression rather than a fitted value or a result attributed to the data source; the bundle preserves the source's g>14 validation caveat, distinguishes extraction agreement from integral validation, and leaves the old FO90/DLMF/geometric-source and original-derivation credits intact.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Using the already independently verified commit/README/file-hash provenance, traced all 38 selected rationals to their actual lambda-index tuples for b_g and b_g(1) in the original Sage files and checked archive/output digests; separate read-only 100-digit arithmetic reproduces the Bessel candidate, all 19 scaled residuals, consecutive-pair intercepts and the six-place displayed table, consistently with rho=6*z_{0,1}*J_1(z_{0,1}) and the inherited normalization.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The new statement explicitly conjectures only the h=1 scaled limit, calls the extrapolations finite observations without a remainder estimate and leaves general fixed-h refinements open; all original proof blocks and 33 numbered formulas are unchanged, preserving the final relative o(1) equivalence separately from the O_h(g^(-1)) background bound, with neither S6's supplementary coefficients nor computation-only records promoted to proof inputs.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer assessment of the actual dispatch, summary, author ACK, frozen differences and new material, retaining the original complete s08 source review; independently confirmed six changed existing paths, nine added local/dependency inputs, none removed, and exact old proof/interface prefixes with every original scientific proof/formula/statement preserved.",
+    "Read and parsed all 126 checker lines: only the archived selected_h1.json and pinned mpmath 1.3.0 are needed, the candidate is evaluated directly from Bessel values, the extrapolation is the intercept against 1/g through g-1 and g, and no fitting, integral generation, external project or private preparation output is imported.",
+    "Verified actual code SHA256 404074e96f6299ebaf2047a963b1f8e1d24d511a8c30155ba5bd82f5c6531035, selected-input SHA256 9e4370649bae7db217ac41fa5197f4756dc618a7d8805688688240df3d7e825a and output SHA256 de9e0fa164787e403842fcdbb13caa6b5da652b101e787277bed5d36094751b1 against the tracked verification record; the independent read-only extraction/arithmetic check did not execute Sage assignments, open SQLite, recompute integrals, rerun long algorithms or overwrite the author's output, and does not validate convergence or the complete dataset.",
+    "Verified all archived/live inputs and artifacts, recomputed snapshot/render fingerprints, real original binding and five genuinely approved/fresh parents; actual native PDF/entry/helper hashes and preflight evidence agree with the strict/pass receipt and same-source pre-submit sealing, with clear standard diagnostics and exactly the explicitly retained bibliography layout exception, not an empty-layout claim.",
+    "ACADEMIC-009 remains resolved and the previous round had no open issue, hence resolved_issue_ids is empty; only this round's reports and private ignored page images were written, without source, shared input, state, other report, historical record or frozen-output modification or rebuild."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "43ee89f7a17ac51068f37e0929c7db9f5bb1c4fae2f63f16695aa892a8e05d30",
+  "summary": "Pass. The accurately sourced and reproducible finite-data diagnostics support a clearly labeled h=1 conjecture without changing the proved theorem or implying a stronger remainder or general-h formula.",
+  "unit": "s08",
+  "verdict": "pass"
+}

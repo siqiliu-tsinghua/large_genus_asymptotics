@@ -122,3 +122,48 @@ retained saddle remainder are proved in the text, rather than inferred
 from finite coefficient checks. Independent frozen review is still needed.
 Actual validation/build outcomes and author checks are reported in the
 current handoff. No shared input, accepted chapter or old record is edited.
+
+## Supplementary reported coefficients
+
+The new rmk:s06:further-coefficients is directly after the unchanged
+proof of Theorem 1.3. It reports, respectively, the coefficients
+of g_2^-2 and g_2^-3 in the relative expansion of eq:g111:
+
+    b^2/2+b+1/4-(2b+2/3)/z_{0,1}^2,
+
+    b^3/6+16b^2/5+47b/20+103/240
+      +(192b^2-592b-187)/(120z_{0,1}^2)
+      +152(3b+1)/(45z_{0,1}^4).
+
+Only the existing scalar b and Bessel zero are used. No new
+coefficient name, Bessel alias, numbered equation or principal
+result is introduced. The Remark uses the independent Remark
+counter, unnumbered displays and an explicitly omitted derivation.
+All old source, proof and formula content remains verbatim,
+including the proved O(g_2^-2) remainder and the original
+Introduction/Theorem 1.3 precision.
+
+The checks directory supplies a self-contained original-writer
+reconstruction of the phase/Gaussian coefficients and all seven
+tree groups through loss three. It independently enumerates the
+rooted trees, computes automorphism orders and derives the low
+vertex polynomials and critical edge integrals before composing
+the coefficients. Target expressions enter only post-comparison.
+Code-local X,L,z are declared internal and are absent from the
+published Remark.
+
+The actual run.py execution completed with SymPy 1.14.0 and
+mpmath 1.3.0. Generated data stay under build/s06-higher-check/.
+The tracked verification.json binds the actual algorithm/output
+hashes and records computation_only status. It is neither a
+proof of a new uniform remainder nor a formal review signature.
+No A/S4 long reconstruction or private preparation code is
+imported or rerun. The unchanged sources for the calculation are
+the exact tree/vertex identities, the beta sine series and the
+w ODE already established here; no new primary citation is needed.
+The appended LiuData26 bibliography entry is not used by this
+Remark or program.
+
+The original writer_handoff.md is preserved as history. The new
+higher_remark_handoff.md records the limited addition and actual
+execution. Live acceptance/freshness remains a workflow matter.

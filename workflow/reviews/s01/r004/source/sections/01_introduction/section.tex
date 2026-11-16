@@ -1,0 +1,205 @@
+% !TeX root = ../../main.tex
+\section{Introduction}
+\label{sec:introduction}
+
+Intersections of Hodge classes measure how the bundle of holomorphic
+differentials varies over the moduli space of curves. Their
+large-genus behavior depends on how the Chern indices vary with
+the rank. The four results are grouped into two broad index
+settings. One covers powers of the first class and fixed-index
+insertions against that background; the other covers the top class
+and indices at a fixed distance from it. The results give explicit
+constants and
+correction terms, together with the scaling that relates the top
+class to each fixed defect.
+
+Let $g,n$ be nonnegative integers with $2g-2+n>0$.  Denote by
+$\MM_{g,n}$ the proper Deligne--Mumford stack over $\mathbb C$ of
+stable curves of genus $g$ with $n$ marked points, and write $\MM_g$
+when $n=0$ and $g\geq2$.  We work in its rational Chow ring
+$A^*(\MM_{g,n};\mathbb Q)$, where degree means complex codimension.
+
+The Hodge bundle $\EE$ has rank $g$ and fiber $H^0(C,\omega_C)$ at
+$[C;p_1,\ldots,p_n]$, where $\omega_C$ is the dualizing sheaf of the
+curve $C$.  Its Chern classes are the Hodge classes
+\[\lambda_j=c_j(\EE)\in A^j(\MM_{g,n};\mathbb Q),
+\qquad 1\leq j\leq g.\]
+We also set $\lambda_0=1$ and $\lambda_j=0$ for every integer $j>g$.
+
+The stack has complex dimension $3g-3+n$.  Integration selects the
+component of that codimension and takes the degree of the resulting
+zero-cycle, including stabilizer weights.  Scalar
+coefficients may be extended when necessary.  For a positive integer
+$\ell$, we study the \emph{pure Hodge integrals}
+\begin{equation}
+\int_{\MM_{g,n}}\lambda_{j_1}\cdots \lambda_{j_\ell},\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+\label{eq:phi-1}
+\end{equation}
+as $g$ tends to infinity.
+
+The integral in \eqref{eq:phi-1} vanishes unless
+\[j_1+\cdots+j_\ell=3g-3+n.\]
+For integers $0\leq m<n$ with $2g-2+m>0$, let
+$\pi_{n,m}:\MM_{g,n}\to\MM_{g,m}$ forget the last $n-m$ markings
+and stabilize.  The Hodge bundle on the source is pulled back from the
+target.  When the degree condition above holds, the corresponding
+product on the target has degree $3g-3+n>3g-3+m$, so it vanishes,
+as does its pullback.  Hence \eqref{eq:phi-1} vanishes for $g\geq2$,
+$n\geq1$ (take $m=0$), and for $g=1$, $n\geq2$ (take $m=1$).
+In genus zero there are no positive-degree Hodge classes.  The only
+remaining marked case is
+\[\int_{\MM_{1,1}}\lambda_1=\frac{1}{24},\]
+and the large-genus problem therefore reduces to the unmarked integrals
+\begin{equation}
+\int_{\MM_g}\lambda_{j_1}\cdots \lambda_{j_\ell},
+\quad j_1, \dots, j_\ell \in \{1, \dots, g\},
+\label{eq:phi-2}
+\end{equation}
+where $g\ge 2$.
+
+For $g\geq2$ and an integer $h$ with $0\leq h\leq g$, set
+\[a_g=\int_{\MM_g}\lambda_1^{3g-3},\quad b_g(h)=\int_{\MM_g}\lambda_{g-h} \lambda_1^{2g-3+h},
+\quad b_g=b_g(0).\]
+For a homogeneous polynomial $P(\lambda)$ of Hodge classes of degree
+$d$, with $0\leq d\leq3g-3$, define
+\[\langle P(\lambda) \rangle_g=\frac{1}{a_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
+
+The geometric starting point is Mumford's
+Grothendieck--Riemann--Roch description of the Hodge bundle
+\cite[\S 5]{Mum83}, as recalled by
+Faber--Pandharipande \cite[\S 1.1]{FP00}. It connects Hodge classes
+to boundary geometry and permits two different approaches to
+their asymptotics.
+
+For Weil--Petersson volumes, Mirzakhani--Zograf established
+fixed-marking expansions to every fixed order
+\cite[Theorem 1.2]{MZ15}. We use the absolute leading normalization
+proved by Liu--Xu \cite[Corollary 1.2]{LX26} and by Wang et al.\
+\cite[Corollary 1.2]{W26}, together with the uniform vertex
+estimates of Hide--Macera--Thomas \cite[Theorem 4.2]{HMT25}.
+We also use Mirzakhani's comparisons, recalled in \cite[Lemma 14]{SW25},
+and Shen--Wu's all-type bound \cite[Lemma 18]{SW25}.
+Turning these inputs into pure Hodge asymptotics requires control
+of the entire stable-graph sum: arbitrarily many self-loops
+contribute at leading order.
+
+The first two results determine the absolute asymptotics of $a_g$
+and the effect of any fixed list of Hodge insertions.
+
+\begin{thm}
+\label{thm:lambda-one}
+For real $x\geq0$, define
+\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \quad
+\mbox{and } N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+As $g\to \infty$, we have
+\begin{equation}
+a_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+\left(1+\frac{9}{8}g^{-1}+\left(\frac{257}{128}+\frac{1}{8\pi^2}\right)g^{-2}+O(g^{-3})\right).
+\label{eq:111}
+\end{equation}
+\end{thm}
+
+\begin{thm}
+\label{thm:fixed-insertions}
+Fix $\ell$ and the positive indices $j_1,\ldots,j_\ell$, and put
+$P(\lambda)=\lambda_{j_1}\cdots\lambda_{j_\ell}$.  For this list of
+indices, define
+\[F(j)=\prod_{k=1}^\ell j_k!, \quad G(j)=\sum_{k=1}^\ell j_k(j_k-1)(j_k-2).\]
+Then, as $g\to\infty$, we have
+\begin{equation}
+\langle P(\lambda) \rangle_g=\frac{1}{F(j)}\left(1+\frac{4\pi^2-42}{9g^2}G(j)+
+\frac{4\pi^2-40}{3g^3}G(j)+O(g^{-4})\right).
+\label{eq:P111}
+\end{equation}
+\end{thm}
+
+The next two results concern the opposite range of indices.
+The inserted class is $\lambda_g$, or $\lambda_{g-h}$ with $h$
+fixed while $g$ increases. Their scale is governed by the first
+positive zero of a Bessel function.
+
+\begin{thm}
+\label{thm:top-hodge}
+Let $g_2=2g-3$, $J_n(z)$ be the $n$-th Bessel function of the first kind, $z_{0,1}$ be the first
+positive zero of $J_0(z)$, and $\rho=6z_{0,1}J_1(z_{0,1})$.
+Set
+\[b=-\frac{1}{4}+\frac{1}{6z_{0,1}^2}+\frac{\pi^2}{6}J_1(z_{0,1})^2.\]
+As $g\to\infty$, we have
+\begin{equation}
+b_g=\frac{1}{J_1(z_{0,1})}\frac{2}{(2\pi)^{2g}}\frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}\left(
+1+\frac{b}{g_2}+O(g_2^{-2})\right).
+\label{eq:g111}
+\end{equation}
+\end{thm}
+
+\begin{thm}
+\label{thm:fixed-defect}
+With $\rho$ as above, for a fixed integer $h\geq0$, we have
+\begin{equation}
+\frac{b_g(h)}{b_g}\sim \frac{1}{h!}\left(\frac{24g^2}{\rho^2}\right)^h,\quad g\to\infty.
+\label{eq:gh11}
+\end{equation}
+\end{thm}
+
+Theorem~\ref{thm:fixed-insertions} shows that the normalized product
+approaches the reciprocal factorial product, with no term of order
+$g^{-1}$. The first correction depends only on the cubic sum
+$G(j)$. In Theorem~\ref{thm:fixed-defect}, each fixed increase of
+the defect contributes two powers of $g$; the factor $1/h!$
+comes from ordered transport integrals. All insertion indices and
+defects in these statements are fixed. The last theorem asserts
+asymptotic equivalence, without a relative error rate.
+
+Sections~3--5 prove Theorems~\ref{thm:lambda-one}
+and~\ref{thm:fixed-insertions} by a stable-graph expansion.
+The boundary identity of Andersen et al.\
+\cite[Lemma 3.10]{ABCDGLW23} converts the geometric formulas into
+products of Weil--Petersson vertex integrals. Section~3 first
+resums the self-loops, proves an absolute tail bound for all graphs,
+and reduces each fixed asymptotic order to finitely many cores
+with summable remainders. Section~4 evaluates the terms needed
+for the second correction in Theorem~\ref{thm:lambda-one}.
+Section~5 introduces labeled sources for the insertions and
+controls the resulting decorated graph sums.
+
+Appendix~A supplies the finite calculations used in this route.
+They include the descendant coefficients of Wang et al.\
+\cite[Lemma 7.2 and Appendix C.1]{W26}, correlated loop moments
+and the core contributions. The required second absolute volume
+coefficient is reconstructed from the exact recursions of
+Mirzakhani--Zograf \cite[\S 2]{MZ15}. Its agreement with the
+conditional resurgent prediction of Eynard et al.\
+\cite[\S 6.1, (6.10)]{EGGLS24} is an a posteriori check;
+the reconstruction itself is unconditional.
+
+Theorem~\ref{thm:top-hodge} has an independent proof in Section~6.
+The $\lambda_g$ formula of Faber--Pandharipande
+\cite[Theorem 1]{FP03} gives exact vertex integrals, and the
+restriction of the top class eliminates every graph with a cycle.
+The genus-zero inverse relation recalled by Kaufmann--Manin--Zagier
+\cite[(0.8)]{KMZ96v1} and the Bessel analysis of Manin--Zograf
+\cite[\S 6, (17) and Proof 6.3]{MaZ00} provide the analytic
+background. Uniform bounds for all stable vertex types control
+the whole tree sum. A saddle calculation and the elliptic-leaf
+contribution then give the displayed correction.
+
+For Theorem~\ref{thm:fixed-defect}, Sections~7--8 use Buryak's relation
+between the linear Hodge potential and the ILW equation
+\cite[Theorem 1.1]{Bur15}. Section~7 derives exact transport and
+Borel identities, including the free-energy integration constants.
+Section~8 identifies the principal singularity at each defect and
+evaluates its transport constant. The common complex domains and
+uniform kernel and primitive estimates are proved in Appendix~B.
+Both dominant singularities enter the coefficient transfer,
+following the method of Flajolet--Odlyzko \cite[\S 2]{FO90}.
+A nef intersection argument controls the complete change of
+background needed to return to $b_g(h)$.
+
+Section~2 collects the geometric identities used by both routes.
+After that section, readers interested primarily in
+Theorems~\ref{thm:top-hodge} and~\ref{thm:fixed-defect}
+may proceed directly to Sections~6--8; these sections do not use
+the Weil--Petersson correction coefficients. Appendix~C derives
+exact normalization identities in genera two and three from the
+finite-genus formulas. These examples complement the asymptotic
+proofs without replacing their uniform remainder estimates.

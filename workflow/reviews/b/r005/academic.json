@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Under publication independence, the eight unchanged B files retain their domain/kernel/primitive proof organization and corrected derivative terminology without any internal program, document, directory or software-attachment obligation.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The unchanged manuscript preserves exact S6 inverse/Bessel and S7 transport input credit, DLMF's special-function role and the paper's own common-domain, endpoint and primitive proofs, rather than assigning those arguments to internal checks or supplementary coefficients.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All original DLMF locators, inverse branches and inherited Bessel/transport conventions are unchanged, adopted shared inputs match approved S1 r004, and the URL line-break edit changes no bibliographic source identity or version while all four parents are actually approved and fresh.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "B's retained mathematical proofs and precise cited inputs supply its analytic domains, kernel and primitive estimates without software filling a proof gap, preserving fixed-layer/derivative restrictions, the genus-one exception and original uniform error strengths without promoting a bound to principal asymptotics or claiming a completed single-TeX export.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and prior r004 result, applying the new independence criterion; independently confirmed eight local files unchanged, ten changed shared/S1 inputs, one added S1 handoff and no removals.",
+    "A frozen-TeX scan found no engineering reader obligation; retained the original complete B source/proof assessment without repeated literature retrieval, long-proof work or calculations, with ACADEMIC-008 still closed.",
+    "Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, original binding and four approved/fresh parents; actual native PDF/entry/helper and preserved preflight/sealing hashes match the strict/pass receipt with empty standard/layout diagnostics.",
+    "No academic issue is open; this scoped B signature does not certify a future isolated single-TeX delivery, and only these reports were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "91c736c2e6cdcec071f3cb63aff012acefa2fdfb4a3edf831844b5f506c629b9",
+  "summary": "Pass. B's analytic arguments remain in the article with unchanged precise inputs, source credit and uniform scope, independently of internal engineering materials.",
+  "unit": "b",
+  "verdict": "pass"
+}

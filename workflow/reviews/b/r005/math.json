@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified binding, canonical snapshot, archive/live/artifact/native hashes, author ACK and approved/fresh S1 r004/S2 r015/S6 r009/S7 r007; B uses their unchanged exact inverse/transport inputs rather than software, data or S6's higher coefficients, and Appendix A is outside this dependency branch.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight B files are byte-identical to r004, preserving the complex center/endpoint domains, fixed layer cap, genus ranges, derivative orders and constant dependencies without an enlarged-domain or growing-defect assertion.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The forward/inverse derivative convention, exact Bessel inverse, kernel factors and geometric negative-axis primitive constant remain unchanged, including the genus-one logarithmic exception's separate treatment.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original first definitions of w_theta,v_theta,R_theta, joint complex variables, endpoint classes and derivative indices retain their types and scopes, and the shared policy, S1 prose and URL wrapping introduce no alias or missing definition.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review establishes B's written inverse-domain construction, regular kernel bounds, endpoint/local transport induction and negative-axis primitive proof, including common-domain patching, so the unchanged appendix already supplies its analytic deductions without a program, private record or engineering attachment.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The common complex-parameter neighborhoods, mixed-derivative factorial estimates, full characteristic path and finite-cap constants keep their proved uniformity, with no stronger error or growing-layer conclusion inferred from the shared independence update or supplemental S6 coefficients.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on B r005 using the retained full original mathematical assessment; no prior MATH issue is open and resolved_issue_ids is empty. Publication independence is applied substantively in dependencies/proof_logic.",
+    "The only closure changes are the ten already-reviewed S1/shared paths and added S1 standalone handoff, with no removal; all eight B files are unchanged and the manuscript promises no engineering material. Original-writer ACK SHA256 76411ec7adcf3cbf757c99b1b546a0cef88657a03dec987df87861d30d339520 matches the actual scope.",
+    "Source SHA256 8b5bc52af73a556a1f197d8df2c14f82736d45b1cff96434149acaad0f1bdddc; actual native PDF SHA256 66e909ea37582ad5fe342741c080467096ff3797abe56c38108fdb3ea3d2f699. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, strict/layout diagnostics are empty and pre-submit/equal-source sealing is explicit.",
+    "Only assigned reports were written; no unchanged proof or calculation was repeated and no source/state/historical/other-role or frozen-output file changed. Unfrozen C work and the final isolated single-TeX delivery remain outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "91c736c2e6cdcec071f3cb63aff012acefa2fdfb4a3edf831844b5f506c629b9",
+  "summary": "Pass on B r005: shared publication changes preserve the self-contained inverse-domain, kernel, endpoint/local transport and primitive proofs and their fixed-layer/derivative scope. Actual frozen inputs/native receipt match, no software obligation is introduced and no mathematical issue remains.",
+  "unit": "b",
+  "verdict": "pass"
+}

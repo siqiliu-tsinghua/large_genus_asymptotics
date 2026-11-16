@@ -1,0 +1,20 @@
+{
+  "depends_on": [
+    "s04",
+    "s05",
+    "s06",
+    "s08"
+  ],
+  "directory": "sections/c_exact_checks",
+  "id": "c",
+  "kind": "appendix",
+  "number": "C",
+  "outline_heading": "### 附录 C Exact low-genus values",
+  "subsections": [
+    {
+      "path": "sections/c_exact_checks/01_exact_values.tex",
+      "title": "Exact low-genus normalization checks"
+    }
+  ],
+  "title": "Exact low-genus values"
+}

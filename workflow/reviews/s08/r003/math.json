@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 55 frozen/live inputs, artifacts, canonical snapshot, actual binding, writer ACK and native PDF/entry/helper hashes; S1 r002, S2 r013, S6 r007, S7 r005 and B r003 are approved and fresh. The historical r001 author response only exits selection: both its live file and r002 frozen copy retain the original hash.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All nine s08 files and other old scientific inputs are unchanged, preserving the Borel degree/parity, stable low-genus cases, fixed marking ranges, full node-splitting indices and mixed-intersection dimensions; the complete fixed-integer-h theorem block remains byte-identical.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The accepted prose correctly assigns 1/h! to ordered transport integrals and retains both dominant-singularity contributions; all inverse-sine factors, node halves, primitive normalization, two final factorial ratios and the constant 24 remain unchanged.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original introductory definitions of b_g(h), b_g, g_2 and rho remain intact, while the unchanged s08 source/interface retain critical data, P_h, the transport integral, coefficient degrees and mixed-intersection scopes; no new alias or earlier technical definition is introduced, and the endpoint distance remains S-y rather than the descendant t_0.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The new guide accurately separates B's analytic tools from s08's principal coefficient, transport constant, two-singularity transfer and complete nef-background comparison. The r002 critical-cone repair and all remaining proofs are unchanged, including full-genus convolution and the mixed-intersection squeeze; no future finite normalization check becomes a premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The new prose keeps h fixed and explicitly leaves the last theorem at asymptotic equivalence. The unchanged final proof retains relative o(1) from coefficient transfer and separately O_h(g^-1) for background replacement, with no promotion of the former; common complex domains, additive errors and full-path/genus estimates retain their original scopes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT impact signature on s08 r003 using the complete original review and r002 recheck. MATH-001 was already resolved in r002; its actual critical-cone repair is unchanged. No issue is newly open or newly resolved in this metadata round, so issues and resolved_issue_ids are empty.",
+    "Exactly the abstract and S1 source/interface changed among retained old inputs, and the S1 handoff was added; these match accepted S1. The selected workflow/reviews/s08/r001/author_response.json is omitted from the new fingerprint but remains intact live and in r002/source, SHA256 222475632a2ba5c702addc3e31732ce0dcaf8d25af99e20d14812a7505698bbe. All nine s08 files, other old scientific/shared inputs, bibliography, macros, outline and unit definition are unchanged.",
+    "Writer ACK SHA256 f598652410922518aa8a4d642d8964b63ec05d45c304d8858efd669d7c34bf32 matches. Actual render source SHA256 426e3661a98136a4d414206e7bb6c8bc3f490493cfd618bfcaae12415b251d2c; actual 55-page PDF SHA256 76661a6eca0a3631afc2fbc44fb3729dfcc098f5f4bb1b75908c6de032ca846c. Receipt binds snapshot c601a2dae270a1a811098502cb2989753307a6f811a4328e77489fde2851cc69, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused s08 validation passes.",
+    "The unit rendering omits the abstract; reused the accepted actual S1 companion at SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. No old proof or calculation was rerun. Only these reports and the authorized ignored byte audit were written; no source/state/old record/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "c601a2dae270a1a811098502cb2989753307a6f811a4328e77489fde2851cc69",
+  "summary": "Pass on s08 r003. The accepted frontmatter accurately describes both singularities, the ordered-integral factor and whole-background comparison while preserving fixed h and the final relative o(1) precision. All scientific proofs, including the resolved critical-cone repair, are unchanged; no unresolved mathematical issue.",
+  "unit": "s08",
+  "verdict": "pass"
+}

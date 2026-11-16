@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Read the full Introduction, interface, writer handoff and applied 144-word abstract, and inspected all five native companion pages including the actual title, abstract and bibliography. The abstract expands ILW at first use and avoids citations and mathematical notation; the Introduction preserves its economical first definitions, explains the two proof routes and independent Section 6 entry, and gives the later proof locations without replacing them by introductory assertions.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The new overview correctly separates Mumford/FP Hodge geometry, MZ fixed-marking expansions, LX/W absolute normalization, HMT uniform inputs, the paper's complete graph/core estimates, FP03's top-Hodge formula, KMZ/MaZ inverse analysis, Buryak's ILW input and FO90's transfer method. One attribution needs correction: lines 76--78 jointly call SW25 Lemmas 14 and 18 estimates of Shen--Wu, although the original SW25 explicitly attributes Lemma 14 to Mirzakhani and proves Lemma 18 as its own all-type bound; see ACADEMIC-010.",
+      "status": "issue"
+    },
+    "citation_precision": {
+      "evidence": "Rechecked the actual primary WP passages: MZ15 Theorem 1.2 is an arbitrary fixed-order, fixed-marking expansion with an initially undetermined universal constant; LX26/W26 Corollary 1.2 identify that constant, HMT25 Theorem 4.2 tracks uniform expansion errors, and SW25 Lemmas 14/18 contain the cited comparisons/all-type estimate. W26 Lemma 7.2 and the retained Appendix C.1 verification support the descendant input, while EGGLS24 Section 6.1/(6.10) explicitly uses a resurgence assumption; all remaining locators and version mappings agree with the original source checks retained from the corresponding body reviews, with the SW14 credit error isolated under attribution.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "Independently confirmed that the four complete theorem environments, six numbered equation blocks and the mathematical setup/marked-vanishing reduction are byte-identical to the captured baseline. The abstract and prose retain the first two corrections for a_g, the fixed-insertion expansion through g^(-3), the two-term top-Hodge result and fixed-defect equivalence without a relative rate; they do not promote Section 4's omitted-proof higher coefficients, treat EGGLS as an unconditional input, or use the planned low-genus/reproducibility Appendix C as a premise of an asymptotic proof.",
+      "status": "pass"
+    }
+  },
+  "issues": [
+    {
+      "id": "ACADEMIC-010",
+      "severity": "minor",
+      "location": "sections/01_introduction/section.tex:76--78 (Weil--Petersson literature paragraph)",
+      "message": "The phrase 'the uniform vertex estimates of Hide--Macera--Thomas ... and Shen--Wu [Lemmas 14 and 18]' merges two distinct attributions. In the actual SW25 PDF, page 11 introduces Lemma 14 as due to Mirzakhani, whereas page 12 introduces and proves Lemma 18 as Shen--Wu's all-type bound. The current wording gives Shen--Wu ownership of both results instead of distinguishing the classic comparison recalled there from their derived bound.",
+      "requested_change": "Distinguish Mirzakhani's comparisons recalled in SW25 Lemma 14 from Shen--Wu's bound in Lemma 18, or use wording that explicitly identifies the cited pair as bounds recalled and derived there. Preserve the input scopes and keep the prose concise; no new shared bibliography entry is needed merely to correct this attribution."
+    }
+  ],
+  "notes": [
+    "First formal whole-s01/abstract review by the original bound academic reviewer; earlier scoped Introduction trials are historical context, not a substitute for this signature. No prior formal s01 issue exists, so resolved_issue_ids is empty and ACADEMIC-010 continues the retained stable issue sequence.",
+    "Verified every current archived/live input and artifact hash, recomputed the exact snapshot/render-source fingerprints, checked the real s01 binding and compared 56 non-Introduction scientific TeX/interface inputs against the captured approved baseline. Other units' stale flags are the expected pending shared-input refresh, not a claim of new scientific-source changes or an acceptance performed here.",
+    "The standard native unit preview does not typeset the abstract; its actual PDF/entry/helper hashes nevertheless match the strict receipt. The separately checked five-page frontmatter companion typesets the frozen main title, author, actual abstract and S1, with only the authorized assembly substitution; its actual fls input records include the abstract, S1 and preamble. The applied abstract matches the original author's proposal byte-for-byte and has 144 words.",
+    "Both receipts bind snapshot 04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb and source e39ea3eb4e2ceb460aad736b66876a766c19922c86c54e371bfa3e08615ce3b4 with strict/pass and empty standard/layout diagnostics; actual unit PDF SHA c16034bdd1e568f4430daab9521b5e6f8c676ecae2cd8367c618e96866a44b76 and companion PDF SHA fcc6c6727480135a73700388f47c91de3796865f3267a5319840892045fae7c6 match their receipts.",
+    "Primary WP/EGGLS passages were read from the actual cached PDFs; unchanged FP/Mumford/KMZ/MaZ/Buryak/FO source checks were reused at their actual roles. Only this round's reports and private ignored page images were written, with no source, state, other report or frozen output changed or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb",
+  "summary": "Changes requested for minor ACADEMIC-010: distinguish the Mirzakhani comparisons recalled in SW25 Lemma 14 from Shen--Wu's Lemma 18 all-type bound. The abstract, protected statements, source locators and precision boundaries otherwise pass.",
+  "unit": "s01",
+  "verdict": "changes_requested"
+}

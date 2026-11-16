@@ -1,0 +1,29 @@
+{
+  "depends_on": [
+    "s06"
+  ],
+  "directory": "sections/07_ilw_transport",
+  "id": "s07",
+  "kind": "body",
+  "number": 7,
+  "outline_heading": "## 第 7 节 Linear Hodge potentials and transport at fixed defect",
+  "subsections": [
+    {
+      "path": "sections/07_ilw_transport/01_hodge_potential.tex",
+      "title": "The linear Hodge potential and the first ILW flow"
+    },
+    {
+      "path": "sections/07_ilw_transport/02_specialization.tex",
+      "title": "A specialization producing the kappa background"
+    },
+    {
+      "path": "sections/07_ilw_transport/03_exact_transport.tex",
+      "title": "Exact recursions and their integration constants"
+    },
+    {
+      "path": "sections/07_ilw_transport/04_borel_transform.tex",
+      "title": "One Borel normalization for all fixed defects"
+    }
+  ],
+  "title": "Linear Hodge potentials and transport at fixed defect"
+}

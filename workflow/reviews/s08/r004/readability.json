@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The new Remark fixes h=1 before the displayed limit and uses only inherited g, rho, b_g(1), b_g, J_1 and z_{0,1}. Before the table it explicitly identifies the middle column with the expression inside that limit and the last with linear extrapolation in 1/g from consecutive g-1,g, so the three displayed rows need no new named sequence (06_proof.tex:46–73, native p39).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The scaled residual uses exactly the h=1 leading normalization 24g^2/rho^2 from (1.6), and the archived checker/README use the same residual and adjacent-intercept rule. The original proof is an exact byte prefix, preserving fixed-h asymptotic equivalence, relative o(1) transfer and the separate O_h(g^{-1}) background bound; the following h=1 limit is explicitly conjectural and asserts no O(g^{-2}) remainder.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The Remark displays its normalized expression directly instead of introducing a coefficient family or another residual symbol, and three selected rows suffice to distinguish observations from extrapolation. Source/precision/provenance details remain in the cited dataset and checks README, while the manuscript states the essential non-fitting and non-proof limitations succinctly.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged four-step proof route reaches Theorem 1.4 before the new optional discussion. The Remark begins by delimiting what that proof determines, then gives a single h=1 conjecture, finite-data diagnostics, an independently evaluated Bessel target and an explicit open problem; no S6 higher coefficient is introduced as a premise.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Actual native pp38–40 show the background proof closing normally, the complete final theorem proof and whole roman Remark 8.2 together on p39, and a clean Appendix B entrance on p40. The two-line limit and three-row table are readable at the normal size; the sole retained bibliography overfull hbox is the individually inspected 3.50723pt URL excess on p55, accepted here as non-blocking because all characters/punctuation remain visible without clipping or overlap.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The new formula keeps genus g, fixed defect h=1 and the fully indexed Bessel zero in their established roles, without replacing g by g_2 or confusing b_g with scalar b. The descriptive table headers introduce no competing mathematical letters, and the previously corrected t_0=x versus endpoint distance S-y distinction remains untouched.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "On p39 the theorem first closes with its original precision statement and right-hand square, then the separately headed Remark changes explicitly to a conjecture. Its column explanation precedes the numbers, the following paragraph separates the Bessel value from fitting and a remainder estimate, and the final open-problem sentence provides a clear ending before the appendix.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer substantive incremental review against accepted s08 r003, retaining the complete Section 8 assessment. Read the actual dispatch, summary, new proof-file/IF append, higher_remark_handoff, checks README/verification and relevant checker logic; the candidate is computed directly from Bessel values before the observation loop, and the extrapolation is the intercept g*residual(g)-(g-1)*residual(g-1).",
+    "Verified all 64 frozen/live input hashes and artifacts, exact snapshot and Engine fingerprint. Six changed existing inputs and nine additions match the summary, with none removed; the original S8 proof and IF are exact prefixes, other old S8 files are unchanged, and the dependency closure matches accepted B r004. Calculation code/data/README and existing output hashes match their verification record; no numerical run or independent dataset validation is claimed here.",
+    "Verified source/PDF/entry/helper receipt hashes and actual equal-source pre-submit native-build provenance, including sealed PDF byte identity with the preflight artifact. Source SHA256: 1a99fdf36a5b7ca24706d7135919e77c5099232a48cab0fa6cb72396bb0d0d4f; PDF SHA256: afd3371929fc92d90718a1d6d1657628504ecfa55fb7e93fc4637cf514a8c093. Strict LaTeX diagnostics are empty; layout diagnostics are not empty.",
+    "Exactly one raw layout diagnostic remains: the LiuData26 URL's 3.50723pt overfull hbox at bibliography lines 97–101. Independently viewed build/remarks-20261115/s08-bib-liu.png before freezing; bibliography_layout.json and the receipt bind that actual p55 visual to these identical frozen PDF/source hashes. This formal review accepts only that inspected approximately 1.2mm excess as non-blocking; the diagnostic is retained, not silently cleared or generalized into a blanket tolerance.",
+    "Personally inspected frozen native pp38,39,40 using private images under build/remarks-20261115/readability-s08-r004/. The 55-page preview now places the whole final proof and new Remark on p39; target pagination is not asserted identical to r003. Shared 10pt/no-showkeys/proof-gap and bibliography styles remain unchanged.",
+    "The README identifies archived exact rational observations for genera 2–20, fixed source commit, six-decimal display rounding and the source's lack of additional independent validation for g>14; it does not turn extraction agreement or finite extrapolation into proof. Read-only status confirms the real /root/s02_readability binding and all prerequisite approvals/freshness; python scripts/validate.py --unit s08 passes. Earlier readability issues were already resolved, so this round has no issue to close again."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "43ee89f7a17ac51068f37e0929c7db9f5bb1c4fae2f63f16695aa892a8e05d30",
+  "summary": "Pass. The h=1 closing conjecture, defined residual/extrapolation columns and non-fitted Bessel target are clear and separate from the unchanged proof. The full Remark renders readably on one page; the sole precisely recorded 3.50723pt bibliography URL excess is individually accepted as non-blocking.",
+  "unit": "s08",
+  "verdict": "pass"
+}

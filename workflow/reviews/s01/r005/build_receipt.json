@@ -1,0 +1,56 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s01",
+      "build/previews/s01/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s01/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s01",
+      "build/previews/s01/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s01",
+      "build/previews/s01/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s01/preview.aux",
+    "build/previews/s01/preview.bbl",
+    "build/previews/s01/preview.tex",
+    "sections/01_introduction/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s01/preview.pdf",
+  "pdf_sha256": "49f8faecdcedebf53d5fde4c10fd1d599be97429a2006bddb26f3c53ec9fbd34",
+  "schema_version": 1,
+  "snapshot": "620b75b92dc1c56b58b10004fabd1a33e2d31e7b3e6e77327047c7bd94fad5dd",
+  "source_hash": "985218efe772e547ca10bc5e64447d0c2c49399055a0909c35a9a23823e9414b",
+  "strict": true,
+  "time": "2026-11-15T22:28:09+00:00",
+  "unit": "s01",
+  "with_dependencies": true
+}

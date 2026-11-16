@@ -1,0 +1,43 @@
+{
+  "arithmetic": "fractions.Fraction",
+  "command": "python -B sections/c_exact_checks/checks/run.py",
+  "defect_ratios": {
+    "2": [
+      "2",
+      "2"
+    ],
+    "3": [
+      "4",
+      "8",
+      "8"
+    ]
+  },
+  "exact_values": {
+    "a_2": "1/2880",
+    "a_3": "1/90720",
+    "b_2": "1/5760",
+    "b_3": "1/725760",
+    "normalized_lambda3_genus3": "1/8"
+  },
+  "independent_review_or_acceptance": false,
+  "labeled_tree_counts": {
+    "2": 2,
+    "3": 10
+  },
+  "output": {
+    "path": "build/c-exact-checks/results.json",
+    "sha256": "0f6655b1cb27ef66190ab96f2440a8d40a1e057bdbcfd8539f03da9411a1669d"
+  },
+  "passed": true,
+  "python_version": "3.14.10",
+  "schema_version": 1,
+  "source_sha256": {
+    "sections/c_exact_checks/checks/run.py": "d80607341d6d81db41376fea2386bb7528590361d6c9929c8b4c3ae349909b5b"
+  },
+  "stage": "computation_only",
+  "targets_used_only_after_reconstruction": true,
+  "tree_class_counts": {
+    "2": 2,
+    "3": 4
+  }
+}

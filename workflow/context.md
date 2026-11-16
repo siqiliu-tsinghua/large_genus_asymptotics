@@ -107,6 +107,24 @@ modules are inserted. User feedback USER-004 is recorded at
 workflow/feedback/s02/USER-004.json; its implementation and independent review
 must preserve the previous mathematics and all historical reports.
 
+## Publication independence
+
+The paper is a self-contained scholarly article. State the mathematical
+rules, finite classifications and deductions needed for each proof in
+the article, or cite the precise established result. Internal Python,
+Markdown, software packages, calculation directories, installation
+instructions, source fingerprints and build conventions do not belong
+in the manuscript and cannot supply a missing proof. Internal programs
+may assist author checks without becoming a reader obligation. An
+identified public dataset may be credited for numerical evidence when
+its conjectural status and the actual observations are clear.
+
+The submission deliverable is one TeX source with the preamble, all
+sections, inline figures and the complete bibliography included. It
+must compile in isolation with standard TeX distribution files alone.
+Keep the modular development tree and verification records internal;
+do not describe their file layout or execution in the article.
+
 ## Material status
 
 The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.

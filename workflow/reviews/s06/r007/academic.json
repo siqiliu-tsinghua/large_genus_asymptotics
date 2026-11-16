@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "All seven s06 files remain byte-identical to approved r006, and the accepted new Introduction's direct route after Section 2 agrees with the existing top-class/tree/Bessel roadmap without repeating definitions or making WP correction inputs part of this proof.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The front matter correctly credits FP03's exact lambda_g formula, the inverse relation recalled by KMZ and MaZ's Bessel background, while the all-stable-type vertex bound, complete tree control, retained saddle correction and elliptic-leaf calculation remain this paper's derivations.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Bibliography, source versions, locators and all s06 translations remain unchanged, including FP00's b_G to beta_G, the two-factorial genus-zero coefficient normalization and MaZ's numbered Proof 6.3, with the refreshed front-matter inputs matching accepted s01 r002 exactly.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The unchanged theorem retains both factorials, g_2, rho and scalar b with relative O(g_2^(-2)) precision, and the abstract's two-term description neither strengthens that result nor attributes the new all-type/tree uniformity to MaZ's fixed-genus background analysis.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the formal dispatch, summary, actual original-writer ACK and frozen-diff path changes, then independently compared archive/live inputs and artifacts against r006: exactly three front-matter paths change, the s01 handoff is added and no input is removed; all seven local inputs and the ACK hash are verified.",
+    "Verified the original binding and fresh approved s01/s02 parents, recomputed snapshot/source fingerprints and matched the actual native PDF/entry/helper hashes to the strict/pass receipt with empty standard/layout diagnostics; the accepted s01 companion's actual abstract review is reused.",
+    "Reused the complete original source review without browsing, rereading old proofs or computing coefficients; r006 has no open academic issue and the previously resolved source-name/locator issues remain fixed, so issues/resolved are empty. Only the two reports were written, without source/state/history/frozen-output changes or rebuilds."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "7a3f3275cbfd1badd0b7e4529a607d8e81f788f65a5eeb764f2e599adce99e19",
+  "summary": "Pass. The accepted front matter preserves s06's classic-source credit, independent proof route, responsibility for uniform tree estimates and original two-term precision.",
+  "unit": "s06",
+  "verdict": "pass"
+}

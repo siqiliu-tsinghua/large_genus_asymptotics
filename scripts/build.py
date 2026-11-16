@@ -53,6 +53,7 @@ def validate_recorded_inputs(engine, fls, allowed, entry, directory):
         if not path.is_relative_to(engine.root):
             continue
         relative = engine.relative(path)
+        engine.assert_no_retired_inputs((relative,))
         local.add(relative)
         if path == entry or path in allowed:
             continue

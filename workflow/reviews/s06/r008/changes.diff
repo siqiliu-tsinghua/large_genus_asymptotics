@@ -1,0 +1,669 @@
+--- previous/references.bib
++++ references.bib
+@@ -298,3 +298,13 @@
+   pages   = {253--276},
+   url     = {https://www.numdam.org/item/CM_1981__43_2_253_0/}
+ }
++
++@misc{LiuData26,
++  author       = {Liu, Si-Qi},
++  title        = {{Hodge} integral data},
++  year         = {2026},
++  howpublished = {\texttt{github.com/siqiliu-tsinghua/hodge\_data}},
++  note         = {Exact rational tables for genera 2--20,
++                  commit \texttt{88dd4a5}},
++  url          = {https://github.com/siqiliu-tsinghua/hodge_data/tree/88dd4a501ecf3fbc124a823ad1589911f86a14e5}
++}
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -89,8 +89,8 @@
+ \begin{thm}
+ \label{thm:lambda-one}
+ For real $x\geq0$, define
+-\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \qquad
+-N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
++\[\Cin(x)=\int_0^x \frac{1-\cos t}{t}\dd t, \quad
++\mbox{and } N_g=\frac{(2g-3)!(3g-3)!(4\pi^2)^{2g-3}}{\sqrt{g}(24\pi^2)^{3g-3}}.\]
+ As $g\to \infty$, we have
+ \begin{equation}
+ a_g=\frac{e^{\Cin(2\pi)}}{\sqrt{\pi}}N_g
+--- previous/sections/06_top_hodge/04_correction_and_proof.tex
++++ sections/06_top_hodge/04_correction_and_proof.tex
+@@ -205,3 +205,23 @@
+ \]
+ This is \eqref{eq:g111}.
+ \end{prfn}
++
++\begin{samepage}
++\begin{rmk}[Further coefficients]\label{rmk:s06:further-coefficients}
++Continuing the same tree and saddle calculation, the coefficients
++of $g_2^{-2}$ and $g_2^{-3}$ in the relative expansion of
++\eqref{eq:g111} are, respectively,
++\[
++ \frac{b^2}{2}+b+\frac14-\frac{2b+2/3}{z_{0,1}^2}
++\]
++and
++\[
++ \begin{aligned}
++ &\frac{b^3}{6}+\frac{16b^2}{5}+\frac{47b}{20}+\frac{103}{240}\\
++ &\quad+\frac{192b^2-592b-187}{120z_{0,1}^2}
++       +\frac{152(3b+1)}{45z_{0,1}^4}.
++ \end{aligned}
++\]
++We omit the details.
++\end{rmk}
++\end{samepage}
+--- previous/sections/06_top_hodge/INTERFACE.md
++++ sections/06_top_hodge/INTERFACE.md
+@@ -122,3 +122,48 @@
+ from finite coefficient checks. Independent frozen review is still needed.
+ Actual validation/build outcomes and author checks are reported in the
+ current handoff. No shared input, accepted chapter or old record is edited.
++
++## Supplementary reported coefficients
++
++The new rmk:s06:further-coefficients is directly after the unchanged
++proof of Theorem 1.3. It reports, respectively, the coefficients
++of g_2^-2 and g_2^-3 in the relative expansion of eq:g111:
++
++    b^2/2+b+1/4-(2b+2/3)/z_{0,1}^2,
++
++    b^3/6+16b^2/5+47b/20+103/240
++      +(192b^2-592b-187)/(120z_{0,1}^2)
++      +152(3b+1)/(45z_{0,1}^4).
++
++Only the existing scalar b and Bessel zero are used. No new
++coefficient name, Bessel alias, numbered equation or principal
++result is introduced. The Remark uses the independent Remark
++counter, unnumbered displays and an explicitly omitted derivation.
++All old source, proof and formula content remains verbatim,
++including the proved O(g_2^-2) remainder and the original
++Introduction/Theorem 1.3 precision.
++
++The checks directory supplies a self-contained original-writer
++reconstruction of the phase/Gaussian coefficients and all seven
++tree groups through loss three. It independently enumerates the
++rooted trees, computes automorphism orders and derives the low
++vertex polynomials and critical edge integrals before composing
++the coefficients. Target expressions enter only post-comparison.
++Code-local X,L,z are declared internal and are absent from the
++published Remark.
++
++The actual run.py execution completed with SymPy 1.14.0 and
++mpmath 1.3.0. Generated data stay under build/s06-higher-check/.
++The tracked verification.json binds the actual algorithm/output
++hashes and records computation_only status. It is neither a
++proof of a new uniform remainder nor a formal review signature.
++No A/S4 long reconstruction or private preparation code is
++imported or rerun. The unchanged sources for the calculation are
++the exact tree/vertex identities, the beta sine series and the
++w ODE already established here; no new primary citation is needed.
++The appended LiuData26 bibliography entry is not used by this
++Remark or program.
++
++The original writer_handoff.md is preserved as history. The new
++higher_remark_handoff.md records the limited addition and actual
++execution. Live acceptance/freshness remains a workflow matter.
+--- /dev/null
++++ sections/06_top_hodge/checks/README.md
+@@ -0,0 +1,84 @@
++# Supplementary top-Hodge coefficients
++
++This small bundle reconstructs the two reported coefficients in
++rmk:s06:further-coefficients. The paper omits their details at the
++user's request. This computation does not alter the precision or
++proof of Theorem 1.3 and is not a mathematical-review signature.
++
++Run from the repository root with Python 3.10 or newer:
++
++    python -B sections/06_top_hodge/checks/run.py
++
++The pinned dependencies are SymPy 1.14.0 and mpmath 1.3.0. The
++program locates the existing workspace-local installation at
++build/a-calculations/python-packages and checks both versions.
++If that installation is absent:
++
++    python -m pip install --target build/a-calculations/python-packages sympy==1.14.0 mpmath==1.3.0
++
++Only installed package code is loaded from build. No preparation
++algorithm, generated coefficient, private result, reference cache,
++Appendix A program or Section 4 program is imported. Bytecode is
++disabled. Generated output goes only to
++build/s06-higher-check/results.json and console text.
++
++## Reconstruction
++
++The algorithm adapts the original writer's independently completed
++research calculation into a self-contained source file.
++
++1. The ODE x w''+w=0 and the critical initial values generate the
++   circle phase. A finite exponential recursion and exact Gaussian
++   moments produce the Phi-power amplitude coefficients through
++   inverse cubic order. The phase is computed through degree nine,
++   and all odd half-order averages through the seventh vanish.
++2. Rooted labeled trees with at most three edges are generated by
++   Pruefer sequences. The distinguished vertex has large genus;
++   the root's internal marker is not a negative genus. Every small
++   genus assignment in the relevant range is tested for stability
++   and loss E+sum_small(2g_v-3+n_v)<=3. Small genus at least three
++   already has loss at least five and cannot enter these orders.
++3. Permutations fixing the large vertex deduplicate the classes
++   and compute their automorphism orders. The enumeration produces
++   seven types; that count is checked after reconstruction.
++4. The sine series supplies the low beta coefficients. Finite
++   Phi/J0 extraction gives the actual small-vertex polynomials.
++   Internal edge parameters are integrated exactly. The remaining
++   Bessel moments satisfy I_0=Phi(X),
++   I_j=Phi(X)-j^2 I_(j-1)/X at the critical zero.
++5. The factorial and square-root shifts of the large vertex are
++   retained when composing all seven groups. The proposed compact
++   coefficients enter only the final exact post-comparisons.
++
++The comparison scale is the accepted top-vertex saddle scale
++beta_g*g_2!*R^(-g_2)/(J_1(z_{0,1})*sqrt(2pi*g_2)).
++Fixed beta genus shifts use the proved exponential asymptotics;
++their errors contribute no inverse-power coefficient. Recovering
++b_g supplies the second factorial and the factor 12^(-g_2), as
++in the original proof. No WP coefficient enters this calculation.
++
++Internal X=x_*, L=pi^2 J_1(z_{0,1})^2/6 and z=1/g_2 are algebra
++variables in the code, not manuscript notation. The printed
++Remark uses only the already established b and z_{0,1}.
++Numerical evaluations are produced after the exact reconstruction
++and are not fitting data or coefficient inputs.
++
++## Evidence and limits
++
++The generated JSON records every tree class, its automorphism
++order, small-edge amplitude where needed, phase and Gaussian
++coefficients, complete grouped coefficients, exact comparison
++differences, dependency versions and the actual algorithm SHA256.
++The tracked verification.json records the completed execution,
++source and output fingerprints, exact reported formulas and
++numerical evaluations. Its status is computation_only.
++
++The original writer's research was separately cross-checked by
++the coordinator's inverse-function/Puiseux calculation and by the
++original mathematical reviewer's research preparation. Those are
++provenance of the calculation, not acceptance of this new frozen
++Remark. The archived program imports none of those outputs and
++does not assert a uniform higher-order remainder. The complete
++tree/genus tail and higher saddle proof can be continued by the
++same method, but the paper deliberately omits that derivation.
++No additional external source or data entry is required here.
+--- /dev/null
++++ sections/06_top_hodge/checks/run.py
+@@ -0,0 +1,346 @@
++"""Exact finite checks for the supplementary Section 6 coefficients.
++
++Self-contained writer algorithm; no preparation code or data is imported.
++"""
++
++import sys
++from pathlib import Path
++
++sys.dont_write_bytecode = True
++ROOT = Path(__file__).resolve().parents[3]
++sys.path.insert(0, str(ROOT / "build" / "a-calculations" / "python-packages"))
++
++import json
++from hashlib import sha256
++import sympy as sp
++import mpmath as mp
++from itertools import permutations, product
++from heapq import heapify, heappop, heappush
++from math import factorial
++
++if sp.__version__ != "1.14.0" or mp.__version__ != "1.3.0":
++    raise RuntimeError("Use SymPy 1.14.0 and mpmath 1.3.0; see checks/README.md")
++
++X = sp.Symbol("X", positive=True)
++L = sp.Symbol("L", real=True)
++t = sp.Symbol("t", real=True)
++z = sp.Symbol("z")
++N = 9
++
++
++def mul(a, b, degree):
++    return [
++        sp.expand(sum(a[j] * b[n - j] for j in range(n + 1)))
++        for n in range(degree + 1)
++    ]
++
++
++def ode_coefficients(degree):
++    # F(q)=w(X(1+q))/R: (1+q)F''+X F=0, F(0)=1,F'(0)=0.
++    a = [sp.S.One, sp.S.Zero]
++    for j in range(degree - 1):
++        a.append(
++            sp.expand(-(j * (j + 1) * a[j + 1] + X * a[j]) / ((j + 1) * (j + 2)))
++        )
++    return a
++
++
++def phase_coefficients(degree):
++    a = ode_coefficients(degree)
++    circle_increment = [sp.S.Zero] + [
++        sp.I ** j / sp.factorial(j) for j in range(1, degree + 1)
++    ]
++    power = [sp.S.One] + [sp.S.Zero] * degree
++    W = [sp.S.Zero] * (degree + 1)
++    for j, coefficient in enumerate(a):
++        W = [sp.expand(x + coefficient * y) for x, y in zip(W, power)]
++        power = mul(power, circle_increment, degree)
++    # H=log W. Coefficients follow from W H'=W'.
++    h = [sp.S.Zero]
++    for n in range(1, degree + 1):
++        h.append(
++            sp.expand(
++                W[n] - sum(j * h[j] * W[n - j] for j in range(1, n)) / n
++            )
++        )
++    return h
++
++
++def gaussian_average(poly):
++    result = sp.S.Zero
++    for (degree,), coefficient in sp.Poly(sp.expand(poly), t).terms():
++        if degree % 2 == 0:
++            result += coefficient * sp.factorial2(degree - 1) / X ** (degree // 2)
++    return sp.factor(result)
++
++
++def saddle_coefficients(k, h, order=3):
++    # Divide amplitude by Phi(X)^k:
++    # exp(-mH(theta)) A_{Phi^k}/Phi(X)^k
++    # =exp(-mH+(1-k)(i theta-H)).
++    delta = 1 - k
++    exponent = [sp.S.Zero]
++    for j in range(1, 2 * order + 2):
++        value = -h[j + 2] * t ** (j + 2) - delta * h[j] * t ** j
++        if j == 1:
++            value += delta * sp.I * t
++        exponent.append(sp.expand(value))
++    exponential = [sp.S.One]
++    for n in range(1, 2 * order + 2):
++        exponential.append(
++            sp.expand(
++                sum(j * exponent[j] * exponential[n - j] for j in range(1, n + 1))
++                / n
++            )
++        )
++    for n in range(1, 2 * order + 2, 2):
++        assert gaussian_average(exponential[n]) == 0
++    return [gaussian_average(exponential[2 * r]) for r in range(order + 1)]
++
++
++def shifted_star_series(coefficients, leaves, automorphisms, order=3):
++    # m=g_2-leaves; loop weights L already contain beta_1*(2pi)^2*R*Phi(X).
++    ratio = z ** leaves
++    for j in range(leaves):
++        ratio /= 1 - j * z
++    ratio *= (1 - leaves * z) ** sp.Rational(-1, 2)
++    saddle = sum(
++        coefficients[r] * (z / (1 - leaves * z)) ** r
++        for r in range(order - leaves + 1)
++    )
++    return sp.series(
++        L ** leaves / automorphisms * ratio * saddle, z, 0, order + 1
++    ).removeO().expand()
++
++
++def labeled_trees(vertices):
++    if vertices == 1:
++        yield ()
++        return
++    for sequence in product(range(vertices), repeat=vertices - 2):
++        degree = [1 + sequence.count(i) for i in range(vertices)]
++        leaves = [i for i, n in enumerate(degree) if n == 1]
++        heapify(leaves)
++        edges = []
++        for neighbor in sequence:
++            leaf = heappop(leaves)
++            edges.append(tuple(sorted((leaf, neighbor))))
++            degree[neighbor] -= 1
++            if degree[neighbor] == 1:
++                heappush(leaves, neighbor)
++        edges.append(tuple(sorted((heappop(leaves), heappop(leaves)))))
++        yield tuple(sorted(edges))
++
++
++def rooted_canonical(genera, edges):
++    # Vertex zero represents the unique large-genus vertex.
++    representations = []
++    for rest in permutations(range(1, len(genera))):
++        order = (0,) + rest
++        index = {old: new for new, old in enumerate(order)}
++        representations.append(
++            (
++                tuple(genera[i] for i in order),
++                tuple(sorted(tuple(sorted((index[a], index[b]))) for a, b in edges)),
++            )
++        )
++    canonical = min(representations)
++    return canonical, representations.count(canonical)
++
++
++def enumerate_cores():
++    classes = {}
++    # E<=3 suffices for loss<=3. A small genus>=3 already has loss>=5.
++    for vertices in range(1, 5):
++        for edges in labeled_trees(vertices):
++            degrees = [sum(v in edge for edge in edges) for v in range(vertices)]
++            for small in product(range(3), repeat=vertices - 1):
++                if any(2 * g - 2 + n <= 0 for g, n in zip(small, degrees[1:])):
++                    continue
++                loss = len(edges) + sum(
++                    2 * g - 3 + n for g, n in zip(small, degrees[1:])
++                )
++                if loss > 3:
++                    continue
++                key, aut = rooted_canonical((-1,) + small, edges)
++                classes[key] = aut
++    return classes
++
++
++def beta_coefficients(maximum):
++    # Reciprocal sine series, indexed by the even degree.
++    sine = [
++        sp.Rational((-1) ** j, 2 ** (2 * j) * factorial(2 * j + 1))
++        for j in range(maximum + 1)
++    ]
++    values = [sp.S.One]
++    for n in range(1, maximum + 1):
++        values.append(-sum(sine[j] * values[n - j] for j in range(1, n + 1)))
++    return values
++
++
++def small_vertex(genus, edge_parameters, beta):
++    degree = 2 * genus - 3 + len(edge_parameters)
++    assert 0 <= degree <= 2
++    x = sp.Symbol("vertex_x")
++    phi = sum(
++        sp.Rational((-1) ** j, factorial(j) * factorial(j + 1)) * x ** j
++        for j in range(degree + 1)
++    )
++    j0_product = sp.prod(
++        sum(
++            sp.Rational((-1) ** j, factorial(j) ** 2) * (parameter * x) ** j
++            for j in range(degree + 1)
++        )
++        for parameter in edge_parameters
++    )
++    inverse = sp.series(phi ** (-degree - 1), x, 0, degree + 1).removeO()
++    return sp.expand(beta[genus] * factorial(degree) * inverse * j0_product).coeff(x, degree)
++
++
++def integrate_critical_j0(polynomial, parameter, phi_star):
++    # I_0=Phi(X), I_j=Phi(X)-j^2 I_(j-1)/X at J_0(2sqrt(X))=0.
++    p = sp.Poly(sp.expand(polynomial), parameter)
++    moments = [phi_star]
++    for j in range(1, p.degree() + 1):
++        moments.append(sp.expand(phi_star - j ** 2 * moments[j - 1] / X))
++    return sp.factor(
++        sum(coefficient * moments[degree[0]] for degree, coefficient in p.terms())
++    )
++
++
++def classify(genera, edges, degrees):
++    edge_count = len(edges)
++    if edge_count == 0:
++        return "no_edge"
++    if all(g == 1 and n == 1 for g, n in zip(genera[1:], degrees[1:])):
++        return {1: "one_elliptic_leaf", 2: "two_elliptic_leaves", 3: "three_elliptic_leaves"}[edge_count]
++    if 2 in genera[1:]:
++        return "genus_two_leaf"
++    if 0 in genera[1:]:
++        return "rational_center_two_elliptic_leaves"
++    return "elliptic_middle_and_leaf"
++
++
++def reconstruct_groups(saddle):
++    beta = beta_coefficients(2)
++    phi_star = sp.Symbol("PhiStar", positive=True)
++    groups = {}
++    records = []
++    for (genera, edges), aut in sorted(enumerate_cores().items()):
++        degrees = [sum(v in edge for edge in edges) for v in range(len(genera))]
++        loss = len(edges) + sum(
++            2 * g - 3 + n for g, n in zip(genera[1:], degrees[1:])
++        )
++        name = classify(genera, edges, degrees)
++        assert name not in groups
++        record = {
++            "type": name,
++            "vertex_genera": ["large", *genera[1:]],
++            "edges": [list(edge) for edge in edges],
++            "automorphisms": aut,
++            "loss": loss,
++            "small_genus_total": sum(genera[1:]),
++            "large_valence": degrees[0],
++        }
++        if name in {
++            "no_edge", "one_elliptic_leaf", "two_elliptic_leaves", "three_elliptic_leaves"
++        }:
++            groups[name] = shifted_star_series(saddle[len(edges)], len(edges), aut)
++        else:
++            assert loss == 3 and degrees[0] == 1 and sum(genera[1:]) == 2
++            parameters = sp.symbols("s0:" + str(len(edges)), nonnegative=True)
++            small_product = sp.S.One
++            for v in range(1, len(genera)):
++                incident = [parameters[i] for i, edge in enumerate(edges) if v in edge]
++                small_product *= small_vertex(genera[v], incident, beta)
++            root_edge = next(i for i, edge in enumerate(edges) if 0 in edge)
++            for i, parameter in enumerate(parameters):
++                if i != root_edge:
++                    small_product = sp.integrate(small_product, (parameter, 0, 1))
++            amplitude = integrate_critical_j0(
++                sp.expand(small_product), parameters[root_edge], phi_star
++            )
++            # (2pi)^4 R^3 amplitude / Aut, with R/Phi(X)=X and
++            # L=beta_1*(2pi)^2*R*Phi(X). No proposed coefficient enters.
++            coefficient = sp.factor(L ** 2 * X * amplitude / (beta[1] ** 2 * phi_star * aut))
++            groups[name] = coefficient * z ** 3
++            record["small_edge_polynomial"] = str(sp.factor(small_product))
++            record["critical_amplitude"] = str(amplitude)
++        records.append(record)
++    return groups, records, beta
++
++
++def main():
++    phase = phase_coefficients(N)
++    saddle = {k: saddle_coefficients(k, phase) for k in range(4)}
++    groups, cores, beta = reconstruct_groups(saddle)
++    total = sp.expand(sum(groups.values()))
++    coefficients = [sp.factor(total.coeff(z, r)) for r in range(4)]
++
++    # The full coefficient calculation is complete before announced formulas
++    # and class-count guards are introduced.
++    assert len(cores) == 7
++    assert sp.simplify(coefficients[1] - (L - sp.Rational(1, 4) + 1 / (24 * X))) == 0
++    b = sp.Symbol("b", real=True)
++    zero = sp.Symbol("z01", positive=True)
++    substitution = {X: zero ** 2 / 4, L: b + sp.Rational(1, 4) - 1 / (6 * zero ** 2)}
++    compact = [
++        b ** 2 / 2 + b + sp.Rational(1, 4) - (2 * b + sp.Rational(2, 3)) / zero ** 2,
++        b ** 3 / 6 + sp.Rational(16, 5) * b ** 2 + sp.Rational(47, 20) * b
++        + sp.Rational(103, 240) + (192 * b ** 2 - 592 * b - 187) / (120 * zero ** 2)
++        + sp.Rational(152, 45) * (3 * b + 1) / zero ** 4,
++    ]
++    differences = [
++        sp.factor(coefficients[order].subs(substitution) - target)
++        for order, target in zip((2, 3), compact)
++    ]
++    assert differences == [0, 0]
++
++    mp.mp.dps = 70
++    zero_value = mp.besseljzero(0, 1)
++    xvalue = zero_value ** 2 / 4
++    lvalue = mp.pi ** 2 * mp.besselj(1, zero_value) ** 2 / 6
++    numeric = [
++        str(sp.N(coefficient.subs(
++            {X: sp.Float(str(xvalue), 65), L: sp.Float(str(lvalue), 65)}
++        ), 50))
++        for coefficient in coefficients
++    ]
++    script = Path(__file__).resolve()
++    result = {
++        "schema_version": 1,
++        "stage": "computation_only",
++        "independent_review_or_acceptance": False,
++        "manuscript_scope": "Supplementary reported coefficients; paper details omitted; original theorem unchanged.",
++        "sympy_version": sp.__version__,
++        "mpmath_version": mp.__version__,
++        "source_sha256": {script.relative_to(ROOT).as_posix(): sha256(script.read_bytes()).hexdigest()},
++        "internal_symbols": {"X": "x_*", "L": "pi^2*J_1(z01)^2/6", "z": "1/g_2", "z01": "z_{0,1}"},
++        "beta_from_sine": [str(value) for value in beta],
++        "phase_coefficients": {str(j): str(phase[j]) for j in range(2, N + 1)},
++        "saddle_for_Phi_power": {str(k): [str(v) for v in values] for k, values in saddle.items()},
++        "cores": cores,
++        "group_coefficients": {
++            name: [str(sp.factor(poly.coeff(z, r))) for r in range(4)]
++            for name, poly in groups.items()
++        },
++        "complete_coefficients": [str(value) for value in coefficients],
++        "compact_reported_coefficients": [str(value) for value in compact],
++        "postcomparison_differences": [str(value) for value in differences],
++        "numeric_coefficients": numeric,
++        "targets_used_only_after_reconstruction": True,
++        "passed": True,
++    }
++    directory = ROOT / "build" / "s06-higher-check"
++    directory.mkdir(parents=True, exist_ok=True)
++    output = directory / "results.json"
++    output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
++    print("Seven rooted tree classes reconstructed; both exact compact comparisons passed.")
++    print("g_2^-2:", numeric[2])
++    print("g_2^-3:", numeric[3])
++    print("Output:", output.relative_to(ROOT).as_posix())
++
++
++if __name__ == "__main__":
++    main()
+--- /dev/null
++++ sections/06_top_hodge/checks/verification.json
+@@ -0,0 +1,33 @@
++{
++  "command": "python -B sections/06_top_hodge/checks/run.py",
++  "compact_reported_coefficients": [
++    "b**2/2 + b + 1/4 - (2*b + 2/3)/z01**2",
++    "b**3/6 + 16*b**2/5 + 47*b/20 + 103/240 + (192*b**2 - 592*b - 187)/(120*z01**2) + (152*b/15 + 152/45)/z01**4"
++  ],
++  "dependency_versions": {
++    "mpmath": "1.3.0",
++    "sympy": "1.14.0"
++  },
++  "independent_review_or_acceptance": false,
++  "manuscript_scope": "Supplementary reported coefficients; paper details omitted; original theorem unchanged.",
++  "numeric_coefficients": {
++    "g_2^-2": "0.30472431059522700631788618109503624345716928507531",
++    "g_2^-3": "0.83396718314779282089845542187193683972375687288646"
++  },
++  "output": {
++    "path": "build/s06-higher-check/results.json",
++    "sha256": "7f64a84a9508f7190ad498a6f0dd8bab1457ff8bd89518b563fc76ef3d4d7d75"
++  },
++  "passed": true,
++  "postcomparison_differences": [
++    "0",
++    "0"
++  ],
++  "rooted_tree_types": 7,
++  "schema_version": 1,
++  "source_sha256": {
++    "sections/06_top_hodge/checks/run.py": "f14e748dbecbd3a63b51d81416b5e0f41da446aa0638f289630a840adbe84f3b"
++  },
++  "stage": "computation_only",
++  "targets_used_only_after_reconstruction": true
++}
+--- /dev/null
++++ sections/06_top_hodge/higher_remark_handoff.md
+@@ -0,0 +1,88 @@
++# s06 supplementary-coefficient author handoff
++
++Writer: /root/s02_writer, retained original writer session.
++This is the authorized post-proof addition, not a main-proof
++rewrite or an independent review signature.
++
++## Scope and manuscript boundary
++
++The only scientific addition is rmk:s06:further-coefficients,
++after the completed proof of Theorem 1.3 in
++04_correction_and_proof.tex. It reports the next two relative
++coefficients using only b and z_{0,1}, on unnumbered displays,
++with the details explicitly omitted. A local samepage wrapper
++keeps this short Remark together.
++
++The old file is retained as an exact prefix. Every old proof,
++principal statement, label and numbered equation is unchanged.
++The original theorem still proves only its existing two-term
++formula and O(g_2^-2) relative remainder. No stronger theorem
++or unproved higher-order uniform remainder is inserted.
++The user's Introduction and/quad/mbox edit remains verbatim.
++
++INTERFACE.md has an appended limited-status record. The original
++writer_handoff.md and all other old section files are preserved.
++The new checks bundle is run.py, README.md and verification.json.
++No shared file, state, other section, old review or frozen source
++was edited. The additional LiuData26 entry is not cited or used
++in this calculation.
++
++## Algorithm and actual execution
++
++The self-contained program adapts this writer's independently
++completed Gaussian/tree research algorithm. It reads no private
++build/ref algorithm, result or data. Its only build imports are
++the installed pinned third-party dependencies explicitly allowed
++by the task.
++
++The w ODE produces the phase through degree nine. A finite
++exponential recursion and exact Gaussian moments produce the
++four Phi-power amplitude expansions; odd half-orders through
++seven average to zero. Pruefer enumeration, all relevant small
++genus assignments and stability/loss tests produce the seven
++rooted tree types. Permutations fixing the large vertex derive
++the reciprocal automorphism factors.
++
++Finite sine/Phi/J0 extraction derives the actual low beta and
++small-vertex polynomials. Internal edge integrals and critical
++Bessel moments then produce the three non-star contributions,
++alongside the shifted elliptic-star contributions. Only after
++the full reconstruction are the two compact reported expressions
++compared exactly.
++
++Actually ran:
++
++    python -B sections/06_top_hodge/checks/run.py
++
++The run completed using SymPy 1.14.0 and mpmath 1.3.0; both exact
++differences are zero. The coefficients evaluate to
++0.30472431059522700631788618109503624345716928507531 and
++0.83396718314779282089845542187193683972375687288646.
++The generated output is build/s06-higher-check/results.json.
++The tracked verification record binds the actual code/output
++SHA256 and is explicitly computation_only, not review/acceptance.
++No unchanged Appendix A or Section 4 long calculation was rerun.
++
++The earlier independent coordinator and mathematical-reviewer
++research checks are supporting provenance; this new manuscript
++snapshot still requires the real three-role frozen review.
++The paper's omission of details is maintained as requested.
++
++## Checks and next step
++
++Static checks cover the unchanged old-file prefix, proofs,
++numbered formulas and old handoff; the approved-parent and
++shared-input scope; inherited notation and new label; UTF-8/LF,
++controls and no unit bytecode/generated output; source/output
++receipt binding; draft gate and unit validation.
++All these guards passed, including Engine().validate_draft('s06')
++and python -B scripts/validate.py --unit s06. The old 26 numbered
++formula labels and nine principal statements are retained; the
++new Remark adds no numbered equation or principal-result counter.
++
++The new source uses no additional macro or primary reference.
++No known source or computational gap remains for these reported
++coefficients. Native layout/building and the formal freeze are
++left to the coordinator. The designated external s06_writer.md
++records the original-author acknowledgment. STOP after final
++source checks and hash reporting; do not start S8 in this task.

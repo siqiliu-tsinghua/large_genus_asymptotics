@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Publication independence is satisfied by the eleven unchanged s06 files: its manuscript offers no internal software, README, directory or attachment obligation, and the post-proof Further coefficients Remark retains its concise, explicitly omitted-details presentation without promising code.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Unchanged FP03/FP00, KMZ and Manin--Zograf credits remain distinct from the paper's all-type bounds, full-tree control, saddle and elliptic-leaf derivations, with no internal verification file treated as a formal source.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The source versions and locators, explicit FP00 b_G-to-beta_G mapping, MaZ Proof 6.3 and existing Bessel/factorial normalizations are unchanged, while the reviewed URL-break edit preserves bibliographic metadata and the incoming S1/S2 sources are actually approved and fresh.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The original theorem remains supported by in-text mathematical arguments and precise literature rather than software completing a proof, with the user-authorized supplementary g_2^(-2)/g_2^(-3) calculation still omitting details, supplying no main-proof premise and asserting no stronger uniform remainder or completed single-TeX delivery.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and r008 result, applying the already read publication clauses; independently confirmed eleven local files unchanged, ten changed shared/S1 inputs, one added S1 handoff and no removals or Appendix A dependency.",
+    "Retained the original complete s06 source/claim assessment and the substantive r008 supplementary calculation review without revisiting unchanged code or literature; a frozen-TeX scan finds no engineering reader obligation, and ACADEMIC-005/006 remain resolved.",
+    "Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, actual binding and both approved/fresh parents; native PDF/entry/helper and preserved preflight/sealing hashes agree with the strict/pass receipt and empty standard/layout diagnostics.",
+    "No issue is open; only these reports were written without source/state/other-report/history/frozen-output changes, and the future isolated single-TeX export is outside this scoped signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "95e86a19e3df57fc527897bca025087501759c2998b10493a884962680587552",
+  "summary": "Pass. S6 retains its self-contained mathematical route, precise classic-source credit and original theorem precision, with supplementary calculations separate from software obligations and proof premises.",
+  "unit": "s06",
+  "verdict": "pass"
+}

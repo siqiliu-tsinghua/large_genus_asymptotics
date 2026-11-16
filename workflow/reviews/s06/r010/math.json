@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact and native source/PDF/entry/helper hashes with S1 r005 and S2 r016 approved and fresh; Theorem 1.3 retains its precise top-vertex and geometric inputs, with retired C outside its closure and no WP/A premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 11 S6 files are byte-identical to r009, preserving whole-kappa degrees, stable-tree vertex/edge dimensions, the genus-zero exception and the g_2 saddle index after removal of the introductory C guide.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged beta series, tree 1/Aut weights, powers of 12 and final factorial/Bessel scale preserve every factor, including the independent Genus two example whose elliptic-pair contribution has weight 1/2 and does not import b_2 from C.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The identical interface and scientific source preserve g_2, z_(0,1), rho and the distinctions among beta_g, b_g and the scalar b, with no new alias or local assumption introduced by the revised organization paragraph.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained full review applies to the identical written exact-vertex, Bessel, whole-tree, saddle and elliptic-leaf arguments, which use neither C values nor a program; the local Genus two example remains a derived check and the higher-coefficient Remark remains supplemental with details explicitly omitted.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged all-type vertex bound, complete tree/genus tail and integrable saddle remainder retain their proved scopes and original relative O(g_2^-2) theorem error, which is not strengthened by the supplementary coefficients or the finite genus-two example.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh REMOVE-C impact signature on snapshot 086cb18bfe8a8e78caaea4a03f2a6401785441cf0879847383375cfd05266ffd, retaining the original complete mathematical assessment after independently verifying the assigned delta; no MATH issue is open.",
+    "The exact delta from r009 is three changed inherited inputs (S1 section.tex, S1 INTERFACE.md and workflow/PROTOCOL.md), one added S1 appendix_retirement_handoff.md and no removed input; all 11 S6 files are unchanged. Original-writer ACK SHA256 3b7503cd919ecc5be07ccf91ca9f0050274b3ad8d34152d62e49628a36fa8a8e matches this scope.",
+    "The preserved Genus two example in 03_tree_tails.tex derives its beta coefficients from the in-text sine series and combines its two trees with the elliptic-pair half weight; no dependence on retired C is implied by retaining this local finite calculation. The original proof and Further coefficients Remark are unchanged.",
+    "Actual source SHA256 42f9eb3041d2bcc5b25e43999816dba1d968633e27f04e4e7f5fd18e2f8fcf57; native PDF SHA256 010114626fb0c2274f416db5da6d894abf8fa5c7ae2559c9c84b594494a3b7c6. Current and preserved preflight receipts agree on source/PDF, entry/helper hashes match and strict/layout diagnostics are empty; pre-submit build and equal-source sealing are transparently recorded.",
+    "No unchanged proof or computation was rerun. Only this round's two mathematical reports were written, without source/state/historical/frozen-output changes. Final single-file export and isolated compilation are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "086cb18bfe8a8e78caaea4a03f2a6401785441cf0879847383375cfd05266ffd",
+  "summary": "Pass on S6 r010: retiring internal C changes no top-Hodge proof input, local example, normalization or proved precision; current frozen inputs and native receipt match, with the independent genus-two example and supplemental higher Remark preserved.",
+  "unit": "s06",
+  "verdict": "pass"
+}

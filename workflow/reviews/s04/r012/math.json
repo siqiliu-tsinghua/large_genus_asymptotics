@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 72 frozen/live inputs, artifacts, canonical snapshot, actual binding, writer ACK and native PDF/entry/helper hashes; S1 r002, S2 r013, S3 r010 and A r010 are approved and fresh, and the four changed/added frontmatter paths match accepted S1 exactly.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 24 s04 files and every other old scientific input are unchanged, preserving stable vertex/profile ranges, genus-correct loop contraction, retained q=0,1,2 cores and the fixed orders used in their coefficient extraction.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The complete Theorem 1.1 block and all s04 formulas retain the absolute Z_g/F_g normalization, graph/loop and raw-connector factors, a_g/N_g restoration and the two stated correction coefficients; the supplementary Remark and its sqrt(pi) exp(-Cin) normalization are unchanged and are not promoted into the abstract or Introduction.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged introductory setup supplies the same a_g, N_g, Cin, Hodge and Chow conventions, while s04's signed functional, paired weights, degree counts and absolute Q-groups retain their existing first definitions and scopes; the new guide adds no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The new frontmatter correctly assigns unconditional absolute WP reconstruction to Appendix A and finite-core synthesis to Section 4, with the conditional prediction only a comparison. The original theorem proof, entire higher-coefficient Remark and all checking sources/documents are byte-identical; the auxiliary coefficients remain outside the theorem proof and its stated precision.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Unchanged source retains the M=3 full graph tail, all-legal large-loop discard before HMT, fixed-q expansions and factorially summable remainders giving strict O(g^-3) without a logarithmic loss; the abstract's first two corrections describes exactly this precision and adds no stronger uniformity claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT impact signature on s04 r012, retaining the original complete proof and coefficient verification after independently checking this delta. No prior MATH issue is open; issues and resolved_issue_ids are empty. No unchanged algorithm was rerun.",
+    "Exactly three existing inputs changed: abstract and S1 source/interface. The S1 handoff is the sole added input, with no removal. Every s04 file, all old scientific/shared sources, bibliography, macros, outline and unit definition are unchanged. Writer ACK SHA256 a4e0480f315104e563820165c3e2f1301f7e770e80a5c60cfa3ef0a324ff6c19 matches.",
+    "Actual render source SHA256 01fc87184b1a8fb277c9b09944a01d86f97b4a39f783a7470bc37f1f23414b73; actual 51-page PDF SHA256 db5ef63ac42aaf1f280b1c5cde886604a9a4f6d85555ca6895ba11302054127d. Receipt binds snapshot 5583d58297724848e33a414be46973ff9a8ead333754ea7f72bc4049400044e0, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused s04 validation passes.",
+    "The unit rendering omits the abstract; its accepted actual S1 companion remains SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. Only these reports and an authorized ignored byte audit were written; no source/state/old record/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "5583d58297724848e33a414be46973ff9a8ead333754ea7f72bc4049400044e0",
+  "summary": "Pass on s04 r012. The accepted frontmatter preserves Theorem 1.1's two-correction precision, correctly describes its exact finite-core reconstruction and uniform remainder proof, and leaves the supplementary higher-coefficient Remark separate. No unresolved mathematical issue.",
+  "unit": "s04",
+  "verdict": "pass"
+}

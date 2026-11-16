@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 31 frozen/live inputs, artifacts, canonical snapshot, actual binding, writer ACK and native PDF/entry/helper hashes; S1 r002 and S2 r013 are approved and fresh, and the changed frontmatter matches accepted S1 exactly, without adding a WP-asymptotic dependency.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven s06 files and other old scientific inputs are unchanged, preserving stable vertex ranges, zero-order exceptions, main saddle order g_2 and the corrected nonelliptic component endpoint 2G-2>=2; the complete top-Hodge theorem block is byte-identical.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged exact vertices and final formula retain beta_g, tree automorphism weights, the elliptic-leaf factor, both g_2! factors and 12R=rho, with the same scalar b; the abstract's two-term description neither alters this normalization nor adds a correction coefficient.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original introductory definitions of g_2, z_(0,1), rho and b remain intact, while the unchanged s06 source/interface retain the first definitions and scopes of Phi, w, x_*, R and beta_g, distinct from b_g; the new route description introduces no alias or premature technical notation.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The accepted guide accurately describes FP's exact lambda_g formula, cycle elimination, the classical inverse/Bessel background, the complete tree estimate and the saddle-plus-elliptic-leaf correction. These match the unchanged proof chain and its independent entry after Section 2, without using large-genus WP correction coefficients.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Unchanged source preserves the all-stable-type vertex bound, entire tree-tail factorial count, nonelliptic relative O(g_2^-3) estimate and saddle odd-half-order cancellations giving strict relative O(g_2^-2); the new prose does not replace full-tail control by fixed-tree estimates or strengthen the two-term result.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT impact signature on s06 r007 retaining the complete original mathematical review after independently checking this delta. No prior MATH issue is open; issues and resolved_issue_ids are empty. No unchanged Bessel, tree or saddle calculation was rerun.",
+    "Exactly the abstract and S1 source/interface changed among old inputs; only the S1 handoff was added, with no removal. All s06 files, old scientific/shared inputs, bibliography, macros, outline and unit definition are unchanged. Writer ACK SHA256 6898f0c84b74312824975b1948ff4a1620e9632d7d6b5d5cc872513172bdce68 matches.",
+    "Actual render source SHA256 89623f6bd0790047980ca44840d8229080caa15688757890cc22fd1f9eeef6f2; actual 21-page PDF SHA256 27e04f1aa628c2d3f820cfe84e62050f8e05bfe866a67751e8e6b475cca979b7. Receipt binds snapshot 7a3f3275cbfd1badd0b7e4529a607d8e81f788f65a5eeb764f2e599adce99e19, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused s06 validation passes.",
+    "The unit rendering omits the abstract; reused the accepted actual S1 companion at SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. Only these reports and the authorized ignored byte audit were written; no source/state/old record/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "7a3f3275cbfd1badd0b7e4529a607d8e81f788f65a5eeb764f2e599adce99e19",
+  "summary": "Pass on s06 r007. The accepted frontmatter accurately describes the independent exact-top-Hodge/Bessel route, complete tree control and two-term saddle/elliptic correction, preserving all definitions, factorials and remainder scope. No unresolved mathematical issue.",
+  "unit": "s06",
+  "verdict": "pass"
+}

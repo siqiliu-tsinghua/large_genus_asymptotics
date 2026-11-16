@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, archive/live/artifact hashes, author handoff and native PDF/entry/helper receipts, with all five prerequisites approved and fresh; the 19 archived pairs match all 38 values from my original independent text/Fraction extraction, and the recorded file hashes/commit agree with the earlier provenance without claiming new validation of the full dataset or g>14 entries.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The old S8 proof and interface are exact prefixes and all 33 equations, 13 principal results and 14 proofs are preserved; the new statement is restricted to h=1 and its finite observations to stable genera 2 through 20, with no extension of the original fixed-h theorem or index ranges.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Checked the g rather than g_2 scaling and the exact rho^2*b_g(1)/(24*g^2*b_g) normalization against the prior independent calculation; the unchanged program recomputes the Bessel candidate 0.207760231708341177... directly and all three residual/extrapolation pairs correctly, with the latter equal to g*residual(g)-(g-1)*residual(g-1), the intercept in 1/g through consecutive genera.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The post-proof Remark reuses only established h,g,rho,z_(0,1),J_1 and b_g(h), defines the meaning of both numerical columns before the table and introduces no new mathematical alias, numbered equation or principal-result counter; its interface and documentation keep residual code names local.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The Remark explicitly calls the h=1 limit a conjecture, evaluates its analytic candidate without fitting, describes finite observations only as support and leaves proving the refinement and general-fixed-h higher terms open; its placement after the complete proof and unchanged earlier source ensure it is no premise of Theorem 1.4, and the retained full original mathematical assessment remains applicable.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The proof still asserts only relative o(1) for the final ratio and O_h(g^-1) for the background comparison, while the new numerical bundle expressly establishes neither a limit nor a remainder estimate; no O(g^-2), growing-defect uniformity or general-h next coefficient is inferred from extrapolation or from S6's supplement.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal review of the new closing Remark, data archive, full light checker, verification record, README, interface extension and author handoff on s08 r004. The original proofs use the retained complete review, including the earlier resolved endpoint-cone issue; no MATH issue was open in r003, so resolved_issue_ids is empty here.",
+    "Actual execution: python -B build/remarks-20261115/math-s08-r004/recheck.py. It executes the unchanged new program's main after redirecting only its output ROOT to a private ignored directory, preserving the author's output. The new output hash is exactly de9e0fa164787e403842fcdbb13caa6b5da652b101e787277bed5d36094751b1, matching the bound verification record. run.py SHA256 404074e96f6299ebaf2047a963b1f8e1d24d511a8c30155ba5bd82f5c6531035; selected_h1.json SHA256 9e4370649bae7db217ac41fa5197f4756dc618a7d8805688688240df3d7e825a. Only archived data and pinned mpmath 1.3.0 are read; no Sage assignment, SQLite, external data generation or old A/S4 program is executed.",
+    "Every residual and adjacent extrapolation agrees beyond 60 decimal places with my prior independent 75/100-dps calculation. The displayed g=10,15,20 pairs are respectively 0.136921/0.195400, 0.158393/0.203572 and 0.170045/0.205670. The finite trend supports a cautious h=1 conjecture and is not a proof of its limit or error. The complete new Remark, formula and table were visually checked on actual PDF p.39.",
+    "Exactly six existing paths change and nine check/provenance paths are added, with none removed; old S8 scientific inputs otherwise remain intact and inherited S6 changes match approved r008. Source SHA256 1a99fdf36a5b7ca24706d7135919e77c5099232a48cab0fa6cb72396bb0d0d4f; actual PDF SHA256 afd3371929fc92d90718a1d6d1657628504ecfa55fb7e93fc4637cf514a8c093. Actual receipts bind these hashes and native pre-submit/equal-source sealing transparently; strict diagnostics are empty.",
+    "Layout diagnostics are not empty: the sole retained item is the LiuData26 bibliography URL's 3.50723pt overfull hbox on p.55. Its individual reader/coordinator visual exception is explicitly recorded in the receipt/summary and bibliography_layout.json; this mathematical pass does not suppress that diagnostic. It changes no formula, table value, citation identity or inference, and is not a mathematical issue.",
+    "Only assigned reports and private ignored checks/rendering were written; no source, state, historical/other-role report, author's generated result or frozen PDF/receipt was changed. This signature accepts the new conjectural report at its stated scope and does not prove the proposed refinement."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "43ee89f7a17ac51068f37e0929c7db9f5bb1c4fae2f63f16695aa892a8e05d30",
+  "summary": "Pass on s08 r004: the h=1 candidate and finite table reproduce the independent exact-data normalization check, are explicitly conjectural and add no stronger remainder or general-h claim. Old proofs and theorem precision remain intact, actual frozen artifacts and computation records match, and no mathematical issue remains; the sole bibliography layout diagnostic is preserved transparently.",
+  "unit": "s08",
+  "verdict": "pass"
+}

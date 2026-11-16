@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Under publication independence, the seven unchanged s07 files retain their substantive string lemma, adjacent proofs and characteristic/Borel organization without an internal program, document, installation or attachment promise, while the accepted S1 guide now describes only C's mathematical content.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Unchanged Bur15/Bur16 credit for the ILW input remains distinct from the paper's geometric string/dilaton normalization, finite-jet constants, exact transport, characteristic recovery and Beta/Borel derivations, with no private engineering record treated as a source.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "The verified Buryak versions, theorem/flow locators and positive-parameter/defect-variable translations are unchanged along with the exact S6/S2 inputs, and the reviewed URL break edit preserves bibliography metadata while all three parents are actually approved and fresh.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The retained in-text arguments and precise literature supply the ILW/string/constants/characteristic/Borel mathematics without software filling a proof gap, preserving fixed-genus/formal and separately conditioned local analytic conclusions while neither S6's supplementary coefficients nor a promised code package supplies stronger continuation or remainder claims.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and prior r006 result; independently confirmed seven local files unchanged, ten changed shared/S1 inputs, one added S1 handoff and no removals, applying the new independence criterion to the retained complete assessment.",
+    "The refreshed inputs match accepted S1 r004 and the frozen-TeX scan found no engineering reader obligation; the original full source/proof review remains applicable without fresh literature retrieval or computation, with ACADEMIC-007 still closed.",
+    "Verified all archived/live inputs and artifacts, recomputed snapshot/render fingerprints, actual original binding and the three approved/fresh parents; native PDF/entry/helper and preserved preflight/sealing hashes match the strict/pass receipt with empty standard/layout diagnostics.",
+    "No issue is open; this scoped s07 signature does not claim completed isolated single-TeX delivery, and only these reports were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "a642af1792256b9aa1ed8d3db5fec3ae632a7636309c938141318454b967542e",
+  "summary": "Pass. S7's precise Buryak input and in-article derivations remain independent of engineering materials, with unchanged formal/local analytic scope and no stronger proof or remainder claim.",
+  "unit": "s07",
+  "verdict": "pass"
+}

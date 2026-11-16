@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified binding, canonical snapshot, archive/live/artifact/native hashes, author ACK and all five approved/fresh prerequisites; the unchanged in-text S6/S7/B and nef/cover citations supply the mathematical premises, while LiuData26 is explicitly public numerical evidence rather than a proof or software attachment.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All fourteen S8 files are byte-identical to r004, retaining stable genus/defect and marked ranges, common complex-domain hypotheses and projective-intersection degrees, with the supplementary conjecture restricted to h=1 and its observations to the stated finite genera.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The inverse-sine and node factors, two factorial ratios, 1/h! and final 24 remain unchanged, as do the h=1 g-scaled residual and adjacent extrapolation already independently verified on all 38 exact observations in r004.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged scientific source keeps all first-use scopes and inherited g_2,rho,z_(0,1),b_g(h) conventions, and the Remark explains both numerical columns before the table using existing symbols and a precise public-data citation rather than an internal-file reference.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review establishes the article's singularity propagation, primitive recovery, two-point transfer, full one-node sum and nef-background proof without programs, while the unchanged h=1 Remark and its printed definitions/table clearly present conjectural evidence rather than supplying a step of the main proof or requiring selected_h1.json to fill an argument.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The final ratio still has only relative o(1), distinct from the O_h(g^-1) background comparison, and the finite-data Remark proves neither its proposed limit nor an error rate or general-h refinement; publication independence and URL wrapping change none of these fixed-parameter scopes.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S8 r005 using the retained full original mathematical review and r004's actual independent numerical verification; no MATH issue is open and resolved_issue_ids is empty. No old proof or 38-value calculation was repeated.",
+    "All fourteen S8 files, including internal selected observations/checks, are unchanged and no engineering attachment is promised in the paper. The closure changes only the ten already-reviewed S1/shared paths plus the added S1 standalone handoff, with no removal. Original-writer ACK SHA256 254cbd0c5e067427947e8c0fa09d7249962c16342fb03bf1e54c377e7159ead7 matches the actual scope; publication independence is addressed substantively in proof_logic/dependencies.",
+    "Source SHA256 b64f72052b3f1e88ad183eeb9105fdf46ece641f97a9fde8d430504b6c2f98d2; actual native PDF SHA256 c69164d6b6b53fc024c01a6a9f6367b2a23fc91bf366165854d9b7dd68e69240. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, with explicit pre-submit/equal-source sealing provenance. The actual allowbreak edit preserves bibliography content and resolves the prior tiny URL overflow: this round's strict/layout diagnostics and accepted-exception lists are all empty.",
+    "Only assigned reports were written, without source/state/historical/other-role or frozen-output changes; internal data/programs are not being certified as a publication attachment. Unfrozen C work and the final isolated single-TeX delivery are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "a794b71511c2c2e1338fe3b3bd4736bf94e2ffa01b2aa109e115dced60da9fba",
+  "summary": "Pass on S8 r005: the unchanged article provides its singularity/transfer/node/nef arguments independently of programs, and the h=1 table remains clearly explained public numerical evidence for a conjecture with no precision upgrade. Actual frozen inputs/native receipt match, the URL overflow is resolved and no mathematical issue remains.",
+  "unit": "s08",
+  "verdict": "pass"
+}

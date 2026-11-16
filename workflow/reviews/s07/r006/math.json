@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, archive/live/artifact hashes, author ACK and native PDF/entry/helper receipts, with s01 r003, s02 r014 and s06 r008 approved and fresh; the changed S6 inputs exactly match the reviewed supplement and its unchanged exact identities remain the only S6 mathematical premises here.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven s07 files are byte-identical to r005, preserving stable low-genus exceptions, g>=h layer ranges, Borel degree 2g+h-2, its minimum 3h-2 and parity, none of which is affected by the supplementary top-class coefficients.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The exact ILW variable/sign conversion, beta inverse-sine factors, primitive constants, Dirichlet/Beta kernel weights and quadratic half are unchanged, and neither the textual Cin/N_g conjunction nor the unused LiuData26 entry changes a generating-function normalization.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original first-use scopes for z,eta,theta,x,y,W,v and fixed defect remain intact with inherited g_2 and lowercase integrals; S6's new Remark uses existing b,z_(0,1) only and keeps its code aliases local, creating no S7 symbol conflict.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "S7 still derives its formal identities from the exact top-Hodge/beta/inverse data and Buryak's flow, with unchanged string/dilaton, finite-jet, characteristic and Borel proofs; the newly reported S6 higher coefficients and numerical data do not become a premise of any step.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The distinction between coefficientwise formal transport, actual first-layer normal convergence and fixed-genus characteristic recovery remains unchanged, while the S6 supplement neither asserts a stronger uniform remainder nor upgrades S7 to a whole-genus analytic or asymptotic result.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh HIGHER-REMARKS impact signature on s07 r006 using the retained complete original mathematical review; no prior MATH issue is open and resolved_issue_ids is empty.",
+    "Exactly four existing paths changed: bibliography, Introduction source, S6 proof-file append and S6 interface append. Four S6 provenance/check inputs were added and none removed; all seven S7 files and other old inputs are unchanged. Original-writer ACK SHA256 eac019702fc996b8bcf3086d1bd7918889ca62d9c03f1ce8f57de6293858b1d0 matches the independently checked delta. LiuData26 remains uncited here.",
+    "Source SHA256 7bcb8da78e2ac66b9fa412f3aae4c2da36217b05fd508dbc513cc4ba9d0c4516; actual PDF SHA256 b9584d15527093033ce08965ae4182c3d8949d786c03c270cfde2903fdee4f9b. Current and preserved preflight receipts agree on source/PDF hashes with empty strict/layout diagnostics and transparent native pre-submit/equal-source sealing provenance; the accepted S1 companion covers the unchanged actual abstract rendering.",
+    "No old ILW, characteristic or Borel calculation and no already-verified S6 program was repeated; only the assigned reports were written, without source/state/historical/other-role or frozen-output changes. The future S8 Remark is outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 6,
+  "schema_version": 1,
+  "snapshot": "e0ef769dc03852ae32405f2b6c8d3182f22d72e166d705a05117c02f2ce4b45e",
+  "summary": "Pass on s07 r006: the accepted S6 supplement and shared conjunction/bibliography changes preserve the exact ILW, characteristic and Borel inputs, normalization and formal/analytic scope of unchanged S7; actual new frozen inputs and native receipt match, with no unresolved mathematical issue.",
+  "unit": "s07",
+  "verdict": "pass"
+}

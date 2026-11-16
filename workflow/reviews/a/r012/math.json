@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Applied publication independence to the actual retained mathematics: A.1 cites and states the MZ/HMT recursion and W26 profiles, A.2 supplies its moment rules, A.3 derives the small vertices and A.4 proves classification/integration, so deleting the directory/install promise leaves no software premise; actual binding, snapshot, archive/live/artifact/native hashes and approved/fresh S1 r004/S2 r015/S3 r012 were verified.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All numbered formulas and ten statements/proofs are unchanged, retaining profile degrees and admissible small types, and A.4 explicitly exhausts q=0,1,2 by positive vertex complexity and valence equations, excludes disconnected (2,0), and proves the 1/3/13 counts without an enumeration program.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Retained A.4 derives the flag-automorphism product, restored-loop 2^p p! and edge-integral rule with no extra vertex-label factorial, while A.2/A.3 preserve correlated signed moments, unhalved raw connectors, complete-stack V_(1,1) and absolute Z_g/F_g versus relative Z_g/V_(g,0); all tables, figures and endpoint conversions are byte-identical.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The deleted unlabelled engineering Remark and entry sentences contain no unique mathematical definition; A.2's unchanged For explicit reproduction passage defines its local tuple, cumulants and unit vectors before the Bell rule, and all label/citation sequences and established g_2,j_i/ell,b_g/beta_g scopes are preserved.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Located the written A.1 low-mode/finite-moment/three-ratio extraction and unknown-c_3 cancellation, A.2 Bell recurrence and coefficient tables, A.3 four-vertex derivation, and A.4 completeness, Aut proof, edge/endpoint rule and worked core 2.1; these supply the finite deductions independently of program output, so removing the two engineering descriptions deletes no mathematical step and preserves the conditional-prediction boundary.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged finite-extraction remainder lemma still controls all genus splits and exchanges the dilaton/kernel sums with polynomial degree bounds and exponential tails, while the loop/core error invokes S3's summable full estimate; neither the deletion nor the internal checks are used to strengthen an error order or replace a uniform proof.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal STANDALONE-ARTICLE review of A r012, combining the retained full original scientific review with a targeted substantive check that the removed engineering descriptions were not supplying missing mathematics; no prior MATH issue is open and resolved_issue_ids is empty.",
+    "The only A manuscript changes remove the entry's software-directory promise and the final unlabelled Reproducibility Remark. The new A.4 source is an exact prefix of the old file ending before that Remark. Every numbered equation/align block, all ten statements and ten proofs, tables, diagrams, labels and citations match r011; A.1/A.2/A.3, all old calculation programs/data and original handoff are unchanged. The A interface is updated and only its new standalone_handoff is added alongside the already-reviewed S1 handoff/shared changes.",
+    "Key written locations checked: eq:a:second-increment and the four pivot cases; lmm:a:extraction-tail, eq:a:finite-moments, eq:a:cusp-extraction, eq:a:three-ratios and eq:a:adjacent-genus-match; eq:a:bell-rule and its finite degree-four moment table; lmm:a:small-vertices; lmm:a:core-enumeration/eq:a:core-aut and lmm:a:core-integration/eq:a:endpoint-moments, with the complete contribution tables and core 2.1 example. The retained For explicit reproduction phrase introduces mathematical recurrence, not an executable or attachment.",
+    "Source SHA256 6c83ac383b381cd383c57eaa14cae7c9694189529ae788c1ea8f69ee52da312a; actual native PDF SHA256 3c570d22d250643a3655c0679e401fb4269e712656cf6c63770f69f2d2ea1a3c. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, strict/layout diagnostics are empty and pre-submit/equal-source sealing is explicit. Original-writer ACK SHA256 d1da1ce722815da8e9089614267539c31a26ee4ecbda7a131347d42457e89022 matches the independently checked scope.",
+    "Private preservation/hash verification is confined to build/standalone-20261116/math-a-r012/verification.json. No old long program, coefficient reconstruction or primary-source search was rerun; only assigned reports and ignored verification were written, without source/state/historical/other-role or frozen-output changes. The unfrozen C revision and final isolated single-TeX delivery are not certified here."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "c6cfefa61218d91d50b07dfc3a062c29a9f41744ca56e1af1aa525ede3858b96",
+  "summary": "Pass on A r012: removing the software promise and engineering Remark preserves the in-text profile/ratio extraction, finite Bell moments, small vertices, complete 1/3/13 classification, flag automorphisms and edge calculations. The appendix supplies its mathematical basis independently of internal code, all protected mathematics and errors are unchanged, and actual frozen inputs/native receipt match with no issue remaining.",
+  "unit": "a",
+  "verdict": "pass"
+}

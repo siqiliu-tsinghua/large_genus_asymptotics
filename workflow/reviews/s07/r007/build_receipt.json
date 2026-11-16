@@ -1,0 +1,71 @@
+{
+  "commands": [
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ],
+    [
+      "bibtex",
+      "build/previews/s07/preview"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ],
+    [
+      "xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-halt-on-error",
+      "-recorder",
+      "-output-directory=build/previews/s07",
+      "build/previews/s07/preview.tex"
+    ]
+  ],
+  "diagnostics": [],
+  "local_inputs": [
+    "build/previews/s07/preview.aux",
+    "build/previews/s07/preview.bbl",
+    "build/previews/s07/preview.tex",
+    "sections/01_introduction/section.tex",
+    "sections/02_notation/01_conventions.tex",
+    "sections/02_notation/02_tautological_classes.tex",
+    "sections/02_notation/03_gluing.tex",
+    "sections/02_notation/04_boundary_and_forgetting.tex",
+    "sections/02_notation/section.tex",
+    "sections/06_top_hodge/01_exact_vertices.tex",
+    "sections/06_top_hodge/02_bessel_critical_point.tex",
+    "sections/06_top_hodge/03_tree_tails.tex",
+    "sections/06_top_hodge/04_correction_and_proof.tex",
+    "sections/06_top_hodge/section.tex",
+    "sections/07_ilw_transport/01_hodge_potential.tex",
+    "sections/07_ilw_transport/02_specialization.tex",
+    "sections/07_ilw_transport/03_exact_transport.tex",
+    "sections/07_ilw_transport/04_borel_transform.tex",
+    "sections/07_ilw_transport/section.tex",
+    "tex/preamble.tex"
+  ],
+  "passed": true,
+  "pdf": "build/previews/s07/preview.pdf",
+  "pdf_sha256": "8eebe336b108c476df9fd84515fd39af5a7e4504e857311d61b72af20d44f1bc",
+  "schema_version": 1,
+  "snapshot": "a642af1792256b9aa1ed8d3db5fec3ae632a7636309c938141318454b967542e",
+  "source_hash": "40884cd70adada086ead566c002b067f3a444d93e7f37db1ba9ee2693ea4eb5b",
+  "strict": true,
+  "time": "2026-11-15T18:42:07+00:00",
+  "unit": "s07",
+  "with_dependencies": true
+}

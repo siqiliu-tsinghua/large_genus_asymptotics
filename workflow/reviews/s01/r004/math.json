@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Read the new AGENTS/context/math-role publication-independence requirements and verified S1 now describes C's direct finite-genus derivations without requiring programs, Markdown, packages or execution instructions as mathematical input; the bibliography's only change is two allowbreak opportunities in the unused LiuData26 address, preserving its metadata and every established source dependency.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Independent byte comparison preserves all four complete theorem blocks, six numbered equations and other displays, so stability, complex degree, Hodge-index ranges and fixed-list/fixed-h quantifiers are unchanged; the closing guide still concerns only genera two and three.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All integral/bracket definitions, theorem constants, factorial scales and precision terms are identical to r003, including the user's quad/mbox{and } at Cin/N_g, and the new Appendix C description changes no exact-value or asymptotic normalization.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The entire Introduction before its final Appendix C description is unchanged, retaining the first definitions and scopes of g,n,Chow/stack degree,lambda_j,j_i,ell,a_g,b_g(h),g_2,z_(0,1),rho and b; the revised guide introduces no mathematical symbol or alias and the interface records the same limited role.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Removing the reproducibility promise deletes no mathematical premise: the revised guide points to finite identities derived from the exact formulas and explicitly keeps those examples separate from the asymptotic proofs, consistent with the retained complete mathematical reviews; no program output or future software package is offered to fill an argument, and explicitly omitted supplements and conjectures keep their status.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The guide expressly says the finite examples do not replace uniform remainder estimates, while the unchanged abstract and four theorem statements preserve all fixed-parameter restrictions, their original precision and the mere asymptotic equivalence in Theorem 1.4 without inferring a rate from finite calculations.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact review on s01 r004 using the retained complete original mathematical assessment; no prior MATH issue is open and resolved_issue_ids is empty. The new independence rule was substantively applied in proof_logic and dependencies rather than treating internal checks as proof.",
+    "Exactly ten existing inputs changed: AGENTS, context, five role documents, bibliography and the S1 source/interface. Only sections/01_introduction/standalone_handoff.md was added and no input removed. Actual binding, canonical snapshot, archive/live/artifact hashes and original-writer ACK were independently verified; ACK SHA256 a91c72d9f7f86b9440653ab0da2e087e17837142e613f254fd2472dfd28d214d. All preceding S1 prose and mathematics are unchanged, and stripping only allowbreak commands restores the previous bibliography bytes.",
+    "Actual source SHA256 8058902c9c20711448745f9e32d013c5c3c38de82e880ab7687db8d001f34b72; actual native PDF SHA256 8f9d5acc2cba7169498c3567635ff64d07c8066e207e2f3a18562a6fc7fdd0c9. Current and preserved preflight receipts agree on source/PDF with actual entry/helper hashes verified, empty strict/layout diagnostics and transparent native pre-submit/equal-source sealing provenance.",
+    "Title, abstract and main bytes are unchanged, so their prior content/layout assessment is retained; the standard S1 preview does not itself render the abstract. The eventual merged single-TeX deliverable and isolated compilation require their own coordinator verification and are not claimed completed by this unit signature. Neither the unfrozen A/C revisions nor future engineering-subsection removal are pre-approved here.",
+    "Private verification is confined to build/standalone-20261116/math-s01-r004/verification.json. No old mathematical proof or algorithm was reloaded or rerun; only assigned reports and ignored verification were written, without source/state/historical/other-role or frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 4,
+  "schema_version": 1,
+  "snapshot": "dbf3850e378cf25c155e1abdba8c31929f4cfdbff7541b4e921fd9479f286efd",
+  "summary": "Pass on s01 r004: the organization paragraph removes the reproduction-material promise while preserving the complete theorem mathematics and the separation of finite examples from uniform asymptotic proofs. S1 requires no internal software to complete a proof, the bibliography adjustment changes only line breaking, and actual frozen inputs/native receipt match; no mathematical issue remains.",
+  "unit": "s01",
+  "verdict": "pass"
+}

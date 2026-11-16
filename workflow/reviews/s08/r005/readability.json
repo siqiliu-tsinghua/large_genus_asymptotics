@@ -1,0 +1,49 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "All 14 S8 files are unchanged, retaining the reviewed analytic scopes and the h=1 limit's inherited variables, with the residual and consecutive-genus extrapolation columns defined before the table (native p39).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The exact source preserves fixed-h relative o(1), the separate O_h(g^{-1}) background estimate and the explicitly conjectural h=1 correction, while shared URL wrapping changes no mathematical normalization or data attribution.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The common changes add no mathematical name or alias, and the closing Remark still displays its residual directly with descriptive table headings rather than a new coefficient family or repeated setup.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged endpoint, transport, coefficient-transfer and background-comparison route reaches Theorem 1.4 before the optional numerical conjecture, with neither supplementary S6 coefficients nor engineering material entering the proof chain.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Identical native body pages retain the inspected proof modules and complete final Remark, whose mathematics and numerical-evidence explanation are in the article, while actual p55 shows a complete normally wrapped data URL with no overflow or software-attachment obligation.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No changed input assigns a letter, preserving genus g, fixed defect h, b_g versus scalar b, the indexed Bessel zero and the earlier corrected x=t_0 versus S-y endpoint-distance distinction.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The identical p39 still closes the theorem proof before the separately headed conjecture, explains both numerical columns before their values and ends with an open problem, without asking readers to use private data files, programs or documentation to complete an argument.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE impact review against accepted s08 r004, retaining the complete S8 assessment and actual body-page inspection. Read the exact dispatch, summary, diff, original-writer acknowledgment and prior report; shared independence rules and dependency revisions were already reviewed.",
+    "Verified all 65 frozen/live input hashes, artifacts, exact snapshot, current fingerprint and native PDF/entry/helper hashes, including sealed equal-source pre-submit provenance. Ten existing shared/S1 inputs changed, one S1 standalone handoff was added, none removed, and all 14 S8 files are byte-identical; inherited inputs match accepted B r005.",
+    "Source SHA256: b64f72052b3f1e88ad183eeb9105fdf46ece641f97a9fde8d430504b6c2f98d2; native PDF SHA256: c69164d6b6b53fc024c01a6a9f6367b2a23fc91bf366165854d9b7dd68e69240. Strict and layout diagnostics are now both empty; settled 10pt/no-showkeys/flush-left bibliography settings survive.",
+    "Independent extraction confirms both native previews have 55 pages, only Introduction p3 and bibliography p55 change, and pp4-54 are exactly text-identical. Reused the actual r004 inspection of pp38-40 and independently viewed current p55 in build/standalone-20261116/readability-s08-r005/page-55.png: the URL breaks after the repository owner, all characters and source details remain visible, and the previously accepted 3.50723pt excess no longer occurs.",
+    "The public dataset remains an attributed source of explicitly conjectural numerical evidence, not a promised project attachment or substitute for proof; printed definitions and the table explain the observations without private files or code. Read-only status confirms the actual reviewer binding and S1 r004/S2 r015/S6 r009/S7 r007/B r005 approved/fresh; python scripts/validate.py --unit s08 passes. No prior readability issue is open; final merged single-TeX delivery remains outside this unit signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "a794b71511c2c2e1338fe3b3bd4736bf94e2ffa01b2aa109e115dced60da9fba",
+  "summary": "Pass. The shared editorial updates preserve S8's notation, proof precision and conjectural numerical ending; body pages are unchanged and the inspected bibliography URL now wraps normally without an overflow exception.",
+  "unit": "s08",
+  "verdict": "pass"
+}

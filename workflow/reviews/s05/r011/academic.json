@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Applying publication independence to the six unchanged s05 files finds no program, Markdown, calculation-directory or attachment promise, and the accepted A deletions remove engineering prose without disturbing the article's characteristic/graph roadmap, adjacent proofs or examples.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Unchanged Mumford/FP GRR, KMZ inversion, ABCDGLW boundary and MZ/Wang/HMT input credits remain distinct from the paper's algebraic gluing proof, whole decorated-graph majorant and single-ch_3/product derivations, with no internal engineering material serving as a formal source.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "All original source locators, factorial character normalizations and Chow/ordered-cover translations remain unchanged, the A mathematical formulas actually cited survive in approved r012, and the metadata-preserving URL break change introduces no new citation or convention.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The retained in-text boundary, inversion, moment and endpoint-derivative rules support the single-character and product arguments without software filling a proof gap, preserving fixed-list scope, the absent g^(-1) term and corrections through g^(-3) with O(g^(-4)) rather than using S4's explicit higher coefficients or an engineering verification as premises.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and r010 report; independently confirmed all six local files unchanged, thirteen changed shared/S1/A inputs, two added handoffs and no removals, retaining the original complete s05 assessment under the new publication criterion.",
+    "The changed sources match the actually approved A r012 update, whose retained finite mathematical basis was substantively reviewed in this original session; the frozen s05 TeX scan finds no engineering reader obligation, without repeating old source retrieval, long proofs or program runs.",
+    "Verified archived/live inputs and artifacts, recomputed snapshot/render fingerprints, actual original binding and all five approved/fresh parents; native PDF/entry/helper and preserved preflight/sealing hashes match the strict/pass receipt with empty standard/layout diagnostics.",
+    "No academic issue is open; this scoped impact signature does not certify a future isolated single-TeX export, and only these reports were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 11,
+  "schema_version": 1,
+  "snapshot": "4f18091e872d527fd6e05549c3c55ef93a4afeaaecc6de6cbfeca80969d38547",
+  "summary": "Pass. S5 retains its in-article derivations and precise sources without a software obligation, and the accepted independence edits preserve fixed-insertion scope and original error precision.",
+  "unit": "s05",
+  "verdict": "pass"
+}

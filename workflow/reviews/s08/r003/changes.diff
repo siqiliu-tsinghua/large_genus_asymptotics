@@ -1,0 +1,555 @@
+--- previous/frontmatter/abstract.tex
++++ frontmatter/abstract.tex
+@@ -1,3 +1,17 @@
+ \begin{abstract}
+-asdf
++We study large-genus asymptotics of pure Hodge integrals on the
++moduli space of stable curves in four regimes. For powers of the
++first Hodge class, we determine the absolute leading constant and
++the first two corrections. For a fixed product of Hodge classes
++inserted against this background, we compute the normalized expansion
++through the third inverse power of the genus. We also obtain an explicit two-term
++asymptotic formula for the top Hodge class and determine the
++relative growth of every fixed defect from it. The first pair of
++results follows from uniform stable-graph estimates, resummation
++of self-loops and finite core calculations using Weil--Petersson
++intersection asymptotics. The second pair uses exact top-Hodge
++intersection formulas, Bessel analysis and transport identities
++from the intermediate long-wave (ILW) equation. Common complex domains, bounds for complete
++graph and kernel sums, and a comparison of intersection
++backgrounds justify the asymptotic operations.
+ \end{abstract}
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -1,46 +1,187 @@
+-# Introduction baseline — limited clarity revision
++# Introduction
+ 
+-Status: existing baseline, with explicitly authorized clarity and notation revisions through USER-003 in the s02 trial. This is not whole-section acceptance. The four theorem statements remain targets, not approved proofs; their labels, order, mathematical values and requested precision are unchanged under the new naming convention.
++Scientific interface for the complete Introduction author draft.
++Live review, freshness and acceptance status belongs to
++workflow/state.json; this document is not an approval signature.
++The four complete theorem environments, including definitions,
++labels, constants, ranges and error terms, are byte-identical to
++the captured baseline in build/closing-writing/baseline.json.
++
++## Current prose scope and assembly
++
++The single section.tex remains the entire Introduction; no formal
++subsections, extra inputs or manifest change is needed. New prose
++provides the motivation for four results grouped into two broad
++index settings (first-class powers/fixed-index insertions and
++the top class/fixed defects),
++precise source attribution, an explanation of the contributions,
++the two proof routes and a completed-paper reading guide.
++All established mathematical setup, the marked-vanishing reduction
++and six numbered equations are preserved verbatim.
++
++The Introduction uses only its existing mathematical notation.
++Psi, logarithmic kappa and Chern-character symbols are not introduced
++here; their first definitions remain in Section 2.2. Reading routes
++use literal section/appendix numbers because an isolated s01 preview
++does not import later body dependencies. Theorem references retain
++their stable labels.
++
++An abstract proposal is supplied separately at
++build/closing-writing/abstract-proposal.tex for the coordinator to
++apply verbatim to frontmatter/abstract.tex. The writer has not
++edited that shared file. The proposal has 144 words, no citations
++and no mathematical symbols. It reports the four theorem regimes
++at their original precision, without promoting the supplementary
++third/fourth coefficients from Section 4.
+ 
+ ## Global conventions at first use
+ 
+-- The opening defines `g,n` as nonnegative integers with `2g-2+n>0`, interprets `\MM_{g,n}` as the proper Deligne–Mumford stack over `\mathbb C`, and defines `\MM_g` for `n=0`, `g>=2`.
+-- The rational Chow ring `A^*(\MM_{g,n};\mathbb Q)` and complex-codimension grading are stated in that opening, before the first Chern classes. Degree means complex codimension throughout the paper.
+-- The Hodge bundle and positive-index classes are defined in the next paragraph. The same paragraph now includes `\lambda_0=1` and `\lambda_j=0` for integers `j>g`.
+-- Immediately before the first integral `eq:phi-1`, integration is specified as the degree of the codimension-`3g-3+n` component as a zero-cycle on the stack, including stabilizer weights. Scalar coefficients may be extended when necessary.
+-- These conventions were relocated from 2.1 to their first introductory use. Later sections inherit them directly; no repetition or routine list of back-references is needed.
++- The mathematical setup defines g,n as nonnegative integers with
++  2g-2+n>0, interprets Mbar_(g,n) as the proper Deligne--Mumford
++  stack over C, and defines Mbar_g for n=0,g>=2.
++- The rational Chow ring A^*(Mbar_(g,n);Q) and complex-codimension
++  grading precede the first Chern classes. Chow coefficients
++  remain inside parentheses.
++- The Hodge bundle EE has rank g; its fiber is the space of
++  dualizing differentials, and its positive-index Chern classes
++  are lambda_j. The same paragraph fixes lambda_0=1 and
++  lambda_j=0 for integers j>g.
++- Before eq:phi-1, integration is defined as the degree of the
++  codimension-(3g-3+n) zero-cycle on the stack, with stabilizer
++  weights. Scalar coefficients may be extended when necessary.
++- These conventions were moved from s02.1 to their first
++  introductory use in the earlier authorized clarity revision.
++  Later sections inherit them directly.
+ 
+ ## Exported notation and scopes
+ 
+-| Symbols | First definition / type and range | Scope and purpose |
++| Symbols | First definition, type and range | Scope and purpose |
+ | --- | --- | --- |
+-| `g,n`, `\MM_{g,n}`, `\MM_g` | Opening; stable genus/marking pair and moduli stack | Throughout the paper |
+-| `A^*(\MM_{g,n};\mathbb Q)`, `A^a(\MM_{g,n};\mathbb Q)` | Opening rational Chow convention; degree-`a` part consists of codimension-`a` classes | Uppercase `A` remains the Chow functor; rational coefficients are inside the parentheses |
+-| `\EE`, `\lambda_j` | Hodge-bundle paragraph; rank-`g` bundle and codimension-`j` Chern classes for `1<=j<=g`; `\lambda_0=1`, vanishing for `j>g` | All relevant moduli stacks; extension conventions moved from 2.1 |
+-| `\ell`, `j_1,...,j_\ell` | Text and display `eq:phi-1`; positive integer factor count and positive Hodge indices at most `g` | Nonempty pure Hodge products; no global fixedness assumption is imposed by this first definition |
+-| `\pi_{n,m}` | Forgetting paragraph; `0<=m<n`, `2g-2+m>0` | Forgets the last `n-m` markings and stabilizes; its Hodge pullback property gives the dimension-vanishing argument |
+-| `a_g`, `b_g(h)`, `b_g` | Normalization paragraph before Theorem 1.1; `g>=2`, integer `0<=h<=g`; `b_g=b_g(0)` | Unmarked intersection numbers; `h=g` uses `\lambda_0=1` |
+-| `P(\lambda)`, `d`, `\langle P(\lambda)\rangle_g` | Same paragraph; homogeneous Hodge polynomial of degree `d`, `0<=d<=3g-3` | Normalized insertion with nonnegative background exponent |
+-| `\Cin(x)`, `N_g` | Theorem `thm:lambda-one`, now before the asymptotic display; real `x>=0`, genus `g>=2` | Exact original definitions retained; moved before their first theorem use |
+-| `F(j)`, `G(j)` | Theorem `thm:fixed-insertions`; factorial product and cubic sum of the fixed list of positive indices | The argument notation `j` is retained; the theorem fixes both indices and product length |
+-| `g_2=2g-3`, `J_n(z)`, `z_{0,1}`, `\rho`, `b` | Theorem `thm:top-hodge`; Bessel functions, first positive zero of `J_0(z)`, scale and scalar correction | Names and values retained; scalar `b` is distinct from the genus-indexed integral `b_g` |
++| g,n; Mbar_(g,n),Mbar_g | Mathematical setup; stable genus/marking pair and moduli stack | Throughout the paper |
++| A^*(Mbar_(g,n);Q), A^a(Mbar_(g,n);Q) | Mathematical setup; degree-a part has complex codimension a | Uppercase A is the Chow functor; rational coefficients are inside parentheses |
++| EE,lambda_j | Hodge-bundle paragraph; rank-g bundle, 1<=j<=g; lambda_0=1, out-of-rank vanishing for j>g | All relevant moduli stacks |
++| ell,j_1,...,j_ell | Before and in eq:phi-1; positive factor count and positive Hodge indices at most g | Nonempty pure Hodge products; this first definition does not impose global fixedness |
++| pi_(n,m) | Forgetting paragraph; integers 0<=m<n and 2g-2+m>0 | Forgets the last n-m markings and stabilizes; Hodge pullback gives dimension vanishing |
++| a_g,b_g(h),b_g | Before Theorem 1.1; g>=2 and integer 0<=h<=g; b_g=b_g(0) | Unmarked integrals; h=g uses lambda_0=1 |
++| P(lambda),d, normalized insertion bracket | Same paragraph; homogeneous degree d, 0<=d<=3g-3 | Insertion normalized by a_g, with nonnegative background exponent |
++| Cin(x),N_g | Inside thm:lambda-one before its main display; real x>=0, g>=2 | Exact original definitions retained |
++| F(j),G(j) | Inside thm:fixed-insertions | Factorial product and cubic sum of the fixed positive-index list; ell and all indices are fixed there |
++| g_2=2g-3,J_n(z),z_(0,1),rho,b | Inside thm:top-hodge | Bessel functions, first positive J_0 zero, scale and scalar correction; b is distinct from b_g |
++| h | Family b_g(h), then thm:fixed-defect | Fixed nonnegative integer defect in the asymptotic theorem, with g>=h eventually |
+ 
+-Local dummy indices remain bound by the displayed sum, product or integral in which they occur. Full symbol-selection rules are in `workflow/context.md`.
++Local dummy indices are bound by their displays. USER-003
++established the current lowercase integral names, reserving ordinary
++B_m for Bernoulli numbers first defined in s02.2. The scalar b
++retains its correction meaning; beta_g is the later one-point
++coefficient. The present prose adds no competing symbol or alias.
+ 
+-USER-003 sets the current naming convention: integral families are `a_g`, `b_g(h)` and `b_g`; ordinary uppercase `B_m` is reserved for Bernoulli numbers, first defined in 2.2. The scalar correction `b` is retained, while `\beta_g` remains reserved for later one-point Hodge coefficients. No new object is introduced by this translation.
++## Marked vanishing and domains
+ 
+-## Clarified vanishing and domains
++The retained argument pulls a top-degree Hodge product back from a
++stable target of smaller dimension. It explicitly takes m=0 for
++g>=2,n>=1 and m=1 for g=1,n>=2. Genus zero has no positive-degree
++Hodge classes, and ell>=1 excludes the empty product. Thus the
++single marked exception in this setting is the integral of
++lambda_1 on Mbar_(1,1), equal to 1/24. The temporary tilde-alpha
++and target-class aliases removed in the old clarity revision
++remain absent.
+ 
+-For a top-degree Hodge product, pullback from a stable lower-marking target gives a class of degree above the target dimension. The text now explicitly chooses `m=0` for `g>=2,n>=1` and `m=1` for `g=1,n>=2`. Genus zero has no positive-degree Hodge classes, and the convention `\ell>=1` excludes the empty product. Thus `\int_{\MM_{1,1}}\lambda_1=1/24` remains the only marked case in this nonempty positive-class setting. The temporary `\tilde\alpha` and target-class aliases have been removed.
++The b_g(h) and normalized-insertion ranges, and the integer scope
++of h in the fourth theorem, are unchanged. The inserted overview
++does not strengthen any fixed-index or fixed-defect statement.
+ 
+-The definitions of `b_g(h)` and normalized insertions now state their integer/range conditions explicitly. Theorem 1.4 also explicitly calls `h` an integer. These clarifications do not alter any asymptotic target.
++## Preserved labels and statement boundary
+ 
+-## Labels and checks
++Section/theorem labels: sec:introduction, thm:lambda-one,
++thm:fixed-insertions, thm:top-hodge, thm:fixed-defect.
++Equation labels: eq:phi-1, eq:phi-2, eq:111, eq:P111, eq:g111,
++eq:gh11. All six complete numbered equation environments are
++byte-identical to the captured baseline. Exactly four theorem
++environments remain, in the original order. No numbered formula
++or result is added.
+ 
+-Preserved section and theorem labels: `sec:introduction`, `thm:lambda-one`, `thm:fixed-insertions`, `thm:top-hodge`, `thm:fixed-defect`.
++The new prose retains the phrase "the ILW equation". The proofs
++are in Sections 4,5,6,8 for the respective stable theorem labels.
++This introductory exposition does not replace those proofs.
+ 
+-Preserved equation labels: `eq:phi-1`, `eq:phi-2`, `eq:111`, `eq:P111`, `eq:g111`, `eq:gh11`. The four main target equations retain their mathematical payload after translating the integral family names to lowercase. There remain exactly four Introduction theorems in the original order, so their numbering is unchanged.
++## Source mapping and attribution limits
+ 
+-No new source or mathematical object was introduced. The baseline value `1/24` and all target constants are retained. The planned-organization paragraph now uses the requested phrase `the ILW equation`. The unrelated abstract is unchanged. Psi, logarithmic kappa and Chern characters remain first defined in 2.2.
++- Mum83, Section 5, and FP00, Section 1.1: classical Hodge geometry
++  and the family GRR formulation. Their role is described verbally;
++  the marked/logarithmic conversion and class-level formulas remain
++  in Section 2, with its additional FP00 (16) locator.
++- MZ15, Theorem 1.2: fixed-marking, arbitrary fixed-order WP
++  expansions. The absolute leading normalization is credited
++  separately to LX26, Corollary 1.2, and W26, Corollary 1.2.
++- HMT25, Theorem 4.2: uniform vertex inputs. SW25, Lemma 14,
++  explicitly recalls comparisons due to Mirzakhani; SW25,
++  Lemma 18, is Shen--Wu's derived all-type upper bound. The
++  Introduction distinguishes those credits. The complete graph-tail
++  bound and summable core expansion are Section 3 work, not
++  attributed wholesale to the volume sources.
++- ABCDGLW23, Lemma 3.10: boundary expansion used with the geometric
++  identities to obtain WP vertex products. Its source statement
++  is cohomological; s02 and s05 supply the algebraic intersection
++  argument in the paper's convention. No extra boundary half is
++  inserted by the overview.
++- W26, Lemma 7.2 and Appendix C.1: first/second descendant
++  coefficient inputs used in Appendix A. Fixed-tuple
++  identification and HMT uniformity remain separate in the proofs.
++- MZ15, Section 2: exact recursions used for Appendix A's
++  unconditional second absolute WP coefficient reconstruction.
++  EGGLS24, Section 6.1 and (6.10), is credited as a conditional
++  resurgent prediction and an a posteriori comparison only.
++- FP03, Theorem 1: exact multipoint lambda_g formula.
++  KMZ96v1, (0.8), recalls the genus-zero inverse relation; the
++  wording avoids a claim of sole discovery and retains the earlier
++  Zograf provenance recorded in s06. MaZ00, Section 6, (17) and
++  the numbered Proof 6.3, supplies the classical inverse/Bessel
++  asymptotic background.
++- Bur15, Theorem 1.1: Buryak's first ILW flow. Section 7 gives
++  the actual variable conversion, string recovery and free-energy
++  constants. No constants are inferred from a second-derivative
++  field alone.
++- FO90, Section 2: singularity-transfer method. Appendix B and
++  Section 8 give actual common complex domains and uniform
++  estimates before this method is applied at both singularities.
+ 
+-The same original reviewers must examine this limited Introduction revision together with 2.1–2.2 in the new frozen trial snapshot. The current response to USER-003 is `workflow/trials/s02-01-02/r004/author_response.json`; all earlier responses, archives and reports remain unchanged.
++All keys and cited versions are already in references.bib.
++The source roles and locators were checked against the accepted
++s02/s03/A/s04/s05/s06/s07/B/s08 interfaces and retained original
++primary-source verification from the corresponding writing work.
++No fresh priority claim, withdrawn source or internal lecture-note
++citation is introduced.
++
++## Reading routes, precision and remaining work
++
++After Section 2, Sections 3--5 give the WP graph route for the
++first two theorems. Section 6 is an independent entry for the top
++class. Sections 7--8 use its Bessel normalization for fixed defect,
++without WP correction coefficients. Appendix A contains the
++finite coefficient/core derivations; Appendix B contains the
++complex-domain, kernel and primitive estimates.
++
++The Appendix C guide uses the coordinator's agreed closing scope:
++exact genus-two/genus-three Hodge normalization checks and
++reproducibility instructions. C is to be drafted and reviewed after
++the common-input settlement. It is not a premise of a main
++asymptotic proof. Finite checks are not presented as replacing
++uniform estimates.
++
++The fourth theorem remains an asymptotic equivalence; no relative
++error rate is added. The supplementary higher coefficients are
++neither repeated nor used. No known source or structural gap is
++pending. Abstract application, compilation and frozen review
++remain coordinator work.
++
++## Historical provenance retained
++
++The original Introduction setup received explicitly authorized
++clarity/notation revisions through USER-003 during the s02 trial:
++global conventions were moved to their first introductory use,
++low-genus vanishing was made explicit, and the lowercase integral
++names and current Chow format were established. The response
++workflow/trials/s02-01-02/r004/author_response.json and all older
++trial archives/reports remain unchanged. Those limited trial
++records are historical provenance, not approval of the present
++full Introduction.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -1,6 +1,18 @@
+ % !TeX root = ../../main.tex
+ \section{Introduction}
+ \label{sec:introduction}
++
++Intersections of Hodge classes measure how the bundle of holomorphic
++differentials varies over the moduli space of curves. Their
++large-genus behavior depends on how the Chern indices vary with
++the rank. The four results are grouped into two broad index
++settings. One covers powers of the first class and fixed-index
++insertions against that background; the other covers the top class
++and indices at a fixed distance from it. The results give explicit
++constants and
++correction terms, together with the scaling that relates the top
++class to each fixed defect.
++
+ Let $g,n$ be nonnegative integers with $2g-2+n>0$.  Denote by
+ $\MM_{g,n}$ the proper Deligne--Mumford stack over $\mathbb C$ of
+ stable curves of genus $g$ with $n$ marked points, and write $\MM_g$
+@@ -51,7 +63,28 @@
+ For a homogeneous polynomial $P(\lambda)$ of Hodge classes of degree
+ $d$, with $0\leq d\leq3g-3$, define
+ \[\langle P(\lambda) \rangle_g=\frac{1}{a_g}\int_{\MM_g} P(\lambda)\lambda_1^{3g-3-d}.\]
+-The main results of the present paper are as follows.
++
++The geometric starting point is Mumford's
++Grothendieck--Riemann--Roch description of the Hodge bundle
++\cite[\S 5]{Mum83}, as recalled by
++Faber--Pandharipande \cite[\S 1.1]{FP00}. It connects Hodge classes
++to boundary geometry and permits two different approaches to
++their asymptotics.
++
++For Weil--Petersson volumes, Mirzakhani--Zograf established
++fixed-marking expansions to every fixed order
++\cite[Theorem 1.2]{MZ15}. We use the absolute leading normalization
++proved by Liu--Xu \cite[Corollary 1.2]{LX26} and by Wang et al.\
++\cite[Corollary 1.2]{W26}, together with the uniform vertex
++estimates of Hide--Macera--Thomas \cite[Theorem 4.2]{HMT25}.
++We also use Mirzakhani's comparisons, recalled in \cite[Lemma 14]{SW25},
++and Shen--Wu's all-type bound \cite[Lemma 18]{SW25}.
++Turning these inputs into pure Hodge asymptotics requires control
++of the entire stable-graph sum: arbitrarily many self-loops
++contribute at leading order.
++
++The first two results determine the absolute asymptotics of $a_g$
++and the effect of any fixed list of Hodge insertions.
+ 
+ \begin{thm}
+ \label{thm:lambda-one}
+@@ -80,6 +113,11 @@
+ \end{equation}
+ \end{thm}
+ 
++The next two results concern the opposite range of indices.
++The inserted class is $\lambda_g$, or $\lambda_{g-h}$ with $h$
++fixed while $g$ increases. Their scale is governed by the first
++positive zero of a Bessel function.
++
+ \begin{thm}
+ \label{thm:top-hodge}
+ Let $g_2=2g-3$, $J_n(z)$ be the $n$-th Bessel function of the first kind, $z_{0,1}$ be the first
+@@ -103,11 +141,66 @@
+ \end{equation}
+ \end{thm}
+ 
+-The planned organization separates two proof routes.  After the geometric
+-identities in Section~2, Sections~3--5 develop uniform stable-graph and
+-Weil--Petersson estimates for Theorems~\ref{thm:lambda-one} and
+-\ref{thm:fixed-insertions}.  Section~6 treats
+-Theorem~\ref{thm:top-hodge} through top-Hodge intersection formulas
+-and Bessel analysis, independently of the Weil--Petersson asymptotics.
+-Sections~7--8 address Theorem~\ref{thm:fixed-defect} through linear
+-Hodge potentials, the ILW equation and singularity analysis.
++Theorem~\ref{thm:fixed-insertions} shows that the normalized product
++approaches the reciprocal factorial product, with no term of order
++$g^{-1}$. The first correction depends only on the cubic sum
++$G(j)$. In Theorem~\ref{thm:fixed-defect}, each fixed increase of
++the defect contributes two powers of $g$; the factor $1/h!$
++comes from ordered transport integrals. All insertion indices and
++defects in these statements are fixed. The last theorem asserts
++asymptotic equivalence, without a relative error rate.
++
++Sections~3--5 prove Theorems~\ref{thm:lambda-one}
++and~\ref{thm:fixed-insertions} by a stable-graph expansion.
++The boundary identity of Andersen et al.\
++\cite[Lemma 3.10]{ABCDGLW23} converts the geometric formulas into
++products of Weil--Petersson vertex integrals. Section~3 first
++resums the self-loops, proves an absolute tail bound for all graphs,
++and reduces each fixed asymptotic order to finitely many cores
++with summable remainders. Section~4 evaluates the terms needed
++for the second correction in Theorem~\ref{thm:lambda-one}.
++Section~5 introduces labeled sources for the insertions and
++controls the resulting decorated graph sums.
++
++Appendix~A supplies the finite calculations used in this route.
++They include the descendant coefficients of Wang et al.\
++\cite[Lemma 7.2 and Appendix C.1]{W26}, correlated loop moments
++and the core contributions. The required second absolute volume
++coefficient is reconstructed from the exact recursions of
++Mirzakhani--Zograf \cite[\S 2]{MZ15}. Its agreement with the
++conditional resurgent prediction of Eynard et al.\
++\cite[\S 6.1, (6.10)]{EGGLS24} is an a posteriori check;
++the reconstruction itself is unconditional.
++
++Theorem~\ref{thm:top-hodge} has an independent proof in Section~6.
++The $\lambda_g$ formula of Faber--Pandharipande
++\cite[Theorem 1]{FP03} gives exact vertex integrals, and the
++restriction of the top class eliminates every graph with a cycle.
++The genus-zero inverse relation recalled by Kaufmann--Manin--Zagier
++\cite[(0.8)]{KMZ96v1} and the Bessel analysis of Manin--Zograf
++\cite[\S 6, (17) and Proof 6.3]{MaZ00} provide the analytic
++background. Uniform bounds for all stable vertex types control
++the whole tree sum. A saddle calculation and the elliptic-leaf
++contribution then give the displayed correction.
++
++For Theorem~\ref{thm:fixed-defect}, Sections~7--8 use Buryak's relation
++between the linear Hodge potential and the ILW equation
++\cite[Theorem 1.1]{Bur15}. Section~7 derives exact transport and
++Borel identities, including the free-energy integration constants.
++Section~8 identifies the principal singularity at each defect and
++evaluates its transport constant. The common complex domains and
++uniform kernel and primitive estimates are proved in Appendix~B.
++Both dominant singularities enter the coefficient transfer,
++following the method of Flajolet--Odlyzko \cite[\S 2]{FO90}.
++A nef intersection argument controls the complete change of
++background needed to return to $b_g(h)$.
++
++Section~2 collects the geometric identities used by both routes.
++After that section, readers interested primarily in
++Theorems~\ref{thm:top-hodge} and~\ref{thm:fixed-defect}
++may proceed directly to Sections~6--8; these sections do not use
++the Weil--Petersson correction coefficients. Appendix~C records
++exact normalization checks in genera two and three, together with
++reproducibility instructions for the finite calculations. Such checks
++support the analytic proofs without replacing their uniform
++remainder estimates.
+--- /dev/null
++++ sections/01_introduction/writer_handoff.md
+@@ -0,0 +1,126 @@
++# Introduction and abstract proposal: original-writer handoff
++
++Writer: /root/s02_writer, retained original session.
++Active unit: s01. This is an author submission, not an approval
++or a reviewer signature; live status belongs to workflow/state.json.
++
++## Delivered scope
++
++- sections/01_introduction/section.tex: finished-paper motivation,
++  context, contributions, proof overview and reading routes.
++- sections/01_introduction/INTERFACE.md: current scientific
++  interface, unchanged global notation, source mapping, precision
++  limits and preserved historical trial provenance.
++- This writer_handoff.md.
++- build/closing-writing/abstract-proposal.tex: a complete 144-word
++  abstract proposal for verbatim coordinator application.
++
++The shared frontmatter/abstract.tex is untouched. No body section,
++appendix, shared macro, bibliography, outline, role, workflow state
++or historical report was edited. The single-file Introduction is
++retained, so no manifest or assembly change is requested.
++
++## Preserved mathematical baseline
++
++Actual comparison with build/closing-writing/baseline.json
++confirms that all four complete theorem environments and all six
++numbered equation environments are byte-identical, in the same
++order. The mathematical setup from the definition of g,n through
++the insertion normalization is retained as one exact substring,
++including rational Chow/stabilizer conventions, class ranges,
++marked vanishing and its low-genus exception.
++
++No new mathematical notation is introduced by the exposition.
++Psi, logarithmic kappa and Chern-character symbols remain absent.
++The explicit phrase "the ILW equation" is retained. Neither
++supplementary higher coefficient from Section 4 is promoted.
++The fixed-parameter scopes and the last theorem's asymptotic
++equivalence are unchanged.
++
++## Attribution and proof routes
++
++Source roles were checked against the needed accepted interfaces
++and retained original primary-source work: Mumford/FP supply
++Hodge geometry; MZ supplies fixed-marking WP expansions; LX/W
++supply the absolute leading normalization; HMT supplies uniform
++vertex inputs. SW25 recalls Mirzakhani's comparisons in Lemma 14
++and derives Shen--Wu's own all-type bound in Lemma 18. The
++full graph tail and summable core expansion
++are correctly described as Section 3 work.
++
++The first route identifies ABCD's boundary formula, Section 4's
++finite second-correction calculation and Section 5's decorated
++graph argument. Appendix A supplies actual descendant, loop and
++core calculations. Its second absolute WP coefficient is described
++as unconditionally reconstructed from exact recursions. EGGLS's
++conditional resurgent prediction is only an a posteriori check.
++
++The second route credits FP03's lambda_g formula, the inverse
++relation recalled in KMZ96v1 (including its inherited earlier
++Zograf provenance), MaZ00 Section 6/(17)/Proof 6.3, Buryak's exact
++ILW result and FO90's Section 2 method. The overview distinguishes
++Section 7's exact identities from Appendix B/Section 8's actual
++complex-domain, primitive and transfer estimates.
++
++After Section 2, readers may enter Section 6 directly for the last
++two theorems; the WP correction coefficients are not inputs to
++that route. The Appendix C guide uses the coordinator's confirmed
++scope: exact normalization checks in genera two and three and
++reproducibility instructions. Its finite checks do not replace
++uniform estimates or constitute an input to the main proofs.
++C itself is not drafted in this assignment.
++
++All 14 bibliography keys are already present, with locators
++matching the accepted source mapping. No additional source,
++macro, symbol or structural change is needed. No known attribution
++or mathematical uncertainty remains at the author level.
++
++## Actual checks and next step
++
++Passed: full theorem/equation/setup preservation guards;
++unchanged label order; all citations and theorem references
++resolve; no early psi/kappa/character notation; no supplementary
++coefficient promotion; abstract length and citation/symbol checks;
++UTF-8/LF/final-newline/control-character checks; draft gate;
++validate.py --unit s01; and git diff --check.
++
++Comparison with every pre-existing file in the captured nine-unit
++baseline found only the two authorized Introduction source/interface
++changes. In particular the shared abstract, all other scientific
++files and shared inputs remain byte-identical. This new handoff
++and the ignored abstract proposal are the only added author files.
++
++No compilation or mathematical computation was rerun. The
++coordinator is to apply the abstract proposal, build and freeze
++the common snapshot, obtain the actual three original reviews,
++and perform any affected dependency refresh before Appendix C.
++
++STOP after final static checks and source-hash reporting.
++The original writer context is retained for revisions and the
++later Appendix C assignment.
++
++## Original-author revision of formal r001
++
++Baseline snapshot:
++04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb.
++All three actual reports were read after the coordinator issued
++revision. The changes address only READABILITY-001 and
++ACADEMIC-010.
++
++The opening now explicitly groups four results into two broader
++index settings and names the two cases within each. This resolves
++the orientation against the unchanged abstract's four regimes.
++The WP literature paragraph now attributes Lemma 14's comparisons
++to Mirzakhani, as recalled in SW25, and Lemma 18's bound to
++Shen--Wu. The actual cached SW25 text immediately before Lemma 14
++and the introduction/proof of Lemma 18 were checked; no new source
++or bibliography entry is needed.
++
++The interface and source-credit record are synchronized. The
++applied 144-word abstract, complete four theorem blocks, six
++numbered formulas, original setup and all other prose remain
++unchanged. Static preservation, scope, UTF-8/LF, draft-gate and
++two-issue response checks are performed before handoff. No build,
++new mathematical computation or shared-file change is made.
++STOP for the coordinator's standard and front-matter rebuilds
++and a new frozen review by the same three original reviewers.
+--- previous/workflow/reviews/s08/r001/author_response.json
++++ /dev/null
+@@ -1,46 +0,0 @@
+-{
+-  "agent_id": "/root/s02_writer",
+-  "responses": [
+-    {
+-      "changed_files": [
+-        "sections/08_fixed_defect/04_coefficient_transfer.tex",
+-        "sections/08_fixed_defect/INTERFACE.md",
+-        "sections/08_fixed_defect/writer_handoff.md"
+-      ],
+-      "explanation": "Replaced the false inverse-disk assertion by the actual critical-cone argument. Writing u=tau y, the proof displays the three distances as positive combinations of the original cone data. On |u|<=C|S-y|, tau<1/2, their moduli are comparable to |S-y| and both normalized endpoint distances are bounded above and away from zero with fixed angular margins. Lemma b:cone-transport and Proposition b:common-domains supply the preserved smaller cone and its holomorphic critical-center extension. Equation eq:b:common-bounds with one center derivative and no Borel derivative gives O(|S-y|^((h-3)/2)); integration over length O(|S-y|) gives O(|S-y|^((h-1)/2)). The remaining path and the proposition's common complex domain and additive conclusion are retained. All endpoint-distance occurrences are written S-y directly.",
+-      "issue_id": "MATH-001",
+-      "resolution": "addressed"
+-    },
+-    {
+-      "changed_files": [
+-        "sections/08_fixed_defect/04_coefficient_transfer.tex",
+-        "sections/08_fixed_defect/INTERFACE.md",
+-        "sections/08_fixed_defect/writer_handoff.md"
+-      ],
+-      "explanation": "Removed the proof-local assignment t_0=S-y and replaced every occurrence throughout the recovered-singularity proof by S-y directly. No new distance symbol is introduced. The interface explicitly preserves the inherited t_0=x zero-time convention and records this choice.",
+-      "issue_id": "READABILITY-001",
+-      "resolution": "addressed"
+-    },
+-    {
+-      "changed_files": [
+-        "sections/08_fixed_defect/05_background_comparison.tex",
+-        "sections/08_fixed_defect/writer_handoff.md"
+-      ],
+-      "explanation": "Shortened only the closing summary after the background squeeze to three source lines ending with 'prove [eq:s08:background] for the full background.' The one-node justification, endpoint identification and whole-background conclusion remain explicit, leaving a shorter final line for the right-hand proof square. No global proof macro, spacing, font or page setting changed. Native PDF confirmation is left to the coordinator as instructed.",
+-      "issue_id": "READABILITY-002",
+-      "resolution": "addressed"
+-    },
+-    {
+-      "changed_files": [
+-        "sections/08_fixed_defect/04_coefficient_transfer.tex",
+-        "sections/08_fixed_defect/INTERFACE.md",
+-        "sections/08_fixed_defect/writer_handoff.md"
+-      ],
+-      "explanation": "Kept t_0 exclusively as the inherited descendant time x. The endpoint distance is now written S-y in every path estimate, including square roots, powers, comparisons and nonprincipal-branch bounds. The notation ledger states that no endpoint-distance alias is retained. All numbered formulas, hypotheses and claimed asymptotic precision are unchanged.",
+-      "issue_id": "ACADEMIC-009",
+-      "resolution": "addressed"
+-    }
+-  ],
+-  "round": 1,
+-  "unit": "s08"
+-}

@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, archive/live/artifact and native PDF/entry/helper hashes plus approved/fresh S1 r004/S2 r015; under the new independence rule S3's stated WP inputs, exact vertex representation and graph/core deductions remain supplied by the article and precise sources rather than a program, and the URL-only edit adds no mathematical input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven S3 files are byte-identical to r011, preserving stable vertex types, valence/complexity ranges, genus-correct loop contraction, finite-core cutoffs and fixed-marking shifts without a new hypothesis from the revised organization paragraph.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged WP/descendant factorial scales, graph 1/Aut weights, 2^p p! loop factors and Z_g/V_(g,0) coefficient convention retain their previous meaning, and neither shared policy nor bibliography line breaking changes the absolute volume conversion or a_g/N_g scale.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The inherited first definitions and unchanged S3 interface preserve g_2,j_i/ell,F_g,Z_g,p,q and the expansion-coefficient scopes, while the new S1 prose and internal handoff introduce no symbol or alias into the scientific section.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review established S3's written global graph majorant, full tail and finite-core remainder proofs; I checked that the preserved Coefficient computation Remark points to the in-text coefficient rule and fixed-n volume conversion with an absolutely summable loop series, so it is a mathematical explanation rather than an engineering attachment or a software substitute for proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged sum of sup absolute values, growing-graph tail, all-legal loop truncation before HMT expansion, true input thresholds and summable finite-core errors retain their uniform compact/fixed-order scopes, with subsequent coefficient values explicitly excluded as premises of those estimates.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S3 r012 using the retained full original mathematical assessment; no MATH issue is open and resolved_issue_ids is empty. Publication independence was considered substantively in dependencies/proof_logic, without repeating the old long estimates.",
+    "The actual delta is the same ten S1/shared path changes and sole added S1 standalone_handoff.md; no path is removed and all seven S3 files remain unchanged. The retained mathematical Remark is in 04_finite_cores.tex and cites eq:s03:coefficient-rule and eq:s03:fixed-n-volume, not a file, executable or package. Actual original-writer ACK SHA256 e354ac2737ade5976fef2969b464ebcbdbb6ea5c669fbebd233f991969010256 matches the checked scope.",
+    "Actual source SHA256 7c5eb7c0493f30e169c1b6f4770754a9c49d48bd0c403696f530caef3d41b07d; native PDF SHA256 d8939ab6ce2880867d9c2bc2668183b8e11514ec7bd0e72615ca3aec03831b41. Current and preserved preflight receipts agree on source/PDF with verified entry/helper hashes, empty strict/layout diagnostics and explicit pre-submit/equal-source sealing provenance.",
+    "No old proof, program or primary-source search was repeated; only the assigned reports were written, without source/state/historical/other-role or frozen-output changes. Unfrozen A/C revisions and the final single-TeX export/isolated compilation are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "237f92c449fb77f0fc079cec2fa6e66ed86dd12c4dcdbe24852513ff8434efee",
+  "summary": "Pass on S3 r012: the shared independence update and accepted S1 revision preserve all graph/core hypotheses, normalization and uniform estimates; the retained coefficient-computation Remark supplies mathematical rules, not an engineering dependency. Actual frozen inputs and native receipt match, with no mathematical issue remaining.",
+  "unit": "s03",
+  "verdict": "pass"
+}

@@ -1,0 +1,15 @@
+# Appendix C r002 academic integration review
+
+Reviewer: `/root/s02_academic`.
+Snapshot: `a5389f6bd7e2f0c48a1e80907f4b86c3b8d90354270995ad3c74a1c99997266e`.
+Verdict: **pass**; issues and resolved issue IDs are empty.
+
+Read the actual dispatch, summary, author ACK, frozen diff headers and original full C report. Independent archived/live comparison confirms all eight C files are byte-identical, with six changed existing shared/dependency paths, nine added S6/S8 check/handoff files and none removed. The exact proposition, three equations, complete finite proof, numerical table and existing A/S4 reproduction instructions retain their original scope. The reviewed FP03/FP00 exact formulas, Mumford/S2 rank relations, tree automorphisms, shared edge parameters and factorial recovery remain their inputs; neither new Remark nor LiuData26 becomes a premise.
+
+Retained the complete C assessment and the just-completed original reviews of S6 r008 and S8 r004. S6 reports two further coefficients with the paper derivation explicitly omitted, supported by its self-contained calculation record; it does not strengthen Theorem 1.3 or supply a new uniform remainder. S8 labels only the h=1 limit as conjectural, credits the fixed-commit data for finite observations, distinguishes direct Bessel evaluation from fitting and consecutive-pair extrapolation from a bound, and closes with the refinement/general fixed-h terms open. Its selected values and arithmetic were personally checked in that review without validating all source integrals or convergence. No old algorithm was rerun for this integration signature.
+
+Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, original binding and all ten approved/fresh predecessors, independently matching their owned scientific files to actual accepted archives. Both native PDF/entry/helper hashes and receipts bind the current snapshot and source `15564808c6bb0ab20d964aa2b76e4436817681ff3a3a13b4a8e33a178a044a04`. The complete companion's entry differs from frozen main only by the declared eleven-unit assembly and actually includes title/abstract. It has 101 pages and PDF SHA `cbb5895bd7cc49cd8939bb38b0f8811d26f5699d60e553bdce4f939b5111f040`; the unit receipt also preserves the same-source pre-submit build and subsequent sealing provenance.
+
+Actually inspected complete-manuscript pages 46, 65 and 101. The new S6 Remark follows its unchanged proof; the main body ends with the clearly conjectural S8 Remark and open problem; the LiuData26 credit is fully readable. The sole retained 3.50723pt URL excess is slight and has no clipping or overlap, so it is non-blocking here. Standard diagnostics are clear, but the layout exception is explicitly present in the receipts and this report, not described as an empty layout result. No other academic issue is introduced, and C's previous report had none open.
+
+Only these two reports and private ignored page images were written. No source, shared input, state, other report, old record, frozen PDF or receipt was modified or rebuilt. Stop with the original context retained.

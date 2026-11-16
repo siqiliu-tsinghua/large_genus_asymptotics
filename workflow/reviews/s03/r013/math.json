@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "status": "pass",
+      "evidence": "Verified the actual /root/s02_math binding, canonical snapshot, archive/live/artifact and native source/PDF/entry/helper hashes, with S1 r005 and S2 r016 approved and fresh; the retired internal C is outside the dependency closure and supplies no WP input."
+    },
+    "dimensions": {
+      "status": "pass",
+      "evidence": "All seven S3 files are byte-identical to r012, preserving stable vertex types, valence and complexity ranges, genus-correct core contraction and fixed-marking shifts after deletion of the introductory C guide."
+    },
+    "normalization": {
+      "status": "pass",
+      "evidence": "The unchanged WP factorial scales, graph 1/Aut weights, 2^p p! loop factors, relative Z_g/V_(g,0) coefficients and absolute volume conversion require no low-genus calibration from C."
+    },
+    "notation": {
+      "status": "pass",
+      "evidence": "Inherited definitions and the unchanged S3 interface retain g_2, j_i/ell and all graph/coefficient scopes, while the preserved W26 Appendix C.1 locator refers to the external source rather than the retired appendix of this article."
+    },
+    "proof_logic": {
+      "status": "pass",
+      "evidence": "The retained complete review applies to the identical written vertex bounds, global graph majorant and finite-core proofs, none of which invokes C values; removing its introductory description and adding an administrative retirement link removes no mathematical premise."
+    },
+    "uniformity": {
+      "status": "pass",
+      "evidence": "The unchanged sum of sup absolute values on compact parameter sets, growing-graph tail, all-legal loop tail before HMT and summable finite-core errors retain their stated scopes and precision independently of finite low-genus examples."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh REMOVE-C impact review on snapshot c15bc5f27e787477474caf3c2bde8b5f9e7afc86b24dce7f66b52ea7502fffdf, retaining the original complete scientific assessment without repeating unchanged proofs or calculations.",
+    "The exact delta from r012 is three changed inputs (S1 section.tex, S1 INTERFACE.md and workflow/PROTOCOL.md), one added S1 appendix_retirement_handoff.md and no removed input; all seven S3 files are unchanged. Original-writer ACK SHA256 80d5508fec40fb0f48d8cd4f3846b1b1d5b80af56e388ccec0f982fa07ad9a14 matches this scope.",
+    "Actual source SHA256 f1f6b69c79b04d3b946b8a2251072f8e5f7b5c57aa6d4082c658161b3393054e; native PDF SHA256 9fe107e3d82077150504676c74dc3ae1b99dfd04991509620e551d52dffcc850. Verified current/preflight source and PDF agreement, entry/helper hashes and empty strict/layout diagnostics; the receipt transparently records the pre-submit build and equal-fingerprint sealing.",
+    "This signature excludes the future merged single-TeX export and isolated compilation. Only the current mathematical report and handoff were written; scientific sources, workflow state, historical records and frozen outputs were untouched."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "c15bc5f27e787477474caf3c2bde8b5f9e7afc86b24dce7f66b52ea7502fffdf",
+  "summary": "Pass on S3 r013: the accepted S1 removal of the internal C guide and administrative retirement update preserve every S3 mathematical input, normalization and uniform graph/core estimate; actual frozen inputs and native receipt match.",
+  "unit": "s03",
+  "verdict": "pass"
+}

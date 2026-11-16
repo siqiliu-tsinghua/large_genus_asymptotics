@@ -1,0 +1,34 @@
+{
+  "change_id": "HIGHER-REMARKS",
+  "user_request": "Append an omitted-proof higher-coefficient Remark after Theorem 1.3 and a closing fixed-defect Remark after Theorem 1.4; test the h=1 candidate against the supplied exact data and state it as a conjecture only if supported.",
+  "actual_agents": {
+    "writer": "/root/s02_writer",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "academic": "/root/s02_academic"
+  },
+  "preserve_user_edit": "The Introduction's user-added and, quad and mbox at Cin/N_g are retained verbatim. Four current theorem blocks and all existing numbered formulas keep their content and numbering.",
+  "shared_change": "Append only LiuData26 to references.bib, identifying the supplied hodge_data tables at commit 88dd4a501ecf3fbc124a823ad1589911f86a14e5. No new bibliography claim is introduced into the Introduction.",
+  "data_source": {
+    "directory": "C:/Users/liusq/Development/hodge_data",
+    "commit": "88dd4a501ecf3fbc124a823ad1589911f86a14e5",
+    "genera": [2, 20],
+    "access": "Read existing Sage assignment files only; do not execute them or open/change the SQLite cache or modify the external repository.",
+    "root_diagnostics": "build/remarks-20261115/data_check.json",
+    "independent_diagnostics": "build/remarks-20261115/math-data/check.md"
+  },
+  "scientific_changes": {
+    "s06": "Append a short Further coefficients Remark to 04_correction_and_proof.tex, giving g_2^-2 and g_2^-3 coefficients using existing b and z_{0,1}; omit the proof as requested. Preserve Theorem 1.3 precision and its completed proof.",
+    "s08": "Append the final body Remark to 06_proof.tex. Explain that higher precision is not determined by the proof, state only the numerically supported h=1 limit as a conjecture, and close with further fixed-defect coefficients as an open problem. Do not assert O(g^-2) or a general-h formula."
+  },
+  "order": ["s01", "s02", "s03", "a", "s04", "s05", "s06", "s07", "b", "s08", "c"],
+  "protocol": [
+    "One active unit; coordinator alone changes workflow state through the actual CLI.",
+    "Use the real original writer and reviewers for every new snapshot; no generated or copied signatures.",
+    "For unchanged units use a short genuine incremental acknowledgment/review of the changed common inputs and their impact, retaining the original full assessment.",
+    "For s06 and s08 review the new Remark, calculation bundle and interface in full, with old proofs retained.",
+    "A strict native pre-submit PDF is sealed after submit only after verifying its identical source fingerprint; provenance explicitly records this order. Frozen bytes and historical records are never overwritten.",
+    "Collect all three reports before any original-writer revision. Actual strict acceptance requires three passes on the current snapshot.",
+    "The default unit preview omits the abstract. The actual shared abstract is unchanged; use a full front-matter companion for s01 and a full-manuscript companion at final c integration."
+  ]
+}

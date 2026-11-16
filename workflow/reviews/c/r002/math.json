@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, all archive/live/artifact hashes, original-writer ACK and all ten genuinely approved/fresh prerequisites, plus both unit and full-manuscript PDF/entry/helper receipts; the companion's actual entry and recorder include the title/abstract and all eleven units from this exact source closure.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight C files are byte-identical to r001, preserving the complete genus-two/three stable-tree lists, six vertex types, degree ranges, one proposition and three numbered equations; the new h=1 conjecture and S6 coefficient report add no hypothesis to those finite identities.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged exact vertex/edge formulas retain flag automorphisms, chain cancellation, 3! and powers-of-12 recovery, and every a_g/b_g/insertion/defect normalization; the user's conjunction changes neither Cin nor N_g and the newly reported relative S6/S8 quantities do not reinterpret C's exact values.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged Introduction/C definitions and interface retain g_2,j_i,ell, lowercase integrals and established rho,b,beta_g meanings, while the integrated Remarks use existing Bessel notation and clearly explain the S8 numerical columns without introducing an alias or changing a principal-result/equation counter.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "C still reconstructs its exact finite claims from the accepted S2 Chern relations and S6 exact vertex/tree identities, not the supplemental S6 asymptotic coefficients, S8 conjecture or LiuData26 observations; the integrated p.46 and p.65 Remarks match their already completed mathematical reviews and do not intrude into C's unchanged proof or checker instructions.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "C remains a finite exact consistency check rather than an asymptotic-rate proof, and the actual complete companion preserves Theorem 1.3's O(g_2^-2) precision and Theorem 1.4's fixed-h equivalence with relative o(1), keeping the new h=1 refinement explicitly conjectural and the S6 higher calculation separate from a stronger uniform-error assertion.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh formal impact/integration signature on C r002, explicitly covering both the unit preview and the actual 101-page title/abstract/full-manuscript companion. The retained complete C r001 review and already-completed fresh S6 r008/S8 r004 reviews supply the unchanged scientific reasoning; no prior MATH issue is open, so resolved_issue_ids is empty.",
+    "Exactly six existing paths changed and nine S6/S8 calculation/provenance paths were added, with none removed; all eight C files and all other old scientific/layout inputs are unchanged. Original-writer ACK SHA256 9ed3ffa3ee95acbedfd3ebf8e2d8a98c2d156b310f1c4e99d4cbcb1258742d6d matches the independently checked delta. LiuData26 is not cited or imported by C.",
+    "Actual common source SHA256 15564808c6bb0ab20d964aa2b76e4436817681ff3a3a13b4a8e33a178a044a04; unit PDF SHA256 abefbe81412569f01aa140e55a78ad72c6a2607d9d0af8360838d27865a06ebe; full-manuscript PDF SHA256 cbb5895bd7cc49cd8939bb38b0f8811d26f5699d60e553bdce4f939b5111f040. Both actual receipts match this snapshot/source and entry/helper/PDF hashes. The unit's preserved preflight source/PDF match the sealed receipt; the full entry is exactly frozen main with only assembly explicitly replaced, and its recorder confirms the actual abstract and all eleven section entries.",
+    "Independently verified the full PDF has 101 pages and viewed p.46 (S6 reported coefficients and unchanged main proof), p.65 (S8 conjecture, numerical table and unchanged precision boundary) and p.101 (new data entry). The numerical formulas and table agree with the just-completed independent checks, without repeating either algorithm.",
+    "Strict diagnostics are empty, but layout diagnostics are not: both receipts retain exactly the 3.50723pt LiuData26 URL overfull hbox and its specific recorded reader/coordinator exception. The actual full bibliography on p.101 was inspected and the entry is complete without clipping/overlap; the diagnostic is not suppressed or reclassified as absent and has no mathematical effect.",
+    "Private source/artifact verification and page renders are confined to build/remarks-20261115/math-c-r002/. No old finite or long program was rerun; only the assigned reports and ignored verification/rendering were written, without source/state/historical/other-role or frozen-output changes. This signature does not prove the S8 conjecture or a stronger main-theorem remainder."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "a5389f6bd7e2f0c48a1e80907f4b86c3b8d90354270995ad3c74a1c99997266e",
+  "summary": "Pass on C r002 and its actual full-manuscript companion: the unchanged exact C proofs and normalizations retain their original justification, and the independently reviewed S6/S8 additions keep their supplemental/conjectural boundaries without changing theorem precision or becoming finite-proof premises. Actual frozen artifacts and both renderings match; no mathematical issue remains and the sole bibliography layout diagnostic stays explicit.",
+  "unit": "c",
+  "verdict": "pass"
+}

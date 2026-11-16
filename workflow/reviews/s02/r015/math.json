@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Applied the new publication-independence rule: S2's unchanged geometric arguments cite the precise classical GRR, gluing and forgetting inputs and do not require a program or project document to complete them; actual binding, snapshot, archive/live/artifact/native hashes and approved/fresh S1 r004 were verified, and URL line breaking changes no source metadata.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven S2 files are byte-identical to r014, preserving stability, rational-Chow complex codimensions, Hodge/character index ranges, rational-tail degree conditions and the finite forgetting cutoff; S1's revised organization changes none of these hypotheses.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The inherited stack-degree and integral definitions and every S2 GRR coefficient, Chern factorial, branch half, graph automorphism factor and forgetting sign remain unchanged, including the retained new-psi contribution in the kappa pullback.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The S1 definitions and unchanged S2 interface preserve the first-use scopes of Chow coefficients, lowercase integrals, g_2, j_i/ell and the psi/logarithmic-kappa/Chern-character definitions in S2.2; publication rules, organization prose and the URL edit introduce no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review established the in-text rational-Chow GRR/log-kappa conversion, boundary self-intersection expansion and rational-tail/cycle-inversion forgetting proofs, so S2 already supplies its mathematical rules and deductions without software output; the new S1 wording removes an engineering promise and adds no premise or gap to that proof chain.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged finite-genus identities retain the every-new-psi>=1 annihilation condition, >=2 start for the exponential series and degreewise finiteness, while the revised guide still separates low-genus examples from uniform asymptotic estimates and creates no new interchange or precision claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S2 r015 using the retained complete mathematical assessment; no prior MATH issue is open and resolved_issue_ids is empty. The new independence requirement is addressed substantively in proof_logic/dependencies, not merely by the absence of engineering keywords.",
+    "Exactly the ten already-reviewed S1/shared paths change and only the S1 standalone_handoff.md is added; none is removed. All seven S2 files are unchanged and the compiled S2 TeX contains no project program/Markdown/package/execution promise. Original-writer ACK SHA256 488ce344fab6eddd604ff6dbf5cbcfca76de23ee238fb0a1ce554d6b5c840b87 was read and checked against the actual delta.",
+    "Actual source SHA256 dc3ab94cbb1a37c06fd8917029bb73f247f30d3d2ea3d630068dbdc6e140100d; native PDF SHA256 b7dbfb3f4168518b0b65e935f0d7836983df278128914dc0620c8f84425332ec. Both current and preserved preflight receipts agree on source/PDF with actual entry/helper hashes verified, empty strict/layout diagnostics and explicit pre-submit/equal-source sealing provenance.",
+    "No unchanged proof, computation or primary-source search was repeated; only assigned reports were written, without source/state/historical/other-role or frozen-output changes. This signature does not review unfrozen A/C revisions or certify the future merged single-TeX export and isolated build."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 15,
+  "schema_version": 1,
+  "snapshot": "db10a1e6a8201e68f187c6d8d510cf103dc370389482b8e105dfc93f87e70fc0",
+  "summary": "Pass on S2 r015: the shared independence rules and accepted S1 organization update preserve all geometric hypotheses, normalizations and proof inputs; the unchanged section provides its arguments in text with precise sources and no software obligation. Actual frozen inputs and native receipt match, with no mathematical issue remaining.",
+  "unit": "s02",
+  "verdict": "pass"
+}

@@ -1,0 +1,57 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The abstract contains no mathematical notation and expands intermediate long-wave (ILW) before that abbreviation is used in the Introduction. section.tex:14-35 defines stable g,n, the stack, rational Chow grading, Hodge bundle/classes, rank conventions, stack integration and the product indices before the first integral; :40-63 binds the forgetting map, integral families, homogeneous degree and normalization before use. The theorem-local Cin/N_g, F(j)/G(j), g_2/J_n/z_{0,1}/rho/b definitions precede their displays (:88-136). Psi, kappa and Chern-character symbols are absent, leaving those tools in Section 2.2.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The four complete theorem blocks, six numbered equation blocks and setup from g,n through the normalized bracket are byte-identical to the captured baseline. The text retains j_1,...,j_ell with ell the product length, g_2=2g-3, explicit J_0 in the zero definition, lowercase a_g/b_g(h)/b_g and scalar b, and Chow coefficients inside parentheses. The new prose adds no competing symbol or changed normalization and explicitly retains fixed-index/fixed-defect scope and asymptotic equivalence without a new final rate (:141-148). The regime-count wording issue is recorded as exposition rather than a mathematical-notation defect.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The global setup appears once at its actual first use, with degree and stack-integration conventions next to the first integrals; the short marked-vanishing argument explains the unmarked reduction rather than introducing auxiliary class aliases (:14-63). The new motivation, literature and proof guides use words and existing integral/theorem names, without importing a ledger of later graph, transport or Chern-character notation. Existing F(j), G(j), N_g and the integral families have repeated independent roles; the 144-word abstract has no formulas or citations that would require extra definitions.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The guides distinguish Sections 3-5's full graph sum/core route from Section 6's independent top-class route and Sections 7-8's transport/transfer route, explain the different roles of Appendices A and B, and explicitly permit entry at Section 6 after Section 2 (:150-203; unit p.3, companion pp.3-4). Appendix C is accurately limited to exact genus-two/genus-three normalization checks and reproducibility, with finite checks not replacing uniform estimates. However, the abstract calls the scope 'four regimes' while the first motivation paragraph says 'We study two regimes' without identifying a hierarchy between the two counts; READABILITY-001 requests that small orientation repair.",
+      "status": "issue"
+    },
+    "structure": {
+      "evidence": "The Introduction has a usable sequence: motivation, first definitions and reduction, relevant inputs, paired theorem statements, concrete consequences, then proof and reading guides. The WP paragraph assigns distinct roles to fixed-marking expansions, absolute normalization and uniform vertex bounds, then identifies the whole-graph obstacle (:72-81); later paragraphs separately explain finite calculations, conditional resurgent comparison, the top-class route and fixed-defect transport. The introductory target theorems have their proof locations identified, so no extra proofs are needed here. Actual inspection of all four unit-preview pages and all five title/abstract/Introduction companion pages found readable formulas, intact tags, ordinary page transitions and the settled bibliography layout.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The existing roles remain distinguishable: g,n are genus/marking counts; ell is product length; j_k is a Hodge degree and k a bound position; h is defect; d is the homogeneous insertion degree; x,t are local integral variables and z the Bessel argument. The scalar b is visibly separate from b_g, the Bessel zero is z_{0,1} rather than an insertion-index alias, and the existing F(j)/G(j) retain their list-dependent arguments. New explanatory prose introduces no additional letter family or symbol collision.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The unmarked reduction leads directly to the three integral families; short bridges distinguish the first two fixed-index results from the near-top pair (:38-63, 83-84 and 113-116). The contribution paragraph explains the missing g^-1 insertion term, the cubic sum and the two powers per fixed defect, then the reading guide connects those results to the two proof routes and finite checks (:141-203). The remaining break in the continuous front-matter reading is the unexplained four-versus-two use of 'regimes' on companion p.1 (abstract :2-9; Introduction :5-12), as detailed in READABILITY-001.",
+      "status": "issue"
+    }
+  },
+  "issues": [
+    {
+      "id": "READABILITY-001",
+      "severity": "minor",
+      "location": "sections/01_introduction/section.tex:5-12, especially 'We study two regimes'; compare frontmatter/abstract.tex:2-9. Both passages appear on p.1 of build/reviews/s01/r001/frontmatter/frontmatter.pdf.",
+      "message": "The abstract announces four regimes, but the Introduction immediately announces two regimes using the same unqualified term. The subsequent theorem pairs make the intended grouping inferable, but the opening does not tell the reader that four result cases are being organized into two broader index settings. The adjacent counts therefore look inconsistent at the paper's first orientation point.",
+      "requested_change": "Clarify that hierarchy in the new motivation paragraph: describe the two broad index settings and explicitly relate them to the four result cases, or otherwise use wording that reconciles the counts. Preserve the agreed abstract and all protected theorem/setup text; no additional mathematical notation or general rewrite is needed."
+    }
+  ],
+  "notes": [
+    "First formal full review of s01 and the shared abstract by the actually bound original readability reviewer. Earlier Introduction/Section 2 trial findings supplied context but do not constitute acceptance of this complete new Introduction; resolved_issue_ids is empty.",
+    "Verified all 17 frozen/live inputs and artifacts, the live Engine fingerprint, exact snapshot and source/PDF/entry/helper receipt hashes. Unit render source SHA256 e39ea3eb4e2ceb460aad736b66876a766c19922c86c54e371bfa3e08615ce3b4; original unit PDF SHA256 c16034bdd1e568f4430daab9521b5e6f8c676ecae2cd8367c618e96866a44b76. Strict and layout diagnostics are empty.",
+    "The standard unit preview omits title/abstract. The coordinator supplied a separate native front-matter companion without overwriting that preview: build/reviews/s01/r001/frontmatter/frontmatter.pdf, SHA256 fcc6c6727480135a73700388f47c91de3796865f3267a5319840892045fae7c6. Verified its matching snapshot/source hash, PDF/entry/helper receipt hashes, actual abstract input and exact main.tex substitution of the chapter assembly only.",
+    "Actually inspected unit-preview pp.1-4 and companion pp.1-5, including the actual title/abstract-to-Introduction transition and all displayed formulas. The abstract is byte-identical to the original 144-word proposal and expands ILW. Private renders are confined to build/closing-writing/readability-s01-r001/.",
+    "Independently verified preservation of all four theorem blocks, six numbered equations and the mathematical setup against build/closing-writing/baseline.json. python scripts/validate.py --unit s01 passed. Only this round's own reports and ignored inspection products were written; source, state, historical/other reports and frozen outputs were left unchanged. This review neither accepts future Appendix C nor signs the pending old-unit shared-input refreshes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb",
+  "summary": "The abstract and Introduction provide economical first definitions, clear theorem statements, concrete contributions and usable independent reading routes; both native renderings are readable. One minor exposition issue remains: reconcile the abstract's four regimes with the Introduction's two broader settings in the opening motivation.",
+  "unit": "s01",
+  "verdict": "changes_requested"
+}

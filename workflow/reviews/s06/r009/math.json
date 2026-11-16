@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified binding, canonical snapshot, archive/live/artifact/native hashes, author ACK and approved/fresh S1 r004/S2 r015; the unchanged FP03/FP00 exact vertex/beta inputs and Bessel references are supplied in the article, require no program, and this branch has no Appendix A dependency.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eleven S6 files are byte-identical to r008, retaining stable vertex types, local coefficient orders, genus-zero/m=0 exceptions, complete tree ranges and nonelliptic endpoint conditions without a new hypothesis from the shared changes.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The exact beta series, stack/Aut factors, two factorials, 12^g_2 recovery and R=rho/12 conversion remain unchanged, as do the supplementary Remark's relative g_2^-2/g_2^-3 coefficients and their established b,z_(0,1) normalization.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The inherited and unchanged first definitions keep g_2,z_(0,1),rho,scalar b,b_g and beta_g distinct and correctly scoped, and no engineering promise, new manuscript alias or missing definition is introduced by S1's revised organization or the URL wrapping.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained full review establishes the written exact-vertex derivation, Bessel/circle bounds, complete stable-tree argument, saddle proof and elliptic-leaf correction independently of internal checks; the unchanged user-authorized higher Remark omits details explicitly and neither becomes a main-proof premise nor promises software to complete it.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The all-type vertex bound, whole-tree/genus tail and integrable saddle remainder retain their proved uniformity, while the original relative O(g_2^-2) theorem error is not strengthened by the supplemental coefficient report or by its internal computational verification.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE impact signature on S6 r009 using the retained complete scientific assessment and r008 coefficient review; no prior MATH issue is open and resolved_issue_ids is empty. All eleven S6 files are unchanged, including internal checks that do not enter the paper and were not rerun.",
+    "The closure delta is only the ten already-reviewed S1/shared path changes and added S1 standalone handoff, with no removal. Original-writer ACK SHA256 8988a2c9a135955e0df18e9563f838ac05d8e8e26435ab6ba5daedecba946e61 matches the actual scope. Publication independence is addressed in proof_logic/dependencies while preserving the explicitly omitted supplementary calculation's status.",
+    "Source SHA256 b4cf6188079705e4309289c48d04a12a86c8c654695a424bf199d53a4482a94d; actual native PDF SHA256 ae7760cbecd61a36732426fb03eb157dd2e8e450a3fcc9ee517ade0ee11c3fdc. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, strict/layout diagnostics are empty and pre-submit/equal-source sealing is explicit.",
+    "Only assigned reports were written; no old proof, seven-class computation or check was repeated and no source/state/historical/other-role or frozen-output file changed. Unfrozen C work and final isolated single-TeX delivery are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "95e86a19e3df57fc527897bca025087501759c2998b10493a884962680587552",
+  "summary": "Pass on S6 r009: the shared independence and accepted S1 changes preserve the written exact/Bessel/tree/saddle proof, original precision and authorized omitted-detail supplement without a software obligation. Actual frozen inputs/native receipt match, with no mathematical issue remaining.",
+  "unit": "s06",
+  "verdict": "pass"
+}

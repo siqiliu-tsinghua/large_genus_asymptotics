@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Under publication independence, all 24 unchanged s04 files retain their proof structure and no manuscript program/README/directory/attachment promise, while the supplementary Further coefficients Remark explicitly omits calculation details without offering code as a continuation of its text.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "The unchanged text retains MZ/Wang/HMT source roles, A's unconditional volume reconstruction, S3's whole-graph estimates and S4's finite-core assembly, with EGGLS remaining a conditional comparison rather than an authority supplied by internal checks.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "S4 still cites A's actual in-text c_2/profile/moment/core formulas and scholarly locators, all retained mathematical A files match approved r012 after its engineering-only deletions, and the bibliography's URL wrapping leaves source identities, versions and normalization translations unchanged.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The article's retained A derivations and S3 bounds supply the original theorem's mathematical premises without a program filling a proof gap, preserving its two corrections and O(g^(-3)) precision while the user-authorized omitted-details g^(-3)/g^(-4) Remark remains supplementary and outside that proof.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and r013 report, applying the new independence criterion; independently verified all 24 local files unchanged, thirteen changed shared/S1/A inputs and two added handoffs, with none removed.",
+    "The updated inputs exactly match accepted A r012, whose retained profile/recursion, moment, low-vertex, classification, automorphism and integration arguments were substantively inspected in this original session; inspected S4's actual A references and omitted-details Remark and scanned its frozen TeX for engineering reader obligations without rerunning checks or repeating old literature work.",
+    "Verified archived/live inputs and artifacts, recomputed snapshot/render fingerprints, original binding and all four approved/fresh parents; actual native PDF/entry/helper and preserved preflight hashes match the strict/pass receipt with empty standard/layout diagnostics.",
+    "No academic issue was open; this is a scoped s04 impact signature, not a claim of completed isolated single-TeX delivery, and only these reports were written without source/state/history/other-report/frozen-output changes."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "4709cf252e7d3c15a36c3b105c9240ff8b1b5bc0ad051c8f72369b9782f71b9e",
+  "summary": "Pass. The accepted independence edits preserve S4's in-article proof inputs, source credit, main precision and separate omitted-details coefficient Remark without a software obligation.",
+  "unit": "s04",
+  "verdict": "pass"
+}

@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified binding, canonical snapshot, complete live/archive/artifact fingerprint including the revised one-subsection metadata, all ten approved/fresh prerequisites and both native receipts; C's actual mathematical inputs remain the in-text S2/S6 exact identities and precise FP03/Mumford sources, without a program, internal document or higher-coefficient/conjectural premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The entire C.1 source is byte-identical to r002, preserving its proposition/table, three equations, proof and ranges; its written m_v>=0 and E<=g_2 argument still proves the complete genus-two/two-type and genus-three/four-type tree lists, while the new title and single-subsection assembly change no mathematics.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Retained C.1 explicitly extracts all six vertices, states the graph Aut weights, integrates the shared edge parameters including the zero elliptic-chain contribution, restores 1!/3! and the powers of 12, then derives the a_g/b_g, defect and insertion normalizations by the rank-two/three Chern relations, with no step lost on deleting C.2.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The retained C.1 definitions and labels keep g_2,beta_G,Phi,m_v and bound edge/defect indices correctly scoped with inherited lowercase integrals; the short new mathematical guide adds no alias, and the interface/manifest consistently remove only the engineering subsection while preserving sec:appendix-c and all mathematical exports.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Located the complete direct classification, finite vertex series, edge/Aut and Chern deductions in unchanged C.1, so removed C.2's checker description supplies no unique premise and no program output completes the proof; the actual full companion also incorporates the previously reviewed A engineering deletions without losing A's written finite rules, and C's new guide accurately describes the retained argument.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "C remains a finite exact derivation rather than evidence for an asymptotic rate, and the integrated manuscript retains the four main theorem precisions, authorized omitted-detail coefficient reports and explicitly conjectural h=1 limit, without deriving a new uniform estimate from an internal check or a small-genus example.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh STANDALONE-ARTICLE mathematical impact/integration review on C r003, explicitly covering its unit preview and actual 101-page full-manuscript companion. Retained complete C scientific assessment and the newly reviewed dependency changes remain applicable after this actual source check; no prior MATH issue is open and resolved_issue_ids is empty.",
+    "The actual delta contains fifteen changed existing source paths plus @outline/@unit, three added standalone handoffs and the sole removed engineering source sections/c_exact_checks/02_reproducibility.tex. The removed file remains intact in the r002 frozen archive. C.1, the original writer handoff and all three internal checks are unchanged; no check was rerun. The current Engine fingerprint exactly matches submission.json, including the new title/one-subsection metadata. Original-writer ACK SHA256 4ef066546c90c0cba03a512ba891458f915f7474e2d5021da1939696a46a1b9b matches the checked scope.",
+    "Common source SHA256 127171298758a90ee63730c595e0e634e79d7ba1e74f8bb973e16645bde05e13; actual unit PDF SHA256 2124530191139cb757b392483624b4b4ea049855cc935711ada7a1588aa60631; actual full PDF SHA256 ca7939842c47c67ebc6e2d1d98ffb5c93cc21715e16e78e7551e3f38ef37f84e. Both actual PDF/entry/helper hashes match their receipts and snapshot/source; the unit preflight matches the sealed native build, and the full entry is exactly frozen main with explicit eleven-unit assembly. Its recorder confirms actual abstract/all-section input and excludes the removed C.2.",
+    "Verified the actual full PDF has 101 pages, with no targeted engineering-keyword hits in freshly extracted text. Visually checked full p.66 (A's mathematical entry), p.84 (A's proof ending directly before B), and pp.98-99 (new C title/guide and complete retained proof). The six vertices, Aut/edge weights, factorial recovery and Chern steps are all printed; there is no replacement software instruction. Both receipts now have empty strict/layout diagnostics and exception lists, including the resolved bibliography wrapping.",
+    "Only assigned reports and ignored preservation/receipt/text/rendering checks under build/standalone-20261116/math-c-r003/ were written; no old program, coefficient reconstruction or full proof was rerun, and no source/state/historical/other-role or frozen-output file changed. This approves the current mathematical article/companion, not the not-yet-exported single-TeX file or its future isolated compilation; those require the coordinator's actual delivery verification after acceptance."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "ed6d87e6e1d3fe8d44fa97c2a23198c2a08fa5f04e389e3f68e0cefba9c7d2c5",
+  "summary": "Pass on C r003 and its actual full companion: deleting the engineering subsection preserves the complete in-text low-genus derivation, exact normalizations and original theorem/error boundaries without a software dependency. Revised metadata, frozen sources and both strict renderings match, with no mathematical issue remaining; final isolated single-TeX delivery is not prematurely certified.",
+  "unit": "c",
+  "verdict": "pass"
+}

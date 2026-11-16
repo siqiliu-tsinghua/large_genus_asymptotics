@@ -182,3 +182,38 @@ review remain coordinator/reviewer work. The transfer error gives
 only relative o(1); no uniform growing h, growing marking count,
 next fixed-defect coefficient or relative O(1/g) theorem is exported.
 No unresolved source or shared-input request is known.
+
+## Closing conjecture and finite-data diagnostics
+
+- rmk:s08:further-asymptotics is appended after the complete proof in
+  06_proof.tex. It conjectures only the h=1 limit
+  g*(rho^2*b_g(1)/(24*g^2*b_g)-1)
+  -> -2+J_1(z_{0,1})^2/2+pi^2*z_{0,1}^2*J_1(z_{0,1})^4/2.
+  It introduces no new mathematical symbol or numbered equation.
+  The proved exports above remain unchanged: no higher fixed-defect
+  coefficient or stronger remainder is proved by this Remark.
+- The old 33 numbered equations, 13 principal statements and 14 proofs
+  are unchanged. The original proof is a literal byte prefix of the
+  extended 06_proof.tex. The closing conjectural Remark is additional
+  to the original post-proof source remark.
+- LiuData26 supplies the selected exact rational observations at
+  g=2,...,20, fixed source commit
+  88dd4a501ecf3fbc124a823ad1589911f86a14e5. The source's general
+  g>14 validation caveat remains in the bundle provenance; agreement
+  of two extractions is not independent validation of the integrals.
+- checks/run.py uses only the archived checks/selected_h1.json and
+  mpmath 1.3.0 at 100 decimal digits. Its candidate comes directly
+  from the Bessel values, not fitting. The adjacent extrapolation is
+  g*residual(g)-(g-1)*residual(g-1), the intercept of the line against
+  1/g through the two consecutive genera. This residual notation is
+  descriptive code/documentation only, not a new paper symbol.
+- The actual run is recorded in checks/verification.json; generated
+  output is confined to build/s08-higher-check/results.json.
+  Output SHA256:
+  de9e0fa164787e403842fcdbb13caa6b5da652b101e787277bed5d36094751b1.
+  Code SHA256:
+  404074e96f6299ebaf2047a963b1f8e1d24d511a8c30155ba5bd82f5c6531035.
+  Selected-data SHA256:
+  9e4370649bae7db217ac41fa5197f4756dc618a7d8805688688240df3d7e825a.
+  The check is computation_only. Proving the refinement and obtaining
+  higher terms for general fixed h remain open.

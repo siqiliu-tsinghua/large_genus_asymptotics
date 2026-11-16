@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual s01 binding, all 17 frozen/live fingerprint entries, artifacts, canonical snapshot and both native build receipts. This introductory unit has no formal later-body dependency; independently compared the captured nine-unit baseline with the current workspace and verified 105 preserved input paths plus the original bound math reports and accepted snapshot records. The shared Introduction/abstract update makes those old fingerprints await refresh, but their scientific proofs are unchanged. The new source roles agree with the retained primary-source checks: MZ fixed-marking expansions are distinguished from the LX/W absolute constant and HMT/SW uniform inputs; FP03, KMZ/Manin-Zograf and Buryak are used in their actual scopes, and EGGLS remains a conditional comparison.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Independently matched all four complete theorem environments and six numbered equations to baseline.json and commit ed1534d; the entire original mathematical setup is also an exact retained substring. Pure-product degree is 3g-3+n; the forgetting argument uses stable targets m=0 for g>=2 and m=1 for g=1, with genus zero and the nonempty-product restriction handled separately. The only marked exception is the stack integral on Mbar_(1,1). The b_g(h) degree is (g-h)+(2g-3+h)=3g-3, 0<=h<=g includes lambda_0, and the normalized insertion background is nonnegative for 0<=d<=3g-3.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The definitions of a_g, b_g(h), b_g, the denominator a_g, Cin, N_g, g_2, rho and scalar b are unchanged, as are every factorial, constant and error term in the four statements. Compared the theorem formulas with the unchanged final proofs in Sections 4, 5, 6 and 8: they retain the absolute WP normalization, fixed-insertion factorial product/cubic correction, both top-Hodge factorials and the fixed-defect constant 24. The new prose correctly attributes 1/h! to ordered transport integrals and does not promote the supplementary third/fourth coefficients from the Section 4 Remark. The abstract's first two corrections and two-term top-class description match precisely the main statements.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The setup defines the stable g,n pair and stacks, rational Chow/complex codimension, Hodge bundle and lambda ranges, stack integration, positive ell and j-family, forgetting map, integral families and homogeneous insertion bracket before use. Cin/N_g, F(j)/G(j), and g_2/J_n/z_(0,1)/rho/b are defined inside their respective first theorem statements; the defect is explicitly an integer and fixed in its asymptotic result. All new mathematical prose uses these existing names without introducing an alias; psi, logarithmic kappa and Chern-character symbols remain in Section 2.2. The notation-free 144-word abstract adds no symbol and spells out intermediate long-wave (ILW) before the acronym's subsequent use.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read the complete frozen Introduction, abstract, interface and writer handoff, and checked the new contribution/route claims against the actual unchanged body outputs. The overview accurately separates full graph concentration and loop resummation, finite unconditional coefficient reconstruction, labeled insertion estimates, the independent cycle-free top-Hodge tree route, exact ILW/finite-jet recovery, complex-domain/primitive estimates, two-singularity transfer and whole-background nef comparison. Section 7's integration-constant description is supported by its full finite-jet and genus-one seed arguments, while analytic primitive control is correctly assigned to B/8. No new theorem or proof input is asserted; Appendix C is only the authorized forthcoming normalization/reproducibility route and is not used to establish any asymptotic result.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The theorem scopes and new explanatory paragraph keep ell and all j-indices fixed, h fixed, and each requested expansion order fixed; they introduce no growing-index, growing-defect or stronger-rate assertion. The abstract reports the normalized fixed-product expansion through g^-3, the two-term top-Hodge result and fixed-defect relative growth, all at their actual proved precision. The route description requires the whole stable-graph/tree/kernel sums and summable remainders rather than estimates for each fixed object. It expressly preserves mere asymptotic equivalence for the fourth theorem and says finite normalization checks do not replace uniform remainder bounds.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is the first formal complete s01/abstract review. Earlier Introduction/Section 2 trials are retained context, not an inherited full-unit approval. No prior formal s01 MATH issue exists, so resolved_issue_ids is empty.",
+    "The coordinator-applied abstract is byte-identical to the author's 144-word proposal. The standard 4-page unit PDF does not render the abstract, although the abstract is frozen in the fingerprint. Therefore independently verified the separate 5-page frontmatter companion, its actual abstract/S1 recorder inputs, and the exact main-file replacement of automatic assembly by S1; all other main bytes are unchanged. Read the companion's full extracted content and visually inspected its abstract/definitions page and theorem/overview page.",
+    "Render source SHA256 e39ea3eb4e2ceb460aad736b66876a766c19922c86c54e371bfa3e08615ce3b4. Standard PDF SHA256 c16034bdd1e568f4430daab9521b5e6f8c676ecae2cd8367c618e96866a44b76; frontmatter companion PDF SHA256 fcc6c6727480135a73700388f47c91de3796865f3267a5319840892045fae7c6. Both receipts bind snapshot 04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb, match actual entry/helper/PDF hashes, and record strict native 10pt builds with empty standard/layout diagnostics. validate.py --unit s01 passes.",
+    "No source, shared input, state, other-role report, historical record or frozen output was changed. Only this round's assigned reports and private ignored comparison/rendering outputs were written. This review does not approve the future Appendix C or substitute for later common-input refresh signatures."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb",
+  "summary": "Pass on the first complete s01/abstract submission. The four theorems, six numbered formulas and original setup are unchanged; the new background, contribution statements, fixed-parameter scopes, abstract and proof routes accurately describe the completed scientific body without strengthening precision or using future normalization checks as proof. No unresolved mathematical issue.",
+  "unit": "s01",
+  "verdict": "pass"
+}

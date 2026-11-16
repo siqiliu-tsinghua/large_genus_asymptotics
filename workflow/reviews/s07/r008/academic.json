@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "The seven unchanged s07 files preserve their self-contained string/transport/characteristic/Borel exposition and adjacent proofs without engineering obligations, while the accepted S1 ending simply omits the retired optional C guide and the protocol link remains non-article documentation.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Buryak's precise ILW input credit remains distinct from the paper's geometric constants, string/finite-jet recovery and transport/Borel derivations, with no authority or attribution lost by removing optional C examples.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Bur15/Bur16 versions and locators, positive-parameter/defect-variable translations and exact S2/S6 inputs are unchanged, and neither the s07 mathematical references nor its selected closure uses retired C results to determine the integration constants.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The retained in-text geometric and analytic arguments still establish the same exact fixed-genus/formal identities and separately conditioned local conclusions without C or software filling a proof gap, and retirement adds no stronger continuation, asymptotic claim or certification of final isolated export.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and prior r007 result; independently confirmed seven local files unchanged, only three changed shared/S1 inputs, one added retirement handoff and no removals, matching approved S1 r005.",
+    "Verified actual C retired status and absence of C inputs/references, retaining the original full ILW/source/constant assessment without repeated papers, proofs or calculations; ACADEMIC-007 remains resolved.",
+    "Verified archived/live inputs and artifacts, recomputed snapshot/render fingerprints, original binding and all three approved/fresh parents; native PDF/entry/helper and preserved preflight/sealing hashes match the strict/pass receipt with empty standard/layout diagnostics.",
+    "No academic issue is open; only these reports were written without source/state/history/other-report/frozen-output changes, and final isolated single-TeX delivery is not preapproved."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 8,
+  "schema_version": 1,
+  "snapshot": "177e20fca56d71169c4115815153e2bcc8a53954187f725ce0144c35c96a27c9",
+  "summary": "Pass. C's retirement leaves S7's precise ILW inputs, independently fixed integration constants and original formal/local analytic scope unchanged.",
+  "unit": "s07",
+  "verdict": "pass"
+}

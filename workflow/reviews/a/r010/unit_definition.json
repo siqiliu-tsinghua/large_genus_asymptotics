@@ -1,0 +1,29 @@
+{
+  "depends_on": [
+    "s03"
+  ],
+  "directory": "sections/a_coefficients",
+  "id": "a",
+  "kind": "appendix",
+  "number": "A",
+  "outline_heading": "### 附录 A Coefficients and finite cores",
+  "subsections": [
+    {
+      "path": "sections/a_coefficients/01_wp_coefficients.tex",
+      "title": "Descendant and volume coefficients"
+    },
+    {
+      "path": "sections/a_coefficients/02_loop_moments.tex",
+      "title": "Signed loop moments"
+    },
+    {
+      "path": "sections/a_coefficients/03_low_complexity_vertices.tex",
+      "title": "Low-complexity vertex integrals"
+    },
+    {
+      "path": "sections/a_coefficients/04_finite_core_tables.tex",
+      "title": "Finite-core enumeration and contributions"
+    }
+  ],
+  "title": "Coefficients and finite cores"
+}

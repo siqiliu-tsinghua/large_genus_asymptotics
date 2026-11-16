@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "Read both new subsections, entry, interface, handoff, README, complete checker and verification record, and inspected full-manuscript pages 98--99: the single proposition directly adjoins its proof, the table binds its finite defect range, and functional proof paragraphs separate complete tree lists, exact vertices, weights and Chern normalizations. Existing notation is inherited without a new setup; the reproduction prose gives real file names and distinguishes the source bundle from publication or workflow approval.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "C.1 attributes the vertex input to the FP03 multipoint formula through the proved s06 exact-vertex/tree identities, uses the FP00 one-point sine series through its explicitly sourced s06 equation, and credits Mumford through the s02 Chern relation before deriving the rank-three specialization locally. The text supplies its own finite classification/integrals, while the README expressly identifies the code as the original writer's implementation of the coordinator-suggested method, without claiming an independent reviewer's algorithm or using preparation notes as authority.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "Checked the actual cited s06/s02 passages against C's use and retained the already verified FP03 Theorem 1, FP00 Theorem 2/(6) and Mum83 Section 5 source context: beta_0 is a convention for stable genus zero, the unmarked vertices use s06's proved extension, and beta_g is not confused with b_g. The shared edge parameter, reciprocal automorphism weights, 1!/3! restoration and rank-three hypothesis match the formulas, while the existing A/S4 entrypoints, verify-existing option and pinned SymPy 1.14.0/mpmath 1.3.0 runtime requirements are real and accurately documented.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "The table values and normalized genus-three insertion are presented as exact finite identities with a complete textual proof, retaining the elliptic chain until its integral cancels and deriving a_2=2b_2 and a_3=8b_3 from the appropriate rank relations. Code inspection confirms reconstruction precedes the announced-value/class-count comparisons, and the actual computation_only source/output record matches its files; finite data are not promoted to an asymptotic rate, the long A/S4 programs are not claimed rerun here, and S4's omitted-derivation coefficients remain outside Theorem 1.1.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "First full academic review of Appendix C by the original bound reviewer, with no prior C issue to resolve; the old outline's missing-program statement is historical preparation status, whereas the actual existing bundles and current records were checked.",
+    "Verified every archived/live input and artifact hash, recomputed snapshot/source fingerprints and original binding, and independently compared the ten fresh approved predecessor units' owned scientific files with their signed archives; all are unchanged.",
+    "Both native previews match their actual PDF/entry/helper receipts and the common source hash 27f0f5e339e10c06fa5b216cccefd2d0828c4fa9d45a106c69d632e3171fb6cc, with strict/pass and empty standard/layout diagnostics. The full 101-page manuscript actually includes the title/abstract and C on pages 98--99; its PDF SHA is c31f2039fcf9fa30da3d5a96e10fe8ee8e936e3193e973d1fcd6e9c21bebd585.",
+    "Checked the new checker source hash d80607341d6d81db41376fea2386bb7528590361d6c9929c8b4c3ae349909b5b and recorded output hash 0f6655b1cb27ef66190ab96f2440a8d40a1e057bdbcfd8539f03da9411a1669d against the actual files, exact values, two/four tree classes, labeled counts and computation-only flags. This reviewer read/parsed the code and checked records without executing it or rerunning the long bundles, and makes no independent-algorithm execution claim.",
+    "Only this round's reports and private ignored page images were written; no source, shared input, workflow state, another report, historical record or frozen PDF/receipt was modified or rebuilt."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 1,
+  "schema_version": 1,
+  "snapshot": "13570207b4cdb59aee7e4720a5ac1b2cc51f89ec8b10d68fcf3e64a03e7659ab",
+  "summary": "Pass. Appendix C accurately attributes its exact inputs, proves the finite normalization values in the text and keeps computation evidence, reproducibility provenance and asymptotic claims distinct.",
+  "unit": "c",
+  "verdict": "pass"
+}

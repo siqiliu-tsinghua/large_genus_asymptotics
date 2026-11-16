@@ -1,0 +1,51 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The new mathematical entrance introduces no symbol, and byte-identical C.1 retains E and m_v with their tree roles, s,t,u in [0,1] and the local coefficient variable, while its table inherits the established integral and bracket conventions (full pp98-99).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The preserved proposition, table and three equations keep a_g, b_g(h), b_g, beta_g, g_2 and the genus-three bracket normalization unchanged; the renamed one-subsection entry and interface agree with the manifest and do not import supplementary coefficients or a conjectural rate.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The short tree/edge/factorial/Chern guide replaces the software description without an alias or repeated global setup, and the retained local symbols each serve the finite derivation rather than an engineering explanation (section.tex:5-9; full pp98-99).",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The revised entrance accurately announces classification, edge integration, factorial restoration and Hodge normalization, and the unchanged four-part proof carries out that route directly from exact Sections 2/6 inputs, independently of asymptotic fitting or supplementary reports.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Actual full pp98-99 show the complete table, directly adjacent proposition/proof and four readable functional proof stages, so deleting C.2 removes no mathematical step and leaves no program, Markdown, installation or attachment obligation; inspected A pp66,83-84 and References pp100-101 also retain clear displays and endings without overflow.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No mathematical letter or index is reassigned: edge count E, vertex orders m_v, vertex genus/valence indices and local edge/coefficient variables retain their reviewed purposes, with lowercase integral families distinct from beta_g in the displayed finite calculation.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The actual B-proof-to-C entrance on p98 and C-proof-to-References transition on pp99-100 are clear after the engineering subsection's removal, while A's shortened entrance and proof-to-B boundary now keep the reader on the mathematical route without sending them to project files (pp66,83-84).",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE incremental/integration review against accepted c r002, retaining the complete C assessment and the individually completed dependency reviews. Read the exact dispatch, summary, differences, revised outline/manifest, original-writer acknowledgment, current entry/interface/handoff and prior report; no old numerical program or unchanged long proof was rerun.",
+    "Verified all 128 frozen/live input hashes, artifacts, exact snapshot and current Engine fingerprint. Fifteen existing paths and both @outline/@unit changed; three standalone handoffs were added and C.2 was removed. C.1 is byte-identical, including its proposition, table, three equations, proof and labels; original handoff and three internal checks are unchanged. The manifest now selects only C.1, and all ten prerequisites are approved/fresh with inputs matching their accepted snapshots.",
+    "Both native receipts bind this snapshot to source SHA256 127171298758a90ee63730c595e0e634e79d7ba1e74f8bb973e16645bde05e13. Verified PDF/entry/helper hashes and sealed pre-submit standard-preview provenance. Standard PDF SHA256: 2124530191139cb757b392483624b4b4ea049855cc935711ada7a1588aa60631; full-companion PDF SHA256: ca7939842c47c67ebc6e2d1d98ffb5c93cc21715e16e78e7551e3f38ef37f84e. Both strict/layout diagnostic lists are empty, with no accepted overflow exception needed.",
+    "Verified that full-manuscript/manuscript.tex equals frozen actual main.tex with only the declared eleven-unit assembly substitution, and its real .fls includes the abstract and all eleven section entries, with no C.2 input. The 101-page full companion is the authority for this integration inspection; title/abstract and unchanged mathematics retain the earlier actual assessment.",
+    "Personally viewed full-companion pp66,83,84,98,99,100,101 using private images under build/standalone-20261116/readability-c-r003/. A's tables and final proof flow into B without the old engineering note; C occupies pp98-99 and ends with the proof square before References on p100. The p101 public-data URL wraps completely within the text block, removing the former local excess; settled 10pt/no-showkeys/proof-gap/bibliography settings remain intact.",
+    "The retained C proof supplies the complete tree lists, exact vertex extractions, edge integrals, automorphism factors, factorial recovery and Chern relations in the article; the deleted C.2 is not needed to complete an argument. A targeted full-body engineering-language scan also finds no remaining reader-facing instruction. Finite exact values do not establish an asymptotic rate, and public numerical evidence elsewhere retains its distinct conjectural role.",
+    "Read-only status confirms the actual /root/s02_readability binding to c r003; python scripts/validate.py --unit c passes. No prior readability issue is open, so issues/resolved_issue_ids are empty. This review does not certify the not-yet-exported single-TeX deliverable or its not-yet-performed isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "ed6d87e6e1d3fe8d44fa97c2a23198c2a08fa5f04e389e3f68e0cefba9c7d2c5",
+  "summary": "Pass. C's concise mathematical guide and retained complete finite proof stand independently after C.2's deletion; actual full-companion inspection confirms clear appendix boundaries, table/proof layout and bibliography wrapping without engineering obligations.",
+  "unit": "c",
+  "verdict": "pass"
+}

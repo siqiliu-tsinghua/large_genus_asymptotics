@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "The accepted S1 guide change preserves all inherited definitions, while byte-identical S2/S3 sources retain the reviewed first-use order for the WP scale, boundary lengths and vertex inputs in 3.1 without repeating the global setup.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "All seven S3 files match r011, preserving alpha, F_g/Z_g, f/S and their distinction from F(j)/G(j); the common URL line-break edit changes neither bibliographic metadata nor any mathematical normalization.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The shared publication rules and revised S1 organization add no symbol or alias to S3; the opening still uses only the boundary/GRR/degree recall needed to motivate graph summation, and the coefficient Remark reuses existing formulas and notation.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The unchanged entry retains the vertex-input, loop-resummation, complete-graph-tail and finite-core route with its later uses in Theorems 1.1 and 1.2 (native p12); the revised Appendix C description adds no hypothesis or computational dependency to this route.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Identical native pp12-24 preserve the inspected proof modules, displays and optional Remarks; Coefficient computation explicitly uses the in-paper finite-core coefficient rule, absolutely summable loop series and volume normalization (04_finite_cores.tex:326-334), requiring no local program, Markdown or engineering attachment.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "No common update assigns a mathematical letter or scope, and unchanged S3 retains boundary lengths y_i versus cotangent bundles L_i together with the reviewed distinct roles of loop p, core q, defects and Hodge indices.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The identical native entry and closing additive-at-zeros/GRR discussion preserve the S2-to-uniform-bounds and S3-to-coefficient-calculation transitions (pp12,24); the coefficient Remark directs readers to mathematical extraction in the next section, with no file, software or installation obligation.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-reviewer STANDALONE-ARTICLE impact review against accepted s03 r011, retaining the complete S3 scientific and actual visual assessment. Read the exact dispatch, summary, current diff, original-writer acknowledgment and prior report; the shared publication-independence rules and accepted S1 r004 revision were already personally reviewed.",
+    "Verified all 32 archived/live input hashes, artifacts, exact snapshot and current Engine fingerprint. Exactly ten existing inputs changed, S1 standalone_handoff.md was added, none removed, and all seven S3 files are byte-identical. Inherited inputs match accepted S2 r015; S1 r004 and S2 r015 are approved/fresh and the actual readability binding is /root/s02_readability.",
+    "Verified native receipt/PDF/entry/helper hashes and sealed equal-source pre-submit native-build provenance. Source SHA256: 7c5eb7c0493f30e169c1b6f4770754a9c49d48bd0c403696f530caef3d41b07d; native PDF SHA256: d8939ab6ce2880867d9c2bc2668183b8e11514ec7bd0e72615ca3aec03831b41. Strict/layout diagnostics are empty; 10pt, no showkeys and flush-left bibliography continuations remain unchanged.",
+    "Independently extracted current and r011 native PDFs: both have 26 pages, only Introduction p3 changes, and every Section 3 page (pp12-24) is text-identical. Reused the previously inspected entry, final proof and references boundary on pp12,23-25 without repeat rendering or rereading unchanged proofs.",
+    "The unchanged coefficient Remark is mathematical explanation rather than an engineering instruction, and no reader-facing program, Markdown, installation or source-package promise occurs in the selected S3 manuscript. Final merged single-TeX export and isolated compilation remain the coordinator's later delivery task, outside this unit signature.",
+    "python scripts/validate.py --unit s03 passes. There is no open prior readability issue, so issues and resolved_issue_ids are empty."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "237f92c449fb77f0fc079cec2fa6e66ed86dd12c4dcdbe24852513ff8434efee",
+  "summary": "Pass. The shared publication rules, URL wrapping and accepted S1 guide preserve S3's notation and mathematical graph route; the coefficient explanation is self-contained and identical target pages retain the original readability assessment.",
+  "unit": "s03",
+  "verdict": "pass"
+}

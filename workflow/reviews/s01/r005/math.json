@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding, canonical snapshot, archive/live/artifact/native hashes and author ACK; the retained complete reviews establish that the four main proofs use S2/S3/A/S6/S7/B results rather than Appendix C values, and the PROTOCOL retirement link is administrative material outside the article's mathematical inputs.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Only the final C-description tail is removed from S1, while all four complete theorem blocks, six numbered equations and other displays are byte-identical to r004, preserving stability, degree, index ranges and fixed-parameter hypotheses.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All integral/bracket definitions, theorem constants, factorials and user and/quad/mbox typography remain unchanged; no normalization was supplied by C, and S6's independent beta-series/two-tree genus-two example correctly remains in place.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions and mathematical source locators are preserved, the interface correctly distinguishes the cited W26 Appendix C.1 from the retired article appendix, and the retained article TeX has no reference to C's internal section/proposition/equation labels.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Deleting an optional exact-example appendix removes no step of the already-reviewed graph/core, insertion, top-Hodge or fixed-defect proofs, and neither the new guide nor interface inserts a replacement premise; this is absence of proof dependence on C, not a claim that the article should contain no local low-genus examples.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The four theorem statements and all error terms are unchanged, so removing finite checks neither weakens their proved uniform estimates nor promotes numerical evidence to a rate; fixed-list/fixed-h scope and the fourth theorem's mere asymptotic equivalence remain intact.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh REMOVE-C impact signature on S1 r005 using the retained complete original mathematical assessments; no prior MATH issue is open and resolved_issue_ids is empty. Actual state records C retired and retains its old round-three acceptance; this reviewer changes no workflow state or historical record.",
+    "Exactly S1 source/interface and PROTOCOL change, and only appendix_retirement_handoff.md is added, with no frozen-input removal. The S1 source is precisely the former prefix before the final Appendix C description plus its terminating newline. The existing S6 Genus two example was checked: beta_1=1/24, beta_2=7/5760 and the two tree weights independently give b_2=1/5760. It remains a local check, not a premise of the asymptotic proof. W26's external Appendix C.1 citation is preserved.",
+    "Source SHA256 985218efe772e547ca10bc5e64447d0c2c49399055a0909c35a9a23823e9414b; actual native PDF SHA256 5f3f32ede32549d30a6343d8ed9334daed0f94f502259cbc2f45061508068ba5. Actual entry/helper/PDF hashes and current/preserved-preflight source agree, with empty strict/layout diagnostics and explicit pre-submit/equal-source sealing provenance. Fresh PDF text confirms the revised organization ending. Original-writer ACK SHA256 d83a4dac1134d43dbb9fc90fc7c8e12e04a4d5bcc57a0eb76df3ef2f77149e35 matches the actual scope.",
+    "Private preservation/reference/receipt verification is confined to build/remove-c-20261116/math-s01-r005/verification.json. No old proof or numerical program was repeated; only assigned reports and ignored verification were written, without source/state/historical/other-role or frozen-output changes. The final single-TeX export and isolated compilation are not certified here."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 5,
+  "schema_version": 1,
+  "snapshot": "620b75b92dc1c56b58b10004fabd1a33e2d31e7b3e6e77327047c7bd94fad5dd",
+  "summary": "Pass on S1 r005: removing the retired Appendix C guide preserves all theorem mathematics, normalizations and proof dependencies, leaves no internal C reference and correctly retains independent local examples and external source locators. Actual frozen inputs/native receipt match, with no mathematical issue remaining.",
+  "unit": "s01",
+  "verdict": "pass"
+}

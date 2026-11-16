@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 31 frozen/live inputs, artifacts, canonical snapshot, actual math binding, writer ACK and native PDF/entry/helper hashes; s01 r002 and s02 r013 are genuinely approved and fresh, and the changed frontmatter exactly matches the accepted S1 source.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All seven s03 files and the s02 scientific inputs are byte-identical to r009, preserving stable vertex types, valence/complexity bounds, genus-correct loop contraction and the fixed-marking complexity shift; the new introductory overview changes no range or hypothesis.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged definitions and formulas retain the WP factorial scale, descendant normalization, 1/Aut and 2^p p! loop factors, marked-leg factors and gamma_k as coefficients of Z_g/V_(g,0); the accepted new overview correctly distinguishes the absolute volume constant from these relative coefficients.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The original introductory first definitions and conventions remain intact, while the unchanged s03 source/interface still define F_g, Z_g(u), vertex functions, loop count p, core complexity q and expansion coefficients in their proper scopes; the new prose and added S1 provenance handoff introduce no alias or conflict.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The accepted new guide accurately separates fixed-marking WP expansions, absolute normalization and uniform vertex inputs from s03's own self-loop resummation, complete absolute graph tail and finite-core reduction; all actual premises and proof steps, including marked/weighted extensions and coefficient coherence, remain unchanged.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Unchanged scientific source preserves the sum of sup absolute values on fixed compact sets, growing-graph tail control, all-legal loop tail before HMT expansion, true input thresholds and factorially summable core errors; the new frontmatter retains fixed expansion/insertion orders without adding a stronger uniformity claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT signature on s03 r010, retaining the original full mathematical reasoning after independently checking the current delta. No prior MATH issue is open; issues and resolved_issue_ids are empty.",
+    "Exactly three existing inputs changed: abstract and S1 source/interface. Only the S1 writer handoff was added, with no removal. All seven s03 files and every other existing input, including s02, macros, bibliography, outline and unit definition, are unchanged. The original-writer ACK SHA256 is 6c50228eec4b9b146d676a9a5bc56aaab98e3920b41895b1c12a48db56de3d9b.",
+    "Actual render source SHA256 21c09777a04df61d3061755ea5e082420c22de7a34a1d2b8b24098e1f64b0d96; actual 26-page PDF SHA256 ceafb513ac28143a645779c1334b9c48672c33ce2c63710b0d153ed9146c7c3d. Receipt binds snapshot fb83ef7789f068ec2f3158e4a83f7a25a9ebea61e9655573103420da7a6ec612, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused s03 validation passes.",
+    "The unit rendering omits the abstract; its unchanged actual rendering is the already-inspected accepted S1 companion, SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. No old proof, calculation or primary-source search was repeated, and no source/state/old record/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "fb83ef7789f068ec2f3158e4a83f7a25a9ebea61e9655573103420da7a6ec612",
+  "summary": "Pass on s03 r010. The accepted frontmatter update accurately describes the WP inputs and s03's global graph/core estimates, preserving their definitions, normalizations, assumptions and uniformity scope. No unresolved mathematical issue.",
+  "unit": "s03",
+  "verdict": "pass"
+}

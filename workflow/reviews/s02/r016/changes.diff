@@ -1,0 +1,71 @@
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -161,11 +161,10 @@
+ finite coefficient/core derivations; Appendix B contains the
+ complex-domain, kernel and primitive estimates.
+ 
+-The Appendix C guide describes direct mathematical derivations of
+-exact genus-two/genus-three normalization identities from the
+-finite-genus formulas. It makes no promise of programs, source
+-packages or reproduction instructions. C is not a premise of a main
+-asymptotic proof; its finite examples do not replace uniform estimates.
++The article contains only Appendices A and B. The former Appendix C
++is retired at the user's request; none of the four main proofs
++depends on it. The W26 Appendix C.1 locator above refers to the
++cited source, not an appendix of this article.
+ 
+ The fourth theorem remains an asymptotic equivalence; no relative
+ error rate is added. The supplementary higher coefficients are
+--- /dev/null
++++ sections/01_introduction/appendix_retirement_handoff.md
+@@ -0,0 +1,29 @@
++# S1 Appendix C retirement handoff
++
++Actual agent: /root/s02_writer. Unit: s01. Dispatch:
++build/remove-c-20261116/rounds/s01-r005-writer-dispatch.json.
++Previous approved baseline: r004, snapshot
++dbf3850e378cf25c155e1abdba8c31929f4cfdbff7541b4e921fd9479f286efd.
++
++Only the final Appendix C description is removed from section.tex.
++The organization paragraph now ends naturally with the statement
++that Sections 6--8 do not use WP correction coefficients.
++INTERFACE records that the article contains Appendices A and B
++only and that no main proof depends on the retired Appendix C.
++The W26 Appendix C.1 source locator remains unchanged.
++
++All four complete theorem blocks, six numbered equations, all
++mathematical displays, earlier prose, citations and the user's
++and/quad/mbox edit are retained. The old writer_handoff and
++standalone_handoff, archived sources and historical reports are
++not changed. No data or supplementary coefficient is reexamined.
++
++The coordinator has actually retired c; its historical records
++remain intact. This author changes no shared source or workflow
++state. The formal data citation and conjectural numerical evidence
++in S8 remain outside this scoped change.
++
++Read-only source-preservation and UTF-8/LF guards accompany this
++delivery. No calculation or native build is rerun. This is an
++original-author handoff, not review or acceptance. STOP for the
++coordinator's frozen snapshot and original three-role review.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -199,7 +199,4 @@
+ After that section, readers interested primarily in
+ Theorems~\ref{thm:top-hodge} and~\ref{thm:fixed-defect}
+ may proceed directly to Sections~6--8; these sections do not use
+-the Weil--Petersson correction coefficients. Appendix~C derives
+-exact normalization identities in genera two and three from the
+-finite-genus formulas. These examples complement the asymptotic
+-proofs without replacing their uniform remainder estimates.
++the Weil--Petersson correction coefficients.
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -140,3 +140,7 @@
+     python -m unittest discover -s tests -v
+ 
+ validate 检查受版本管理文本的 LF、JSON、章节文件和输入路径，以及已登记的内容收据。测试覆盖身份约束、并发工作单元限制、快照失效、失败返工、原审核者复审和验收门槛。
++
++## 撤回末尾附录
++
++已验收的可选末尾附录如不再属于论文，由协调者使用 `retire` 命令撤回，保留原始来源、会话、全部审核和验收记录；不手工删除状态或改写旧报告。约束、命令及投稿边界见 [RETIREMENT.md](RETIREMENT.md)。引言等保留章节的修改仍走原作者和原三类审核者的正常流程。

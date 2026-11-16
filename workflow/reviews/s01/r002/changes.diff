@@ -1,0 +1,134 @@
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -11,7 +11,9 @@
+ 
+ The single section.tex remains the entire Introduction; no formal
+ subsections, extra inputs or manifest change is needed. New prose
+-provides the motivation for fixed-index and fixed-defect regimes,
++provides the motivation for four results grouped into two broad
++index settings (first-class powers/fixed-index insertions and
++the top class/fixed defects),
+ precise source attribution, an explanation of the contributions,
+ the two proof routes and a completed-paper reading guide.
+ All established mathematical setup, the marked-vanishing reduction
+@@ -111,10 +113,12 @@
+ - MZ15, Theorem 1.2: fixed-marking, arbitrary fixed-order WP
+   expansions. The absolute leading normalization is credited
+   separately to LX26, Corollary 1.2, and W26, Corollary 1.2.
+-- HMT25, Theorem 4.2, and SW25, Lemmas 14 and 18: uniform vertex
+-  inputs. The complete graph-tail bound and summable core
+-  expansion are Section 3 work, not attributed wholesale to
+-  the volume sources.
++- HMT25, Theorem 4.2: uniform vertex inputs. SW25, Lemma 14,
++  explicitly recalls comparisons due to Mirzakhani; SW25,
++  Lemma 18, is Shen--Wu's derived all-type upper bound. The
++  Introduction distinguishes those credits. The complete graph-tail
++  bound and summable core expansion are Section 3 work, not
++  attributed wholesale to the volume sources.
+ - ABCDGLW23, Lemma 3.10: boundary expansion used with the geometric
+   identities to obtain WP vertex products. Its source statement
+   is cohomological; s02 and s05 supply the algebraic intersection
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -5,9 +5,11 @@
+ Intersections of Hodge classes measure how the bundle of holomorphic
+ differentials varies over the moduli space of curves. Their
+ large-genus behavior depends on how the Chern indices vary with
+-the rank. We study two regimes: fixed indices inserted against a
+-large power of the first class, and an index at a fixed distance
+-from the top class. The results give explicit constants and
++the rank. The four results are grouped into two broad index
++settings. One covers powers of the first class and fixed-index
++insertions against that background; the other covers the top class
++and indices at a fixed distance from it. The results give explicit
++constants and
+ correction terms, together with the scaling that relates the top
+ class to each fixed defect.
+ 
+@@ -74,8 +76,9 @@
+ \cite[Theorem 1.2]{MZ15}. We use the absolute leading normalization
+ proved by Liu--Xu \cite[Corollary 1.2]{LX26} and by Wang et al.\
+ \cite[Corollary 1.2]{W26}, together with the uniform vertex
+-estimates of Hide--Macera--Thomas \cite[Theorem 4.2]{HMT25}
+-and Shen--Wu \cite[Lemmas 14 and 18]{SW25}.
++estimates of Hide--Macera--Thomas \cite[Theorem 4.2]{HMT25}.
++We also use Mirzakhani's comparisons, recalled in \cite[Lemma 14]{SW25},
++and Shen--Wu's all-type bound \cite[Lemma 18]{SW25}.
+ Turning these inputs into pure Hodge asymptotics requires control
+ of the entire stable-graph sum: arbitrarily many self-loops
+ contribute at leading order.
+--- previous/sections/01_introduction/writer_handoff.md
++++ sections/01_introduction/writer_handoff.md
+@@ -42,8 +42,10 @@
+ Source roles were checked against the needed accepted interfaces
+ and retained original primary-source work: Mumford/FP supply
+ Hodge geometry; MZ supplies fixed-marking WP expansions; LX/W
+-supply the absolute leading normalization; HMT/SW supply uniform
+-vertex inputs. The full graph tail and summable core expansion
++supply the absolute leading normalization; HMT supplies uniform
++vertex inputs. SW25 recalls Mirzakhani's comparisons in Lemma 14
++and derives Shen--Wu's own all-type bound in Lemma 18. The
++full graph tail and summable core expansion
+ are correctly described as Section 3 work.
+ 
+ The first route identifies ABCD's boundary formula, Section 4's
+@@ -96,3 +98,29 @@
+ STOP after final static checks and source-hash reporting.
+ The original writer context is retained for revisions and the
+ later Appendix C assignment.
++
++## Original-author revision of formal r001
++
++Baseline snapshot:
++04eabebf2ad9f5337e18bb4caf276664e2a6a2b48a9e4db8ccb4a52e4f8f17bb.
++All three actual reports were read after the coordinator issued
++revision. The changes address only READABILITY-001 and
++ACADEMIC-010.
++
++The opening now explicitly groups four results into two broader
++index settings and names the two cases within each. This resolves
++the orientation against the unchanged abstract's four regimes.
++The WP literature paragraph now attributes Lemma 14's comparisons
++to Mirzakhani, as recalled in SW25, and Lemma 18's bound to
++Shen--Wu. The actual cached SW25 text immediately before Lemma 14
++and the introduction/proof of Lemma 18 were checked; no new source
++or bibliography entry is needed.
++
++The interface and source-credit record are synchronized. The
++applied 144-word abstract, complete four theorem blocks, six
++numbered formulas, original setup and all other prose remain
++unchanged. Static preservation, scope, UTF-8/LF, draft-gate and
++two-issue response checks are performed before handoff. No build,
++new mathematical computation or shared-file change is made.
++STOP for the coordinator's standard and front-matter rebuilds
++and a new frozen review by the same three original reviewers.
+--- /dev/null
++++ workflow/reviews/s01/r001/author_response.json
+@@ -0,0 +1,27 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/01_introduction/section.tex",
++        "sections/01_introduction/INTERFACE.md",
++        "sections/01_introduction/writer_handoff.md"
++      ],
++      "explanation": "The opening now explicitly states that the four results are grouped into two broad index settings. It identifies powers of the first class and fixed-index insertions as the first pair, and the top class and indices at fixed distance from it as the second pair. This reconciles the unchanged abstract's four regimes with the introductory grouping, without new notation or changes to the protected setup or theorems.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    },
++    {
++      "changed_files": [
++        "sections/01_introduction/section.tex",
++        "sections/01_introduction/INTERFACE.md",
++        "sections/01_introduction/writer_handoff.md"
++      ],
++      "explanation": "The WP paragraph now credits Mirzakhani's comparisons as recalled in SW25 Lemma 14 and separately credits Shen--Wu's all-type bound in Lemma 18. The actual source text preceding Lemma 14 and introducing/proving Lemma 18 was checked. The interface and author handoff record the same distinction; the existing bibliography keys, input scopes and all mathematical statements are unchanged.",
++      "issue_id": "ACADEMIC-010",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 1,
++  "unit": "s01"
++}

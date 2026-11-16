@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual /root/s02_math binding, canonical snapshot, archive/live/artifact and native source/PDF/entry/helper hashes, with S1 r005, S2 r016 and S3 r013 approved and fresh; retired internal C is outside A's closure and contributes no recursion, profile or coefficient input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All 18 A files are byte-identical to r012, preserving low-mode degree ranges, finite profile and moment truncations, stable small-vertex types and the complete 1/3/13 complexity classification after removal of the introductory C guide.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged volume ratios, normalized descendants, signed moments, unhalved raw connectors, flag automorphisms and edge integrals retain their factors and absolute/relative conventions without calibration from C's finite examples.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "A's unchanged definitions and interface preserve inherited g_2 and local coefficient/moment scopes, while the retained W26 Lemma 7.2 and Appendix C.1 citation is an external-source locator unaffected by retirement of this article's C.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The retained complete review established A.1's exact-recursion extraction, A.2's Bell/moment rules, A.3's vertex derivations and A.4's completeness/Aut/integration proofs in the text; neither C values nor software fills a step, so deleting its introductory description and adding an administrative link removes no premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The unchanged extraction-tail justification, fixed-order profile bounds and summable graph inputs retain their scope and error precision, and neither finite low-genus examples nor the retirement documentation supplies an asymptotic remainder estimate.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh REMOVE-C impact signature on snapshot 11c58166aad21c9f6e2ecf5325b768b91133263410b355f6857687d7ac0381fd; original complete mathematical assessment retained after independently checking this delta, with no open MATH issue.",
+    "The exact r012-to-r013 delta is three changed inputs (S1 section.tex, S1 INTERFACE.md and workflow/PROTOCOL.md), one added S1 appendix_retirement_handoff.md and no removed input. All 18 A files, including mathematical text, interface, old handoffs and internal calculation/verification files, are unchanged. Original-writer ACK SHA256 c2bd561969133c36cdc3ece219d6417c4390edfdc19dc08670488d975c32aadf matches the checked scope.",
+    "Actual source SHA256 5031b80e4835f2e1ae20625a2b0c2086f67a38be7b9965f296f8b7c0d383d885; native PDF SHA256 ef86438b312ced232640441b311a84a11f6e16b110f1267bb20a547dae72c47c. Current and preserved preflight source/PDF hashes agree, entry/helper hashes match and strict/layout diagnostics are empty; pre-submit build and equal-source sealing are explicitly recorded.",
+    "No unchanged coefficient/core program or proof was rerun. Only this round's two mathematical reports were written, without source/state/historical/frozen-output changes; final merged single-TeX export and isolated compilation are not signed by this review."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "11c58166aad21c9f6e2ecf5325b768b91133263410b355f6857687d7ac0381fd",
+  "summary": "Pass on A r013: the accepted introductory retirement of internal C and administrative protocol link leave all in-text coefficient, moment and finite-core arguments intact; the actual frozen inputs and native receipt match.",
+  "unit": "a",
+  "verdict": "pass"
+}

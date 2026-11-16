@@ -1,0 +1,84 @@
+{
+  "abstract_sha256": "a697563f06c9c08ad291f389fe711c0682b4a0938399d692958880c2dba4e50d",
+  "accepted_s01": {
+    "round": 2,
+    "snapshot": "dbb15031e72a3d989d76ff25624953fc5f92dbae55f241483e939b5db1438c00"
+  },
+  "actual_agents": {
+    "academic": "/root/s02_academic",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "writer": "/root/s02_writer"
+  },
+  "added_dependency_input": "sections/01_introduction/writer_handoff.md",
+  "base_commit": "ed1534d",
+  "change_id": "CLOSING-FRONT",
+  "changed_inputs": [
+    "frontmatter/abstract.tex",
+    "sections/01_introduction/section.tex",
+    "sections/01_introduction/INTERFACE.md"
+  ],
+  "four_complete_theorem_blocks_and_six_numbered_formulas_unchanged": true,
+  "frontmatter_native": "build/reviews/s01/r002/frontmatter/frontmatter.pdf",
+  "frontmatter_receipt": "build/reviews/s01/r002/frontmatter/build_receipt.json",
+  "old_accepted_rounds": {
+    "a": {
+      "round": 9,
+      "snapshot": "b169db49b3154199a513eec284717f990752144bdf063714bd33ed4bd58771ba"
+    },
+    "b": {
+      "round": 2,
+      "snapshot": "411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871"
+    },
+    "s02": {
+      "round": 12,
+      "snapshot": "f031f18b6c24f89a2785127264f7a09d5fe853b41f9479c0f563037509376fec"
+    },
+    "s03": {
+      "round": 9,
+      "snapshot": "4e0b40842254e6b042cf85b34257d1a1d0444930c83f4e747a0901218feab6f4"
+    },
+    "s04": {
+      "round": 11,
+      "snapshot": "e6dd41f1fce5b0a9ae9b57d013944ee1010ad91f8067fe1a2643223da106b21b"
+    },
+    "s05": {
+      "round": 8,
+      "snapshot": "4400778243af7162a10044cfce3bd15504a53c059499faf772bb04dcbc8f8ec3"
+    },
+    "s06": {
+      "round": 6,
+      "snapshot": "6cb9d8b899b3f7ce2c694c967c16964ab242d7ac5f5f3554f90d4a4153a6d9de"
+    },
+    "s07": {
+      "round": 4,
+      "snapshot": "01f501a47403a8b6a771ecb475392ed85d6ccaa4994561fe6c571fc0fd2d3e53"
+    },
+    "s08": {
+      "round": 2,
+      "snapshot": "7eb6c610624042ec92ffbc034d281a997afe6467a1d741fcb6a85e1071906a2b"
+    }
+  },
+  "protocol": [
+    "One active unit, root-only state changes.",
+    "Actually start and dispatch original writer for a unit-specific unchanged-science acknowledgment; no paper edits.",
+    "Preflight, freeze new snapshot and native unit PDF; actual original three reviewers check input differences and their impact.",
+    "Each report signs its real new unit/round/snapshot, all required checks with concise concrete evidence. No copied pass.",
+    "Collect all before any revision; use original author/reviewers for any real issue. Actual strict accept only after three passes.",
+    "Do not alter historical responses/reports, frozen sources or signed native outputs.",
+    "The unit preview omits the abstract. Reuse the actual accepted complete front-matter companion for its shared layout; inspect target-unit native pagination as needed.",
+    "Only the selected old response path may fall out of new input selection; it and its frozen copy must remain byte-preserved."
+  ],
+  "scope": "Final abstract and Introduction; old body/appendix science unchanged.",
+  "unit_order": [
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "b",
+    "s08"
+  ]
+}

@@ -308,14 +308,14 @@
       "id": "c",
       "kind": "appendix",
       "number": "C",
-      "outline_heading": "### 附录 C Exact values and reproducible checks",
+      "outline_heading": "### 附录 C Exact low-genus values",
       "subsections": [
         {
-          "path": "sections/c_exact_checks/content.tex",
-          "title": null
+          "path": "sections/c_exact_checks/01_exact_values.tex",
+          "title": "Exact low-genus normalization checks"
         }
       ],
-      "title": "Exact values and reproducible checks"
+      "title": "Exact low-genus values"
     }
   ]
 }

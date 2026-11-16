@@ -1,0 +1,23 @@
+{
+  "task": "Make the manuscript a self-contained scholarly article and deliver one merged TeX source",
+  "user_feedback": "C.2's Python and Markdown references are inappropriate; inspect and correct all analogous manuscript issues. Readers may implement their own checks. The submission deliverable should contain only one merged TeX file.",
+  "c_assumption": "Retain C.1's independently proved exact low-genus identities and remove C.2; optional user preference question remains available for steering.",
+  "scientific_edits": {
+    "s01": "Replace the organization paragraph's software/reproduction promise with the mathematical role of Appendix C; protect all four theorem blocks and user typography.",
+    "a": "Remove the calculations-directory/program paragraph and engineering Reproducibility Remark; ensure every finite computation still has an explicit mathematical basis in the article.",
+    "c": "Retain the full C.1 proposition/proof, rename the appendix around its mathematical content, remove C.2 and its input/manifest entry. Do not remove any mathematical premise of the four main theorems."
+  },
+  "other_sections": "Scan all manuscript TeX and rendering for analogous internal-project references; preserve mathematical computation, exact derivation and proper scholarly/data citations.",
+  "shared_changes": "Record publication independence in AGENTS/context/roles; permit line breaks in the LiuData26 URL without changing bibliographic metadata. No production workflow or build acceptance changes.",
+  "delivery": "submission/paper.tex only, with inline preamble, sections, TikZ diagrams and bibliography; compile a copy alone in an isolated directory using XeLaTeX, without Python/BibTeX or project-local input files.",
+  "agents": {
+    "writer": "/root/s02_writer",
+    "math": "/root/s02_math",
+    "readability": "/root/s02_readability",
+    "academic": "/root/s02_academic"
+  },
+  "order": ["s01", "s02", "s03", "a", "s04", "s05", "s06", "s07", "b", "s08", "c"],
+  "process": "Actual sequential original-writer work, strict native preflight, frozen submission, original three-role reviews, original-author revision if required, actual acceptance. Never mutate old archives or prewrite reviewer signatures.",
+  "baseline": "build/standalone-20261116/baseline.json",
+  "external_portability_source": "https://info.arxiv.org/help/faq/texlive.html; confirms XeLaTeX support and filename-based TeX-distribution font lookup. No private fonts or external figures are required by this manuscript."
+}

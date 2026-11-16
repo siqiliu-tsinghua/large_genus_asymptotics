@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "evidence": "All eight C files preserve their approved r001 statements, adjacent proof, exact-value table and reproduction prose, while inspected full-manuscript pages 46/65/101 show the two new Remarks properly separated after proofs, an explicit conjectural/open-problem body ending and a complete, legible data reference despite the recorded minor URL excess.",
+      "status": "pass"
+    },
+    "attribution": {
+      "evidence": "Unchanged C retains FP03/FP00 exact-input and Mumford/S2 credits with its own finite tree/rank derivations and candid algorithm provenance, while the adopted S6/S8 additions keep the paper's supplementary calculation separate from LiuData26 observations and an expressly conjectural Bessel limit.",
+      "status": "pass"
+    },
+    "citation_precision": {
+      "evidence": "C's source locators, beta-to-integral translation, shared-edge/automorphism factors and factorial restoration remain unchanged, all adopted scientific dependency files match their actual approved archives, and the complete manuscript displays the already verified fixed-commit LiuData26 entry without making it a source for C's exact identities.",
+      "status": "pass"
+    },
+    "claim_status": {
+      "evidence": "C's exact low-genus proposition and existing computational instructions remain independent of both new Remarks, whose omitted S6 derivation and finite-data-supported h=1 conjecture do not strengthen the four main theorems, supply a uniform remainder, imply a general-h formula or convert reconstruction records into independent mathematical validation.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual dispatch, summary, original-writer ACK, frozen diff headers and original complete C review; independently confirmed six changed existing inputs, nine added S6/S8 check/handoff inputs, none removed and all eight C files unchanged.",
+    "Verified every archived/live input and artifact, recomputed snapshot/render fingerprints, original binding and all ten genuinely approved/fresh predecessors, comparing their actual owned scientific inputs with the current frozen closure; retained the just-completed S6 coefficient/bundle and S8 selected-source/arithmetic reviews without rerunning old algorithms or repeating source retrieval.",
+    "Both native PDF/entry/helper receipts match the current snapshot and source hash 15564808c6bb0ab20d964aa2b76e4436817681ff3a3a13b4a8e33a178a044a04; the full companion actually retains frozen main bytes except declared assembly, includes title/abstract and all eleven units, has 101 pages and PDF SHA cbb5895bd7cc49cd8939bb38b0f8811d26f5699d60e553bdce4f939b5111f040, while the unit receipt also preserves equal-source pre-submit build/sealing evidence.",
+    "Standard diagnostics are clear, but layout diagnostics are not empty: the single retained 3.50723pt LiuData26 URL excess was independently inspected again on full page 101, with no clipping or overlap, and is non-blocking for this academic review.",
+    "The previous C review had no open issue, hence issues/resolved are empty; only these reports and private ignored page images were written, without source/shared/state/other-report/history/frozen-output changes or rebuilds."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 2,
+  "schema_version": 1,
+  "snapshot": "a5389f6bd7e2f0c48a1e80907f4b86c3b8d90354270995ad3c74a1c99997266e",
+  "summary": "Pass. C's exact results and reproducibility claims are unchanged, and the bound full manuscript clearly preserves the distinct status and credit of the supplementary coefficients, finite-data conjecture and original theorems.",
+  "unit": "c",
+  "verdict": "pass"
+}

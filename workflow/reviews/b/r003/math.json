@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified all 46 frozen/live inputs, artifacts, canonical snapshot, actual binding, writer ACK and native PDF/entry/helper hashes; S1 r002, S2 r013, S6 r007 and S7 r005 are approved and fresh. The old r001 author response only exits input selection: its live bytes and r002 frozen copy retain the original hash.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight B files and other old scientific inputs are unchanged, preserving stable genus/defect ranges, the finite layer cap, minimum Borel degree, vanishing orders and the genus-one primitive exception; the new introductory description changes no domain or index condition.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The unchanged formulas retain the forward/inverse derivative distinction, Borel factorials, kernel coefficients, characteristic signs and endpoint/primitive scales; the frontmatter introduces no factor or alternate convention.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The accepted introductory conventions remain intact, and B's unchanged source/interface keep the definitions and scopes of inverse images, critical data, S, theta, finite H, angular cones and remainder exponent nu; no new alias, parameter identification or first-use conflict is introduced.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The accepted guide correctly assigns common complex domains and uniform kernel/primitive estimates to B, while principal coefficients, asymptotic transfer and background comparison remain Section 8 outputs. The original inverse-budget, critical/regular patching, endpoint induction and negative-axis constant arguments are unchanged; no advertised main theorem is used as a new premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The finite-cap/fixed-h construction, nested angular margins, fixed mixed-derivative bounds, full kernel/characteristic normal convergence and original primitive-bound strength retain their exact scopes. Neither the new abstract nor the guide asserts cap-independent domains, growing-h uniformity or a stronger error rate.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh CLOSING-FRONT impact signature on B r003 using the retained full mathematical review. No prior MATH issue is open; issues and resolved_issue_ids are empty. No unchanged estimate or long proof was reloaded or recomputed.",
+    "Exactly the abstract and S1 source/interface changed among retained old inputs, and the S1 handoff was added; these match accepted S1. The selected workflow/reviews/b/r001/author_response.json is omitted in the new fingerprint but remains intact live and in r002/source, SHA256 e9d919694e3a7e5255c3de7a0d5ac8044006704a9d504197e90b2f1375228d2b. All B scientific/interface files, other scientific inputs, macros, bibliography, outline and unit definition are unchanged.",
+    "Writer ACK SHA256 2c973eb761bb2e96e82f5e367c0ffc339e05f5be9634ffe7f58b686dde01e6bd matches. Actual render source SHA256 c58b63d985f33c548fbf5adc07da8a7ebf1103705c196f064fca4930fbb19a77; actual 44-page PDF SHA256 b0239e5ce2bfdc1cda071cd37968486a0bd2592849398e7bef241600fc650bd0. Receipt binds snapshot 7545c46aedf7373e929571a644659385b5c33e26324ab5ebafe5426cad2053f7, actual entry/helper hashes and a strict native build with empty standard/layout diagnostics. Focused B validation passes.",
+    "The unit rendering omits the abstract; reused the accepted actual S1 companion at SHA256 0261c5fea7d1bf3ebee4c31559c445e072cb1fcd7f4b0ce4419fbede59ecfa3f, rechecked against its receipt. Only these reports and the authorized ignored byte audit were written; no source/state/old record/other-role file or frozen output was changed."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 3,
+  "schema_version": 1,
+  "snapshot": "7545c46aedf7373e929571a644659385b5c33e26324ab5ebafe5426cad2053f7",
+  "summary": "Pass on B r003. The accepted frontmatter accurately describes the unchanged finite-layer complex-domain, kernel and primitive estimates without widening their parameter ranges or precision. Historical response removal is input-selection metadata only. No unresolved mathematical issue.",
+  "unit": "b",
+  "verdict": "pass"
+}
