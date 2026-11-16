@@ -1,0 +1,450 @@
+% !TeX root = ../../main.tex
+\subsection{Finite cores and summable remainders}
+\label{subsec:s03:04}
+
+For a graph with a large vertex, contract all $p$ self-loops at that
+vertex, increasing its genus by one at each contraction. Denote the
+resulting graph with its distinguished vertex by $\Gamma_{\rm c}$,
+its \emph{core}.
+The distinguished vertex retains its complexity. A core type records
+its incidence data and the genera of the other vertices; the genus
+at the distinguished vertex is then determined by the total genus.
+
+\begin{lmm}[Finite cores]
+\label{lmm:s03:finite-cores}
+For each fixed $q\geq0$ there are finitely many core types,
+independent of sufficiently large $g$. If the distinguished core
+vertex has valence $n_0$, then
+\begin{equation}
+\label{eq:s03:core-parameters}
+c=\frac{q+n_0}{2}\in\mathbb Z_{\geq0},\qquad
+G=g-c-p,\qquad n=n_0+2p
+\end{equation}
+are the genus and valence of the original large vertex.
+For the graph $\Gamma_p$ obtained by restoring $p$ loops,
+\begin{equation}
+\label{eq:s03:core-automorphisms}
+|\operatorname{Aut}\Gamma_p|
+=2^pp!\,|\operatorname{Aut}\Gamma_{\rm c}|.
+\end{equation}
+\end{lmm}
+\begin{prf}
+There are at most $q$ other vertices. Their valences sum to at most
+$3q$, since $n_v\leq k_v+2\leq3k_v$.
+Every core edge has an end at one of them, so the core has at most
+$3q$ edges and $n_0\leq3q$. Their genera are also bounded in terms
+of $q$. These bounds give finitely many incidence data and small
+genus labels. The distinguished genus is $g-c$; comparing its
+complexity $2(g-c)-2+n_0$ with $2g-2-q$ gives
+\eqref{eq:s03:core-parameters}. In particular $c$ is integral.
+
+An automorphism preserves the unique large vertex and restricts to
+a core automorphism. Every core automorphism extends after the loops
+are restored. The kernel consists of their permutations and the
+independent flips of their two flags, of order $2^pp!$.
+This proves \eqref{eq:s03:core-automorphisms}. The distinguished
+vertex stays stable throughout, because its complexity is unchanged.
+\end{prf}
+
+The first truncation below uses only the all-type vertex bound. It
+therefore includes legal graphs whose large-complexity vertex has
+small genus; a large-genus expansion is not needed for this tail.
+
+\begin{lmm}[Loop tail]
+\label{lmm:s03:loop-tail}
+Fix a core type of complexity $q$ and a compact set
+$\mathcal K\subset\mathbb C$. For all its legal loop counts,
+\begin{equation}
+\label{eq:s03:loop-majorant}
+\sup_{u\in\mathcal K}
+ \frac{|Z_{\Gamma_p}(u)|}{V_{g,0}}
+\leq g^{-q}\frac{C^{p+1}}{p!},
+\end{equation}
+with $C$ independent of $g,p$ for sufficiently large $g$.
+Consequently, for every fixed $J\geq0$, the sum over legal
+$p>\log g$ is $O_{\mathcal K,q,J}(g^{-J})$.
+The same tail conclusion holds for $C^{p+1}(1+p)^s/p!$ with any
+fixed nonnegative integer $s$.
+\end{lmm}
+\begin{prf}
+In this proof put $H=2g-2$. The large vertex's complexity is
+$H-q$, independent of $p$. Its bound
+\eqref{eq:s03:vertex-bound}, divided by $F_g$, contributes
+$\Gamma(H-q)/\Gamma(H)=O_q(g^{-q})$ and a bounded square-root
+ratio. The small vertices and core edges give fixed constants.
+The $2p$ extra flags and $p$ extra edge integrals give a factor
+exponential in $p$, whereas \eqref{eq:s03:core-automorphisms}
+gives $1/(2^pp!)$. Finally $V_{g,0}\asymp F_g$ by
+\eqref{eq:s03:fixed-n-volume}. This proves
+\eqref{eq:s03:loop-majorant} for every legal $p$, including $G=0$.
+
+For $N=\lfloor\log g\rfloor+1$,
+\[
+\sum_{p\geq N}\frac{C^p}{p!}
+\leq e^C\frac{C^N}{N!}
+=\exp\bigl(-\log g\log\log g+O_C(\log g)\bigr).
+\]
+It is smaller than every fixed inverse power of $g$.
+A fixed power of $1+p$ can be absorbed by increasing the exponential
+base $C$, proving the last assertion.
+\end{prf}
+
+The descendant factorials give a second summability mechanism. We
+record its exponential moments so that the polynomial errors in
+the WP inputs can be summed without a logarithmic loss.
+
+\begin{lmm}[Degree moments]
+\label{lmm:s03:degree-moments}
+For $T\geq0$, $n\geq0$, $D=\sum_i d_i$ and $\eta\geq0$,
+\begin{equation}
+\label{eq:s03:degree-moments}
+\sum_{\mathbf d\geq0}e^{\eta D}
+ \prod_{i=1}^n\frac{(T/2)^{d_i}}{(2d_i+1)!}
+=f(-e^\eta T)^n
+\leq\exp\left(n\sqrt{e^\eta T/2}\right).
+\end{equation}
+Multiplication of the summand by any fixed power of $1+D$ is
+bounded by a constant times the same upper bound with $\eta$
+replaced by $\eta+1$.
+For fixed nonnegative integers $n_0,s,a$, positive $C,T$ and
+$\eta>0$, the joint tail
+\begin{equation}
+\label{eq:s03:joint-degree-tail}
+\sum_{p\geq0}\frac{C^p(1+p)^s}{p!}
+ \sum_{\substack{\mathbf d\geq0\\|\mathbf d|>N}}
+ (1+|\mathbf d|)^a
+ \prod_{i=1}^{n_0+2p}\frac{(T/2)^{d_i}}{(2d_i+1)!}
+\leq C' e^{-\eta N}
+\end{equation}
+holds for $N\geq0$, with $C'$ independent of $N$.
+\end{lmm}
+\begin{prf}
+The equality in \eqref{eq:s03:degree-moments} follows by factoring
+the nonnegative series over its $n$ indices. The elementary bound
+$\sum_{d\geq0}x^{2d}/(2d+1)!\leq e^x$, for $x\geq0$, gives the
+inequality. Also $(1+D)^a\leq C_a e^D$.
+
+In the inner tail of \eqref{eq:s03:joint-degree-tail}, use
+$\mathbf1_{D>N}\leq e^{\eta(D-N)}$, then apply the preceding
+bound. Its dependence on $n=n_0+2p$ is exponential in $p$.
+The remaining series has a fixed exponential base, a polynomial
+in $p$, and denominator $p!$, so it converges. This proves the
+claimed bound after taking out $e^{-\eta N}$.
+\end{prf}
+
+For a retained core we now follow an exact path of volume ratios,
+apply HMT at each intermediate type, and multiply the finite
+expansions. The degree moments handle the descendant errors directly.
+Keeping their dependence on $p$ throughout will produce the summable
+remainder required for the final exchange of sums.
+
+\begin{prp}[Summable core expansion]
+\label{prp:s03:core-expansion}
+Fix a core type of complexity $q$. There are entire functions
+$\gamma_{\Gamma_{\rm c},p,r}(u)$ for integers $p,r\geq0$ such
+that, for every fixed $K\geq0$ and compact
+$\mathcal K\subset\mathbb C$,
+\begin{equation}
+\label{eq:s03:core-expansion}
+\frac{Z_{\Gamma_p}(u)}{V_{g,0}}
+=g^{-q}\sum_{r=0}^K\frac{\gamma_{\Gamma_{\rm c},p,r}(u)}{g^r}
+ +\varepsilon_{g,p,K}(u)
+\end{equation}
+for $0\leq p\leq\log g$ and sufficiently large $g$.
+There are $C>0$ and an integer $s\geq0$, depending only on the
+core, $K$ and $\mathcal K$, such that
+\begin{equation}
+\label{eq:s03:summable-remainder}
+\begin{aligned}
+\sup_{u\in\mathcal K}|\gamma_{\Gamma_{\rm c},p,r}(u)|
+ &\leq\frac{C^{p+1}(1+p)^s}{p!}
+       &&(0\leq r\leq K,\ p\geq0),\\
+\sup_{u\in\mathcal K}|\varepsilon_{g,p,K}(u)|
+ &\leq g^{-q-K-1}\frac{C^{p+1}(1+p)^s}{p!}
+       &&(0\leq p\leq\log g).
+\end{aligned}
+\end{equation}
+The coefficient functions do not depend on the truncation order.
+\end{prp}
+\begin{prf}
+Use $c,n_0,G,n$ from \eqref{eq:s03:core-parameters} and put
+$H=2g-2$ in the following factorial calculation.
+Starting from $(g,0)$, perform $c+p$ genus-exchange steps to
+$(G,2c+2p)=(G,n+q)$, then remove $q$ markings at fixed genus.
+Telescoping gives
+\begin{equation}
+\label{eq:s03:core-volume-path}
+\begin{split}
+\frac{V_{G,n}}{V_{g,0}}
+={}&\frac{\Gamma(H-q)}{(4\pi^2)^q\Gamma(H)}
+ \prod_{i=0}^{c+p-1}\frac{V_{g-i-1,2i+2}}{V_{g-i,2i}}\\
+&\quad\cdot\prod_{j=0}^{q-1}
+ \frac{4\pi^2(2G-2+n+j)V_{G,n+j}}{V_{G,n+j+1}}.
+\end{split}
+\end{equation}
+The explicit complexity factors in the second product run from
+$H-q$ to $H-1$. Thus their factorial ratio and their power of
+$4\pi^2$ have the indicated orientation. All marking counts
+on this path are nonnegative.
+
+\smallskip\noindent
+\emph{Thresholds and finite products.}
+For $p\leq\log g$, every genus in this path is at least
+$g-c-\log g$, and its marking counts are at most
+$2\log g+2c+n_0+q$. The descendant ratio at $(G,n)$ has the same
+bounds. Hence all the thresholds in
+Proposition~\ref{prp:s03:wp-inputs}\textup{(iii)} hold once
+\[
+g-c-\log g>
+500(2\log g+2c+n_0+q+K+3)
+       (c_{\mathrm H}(K+1))^{c_{\mathrm H}}.
+\]
+For each fixed core and $K$ this is true for sufficiently large $g$,
+uniformly in the retained $p$. No threshold on the descendant
+total degree is required.
+
+Expand each factor of \eqref{eq:s03:core-volume-path} through
+order $K$. Expanding $(g-i)^{-r}$ and $G^{-r}$ in $g^{-1}$ leaves
+coefficients and remainders bounded by fixed polynomials in $p$.
+The factorial ratio has a fixed-$q$ expansion beginning with a
+constant times $g^{-q}$. There are $p+c+q$ other factors.
+
+Here is a uniform bound for their multiplication. For fixed $K$,
+choose a polynomial $Q_K(p)\geq1$ such that each coefficient of
+order $r\leq K$ has modulus at most $Q_K(p)^r$.
+A product of $N=p+c+q$ such factors is coefficientwise majorized,
+as a formal series in $z$, by $(1-Q_K(p)z)^{-N}$. For integers
+$N\geq1$ and $j\geq0$,
+$\binom{N+j-1}{j}\leq N^j$, since every multiset has at least one
+ordering as a word. Its tail at $z=1/g$, beyond degree $K$, is
+therefore at most $2(NQ_K(p)/g)^{K+1}$ when
+$NQ_K(p)/g\leq1/2$. This condition holds for $p\leq\log g$.
+The empty product needs no estimate.
+
+Add the source remainders by telescoping. Each actual factor is
+$1+O((1+p)/g)$ by the order-zero HMT bounds. Their product is
+bounded by $\exp(C(1+p)^2/g)$. The truncated factors also have
+a uniformly bounded product, since
+$NQ_K(p)/g$ tends to zero in this range.
+Thus telescoping adds at most $g^{-K-1}$ times a fixed polynomial
+in $p$. This proves the needed product error without substituting
+$\log g$ for $p$.
+
+\smallskip\noindent
+\emph{Descendant sums.}
+Divide the large vertex function by $V_{G,n}$ in
+\eqref{eq:s03:vertex-function}. For $n=0$ this ratio is identically
+one. For $n\geq1$, apply
+\eqref{eq:s03:hmt-descendant} to every dimension-valid tuple.
+Its error is bounded by $g^{-K-1}$ times a polynomial in $p,D$.
+Lemma~\ref{lmm:s03:degree-moments} sums that polynomial against
+the factorial weights and gives a bound
+$g^{-K-1}C^{p+1}(1+p)^s$, uniformly on compact edge-parameter sets.
+The same argument bounds every retained coefficient.
+
+The coefficient sums may be extended to all nonnegative tuples.
+Their omitted tuples have $D>3G-3+n\geq2g$ for sufficiently
+large $g$, uniformly for $p\leq\log g$.
+An exponential tilt as in \eqref{eq:s03:degree-moments} bounds
+this extension error by $e^{-2g}C^{p+1}(1+p)^s$, with a possible
+increase of $C,s$. This is smaller than the asserted remainder.
+It also proves that each coefficient is entire in the edge
+parameters, by locally uniform convergence of its degree series.
+
+\smallskip\noindent
+\emph{Edge integration and loop weight.}
+The other vertex functions are fixed finite polynomials. Integrating
+their products and the large-vertex coefficients over the unit
+edge cubes preserves these compact bounds. The scalar edge factors
+are exponential in $p$, and the automorphism factor supplies
+$1/(2^pp!)$. Combining the volume and descendant expansions proves
+\eqref{eq:s03:core-expansion}--\eqref{eq:s03:summable-remainder}.
+
+For each fixed $p$, these are ordinary asymptotic coefficients, so
+uniqueness makes them independent of $K$. Their polynomial bounds
+in $p$ came from the coefficients of the finite products and the
+degree moments, and hold for every $p\geq0$. This also defines
+the coefficient functions for the values of $p$ that are not legal
+at a particular finite genus. Their entire dependence on $u$
+follows from the same compact bounds and the edge integrations.
+\end{prf}
+
+The absolute graph tail now discards all sufficiently complex cores,
+and the loop tail discards their large loop counts. On the finite
+remaining set of core types, the bound
+\eqref{eq:s03:summable-remainder} permits summation before taking
+the genus limit.
+
+\begin{thm}[Uniform graph expansion]
+\label{thm:s03:graph-expansion}
+There are entire functions $\gamma_k(u)$, $k\geq0$, such that,
+for every fixed integer $K\geq0$,
+\begin{equation}
+\label{eq:s03:graph-expansion}
+\frac{Z_g(u)}{V_{g,0}}
+=\sum_{k=0}^K\frac{\gamma_k(u)}{g^k}
+ +O_{\mathcal K,K}(g^{-K-1}),\qquad
+\gamma_0(u)=e^{S(u)},
+\end{equation}
+uniformly on each compact set $\mathcal K\subset\mathbb C$.
+Every fixed finite derivative in $u$ may be taken termwise with
+the same inverse-genus order of the remainder.
+\end{thm}
+\begin{prf}
+Use Proposition~\ref{prp:s03:graph-tail} with $M=K+1$.
+Since $V_{g,0}\asymp F_g$, the omitted graph sum divided by
+$V_{g,0}$ is $O_{\mathcal K,K}(g^{-K-1})$.
+For each $q\leq K$ only finitely many core types remain.
+Lemma~\ref{lmm:s03:loop-tail} discards all their legal
+$p>\log g$ to any required inverse-genus order.
+
+For a remaining $q$-core apply
+Proposition~\ref{prp:s03:core-expansion} through order $K-q$.
+Its errors sum to $O(g^{-K-1})$, because
+$\sum_{p\geq0}C^{p+1}(1+p)^s/p!<\infty$.
+The coefficient bounds permit extension of their retained $p$ sums
+to all $p\geq0$, with another negligible factorial tail.
+Thus
+\begin{equation}
+\label{eq:s03:coefficient-rule}
+\gamma_k(u)=
+ \sum_{q=0}^k\ \sum_{\substack{\text{core types }\Gamma_{\rm c}\\
+                              \text{of complexity }q}}
+ \sum_{p=0}^{\infty}\gamma_{\Gamma_{\rm c},p,k-q}(u).
+\end{equation}
+These series converge absolutely and locally uniformly in $u$, so
+their sums are entire. Their definition is independent of $K$.
+
+At order zero the only core has one vertex and no edges.
+The fixed-loop calculation gives its coefficient $S(u)^p/p!$.
+Summing proves $\gamma_0=e^S$.
+Finally apply Cauchy's integral formula to the remainder on a slightly
+larger compact neighborhood of the set on which derivatives are
+requested. This gives the derivative assertion at every fixed order.
+\end{prf}
+
+\begin{rmk}[Coefficient computation]
+At each fixed order, \eqref{eq:s03:coefficient-rule} sums contributions
+from finitely many cores, with an absolutely summable loop series.
+Together with \eqref{eq:s03:fixed-n-volume}, it gives
+$a_g/N_g=e^{\Cin(2\pi)}/\sqrt\pi+O(g^{-1})$.
+Section~4 computes the two corrections in Theorem~\ref{thm:lambda-one}.
+Their values are not inputs to the graph estimates.
+\end{rmk}
+
+The same argument allows a fixed number of labeled external
+markings. We state the extension additively, since its leading leg
+factors may vanish. For further graph insertions we give an explicit
+majorant condition, including the polynomial loss it permits.
+
+\begin{crl}[Fixed markings and weights]
+\label{crl:s03:marked-extension}
+Fix an integer $r\geq0$.
+
+\textup{(i)} For $\mathbf t=(t_1,\ldots,t_r)\in\mathbb C^r$,
+the normalized integral
+\begin{equation}
+\label{eq:s03:marked-deformation}
+\frac1{V_{g,r}}\int_{\MM_{g,r}}
+ e^{\alpha\kappa_1+\alpha u\delta-\sum_{i=1}^rt_i\psi_i}
+\end{equation}
+has an additive expansion through every fixed integer order $K\geq0$
+in $g^{-1}$, with
+entire coefficient functions of $(u,\mathbf t)\in\mathbb C^{r+1}$
+and a remainder $O_{\mathcal K,K}(g^{-K-1})$ on each compact
+$\mathcal K\subset\mathbb C^{r+1}$. Its leading coefficient is
+$e^{S(u)}\prod_{i=1}^rf(t_i)$.
+Every fixed mixed derivative in $u,t_1,\ldots,t_r$ may be taken
+termwise. In particular $\prod_i\partial_{t_i}^{d_i}$ represents
+insertion of $(-1)^{\sum_i d_i}\prod_i\psi_i^{d_i}$, for fixed
+nonnegative integers $d_i$.
+
+\textup{(ii)} For a graph in $\mathcal G_{g,r}$ use the same
+vertex complexity $k_v=2g_v-2+n_v$, now of total $H=2g-2+r$ in
+this counting assertion. Define its large vertex and $q$ using this
+total. Fix an integer $s\geq0$. Suppose graph contributions
+$D_\Gamma(u,\mathbf t)$ satisfy, with constants independent of
+$g,\Gamma$,
+\begin{equation}
+\label{eq:s03:decoration-condition}
+\sup_{(u,\mathbf t)\in\mathcal K}|D_\Gamma(u,\mathbf t)|
+\leq
+\frac{C(1+H)^sT^{|E(\Gamma)|}}{|\operatorname{Aut}\Gamma|}
+\prod_{v\in V(\Gamma)}
+ \frac{C_1B^{n_v}(4\pi^2)^{k_v-1}\Gamma(k_v)}{\sqrt{k_v}},
+\end{equation}
+where $B,C,C_1>0$ and $T\geq1$ may depend on $r,s,\mathcal K$.
+Then, for each fixed integer $M\geq1$, the sum of these suprema
+over graphs with no large vertex or with $q\geq M$ is
+$O_{\mathcal K,r,s,M}(F_g g^{r+s-M})$.
+\end{crl}
+\begin{prf}
+Proposition~\ref{prp:s02:boundary-exponential}, with the external
+factor $e^{-\sum_i t_i\psi_i}$, gives the marked exact graph
+formula. Leg $i$ has parameter $t_i$, and the two flags of each
+edge still share $\alpha u s_e$.
+
+For the absolute marked-graph estimate, repeat the pairing count
+with total complexity $H=2g-2+r$. If vertex $i$ receives $r_i$
+of the labeled legs, only its $n_i-r_i$ other flags are paired.
+Its valence polynomial becomes
+$P_{k_i+2}^{(r_i)}(x)=P_{k_i+2-r_i}(x)\leq P_{k_i+2}(x)$
+when $r_i\leq k_i+2$, and is zero otherwise. Distributing $r$
+labeled legs among $m$ vertices gives $m^r$ possibilities.
+For fixed $r$ this is at most $C_r^m$ and is absorbed into the
+constant in \eqref{eq:s03:gaussian-majorant}. The extra factor
+$B^r$ is fixed. Thus the full Gaussian proof applies with scale
+$\Gamma(2g-2+r)(4\pi^2)^{2g-3+r}/\sqrt g$.
+Its ratio to $F_g$ is $O_r(g^r)$. Multiplication by $(1+H)^s$
+proves \textup{(ii)}, with no additional loss for distributing
+the fixed labeled legs.
+
+For the expansion in \textup{(i)}, fix a marked core. Let $n_0$
+include both its incident edge flags and its external legs at the
+large vertex. Its genus is $g-c$, where
+$q=2c+r-n_0$. Restoring $p$ loops gives
+$G=g-c-p$, $n=n_0+2p$. Here $c\geq0$ is the sum of the other
+vertex genera and the first Betti number of the core.
+Start the exact volume path at $(g,r)$: $c+p$ exchanges reach
+$(G,r+2c+2p)=(G,n+q)$, and $q$ marking removals reach $(G,n)$.
+In particular its explicit scale is
+\begin{equation}
+\label{eq:s03:marked-volume-scale}
+\frac{\Gamma(2g-2+r-q)}
+     {(4\pi^2)^q\Gamma(2g-2+r)}.
+\end{equation}
+The two products are those in \eqref{eq:s03:core-volume-path},
+with $2i$ replaced by $r+2i$ in the exchange product.
+All types are stable with nonnegative marking counts. For fixed
+$r$ their HMT thresholds still have genera $g-O(\log g)$ and
+marking counts $O(\log g)$.
+
+There are finitely many marked core types for each $q$; their
+small vertices have total valence at most $3q$ and the external
+labels belong to a fixed set. The proofs of the loop tail, degree
+moments and summable core remainder therefore apply unchanged,
+with constants allowed to depend on $r$ and the compact leg
+parameters. The marked absolute tail just proved completes the
+summation, since $V_{g,r}$ is comparable to its displayed factorial
+scale by \eqref{eq:s03:fixed-n-volume}. The $q=0$ core
+has every leg at its sole vertex, so its leading sum is
+$e^{S(u)}\prod_i f(t_i)$. Local uniformity on complex compact sets
+and the multivariable Cauchy formula prove all the derivative
+assertions. No leading leg factor was divided out.
+\end{prf}
+
+\begin{rmk}[Zeros and weights]
+Since $f(\alpha)=\sin\pi/\pi=0$, some leading coefficients in
+\eqref{eq:s03:marked-deformation} vanish at the parameters needed
+later. The additive expansion and its Cauchy bounds remain valid
+there.
+
+A scalar graph weight bounded by $C(1+|E(\Gamma)|)^s$ satisfies
+\eqref{eq:s03:decoration-condition}. A sum over at most $s$
+ordered choices of flags or edges does too, provided every selected
+term has the displayed positive majorant with common constants:
+there are $O_r((1+H)^s)$ choices. For insertions changing a vertex
+or edge kernel, that uniform comparison must first be verified.
+The concrete GRR insertions in the later argument will be checked
+against this condition.
+\end{rmk}

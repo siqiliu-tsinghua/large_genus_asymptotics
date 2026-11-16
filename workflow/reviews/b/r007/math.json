@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual /root/s02_math binding and approved, live-hash-fresh S1 r007, S2 r017, S6 r012 and S7 r009 inputs. B uses the established Bessel critical data, finite rational jets and exact S7 kernels; its sole DLMF citation supplies the modified-Bessel representation whose needed inequalities are proved in B.5. The full written analytic argument depends on neither S8, retired C, WP coefficients nor a program, and the new shared credit/organization changes add no premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "B.2 preserves minimum Borel degree 3h-2, and B.4 applies local transport with source scale a=(h-2)/2 and integer N=3h-2>a+1/2, obtaining scale (h-1)/2 for each fixed 1<=h<=H. B.5 restricts the primitive to g>=max(2,h), so N=2g+h-2>=h+2 and N>=3; these bounds justify respectively the remote integrability and the extra N^-1 from near-zero integration. All 16 principal statements and 35 numbered equation blocks are unchanged against r006 and fa2f374.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The forward derivative w_theta' at the inverse point is the regular scale, while v_theta' is its reciprocal; the Morse inverse uses the negative square-root branch and S_sigma=S+sigma(x_{*,theta}-v)+integral(x_{*,theta+t}-x_{*,theta})dt with positive real quadratic term. Checked the S7 linear subtraction and external quadratic 1/2 against the actual kernels: the entire m>=2 cubic difference is retained, and local integration gives exactly S H_1^pm/(x_{*,theta}-v). The primitive runs from negative infinity to zero with zero constant only for g>=2, excluding the undifferentiated G_{1,1} logarithm, and yields (2pi)^(-2g) N! R^(-N) N^(-5/2).",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "New critical data are defined at eq:b:critical-data; the disk, B.1-local M_k, positive a_* and Omega_theta precede their use, while S=R_theta-x and the principal-argument two-distance cone precede transport. B.2 explicitly distinguishes w_theta' from v_theta' and local scalar beta from beta_g; B.3 defines nu in (1/2,1), nonnegative endpoint scales and holomorphic complex-theta coefficient neighborhoods before its conditional lemmas. B.4 fixes the layer cap and derivative orders, and B.5 defines modified I_k and its local coefficient degree N without overloading the inherited g_2, b_g or scalar b; the revised antecedent and QED sentence change none of these meanings.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read all five subsections and their 16 adjacent proofs: strict angular estimates establish the positively centered univalent domain, a separate difference-quotient/compact-boundary argument gives the full image-radius budget, and normal-convergence induction constructs the actual Borel sums before extraction. The linear/quadratic endpoint proofs, frozen local model, intermediate range and vanishing-order tail provide the common-domain induction; B.4 explicitly patches compact real centers to the already constructed critical cones and establishes complex-theta neighborhoods in its final paragraph. B.5 proves fixed-genus zero constants from the finite jet formula, then the two-endpoint Fourier bound and three negative-axis intervals give the uniform primitive estimate; all mathematical justifications remain in the paper and no target asymptotic or software output is used as an input.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The B.2 majorant (s+sigma)^(h-2)[s/(s+sigma)]^(3h-2) is integrable over the entire characteristic, uniformly in the local regular scale, and the intact m>=2 difference has a summable m^-2 bound. B.3 assumes larger cones and complex-parameter neighborhoods explicitly; B.4 retains their angular slack, three local-transport ranges, additive bounds at vanishing coefficients and Cauchy regeneration of every fixed mixed derivative, with only finitely many shrinkages for fixed H. Noncritical arcs, compact-center endpoint patches and remote characteristics have common neighborhoods, while B.5 separately bounds near-zero, compact negative and growing negative intervals uniformly in genus; no growing-defect uniformity, full-layer interchange or stronger remainder is claimed.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a complete final mathematical reading and fresh signature on B r007, not a reuse of a metadata-only pass. Existing independent source/proof checks were reused where the unchanged formulas warranted it; no scientific program was rerun.",
+    "Verified 57 selected input hashes against the frozen archive and live files, the canonical snapshot and three submission artifacts. Relative to r006 the exact selected-input delta is 21 changed entries including @outline, five added final-polish handoffs and no removed input; own TeX changes are confined to B.2/B.3 prose and paragraph boundaries. All 35 numbered equation blocks, 30 unnumbered bracket displays, 549 inline expressions, 16 principal statements, 57 labels and the sole citation are identical to r006 and Git fa2f374.",
+    "Source SHA256 c522640dbae94855e21e8c32623ded0cedc8769b07bf45171de88363bbbc7654; native PDF SHA256 16ac591ac4ef002d5ab53fef23528f0252d253400445b4eb66c54a1712c5e07d. Current/preflight receipts agree on source/PDF/entry/helper hashes, with strict=true, passed=true, no showkeys and empty standard/layout diagnostics; the explicit pre-submit equal-fingerprint sealing provenance was checked.",
+    "Actual original-writer ACK SHA256 9cb864f68d2d75bf7542c0242effe06cf2557878c1d34906411272558ef84aae agrees with the examined changes. Only the current mathematical report and handoff were written; this signature does not certify a future integrated manuscript, single-TeX export or isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+  "summary": "Pass after a complete final reading of the entry and all five subsections on the exact B r007 snapshot: inverse-radius geometry, normally convergent Borel transport, conditional endpoint calculus, finite-layer common domains and the genus-uniform negative-axis primitive bound close with their stated hypotheses. The local prose edits preserve the mathematics and analytic scopes.",
+  "unit": "b",
+  "verdict": "pass"
+}

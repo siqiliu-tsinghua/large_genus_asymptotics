@@ -1,0 +1,39 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "dimensions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "normalization": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "proof_logic": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "uniformity": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+  "summary": "",
+  "unit": "b",
+  "verdict": "FILL_IN"
+}

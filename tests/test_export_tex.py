@@ -2,14 +2,32 @@
 from pathlib import Path
 import sys
 import tempfile
+from types import SimpleNamespace
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
 from export_tex import Expander, inspect_standalone, remove_comments
-from workflow import WorkflowError
+from workflow import WorkflowError, digest
+from verify_submission import check_reference_pdf
 
 
 class StandaloneSourceTests(unittest.TestCase):
+    def test_reference_pdf_cannot_be_replaced_after_export(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root/'build').mkdir()
+            pdf = root/'build/main.pdf'
+            pdf.write_bytes(b'%PDF-original approved manuscript')
+            engine = SimpleNamespace(safe=lambda name:(root/name).resolve())
+            receipt = {'source_pdf':'build/main.pdf','source_pdf_sha256':digest(pdf.read_bytes())}
+            self.assertEqual(check_reference_pdf(engine,receipt),pdf.resolve())
+            pdf.write_bytes(b'%PDF-another manuscript build')
+            with self.assertRaisesRegex(WorkflowError,'changed since export'):
+                check_reference_pdf(engine,receipt)
+            receipt['source_pdf'] = 'build/another.pdf'
+            with self.assertRaisesRegex(WorkflowError,'complete approved'):
+                check_reference_pdf(engine,receipt)
+
     def test_nested_source_and_inline_bibliography_preserve_tex_comments(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

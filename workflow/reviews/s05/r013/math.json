@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact and native hashes with S1 r007, S2 r017, S3 r014, S4 r016 and A r014 approved and fresh. The labeled-source proof algebraically specializes the cited boundary formula in Chow and uses S2 forgetting, S3 uniform bounds and S4/A first-profile/moment rules; neither the explicit second coefficient of Theorem 1.1 nor software supplies a premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The source count r, odd degrees a_i>=3 and w=sum a_i are fixed; a tagged edge has degree sum_(i in J)a_i-1, while each vertex block creates degree 1+sum a_i>=4 at its new marking. The original unmarked graph retains H=2g-2 and q before these markings; normalization requires 3g-3>=w, and all fixed-list Chern powers are defined for sufficiently large g.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Commuting square-free labels extract the character product without r!, and unordered forgetting blocks have the displayed sign with no block factorial and retain exp(-alpha psi_new). The Bernoulli prefactor for ch_3 is -1/720; specifying a loop leaves exactly one branch half, inverse-complexity profiles contribute the required genus factor 1/2, and the factorial conversion supplies the 4/g correction, yielding the printed g^-2/g^-3 coefficients.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The opening of 5.1 defines r,a_i,w,node polynomials and square-free epsilon_i; the filtration proof binds s_v,m,s and scoped H before using the original-graph majorant. In 5.2 T_g^free,T_g^edge, the new degree d>=4, varphi(z)=z^4 f^(4)(alpha z) and X_k are defined in their required types/scopes; inherited j_i/ell and Hodge normalization remain unchanged, and the stable labelled-sources key survives the heading spelling change.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read the complete entry and three subsections: each original graph is uniformly majorized using Gamma(k_v+s_v)/Gamma(k_v), then the full-tail corollary is applied; this is distinct from the fixed-core legal-loop bound. The single-character proof cancels common q=1 and unmodified q=0 terms against their denominator terms, computes only the genuine free-marking increment and specified loop, and derives the endpoint table from the ODE before the finite fixed-list Chern substitution and three examples.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Vertex Cauchy estimates, weighted block assignment and edge choices absorbed into T^E give the full O(F_g g^(r-M)) tail with polynomial loss r, not an extra H^r. All legal large-p loops are removed before HMT, retained degree errors are summed with factorial weights, and r=1/M=2 leaves numerator error O(F_g g^-1), which becomes O(g^-4) after degree conversion; the fixed-list scope and absence of growing-index uniformity are preserved.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0 and true /root/s02_math binding were independently verified. Source SHA256 9f3b6d4da74eec454bdd228063bc5576a45fd3d3280a92f5b750dfbb2c27a5a4; native PDF SHA256 4933a27ae6965492e7096cb87ffcd83fdbefe384a8294c10daa619a02a9eff34. Current/preflight source and PDF agree, entry/helper hashes match, strict/layout diagnostics are empty and the pre-submit/equal-source sealing provenance is explicit.",
+    "Compared against r012/Git fa2f374: 20 equation and four align environments, all other displays, 213 inline math tokens, six principal statement bodies, 35 labels, endpoint table and citations are preserved; only the optional Labeled sources heading changes spelling. The complete named theorem proof and all three examples are byte-identical, as is the old handoff. Exact inherited/own delta and @outline match the summary; original-writer ACK SHA256 60cbac40e2969c4cc3df261faae613481d0c3e0587db845e9feb63d95fcf7917 matches this scope.",
+    "The complete filtration uses the original graph before adding markings. Summing weighted block assignments costs at most ((r+1)H)^m, m<=r; edge assignments are absorbed into a fixed exponential base. The separate retained-core bound keeps s free root markings and all legal p, so no fixed-graph estimate is mistaken for a whole graph sum and no reclassification of q is hidden.",
+    "The free calculation retains z^4 in the new-degree generator, the exact first-profile difference and its inverse-complexity factor 1/2. Euler degree moments cancel S(1); the ODE recurrence with X_0=0,X_1=-2 supplies X_4,X_5,X_6. The free and specified-loop terms combine with the 4/g factorial correction to the printed ch_3 expansion, with its full-tail/degree/loop error converted to O(g^-4). The Chern exponential then leaves only 2G(j)<ch_3> at the retained orders.",
+    "The current interface correctly separates the full original-graph majorant from the retained-core bound and preserves source, fixed-list and precision boundaries. No scientific program or old numerical computation was rerun; retained independent calculations were used together with the actual proof and preservation guards. No prior MATH issue is open.",
+    "Only this round's math.json and math_handoff.md were written; no manuscript/shared/state/historical/frozen output was changed. This signature does not approve the later integrated manuscript or final single-TeX export/isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+  "summary": "Pass on S5 r013 after a complete final reading: the labeled-source/forgetting combinatorics, original-graph full majorant, legal-loop/HMT order, denominator cancellation and two-term ch_3 calculation close Theorem 1.2 with its unchanged fixed-list O(g^-4) precision.",
+  "unit": "s05",
+  "verdict": "pass"
+}

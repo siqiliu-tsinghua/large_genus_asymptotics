@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete frozen entry and A.1–A.4 in order. 01_wp_coefficients.tex:11–26 binds local complexity k, descendant statistics and the signed fixed-tuple coefficients before the profiles; its kernel, pivot/tuple operations, signed dilaton weights, local ratios and third-difference coefficient are introduced before their respective recursions (pp.25–30). 02_loop_moments.tex:8–44 defines the paired weights, five statistics, signed functional and complex generating parameters before the joint-moment statement; lines 89–124 bind the nonzero multi-index and derivative orders, now explicitly explaining that v records the self-loop count p (pp.32–34). The connector parameter x is locally defined near 1 before its unscaled integrals (lines 254–294, pp.35–36); A.3 distinguishes ordinary integrals from normalized brackets, and A.4 defines the edge matrix, diagram/data conventions, entire integration helpers and normalized table endpoint before use (pp.37–42).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The entry inherits Section 3's WP conventions without restarting the Introduction's setup. A.1 consistently uses e_{n,r} for signed inverse-complexity profiles, gives the conversion to inverse genus explicitly, and identifies the source deficit with -e_{n,1}; its HMT uniform remainder remains separate from fixed-tuple identification. The paired loop weight includes 1/2, while the raw connector generators explicitly do not, and the elliptic vertex is unscaled with x (02_loop_moments.tex:254–294, p.36); these are consistent with the core integration and automorphism rules. Absolute Z_g/F_g coefficients and relative Z_g/V_{g,0} coefficients remain clearly distinguished in the statements, Normalization Remark and table legend (pp.34,36–37,41), with no changes to the inherited lowercase integrals, Hodge indices/ell, g_2, Bessel names or Bernoulli/Chow conventions.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The short entry gives the four computational tasks without an inherited-symbol inventory (section.tex:5–16, pp.24–25). The local U,V potentials compact the second profile, the two local ratio families support the repeated third-order extraction, and the single signed functional supplies the reused moment calculations; they each reduce repeated algebra rather than add parallel global names. The revised explanation of v, the three expression columns and their combination, and the total connector weight uses existing notation (02_loop_moments.tex:89–124,183–222,323–344) and creates no new family. The terminal r_1,r_2 are explicitly confined to the normalization comparison, and A.4's integration helpers recur across the finite tables.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry states how the four parts supply the order-g^{-2} finite inputs for Section 4. A.1 guides the reader from four pivot cases to exact recursions, a separate whole-separating-sum remainder lemma, third-profile extraction and adjacent-genus identification; the actual order-three expansion and cancellation of the unknown c_3(2) are stated at the final step (01_wp_coefficients.tex:155–158,258–269,319–410,451–487; pp.27–32). A.2 explains why shared loop endpoints require correlated moments, then gives finite differentiation/recurrence rules before applying them to q=0 and q=1 (pp.32–37). A.4 announces completeness and symmetry before listing cores, and defines the edge-integration/normalization rule before the contribution tables and summary (pp.38–43).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All ten principal statements are immediately followed by their proofs; Identification, Source comparison, Normalization and Conventions are optional post-proof modules. In particular, the joint-moment proof now separates the generating identity, compact convergence/differentiation, and normalization into three short functional paragraphs, and the pure-loop proof separates table construction, weighted combination and uniform summation justification (02_loop_moments.tex:46–61,176–223; pp.33–35). Independent visual inspection of every appendix page, pp.24–43, found usable paragraph divisions, normal proof gaps/endings and readable full-size diagram/moment/integral tables; A.32 on p.34 and A.36 on p.36 retain their aligned continuations, while A.44 on p.42 remains single-line with a normal tag. The coefficient recursions, low-mode treatment, enumeration and integration rules are given within the article; no project program, Markdown, directory or supplementary code is needed to complete the reasoning.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The local calligraphic D_n(t) denotes the third adjacent-difference coefficient, leaving ordinary J_n for Bessel functions; the later calligraphic J_a(z) is explicitly an entire edge integral for a=0,1,2. Counts p and q retain their loop/core roles, d_i and D are degrees, m_a counts low modes, and A.4 explicitly distinguishes its two-index edge multiplicities m_{ij} (01_wp_coefficients.tex:358–390; 04_finite_core_tables.tex:5–21,146–165). The generator parameter v is now explicitly related to the loop statistic p, while t remains the shared edge variable and x has a stated new local connector scope. Root squares, genus-labeled circles, temporary vertex labels, core row IDs and the (n_0,c;Aut) data column are explained before the actual diagrams (pp.39–40); no graph letter or integral name conflicts with the inherited Euler/Bessel notation.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "A.1 explicitly distinguishes fixed-tuple source identification from the growing-loop uniformity supplied by Section 3, and its post-proof Source comparison separates the conditional resurgent prediction, W26v5's broader absolute expansion and the reconstruction's actual inputs (pp.27,32). The revised A.2 table discussion names all three expression columns and their weights 1,1/2,1/4, then explains the summable-remainder justification before moving to complexity-one cores; the next proof identifies how total connector weights and polynomial insertions produce the two correction columns (pp.35–37). The low-vertex derivation then supplies the exact objects used in the core tables, whose endpoint normalization is stated before the tables and whose final proof explicitly hands the Hodge-normalization/global-tail application back to Section 4 (pp.37–43). These transitions support continuous, standalone mathematical reading and do not refer the reader to internal engineering materials.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a complete final reading of the frozen Appendix A entry, all four subsections, current outline/interface and original-writer handoff/ACK, retaining the freshly reviewed s01 r007/s02 r017/s03 r014 context. Source locations above are under workflow/reviews/a/r014/source/sections/a_coefficients/; native page references are to build/reviews/a/r014/preview.pdf. Appendix A starts on p.24 and its final proof continues onto p.43.",
+    "Independently verified all 55 archived/live input hashes, submission artifacts, current bound identity and fresh dependencies, snapshot/source fingerprint, native PDF/entry/helper hashes and sealed equal-fingerprint preflight provenance. The native PDF has 44 pages; all appendix pages 24–43 were rendered and viewed in the reviewer's private directory. The receipt retains 10pt/no-showkeys and flush-left bibliography continuations, with empty strict/layout diagnostics and accepted exceptions. python scripts/validate.py --unit a passed.",
+    "All 42 equation/align environment blocks, all ten principal statements' mathematics, table payloads, labels and existing mathematical expressions are preserved relative to r013 and baseline fa2f374; the statement comparison accounts for the singular-core grammar correction, and the only added inline mathematical mention identifies the existing v parameter. The entry and full A.3 source are byte-identical to r013. The added W26v5 citation is post-proof background credit; original technical locators and remainder strengths remain. Earlier Appendix A issues were already closed, so issues and resolved_issue_ids are both empty this round. This signature does not preapprove the integrated final manuscript, single-file export or isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+  "summary": "Complete final reading and native-page review of Appendix A passed. Its finite recursions, signed moment rules, full core enumeration and contribution tables remain reproducible from the article; the targeted derivative, column-combination and connector explanations improve navigation without changing the mathematics.",
+  "unit": "a",
+  "verdict": "pass"
+}

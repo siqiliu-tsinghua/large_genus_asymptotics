@@ -1,14 +1,17 @@
 # Fixed degree Hodge insertions
 
-Scientific interface for the complete s05 author draft. Live review and
+Scientific interface for Section 5 and its proof of Theorem 1.2. Live review and
 acceptance status belongs to `workflow/state.json`; this document is not a
 review signature.
 
 ## Dependencies and scope
 
-- Approved s03 r003 snapshot:
+These snapshot IDs record the original scientific dependency provenance.
+Current approvals and dependency freshness belong to the workflow.
+
+- Historical s03 r003 snapshot:
   `5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353`.
-- Approved s04 r003 snapshot:
+- Historical s04 r003 snapshot:
   `172195b1a31c1584895d46b98f3c7790c556bc27b4302993f8eac254d897fbb9`.
 
 The dependencies transitively contain the geometric identities of s02 and
@@ -63,7 +66,7 @@ No new global notation or bibliography entry is requested.
 
 | Label | Export and hypotheses |
 | --- | --- |
-| `lmm:s05:labelled-sources`, `eq:s05:source-graphs` | Exact finite-genus integral identity for g>=2 and labelled odd degrees; general symmetric edge kernel, ordinary graph Aut factors, product of Bernoulli factors |
+| `lmm:s05:labelled-sources`, `eq:s05:source-graphs` | Exact finite-genus integral identity for g>=2 and labeled odd degrees; general symmetric edge kernel, ordinary graph Aut factors, product of Bernoulli factors |
 | `eq:s05:tagged-edge` | A nonempty label set J on an edge gives (-1)^(|J|-1)(x+y)^(|J|-1) exp(-alpha(x+y)) times the product of node polynomials; no label factorial |
 | `eq:s05:free-markings` | Partition inversion creates one marking per block with degree 1+sum a_i and its surviving exp(-alpha psi); unordered inversion has no block factorials |
 | `lmm:s05:character-filtration`, `eq:s05:character-bound` | Normalized product of r fixed odd characters of total degree w is O(g^(r-w)) |
@@ -123,9 +126,11 @@ No unverified external claim or source gap is left as an input.
 
 ## Review boundary
 
-The mathematical draft and roadmap are complete. The author has supplied
-new proofs for the full decorated bound and the ch_3 calculation; their
-correctness remains subject to independent frozen review. Static/build
-outcomes and the actual saved-source fingerprint are reported in the
-current handoff. No approved section, shared input or historical review
-record is edited by this submission.
+The proof consists of the full decorated graph bound, the two-term ch_3
+calculation and the fixed-product Chern reduction. The fixed-list
+scope and O(g^-4) remainder are unchanged; there is no growing-index
+or higher-order assertion.
+
+Historical author handoffs and build records preserve earlier evidence.
+Live review, approval and freshness are recorded by the workflow rather
+than an author-stage description in this scientific interface.

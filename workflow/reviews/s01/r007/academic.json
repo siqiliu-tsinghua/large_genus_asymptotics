@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The context now accurately describes the retained versioned KMZ record rather than an already removed duplicate; the Introduction/interface and complete native rendered text are identical to r006, preserving the professional prose, source-version distinctions and publication independence already assessed."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Removing the obsolete database-status sentence loses no credit: KMZ96v1 still names Kaufmann, Manin and Zagier and records the CMP publication, while the unchanged Introduction preserves its classic-source attribution and separate W26 v4-profile/v5-background roles."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "Independently confirmed the bibliography is byte-identical to r006 and KMZ96v1 still fixes alg-geom/9604001v1 with the formal CMP 181 (1996), 763--787 note, so the context correction changes no key, theorem/equation locator, convention or actual citation."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "No scientific source, abstract, theorem, precision statement or interface changed; the appended handoff and empty author response correctly treat r006 as three real passes followed by a documentation-only invalidation, without inventing a failed review, proof gap, priority claim or completed final export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual r007 dispatch/summary/diff, original-writer ACK, appended handoff and r006 author response. Compared actual submissions: only context and the handoff change, and the author response is newly selected; the summary uses the earlier accepted baseline whereas the direct r006 comparison establishes this narrow delta.",
+    "Verified the real binding, archived/live selected files and artifacts, recomputed the snapshot, and matched the native render fingerprint and PDF/entry/helper hashes to the new strict/pass receipt; standard/layout diagnostics are empty and focused validate.py --unit s01 passed. The render fingerprint excludes only the separately frozen author response, in accordance with the build helper.",
+    "The complete extracted native PDF text matches r006 exactly, permitting reuse of its actual page inspection and primary-source assessment without new literature work. All three r006 reports remain pass with empty issues; no academic issue needs resolution in r007.",
+    "Only the current academic report and handoff were written; no source, state, old review or frozen output changed. This signature does not approve the later integrated manuscript or isolated single-TeX export."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981",
+  "summary": "Pass. The shared context correction accurately records the retained KMZ96v1 publication information, with all r006 scholarly content, source credit, versioned locators and claim boundaries preserved on the new snapshot.",
+  "unit": "s01",
+  "verdict": "pass"
+}

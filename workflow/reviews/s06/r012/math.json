@@ -1,0 +1,44 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact/native hashes and the response-bound versus render fingerprints, with S1 r007/S2 r017 approved and fresh; no mathematical input, source locator or interface changed from the full r011 review.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The exact two prose replacements preserve g>=3, coefficient order g_2-1, the elliptic-leaf ratio and all stable-type/vertex/tree ranges established in the unchanged r011 text.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The beta_1 beta_(g-1)/beta_g factor, orientation half cancellation, R Phi(x_*)=J_1(z_(0,1))^2 and final factorial/12R conversion are unchanged, as are the main theorem proof and complete higher Remark.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The new sentence's ratio still means the normalized elliptic-leaf ratio just displayed; beta_G in 6.1, R/Phi in 6.2 and g_2 in the Introduction keep their existing definitions, and no symbol or scope is added or moved.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The shorter closing sentence uses the same beta asymptotics and critical-value identity to reach the same referenced conclusion, so the actual full r011 proof assessment remains valid without a scientific rerun or software premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The displayed additive O(g_2^-2) error for the normalized leaf ratio is untouched; closed-disk amplitude uniformity, complete tree tails, the main relative O(g_2^-2) and the supplementary omitted-details boundary retain their original strength.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature on c933ad76be58534340a355c35b1d8aca624477bede5ed41c6fca4672912220dc using the actual full r011 mathematical reading; no prior MATH issue is open. READABILITY-001 is the original readability reviewer's issue, not a resolved MATH ID.",
+    "The direct r011 delta is only 04_correction_and_proof.tex and an appended final_polish_handoff.md, plus the newly selected r011 author response, with no removed input. The supplied summary uses approved r010 as its larger comparison baseline; both comparisons were independently verified. All math, labels/references, named theorem proof and samepage supplemental Remark match r011 exactly.",
+    "Submission file-map SHA256 2b6f53729f176d59b2f8de36f8e4d9f3e10427c70337a4b03826a4853d0fa1b6 includes the selected author response; render/build-source SHA256 bebdac480c8fe3fe236285f98865605ab4815d38a4c41da74e5979968814cf75 excludes that bookkeeping argument. Both were recomputed independently. Native PDF SHA256 806828b109cb97af165fc262ca01063623431828b6a47e7465d047bcd52497d2, entry/helper hashes and preserved preflight agreement match the actual receipt, with empty strict/layout diagnostics and explicit equal-source sealing provenance.",
+    "Original-writer ACK SHA256 3e24c4448f5a4e229f0daac1f54b93ace3c4bab0f4513f10162e6e61933aef08 and the archived response match the single readability revision. No old source research, proof or scientific calculation was rerun; only this round's two reports were written, without source/state/historical/frozen-output edits. This is not a full-manuscript/export/isolated-build signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "c933ad76be58534340a355c35b1d8aca624477bede5ed41c6fca4672912220dc",
+  "summary": "Pass on S6 r012: the exact elliptic-leaf closing-prose reflow preserves the additive ratio error, references and logical conclusion, with the main proof/higher Remark intact and the actual new snapshot/native receipt verified.",
+  "unit": "s06",
+  "verdict": "pass"
+}

@@ -1,0 +1,33 @@
+{
+  "agent_id": "/root/s02_writer",
+  "artifacts": {
+    "changes.diff": "7bd75e8bc67d3be29be46cf21553948fe45f9f6414a90d51555a5b5779b2114b",
+    "outline.md": "46b66fd8e8819fec8d15454fe9eff214c52f1f9c06d650e7f75f492d649c9d63",
+    "unit_definition.json": "c2da821f04ac9c6ed55775be03ca967426fc25be2a6497337e49c002c91a85f0"
+  },
+  "files": {
+    "@outline": "46b66fd8e8819fec8d15454fe9eff214c52f1f9c06d650e7f75f492d649c9d63",
+    "@unit": "c2da821f04ac9c6ed55775be03ca967426fc25be2a6497337e49c002c91a85f0",
+    "AGENTS.md": "782eb26470fd2f35c2167c056efee793dff6c972a52c7c84b3adec25f2200c8b",
+    "frontmatter/abstract.tex": "a697563f06c9c08ad291f389fe711c0682b4a0938399d692958880c2dba4e50d",
+    "main.tex": "aaadac5ce1fc36a5194727abc1bf779a6289826b6f0c7eb7babf8ff5a549a76f",
+    "references.bib": "44ea4855b92f1820292b79f980cb71e766872b6b5a7c86770d9ecfe71209cbde",
+    "sections/01_introduction/INTERFACE.md": "0017d2622f05270f41c26366455dbfb18dd8ec35f479f5ad649ba831c58b9028",
+    "sections/01_introduction/appendix_retirement_handoff.md": "ed98c92cb1390984d9ace821eedeffb2e8f19026ef565652eb1056f31b01bdf3",
+    "sections/01_introduction/final_polish_handoff.md": "6916f5322b59f646b360b12a70d31ed62f8c60de4db176a7a13d48a3bc0dea5c",
+    "sections/01_introduction/section.tex": "df6ec44b044816835005e6c68a27a3abfcfcae1c14d00adfd0452383996db67b",
+    "sections/01_introduction/standalone_handoff.md": "b1fe947e72b2345d13e1cb37fe3c8b3d23b4b731e14b94e7d53a298f01f97fce",
+    "sections/01_introduction/writer_handoff.md": "2821c6e7551de3729eb1dd8a5f53d92b8d8a6816687e416b7ad5a2ec07b8e029",
+    "tex/preamble.tex": "74966d1a603c99fbd26a9c5fa503cd5f29ae9ebb11cfbc788d3836db568a213f",
+    "workflow/PROTOCOL.md": "10caf7070728af1acd37e783a5eda79d5df4b8ce867628ae306d4603512507a5",
+    "workflow/context.md": "c03c8d8fb03eea0c2c8b64ed12c8dc4fec2a3c704452a4c7d75b2a9660fdd6be",
+    "workflow/roles/academic.md": "0e3f9d69894686630f6f28a0d7e84894abe664ce0934ac830039c5605562eb06",
+    "workflow/roles/coordinator.md": "f248e75b25e145b4177a044eff3f83be57946520f55d5cbb9e80a94d820eb057",
+    "workflow/roles/math.md": "752cd9c044b25cf0a16444bc9b8bb79e1134ddbe8b8e7bb24f79dee65ddd3c64",
+    "workflow/roles/readability.md": "374ed3f4a134b53ef496d0497bc3aeb6dda89b931d04730e52e28b177c06ee10",
+    "workflow/roles/writer.md": "24fe6f3fe03c42daa2d97129b77697f26ec9b9e7a7e66e41f2cb62ee179c0e5d"
+  },
+  "round": 6,
+  "snapshot": "47bc333539a10928ed60ab90f399806ffda79a7dec98db20c6e98f27cd0cc173",
+  "unit": "s01"
+}

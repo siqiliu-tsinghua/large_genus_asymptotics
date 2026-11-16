@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete frozen entry and 3.1–3.4 in paper order. 01_wp_inputs.tex:6–47 defines alpha, real boundary lengths y_i, volume/descendant normalizations and the local HMT constant before Proposition 3.1; line 44 now names Euler's gamma function at its existing factorial definition (native pp.12–13), without repeating it in 3.3. The deformation and entire functions precede their use in 02_deformation_and_loops.tex; 03_vertex_and_graph_bounds.tex:46–85 binds H, positive vertex complexities, the unique large vertex, q, the Gaussian variable and counting polynomials. In 04_finite_cores.tex the restored graph Gamma_p is defined before its automorphism formula, and core parameters, coefficient ranges, legal loop counts and the fixed-marking/weight hypotheses remain explicit (pp.19–24); no needed definition is deferred to a Remark.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The entry inherits the Introduction and Section 2 conventions directly; the WP specialization of their GRR/degree formulas is used in the exact deformation proof rather than reopening the basic setup. The normalization links Z_g(1)/F_g=a_g/N_g (3.14), the expansion of Z_g/V_{g,0} (3.33), and Remark 3.3's leading a_g/N_g formula have distinct, consistent denominators (pp.15,23). All four restored-loop graph occurrences use Gamma_p, while Euler Gamma(k), the core Gamma_c and the coefficient functions gamma retain their roles; the interface ledger agrees. g_2, Hodge insertion indices and ell, the lowercase integral families and Bernoulli/Chow conventions receive no competing names; the existing W26 technical citations still render with the correct v4 bibliography label.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening (section.tex:1–36, p.12) recalls exactly the geometric identities needed for the asymptotic argument and does not repeat g,n, moduli, bundles or an inherited-symbol inventory. F_g, Z_g, W^WP, f and S each have a recurring independent function; P_m,U_k and the short factorial series are reused in the graph-tail estimates, while the auxiliary HMT coefficients remain local rather than acquiring three permanent family names. Gamma_p replaces the old graph spelling without adding an alias, and Remark 3.3 states the finite-core/summable-loop mechanism directly in four compact lines (p.23). The core coefficient family is justified by the explicit summation rule (3.34); no new notation was added merely to shorten the revised prose.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The section opening separates exact finite-genus identities from the uniform whole-graph problem and gives the four-subsection route and subsequent uses in Sections 4–5 (p.12). The revised guide at 03_vertex_and_graph_bounds.tex:165–171, immediately before Proposition 3.6 (p.18), correctly distinguishes a second vertex reaching the fixed tail threshold M from several smaller complexities summing to M; it does not suggest a second vertex above H/2. The core-expansion guide at 04_finite_cores.tex:133–139 and its three functional proof headings explain why exact ratio paths, direct degree summation and retained p-dependence yield summable errors (pp.21–22). The paragraph before Theorem 3.11 then explains the order of the graph, loop and finite-core truncations.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All 12 principal statements are followed directly by their proofs; source/convention commentary does not interrupt that adjacency. The Gaussian argument is divided into large Gaussian values, no large vertex, and a large vertex with q>=M (03_vertex_and_graph_bounds.tex:204,222,243; pp.18–19); Proposition 3.10 separately treats thresholds/finite products, descendant sums, and edge integration/loop weight (04_finite_cores.tex:191,234,255; p.22). Independent visual inspection of every Section 3 page, pp.12–24, found readable functional paragraphs, contained displays and tags, normal proof endings/gaps, and workable statement continuations across pages, including Corollary 3.12 on pp.23–24. The coefficient rule and proofs are mathematical content within the article, with no obligation to consult project programs, directories or supplementary engineering records.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The revised graph notation Gamma_p is visibly distinguishable from the gamma function's Gamma(k) in the core and factorial formulas (04_finite_cores.tex:24–32,53–63,141–168; pp.20–21). Real lengths y_i preserve L_i for cotangent lines; d_i/D denote descendant degrees, p the restored loop count, q the other-vertex complexity, and the local scalar H is explicitly confined to its counting or ratio calculation, distinct from H(Gamma). The WP vertex superscript distinguishes it from the later top-Hodge vertex function, and alpha, gamma_k and local eta_r have stated separate roles. The controlled four-occurrence change resolves the graph/function visual overlap without introducing another global letter or disrupting the inherited Bessel/Hodge notation.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The actual p.12 transition moves directly from Section 2's warning about nonuniform finite-genus identities to Section 3's whole-graph task. Example 3.1 explicitly leaves the exchange of the fixed-loop limit and the graph sum to the next two subsections (pp.15–16), and the all-legal-loop bound is explained before any large-genus core expansion is invoked (p.20). The rewritten Coefficient computation Remark (04_finite_cores.tex:326–333, p.23) connects the proved summation rule to the leading normalized integral and the completed Section 4 corrections without making their values premises; the following paragraph explains the additive marked formulation before Corollary 3.12, and its zero/weight Remark follows the proof on p.24. These are continuous mathematical reading instructions, not project execution instructions, and necessary hypotheses remain in the main statements/proofs rather than optional modules.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Signed this round's frozen snapshot after a complete final reading of the entry, all four subsections, current outline, interface and writer handoff/ACK; this is not an automatic transfer of r013's pass. Source locations above refer to workflow/reviews/s03/r014/source/sections/03_graph_asymptotics/; page numbers refer to the actual native build/reviews/s03/r014/preview.pdf.",
+    "Independently checked all 36 archived input hashes against submission/live inputs, artifact hashes, current binding and fresh s01 r007/s02 r017 dependencies, the exact snapshot/source fingerprint, PDF/entry/helper hashes and the equal-fingerprint sealed-preflight receipt. The native PDF has 26 pages; every Section 3 page (12–24) was rendered and visually inspected in the reviewer's private build directory. Strict/layout diagnostics and accepted exceptions are empty; 10pt/no-showkeys and existing proof-spacing settings are retained. python scripts/validate.py --unit s03 passed.",
+    "After normalizing only the four controlled Gamma_p-to-Gamma(p) substitutions and the labeled/labeling spelling change, all 37 numbered equation blocks, 12 principal statement blocks and mathematical expressions match both r013 and baseline fa2f374; labels and citations are unchanged. Previous s03 issues were empty, so resolved_issue_ids remains empty. This report reviews Section 3 and does not approve the later integrated final manuscript, single-file export or isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377",
+  "summary": "Complete final reading and native-page review of Section 3 passed. The gamma-function/graph distinction, revised tail guide and coefficient Remark are clear; the definition order, uniformity scopes, proof modules and reader transitions remain sound.",
+  "unit": "s03",
+  "verdict": "pass"
+}

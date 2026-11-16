@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_consistency": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "notation_economy": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "roadmap": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "structure": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "symbol_design": {
+      "evidence": "",
+      "status": "FILL_IN"
+    },
+    "transitions": {
+      "evidence": "",
+      "status": "FILL_IN"
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+  "summary": "",
+  "unit": "s05",
+  "verdict": "FILL_IN"
+}

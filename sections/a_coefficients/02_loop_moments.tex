@@ -46,12 +46,16 @@ signed generating series, with no probability interpretation.
 \begin{prf}
 Expand the square. Selecting the degrees $a,b$ on one edge gives
 $w_{ab}e^{x(a+b)}$ multiplied by the two corresponding low-degree
-factors. Summing over $p$ labelled pairs with $1/p!$ exponentiates
-this one-edge sum and proves the identity. On any compact parameter
+factors. Summing over $p$ labeled pairs with $1/p!$ exponentiates
+this one-edge sum and proves the identity.
+
+On any compact parameter
 set, replacing every coefficient by its absolute value is bounded by
 the corresponding factorial series on the finite interval
 $[0,\alpha]$. The exponential sum over $p$ then converges normally,
-also after any fixed number of derivatives. At zero parameters the
+also after any fixed number of derivatives.
+
+At zero parameters the
 one-edge integral is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$,
 which proves the normalization.
 \end{prf}
@@ -82,13 +86,17 @@ give
 \end{array}
 \end{equation}
 
-For a nonzero nonnegative integer multi-index
+For a nonzero multi-index of nonnegative integers
 $\mathbf r=(r_p,r_D,r_0,r_1,r_2)$ let
 $\chi_{\mathbf r}$ be the derivative at zero of the logarithm of
-\eqref{eq:a:joint-egf}, of these respective orders. Equivalently it is
+\eqref{eq:a:joint-egf}, of these respective orders.
+
+Equivalently it is
 the one-loop weighted sum of
-$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$;
-any number of $p$ derivatives supplies a factor one. With no low-count
+$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$.
+The parameter $v$ records the number $p$ of self-loops, and every
+derivative of its exponential factor at zero gives one.
+With no low-count
 derivative the one-loop degree moments, for $r_D=0,\ldots,4$, are
 \begin{equation}\label{eq:a:degree-cumulants}
  S(1),\quad -S(1),\quad S(1),\quad
@@ -106,7 +114,7 @@ the answer is $2w_{ab}(a+b)^{r_D}$; with three distinct low counts it
 is zero. Powers with exponent zero are one, including $0^0$ in these
 finite polynomial evaluations.
 
-For explicit reproduction, write $X=(p,D,m_0,m_1,m_2)$ and
+To evaluate the moments recursively, write $X=(p,D,m_0,m_1,m_2)$ and
 $N(\mathbf r)=\mathcal L[X^{\mathbf r}]$. Let $\mathbf e_i$ be
 the $i$th unit vector for $1\leq i\leq5$. Starting with $N(0)=1$,
 the usual product rule gives the finite recurrence
@@ -116,10 +124,13 @@ the usual product rule gives the finite recurrence
        \chi_{\mathbf s+\mathbf e_i}N(\mathbf r-\mathbf s).
 \end{equation}
 For example $\mathcal L[D]=-S(1)$ and
-$\mathcal L[D^2]=S(1)^2+S(1)$. Also
-$\mathcal L[m_0]=2M_{0,0}=8$; its second logarithmic derivative is
+$\mathcal L[D^2]=S(1)^2+S(1)$.
+
+For the zero-degree count, $\mathcal L[m_0]=2M_{0,0}=8$.
+The corresponding second logarithmic derivative is
 $8+2w_{00}=8+2\pi^2$, whence
 $\mathcal L[m_0^2]=72+2\pi^2$.
+
 As a further useful check,
 \[
  \mathcal L[D+p]=\mathcal L[(D+p)^2]=0,\qquad
@@ -192,16 +203,18 @@ after multiplying the entire expression by $96\pi^4$:
 4&768
 \end{array}
 \]
-The table follows by inserting~\eqref{eq:a:first-profile},
+The three expression columns follow by inserting~\eqref{eq:a:first-profile},
 \eqref{eq:a:second-profile}, and~\eqref{eq:a:c-two-n} into
 \eqref{eq:a:bell-rule}; the largest polynomial degree is four.
-Combining its columns with coefficients $1,1/2,1/4$ cancels every
+
+Combining these columns with coefficients $1,1/2,1/4$ cancels every
 positive power of $S(1)$. The constant left is
 \[
  c_2(0)-\frac{17}{48}-\frac{181}{24\pi^2}
                                       +\frac{173}{3\pi^4}.
 \]
 Proposition~\ref{prp:a:c-two} now gives the displayed result.
+
 Section~\ref{sec:s03} justifies the operation on all legal loop
 counts: its degree-moment estimate and summable core remainder apply
 to these fixed-degree polynomials, and the large-loop tail is smaller
@@ -312,9 +325,11 @@ For the three rows in order use $(n_0,m)=(1,1),(3,3),(1,1)$.
 The remaining prefactors are $1/8$, $1/(48\pi^2)$, and
 $1/(8\pi^2)$, respectively. The first includes the small-loop integral
 $\alpha$ and its automorphism factor $2$; the second includes $3!$;
-the third has no graph symmetry. Multiplying the constant connector
-moment gives the leading column, and multiplying the polynomial in
-\eqref{eq:a:q-one-loop-average} gives the correction column.
+the third has no graph symmetry.
+Multiplying each prefactor by the total connector weight gives the
+leading column; including the polynomial in
+\eqref{eq:a:q-one-loop-average} in that weighted sum gives the
+correction column.
 For example, the first polynomial at $n_0=1$ has raw average
 \[
  \frac{8(22\pi^2-118)-12(8-\pi^2)+18(-8)
@@ -339,6 +354,6 @@ only), then
  e^{-S(1)}\gamma_1(1)=r_1-c_1(0),\qquad
  e^{-S(1)}\gamma_2(1)=r_2-c_2(0)-c_1(0)(r_1-c_1(0)).
 \]
-Thus an absolute core correction must not be relabelled as a relative
+Thus an absolute core correction must not be relabeled as a relative
 $\gamma_r$ coefficient.
 \end{rmk}

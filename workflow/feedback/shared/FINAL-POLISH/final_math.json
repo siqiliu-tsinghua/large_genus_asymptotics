@@ -1,0 +1,95 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "artifacts_and_snapshots": {
+      "evidence": "Independently recomputed the canonical S8 snapshot and all ten selected submission snapshots, verified every reviewed archive/live file and submission artifact using the actual fresh records, and matched the recorded complete snapshots map. Recomputed the whole source fingerprint from the ten render fingerprint maps to 47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49; actual PDF, entry and helper bytes match the receipt. All 50 recorded non-build local TeX inputs match the frozen union of 131 selected paths; title/abstract and Sections 1-8/A-B are actually assembled, while retired C is excluded. The nine earlier units are approved/fresh and S8 is the current frozen in-review unit with the true /root/s02_math binding. Strict/standard/overfull diagnostics are empty; the eight informational underfull entries are preserved.",
+      "status": "pass"
+    },
+    "claim_status_and_parameter_precision": {
+      "evidence": "The abstract and four theorem statements retain respectively relative O(g^-3), fixed-list O(g^-4), relative O(g_2^-2) and fixed-h asymptotic equivalence. The stronger O_h(g^-1) whole-background comparison is not asserted as a T1.4 rate. The S4/S6 extra coefficients remain supplementary reported calculations with user-authorized omitted details; they are not needed in any principal proof. The closing h=1 Bessel limit and its LiuData26 table remain explicitly conjectural finite-data evidence, not a proved next coefficient, general-h claim or remainder estimate. Prior independent coefficient/data checks were retained without unnecessary reruns.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The Introduction defines stack integration, complex codimension, lambda_0/out-of-rank conventions, nonempty products and stable forgetting targets before their use; the marked-vanishing exceptions agree with the proofs. T1.2 fixes ell and every positive j_i, T1.4 fixes integer h>=0 with g>=h eventually, and all background exponents are nonnegative in their asserted ranges. The graph route retains stable vertex complexity/valence caps and the all-legal loop range; the analytic route retains finite defect caps, fixed markings and degree D=2g+h-3. The projective comparison's total degree and Hodge-index surface dimension are exact, including the factorial and small-genus exceptions.",
+      "status": "pass"
+    },
+    "integrated_reading_and_visual_scope": {
+      "evidence": "This assessment combines the actual complete final-round mathematical source readings already performed on the ten listed snapshots with a fresh full reading of S8's entry, six subsections, interface and proof closure. For this actual companion, traversed the 100-page text assembly/order and theorem-proof locations, reread the four theorem statements and proof normalizations, and visually inspected freshly rendered pages 1, 2, 3, 19, 24, 31, 38, 47, 55, 60, 64, 65, 66, 74, 84, 96 and 98. Those pages cover the title/abstract and definitions, theorem precisions, full-graph/weighted tail statements, each principal proof's closing normalization, both supplementary coefficient Remarks, the S7-to-S8 transition, critical-cone recovery, nef comparison, closing conjecture/table, A inputs and B complex-domain/primitive estimates. This is targeted visual inspection supported by the completed mathematical readings, not a claim to have freshly viewed all 100 pages or to infer mathematical validity from compilation.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "T1.1 uses the absolute Z/F scale, the exact N_g factorials, e^{Cin(2pi)}/sqrt(pi) and the sum of q=0,1,2 contributions, giving 9/8 and 257/128+1/(8pi^2) with relative O(g^-3). T1.2 uses the a_g-normalized bracket, factorial Chern expansion, q=1 denominator cancellation and the specified-loop half, giving the printed G(j)/F(j) coefficients and no g^-1 term. T1.3 restores beta_g, two g_2! factors, 12R=rho and the saddle/elliptic pieces of the scalar b. T1.4 combines ordered h! transport, the two parity-compatible singularities, the normalized inverse sine, exact D! background conversion and two D!/g_2! ratios to give (24g^2/rho^2)^h/h!; neither a branch half nor a factorial is lost between sections.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Checked the integrated theorem statements, proof interfaces and physical transitions against the completed final readings: g_2, j_i/ell, z_{0,1}, rho, scalar b, beta_g and lowercase integral families retain their objects and scopes. S2 supplies logarithmic kappa, ordered branches, Bernoulli and factorial Chern conventions; S3 distinguishes Euler Gamma from the restored family Gamma_p. The indexed fixed-defect Borel L_h is distinct from the WP signed functional, x=t_0 is preserved, the positive inverse-operator superscript does not mean positivity, and both B and S8 distinguish forward and reciprocal inverse derivatives and fixed-layer complex neighborhoods. Inherited setup is not reintroduced as a new assumption.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The T1.1/T1.2 route is S2 algebraic geometry -> S3 absolute graph estimates and finite-core expansion -> A's written exact profiles/volume reconstruction, correlated moments and complete 1/3/13 core classification -> S4/S5 assembly. The second route uses S2/FP exact top vertices -> S6 all-type Bessel/tree/saddle proof -> S7 exact ILW/string-dilaton/constants/characteristics -> B analytic construction -> S8 endpoint propagation, recovery and background comparison. A's c2 input is reconstructed unconditionally; W26v5 background credit and the conditional EGGLS comparison are not proof premises. B does not assume S8 and neither route uses retired C or the closing conjecture, so the apparent forward appendix references are not logical cycles. Every needed finite rule and analytic argument is written or precisely sourced; no program, Markdown, package or private data file completes a proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "S3 bounds the sum of suprema over the entire graph family via labelled pairing enumeration, valence polynomials, the Gaussian regimes and both q-tail cases; root-loop contraction preserves genus/complexity, and all legal large loop counts are discarded before HMT is applied on its true thresholds. Polynomial p/degree errors are summed against factorial weights before coefficient extension, retaining O(g^-3) and O(g^-4) without logarithmic losses. S6 sums the whole tree/genus tail and cancels both odd saddle half-orders for its relative O(g_2^-2) statement. S7 alone remains coefficientwise/fixed-genus; B then constructs normal Borel convergence on common finite-layer domains with derivative budgets and all characteristic/negative-axis intervals. S8 uses the corrected critical initial cone and mixed-derivative scale, two-point transfer, fixed-marking bounds and the complete genus convolution. These estimates cover the full objects rather than each fixed summand.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "pages": 100,
+  "pdf": "build/reviews/s08/r007/full-manuscript/manuscript.pdf",
+  "pdf_sha256": "1d01148c664c3d56ab6d0fb6f0764a6f02d776fb4d99e6b0ffc6b9968b139881",
+  "receipt": "build/reviews/s08/r007/full-manuscript/build_receipt.json",
+  "review_basis": {
+    "final_unit_rounds": {
+      "a": 14,
+      "b": 7,
+      "s01": 7,
+      "s02": 17,
+      "s03": 14,
+      "s04": 16,
+      "s05": 13,
+      "s06": 12,
+      "s07": 9,
+      "s08": 7
+    },
+    "future_single_tex_export_approved": false,
+    "scientific_reruns": false,
+    "visual_pages": [
+      1,
+      2,
+      3,
+      19,
+      24,
+      31,
+      38,
+      47,
+      55,
+      60,
+      64,
+      65,
+      66,
+      74,
+      84,
+      96,
+      98
+    ]
+  },
+  "role": "math",
+  "schema_version": 1,
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "snapshots": {
+    "a": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+    "b": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+    "s01": "728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981",
+    "s02": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+    "s03": "77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377",
+    "s04": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+    "s05": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+    "s06": "c933ad76be58534340a355c35b1d8aca624477bede5ed41c6fca4672912220dc",
+    "s07": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+    "s08": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b"
+  },
+  "source_hash": "47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49",
+  "summary": "The identified complete 100-page native companion passes the original mathematical reviewer's integrated assessment. The four theorem statements match their completed proof chains, fixed-parameter scopes and normalizations; the two proof routes remain independent, whole-sum estimates justify the asymptotic operations, and supplementary reported coefficients and the fixed-defect-one conjecture retain their stated status.",
+  "verdict": "pass"
+}

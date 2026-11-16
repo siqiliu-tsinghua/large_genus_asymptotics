@@ -89,7 +89,7 @@ Intersections of Hodge classes measure how the bundle of holomorphic
 differentials varies over the moduli space of curves. Their
 large-genus behavior depends on how the Chern indices vary with
 the rank. The four results are grouped into two broad index
-settings. One covers powers of the first class and fixed-index
+settings. One covers powers of the first Hodge class and fixed-index
 insertions against that background; the other covers the top class
 and indices at a fixed distance from it. The results give explicit
 constants and
@@ -196,7 +196,7 @@ Then, as $g\to\infty$, we have
 \end{equation}
 \end{thm}
 
-The next two results concern the opposite range of indices.
+The next two results concern indices that grow with the genus.
 The inserted class is $\lambda_g$, or $\lambda_{g-h}$ with $h$
 fixed while $g$ increases. Their scale is governed by the first
 positive zero of a Bessel function.
@@ -224,14 +224,15 @@ With $\rho$ as above, for a fixed integer $h\geq0$, we have
 \end{equation}
 \end{thm}
 
-Theorem~\ref{thm:fixed-insertions} shows that the normalized product
+For the fixed insertion list in
+Theorem~\ref{thm:fixed-insertions}, the normalized product
 approaches the reciprocal factorial product, with no term of order
 $g^{-1}$. The first correction depends only on the cubic sum
-$G(j)$. In Theorem~\ref{thm:fixed-defect}, each fixed increase of
-the defect contributes two powers of $g$; the factor $1/h!$
-comes from ordered transport integrals. All insertion indices and
-defects in these statements are fixed. The last theorem asserts
-asymptotic equivalence, without a relative error rate.
+$G(j)$. In Theorem~\ref{thm:fixed-defect}, the defect is fixed as
+the genus increases. Each unit of defect contributes two powers
+of $g$; the factor $1/h!$ comes from ordered transport integrals.
+The last theorem asserts asymptotic equivalence, without a relative
+error rate.
 
 Sections~3--5 prove Theorems~\ref{thm:lambda-one}
 and~\ref{thm:fixed-insertions} by a stable-graph expansion.
@@ -248,8 +249,11 @@ controls the resulting decorated graph sums.
 Appendix~A supplies the finite calculations used in this route.
 They include the descendant coefficients of Wang et al.\
 \cite[Lemma 7.2 and Appendix C.1]{W26}, correlated loop moments
-and the core contributions. The required second absolute volume
-coefficient is reconstructed from the exact recursions of
+and the core contributions. Wang et al.\ give a more general
+absolute expansion to all orders, including the unmarked case
+\cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
+Here we reconstruct only the second absolute volume coefficient
+needed for our argument from the exact recursions of
 Mirzakhani--Zograf \cite[\S 2]{MZ15}. Its agreement with the
 conditional resurgent prediction of Eynard et al.\
 \cite[\S 6.1, (6.10)]{EGGLS24} is an a posteriori check;
@@ -445,7 +449,9 @@ rational Chow ring of $\MM_{g,n}$:
 \end{equation}
 \end{thm}
 
-For clarity, the $\kappa$-class in the cited formulation of
+\begin{prf}
+We apply the cited Mumford theorem and check the logarithmic
+kappa and ordered-branch conventions. The $\kappa$-class in
 \cite{FP00} is nonlogarithmic.  For every integer $a\geq0$, its
 conversion to our convention is
 \begin{equation}
@@ -476,6 +482,7 @@ to $\pi_*c_1(\omega_\pi)^{a+1}$.  This proves
 \end{equation}
 In particular, on $\MM_g$ for $g\geq2$,
 $12\lambda_1=\kappa_1+\delta$.
+\end{prf}
 
 The vanishing of even Chern characters now gives a useful algebraic
 form of every Hodge insertion.
@@ -528,7 +535,7 @@ with a nonnegative integer genus $g_v$ at each vertex $v$.  Its flags
 form a finite set $H(\Gamma)$ with an incidence map to the vertex set
 $V(\Gamma)$ and an involution.  The two-element orbits of the
 involution are the edges $E(\Gamma)$; its fixed points are the legs,
-labelled $1,\ldots,n$.
+labeled $1,\ldots,n$.
 
 In the cited convention, $H$ contains only paired half-edges, its
 involution has no fixed points, and $L$ is a separate set of legs.
@@ -562,7 +569,7 @@ For a representative with its vertices and flags distinguished, set
 \qquad
 \xi_\Gamma:\MM_\Gamma\longrightarrow\MM_{g,n}.
 \end{equation}
-The markings of each factor are labelled by its incident flags, and
+The markings of each factor are labeled by its incident flags, and
 $\xi_\Gamma$ glues the two markings belonging to each edge.  We work
 on this product before taking its quotient by
 $\operatorname{Aut}\Gamma$.  Thus the gluing pushforward in a graph
@@ -625,7 +632,7 @@ structure-sheaf exact sequence and relative duality give
 family makes the incidence map constant.  Its kernel has constant
 dimension $b_1(\Gamma)$, including over further degenerations of the
 vertex curves.  The quotient is therefore a trivial bundle on the
-labelled product, and the Whitney formula proves
+labeled product, and the Whitney formula proves
 \eqref{eq:s02:hodge-factorization}.
 \end{prf}
 
@@ -793,9 +800,10 @@ the markings $i,n+1$.  The one-point identities used below are
 \quad(1\leq i\leq n,\ a\geq0).
 \end{equation}
 \begin{prf}
-The first comparison follows from the
-cotangent line under contraction of this three-pointed tail; its
-vanishing along that divisor has multiplicity one.
+The natural map from the pulled-back old cotangent line to the
+source cotangent line is an isomorphism away from this three-pointed
+tail and vanishes to order one along its divisor. This gives the
+first identity.
 
 For the kappa comparison, consider the universal curve over
 $\MM_{g,n+1}$ and its stabilization to the pulled-back universal
@@ -918,7 +926,7 @@ To verify the inverse, substitute the permutation formula into its
 right side and group by the resulting blocks of original labels.  A
 block formed from $k$ intermediate blocks acquires the cycle factor
 $(k-1)!$.  The signed generating series for one intermediate nonempty
-block of labelled elements is $1-e^{-z}$, for a formal variable $z$.
+block of labeled elements is $1-e^{-z}$, for a formal variable $z$.
 Consequently, the generating series for each resulting block is
 \[
 \sum_{k=1}^{\infty}\frac{(1-e^{-z})^k}{k}
@@ -1072,7 +1080,8 @@ V_{1,1}(y)=\frac{\pi^2}{12}+\frac{y^2}{48}.
 The following inputs have different roles. Fixed-marking expansions
 identify coefficients; bounds over all stable types control the graph
 tail; explicit remainder bounds permit the retained valences to grow.
-We write $\Gamma(k)=(k-1)!$ for a positive integer $k$.
+Euler's gamma function satisfies $\Gamma(k)=(k-1)!$ for a positive
+integer $k$.
 For the uniform inputs fix an integer $c_{\mathrm H}>600$ which also
 exceeds the constant in \cite[Lemma~2.6]{HMT25}.
 
@@ -1266,7 +1275,7 @@ coefficient to be $\alpha u$ and the kappa coefficient to be $\alpha$.
 For formal variables $x,y$ its edge kernel is
 $K_{\alpha u}(x,y)=\alpha u\int_0^1e^{-\alpha u s(x+y)}\dd s$.
 Integrate the resulting class identity, then apply the projection
-formula on each labelled vertex product. This yields
+formula on each labeled vertex product. This yields
 \eqref{eq:s03:integrated-graph-formula}, including at $u=0$; no division
 by $u$ is involved.
 \end{prf}
@@ -1322,7 +1331,7 @@ the fixed-$p$ computation alone does not do so.
 
 Write $Z_\Gamma(u)$ for the summand of
 \eqref{eq:s03:integrated-graph-formula} indexed by $\Gamma$.
-We first bound every vertex, then sum over labelled pairings. A short
+We first bound every vertex, then sum over labeled pairings. A short
 factorial-series estimate will control the resulting Gaussian integral,
 including graphs with arbitrarily many vertices or large valences.
 
@@ -1404,11 +1413,11 @@ Choose $T\geq\sup_{u\in\mathcal K}|\alpha u|$ and use
 Lemma~\ref{lmm:s03:vertex-bound}. Label the $m$ vertices and the
 $n_i$ incident flags at vertex $i$. After summing over ordered type
 lists, division by $m!\prod_i n_i!$ gives precisely
-$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labelled
+$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labeled
 realizations of a graph is $m!\prod_i n_i!/|\operatorname{Aut}\Gamma|$
 by orbit-stabilizer. Summing ordered lists is essential when types
 repeat. Stack stabilizers inside a vertex integral have already been
-included in its volume and do not enter this graph-labelling count.
+included in its volume and do not enter this graph-labeling count.
 
 If there are $2E$ flags, with an integer $E\geq0$, there are
 $(2E-1)!!$ pairings, with one empty pairing when $E=0$.
@@ -1483,9 +1492,10 @@ later decrease does not change these constants.
 To prove the full tail estimate, we first discard large Gaussian
 values, where the density controls the whole polynomial degree.
 At the remaining values, coefficient extraction handles graphs
-without a large vertex. For graphs with one, either a single other
-vertex already has large complexity, or many bounded-complexity vertices
-produce the required total; these two cases need different estimates.
+without a large vertex. When a large vertex exists, either one of
+the other complexities reaches the prescribed tail threshold,
+or several smaller complexities add up to it. We estimate these
+cases separately.
 
 \begin{prp}[Absolute graph tail]
 \label{prp:s03:graph-tail}
@@ -1627,10 +1637,10 @@ c=\frac{q+n_0}{2}\in\mathbb Z_{\geq0},\qquad
 G=g-c-p,\qquad n=n_0+2p
 \end{equation}
 are the genus and valence of the original large vertex.
-For the graph $\Gamma(p)$ obtained by restoring $p$ loops,
+For the graph $\Gamma_p$ obtained by restoring $p$ loops,
 \begin{equation}
 \label{eq:s03:core-automorphisms}
-|\operatorname{Aut}\Gamma(p)|
+|\operatorname{Aut}\Gamma_p|
 =2^pp!\,|\operatorname{Aut}\Gamma_{\rm c}|.
 \end{equation}
 \end{lmm}
@@ -1663,7 +1673,7 @@ $\mathcal K\subset\mathbb C$. For all its legal loop counts,
 \begin{equation}
 \label{eq:s03:loop-majorant}
 \sup_{u\in\mathcal K}
- \frac{|Z_{\Gamma(p)}(u)|}{V_{g,0}}
+ \frac{|Z_{\Gamma_p}(u)|}{V_{g,0}}
 \leq g^{-q}\frac{C^{p+1}}{p!},
 \end{equation}
 with $C$ independent of $g,p$ for sufficiently large $g$.
@@ -1752,7 +1762,7 @@ that, for every fixed $K\geq0$ and compact
 $\mathcal K\subset\mathbb C$,
 \begin{equation}
 \label{eq:s03:core-expansion}
-\frac{Z_{\Gamma(p)}(u)}{V_{g,0}}
+\frac{Z_{\Gamma_p}(u)}{V_{g,0}}
 =g^{-q}\sum_{r=0}^K\frac{\gamma_{\Gamma_{\rm c},p,r}(u)}{g^r}
  +\varepsilon_{g,p,K}(u)
 \end{equation}
@@ -1930,16 +1940,15 @@ requested. This gives the derivative assertion at every fixed order.
 \end{prf}
 
 \begin{rmk}[Coefficient computation]
-Formula~\eqref{eq:s03:coefficient-rule} is a finite-core rule at
-each inverse-genus order, with an absolutely summable loop series.
-Together with \eqref{eq:s03:fixed-n-volume}, it already yields
+At each fixed order, \eqref{eq:s03:coefficient-rule} sums contributions
+from finitely many cores, with an absolutely summable loop series.
+Together with \eqref{eq:s03:fixed-n-volume}, it gives
 $a_g/N_g=e^{\Cin(2\pi)}/\sqrt\pi+O(g^{-1})$.
-The next section will compute the coefficients needed for the
-two corrections in Theorem~\ref{thm:lambda-one}; their numerical
-values have not been inputs to the graph estimates.
+Section~4 computes the two corrections in Theorem~\ref{thm:lambda-one}.
+Their values are not inputs to the graph estimates.
 \end{rmk}
 
-The same argument allows a fixed number of labelled external
+The same argument allows a fixed number of labeled external
 markings. We state the extension additively, since its leading leg
 factors may vanish. For further graph insertions we give an explicit
 majorant condition, including the polynomial loss it permits.
@@ -1993,18 +2002,18 @@ edge still share $\alpha u s_e$.
 
 For the absolute marked-graph estimate, repeat the pairing count
 with total complexity $H=2g-2+r$. If vertex $i$ receives $r_i$
-of the labelled legs, only its $n_i-r_i$ other flags are paired.
+of the labeled legs, only its $n_i-r_i$ other flags are paired.
 Its valence polynomial becomes
 $P_{k_i+2}^{(r_i)}(x)=P_{k_i+2-r_i}(x)\leq P_{k_i+2}(x)$
 when $r_i\leq k_i+2$, and is zero otherwise. Distributing $r$
-labelled legs among $m$ vertices gives $m^r$ possibilities.
+labeled legs among $m$ vertices gives $m^r$ possibilities.
 For fixed $r$ this is at most $C_r^m$ and is absorbed into the
 constant in \eqref{eq:s03:gaussian-majorant}. The extra factor
 $B^r$ is fixed. Thus the full Gaussian proof applies with scale
 $\Gamma(2g-2+r)(4\pi^2)^{2g-3+r}/\sqrt g$.
 Its ratio to $F_g$ is $O_r(g^r)$. Multiplication by $(1+H)^s$
 proves \textup{(ii)}, with no additional loss for distributing
-the fixed labelled legs.
+the fixed labeled legs.
 
 For the expansion in \textup{(i)}, fix a marked core. Let $n_0$
 include both its incident edge flags and its external legs at the
@@ -2090,8 +2099,8 @@ $a,b$ define its paired self-loop weight by
  =\frac{(-1)^{a+b}\pi^{2a+2b+2}}
        {(a+b+1)(2a+1)!(2b+1)!}.
 \end{equation}
-The factor $1/2$ accounts for exchange of the two branches of the loop. The denominator
-$a+b+1$ records their common parameter; their weights do not factor
+The factor $1/2$ accounts for exchange of the two branches of the loop.
+The denominator $a+b+1$ records their common parameter; their weights do not factor
 into independent endpoint weights.
 
 For any nonnegative integer degree tuple $\mathbf d$, write
@@ -2138,7 +2147,9 @@ On compact sets of the moment parameters, the absolute endpoint
 series are bounded by factorial series on the finite interval
 $[0,\alpha]$. Their exponential sum over $p$ converges normally,
 also after any fixed number of derivatives. This proves the
-convergence and differentiation assertions. At zero parameters the
+convergence and differentiation assertions.
+
+At zero parameters the
 one-edge term is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$, proving
 $\mathcal L[1]=1$.
 \end{prf}
@@ -2191,8 +2202,8 @@ for growing loop counts.
 
 There is one core of complexity zero and three of complexity one.
 We first expand the pure-loop vertex, then integrate the small vertices
-of the other three cores. Their root loops have already been collected
-by $\mathcal L$.
+of the other three cores. The root-loop moments are encoded by
+$\mathcal L$.
 
 \begin{prp}[The first correction]\label{prp:s04:first-correction}
 As $g\to\infty$,
@@ -2295,21 +2306,23 @@ integrated weights by $8\pi^2$ gives the coefficient column:
 \end{tabular}
 \end{center}
 \endgroup
-The order six permutes the three parallel edges, and the order two
-exchanges the two flags of the small loop. The list is complete by
+The group of order six permutes the three parallel edges, and the
+group of order two exchanges the two flags of the small loop.
+The list is complete by
 Lemma~\ref{lmm:a:core-enumeration}.
 The three coefficients sum to $25/24+65/(6\pi^2)$. Adding the
 pure-loop correction gives $9/8$, proving the proposition.
 \end{prf}
 
 \begin{rmk}[Profile and volume conventions]
-The volume coefficient is that of Mirzakhani--Zograf
-\cite[Theorem~1.2 and Remark~1.3]{MZ15}. Our signed first profile
-is the negative of the deficit of Wang et al.
-\cite[Lemma~7.2]{W26}; their Appendix~C.1 supplies the second
-profile. Proposition~\ref{prp:a:profiles} verifies its complete
-low-degree corrections. Summation for growing valences uses the
-polynomial bounds and summable remainders of Section~\ref{sec:s03}.
+Mirzakhani--Zograf give the volume coefficient
+\cite[Theorem~1.2 and Remark~1.3]{MZ15}.
+Our signed first profile is the negative of Wang et al.'s deficit
+\cite[Lemma~7.2]{W26}. Their Appendix~C.1 supplies the second
+profile, including the low-degree corrections verified in
+Proposition~\ref{prp:a:profiles}.
+Section~\ref{sec:s03} supplies the polynomial bounds and summable
+remainders needed for growing valences.
 \end{rmk}
 
 \subsection{The second correction}
@@ -2327,9 +2340,9 @@ Define constants $Q_{q,r}$, for integers $0\leq r\leq2-q$, by
 Their existence follows from the finite-core expansion and its
 summable remainder, multiplied by the absolute volume expansion.
 The preceding subsection gives $Q_{0,0}=1$ and
-$Q_{0,1}+Q_{1,0}=9/8$. These are coefficients of $Z_g(1)/F_g$;
-the functions $\gamma_r$ in Theorem~\ref{thm:s03:graph-expansion}
-normalize instead by $V_{g,0}$.
+$Q_{0,1}+Q_{1,0}=9/8$. These are coefficients of $Z_g(1)/F_g$.
+The functions $\gamma_r$ in Theorem~\ref{thm:s03:graph-expansion}
+are the coefficients in the expansion normalized by $V_{g,0}$.
 
 At second order the pure-loop core requires both profiles and the
 absolute second volume coefficient. Complexity-one cores require
@@ -2391,6 +2404,7 @@ The first absolute correction before connector integration is
 The $3/2$ comes from the complexity-one factorial ratio; the next
 term is the root's square-root genus correction. Average this
 polynomial over its loops, then take the raw connector moments.
+
 For a local complex degree parameter $x$ near $1$, the elliptic
 connector generator is the unscaled integral
 \[
@@ -2560,7 +2574,7 @@ Consequently only one copy of $\mathrm{ch}_3$ can affect the terms
 through $g^{-3}$.
 
 The exact source formula below extends the boundary expansion to
-labelled character insertions. Forgetting markings creates free
+labeled character insertions. Forgetting markings creates free
 cotangent insertions, whose exponential factors must be retained.
 The uniform estimates of Section~\ref{sec:s03} then justify the
 finite-core calculation: a new free marking and a specified self-loop
@@ -2576,8 +2590,8 @@ Theorem~\ref{thm:lambda-one} is needed.
 We use the boundary exponential in
 \cite[Lemma~3.10, (3.18)--(3.21)]{ABCDGLW23} for a general symmetric
 node series. Its scalar specialization was proved in
-Proposition~\ref{prp:s02:boundary-exponential}. The following identity
-gives the labelled specialization and its algebraic proof.
+Proposition~\ref{prp:s02:boundary-exponential}. We state the labeled
+specialization and give its algebraic proof.
 
 Fix an integer $r\geq1$ and odd integers $a_1,\ldots,a_r\geq3$,
 and put $w=\sum_{i=1}^r a_i$. For an odd integer $a\geq3$ and formal variables $x,y$, define
@@ -2599,7 +2613,7 @@ this square-free algebra. Set
 The quotient is a formal series: its numerator is divisible by $x+y$.
 All Chow series in the next identity are truncated by codimension.
 
-\begin{lmm}[Labelled sources]\label{lmm:s05:labelled-sources}
+\begin{lmm}[Labeled sources]\label{lmm:s05:labelled-sources}
 For $g\geq2$,
 \begin{align}
  &\int_{\MM_g}e^{12\alpha\lambda_1}
@@ -2640,7 +2654,7 @@ markings. Integrating its powers on the normalized universal curve
 thus gives $\xi_\Gamma^*\kappa_a=\sum_v\kappa_a^{(v)}$.
 The projection formula supplies the displayed vertex exponentials.
 
-Finally, passing from labelled vertex and flag products to graph
+Finally, passing from labeled vertex and flag products to graph
 isomorphism classes gives $1/|\operatorname{Aut}\Gamma|$.
 The source labels remain distinct. Equivalently, grouping their
 assignments into orbits gives the stabilizer of each decorated
@@ -2659,7 +2673,7 @@ $\tfrac12\xi_*$ on symmetric branch classes, already used in
 in \eqref{eq:s05:source-kernel}.
 \end{rmk}
 
-There are two useful ways a source can occur. If a nonempty set
+A source is assigned either to an edge or to a vertex. If a nonempty set
 $J\subseteq[r]$ is assigned to one edge, its coefficient is
 \begin{equation}\label{eq:s05:tagged-edge}
  [\textstyle\prod_{i\in J}\varepsilon_i]K_{\mathcal E}(x,y)
@@ -2708,7 +2722,8 @@ For the fixed indices above, as $g\to\infty$,
 \end{lmm}
 \begin{prf}
 \emph{Uniform bounds on the original graphs.}
-Keep the unmarked graph of \eqref{eq:s05:source-graphs} fixed.
+Estimate each term of \eqref{eq:s05:source-graphs} on its original
+unmarked graph.
 Let $s_v$ be the number of forgetting blocks at vertex $v$ and
 $m=\sum_v s_v\leq r$. All cotangent insertions in
 \eqref{eq:s05:tagged-edge} and \eqref{eq:s05:free-markings} are
@@ -2728,7 +2743,7 @@ markings the factorial part changes by at most
 The other new factors are bounded constants depending on the indices.
 
 In this counting paragraph put $H=2g-2$. Summing the assignments of
-$m$ labelled blocks to vertices costs at most
+$m$ labeled blocks to vertices costs at most
 \[
  \left(\sum_v(k_v+r)\right)^m
  \leq((r+1)H)^m,
@@ -2746,6 +2761,7 @@ source and partition sums, the complete graph term is bounded by
  \frac{C_1B^{n_v}(4\pi^2)^{k_v-1}\Gamma(k_v)}{\sqrt{k_v}}.
 \end{equation}
 All constants are independent of $g$ and $\Gamma$.
+
 For every fixed integer $M\geq1$,
 Corollary~\ref{crl:s03:marked-extension}\textup{(ii)}, applied to
 these original graphs with no external legs and polynomial loss $r$,
@@ -2771,8 +2787,8 @@ data, the absolute contribution with any legal $p$ is at most
 \begin{equation}\label{eq:s05:decorated-core-bound}
  F_g g^{s-q}\frac{C^{p+1}(1+p)^A}{p!}.
 \end{equation}
-This uses the all-type bound even when the large vertex's genus is
-small. It discards every legal $p>\log g$ with a remainder smaller
+The all-type bound applies even when the large vertex's genus is
+small. Summing over legal $p>\log g$ gives a remainder smaller
 than any prescribed inverse power. Only after that truncation may
 one use HMT's expansions on $p\leq\log g$, as in
 Proposition~\ref{prp:s03:core-expansion}. In particular the bound
@@ -2838,7 +2854,8 @@ to a vertex or to an edge, omitting the Bernoulli prefactor. Thus
        =-\frac1{720}(T_g^{\rm free}+T_g^{\rm edge}).
 \end{equation}
 A free marking gives the leading term. At the next order, terms
-from free markings on the $q=1$ cores cancel with the denominator.
+from free markings on the $q=1$ cores cancel against the corresponding
+denominator terms.
 A specified self-loop on the $q=0$ core remains. We calculate both
 parts before conversion to the normalized Hodge bracket.
 
@@ -2887,8 +2904,7 @@ loop weights and its automorphism factor are unchanged.
 This is an additive identity of leading terms for each core and
 loop count, without division by a leg factor.
 
-Consequently all
-$q=1$ contributions to $T_g^{\rm free}/(8\pi^2g)$ equal
+Consequently all $q=1$ contributions to $T_g^{\rm free}/(8\pi^2g)$ equal
 $f^{(4)}(\alpha)$ times their denominator contributions at order
 $g^{-1}$ and cancel on dividing by $Z_g(1)$. The unmodified
 first corrections on the $q=0$ graph cancel in the same way.
@@ -3048,6 +3064,7 @@ The factor in \eqref{eq:s05:character-normalization} is
 Combining \eqref{eq:s05:single-source} and
 \eqref{eq:s05:free-ratio}, the leading coefficient of $g^{-2}$
 is $-X_4/720=(2\pi^2-21)/9$.
+
 The free-marking coefficient at order $g^{-3}$, including the
 $4/g$ in \eqref{eq:s05:factorial-three}, is
 \begin{equation}\label{eq:s05:free-coefficient}
@@ -3056,11 +3073,13 @@ $4/g$ in \eqref{eq:s05:factorial-three}, is
  \frac{9X_4+15X_5/8+X_6/16}{\pi^2}\right]
  =\frac{29\pi^2}{45}-\frac{20}{3}.
 \end{equation}
+
 For the specified loop, \eqref{eq:s05:edge-ratio} gives
 \begin{equation}\label{eq:s05:loop-coefficient}
  -\frac{(8\pi^2)^3}{720}
            \left(-\frac12f'(\alpha)^2\right)=\frac{\pi^2}{45}.
 \end{equation}
+
 Adding the last two values gives $2(\pi^2-10)/3$.
 The $O(g^{-1})$ error before degree conversion, including all graph,
 loop and degree tails in Lemma~\ref{lmm:s05:single-source}, becomes
@@ -3072,8 +3091,8 @@ by the leading free term. This proves the proposition.
 \subsection{Proof of Theorem 1.2 and examples}
 \label{subsec:s05:03}
 
-The filtration has removed every character monomial except the one
-just computed, so only substitution remains.
+Substituting the single-character expansion into the algebraic
+reduction proves the theorem.
 
 \begin{prfn}{Theorem~\ref{thm:fixed-insertions}}
 The indices $j_1,\ldots,j_\ell$ are fixed, so all the classes and
@@ -3459,12 +3478,12 @@ $\beta_gR^{-g_2}$, the remaining majorant is thus a constant to
 power $E+1$ times
 $\prod_v m_v!/\sqrt{m_v+1}$.
 
-Every unrooted genus-labelled tree has a plane rooted realization,
+Every unrooted genus-labeled tree has a plane rooted realization,
 and its original weight is at most one. A plane rooted tree with
 $E$ edges is encoded by a walk of $2E$ up/down steps, so there are
 at most $4^E$ shapes. For a fixed shape and the $m_v$, the genus
-labels are determined by $2g_v=m_v+3-n_v$. The beta comparison has
-already removed them; dropping parity and stability restrictions
+labels are determined by $2g_v=m_v+3-n_v$. The beta factors have
+already been bounded uniformly; dropping parity and stability restrictions
 therefore only enlarges the positive sum over nonnegative $m_v$.
 This introduces no factorial in the vertex count.
 
@@ -3474,7 +3493,9 @@ For every integer $M\geq0$,
 \end{equation}
 Indeed the two endpoint terms give $2M!$ when $M\geq1$, while
 $\binom{M}{k}\geq M$ for $1\leq k\leq M-1$; the case $M=0$
-is immediate. Iterating the convolution for $E+1$ vertices gives
+is immediate.
+
+Iterating the convolution for $E+1$ vertices gives
 $3^EM!$ for total $M=\sum_v m_v$. Also
 $\prod_v(m_v+1)\geq M+1$. With $M=g_2-E$, these estimates and
 the shape count prove \eqref{eq:s06:edge-mass}.
@@ -3584,8 +3605,8 @@ Cauchy's formula is exactly
  \left(\frac{w(x_\theta)}R\right)^{-m}
                          \mathcal A_P(\theta)\dd\theta.
 \end{equation}
-The analytic-disk hypothesis justifies this coefficient integral and
-bounds its amplitude all around the circle. By
+Analyticity on a neighborhood of the closed disk justifies this
+coefficient integral and bounds its amplitude on the whole circle. By
 \eqref{eq:s06:circle-bound}, the part with
 $|\theta|\geq m^{-2/5}$ is
 $O_P(R^{-m}e^{-a m^{1/5}})$, after decreasing $a>0$ if needed.
@@ -3705,13 +3726,13 @@ coefficient is
  \frac{\beta_1}{g_2}\frac{\beta_{g-1}}{\beta_g}
      R\Phi(x_*)\sqrt{\frac{g_2}{g_2-1}}.
 \]
-The omitted term is $O(g_2^{-2})$ in this ratio. Use
+The ratio has an $O(g_2^{-2})$ error. Using
 \eqref{eq:s06:beta-asymptotics} and
-$R\Phi(x_*)=J_1(z_{0,1})^2$ to obtain
+$R\Phi(x_*)=J_1(z_{0,1})^2$ gives
 \eqref{eq:s06:elliptic-relative}.
 \end{prf}
 
-We can now combine a complete tree remainder with the two retained
+We now combine the uniform tree estimates with the two retained
 contributions. The scale \eqref{eq:s06:tree-scale} differs by a
 bounded positive factor from the leading saddle scale, so the
 absolute tree estimates have exactly the relative strength needed
@@ -3979,7 +4000,7 @@ At $\theta=0$, each additional marking contributes
  \sum_{d\geq2}\frac{(-1)^{d-2}\psi^d}{(d-1)!}
                     =\psi(1-e^{-\psi}).
 \end{equation}
-The $n$ derivatives retain $n$ labelled zero-degree markings. The
+The $n$ derivatives retain $n$ labeled zero-degree markings. The
 factor $1/m!$ for the $m$ additional markings is exactly the factor
 in \eqref{eq:s02:kappa-exponential} with parameter one. The Hodge
 class pulls back under forgetting, so the projection formula gives
@@ -4016,8 +4037,8 @@ interpretation \eqref{eq:s07:specialization}.
 
 We first recover enough of the free energy to justify integrating the
 field equation. The string equation removes the zero-degree time, and
-the dilaton equation then sums the degree-one time. For fixed positive
-defect, this leaves finitely many higher times. Their expression in
+the dilaton equation then sums the degree-one time. At each fixed genus
+and positive defect, this leaves finitely many higher times. Their expression in
 inverse-function coordinates will also give the condition at the
 infinite end of a characteristic.
 
@@ -4084,6 +4105,7 @@ degree-one markings. On $\MM_{1,1}$, evaluation of a differential at
 the marked point identifies the Hodge and cotangent lines, also on
 the irreducible nodal fiber. Thus
 $\int_{\MM_{1,1}}\psi_1=\beta_1=1/24$.
+
 Starting with this one-point value, the dilaton equation gives
 $\int_{\MM_{1,r}}\prod_{i=1}^r\psi_i=(r-1)!/24$ for $r\geq1$.
 Its exponential generating function is
@@ -4166,6 +4188,7 @@ ring consists of numerical constants. Indeed, in
 \]
 the coefficient of the highest jet forces independence of the
 preceding jet; descending induction leaves only a constant.
+
 The jets are independent formal coordinates, as is seen at $x=0$
 by varying $t_1,t_2,\ldots$. Setting all $W_k$ with $k\geq2$ to
 zero makes both sides of the asserted equations zero, so the
@@ -4209,7 +4232,9 @@ $w_{\theta+\sigma}(v_\theta(x))=x+\sigma v_\theta(x)$.
 The first jet becomes $w_\theta'(v_\theta(x))+\sigma$, and the
 higher jets stay fixed. For $x$ sufficiently close to zero the
 first jet has positive real part, so this defines the branch for
-all $\sigma\geq0$. The finite jet expressions give the decay in
+all $\sigma\geq0$.
+
+The finite jet expressions give the decay in
 \eqref{eq:s07:characteristic}. The source in
 \eqref{eq:s07:transport-one} is $O(\sigma^{-3})$, since
 $2g\geq2$; the linear and quadratic sources in
@@ -4355,6 +4380,7 @@ weights each odd coefficient of $\Lambda_\theta$ by
 $2\sum_{m\geq1}m^{-2g}$. The difference in
 \eqref{eq:s07:borel-one} supplies the factor two, and its additional
 $1/m$ gives exactly $m^{-2g}$. This proves the first formula.
+
 For fixed $\theta$ and $x$ in the inverse germ, it is also a locally
 normally convergent expression for small $y$: its summand is
 $O(y/m^2)$, uniformly on smaller neighborhoods.
@@ -4639,11 +4665,15 @@ The other linear branches have a bounded first normalized derivative,
 by Lemma~\ref{lmm:b:linear-endpoint}. The quadratic source has the
 same scale and zero square-root coefficient, by
 Lemma~\ref{lmm:b:quadratic-endpoint}: its two singular corners
-cannot be reached together. Both sources have order at least
+cannot be reached together.
+
+Both sources have order at least
 $3h-2>(h-1)/2$ at $y=0$, as checked in
 Proposition~\ref{prp:s07:borel-transport}. Thus
 Lemma~\ref{lmm:b:local-transport} applies, including its uniform
-remainder and derivative estimates. The remote integral is analytic
+remainder and derivative estimates.
+
+The remote integral is analytic
 at the endpoint by Corollary~\ref{crl:b:remote}; it contributes no
 square-root coefficient. All operations are consequently valid on
 the common complex regions, including their endpoint neighborhoods.
@@ -4858,6 +4888,7 @@ derivative and no Borel derivative:
 \]
 Multiplication by the path length $O(C|S-y|)$ gives the uniform
 initial integral $O_h(|S-y|^{(h-1)/2})$, bounded for all $h\geq1$.
+
 On the remaining segment, positive-cone addition gives
 $|S-y+u|\asymp |S-y|+|u|$, so that
 $|(S-y)/(S-y+u)|$ is small enough for
@@ -4902,7 +4933,9 @@ For $m\geq2$ the positive branch has the uniform distance factor
 $1-1/m\geq1/2$. Their sums are bounded by the outer $m^{-2}$.
 Away from this final segment all shifted arguments range in
 regular compact inverse patches, where
-Proposition~\ref{prp:b:tube} applies. For negative centers bounded
+Proposition~\ref{prp:b:tube} applies.
+
+For negative centers bounded
 away from zero, Lemma~\ref{lmm:b:negative-disks} supplies an inverse
 radius strictly larger than $R$; compact perturbation preserves the
 required margin. Thus those centers use regular patches, not a
@@ -5033,7 +5066,9 @@ $\mathcal F_h^+$ by
 Cauchy's formula on $|x|=c/(D_{g,h}+1)$, with a small fixed
 $c>0$, costs at most $C_n(D_{g,h}+1)^n$ for $n$ derivatives.
 The factor $|R-x|^{-D_{g,h}}$ is at most a constant times
-$R^{-D_{g,h}}$ on this circle. For the transformed part and
+$R^{-D_{g,h}}$ on this circle.
+
+For the transformed part and
 $n\geq1$, use $\partial_x\mathcal G_{g,h}=L_{g,h}$ and
 Lemma~\ref{lmm:b:coefficient-bound} on the same parameter circles.
 This gives a bound by
@@ -5506,7 +5541,7 @@ $k^{-1}=(2G)^{-1}-(n-2)(2G)^{-2}+O(G^{-3})$.
 
 \begin{rmk}[Identification]
 The source quantities of Wang et al. are evaluated at $Y=0$ and
-complexity $2G-2+n$. Its deficit is $-e_{n,1}$, and its second coefficient
+complexity $2G-2+n$. Their deficit is $-e_{n,1}$, and their second coefficient
 is $e_{n,2}$. Lemma~C.1 itself fixes the number of markings. Uniqueness
 of each fixed-tuple expansion identifies these formulas with the HMT
 coefficients in~\eqref{eq:s03:hmt-descendant}. The polynomial remainders
@@ -5850,14 +5885,14 @@ Summing the same polynomial increment from $0$ to $n-1$ proves
 constructing the three ratio rows.
 \end{prf}
 
-\begin{rmk}[Prediction]
-See \cite[(6.10)]{EGGLS24} for the earlier prediction, which our answer
-matches.
+\begin{rmk}[Source comparison]
+The coefficient agrees with the prediction in \cite[(6.10)]{EGGLS24}.
 The resurgence assumption appears in their Section~6.1 before (6.6).
-We use that result for credit and a comparison after our calculation.
-The unconditional inputs here
-are the MZ/HMT recursions, Wang et al.'s profiles, and the uniform bounds from
-Section~\ref{sec:s03}.
+Wang et al.\ give a broader all-order absolute expansion, including
+the unmarked case \cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
+The unconditional inputs to our reconstruction remain the MZ/HMT
+recursions, Wang et al.'s fixed-marking profiles, and the uniform
+bounds from Section~\ref{sec:s03}.
 \end{rmk}
 
 \subsection{Signed loop moments}
@@ -5907,12 +5942,16 @@ signed generating series, with no probability interpretation.
 \begin{prf}
 Expand the square. Selecting the degrees $a,b$ on one edge gives
 $w_{ab}e^{x(a+b)}$ multiplied by the two corresponding low-degree
-factors. Summing over $p$ labelled pairs with $1/p!$ exponentiates
-this one-edge sum and proves the identity. On any compact parameter
+factors. Summing over $p$ labeled pairs with $1/p!$ exponentiates
+this one-edge sum and proves the identity.
+
+On any compact parameter
 set, replacing every coefficient by its absolute value is bounded by
 the corresponding factorial series on the finite interval
 $[0,\alpha]$. The exponential sum over $p$ then converges normally,
-also after any fixed number of derivatives. At zero parameters the
+also after any fixed number of derivatives.
+
+At zero parameters the
 one-edge integral is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$,
 which proves the normalization.
 \end{prf}
@@ -5943,13 +5982,17 @@ give
 \end{array}
 \end{equation}
 
-For a nonzero nonnegative integer multi-index
+For a nonzero multi-index of nonnegative integers
 $\mathbf r=(r_p,r_D,r_0,r_1,r_2)$ let
 $\chi_{\mathbf r}$ be the derivative at zero of the logarithm of
-\eqref{eq:a:joint-egf}, of these respective orders. Equivalently it is
+\eqref{eq:a:joint-egf}, of these respective orders.
+
+Equivalently it is
 the one-loop weighted sum of
-$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$;
-any number of $p$ derivatives supplies a factor one. With no low-count
+$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$.
+The parameter $v$ records the number $p$ of self-loops, and every
+derivative of its exponential factor at zero gives one.
+With no low-count
 derivative the one-loop degree moments, for $r_D=0,\ldots,4$, are
 \begin{equation}\label{eq:a:degree-cumulants}
  S(1),\quad -S(1),\quad S(1),\quad
@@ -5967,7 +6010,7 @@ the answer is $2w_{ab}(a+b)^{r_D}$; with three distinct low counts it
 is zero. Powers with exponent zero are one, including $0^0$ in these
 finite polynomial evaluations.
 
-For explicit reproduction, write $X=(p,D,m_0,m_1,m_2)$ and
+To evaluate the moments recursively, write $X=(p,D,m_0,m_1,m_2)$ and
 $N(\mathbf r)=\mathcal L[X^{\mathbf r}]$. Let $\mathbf e_i$ be
 the $i$th unit vector for $1\leq i\leq5$. Starting with $N(0)=1$,
 the usual product rule gives the finite recurrence
@@ -5977,10 +6020,13 @@ the usual product rule gives the finite recurrence
        \chi_{\mathbf s+\mathbf e_i}N(\mathbf r-\mathbf s).
 \end{equation}
 For example $\mathcal L[D]=-S(1)$ and
-$\mathcal L[D^2]=S(1)^2+S(1)$. Also
-$\mathcal L[m_0]=2M_{0,0}=8$; its second logarithmic derivative is
+$\mathcal L[D^2]=S(1)^2+S(1)$.
+
+For the zero-degree count, $\mathcal L[m_0]=2M_{0,0}=8$.
+The corresponding second logarithmic derivative is
 $8+2w_{00}=8+2\pi^2$, whence
 $\mathcal L[m_0^2]=72+2\pi^2$.
+
 As a further useful check,
 \[
  \mathcal L[D+p]=\mathcal L[(D+p)^2]=0,\qquad
@@ -6053,16 +6099,18 @@ after multiplying the entire expression by $96\pi^4$:
 4&768
 \end{array}
 \]
-The table follows by inserting~\eqref{eq:a:first-profile},
+The three expression columns follow by inserting~\eqref{eq:a:first-profile},
 \eqref{eq:a:second-profile}, and~\eqref{eq:a:c-two-n} into
 \eqref{eq:a:bell-rule}; the largest polynomial degree is four.
-Combining its columns with coefficients $1,1/2,1/4$ cancels every
+
+Combining these columns with coefficients $1,1/2,1/4$ cancels every
 positive power of $S(1)$. The constant left is
 \[
  c_2(0)-\frac{17}{48}-\frac{181}{24\pi^2}
                                       +\frac{173}{3\pi^4}.
 \]
 Proposition~\ref{prp:a:c-two} now gives the displayed result.
+
 Section~\ref{sec:s03} justifies the operation on all legal loop
 counts: its degree-moment estimate and summable core remainder apply
 to these fixed-degree polynomials, and the large-loop tail is smaller
@@ -6173,9 +6221,11 @@ For the three rows in order use $(n_0,m)=(1,1),(3,3),(1,1)$.
 The remaining prefactors are $1/8$, $1/(48\pi^2)$, and
 $1/(8\pi^2)$, respectively. The first includes the small-loop integral
 $\alpha$ and its automorphism factor $2$; the second includes $3!$;
-the third has no graph symmetry. Multiplying the constant connector
-moment gives the leading column, and multiplying the polynomial in
-\eqref{eq:a:q-one-loop-average} gives the correction column.
+the third has no graph symmetry.
+Multiplying each prefactor by the total connector weight gives the
+leading column; including the polynomial in
+\eqref{eq:a:q-one-loop-average} in that weighted sum gives the
+correction column.
 For example, the first polynomial at $n_0=1$ has raw average
 \[
  \frac{8(22\pi^2-118)-12(8-\pi^2)+18(-8)
@@ -6200,7 +6250,7 @@ only), then
  e^{-S(1)}\gamma_1(1)=r_1-c_1(0),\qquad
  e^{-S(1)}\gamma_2(1)=r_2-c_2(0)-c_1(0)(r_1-c_1(0)).
 \]
-Thus an absolute core correction must not be relabelled as a relative
+Thus an absolute core correction must not be relabeled as a relative
 $\gamma_r$ coefficient.
 \end{rmk}
 
@@ -6302,7 +6352,7 @@ asymptotic is used to obtain a low-type amplitude.
 
 We use the cores of Subsection~\ref{subsec:s03:04}: root self-loops
 have been contracted, increasing the root genus. The distinguished
-root is labelled $0$; the small vertices are labelled $1,\ldots,v$
+root is labeled $0$; the small vertices are labeled $1,\ldots,v$
 temporarily for describing their edge matrix. Let $m_{ij}$ be the edge
 multiplicity for $i\ne j$, and $m_{ii}$ the number of self-loops at
 vertex $i$. These two-index multiplicities are distinct from the
@@ -6325,7 +6375,7 @@ listing any contributions.
 
 \begin{lmm}[The cores of complexity at most two]\label{lmm:a:core-enumeration}
 There are respectively $1,3,13$ core types at $q=0,1,2$. For every
-core their automorphism order is
+core, the automorphism order is
 \begin{equation}\label{eq:a:core-aut}
  |\operatorname{Aut}\Gamma_{\rm c}|=
  |\operatorname{Aut}_V\Gamma_{\rm c}|
@@ -7038,6 +7088,7 @@ defines a holomorphic function with the asserted norm. Normal
 convergence allows coefficient extraction; the coefficients are
 exactly those of \eqref{eq:s07:borel-transport}, so this function
 is the required Borel sum. This proves the induction.
+
 Ordinary Cauchy estimates on smaller disks give
 \eqref{eq:b:regular-derivatives}, including any fixed derivative
 orders. No infinite-genus interchange is assumed before this
@@ -7116,12 +7167,16 @@ $D_\theta$ and its Borel variable is zero. The same reasoning
 applies to the two quadratic factors; their possible $t\tau=1$
 or $t(1-\tau)=1$ endpoint is again a lower layer.
 
-These facts provide open neighborhoods for every point of the compact
-finite-parameter integration set at $\sigma=0$. A finite subcover
-also works for small $\sigma$. For $\sigma$ bounded away from zero,
+These local continuations provide open neighborhoods for every point of
+the compact finite-parameter integration set at $\sigma=0$. A finite
+subcover also works for small $\sigma$.
+
+For $\sigma$ bounded away from zero,
 the boundary-distance increase is strict, uniformly on compact
 sets; the original tube argument applies. Large $\sigma$ is
-controlled by the preceding regular-disk bound. Cauchy estimates on
+controlled by the preceding regular-disk bound.
+
+Cauchy estimates on
 these neighborhoods justify the normally convergent $m$ sum and
 the joint holomorphic continuation. Parameter compactness proves
 the final uniformity assertion.
@@ -7147,6 +7202,7 @@ Lemma~\ref{lmm:b:regular-disk}, applied from this base parameter,
 gives a radius comparable to $\sigma$ and the integrable source
 bound $C_h|y|^{3h-2}\sigma^{-2h}$. Normal convergence and Cauchy
 estimates prove the first assertion.
+
 For centers in the stated compact real interval, transport through
 $\sigma_0$ strictly increases the inverse-radius budget. The tube
 proposition therefore gives a common neighborhood of both endpoints;
@@ -7271,7 +7327,9 @@ its derivative is bounded by the integral of
  C|S|^a(1-\tau)
                   (|1-y/S|+1-\tau)^{-3/2},
 \]
-which is also uniform. For $m\geq2$ keep the entire cubic
+which is also uniform.
+
+For $m\geq2$ keep the entire cubic
 difference together; its individual linear terms must not be
 summed separately. Taylor's integral remainder and
 \eqref{eq:b:input-derivatives} bound its first normalized derivative,
@@ -7283,7 +7341,9 @@ before the outer factor $m$, by a constant times
 The $\tau$ integral is uniform, and the remaining $m^{-2}$ sum
 converges. Hence these nonprincipal parts have a finite endpoint
 limit and an $O(|S|^a|1-y/S|)$ variation. This proves the value
-estimate in \eqref{eq:b:linear-endpoint}. The negative endpoint
+estimate in \eqref{eq:b:linear-endpoint}.
+
+The negative endpoint
 follows by exchanging the two branches, including their opposite
 signs. Cauchy's formula on smaller cones then gives every fixed
 derivative bound, in particular the third derivative required by
@@ -7328,14 +7388,17 @@ local bound, apart from $C|S|^{a+c}$, is
  (|1-y/S|+(1-t)+(1-\tau))^{-3/2}
 \]
 at the first corner, and the corresponding bound at the second.
+
 This is integrable in two variables, uniformly up to the endpoint.
 For a second derivative the exponent is $-5/2$, whose integral is
 $O(1+|1-y/S|^{-1/2})$. The remainder terms with exponent $\nu$
-are less singular because $\nu>1/2$. Thus the first derivative
+are less singular because $\nu>1/2$.
+
+Thus the first derivative
 is bounded and the endpoint value exists, with a remainder
 $O(|S|^{a+c}|1-y/S|)$. It is therefore also $O(|S|^{a+c}|1-y/S|^\nu)$.
-Normal convergence proves holomorphy, and the larger-domain
-Cauchy argument proves the remaining assertions.
+Normal convergence gives holomorphy; larger-domain Cauchy estimates
+give the remaining assertions.
 \end{prf}
 
 \subsection{Local transport and common dented regions}
@@ -7800,7 +7863,7 @@ finitely many small genera by enlarging $C_h$.
 
 
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{EGFG{\etalchar{+}}24}
+\begin{thebibliography}{WLQ{\etalchar{+}}26b}
 
 \bibitem[ABC{\etalchar{+}}23]{ABCDGLW23}
 J{\o}rgen~Ellegaard Andersen, Ga{\"e}tan Borot, S{\'e}verin Charbonnier,
@@ -7836,7 +7899,7 @@ Maurizio Cornalba and Joe Harris.
 \newblock \texttt{https://dlmf.nist.gov/}, Release 1.2.8 of 2026-09-15.
 \newblock F. W. J. Olver, A. B. Olde Daalhuis, D. W. Lozier, B. I. Schneider,
   R. F. Boisvert, C. W. Clark, B. R. Miller, B. V. Saunders, H. S. Cohl, and M.
-  A. McClain, eds.; accessed 2026-11-15.
+  A. McClain, eds.; accessed 2026-11-16.
 
 \bibitem[EGFG{\etalchar{+}}24]{EGGLS24}
 Bertrand Eynard, Elba Garcia-Failde, Paolo Gregori, Danilo Lewa{\'n}ski, and
@@ -7897,8 +7960,8 @@ Ralph Kaufmann, Yuri Manin, and Don Zagier.
 \bibitem[Liu26]{LiuData26}
 Si-Qi Liu.
 \newblock {Hodge} integral data.
-\newblock \texttt{github.com/\allowbreak siqiliu-tsinghua/\allowbreak
-  hodge\_data}, 2026.
+\newblock \texttt{github.com/\allowbreak siqiliu-\allowbreak
+  tsinghua/\allowbreak hodge\_data}, 2026.
 \newblock Exact rational tables for genera 2--20, commit \texttt{88dd4a5}.
 
 \bibitem[LX26a]{LX26b}
@@ -7942,13 +8005,20 @@ Maryam Mirzakhani and Peter Zograf.
 Yang Shen and Yunhui Wu.
 \newblock Arbitrarily small spectral gaps for random hyperbolic surfaces with
   many cusps.
-\newblock arXiv:2203.15681v4, 2025.
+\newblock {\em Communications in Mathematical Physics}, 406(8), 2025.
+\newblock Article 190. Cited numbering follows arXiv:2203.15681v4.
 
-\bibitem[WLQ{\etalchar{+}}26]{W26}
+\bibitem[WLQ{\etalchar{+}}26a]{W26}
 Qihang Wang, Zhiyi Li, Bolin Qiu, Shuaijia Wang, Yuan Zhong, Kun Chen, and
   Renqiu Xia.
 \newblock Uniform large-genus asymptotics of {Weil--Petersson} volumes.
 \newblock arXiv:2610.35492v4, 2026.
+
+\bibitem[WLQ{\etalchar{+}}26b]{W26v5}
+Qihang Wang, Zhiyi Li, Bolin Qiu, Shuaijia Wang, Yuan Zhong, Kun Chen, and
+  Renqiu Xia.
+\newblock Uniform large-genus asymptotics of {Weil--Petersson} volumes.
+\newblock arXiv:2610.35492v5, 2026.
 
 \bibitem[Wol86]{Wol86}
 Scott~A. Wolpert.

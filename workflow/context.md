@@ -2,7 +2,7 @@
 
 The authoritative goals are the four theorems in sections/01_introduction/section.tex. Their stable labels are thm:lambda-one, thm:fixed-insertions, thm:top-hodge and thm:fixed-defect.
 
-The paper_outline.md plan defines the proof organization. Read only the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task.
+The paper_outline.md map describes the completed proof organization and current finalization scope. Read the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task. Original plans and author handoffs are historical records, not a current list of unfinished proofs.
 
 ## Conventions
 
@@ -98,8 +98,8 @@ points. State this translation explicitly; do not attribute the identical flag
 presentation to FP00. FP00 remains a source for the Hodge bundle conventions.
 Use a bibliography entry for each cited source version, with precise locators
 in citations, instead of raw arXiv identifiers in manuscript prose. The exact
-KMZ preprint version is cited as KMZ96v1; the journal record KMZ96 remains in
-the bibliography database.
+KMZ preprint version is cited as KMZ96v1, whose entry also records the formal
+journal publication. The unused duplicate key KMZ96 has been removed.
 
 The rmk and exm environments have independent section-based counters and roman
 bodies, preserving the existing mathematical-result numbers when optional
@@ -129,9 +129,11 @@ do not describe their file layout or execution in the article.
 
 The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.
 
-The second lecture provides a route for all four theorems. It explicitly computes the first theorem only through the inverse-genus term. The second-order coefficient in the introduction needs a complete reconstruction of its WP inputs and q = 0, 1, 2 core contributions. The old table's arithmetic alone does not close this gap.
+The four theorem proofs and both retained appendices have completed the section review process. The second lecture originally supplied a route and computed the first theorem only through the inverse-genus term. The missing second-order inputs and q = 0, 1, 2 contributions have since been reconstructed in Section 4 and Appendix A. Preserve those in-text derivations and uniform remainder estimates; the old table's arithmetic alone is not their proof.
 
-For that reconstruction, use the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, then identify their coefficients with HMT's unique expansions before applying growing-valence bounds. Hua25 was withdrawn in arXiv:2501.06421v2 (2026-10-25) because a key lemma's proof has a substantive gap; do not use it as a proof input. EGGLS24, Section 6.1 and (6.10), gives a published resurgent prediction conditional on a resurgence assumption. Credit it as such and as a cross-check, rather than treating it as an unconditional absolute-volume input. The required $c_2(0)$ must be reconstructed from exact recursion. The source audit and current finite computations are in the ignored preparation directory and remain subject to formal Appendix A review.
+The reconstruction uses the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, identifying their coefficients with HMT's expansions before using growing-valence bounds. The required $c_2(0)$ is reconstructed from exact recursion in Appendix A. EGGLS24, Section 6.1 and (6.10), is credited as a conditional resurgent prediction and a cross-check, not an unconditional proof input. Hua25 is excluded from the proof inputs. Internal calculations assist author checks; the mathematical derivations are in the article and the actual approval evidence is retained in workflow/reviews/ and workflow/state.json.
+
+Keep the two Wang et al. versions distinct. W26 is the actually used v4, including its Lemma 7.2 and Appendix C.1 profile locators. W26v5 credits the later all-order absolute WP expansion, including the unmarked coefficient rule in Theorem 1.1 and (11.6)--(11.7). The particular c_2(0) reconstruction in this article is not a priority claim for that WP coefficient. A newer background citation does not silently replace the technical input version.
 
 The already defined $\gamma_k(u)$ are coefficients of $Z_g(u)/V_{g,0}$.
 For $Z_g(1)/F_g$, combine with the absolute WP expansion: after factoring
@@ -143,8 +145,12 @@ For fixed low-index insertions, an order bound for odd Chern-character products 
 
 For the top Hodge class, the lambda_g theorem, exact Bessel coefficient formula and a uniform tree-tail estimate give an independent proof route. Attribute the existing genus-zero Bessel critical point to its original literature.
 
-For fixed defect, establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Distinguish the o(1) coefficient-transfer error from the O(1/g) background-comparison error.
+For fixed defect, Sections 7--8 and Appendix B establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Preserve the distinction between the o(1) coefficient-transfer error and the O(1/g) background-comparison error.
 
 ## Existing manuscript
 
-The introduction is preserved as a baseline, including its target statements and incomplete prose. It is not a record of approved proofs. New planned sections stay out of the default PDF until accepted. Do not silently change target statements or add results outside the assigned unit.
+Introduction, Sections 2--8 and Appendices A/B are the reviewed article. Appendix C is retired: its known low-genus examples are not proof premises, and its old source/reviews remain internal historical records. Section 6 keeps an independently derived genus-two example; the closing Section 8 conjecture directly cites LiuData26 for numerical evidence.
+
+The finalization scope beginning at Git baseline fa2f374 is to update obsolete working descriptions, polish English and presentation, verify bibliography and publication details, conduct an integrated final reading, then rebuild/export/compile the single TeX source in isolation and commit the finished version. The user has explicitly retained the existing author-name-only signature and generic article format; do not add affiliation, email, acknowledgments, funding, classifications or a journal template without new information.
+
+Keep all four main theorem statements and the user's notation and typography intact. Section 4 and Section 6 higher-coefficient Remarks explicitly omit calculations by user instruction; the final h=1 refinement is explicitly a conjecture. These are not unfinished parts of the four theorem proofs and must not silently strengthen their error estimates. Any new substantive change uses the original author and reviewers; current status comes from the actual workflow, not descriptive prose in an old handoff.

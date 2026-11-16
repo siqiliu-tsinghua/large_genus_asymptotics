@@ -4,7 +4,7 @@
 
 Write $Z_\Gamma(u)$ for the summand of
 \eqref{eq:s03:integrated-graph-formula} indexed by $\Gamma$.
-We first bound every vertex, then sum over labelled pairings. A short
+We first bound every vertex, then sum over labeled pairings. A short
 factorial-series estimate will control the resulting Gaussian integral,
 including graphs with arbitrarily many vertices or large valences.
 
@@ -86,11 +86,11 @@ Choose $T\geq\sup_{u\in\mathcal K}|\alpha u|$ and use
 Lemma~\ref{lmm:s03:vertex-bound}. Label the $m$ vertices and the
 $n_i$ incident flags at vertex $i$. After summing over ordered type
 lists, division by $m!\prod_i n_i!$ gives precisely
-$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labelled
+$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labeled
 realizations of a graph is $m!\prod_i n_i!/|\operatorname{Aut}\Gamma|$
 by orbit-stabilizer. Summing ordered lists is essential when types
 repeat. Stack stabilizers inside a vertex integral have already been
-included in its volume and do not enter this graph-labelling count.
+included in its volume and do not enter this graph-labeling count.
 
 If there are $2E$ flags, with an integer $E\geq0$, there are
 $(2E-1)!!$ pairings, with one empty pairing when $E=0$.
@@ -165,9 +165,10 @@ later decrease does not change these constants.
 To prove the full tail estimate, we first discard large Gaussian
 values, where the density controls the whole polynomial degree.
 At the remaining values, coefficient extraction handles graphs
-without a large vertex. For graphs with one, either a single other
-vertex already has large complexity, or many bounded-complexity vertices
-produce the required total; these two cases need different estimates.
+without a large vertex. When a large vertex exists, either one of
+the other complexities reaches the prescribed tail threshold,
+or several smaller complexities add up to it. We estimate these
+cases separately.
 
 \begin{prp}[Absolute graph tail]
 \label{prp:s03:graph-tail}

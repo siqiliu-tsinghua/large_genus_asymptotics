@@ -1,0 +1,391 @@
+--- previous/AGENTS.md
++++ AGENTS.md
+@@ -6,7 +6,7 @@
+ 
+ - 每个 section 使用 sections/ 中的独立目录；section.tex 是章节入口和证明导读，每个 subsection 使用单独的 .tex 文件。
+ - main.tex 负责装配；tex/preamble.tex 管理共享宏；references.bib 管理正式引文。
+-- sections/included.tex 由脚本生成，只装配正文中连续验收通过的章节。既有 Introduction 是保留的基线，不代表已经通过新流程审核。
++- sections/included.tex 由脚本生成，只装配连续验收且快照有效的章节；已撤回的附录不参与装配。Introduction 与其余在用章节已通过逐节流程，当前轮次和有效性以 workflow.py status 为准。
+ - 每个章节的 INTERFACE.md 记录导出记号、命题、标签、假设、文献及待解决问题，随正文一起审核。
+ - 作者只修改所分配的 section 目录，以及协调者指定的本轮作者答复和交接文件。共享文件的修改向协调者提出，由协调者统一处理。
+ - 审核者不直接改论文；只写自己的审核报告和交接文件，不修改其他审核者的意见。
+@@ -45,7 +45,7 @@
+ - 尽量少设符号；只为反复使用、具有独立作用且确实减轻阅读负担的对象设专名。一次性的短表达式直接写出。按数学用途选择字母组，区分 Hodge 下标、标记编号、计数、次数、解析变量和常数，避免同一论证中的重载与视觉混淆。
+ - 作者在 INTERFACE.md 中记录继承和新增记号、定义位置、作用域及新增符号的必要性；协调者维护共享约定。易读性审核分别检查定义、一致性、符号数量和字母设计；数学审核核对定义、范围和语义，学术规范审核核对文献记号换算。任一未解决的记号问题都须返工。
+ - 明确有限亏格恒等式、固定参数渐近和可交换求和的一致估计之间的差别。控制全体图或卷积的余项，不能只估计每一个固定项。
+-- 第一大定理的二阶系数仍需从精确输入补算；旧表的代数相加不是这些输入和各组贡献的证明。
++- 第一大定理的二阶系数已在第 4 节和附录 A 中完成精确输入、各组贡献及统一余项的论证。今后的修订仍须保留这条完整计算链；旧表的代数相加不能替代证明。
+ - 每个长证明前给整体路线，按功能拆分引理，明确每一步的假设、输出和后续用途。
+ - 定理、引理和命题的陈述后直接接证明，不在二者之间插入历史、credit、版本说明或记号换算；证明导读放在陈述之前，来源和补充说明通常放在证明后的 Remark。必要定义和有效假设仍须在首次使用前、在陈述中清楚给出，不能藏进可选说明。
+ - 回顾经典材料时，在开头说明所采用的准确文献及术语、记号约定，并指出与本文实际不同之处。不要把“标准约定”笼统归给没有该表述的文献。文献版本标识放进参考文献条目，正文用带定位的引用。
+@@ -67,4 +67,4 @@
+     python scripts/validate.py
+     python -m unittest discover -s tests -v
+ 
+-完整命令顺序、报告格式、会话复用和异常恢复见 workflow/PROTOCOL.md。此设置阶段不自动开始论文写作。提交使用现有 ~/.gitconfig 中的身份，不在仓库中覆盖姓名和邮箱。
++完整命令顺序、报告格式、会话复用和异常恢复见 workflow/PROTOCOL.md。依用户授权推进写作和定稿；不根据过期草稿说明重开已完成的问题。提交使用现有 ~/.gitconfig 中的身份，不在仓库中覆盖姓名和邮箱。
+--- previous/references.bib
++++ references.bib
+@@ -42,20 +42,6 @@
+   note    = {Cited numbering follows arXiv:1905.10352v3}
+ }
+ 
+-@article{KMZ96,
+-  author  = {Kaufmann, Ralph and Manin, Yuri and Zagier, Don},
+-  title   = {Higher {Weil--Petersson} Volumes of Moduli Spaces of Stable
+-             {$n$}-Pointed Curves},
+-  journal = {Communications in Mathematical Physics},
+-  volume  = {181},
+-  number  = {3},
+-  year    = {1996},
+-  pages   = {763--787},
+-  doi     = {10.1007/BF02101297},
+-  eprint  = {alg-geom/9604001},
+-  note    = {Cited numbering follows arXiv:alg-geom/9604001v1}
+-}
+-
+ @misc{KMZ96v1,
+   author       = {Kaufmann, Ralph and Manin, Yuri and Zagier, Don},
+   title        = {Higher {Weil--Petersson} Volumes of Moduli Spaces of Stable
+@@ -127,12 +113,16 @@
+   note    = {Cited numbering follows arXiv:1112.1151v1}
+ }
+ 
+-@misc{SW25,
++@article{SW25,
+   author       = {Shen, Yang and Wu, Yunhui},
+   title        = {Arbitrarily Small Spectral Gaps for Random Hyperbolic
+                   Surfaces with Many Cusps},
+   year         = {2025},
+-  howpublished = {arXiv:2203.15681v4},
++  journal      = {Communications in Mathematical Physics},
++  volume       = {406},
++  number       = {8},
++  doi          = {10.1007/s00220-025-05366-7},
++  note         = {Article 190. Cited numbering follows arXiv:2203.15681v4},
+   eprint       = {2203.15681v4},
+   url          = {https://arxiv.org/abs/2203.15681v4}
+ }
+@@ -164,6 +154,16 @@
+   howpublished = {arXiv:2610.35492v4},
+   eprint       = {2610.35492v4},
+   url          = {https://arxiv.org/abs/2610.35492v4}
++}
++
++@misc{W26v5,
++  author       = {Wang, Qihang and Li, Zhiyi and Qiu, Bolin and Wang, Shuaijia
++                  and Zhong, Yuan and Chen, Kun and Xia, Renqiu},
++  title        = {Uniform Large-Genus Asymptotics of {Weil--Petersson} Volumes},
++  year         = {2026},
++  howpublished = {arXiv:2610.35492v5},
++  eprint       = {2610.35492v5},
++  url          = {https://arxiv.org/abs/2610.35492v5}
+ }
+ 
+ @article{EGGLS24,
+@@ -219,7 +219,7 @@
+   note         = {F. W. J. Olver, A. B. Olde Daalhuis, D. W. Lozier,
+                   B. I. Schneider, R. F. Boisvert, C. W. Clark,
+                   B. R. Miller, B. V. Saunders, H. S. Cohl,
+-                  and M. A. McClain, eds.; accessed 2026-11-15}
++                  and M. A. McClain, eds.; accessed 2026-11-16}
+ }
+ 
+ @article{Bur15,
+@@ -303,7 +303,7 @@
+   author       = {Liu, Si-Qi},
+   title        = {{Hodge} integral data},
+   year         = {2026},
+-  howpublished = {\texttt{github.com/\allowbreak siqiliu-tsinghua/\allowbreak hodge\_data}},
++  howpublished = {\texttt{github.com/\allowbreak siqiliu-\allowbreak tsinghua/\allowbreak hodge\_data}},
+   note         = {Exact rational tables for genera 2--20,
+                   commit \texttt{88dd4a5}},
+   url          = {https://github.com/siqiliu-tsinghua/hodge_data/tree/88dd4a501ecf3fbc124a823ad1589911f86a14e5}
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -1,18 +1,18 @@
+ # Introduction
+ 
+-Scientific interface for the complete Introduction author draft.
++Scientific interface for the Introduction.
+ Live review, freshness and acceptance status belongs to
+ workflow/state.json; this document is not an approval signature.
+ The four complete theorem environments, including definitions,
+ labels, constants, ranges and error terms, are byte-identical to
+-the captured baseline in build/closing-writing/baseline.json.
++Git baseline fa2f374 for the current final-polish round.
+ 
+ ## Current prose scope and assembly
+ 
+ The single section.tex remains the entire Introduction; no formal
+-subsections, extra inputs or manifest change is needed. New prose
++subsections, extra inputs or manifest change is needed. The prose
+ provides the motivation for four results grouped into two broad
+-index settings (first-class powers/fixed-index insertions and
++index settings (first Hodge class powers/fixed-index insertions and
+ the top class/fixed defects),
+ precise source attribution, an explanation of the contributions,
+ the two proof routes and a completed-paper reading guide.
+@@ -26,13 +26,17 @@
+ does not import later body dependencies. Theorem references retain
+ their stable labels.
+ 
+-An abstract proposal is supplied separately at
+-build/closing-writing/abstract-proposal.tex for the coordinator to
+-apply verbatim to frontmatter/abstract.tex. The writer has not
+-edited that shared file. The proposal has 144 words, no citations
+-and no mathematical symbols. It reports the four theorem regimes
+-at their original precision, without promoting the supplementary
+-third/fourth coefficients from Section 4.
++The applied abstract is already in the shared frontmatter/abstract.tex.
++It has 144 words, no citations and no mathematical symbols, and expands
++intermediate long-wave (ILW) at first use. It reports the four theorem
++regimes at their original precision without promoting supplementary
++coefficients or the fixed-defect conjecture. This final-polish reading
++proposes no abstract change and does not edit the shared file.
++
++The present prose revision makes the first Hodge class explicit in the
++opening, identifies the last two results by indices growing with genus,
++and separately identifies the fixed insertion list and fixed defect.
++It does not describe the top index g as a fixed insertion index.
+ 
+ ## Global conventions at first use
+ 
+@@ -96,11 +100,11 @@
+ thm:fixed-insertions, thm:top-hodge, thm:fixed-defect.
+ Equation labels: eq:phi-1, eq:phi-2, eq:111, eq:P111, eq:g111,
+ eq:gh11. All six complete numbered equation environments are
+-byte-identical to the captured baseline. Exactly four theorem
++byte-identical to Git baseline fa2f374. Exactly four theorem
+ environments remain, in the original order. No numbered formula
+ or result is added.
+ 
+-The new prose retains the phrase "the ILW equation". The proofs
++The Introduction retains the phrase "the ILW equation". The proofs
+ are in Sections 4,5,6,8 for the respective stable theorem labels.
+ This introductory exposition does not replace those proofs.
+ 
+@@ -127,6 +131,11 @@
+ - W26, Lemma 7.2 and Appendix C.1: first/second descendant
+   coefficient inputs used in Appendix A. Fixed-tuple
+   identification and HMT uniformity remain separate in the proofs.
++- W26v5, Theorem 1.1 and (11.6)--(11.7): broader all-order absolute
++  volume expansion, including the unmarked case. This is background
++  credit; A retains its direct reconstruction of the required second
++  coefficient, without a priority claim or a new proof dependency.
++  W26 remains the fixed v4 key for the preceding profile locators.
+ - MZ15, Section 2: exact recursions used for Appendix A's
+   unconditional second absolute WP coefficient reconstruction.
+   EGGLS24, Section 6.1 and (6.10), is credited as a conditional
+@@ -152,7 +161,7 @@
+ No fresh priority claim, withdrawn source or internal lecture-note
+ citation is introduced.
+ 
+-## Reading routes, precision and remaining work
++## Reading routes and precision
+ 
+ After Section 2, Sections 3--5 give the WP graph route for the
+ first two theorems. Section 6 is an independent entry for the top
+@@ -168,9 +177,10 @@
+ 
+ The fourth theorem remains an asymptotic equivalence; no relative
+ error rate is added. The supplementary higher coefficients are
+-neither repeated nor used. No known source or structural gap is
+-pending. Abstract application, compilation and frozen review
+-remain coordinator work.
++neither repeated nor used. No known source or structural gap
++remains. The abstract has already been applied; current build,
++review and acceptance status is recorded in workflow/state.json
++and the corresponding receipts, rather than historical proposal notes.
+ 
+ ## Historical provenance retained
+ 
+--- /dev/null
++++ sections/01_introduction/final_polish_handoff.md
+@@ -0,0 +1,70 @@
++# S1 final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s01. Dispatch:
++build/final-polish-20261116/rounds/s01-r006-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The previous approved
++S1 round is r005, snapshot
++620b75b92dc1c56b58b10004fabd1a33e2d31e7b3e6e77327047c7bd94fad5dd.
++Live status belongs to workflow/state.json; this is not a review.
++
++## Final reading and limited prose changes
++
++I read the full Introduction and applied abstract, the updated
++project/notation/writer rules and the target outline. The definitions,
++marked-vanishing reduction, normalization domains and two proof routes
++remain coherent. The mathematical and precision statements need no
++revision.
++
++Three small changes have a concrete purpose:
++
++- The opening names the first Hodge class, removing the ambiguous
++  shorthand first class.
++- The transition to the last two results says their indices grow
++  with genus, rather than calling them the opposite range.
++- The interpretation paragraph identifies the fixed insertion list
++  of the second theorem separately from the fixed defect of the
++  fourth. The previous blanket sentence about all insertion indices
++  could be mistaken as covering the growing top index. The paragraph
++  keeps the absent inverse-genus term, cubic dependence, two powers
++  per unit of defect, transport factorial and lack of a final relative
++  error rate.
++
++The stable-graph route, independent top-class route, ILW transport,
++Appendices A/B and shorter reading path already describe the completed
++article accurately. No broad rewrite, new mathematical claim or
++symbol is warranted.
++
++## Additional primary-source attribution
++
++I read https://arxiv.org/abs/2610.35492v5 and the official HTML
++https://arxiv.org/html/2610.35492v5 at Theorem 1.1 and
++(11.6)--(11.7). The added background citation credits its broader
++absolute-volume result, including the unmarked coefficients.
++The Introduction says that A reconstructs only the particular
++second coefficient needed here. No priority is claimed and no
++new proof dependency is introduced. The old W26 key and its
++v4 Lemma 7.2/Appendix C.1 locators are unchanged.
++
++## Current metadata and preservation
++
++INTERFACE now uses the actual Git baseline and records the already
++applied 144-word abstract. It removes outdated abstract-application
++and unfinished-build/review descriptions, deferring live status to
++the workflow records. The abstract needs no proposed edit. The
++existing author-name-only signature and generic format are untouched.
++
++All four complete theorem environments, six numbered equation
++environments, other mathematical displays, inline mathematical
++tokens and labels are preserved byte-for-byte. All old citations
++remain; the sole added citation is the W26v5 background credit. This
++includes the user's and/quad/mbox typography. The mathematical setup
++and marked-domain reduction are unchanged. Old writer, standalone
++and retirement handoffs and all frozen records remain intact.
++
++Only section.tex, INTERFACE.md, this new handoff and the designated
++external FINAL-POLISH/s01_writer.md are edited. No shared abstract,
++bibliography, metadata, other section or state is changed by this
++author. No calculation or native compilation is performed.
++Scoped preservation and UTF-8/LF guards accompany delivery.
++Shared finalization and the native frozen build remain with the
++coordinator. STOP for the original three-role review.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -6,7 +6,7 @@
+ differentials varies over the moduli space of curves. Their
+ large-genus behavior depends on how the Chern indices vary with
+ the rank. The four results are grouped into two broad index
+-settings. One covers powers of the first class and fixed-index
++settings. One covers powers of the first Hodge class and fixed-index
+ insertions against that background; the other covers the top class
+ and indices at a fixed distance from it. The results give explicit
+ constants and
+@@ -113,7 +113,7 @@
+ \end{equation}
+ \end{thm}
+ 
+-The next two results concern the opposite range of indices.
++The next two results concern indices that grow with the genus.
+ The inserted class is $\lambda_g$, or $\lambda_{g-h}$ with $h$
+ fixed while $g$ increases. Their scale is governed by the first
+ positive zero of a Bessel function.
+@@ -141,14 +141,15 @@
+ \end{equation}
+ \end{thm}
+ 
+-Theorem~\ref{thm:fixed-insertions} shows that the normalized product
++For the fixed insertion list in
++Theorem~\ref{thm:fixed-insertions}, the normalized product
+ approaches the reciprocal factorial product, with no term of order
+ $g^{-1}$. The first correction depends only on the cubic sum
+-$G(j)$. In Theorem~\ref{thm:fixed-defect}, each fixed increase of
+-the defect contributes two powers of $g$; the factor $1/h!$
+-comes from ordered transport integrals. All insertion indices and
+-defects in these statements are fixed. The last theorem asserts
+-asymptotic equivalence, without a relative error rate.
++$G(j)$. In Theorem~\ref{thm:fixed-defect}, the defect is fixed as
++the genus increases. Each unit of defect contributes two powers
++of $g$; the factor $1/h!$ comes from ordered transport integrals.
++The last theorem asserts asymptotic equivalence, without a relative
++error rate.
+ 
+ Sections~3--5 prove Theorems~\ref{thm:lambda-one}
+ and~\ref{thm:fixed-insertions} by a stable-graph expansion.
+@@ -165,8 +166,11 @@
+ Appendix~A supplies the finite calculations used in this route.
+ They include the descendant coefficients of Wang et al.\
+ \cite[Lemma 7.2 and Appendix C.1]{W26}, correlated loop moments
+-and the core contributions. The required second absolute volume
+-coefficient is reconstructed from the exact recursions of
++and the core contributions. Wang et al.\ give a more general
++absolute expansion to all orders, including the unmarked case
++\cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
++Here we reconstruct only the second absolute volume coefficient
++needed for our argument from the exact recursions of
+ Mirzakhani--Zograf \cite[\S 2]{MZ15}. Its agreement with the
+ conditional resurgent prediction of Eynard et al.\
+ \cite[\S 6.1, (6.10)]{EGGLS24} is an a posteriori check;
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -4,7 +4,7 @@
+ 
+ ## 状态与文件
+ 
+-工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。原有引言初始为 baseline，仍可在后续显式开启修订。
++工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。baseline 是初始化时保留旧引言的历史状态；当前引言已走完正常验收，可与其他已验收章节一样显式开启修订。撤回的末尾附录标记为 retired 并保留历史。
+ 
+ workflow/state.json 是脚本维护的状态记录。每轮材料放在 workflow/reviews/单元/r001/ 等目录；其中 submission.json 冻结文件指纹，math.json、readability.json、academic.json 保存各审核者的报告，author_response.json 保存原作者逐条答复。不同轮的记录不覆盖。
+ 
+@@ -16,7 +16,7 @@
+ 
+ 回顾经典材料时，说明准确来源及与本文的约定差异。定理、引理、命题的陈述直接接证明；历史、credit 和版本/记号说明通常放入证明后的 Remark，例子和长说明按用途整理为简短 Example、Remark 和段落。原始版本标识放入参考文献条目，正文通过引用定位。数学审核检查模块化后定义和论证仍完整；易读性审核检查读者能否选择阅读及段落是否疏朗；学术审核检查来源、差异和归属的准确性。检查项沿用既有 keys，不用新增形式字段替代实质判断。
+ 
+-写作次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。建议先完成 s02、s03、附录 A，再写 s04、s05、s06、s07、附录 B、s08，最后写附录 C；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用，因此需要先完成相应附录。预览始终保留目标章节和附录编号，最终正文仍按第 1–8 节、附录 A–C 排版。
++写作和复审次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。当前在用单元的依赖次序为 s01、s02、s03、附录 A、s04、s05、s06、s07、附录 B、s08；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用。预览保留目标编号，论文按第 1–8 节、附录 A–B 排版；已撤回的 C 不再开启或装配。
+ 
+ ## 首次写作
+ 
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -2,7 +2,7 @@
+ 
+ The authoritative goals are the four theorems in sections/01_introduction/section.tex. Their stable labels are thm:lambda-one, thm:fixed-insertions, thm:top-hodge and thm:fixed-defect.
+ 
+-The paper_outline.md plan defines the proof organization. Read only the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task.
++The paper_outline.md map describes the completed proof organization and current finalization scope. Read the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task. Original plans and author handoffs are historical records, not a current list of unfinished proofs.
+ 
+ ## Conventions
+ 
+@@ -129,9 +129,11 @@
+ 
+ The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.
+ 
+-The second lecture provides a route for all four theorems. It explicitly computes the first theorem only through the inverse-genus term. The second-order coefficient in the introduction needs a complete reconstruction of its WP inputs and q = 0, 1, 2 core contributions. The old table's arithmetic alone does not close this gap.
++The four theorem proofs and both retained appendices have completed the section review process. The second lecture originally supplied a route and computed the first theorem only through the inverse-genus term. The missing second-order inputs and q = 0, 1, 2 contributions have since been reconstructed in Section 4 and Appendix A. Preserve those in-text derivations and uniform remainder estimates; the old table's arithmetic alone is not their proof.
+ 
+-For that reconstruction, use the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, then identify their coefficients with HMT's unique expansions before applying growing-valence bounds. Hua25 was withdrawn in arXiv:2501.06421v2 (2026-10-25) because a key lemma's proof has a substantive gap; do not use it as a proof input. EGGLS24, Section 6.1 and (6.10), gives a published resurgent prediction conditional on a resurgence assumption. Credit it as such and as a cross-check, rather than treating it as an unconditional absolute-volume input. The required $c_2(0)$ must be reconstructed from exact recursion. The source audit and current finite computations are in the ignored preparation directory and remain subject to formal Appendix A review.
++The reconstruction uses the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, identifying their coefficients with HMT's expansions before using growing-valence bounds. The required $c_2(0)$ is reconstructed from exact recursion in Appendix A. EGGLS24, Section 6.1 and (6.10), is credited as a conditional resurgent prediction and a cross-check, not an unconditional proof input. Hua25 is excluded from the proof inputs. Internal calculations assist author checks; the mathematical derivations are in the article and the actual approval evidence is retained in workflow/reviews/ and workflow/state.json.
++
++Keep the two Wang et al. versions distinct. W26 is the actually used v4, including its Lemma 7.2 and Appendix C.1 profile locators. W26v5 credits the later all-order absolute WP expansion, including the unmarked coefficient rule in Theorem 1.1 and (11.6)--(11.7). The particular c_2(0) reconstruction in this article is not a priority claim for that WP coefficient. A newer background citation does not silently replace the technical input version.
+ 
+ The already defined $\gamma_k(u)$ are coefficients of $Z_g(u)/V_{g,0}$.
+ For $Z_g(1)/F_g$, combine with the absolute WP expansion: after factoring
+@@ -143,8 +145,12 @@
+ 
+ For the top Hodge class, the lambda_g theorem, exact Bessel coefficient formula and a uniform tree-tail estimate give an independent proof route. Attribute the existing genus-zero Bessel critical point to its original literature.
+ 
+-For fixed defect, establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Distinguish the o(1) coefficient-transfer error from the O(1/g) background-comparison error.
++For fixed defect, Sections 7--8 and Appendix B establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Preserve the distinction between the o(1) coefficient-transfer error and the O(1/g) background-comparison error.
+ 
+ ## Existing manuscript
+ 
+-The introduction is preserved as a baseline, including its target statements and incomplete prose. It is not a record of approved proofs. New planned sections stay out of the default PDF until accepted. Do not silently change target statements or add results outside the assigned unit.
++Introduction, Sections 2--8 and Appendices A/B are the reviewed article. Appendix C is retired: its known low-genus examples are not proof premises, and its old source/reviews remain internal historical records. Section 6 keeps an independently derived genus-two example; the closing Section 8 conjecture directly cites LiuData26 for numerical evidence.
++
++The finalization scope beginning at Git baseline fa2f374 is to update obsolete working descriptions, polish English and presentation, verify bibliography and publication details, conduct an integrated final reading, then rebuild/export/compile the single TeX source in isolation and commit the finished version. The user has explicitly retained the existing author-name-only signature and generic article format; do not add affiliation, email, acknowledgments, funding, classifications or a journal template without new information.
++
++Keep all four main theorem statements and the user's notation and typography intact. Section 4 and Section 6 higher-coefficient Remarks explicitly omit calculations by user instruction; the final h=1 refinement is explicitly a conjecture. These are not unfinished parts of the four theorem proofs and must not silently strengthen their error estimates. Any new substantive change uses the original author and reviewers; current status comes from the actual workflow, not descriptive prose in an old handoff.

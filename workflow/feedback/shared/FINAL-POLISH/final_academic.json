@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "role": "academic",
+  "agent_id": "/root/s02_academic",
+  "verdict": "pass",
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "source_hash": "47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49",
+  "snapshots": {
+    "a": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+    "b": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+    "s01": "728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981",
+    "s02": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+    "s03": "77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377",
+    "s04": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+    "s05": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+    "s06": "c933ad76be58534340a355c35b1d8aca624477bede5ed41c6fca4672912220dc",
+    "s07": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+    "s08": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b"
+  },
+  "pdf": "build/reviews/s08/r007/full-manuscript/manuscript.pdf",
+  "pdf_sha256": "1d01148c664c3d56ab6d0fb6f0764a6f02d776fb4d99e6b0ffc6b9968b139881",
+  "pages": 100,
+  "checks": {
+    "input_identity": {
+      "status": "pass",
+      "evidence": "Independently recomputed the complete source hash from all ten live unit fingerprints, matched every snapshot to its current submission and state record, and checked all archived inputs/artifacts and earlier signed academic reports. Verified PDF, entry and helper hashes, the unchanged main-title/abstract/preamble/bibliography assembly, the recorded input closure and the exact 100-page PDF extraction. Nine preceding units are approved/fresh; s08 is the current frozen review. The retired C is absent."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Checked the full-article source roles against the actual integrated Introduction, technical source modules and prior complete final-round readings. Mumford/FP GRR and Hodge formulas, GP graph conventions, ABCDGLW general symmetric boundary sources, KMZ inversion and its AC/Faber?Zagier/Zograf credits, MZ fixed-marking coefficients, LX/W absolute constants and profiles, Mirzakhani comparisons versus Shen?Wu all-type bounds, HMT growing-valence control, MaZ inverse background, Buryak ILW and FO contour transfer have distinct credited roles. The article itself bears the full graph/tree remainder, finite-core reconstruction, integration-constant, common-domain and two-singularity arguments. W26v5 receives broader all-order absolute-volume credit in the Introduction and Remark A.2, without replacing the fixed-v4 technical locators or claiming priority for the particular c2(0) reconstruction."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "All 25 used citation keys match the 25 bibliography entries and 25 printed items; the unused KMZ96 duplicate is removed while KMZ96v1 retains its exact version and publication note. Current printed metadata and version notes agree with the retained primary-source audit, including the distinct W26 v4/v5 entries, SW25 CMP 406(8), Article 190 with v4 numbering, FP publication years, DLMF Release 1.2.8/access 2026-11-16, and the LiuData26 fixed commit 88dd4a501ecf3fbc124a823ad1589911f86a14e5. Also checked alpha-label identity: the balancing/nef paper and the separate WP-constant paper are not interchanged by the printed LX26a/LX26b suffixes. Classical Bernoulli/log-kappa, ordered-branch/Aut, full elliptic stack polynomial, descendant-profile, raw/transformed ILW, inverse factorial and Bessel sign conventions retain their explicit translations."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The actual abstract/Introduction and proof conclusions align: Theorem 1.1 includes its proved second correction with O(g^-3), Theorem 1.2 fixes the insertion list and retains O(g^-4), Theorem 1.3 has its independent two-term proof with relative O(g_2^-2), and Theorem 1.4 fixes h and asserts asymptotic equivalence only. HMT?s uniform bridge and whole-graph sums are not inferred from fixed-marking formulas. EGGLS remains a conditional resurgent prediction and posterior check, separate from the article?s unconditional particular reconstruction. The user-authorized supplementary coefficients in Sections 4/6 explicitly omit calculations and do not strengthen main theorems. The closing h=1 candidate and three data rows remain conjecture/evidence only; the separate O_h(g^-1) background estimate is not promoted to a final relative rate."
+    },
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The identified complete article is independently readable: inherited objects and local definitions keep their distinct roles; statements adjoin proofs; source/convention remarks and examples have specific functions; finite identities, formal operations and justified analytic/uniform estimates remain distinct. All mathematical proof obligations lie in the article or precise scholarly references, with no internal script, README, directory, installation or collaboration-file requirement in the printed text. The public data retain direct scholarly credit without completing a theorem proof. The author-name-only signature and generic article format follow the user?s explicit choice and require no invented affiliation, funding or journal template. The two bibliography pages are readable, fixed versions and the full DLMF label print, and the data URL fits after the authorized break."
+    },
+    "reading_extent": {
+      "status": "pass",
+      "evidence": "Read the entire current Section 8 source/interface and its integrated pages 55?66, and checked the complete companion?s extracted text/integration, title and abstract, four main statements, source/claim paragraphs and both bibliography pages. Reused the actual full final-round source readings of the other nine units only after verifying their exact current snapshots and archives. Visual inspection of this same companion covered pages 1, 2, 3, 4, 14, 31, 47, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 74, 95, 99, 100: 23 pages in total, including all Section 8 pages, principal integration joins, supplementary coefficient remarks, current WP/source credit, the final conjecture/table, common analytic-domain statement and bibliography. This is not a claim to have visually inspected every page. Strict standard/overfull diagnostics are empty; eight underfull log entries remain recorded, and no blocking academic presentation issue was found in the inspected pages."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Primary-source context and publication metadata were retained from the actual prior audits and checked against their present uses; no unnecessary new broad web search, numerical reconstruction or old scientific run was performed. Earlier online access limitations remain as recorded: inaccessible journal PDFs or the GitHub cache miss are not presented as newly successful reads.",
+    "This independent academic signature approves only the identified complete native companion and current s08 submission. It is not workflow acceptance, another reviewer?s signature, or approval of a future single-TeX export or isolation compile."
+  ]
+}

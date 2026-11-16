@@ -1,0 +1,1514 @@
+--- previous/AGENTS.md
++++ AGENTS.md
+@@ -6,7 +6,7 @@
+ 
+ - 每个 section 使用 sections/ 中的独立目录；section.tex 是章节入口和证明导读，每个 subsection 使用单独的 .tex 文件。
+ - main.tex 负责装配；tex/preamble.tex 管理共享宏；references.bib 管理正式引文。
+-- sections/included.tex 由脚本生成，只装配正文中连续验收通过的章节。既有 Introduction 是保留的基线，不代表已经通过新流程审核。
++- sections/included.tex 由脚本生成，只装配连续验收且快照有效的章节；已撤回的附录不参与装配。Introduction 与其余在用章节已通过逐节流程，当前轮次和有效性以 workflow.py status 为准。
+ - 每个章节的 INTERFACE.md 记录导出记号、命题、标签、假设、文献及待解决问题，随正文一起审核。
+ - 作者只修改所分配的 section 目录，以及协调者指定的本轮作者答复和交接文件。共享文件的修改向协调者提出，由协调者统一处理。
+ - 审核者不直接改论文；只写自己的审核报告和交接文件，不修改其他审核者的意见。
+@@ -45,7 +45,7 @@
+ - 尽量少设符号；只为反复使用、具有独立作用且确实减轻阅读负担的对象设专名。一次性的短表达式直接写出。按数学用途选择字母组，区分 Hodge 下标、标记编号、计数、次数、解析变量和常数，避免同一论证中的重载与视觉混淆。
+ - 作者在 INTERFACE.md 中记录继承和新增记号、定义位置、作用域及新增符号的必要性；协调者维护共享约定。易读性审核分别检查定义、一致性、符号数量和字母设计；数学审核核对定义、范围和语义，学术规范审核核对文献记号换算。任一未解决的记号问题都须返工。
+ - 明确有限亏格恒等式、固定参数渐近和可交换求和的一致估计之间的差别。控制全体图或卷积的余项，不能只估计每一个固定项。
+-- 第一大定理的二阶系数仍需从精确输入补算；旧表的代数相加不是这些输入和各组贡献的证明。
++- 第一大定理的二阶系数已在第 4 节和附录 A 中完成精确输入、各组贡献及统一余项的论证。今后的修订仍须保留这条完整计算链；旧表的代数相加不能替代证明。
+ - 每个长证明前给整体路线，按功能拆分引理，明确每一步的假设、输出和后续用途。
+ - 定理、引理和命题的陈述后直接接证明，不在二者之间插入历史、credit、版本说明或记号换算；证明导读放在陈述之前，来源和补充说明通常放在证明后的 Remark。必要定义和有效假设仍须在首次使用前、在陈述中清楚给出，不能藏进可选说明。
+ - 回顾经典材料时，在开头说明所采用的准确文献及术语、记号约定，并指出与本文实际不同之处。不要把“标准约定”笼统归给没有该表述的文献。文献版本标识放进参考文献条目，正文用带定位的引用。
+@@ -67,4 +67,4 @@
+     python scripts/validate.py
+     python -m unittest discover -s tests -v
+ 
+-完整命令顺序、报告格式、会话复用和异常恢复见 workflow/PROTOCOL.md。此设置阶段不自动开始论文写作。提交使用现有 ~/.gitconfig 中的身份，不在仓库中覆盖姓名和邮箱。
++完整命令顺序、报告格式、会话复用和异常恢复见 workflow/PROTOCOL.md。依用户授权推进写作和定稿；不根据过期草稿说明重开已完成的问题。提交使用现有 ~/.gitconfig 中的身份，不在仓库中覆盖姓名和邮箱。
+--- previous/references.bib
++++ references.bib
+@@ -42,20 +42,6 @@
+   note    = {Cited numbering follows arXiv:1905.10352v3}
+ }
+ 
+-@article{KMZ96,
+-  author  = {Kaufmann, Ralph and Manin, Yuri and Zagier, Don},
+-  title   = {Higher {Weil--Petersson} Volumes of Moduli Spaces of Stable
+-             {$n$}-Pointed Curves},
+-  journal = {Communications in Mathematical Physics},
+-  volume  = {181},
+-  number  = {3},
+-  year    = {1996},
+-  pages   = {763--787},
+-  doi     = {10.1007/BF02101297},
+-  eprint  = {alg-geom/9604001},
+-  note    = {Cited numbering follows arXiv:alg-geom/9604001v1}
+-}
+-
+ @misc{KMZ96v1,
+   author       = {Kaufmann, Ralph and Manin, Yuri and Zagier, Don},
+   title        = {Higher {Weil--Petersson} Volumes of Moduli Spaces of Stable
+@@ -127,12 +113,16 @@
+   note    = {Cited numbering follows arXiv:1112.1151v1}
+ }
+ 
+-@misc{SW25,
++@article{SW25,
+   author       = {Shen, Yang and Wu, Yunhui},
+   title        = {Arbitrarily Small Spectral Gaps for Random Hyperbolic
+                   Surfaces with Many Cusps},
+   year         = {2025},
+-  howpublished = {arXiv:2203.15681v4},
++  journal      = {Communications in Mathematical Physics},
++  volume       = {406},
++  number       = {8},
++  doi          = {10.1007/s00220-025-05366-7},
++  note         = {Article 190. Cited numbering follows arXiv:2203.15681v4},
+   eprint       = {2203.15681v4},
+   url          = {https://arxiv.org/abs/2203.15681v4}
+ }
+@@ -164,6 +154,16 @@
+   howpublished = {arXiv:2610.35492v4},
+   eprint       = {2610.35492v4},
+   url          = {https://arxiv.org/abs/2610.35492v4}
++}
++
++@misc{W26v5,
++  author       = {Wang, Qihang and Li, Zhiyi and Qiu, Bolin and Wang, Shuaijia
++                  and Zhong, Yuan and Chen, Kun and Xia, Renqiu},
++  title        = {Uniform Large-Genus Asymptotics of {Weil--Petersson} Volumes},
++  year         = {2026},
++  howpublished = {arXiv:2610.35492v5},
++  eprint       = {2610.35492v5},
++  url          = {https://arxiv.org/abs/2610.35492v5}
+ }
+ 
+ @article{EGGLS24,
+@@ -219,7 +219,7 @@
+   note         = {F. W. J. Olver, A. B. Olde Daalhuis, D. W. Lozier,
+                   B. I. Schneider, R. F. Boisvert, C. W. Clark,
+                   B. R. Miller, B. V. Saunders, H. S. Cohl,
+-                  and M. A. McClain, eds.; accessed 2026-11-15}
++                  and M. A. McClain, eds.; accessed 2026-11-16}
+ }
+ 
+ @article{Bur15,
+@@ -303,7 +303,7 @@
+   author       = {Liu, Si-Qi},
+   title        = {{Hodge} integral data},
+   year         = {2026},
+-  howpublished = {\texttt{github.com/\allowbreak siqiliu-tsinghua/\allowbreak hodge\_data}},
++  howpublished = {\texttt{github.com/\allowbreak siqiliu-\allowbreak tsinghua/\allowbreak hodge\_data}},
+   note         = {Exact rational tables for genera 2--20,
+                   commit \texttt{88dd4a5}},
+   url          = {https://github.com/siqiliu-tsinghua/hodge_data/tree/88dd4a501ecf3fbc124a823ad1589911f86a14e5}
+--- previous/sections/01_introduction/INTERFACE.md
++++ sections/01_introduction/INTERFACE.md
+@@ -1,18 +1,18 @@
+ # Introduction
+ 
+-Scientific interface for the complete Introduction author draft.
++Scientific interface for the Introduction.
+ Live review, freshness and acceptance status belongs to
+ workflow/state.json; this document is not an approval signature.
+ The four complete theorem environments, including definitions,
+ labels, constants, ranges and error terms, are byte-identical to
+-the captured baseline in build/closing-writing/baseline.json.
++Git baseline fa2f374 for the current final-polish round.
+ 
+ ## Current prose scope and assembly
+ 
+ The single section.tex remains the entire Introduction; no formal
+-subsections, extra inputs or manifest change is needed. New prose
++subsections, extra inputs or manifest change is needed. The prose
+ provides the motivation for four results grouped into two broad
+-index settings (first-class powers/fixed-index insertions and
++index settings (first Hodge class powers/fixed-index insertions and
+ the top class/fixed defects),
+ precise source attribution, an explanation of the contributions,
+ the two proof routes and a completed-paper reading guide.
+@@ -26,13 +26,17 @@
+ does not import later body dependencies. Theorem references retain
+ their stable labels.
+ 
+-An abstract proposal is supplied separately at
+-build/closing-writing/abstract-proposal.tex for the coordinator to
+-apply verbatim to frontmatter/abstract.tex. The writer has not
+-edited that shared file. The proposal has 144 words, no citations
+-and no mathematical symbols. It reports the four theorem regimes
+-at their original precision, without promoting the supplementary
+-third/fourth coefficients from Section 4.
++The applied abstract is already in the shared frontmatter/abstract.tex.
++It has 144 words, no citations and no mathematical symbols, and expands
++intermediate long-wave (ILW) at first use. It reports the four theorem
++regimes at their original precision without promoting supplementary
++coefficients or the fixed-defect conjecture. This final-polish reading
++proposes no abstract change and does not edit the shared file.
++
++The present prose revision makes the first Hodge class explicit in the
++opening, identifies the last two results by indices growing with genus,
++and separately identifies the fixed insertion list and fixed defect.
++It does not describe the top index g as a fixed insertion index.
+ 
+ ## Global conventions at first use
+ 
+@@ -96,11 +100,11 @@
+ thm:fixed-insertions, thm:top-hodge, thm:fixed-defect.
+ Equation labels: eq:phi-1, eq:phi-2, eq:111, eq:P111, eq:g111,
+ eq:gh11. All six complete numbered equation environments are
+-byte-identical to the captured baseline. Exactly four theorem
++byte-identical to Git baseline fa2f374. Exactly four theorem
+ environments remain, in the original order. No numbered formula
+ or result is added.
+ 
+-The new prose retains the phrase "the ILW equation". The proofs
++The Introduction retains the phrase "the ILW equation". The proofs
+ are in Sections 4,5,6,8 for the respective stable theorem labels.
+ This introductory exposition does not replace those proofs.
+ 
+@@ -127,6 +131,11 @@
+ - W26, Lemma 7.2 and Appendix C.1: first/second descendant
+   coefficient inputs used in Appendix A. Fixed-tuple
+   identification and HMT uniformity remain separate in the proofs.
++- W26v5, Theorem 1.1 and (11.6)--(11.7): broader all-order absolute
++  volume expansion, including the unmarked case. This is background
++  credit; A retains its direct reconstruction of the required second
++  coefficient, without a priority claim or a new proof dependency.
++  W26 remains the fixed v4 key for the preceding profile locators.
+ - MZ15, Section 2: exact recursions used for Appendix A's
+   unconditional second absolute WP coefficient reconstruction.
+   EGGLS24, Section 6.1 and (6.10), is credited as a conditional
+@@ -152,7 +161,7 @@
+ No fresh priority claim, withdrawn source or internal lecture-note
+ citation is introduced.
+ 
+-## Reading routes, precision and remaining work
++## Reading routes and precision
+ 
+ After Section 2, Sections 3--5 give the WP graph route for the
+ first two theorems. Section 6 is an independent entry for the top
+@@ -168,9 +177,10 @@
+ 
+ The fourth theorem remains an asymptotic equivalence; no relative
+ error rate is added. The supplementary higher coefficients are
+-neither repeated nor used. No known source or structural gap is
+-pending. Abstract application, compilation and frozen review
+-remain coordinator work.
++neither repeated nor used. No known source or structural gap
++remains. The abstract has already been applied; current build,
++review and acceptance status is recorded in workflow/state.json
++and the corresponding receipts, rather than historical proposal notes.
+ 
+ ## Historical provenance retained
+ 
+--- /dev/null
++++ sections/01_introduction/final_polish_handoff.md
+@@ -0,0 +1,98 @@
++# S1 final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s01. Dispatch:
++build/final-polish-20261116/rounds/s01-r006-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The previous approved
++S1 round is r005, snapshot
++620b75b92dc1c56b58b10004fabd1a33e2d31e7b3e6e77327047c7bd94fad5dd.
++Live status belongs to workflow/state.json; this is not a review.
++
++## Final reading and limited prose changes
++
++I read the full Introduction and applied abstract, the updated
++project/notation/writer rules and the target outline. The definitions,
++marked-vanishing reduction, normalization domains and two proof routes
++remain coherent. The mathematical and precision statements need no
++revision.
++
++Three small changes have a concrete purpose:
++
++- The opening names the first Hodge class, removing the ambiguous
++  shorthand first class.
++- The transition to the last two results says their indices grow
++  with genus, rather than calling them the opposite range.
++- The interpretation paragraph identifies the fixed insertion list
++  of the second theorem separately from the fixed defect of the
++  fourth. The previous blanket sentence about all insertion indices
++  could be mistaken as covering the growing top index. The paragraph
++  keeps the absent inverse-genus term, cubic dependence, two powers
++  per unit of defect, transport factorial and lack of a final relative
++  error rate.
++
++The stable-graph route, independent top-class route, ILW transport,
++Appendices A/B and shorter reading path already describe the completed
++article accurately. No broad rewrite, new mathematical claim or
++symbol is warranted.
++
++## Additional primary-source attribution
++
++I read https://arxiv.org/abs/2610.35492v5 and the official HTML
++https://arxiv.org/html/2610.35492v5 at Theorem 1.1 and
++(11.6)--(11.7). The added background citation credits its broader
++absolute-volume result, including the unmarked coefficients.
++The Introduction says that A reconstructs only the particular
++second coefficient needed here. No priority is claimed and no
++new proof dependency is introduced. The old W26 key and its
++v4 Lemma 7.2/Appendix C.1 locators are unchanged.
++
++## Current metadata and preservation
++
++INTERFACE now uses the actual Git baseline and records the already
++applied 144-word abstract. It removes outdated abstract-application
++and unfinished-build/review descriptions, deferring live status to
++the workflow records. The abstract needs no proposed edit. The
++existing author-name-only signature and generic format are untouched.
++
++All four complete theorem environments, six numbered equation
++environments, other mathematical displays, inline mathematical
++tokens and labels are preserved byte-for-byte. All old citations
++remain; the sole added citation is the W26v5 background credit. This
++includes the user's and/quad/mbox typography. The mathematical setup
++and marked-domain reduction are unchanged. Old writer, standalone
++and retirement handoffs and all frozen records remain intact.
++
++Only section.tex, INTERFACE.md, this new handoff and the designated
++external FINAL-POLISH/s01_writer.md are edited. No shared abstract,
++bibliography, metadata, other section or state is changed by this
++author. No calculation or native compilation is performed.
++Scoped preservation and UTF-8/LF guards accompany delivery.
++Shared finalization and the native frozen build remain with the
++coordinator. STOP for the original three-role review.
++
++## Shared documentation reconciliation after r006
++
++All three original r006 reviewers returned pass with empty issue
++lists on snapshot
++47bc333539a10928ed60ab90f399806ffda79a7dec98db20c6e98f27cd0cc173.
++The coordinator then invalidated the round solely to reconcile
++shared documentation, not to correct a manuscript or reviewer issue.
++The stale context sentence said that the unused KMZ96 database
++entry remained. The context now correctly records KMZ96v1 with its
++publication information and removal of the unused duplicate; README
++also reflects the current source/assembly map.
++
++I checked the actual current files. Before this follow-up, the only
++selected-input difference from r006 was workflow/context.md.
++references.bib already contained the retained versioned record and
++was byte-identical to r006. The Introduction and INTERFACE remain
++byte-identical to r006, including the polished prose, W26v5 credit,
++four theorem blocks and all mathematics. No interface correction
++is needed.
++
++The r006 author_response.json follows the generated template with
++responses empty because no formal issue is open; no failed review
++or issue ID is invented. This follow-up changes only that authorized
++response, this appended handoff section and the designated external
++s01-r007_writer.md ACK. All registered reports, frozen source and
++other artifacts remain intact. No calculation, compilation or state
++transition is performed by the author. STOP after static checks.
+--- previous/sections/01_introduction/section.tex
++++ sections/01_introduction/section.tex
+@@ -6,7 +6,7 @@
+ differentials varies over the moduli space of curves. Their
+ large-genus behavior depends on how the Chern indices vary with
+ the rank. The four results are grouped into two broad index
+-settings. One covers powers of the first class and fixed-index
++settings. One covers powers of the first Hodge class and fixed-index
+ insertions against that background; the other covers the top class
+ and indices at a fixed distance from it. The results give explicit
+ constants and
+@@ -113,7 +113,7 @@
+ \end{equation}
+ \end{thm}
+ 
+-The next two results concern the opposite range of indices.
++The next two results concern indices that grow with the genus.
+ The inserted class is $\lambda_g$, or $\lambda_{g-h}$ with $h$
+ fixed while $g$ increases. Their scale is governed by the first
+ positive zero of a Bessel function.
+@@ -141,14 +141,15 @@
+ \end{equation}
+ \end{thm}
+ 
+-Theorem~\ref{thm:fixed-insertions} shows that the normalized product
++For the fixed insertion list in
++Theorem~\ref{thm:fixed-insertions}, the normalized product
+ approaches the reciprocal factorial product, with no term of order
+ $g^{-1}$. The first correction depends only on the cubic sum
+-$G(j)$. In Theorem~\ref{thm:fixed-defect}, each fixed increase of
+-the defect contributes two powers of $g$; the factor $1/h!$
+-comes from ordered transport integrals. All insertion indices and
+-defects in these statements are fixed. The last theorem asserts
+-asymptotic equivalence, without a relative error rate.
++$G(j)$. In Theorem~\ref{thm:fixed-defect}, the defect is fixed as
++the genus increases. Each unit of defect contributes two powers
++of $g$; the factor $1/h!$ comes from ordered transport integrals.
++The last theorem asserts asymptotic equivalence, without a relative
++error rate.
+ 
+ Sections~3--5 prove Theorems~\ref{thm:lambda-one}
+ and~\ref{thm:fixed-insertions} by a stable-graph expansion.
+@@ -165,8 +166,11 @@
+ Appendix~A supplies the finite calculations used in this route.
+ They include the descendant coefficients of Wang et al.\
+ \cite[Lemma 7.2 and Appendix C.1]{W26}, correlated loop moments
+-and the core contributions. The required second absolute volume
+-coefficient is reconstructed from the exact recursions of
++and the core contributions. Wang et al.\ give a more general
++absolute expansion to all orders, including the unmarked case
++\cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
++Here we reconstruct only the second absolute volume coefficient
++needed for our argument from the exact recursions of
+ Mirzakhani--Zograf \cite[\S 2]{MZ15}. Its agreement with the
+ conditional resurgent prediction of Eynard et al.\
+ \cite[\S 6.1, (6.10)]{EGGLS24} is an a posteriori check;
+--- previous/sections/02_notation/02_tautological_classes.tex
++++ sections/02_notation/02_tautological_classes.tex
+@@ -90,7 +90,9 @@
+ \end{equation}
+ \end{thm}
+ 
+-For clarity, the $\kappa$-class in the cited formulation of
++\begin{prf}
++We apply the cited Mumford theorem and check the logarithmic
++kappa and ordered-branch conventions. The $\kappa$-class in
+ \cite{FP00} is nonlogarithmic.  For every integer $a\geq0$, its
+ conversion to our convention is
+ \begin{equation}
+@@ -121,6 +123,7 @@
+ \end{equation}
+ In particular, on $\MM_g$ for $g\geq2$,
+ $12\lambda_1=\kappa_1+\delta$.
++\end{prf}
+ 
+ The vanishing of even Chern characters now gives a useful algebraic
+ form of every Hodge insertion.
+--- previous/sections/02_notation/03_gluing.tex
++++ sections/02_notation/03_gluing.tex
+@@ -11,7 +11,7 @@
+ form a finite set $H(\Gamma)$ with an incidence map to the vertex set
+ $V(\Gamma)$ and an involution.  The two-element orbits of the
+ involution are the edges $E(\Gamma)$; its fixed points are the legs,
+-labelled $1,\ldots,n$.
++labeled $1,\ldots,n$.
+ 
+ In the cited convention, $H$ contains only paired half-edges, its
+ involution has no fixed points, and $L$ is a separate set of legs.
+@@ -45,7 +45,7 @@
+ \qquad
+ \xi_\Gamma:\MM_\Gamma\longrightarrow\MM_{g,n}.
+ \end{equation}
+-The markings of each factor are labelled by its incident flags, and
++The markings of each factor are labeled by its incident flags, and
+ $\xi_\Gamma$ glues the two markings belonging to each edge.  We work
+ on this product before taking its quotient by
+ $\operatorname{Aut}\Gamma$.  Thus the gluing pushforward in a graph
+@@ -108,7 +108,7 @@
+ family makes the incidence map constant.  Its kernel has constant
+ dimension $b_1(\Gamma)$, including over further degenerations of the
+ vertex curves.  The quotient is therefore a trivial bundle on the
+-labelled product, and the Whitney formula proves
++labeled product, and the Whitney formula proves
+ \eqref{eq:s02:hodge-factorization}.
+ \end{prf}
+ 
+--- previous/sections/02_notation/04_boundary_and_forgetting.tex
++++ sections/02_notation/04_boundary_and_forgetting.tex
+@@ -112,9 +112,10 @@
+ \quad(1\leq i\leq n,\ a\geq0).
+ \end{equation}
+ \begin{prf}
+-The first comparison follows from the
+-cotangent line under contraction of this three-pointed tail; its
+-vanishing along that divisor has multiplicity one.
++The natural map from the pulled-back old cotangent line to the
++source cotangent line is an isomorphism away from this three-pointed
++tail and vanishes to order one along its divisor. This gives the
++first identity.
+ 
+ For the kappa comparison, consider the universal curve over
+ $\MM_{g,n+1}$ and its stabilization to the pulled-back universal
+@@ -237,7 +238,7 @@
+ right side and group by the resulting blocks of original labels.  A
+ block formed from $k$ intermediate blocks acquires the cycle factor
+ $(k-1)!$.  The signed generating series for one intermediate nonempty
+-block of labelled elements is $1-e^{-z}$, for a formal variable $z$.
++block of labeled elements is $1-e^{-z}$, for a formal variable $z$.
+ Consequently, the generating series for each resulting block is
+ \[
+ \sum_{k=1}^{\infty}\frac{(1-e^{-z})^k}{k}
+--- previous/sections/02_notation/INTERFACE.md
++++ sections/02_notation/INTERFACE.md
+@@ -1,6 +1,6 @@
+ # Notation and geometric identities
+ 
+-Document role: **scientific interface for the complete s02 author submission**. Live review and acceptance status are recorded in `workflow/state.json`; this interface does not confer approval. The Introduction + 2.1--2.2 trials remain historical scoped reviews, not acceptance of s02. No part of this document claims a proof of the four asymptotic targets.
++Scientific interface for Section 2. Live review, freshness and acceptance status are recorded in `workflow/state.json` and the corresponding frozen receipts; this interface does not confer approval. The results exported here are finite-genus identities, not proofs of the four asymptotic theorems.
+ 
+ ## Scope and inherited conventions
+ 
+@@ -30,12 +30,12 @@
+ | `\delta`, `\widetilde\Delta_{g,n}`, `\xi`, `\psi_+,\psi_-` | Before `eq:s02:ordered-boundary` | Total reduced boundary divisor, cover with a chosen node and ordered branches, its forgetful/gluing map and two branch cotangent classes; fixes `\delta=(1/2)\xi_*1` |
+ | `B_m` | `eq:s02:bernoulli-convention` | Ordinary Bernoulli numbers for integers `m>=0`, formal generating variable `z`; `B_2=1/6` |
+ | `D_i` | Argument after `eq:s02:kappa-conversion` | Section image on the universal curve, `1<=i<=n`; local to nonlogarithmic/logarithmic conversion |
+-| `\Gamma`, `V(\Gamma)`, `H(\Gamma)`, `E(\Gamma)`, flags `f,f'` | 2.3 opening, recalled from `GP03`, Appendix A.1 with the stated translation | Finite connected stable graph, vertex/flag/edge sets; involution pairs edge flags, its fixed flags are legs labelled `1,...,n`. Our all-flags `H(\Gamma)` combines GP03's paired half-edge set `H` and separate leg set `L`; GP03's involution has no fixed points. The source letters are local to this comparison |
++| `\Gamma`, `V(\Gamma)`, `H(\Gamma)`, `E(\Gamma)`, flags `f,f'` | 2.3 opening, recalled from `GP03`, Appendix A.1 with the stated translation | Finite connected stable graph, vertex/flag/edge sets; involution pairs edge flags, its fixed flags are legs labeled `1,...,n`. Our all-flags `H(\Gamma)` combines GP03's paired half-edge set `H` and separate leg set `L`; GP03's involution has no fixed points. The source letters are local to this comparison |
+ | `g_v`, `n_v`, `b_1(\Gamma)` | Before/in `eq:s02:graph-genus` | Nonnegative vertex genus, incident-flag count, first Betti number `|E|-|V|+1`; satisfy vertex stability and total-genus constraints |
+ | `\operatorname{Aut}\Gamma`, `\mathcal G_{g,n}` | 2.3 opening | Finite automorphism group preserving all leg labels and graph data; finite set of graph isomorphism classes. Required for graph weights |
+ | `\MM_\Gamma`, `\xi_\Gamma` | `eq:s02:gluing-map` | Labelled product of vertex moduli stacks and gluing morphism; computations precede quotienting by graph automorphisms |
+ | `\EE_v`, `\lambda_j^{(v)}`, `\kappa_a^{(v)}`, `\psi_f` | After `eq:s02:gluing-map` | Classes/bundle pulled back from the incident vertex factor; inherited Chern rank conventions and nonnegative kappa indices apply |
+-| `H_1(\Gamma;\mathbb C)` | Paragraph before `lmm:s02:hodge-normalization` | Complex cycle space, kernel of the oriented edge-to-vertex incidence map, dimension `b_1(\Gamma)`; gives the constant-bundle quotient on the labelled product |
++| `H_1(\Gamma;\mathbb C)` | Paragraph before `lmm:s02:hodge-normalization` | Complex cycle space, kernel of the oriented edge-to-vertex incidence map, dimension `b_1(\Gamma)`; gives the constant-bundle quotient on the labeled product |
+ | `h_v` | `crl:s02:defect-allocation` | Integer vertex defects `0<=h_v<=g_v`, with total `h-b_1(\Gamma)`; graph cycles consume defect |
+ | `K_a(x,y)` | `eq:s02:edge-kernel` | Symmetric formal edge kernel; `x,y` formal variables, `a` scalar parameter, `t` bound formal integration variable. Repeated node weights justify its name |
+ | `a,c,d_i` in boundary proposition | `prp:s02:boundary-exponential` | Scalar parameters and nonnegative old marking exponents, `1<=i<=n`; local to this specialization |
+@@ -57,8 +57,8 @@
+ | `thm:s02:grr`, `eq:s02:grr` | Marked Mumford formula for every integer `a>=1`: even character vanishes; odd character uses logarithmic kappa, negative marking terms, ordinary Bernoulli numbers and the half ordered-node pushforward |
+ | `eq:s02:kappa-conversion`, `eq:s02:lambda-one-grr` | Nonlogarithmic/logarithmic conversion for integer `a>=0`; `12lambda_1=kappa_1+delta-sum psi_i`, with the unmarked case restricted to `g>=2` |
+ | `lmm:s02:chern-exponential`, `eq:s02:chern-exponential`, `eq:s02:lambda-two-three` | Root-based formal Chern exponential and its degree-two/three consequences; all finite-rank conventions inherited |
+-| `eq:s02:graph-genus`, `eq:s02:graph-stability-sum`, `eq:s02:gluing-map` | Stable graph data, genus and stability sums, labelled product/gluing; product dimension `3g-3+n-|E|` |
+-| `lmm:s02:hodge-normalization`, `eq:s02:hodge-normalization`, `eq:s02:hodge-factorization` | Exact vector-bundle sequence on the labelled product with quotient `H_1(\Gamma;\mathbb C)\otimes\mathcal O`, and Chern factorization. The quotient's graph-automorphism representation is not claimed trivial |
++| `eq:s02:graph-genus`, `eq:s02:graph-stability-sum`, `eq:s02:gluing-map` | Stable graph data, genus and stability sums, labeled product/gluing; product dimension `3g-3+n-|E|` |
++| `lmm:s02:hodge-normalization`, `eq:s02:hodge-normalization`, `eq:s02:hodge-factorization` | Exact vector-bundle sequence on the labeled product with quotient `H_1(\Gamma;\mathbb C)\otimes\mathcal O`, and Chern factorization. The quotient's graph-automorphism representation is not claimed trivial |
+ | `crl:s02:defect-allocation`, `eq:s02:defect-allocation` | For integer `0<=h<=g`, sum over `0<=h_v<=g_v` with total `h-b_1`; empty if `b_1>h`. At `h=0` only trees remain, with top Hodge class at every vertex |
+ | `eq:s02:tautological-gluing` | Additivity of logarithmic `kappa_a`, integers `a>=0`, and leg cotangent pullback under gluing |
+ | `prp:s02:boundary-exponential`, `eq:s02:edge-kernel`, `eq:s02:boundary-exponential` | Scalar parameters `a,c`, integers `d_i>=0`: stable-graph expansion of `exp(a delta+c kappa_1) prod psi_i^{d_i}` with one kernel per edge and weight `1/Aut`. Formal fractions divide as series; no inverse cotangent class is used |
+@@ -71,7 +71,7 @@
+ 
+ ## Reading modules and source placement
+ 
+-USER-004 reorganizes exposition without changing any of the 34 numbered equations, existing mathematical-result labels, hypotheses or result numbers. Each proposition/lemma statement remains adjacent to its proof. The independent section counters of `rmk` and `exm` do not share the substantive-result counter.
++The historical USER-004 revision organized the source Remarks and one-edge Example without changing the numbered equations, existing result labels, hypotheses or result numbers. The present final polish also makes the GRR convention check an explicit proof immediately after the cited theorem. It applies Mumford's theorem rather than reproving it. The independent section counters of `rmk` and `exm` do not share the substantive-result counter.
+ 
+ | Module | Reader purpose and location |
+ | --- | --- |
+@@ -91,14 +91,13 @@
+ - `FP00`, Section 1.1, unnumbered Theorem (Mumford), and Section 1.3, (16): checked primary marked GRR presentation and nonlogarithmic/logarithmic marking conversion. The clean family theorem is not Proposition 1. Section 1.3, (17)--(18) gives the one-node Hodge sequences. Author copy: https://webspace.science.uu.nl/~faber010/17.pdf .
+ - `LX26b`, arXiv:2610.39462v1 (2026-10-29), proof of Proposition 4.4, (4.2)--(4.3): partial-normalization structure-sheaf sequence, constant graph cohomology, and the dual Hodge quotient. The manuscript supplies the family residue proof and makes the nontrivial possible automorphism action explicit. Only this normalization argument is used, not the nefness assertion of that proposition. Primary link: https://arxiv.org/abs/2610.39462v1 .
+ - `ABCDGLW23`, numbering of arXiv:1905.10352v3 (2020-10-03), Section 3.6, definition of `jmath` immediately before Proposition 3.9, and Lemma 3.10, (3.18)--(3.22): the weighted one-edge pushforward is our `delta`. The edge series is specialized to constant `a`, the vertex series to linear coefficient `c`, giving `K_a`. The primary statement is cohomological; the paper repeats the algebraic normal-line/self-intersection and graph multiplicity proof in rational Chow, without assuming an injective cycle map. Primary text: https://arxiv.org/html/1905.10352v3#S3.SS6 . Journal JLMS 107 (2023), 254--332, DOI 10.1112/jlms.12686.
+-- `KMZ96v1`, the explicit versioned preprint entry, Section 2: (2.4) defines their multiple pushforward, Theorem 2.2 (2.6) gives inversion, Lemma 2.2.1 (2.8) gives the cycle formula, and (2.9)--(2.11) gives the geometric recursion. Their `omega_n(a)` is our logarithmic `kappa_a`; the cohomological grading `2a` becomes complex codimension `a`. Ordered-block `1/k!` becomes an unordered partition sum. KMZ credit the geometric formula to Arbarello-Cornalba and earlier unpublished Faber-Zagier; that credit is retained. The one-point kappa comparison is proved algebraically here, and the psi comparison follows the cotangent line under contraction, so the push-pull recursion applies in Chow. All these version-specific formula citations now use `KMZ96v1`; the journal database entry `KMZ96` is uncited in this section. Primary text: https://arxiv.org/html/alg-geom/9604001 .
++- `KMZ96v1`, the explicit versioned preprint entry, Section 2: (2.4) defines their multiple pushforward, Theorem 2.2 (2.6) gives inversion, Lemma 2.2.1 (2.8) gives the cycle formula, and (2.9)--(2.11) gives the geometric recursion. Their `omega_n(a)` is our logarithmic `kappa_a`; the cohomological grading `2a` becomes complex codimension `a`. Ordered-block `1/k!` becomes an unordered partition sum. KMZ credit the geometric formula to Arbarello-Cornalba and earlier unpublished Faber-Zagier; that credit is retained. The one-point kappa comparison is proved algebraically here, and the psi comparison follows the cotangent line under contraction, so the push-pull recursion applies in Chow. All these version-specific formula citations now use `KMZ96v1`; the unused duplicate `KMZ96` key has been removed, and `KMZ96v1` records the formal journal publication. Primary text: https://arxiv.org/html/alg-geom/9604001 .
+ 
+ All six cited keys exist in the shared bibliography. Primary PDF copies and extracts are under `refs/` and `build/ref-text/`; internal research notes are not used as evidence. The ABCDGLW numbering version is fixed in its bibliography note; the manuscript no longer repeats the raw version identifier.
+ 
+-## Review status and remaining work
++## Scientific completeness and historical provenance
+ 
+-- The full mathematical draft and roadmap are supplied; no placeholder remains. No known source locator or mathematical gap is left open by the writer, subject to independent review.
+-- The USER-004 organization/attribution response, feedback path and feedback SHA-256 are recorded in the current `writer_handoff.md`. The approved formal r002 snapshot remains immutable; this reopened submission requires a fresh whole-section review by the same original agents.
+-- The first two subsections and the Introduction are unchanged in this extension. Their historical trials, USER-001/002/003 feedback and author responses, and the ACADEMIC-001 punctuation correction remain in `workflow/trials/s02-01-02/`; those records are not whole-section approval.
+-- Full-section strict build and repository validation must be checked against the final saved source, then the coordinator submits the frozen formal snapshot. The original writer and three original reviewers remain responsible for revisions and rechecks.
+-- Later sections still need the uniform estimates that justify asymptotic use of the finite-genus identities. No later section was drafted or amended here.
++- The four subsections and their roadmap are complete mathematical text. No known source locator or mathematical gap remains in these identities.
++- Uniform graph estimates are established in Section 3 and used in the later proofs. They are separate from the finite-genus statements exported here, not unfinished work within this section.
++- Current review, build and acceptance status belongs to the workflow records and frozen receipts. The present final-polish reading uses Git baseline fa2f374; it does not certify its own new snapshot.
++- The USER-004 response, feedback path and SHA-256 remain in the original `writer_handoff.md`. Earlier Introduction/2.1--2.2 trials and USER-001/002/003 responses, including the ACADEMIC-001 punctuation correction, remain historical records under `workflow/trials/s02-01-02/`. All old handoffs and frozen reports are preserved.
+--- /dev/null
++++ sections/02_notation/final_polish_handoff.md
+@@ -0,0 +1,68 @@
++# S2 final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s02. Dispatch:
++build/final-polish-20261116/rounds/s02-r017-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The previous approved
++S2 round is r016, snapshot
++272cb11c349b12c21416df3f297a4eee5d5fa7439fac34c0378c8d2ab5b030d4.
++Live status belongs to workflow/state.json; this is an author delivery.
++
++## Complete final reading
++
++I read the entry and all four subsections, the scientific interface
++and current section outline, retaining the original source context.
++
++- 2.1 correctly inherits the introductory stack/Chow and integration
++  conventions. The factorial identity, local ranges, fixed-parameter
++  table and finite-genus/uniform-estimate distinction need no revision.
++- 2.2 defines cotangent lines, logarithmic kappa and normalized Chern
++  characters before their use. Degrees, source/base conventions,
++  Bernoulli normalization, ordered-node half factor and marking
++  correction remain exact. The existing convention computation now
++  forms an explicit proof immediately after the GRR statement. Its
++  opening says that it applies the cited Mumford theorem and checks
++  conventions; it does not purport to reprove the deep result.
++- 2.3 already gives the actual GP03 flag/leg translation before
++  using graph notation. The labeled-product normalization proof,
++  possible nontrivial automorphism action and defect ranges are
++  clear and retained. Ordinary prose now uses American labeled.
++- 2.4 keeps the formal edge kernel, algebraic Chow proof, weights,
++  rational-tail hypotheses and unordered-partition coefficients.
++  The old cotangent comparison now explicitly names the natural
++  map from the pulled-back line to the source line and its simple
++  zero, replacing an ambiguous pronoun about a line's vanishing.
++  The positive-new-psi condition, surviving kappa correction and
++  separate minimum-degree-two cutoff remain unchanged.
++
++## Scope and metadata
++
++No equation, mathematical token, principal statement, label,
++hypothesis, source citation or result numbering is changed. The
++additional proof environment encloses the existing GRR convention
++argument and specialization, so it adds no mathematical result.
++All other statement/proof adjacencies and short source/example
++modules are retained. No additional abbreviation or inherited
++notation inventory is introduced.
++
++INTERFACE is a current scientific interface: it no longer treats
++completed later estimates or an old reopened round as pending work.
++It records the retained KMZ96v1 entry with publication information
++and deletion of the unused duplicate, without changing a locator.
++American spelling is used consistently in current descriptive prose.
++The old writer_handoff and every frozen/trial record remain intact.
++
++Only the assigned current TeX/interface, this new handoff and the
++external FINAL-POLISH/s02_writer.md are edited. No other section,
++shared source, citation database, state or old handoff is modified.
++No geometric calculation, private checking program or native build
++is run. Scoped preservation and UTF-8/LF guards accompany delivery.
++STOP for the coordinator's native build and original three reviewers.
++
++The actual text guards preserve all nine principal statements,
++28 numbered equation environments, 34 mathematical displays,
++244 inline mathematical tokens, 46 labels and 11 citations.
++The old interface's ambiguous 34-numbered-equations count is
++removed; the full earlier Introduction-plus-S2 preview also
++included six Introduction equations. The GRR wrapper adds one
++proof environment without changing a result or equation number.
++The entry, 2.1 and original writer_handoff remain byte-identical.
+--- previous/sections/03_graph_asymptotics/01_wp_inputs.tex
++++ sections/03_graph_asymptotics/01_wp_inputs.tex
+@@ -41,7 +41,8 @@
+ The following inputs have different roles. Fixed-marking expansions
+ identify coefficients; bounds over all stable types control the graph
+ tail; explicit remainder bounds permit the retained valences to grow.
+-We write $\Gamma(k)=(k-1)!$ for a positive integer $k$.
++Euler's gamma function satisfies $\Gamma(k)=(k-1)!$ for a positive
++integer $k$.
+ For the uniform inputs fix an integer $c_{\mathrm H}>600$ which also
+ exceeds the constant in \cite[Lemma~2.6]{HMT25}.
+ 
+--- previous/sections/03_graph_asymptotics/02_deformation_and_loops.tex
++++ sections/03_graph_asymptotics/02_deformation_and_loops.tex
+@@ -56,7 +56,7 @@
+ For formal variables $x,y$ its edge kernel is
+ $K_{\alpha u}(x,y)=\alpha u\int_0^1e^{-\alpha u s(x+y)}\dd s$.
+ Integrate the resulting class identity, then apply the projection
+-formula on each labelled vertex product. This yields
++formula on each labeled vertex product. This yields
+ \eqref{eq:s03:integrated-graph-formula}, including at $u=0$; no division
+ by $u$ is involved.
+ \end{prf}
+--- previous/sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex
++++ sections/03_graph_asymptotics/03_vertex_and_graph_bounds.tex
+@@ -4,7 +4,7 @@
+ 
+ Write $Z_\Gamma(u)$ for the summand of
+ \eqref{eq:s03:integrated-graph-formula} indexed by $\Gamma$.
+-We first bound every vertex, then sum over labelled pairings. A short
++We first bound every vertex, then sum over labeled pairings. A short
+ factorial-series estimate will control the resulting Gaussian integral,
+ including graphs with arbitrarily many vertices or large valences.
+ 
+@@ -86,11 +86,11 @@
+ Lemma~\ref{lmm:s03:vertex-bound}. Label the $m$ vertices and the
+ $n_i$ incident flags at vertex $i$. After summing over ordered type
+ lists, division by $m!\prod_i n_i!$ gives precisely
+-$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labelled
++$1/|\operatorname{Aut}\Gamma|$. Indeed, the number of these labeled
+ realizations of a graph is $m!\prod_i n_i!/|\operatorname{Aut}\Gamma|$
+ by orbit-stabilizer. Summing ordered lists is essential when types
+ repeat. Stack stabilizers inside a vertex integral have already been
+-included in its volume and do not enter this graph-labelling count.
++included in its volume and do not enter this graph-labeling count.
+ 
+ If there are $2E$ flags, with an integer $E\geq0$, there are
+ $(2E-1)!!$ pairings, with one empty pairing when $E=0$.
+@@ -165,9 +165,10 @@
+ To prove the full tail estimate, we first discard large Gaussian
+ values, where the density controls the whole polynomial degree.
+ At the remaining values, coefficient extraction handles graphs
+-without a large vertex. For graphs with one, either a single other
+-vertex already has large complexity, or many bounded-complexity vertices
+-produce the required total; these two cases need different estimates.
++without a large vertex. When a large vertex exists, either one of
++the other complexities reaches the prescribed tail threshold,
++or several smaller complexities add up to it. We estimate these
++cases separately.
+ 
+ \begin{prp}[Absolute graph tail]
+ \label{prp:s03:graph-tail}
+--- previous/sections/03_graph_asymptotics/04_finite_cores.tex
++++ sections/03_graph_asymptotics/04_finite_cores.tex
+@@ -21,10 +21,10 @@
+ G=g-c-p,\qquad n=n_0+2p
+ \end{equation}
+ are the genus and valence of the original large vertex.
+-For the graph $\Gamma(p)$ obtained by restoring $p$ loops,
++For the graph $\Gamma_p$ obtained by restoring $p$ loops,
+ \begin{equation}
+ \label{eq:s03:core-automorphisms}
+-|\operatorname{Aut}\Gamma(p)|
++|\operatorname{Aut}\Gamma_p|
+ =2^pp!\,|\operatorname{Aut}\Gamma_{\rm c}|.
+ \end{equation}
+ \end{lmm}
+@@ -57,7 +57,7 @@
+ \begin{equation}
+ \label{eq:s03:loop-majorant}
+ \sup_{u\in\mathcal K}
+- \frac{|Z_{\Gamma(p)}(u)|}{V_{g,0}}
++ \frac{|Z_{\Gamma_p}(u)|}{V_{g,0}}
+ \leq g^{-q}\frac{C^{p+1}}{p!},
+ \end{equation}
+ with $C$ independent of $g,p$ for sufficiently large $g$.
+@@ -146,7 +146,7 @@
+ $\mathcal K\subset\mathbb C$,
+ \begin{equation}
+ \label{eq:s03:core-expansion}
+-\frac{Z_{\Gamma(p)}(u)}{V_{g,0}}
++\frac{Z_{\Gamma_p}(u)}{V_{g,0}}
+ =g^{-q}\sum_{r=0}^K\frac{\gamma_{\Gamma_{\rm c},p,r}(u)}{g^r}
+  +\varepsilon_{g,p,K}(u)
+ \end{equation}
+@@ -324,16 +324,15 @@
+ \end{prf}
+ 
+ \begin{rmk}[Coefficient computation]
+-Formula~\eqref{eq:s03:coefficient-rule} is a finite-core rule at
+-each inverse-genus order, with an absolutely summable loop series.
+-Together with \eqref{eq:s03:fixed-n-volume}, it already yields
++At each fixed order, \eqref{eq:s03:coefficient-rule} sums contributions
++from finitely many cores, with an absolutely summable loop series.
++Together with \eqref{eq:s03:fixed-n-volume}, it gives
+ $a_g/N_g=e^{\Cin(2\pi)}/\sqrt\pi+O(g^{-1})$.
+-The next section will compute the coefficients needed for the
+-two corrections in Theorem~\ref{thm:lambda-one}; their numerical
+-values have not been inputs to the graph estimates.
++Section~4 computes the two corrections in Theorem~\ref{thm:lambda-one}.
++Their values are not inputs to the graph estimates.
+ \end{rmk}
+ 
+-The same argument allows a fixed number of labelled external
++The same argument allows a fixed number of labeled external
+ markings. We state the extension additively, since its leading leg
+ factors may vanish. For further graph insertions we give an explicit
+ majorant condition, including the polynomial loss it permits.
+@@ -387,18 +386,18 @@
+ 
+ For the absolute marked-graph estimate, repeat the pairing count
+ with total complexity $H=2g-2+r$. If vertex $i$ receives $r_i$
+-of the labelled legs, only its $n_i-r_i$ other flags are paired.
++of the labeled legs, only its $n_i-r_i$ other flags are paired.
+ Its valence polynomial becomes
+ $P_{k_i+2}^{(r_i)}(x)=P_{k_i+2-r_i}(x)\leq P_{k_i+2}(x)$
+ when $r_i\leq k_i+2$, and is zero otherwise. Distributing $r$
+-labelled legs among $m$ vertices gives $m^r$ possibilities.
++labeled legs among $m$ vertices gives $m^r$ possibilities.
+ For fixed $r$ this is at most $C_r^m$ and is absorbed into the
+ constant in \eqref{eq:s03:gaussian-majorant}. The extra factor
+ $B^r$ is fixed. Thus the full Gaussian proof applies with scale
+ $\Gamma(2g-2+r)(4\pi^2)^{2g-3+r}/\sqrt g$.
+ Its ratio to $F_g$ is $O_r(g^r)$. Multiplication by $(1+H)^s$
+ proves \textup{(ii)}, with no additional loss for distributing
+-the fixed labelled legs.
++the fixed labeled legs.
+ 
+ For the expansion in \textup{(i)}, fix a marked core. Let $n_0$
+ include both its incident edge flags and its external legs at the
+--- previous/sections/03_graph_asymptotics/INTERFACE.md
++++ sections/03_graph_asymptotics/INTERFACE.md
+@@ -1,6 +1,6 @@
+ # Uniform asymptotics for stable graph sums
+ 
+-Document role: scientific interface for the complete s03 author submission.
++Scientific interface for Section 3.
+ Live review and acceptance status are recorded in `workflow/state.json`.
+ This document exports the submitted statements and their hypotheses; it does
+ not confer approval or a proof of the four complete introductory targets.
+@@ -10,13 +10,13 @@
+ The Introduction supplies the stack/Chow/complex-codimension conventions,
+ Hodge notation, lowercase integral families, normalized bracket, `N_g`,
+ `g_2=2g-3`, Bessel names and four target labels. These are inherited directly.
+-The s02 dependency is the approved r006 snapshot
++Historical scientific provenance: the original s02 dependency was r006, snapshot
+ `a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91`.
+ Its psi, logarithmic kappa, boundary, stable-graph, gluing and automorphism
+ conventions are unchanged. We use its exact boundary formula, the unmarked
+-`12lambda_1=kappa_1+delta` and factorial conversion. All estimates in s03
+-are new analytic statements and do not follow from s02's finite-genus
+-identities alone.
++`12lambda_1=kappa_1+delta` and factorial conversion. The uniform graph and summability estimates require analytic inputs
++beyond s02's finite-genus identities; their source and proof roles
++are specified below.
+ 
+ All truncation orders, marking counts in fixed-marking claims, and requested
+ derivative orders are fixed before genus tends to infinity. Growing graph
+@@ -32,7 +32,7 @@
+ | `alpha=2pi^2` | 3.1 opening | WP scale, used in every subsequent WP integral; first introduced where needed |
+ | `G,n`, `y_i`, `V_{G,n}(y)`, `V_{G,n}` | `eq:s03:wp-definition` | A stable vertex genus/marking pair, real nonnegative boundary lengths, length and cusp volumes; inherited stack integration |
+ | `d_i`, vector `d`, `|d|`, `[tau_d]_{G,n}` | `eq:s03:descendants` | Nonnegative integer descendant tuple and total degree; bracket zero beyond dimension, empty tuple gives `V_{G,0}` |
+-| `Gamma(k)` | Before `prp:s03:wp-inputs` | `(k-1)!` for positive integers; factorial notation in uniform bounds, not a graph |
++| `Gamma(k)` | Before `prp:s03:wp-inputs` | Euler's gamma function, equal to `(k-1)!` for positive integers; factorial notation in uniform bounds, not a graph |
+ | `c_r(n)` | `eq:s03:fixed-n-volume` | Fixed-n WP expansion coefficients, coherent in truncation; `c_1` explicit in `eq:s03:c-one` |
+ | `c_H` | Before `prp:s03:wp-inputs` | One fixed HMT integer greater than 600 and the constant in its Lemma 2.6; needed to retain the actual thresholds |
+ | `T_{G,n}`, `eta_r`, `epsilon_K` | `eq:s03:hmt-form` and its three cases | Local quantified notation for each of three separate HMT quantities, its coefficients and remainder; no new permanent names for the two ratio families |
+@@ -43,17 +43,17 @@
+ | `f(t)`, `S(u)` | `eq:s03:loop-functions` | Entire half-edge and loop functions; sine quotient interpreted as a series; Cin identity first for real `u>=0`, then continued through `S` |
+ | `Z_Gamma(u)` | 3.3 opening | Complete summand in the exact integrated graph formula; used for absolute tails and core expansions |
+ | `k_v`, large vertex, `q` | Before `lmm:s03:pairing-majorant` | Positive vertex complexity `2g_v-2+n_v`, vertex above half the total, and total complexity away from it; graph-dependent, with `q` defined only when large vertex exists |
+-| `H` | Counting estimates in 3.3 and the two ratio/marked counting proofs | Temporary scalar `2g-2`, or explicitly `2g-2+r` in the fixed-labelled-leg extension. Local to these calculations; distinct from inherited flag set `H(Gamma)` |
+-| `C_0`, `sigma`, `X`, expectation `E` | `lmm:s03:pairing-majorant` | Compact-dependent constants and a half-normal variable with its explicit density; sums every labelled pairing at once |
++| `H` | Counting estimates in 3.3 and the two ratio/marked counting proofs | Temporary scalar `2g-2`, or explicitly `2g-2+r` in the fixed-labeled-leg extension. Local to these calculations; distinct from inherited flag set `H(Gamma)` |
++| `C_0`, `sigma`, `X`, expectation `E` | `lmm:s03:pairing-majorant` | Compact-dependent constants and a half-normal variable with its explicit density; sums every labeled pairing at once |
+ | `P_m(x)`, `U_k(x)` | `eq:s03:counting-polynomials` | Local truncated exponential and factorial polynomial for valence sums; cap `n<=k+2` is retained |
+ | `T_{M,c}(H,x)`, `epsilon_0`, `eta` | `eq:s03:short-series` and proof | Local short-complexity series, small range constants; `c` is only 2 or 3 in this lemma |
+ | `1_A`, `epsilon`, Gaussian split points | `prp:s03:graph-tail` proof | Indicator of an event, small cutoff chosen after fixed majorant constants; split at `epsilon H` and `H^(1/4)` |
+-| `Gamma_c`, core type, `Gamma(p)` | 3.4 opening and `lmm:s03:finite-cores` | Graph with its distinguished large vertex, obtained by contracting its loops and increasing genus. Type excludes the forced large-genus label; `Gamma(p)` restores `p` loops when legal |
++| `Gamma_c`, core type, `Gamma_p` | 3.4 opening and `lmm:s03:finite-cores` | Graph with its distinguished large vertex, obtained by contracting its loops and increasing genus. Type excludes the forced large-genus label; `Gamma_p` restores `p` loops when legal |
+ | `p`, `n_0`, `c`, `G,n` in a core | `eq:s03:core-parameters` | Nonnegative large-vertex loop count, core valence and fixed genus loss; unmarked `2c=q+n_0`, restored `(G,n)=(g-c-p,n_0+2p)` |
+ | `Q_K(p)`, `N`, `z` | `prp:s03:core-expansion` proof | Local polynomial majorant, number of finite ratio factors and coefficient variable; proves polynomial-in-p multiplication errors |
+ | `gamma_{Gamma_c,p,r}(u)` | `prp:s03:core-expansion` | Auxiliary entire core/loop coefficients, with factorially summable compact bounds; needed to construct the main coefficients |
+ | `gamma_k(u)` | `thm:s03:graph-expansion` | Entire coefficients of `Z_g/V_{g,0}`; `gamma_0=e^S`, constructed by finite cores and a normally convergent loop sum |
+-| `r`, external `t_i`, derivative `d_i` | `crl:s03:marked-extension`(i) | Fixed number of labelled legs, complex external parameters and fixed nonnegative psi derivative orders; additive expansion, including zeros of its leading term |
++| `r`, external `t_i`, derivative `d_i` | `crl:s03:marked-extension`(i) | Fixed number of labeled legs, complex external parameters and fixed nonnegative psi derivative orders; additive expansion, including zeros of its leading term |
+ | `s`, `D_Gamma`, `C,C_1,B,T` | `crl:s03:marked-extension`(ii) | Fixed polynomial weight degree and an explicitly majorized family of graph contributions; constants uniform in genus and graph, allowed compact dependence |
+ 
+ Generic positive constants and bound indices have the scopes indicated by
+@@ -73,15 +73,15 @@
+ | `eq:s03:hmt-form`, `eq:s03:hmt-descendant`, `eq:s03:hmt-cusp`, `eq:s03:hmt-genus` | Exact HMT thresholds, coefficient bounds and polynomial remainders at every fixed order; A3 is the inverse cusp ratio; A1 has no independent total-degree threshold |
+ | `lmm:s03:exact-deformation`; `eq:s03:normalization-links`, `eq:s03:integrated-graph-formula` | Exact finite-genus graph formula for complex u and `Z_g(1)/F_g=a_g/N_g`; no analytic exchange is used |
+ | `lmm:s03:vertex-bound`; `eq:s03:vertex-bound` | Constants independent of genus/valence on each fixed bounded parameter set; real comparison lengths are `sqrt(2|t_i|)` |
+-| `lmm:s03:pairing-majorant`; `eq:s03:gaussian-majorant` | Entire absolute graph sum, including an absolute value inside edge integrals, dominated by one labelled composition/Gaussian expression; retains valence cap and square-root cancellation |
++| `lmm:s03:pairing-majorant`; `eq:s03:gaussian-majorant` | Entire absolute graph sum, including an absolute value inside edge integrals, dominated by one labeled composition/Gaussian expression; retains valence cap and square-root cancellation |
+ | `lmm:s03:short-series`; `eq:s03:short-series` | All interval estimates in-section for the factorial series at `c/H`, c=2,3; constants chosen before Gaussian absorption |
+ | `prp:s03:graph-tail`; `eq:s03:graph-tail` | For fixed M and compact complex u set, full absolute sum with no large vertex or q>=M is `O(F_g*g^-M)`; full sum `O(F_g)`; no Appendix input |
+ | `lmm:s03:finite-cores`; `eq:s03:core-parameters`, `eq:s03:core-automorphisms` | Finite core types at fixed q, genus-correct contraction, exact `2^p*p!` factor |
+ | `lmm:s03:loop-tail`; `eq:s03:loop-majorant` | Every legal loop count, even small vertex genus, bounded by `g^-q*C^(p+1)/p!`; p>log g negligible to every fixed inverse power |
+ | `lmm:s03:degree-moments`; `eq:s03:degree-moments`, `eq:s03:joint-degree-tail` | Exponential degree moments and joint loop/degree tails; permits summing HMT polynomial errors before replacing p or D by a logarithmic cutoff |
+ | `prp:s03:core-expansion`; `eq:s03:core-volume-path`, `eq:s03:core-expansion`, `eq:s03:summable-remainder` | Exact nonnegative-marking ratio path; all intermediate HMT thresholds checked; fixed-core expansion with per-p error `g^(-q-K-1) C^(p+1)(1+p)^s/p!` and coherent entire coefficients |
+-| `thm:s03:graph-expansion`; `eq:s03:graph-expansion`, `eq:s03:coefficient-rule` | Every fixed order for `Z_g/V_g0`, locally uniform complex expansion; entire gamma functions, leading `e^S`; fixed u derivatives preserve remainder order |
+-| `crl:s03:marked-extension`(i); `eq:s03:marked-deformation`, `eq:s03:marked-volume-scale` | Fixed r labelled legs, expansion normalized by `V_g,r`, ADDITIVE and locally uniform in r+1 complex variables; leading `e^S prod f(t_i)`; all fixed external psi/mixed derivatives |
++| `thm:s03:graph-expansion`; `eq:s03:graph-expansion`, `eq:s03:coefficient-rule` | Every fixed order for `Z_g/V_g0`, locally uniform complex expansion; entire coefficient functions `gamma_k`, leading `e^S`; fixed u derivatives preserve remainder order |
++| `crl:s03:marked-extension`(i); `eq:s03:marked-deformation`, `eq:s03:marked-volume-scale` | Fixed r labeled legs, expansion normalized by `V_g,r`, ADDITIVE and locally uniform in r+1 complex variables; leading `e^S prod f(t_i)`; all fixed external psi/mixed derivatives |
+ | `crl:s03:marked-extension`(ii); `eq:s03:decoration-condition` | For the displayed graphwise positive majorant with polynomial loss H^s, full marked bad-graph sum `O(F_g*g^(r+s-M))`. Fixed leg allocation has no extra H^r loss. Does not assert an expansion for an unspecified internal decoration |
+ 
+ Subsection labels `subsec:s03:01`--`subsec:s03:04` and section label
+@@ -127,22 +127,31 @@
+ entire coefficient construction are proved here, not attributed wholesale
+ to a volume source. Internal lecture notes were only preparation leads.
+ 
+-## Remaining work beyond this section
++## Scientific scope and current provenance
+ 
+-No known external-source gap is left open for the stated s03 results,
+-subject to independent whole-section review. The full draft and roadmap
+-are supplied. The next section must still compute genuine second-order
+-data: the second multidegree descendant and diagonal coefficients, q=1
+-first corrections, q=2 leading contributions, and the second absolute
+-fixed-n base-volume coefficient. This section supplies summability and
+-existence, not those numerical computations or the full Theorem 1.1.
++The uniform estimates and expansion proved here are complete. Section 4
++and Appendix A supply the specific second-order coefficient calculations:
++the descendant profiles, q=1 first corrections, q=2 leading contributions
++and second absolute volume coefficient. This section supplies their
++summability and analytic justification, not those numerical values or
++the full proof of Theorem 1.1.
+ 
+-W26 Lemma 7.2 and Appendix C.1, Lemma C.1, give fixed-marking profile
+-coefficients. Later use must identify them with HMT's unique coefficients
+-at each fixed tuple, convert `2G-2+n` to G, then invoke HMT's polynomial
+-remainders for growing valence. Their fixed-marking lemma alone does not
+-give that growing-n uniformity. Low-degree exceptions must be retained.
+-Concrete internal GRR decorations must satisfy the majorant condition
+-before using the exported weighted tail. The positive-new-psi condition
+-and surviving negative new-psi term in s02's forgetting comparison remain
+-in force when such markings represent kappa insertions.
++Appendix A identifies the fixed-tuple W26 v4 profile coefficients with
++HMT's unique coefficients and converts inverse complexity to inverse
++genus. HMT supplies the polynomial remainders for growing valence;
++the fixed-marking profile formula alone supplies no such uniformity.
++Low-degree exceptions remain part of that computation. Section 5 checks
++its concrete GRR insertions against the displayed decoration condition,
++retaining the positive-new-psi hypothesis and negative new-psi term
++from the forgetting comparison.
++
++In the final-polish notation, Gamma_p denotes exactly the graph formerly
++written Gamma(p): it restores p self-loops on a fixed core when legal.
++This changes only four manuscript occurrences. Euler's gamma function
++keeps its existing factorial definition, now named explicitly at its
++first use in 3.1; it is not reintroduced in 3.3.
++
++Current dependencies, build, review and acceptance status belongs to
++workflow/state.json and the corresponding frozen receipts. The earlier
++snapshot above is historical scientific provenance, not the live dependency
++version. Old handoffs and frozen records are preserved.
+--- /dev/null
++++ sections/03_graph_asymptotics/final_polish_handoff.md
+@@ -0,0 +1,78 @@
++# S3 final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s03. Dispatch:
++build/final-polish-20261116/rounds/s03-r014-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The previous approved
++round is r013, snapshot
++c15bc5f27e787477474caf3c2bde8b5f9e7afc86b24dce7f66b52ea7502fffdf.
++Live status belongs to workflow/state.json; this is an author delivery.
++
++## Complete final reading
++
++I read the entry, all four subsections, interface, current outline
++and the actual layout-targets.json under
++workflow/feedback/shared/FINAL-POLISH/.
++
++- 3.1 distinguishes fixed-marking expansions, the all-type bound
++  and HMT's growing-valence remainders, with exact thresholds and
++  normalization conversions. Its existing positive-integer factorial
++  definition is the first occurrence of Gamma(k). I name Euler's
++  gamma function there, rather than redefining it in 3.3.
++- 3.2 keeps the exact normalization links, shared edge parameters,
++  entire sine/loop definitions and the real-u scope of the Cin
++  expression. The fixed-loop example remains only a candidate
++  leading sum until the subsequent uniform proof.
++- 3.3 retains the valence cap, square-root cancellation, exact
++  pairing/orbit count, all factorial-series intervals, Gaussian
++  absorption and both q-tail cases. The proof orientation now says
++  whether one other complexity reaches the prescribed threshold
++  or smaller complexities add up to it, avoiding confusion with
++  the unique large vertex. No estimate or interval is changed.
++- 3.4 keeps genus-correct loop contraction, the all-legal-loop tail
++  before HMT, the nonnegative-marking ratio path, every intermediate
++  threshold, direct descendant summation and factorially summable
++  remainders. The fixed-marking extension stays additive at zeros
++  of its leading leg factor; its weighted majorant condition is not
++  broadened.
++
++## Controlled notation and prose changes
++
++The restored-loop graph formerly written Gamma(p) is now Gamma_p,
++only at its definition, automorphism formula, loop majorant and
++core expansion. These are exactly four manuscript occurrences.
++Euler's Gamma(k) retains its existing factorial meaning. This
++separates the graph family from the gamma function without changing
++another graph symbol, coefficient family or formula.
++
++The Coefficient computation Remark now directly describes the
++finite cores and summable loop series and says that Section 4
++computes the two corrections. Its leading formula and dependency
++boundary are unchanged. This is a sentence-level reflow for the
++specified visual target, not a claim that a new render was inspected.
++Ordinary prose uses labeled/labeling throughout; source titles and
++TeX commands are not changed.
++
++After the four controlled graph-family substitutions are normalized
++back to their old spelling, all mathematical displays, inline
++mathematics and principal statements remain byte-identical to
++fa2f374. Every label, source citation, constant, threshold, range
++and remainder order is preserved. No geometric or asymptotic
++conclusion is recomputed or strengthened.
++
++## Current metadata and delivery
++
++INTERFACE distinguishes Euler's function from Gamma_p, describes
++the historical dependency snapshot as provenance and refers live
++status to workflow records. It removes the obsolete claim that
++the second-order data remain to be computed: Section 4 and
++Appendix A already supply those computations and the profile bridge.
++The coefficient functions gamma_k are described as coefficients,
++not as gamma functions. The old writer_handoff and frozen records
++are unchanged.
++
++Only current S3 TeX/interface, this handoff and the designated
++external FINAL-POLISH/s03_writer.md are edited. No shared input,
++other section, old handoff or state is modified. No old computation
++or native compilation is run. Source-preservation and UTF-8/LF
++guards accompany delivery. The coordinator and original reviewers
++will assess the actual layout and new frozen snapshot. STOP.
+--- previous/sections/04_lambda_one/01_loop_moments.tex
++++ sections/04_lambda_one/01_loop_moments.tex
+@@ -11,8 +11,8 @@
+  =\frac{(-1)^{a+b}\pi^{2a+2b+2}}
+        {(a+b+1)(2a+1)!(2b+1)!}.
+ \end{equation}
+-The factor $1/2$ accounts for exchange of the two branches of the loop. The denominator
+-$a+b+1$ records their common parameter; their weights do not factor
++The factor $1/2$ accounts for exchange of the two branches of the loop.
++The denominator $a+b+1$ records their common parameter; their weights do not factor
+ into independent endpoint weights.
+ 
+ For any nonnegative integer degree tuple $\mathbf d$, write
+@@ -59,7 +59,9 @@
+ series are bounded by factorial series on the finite interval
+ $[0,\alpha]$. Their exponential sum over $p$ converges normally,
+ also after any fixed number of derivatives. This proves the
+-convergence and differentiation assertions. At zero parameters the
++convergence and differentiation assertions.
++
++At zero parameters the
+ one-edge term is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$, proving
+ $\mathcal L[1]=1$.
+ \end{prf}
+--- previous/sections/04_lambda_one/02_leading_and_first_correction.tex
++++ sections/04_lambda_one/02_leading_and_first_correction.tex
+@@ -27,8 +27,8 @@
+ 
+ There is one core of complexity zero and three of complexity one.
+ We first expand the pure-loop vertex, then integrate the small vertices
+-of the other three cores. Their root loops have already been collected
+-by $\mathcal L$.
++of the other three cores. The root-loop moments are encoded by
++$\mathcal L$.
+ 
+ \begin{prp}[The first correction]\label{prp:s04:first-correction}
+ As $g\to\infty$,
+@@ -131,19 +131,21 @@
+ \end{tabular}
+ \end{center}
+ \endgroup
+-The order six permutes the three parallel edges, and the order two
+-exchanges the two flags of the small loop. The list is complete by
++The group of order six permutes the three parallel edges, and the
++group of order two exchanges the two flags of the small loop.
++The list is complete by
+ Lemma~\ref{lmm:a:core-enumeration}.
+ The three coefficients sum to $25/24+65/(6\pi^2)$. Adding the
+ pure-loop correction gives $9/8$, proving the proposition.
+ \end{prf}
+ 
+ \begin{rmk}[Profile and volume conventions]
+-The volume coefficient is that of Mirzakhani--Zograf
+-\cite[Theorem~1.2 and Remark~1.3]{MZ15}. Our signed first profile
+-is the negative of the deficit of Wang et al.
+-\cite[Lemma~7.2]{W26}; their Appendix~C.1 supplies the second
+-profile. Proposition~\ref{prp:a:profiles} verifies its complete
+-low-degree corrections. Summation for growing valences uses the
+-polynomial bounds and summable remainders of Section~\ref{sec:s03}.
++Mirzakhani--Zograf give the volume coefficient
++\cite[Theorem~1.2 and Remark~1.3]{MZ15}.
++Our signed first profile is the negative of Wang et al.'s deficit
++\cite[Lemma~7.2]{W26}. Their Appendix~C.1 supplies the second
++profile, including the low-degree corrections verified in
++Proposition~\ref{prp:a:profiles}.
++Section~\ref{sec:s03} supplies the polynomial bounds and summable
++remainders needed for growing valences.
+ \end{rmk}
+--- previous/sections/04_lambda_one/03_second_correction.tex
++++ sections/04_lambda_one/03_second_correction.tex
+@@ -14,9 +14,9 @@
+ Their existence follows from the finite-core expansion and its
+ summable remainder, multiplied by the absolute volume expansion.
+ The preceding subsection gives $Q_{0,0}=1$ and
+-$Q_{0,1}+Q_{1,0}=9/8$. These are coefficients of $Z_g(1)/F_g$;
+-the functions $\gamma_r$ in Theorem~\ref{thm:s03:graph-expansion}
+-normalize instead by $V_{g,0}$.
++$Q_{0,1}+Q_{1,0}=9/8$. These are coefficients of $Z_g(1)/F_g$.
++The functions $\gamma_r$ in Theorem~\ref{thm:s03:graph-expansion}
++are the coefficients in the expansion normalized by $V_{g,0}$.
+ 
+ At second order the pure-loop core requires both profiles and the
+ absolute second volume coefficient. Complexity-one cores require
+@@ -78,6 +78,7 @@
+ The $3/2$ comes from the complexity-one factorial ratio; the next
+ term is the root's square-root genus correction. Average this
+ polynomial over its loops, then take the raw connector moments.
++
+ For a local complex degree parameter $x$ near $1$, the elliptic
+ connector generator is the unscaled integral
+ \[
+--- previous/sections/04_lambda_one/INTERFACE.md
++++ sections/04_lambda_one/INTERFACE.md
+@@ -1,15 +1,17 @@
+ # Powers of the first Hodge class
+ 
+-Scientific interface for the complete s04 author submission. The unit
+-supplies a proof of Theorem 1.1, subject to independent frozen review.
++Scientific interface for Section 4 and its proof of Theorem 1.1.
+ Live review and acceptance status is recorded in `workflow/state.json`;
+ this document confers no review signature.
+ 
+ ## Dependencies and scope
+ 
+-- Approved s03 r003 snapshot:
++These snapshots record the original scientific dependency provenance;
++current dependency freshness and approvals belong to the workflow.
++
++- Historical s03 r003 snapshot:
+   `5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353`.
+-- Approved Appendix a r002 snapshot:
++- Historical Appendix a r002 snapshot:
+   `8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf`.
+ 
+ The paper's stack/Chow/degree conventions, lowercase a_g, N_g, Hodge
+@@ -138,9 +140,9 @@
+ extraction, together with the finite core sums. No proposed higher Hodge
+ coefficient is an input to their construction.
+ 
+-The complete reconstruction from the archived `checks/` source and the
+-quick receipt verifier both pass. The extra fifth-order source rows and
+-the final composition also pass independent exact checks. The versioned
++The archived complete reconstruction and quick receipt verification both
++passed. The extra fifth-order source rows and the final composition also
++passed independent exact checks. The versioned
+ `checks/verification.json` binds 24 source fingerprints and the result
+ hash, and records both coefficients and their absolute group sums.
+ `checks/README.md` gives the full reconstruction and guard commands.
+@@ -152,12 +154,14 @@
+ signature; live review status remains in `workflow/state.json`.
+ Feedback provenance and saved-source evidence are recorded in the handoff.
+ 
+-## Remaining work and review boundary
++## Scope and review boundary
+ 
+-The complete Section 4 proof and all four subsections are supplied.
+-No known mathematical/source gap remains for the submitted Theorem 1.1
+-proof, subject to formal independent review. Later Hodge-insertion,
+-top-Hodge and fixed-defect theorems are outside this unit. The accepted
+-appendix and sections, shared inputs and historical records are unchanged.
+-Build and saved-source evidence is recorded in the current handoff and
+-ignored writer-draft receipt; it is not a formal review signature.
++The Section 4 proof uses the complete coefficient mechanisms and uniform
++remainder estimates listed above. The fixed-insertion, top-Hodge and
++fixed-defect proofs belong to their respective sections. Supplementary
++reported coefficients are separate from the original theorem's proof
++and error estimate.
++
++Historical handoffs and calculation/build receipts preserve the earlier
++author evidence. Live approval and freshness are recorded by the workflow,
++rather than by an author-stage description in this scientific interface.
+--- /dev/null
++++ sections/04_lambda_one/final_polish_handoff.md
+@@ -0,0 +1,64 @@
++# Section 4 final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: s04. Dispatch:
++build/final-polish-20261116/rounds/s04-r016-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The preceding approved
++round is r015, snapshot
++71681272bdb73fc625ebdc9ce5ed6a82a3671a483c3e9610bafc5bb4d366a2a4.
++This is an author delivery; live review and acceptance belong to the
++workflow, not this handoff.
++
++## Complete final reading and limited edits
++
++I read the entry, all four subsections, interface, current section
++outline and the specified source-paragraph layout target.
++
++- The entry already explains why complexities zero, one and two supply
++  the retained orders and how Appendix A's finite calculations connect
++  to Section 3's full graph estimates. It is retained verbatim.
++- In 4.1, a paragraph break separates compact convergence and
++  differentiation from normalization at zero. The branch-factor
++  sentence is rewrapped without changing its words. Paired endpoints,
++  absolute convergence, the signed functional and its two representative
++  moments are retained.
++- In 4.2, root-loop moments are described as encoded by the functional,
++  avoiding a suggestion that the normalized functional alone includes
++  the exponential loop factor. The automorphism explanation now makes
++  the groups, rather than their orders, perform the flag permutations.
++  The post-proof conventions Remark directly credits
++  Mirzakhani--Zograf, retains Wang et al.'s v4 Lemma 7.2/Appendix C.1
++  locators and states separately which uniform bounds permit growing
++  valences. No source or convention is changed.
++- In 4.3, the sentence distinguishing absolute Q groups from relative
++  gamma coefficients explicitly names the latter's normalization.
++  A paragraph break separates the volume/profile correction from
++  the connector generator. All three contribution mechanisms, the
++  thirteen-core classification input, the representative negative
++  integral and the pi-power cancellations are retained.
++- The full 4.4 proof is retained verbatim. It already takes the global
++  M=3 tail and all legal loop tails before applying the K=2-q expansion,
++  then sums factorially controlled errors and restores the absolute WP
++  and Hodge normalizations. The two user-specified (9/8)g^{-1} forms
++  are preserved. The samepage supplementary Remark and both higher
++  coefficients, including the explicit omission of calculation details,
++  are retained verbatim.
++
++The prose already uses the requested American spelling; no British
++labeled variant remains. No mathematical symbol is added or renamed.
++
++## Interface and protected evidence
++
++INTERFACE now identifies the old dependency snapshot IDs as historical
++scientific provenance, leaves live freshness to the workflow, and removes
++obsolete author-submission/review-pending wording. Its archived numerical
++verification statements are presented as past checks, not a new run.
++Scientific exports, sources, assumptions and precision are unchanged.
++
++All displayed and inline mathematics, labels, principal statements,
++tables, diagrams, citations and proof adjacency are protected against
++the baseline. The entry, final theorem proof, original writer_handoff
++and every internal checks file remain byte-identical. Historical
++records are not edited. No scientific program, compilation or new
++literature search is run; source preservation, draft and UTF-8/LF
++guards accompany delivery. No shared file, other unit or workflow
++state is changed. STOP for native layout and original independent review.
+--- previous/sections/a_coefficients/01_wp_coefficients.tex
++++ sections/a_coefficients/01_wp_coefficients.tex
+@@ -143,7 +143,7 @@
+ 
+ \begin{rmk}[Identification]
+ The source quantities of Wang et al. are evaluated at $Y=0$ and
+-complexity $2G-2+n$. Its deficit is $-e_{n,1}$, and its second coefficient
++complexity $2G-2+n$. Their deficit is $-e_{n,1}$, and their second coefficient
+ is $e_{n,2}$. Lemma~C.1 itself fixes the number of markings. Uniqueness
+ of each fixed-tuple expansion identifies these formulas with the HMT
+ coefficients in~\eqref{eq:s03:hmt-descendant}. The polynomial remainders
+@@ -487,12 +487,12 @@
+ constructing the three ratio rows.
+ \end{prf}
+ 
+-\begin{rmk}[Prediction]
+-See \cite[(6.10)]{EGGLS24} for the earlier prediction, which our answer
+-matches.
++\begin{rmk}[Source comparison]
++The coefficient agrees with the prediction in \cite[(6.10)]{EGGLS24}.
+ The resurgence assumption appears in their Section~6.1 before (6.6).
+-We use that result for credit and a comparison after our calculation.
+-The unconditional inputs here
+-are the MZ/HMT recursions, Wang et al.'s profiles, and the uniform bounds from
+-Section~\ref{sec:s03}.
++Wang et al.\ give a broader all-order absolute expansion, including
++the unmarked case \cite[Theorem~1.1 and (11.6)--(11.7)]{W26v5}.
++The unconditional inputs to our reconstruction remain the MZ/HMT
++recursions, Wang et al.'s fixed-marking profiles, and the uniform
++bounds from Section~\ref{sec:s03}.
+ \end{rmk}
+--- previous/sections/a_coefficients/02_loop_moments.tex
++++ sections/a_coefficients/02_loop_moments.tex
+@@ -46,12 +46,16 @@
+ \begin{prf}
+ Expand the square. Selecting the degrees $a,b$ on one edge gives
+ $w_{ab}e^{x(a+b)}$ multiplied by the two corresponding low-degree
+-factors. Summing over $p$ labelled pairs with $1/p!$ exponentiates
+-this one-edge sum and proves the identity. On any compact parameter
++factors. Summing over $p$ labeled pairs with $1/p!$ exponentiates
++this one-edge sum and proves the identity.
++
++On any compact parameter
+ set, replacing every coefficient by its absolute value is bounded by
+ the corresponding factorial series on the finite interval
+ $[0,\alpha]$. The exponential sum over $p$ then converges normally,
+-also after any fixed number of derivatives. At zero parameters the
++also after any fixed number of derivatives.
++
++At zero parameters the
+ one-edge integral is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$,
+ which proves the normalization.
+ \end{prf}
+@@ -82,13 +86,17 @@
+ \end{array}
+ \end{equation}
+ 
+-For a nonzero nonnegative integer multi-index
++For a nonzero multi-index of nonnegative integers
+ $\mathbf r=(r_p,r_D,r_0,r_1,r_2)$ let
+ $\chi_{\mathbf r}$ be the derivative at zero of the logarithm of
+-\eqref{eq:a:joint-egf}, of these respective orders. Equivalently it is
++\eqref{eq:a:joint-egf}, of these respective orders.
++
++Equivalently it is
+ the one-loop weighted sum of
+-$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$;
+-any number of $p$ derivatives supplies a factor one. With no low-count
++$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$.
++The parameter $v$ records the number $p$ of self-loops, and every
++derivative of its exponential factor at zero gives one.
++With no low-count
+ derivative the one-loop degree moments, for $r_D=0,\ldots,4$, are
+ \begin{equation}\label{eq:a:degree-cumulants}
+  S(1),\quad -S(1),\quad S(1),\quad
+@@ -106,7 +114,7 @@
+ is zero. Powers with exponent zero are one, including $0^0$ in these
+ finite polynomial evaluations.
+ 
+-For explicit reproduction, write $X=(p,D,m_0,m_1,m_2)$ and
++To evaluate the moments recursively, write $X=(p,D,m_0,m_1,m_2)$ and
+ $N(\mathbf r)=\mathcal L[X^{\mathbf r}]$. Let $\mathbf e_i$ be
+ the $i$th unit vector for $1\leq i\leq5$. Starting with $N(0)=1$,
+ the usual product rule gives the finite recurrence
+@@ -116,10 +124,13 @@
+        \chi_{\mathbf s+\mathbf e_i}N(\mathbf r-\mathbf s).
+ \end{equation}
+ For example $\mathcal L[D]=-S(1)$ and
+-$\mathcal L[D^2]=S(1)^2+S(1)$. Also
+-$\mathcal L[m_0]=2M_{0,0}=8$; its second logarithmic derivative is
++$\mathcal L[D^2]=S(1)^2+S(1)$.
++
++For the zero-degree count, $\mathcal L[m_0]=2M_{0,0}=8$.
++The corresponding second logarithmic derivative is
+ $8+2w_{00}=8+2\pi^2$, whence
+ $\mathcal L[m_0^2]=72+2\pi^2$.
++
+ As a further useful check,
+ \[
+  \mathcal L[D+p]=\mathcal L[(D+p)^2]=0,\qquad
+@@ -192,16 +203,18 @@
+ 4&768
+ \end{array}
+ \]
+-The table follows by inserting~\eqref{eq:a:first-profile},
++The three expression columns follow by inserting~\eqref{eq:a:first-profile},
+ \eqref{eq:a:second-profile}, and~\eqref{eq:a:c-two-n} into
+ \eqref{eq:a:bell-rule}; the largest polynomial degree is four.
+-Combining its columns with coefficients $1,1/2,1/4$ cancels every
++
++Combining these columns with coefficients $1,1/2,1/4$ cancels every
+ positive power of $S(1)$. The constant left is
+ \[
+  c_2(0)-\frac{17}{48}-\frac{181}{24\pi^2}
+                                       +\frac{173}{3\pi^4}.
+ \]
+ Proposition~\ref{prp:a:c-two} now gives the displayed result.
++
+ Section~\ref{sec:s03} justifies the operation on all legal loop
+ counts: its degree-moment estimate and summable core remainder apply
+ to these fixed-degree polynomials, and the large-loop tail is smaller
+@@ -312,9 +325,11 @@
+ The remaining prefactors are $1/8$, $1/(48\pi^2)$, and
+ $1/(8\pi^2)$, respectively. The first includes the small-loop integral
+ $\alpha$ and its automorphism factor $2$; the second includes $3!$;
+-the third has no graph symmetry. Multiplying the constant connector
+-moment gives the leading column, and multiplying the polynomial in
+-\eqref{eq:a:q-one-loop-average} gives the correction column.
++the third has no graph symmetry.
++Multiplying each prefactor by the total connector weight gives the
++leading column; including the polynomial in
++\eqref{eq:a:q-one-loop-average} in that weighted sum gives the
++correction column.
+ For example, the first polynomial at $n_0=1$ has raw average
+ \[
+  \frac{8(22\pi^2-118)-12(8-\pi^2)+18(-8)
+@@ -339,6 +354,6 @@
+  e^{-S(1)}\gamma_1(1)=r_1-c_1(0),\qquad
+  e^{-S(1)}\gamma_2(1)=r_2-c_2(0)-c_1(0)(r_1-c_1(0)).
+ \]
+-Thus an absolute core correction must not be relabelled as a relative
++Thus an absolute core correction must not be relabeled as a relative
+ $\gamma_r$ coefficient.
+ \end{rmk}
+--- previous/sections/a_coefficients/04_finite_core_tables.tex
++++ sections/a_coefficients/04_finite_core_tables.tex
+@@ -4,7 +4,7 @@
+ 
+ We use the cores of Subsection~\ref{subsec:s03:04}: root self-loops
+ have been contracted, increasing the root genus. The distinguished
+-root is labelled $0$; the small vertices are labelled $1,\ldots,v$
++root is labeled $0$; the small vertices are labeled $1,\ldots,v$
+ temporarily for describing their edge matrix. Let $m_{ij}$ be the edge
+ multiplicity for $i\ne j$, and $m_{ii}$ the number of self-loops at
+ vertex $i$. These two-index multiplicities are distinct from the
+@@ -27,7 +27,7 @@
+ 
+ \begin{lmm}[The cores of complexity at most two]\label{lmm:a:core-enumeration}
+ There are respectively $1,3,13$ core types at $q=0,1,2$. For every
+-core their automorphism order is
++core, the automorphism order is
+ \begin{equation}\label{eq:a:core-aut}
+  |\operatorname{Aut}\Gamma_{\rm c}|=
+  |\operatorname{Aut}_V\Gamma_{\rm c}|
+--- previous/sections/a_coefficients/INTERFACE.md
++++ sections/a_coefficients/INTERFACE.md
+@@ -1,8 +1,8 @@
+ # Coefficients and finite cores
+ 
+-Scientific interface for the complete Appendix A author submission. Live
+-review and acceptance status belongs to `workflow/state.json`. This document
+-does not confer a review signature or claim completion of Section 4.
++Scientific interface for Appendix A. Live review, freshness and acceptance
++status belongs to `workflow/state.json` and the corresponding frozen
++receipts. This document describes scientific exports, not a review signature.
+ 
+ ## Scope and dependency provenance
+ 
+@@ -11,6 +11,9 @@
+ absolute c2(0) reconstruction, signed correlated loop moments, the q=0
+ second and q=1 first corrections, four exact low vertex integrals, and all
+ 1/3/13 core types for q=0/1/2 with their automorphisms and contributions.
++
++Historical scientific dependency provenance (live versions are recorded by
++the workflow):
+ 
+ - s02 r006 snapshot:
+   `a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91`.
+@@ -55,7 +58,7 @@
+ | a,z indicator,x,h_0,h_1,h_2,h_z,m | Before/after `eq:a:connector-moments` | Local single connector degree, zero indicator, complex degree-generating parameter near 1, four raw weighted moments and positive connector count. The rational raw degree moments are 2 M_{0,r}; the elliptic generator is the integral of W_11(t) f(xt), with W_11 unscaled and no loop factor 1/2. Zero-indicator integrals are specified separately |
+ | r_1,r_2 | Last A.2 Remark | Only that remark's complete absolute coefficients; do not use a_1,a_2, which collide with the integral sequence a_g |
+ | raw psi integrals | A.3 opening | Written as actual stack integrals, distinct from both normalized brackets already used in the paper |
+-| G_i,n_i,m_{ij},c,n_0 | A.4 opening, `eq:a:core-data` | Local small vertex data, two-index edge multiplicities, genus loss and root core valence. Root labelled 0, no root self-loop |
++| G_i,n_i,m_{ij},c,n_0 | A.4 opening, `eq:a:core-data` | Local small vertex data, two-index edge multiplicities, genus loss and root core valence. Root labeled 0, no root self-loop |
+ | Aut_V | `lmm:a:core-enumeration` | Vertex permutations preserving root, genera, edge matrix; separate flag factors are explicit |
+ | a,b,d,l_i in enumeration | Proof of the preceding lemma | Local nonnegative edge/loop counts in two-vertex valence equations |
+ | core IDs 0.1,1.1--1.3,2.1--2.13 | A.4 graph tables | Row identifiers, not theorem numbers. Square is root; circle contains small genus; upper/lower small vertex is 1/2 |
+@@ -122,13 +125,18 @@
+ - `Mir07`, Theorem 4.4 and elliptic convention p.4: length-polynomial
+   interpretation only, with the ENTIRE (1,1) polynomial divided by two.
+   The class scale is already fixed by s03's Wol86/MZ15 normalization.
++- `W26v5`, Theorem 1.1 and (11.6)--(11.7): background credit for
++  the broader all-order absolute volume expansion, including the
++  unmarked case. The direct reconstruction here retains its original
++  recursions, fixed-v4 profiles and bounds; no new proof dependency
++  or priority claim is introduced.
+ - `EGGLS24`, Section 6.1, assumption before (6.6), and (6.10), fixed
+   bibliography version: published resurgent prediction, explicitly
+   CONDITIONAL. Its match with c2(n) is credit/post-computation comparison,
+   not an input to any reconstruction. Hua25 is not cited or used.
+ - s02 `eq:s02:partition-inversion` and rational-tail degree lemma:
+   low kappa/psi computations, including the negative two-input merged
+-  block term. No future Appendix C input is used.
++  block term. No input from the retired Appendix C is used.
+ 
+ ## Self-contained mathematical basis and internal checks
+ 
+@@ -141,9 +149,11 @@
+ The existing calculations files and verification records are preserved
+ unchanged as internal author checks, not as promised submission content.
+ 
+-The full mathematical appendix, core diagrams and finite rules are supplied.
+-No known source gap remains in these statements, subject to independent
+-formal review. Section 4 must still present the Hodge reduction, apply the
+-global tail to the assembled coefficients and prove Theorem 1.1 in its
+-announced normalization. Later marked/Hodge insertion work is not claimed
+-as completed by these WP coefficient calculations.
++The finite coefficient derivations, core diagrams and rules are complete
++in the article. Section 4 combines them with the Hodge reduction and global
++tail to prove Theorem 1.1 at its stated precision. Section 5 uses the
++first-profile and loop-moment inputs for fixed insertions; it does not
++require the explicit second correction of Theorem 1.1. No known source gap
++remains. Current review and build status belongs to the workflow records,
++not the historical preparation handoffs. Those handoffs, internal checks
++and frozen reports are preserved unchanged.
+--- /dev/null
++++ sections/a_coefficients/final_polish_handoff.md
+@@ -0,0 +1,68 @@
++# Appendix A final-polish original-writer handoff
++
++Actual agent: /root/s02_writer. Unit: a. Dispatch:
++build/final-polish-20261116/rounds/a-r014-writer-dispatch.json.
++The user-designated Git baseline is fa2f374. The previous approved
++round is r013, snapshot
++11c58166aad21c9f6e2ecf5325b768b91133263410b355f6857687d7ac0381fd.
++Live status belongs to workflow/state.json; this is an author delivery.
++
++## Complete final reading
++
++I read the entry, all four subsections, interface, current outline
++and the A.2 target in FINAL-POLISH/layout-targets.json.
++
++- A.1 retains the closed profiles, four pivot cases, exact kernel
++  normalization, finite moments, loss-two/three terms, full separating
++  remainder and adjacent-genus identification. The use of the actual
++  third-order volume expansion and cancellation of the unknown third
++  coefficient are unchanged. A plural-author pronoun is corrected.
++  The post-proof source comparison now briefly credits W26v5's broader
++  absolute expansion. This is background only: the particular second
++  coefficient is still reconstructed by the same independent recursion
++  argument, using W26 v4's unchanged technical locators.
++- A.2 retains correlated paired endpoints, signed absolute convergence
++  and normalization. Paragraphs separate the formal generating
++  identity, compact convergence and evaluation at zero. The existing
++  parameter v is explicitly identified as recording the self-loop
++  count p; this is distinct from geometric marked points. The Bell
++  recurrence's purpose and logarithmic derivative example are clearer.
++  The pure-loop proof refers to all three expression columns, and the
++  complexity-one proof identifies the total connector weight and the
++  weighted polynomial insertion. No coefficient or averaging rule
++  changes. Connector weights still have no loop half-factor and the
++  elliptic polynomial is not scaled with the degree parameter.
++- A.3 already gives a complete, compact stack-normalized derivation
++  from string/dilaton and forgetting, including the negative merged
++  term. Its entire source is retained without gratuitous rewriting.
++- A.4 retains the complete 1/3/13 classification, automorphism proof,
++  graph legend, all diagrams/tables, edge integration and final sums.
++  Only the singular-core grammar and American labeled spelling change.
++
++## Preserved content and current metadata
++
++The entry and its S4 roadmap need no change. All algebra, constants,
++thresholds, graph data, automorphism orders, factorials, numbered
++equations and remainder orders are retained. Statement/proof adjacency
++and result numbering are unchanged. The only added inline mathematical
++reference names the already defined parameter v; no new symbol or
++formal rule is introduced. All original mathematical payloads remain.
++W26v5 is the sole added citation; existing W26 v4 citations remain.
++The same official primary scope was personally checked during the S1
++source update: Theorem 1.1 and (11.6)--(11.7) cover absolute volumes,
++including the unmarked endpoint. This attribution supplies no new
++premise and claims no priority for the reconstruction.
++
++INTERFACE distinguishes historical dependency snapshots from live
++workflow status and removes the obsolete assertion that S4's proof
++remains to be written. The finite derivations are in the article;
++internal calculations remain auxiliary. The old writer/standalone
++handoffs, ten internal calculation files and frozen records are
++preserved, without rerunning a scientific program.
++
++No global tolerance, spacing or font is changed. The paragraph reflow
++addresses the specified reading target without claiming an unperformed
++native visual check. Only assigned A sources/interface, this handoff and
++the external FINAL-POLISH/a_writer.md are edited. No shared file, other
++section, state or historical record is changed. Source and UTF-8/LF
++guards accompany delivery. STOP for native layout and original review.
+--- previous/workflow/PROTOCOL.md
++++ workflow/PROTOCOL.md
+@@ -4,7 +4,7 @@
+ 
+ ## 状态与文件
+ 
+-工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。原有引言初始为 baseline，仍可在后续显式开启修订。
++工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。baseline 是初始化时保留旧引言的历史状态；当前引言已走完正常验收，可与其他已验收章节一样显式开启修订。撤回的末尾附录标记为 retired 并保留历史。
+ 
+ workflow/state.json 是脚本维护的状态记录。每轮材料放在 workflow/reviews/单元/r001/ 等目录；其中 submission.json 冻结文件指纹，math.json、readability.json、academic.json 保存各审核者的报告，author_response.json 保存原作者逐条答复。不同轮的记录不覆盖。
+ 
+@@ -16,7 +16,7 @@
+ 
+ 回顾经典材料时，说明准确来源及与本文的约定差异。定理、引理、命题的陈述直接接证明；历史、credit 和版本/记号说明通常放入证明后的 Remark，例子和长说明按用途整理为简短 Example、Remark 和段落。原始版本标识放入参考文献条目，正文通过引用定位。数学审核检查模块化后定义和论证仍完整；易读性审核检查读者能否选择阅读及段落是否疏朗；学术审核检查来源、差异和归属的准确性。检查项沿用既有 keys，不用新增形式字段替代实质判断。
+ 
+-写作次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。建议先完成 s02、s03、附录 A，再写 s04、s05、s06、s07、附录 B、s08，最后写附录 C；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用，因此需要先完成相应附录。预览始终保留目标章节和附录编号，最终正文仍按第 1–8 节、附录 A–C 排版。
++写作和复审次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。当前在用单元的依赖次序为 s01、s02、s03、附录 A、s04、s05、s06、s07、附录 B、s08；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用。预览保留目标编号，论文按第 1–8 节、附录 A–B 排版；已撤回的 C 不再开启或装配。
+ 
+ ## 首次写作
+ 
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -2,7 +2,7 @@
+ 
+ The authoritative goals are the four theorems in sections/01_introduction/section.tex. Their stable labels are thm:lambda-one, thm:fixed-insertions, thm:top-hodge and thm:fixed-defect.
+ 
+-The paper_outline.md plan defines the proof organization. Read only the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task.
++The paper_outline.md map describes the completed proof organization and current finalization scope. Read the target section's portion initially, then the approved dependency interfaces and the exact source passages needed for the task. Original plans and author handoffs are historical records, not a current list of unfinished proofs.
+ 
+ ## Conventions
+ 
+@@ -98,8 +98,8 @@
+ presentation to FP00. FP00 remains a source for the Hodge bundle conventions.
+ Use a bibliography entry for each cited source version, with precise locators
+ in citations, instead of raw arXiv identifiers in manuscript prose. The exact
+-KMZ preprint version is cited as KMZ96v1; the journal record KMZ96 remains in
+-the bibliography database.
++KMZ preprint version is cited as KMZ96v1, whose entry also records the formal
++journal publication. The unused duplicate key KMZ96 has been removed.
+ 
+ The rmk and exm environments have independent section-based counters and roman
+ bodies, preserving the existing mathematical-result numbers when optional
+@@ -129,9 +129,11 @@
+ 
+ The local PDFs are in refs/. Extracted text, if present, is only an aid; check ambiguous formulas against the PDF or the original paper.
+ 
+-The second lecture provides a route for all four theorems. It explicitly computes the first theorem only through the inverse-genus term. The second-order coefficient in the introduction needs a complete reconstruction of its WP inputs and q = 0, 1, 2 core contributions. The old table's arithmetic alone does not close this gap.
++The four theorem proofs and both retained appendices have completed the section review process. The second lecture originally supplied a route and computed the first theorem only through the inverse-genus term. The missing second-order inputs and q = 0, 1, 2 contributions have since been reconstructed in Section 4 and Appendix A. Preserve those in-text derivations and uniform remainder estimates; the old table's arithmetic alone is not their proof.
+ 
+-For that reconstruction, use the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, then identify their coefficients with HMT's unique expansions before applying growing-valence bounds. Hua25 was withdrawn in arXiv:2501.06421v2 (2026-10-25) because a key lemma's proof has a substantive gap; do not use it as a proof input. EGGLS24, Section 6.1 and (6.10), gives a published resurgent prediction conditional on a resurgence assumption. Credit it as such and as a cross-check, rather than treating it as an unconditional absolute-volume input. The required $c_2(0)$ must be reconstructed from exact recursion. The source audit and current finite computations are in the ignored preparation directory and remain subject to formal Appendix A review.
++The reconstruction uses the exact MZ/HMT intersection recursions and W26's independently proved fixed-marking profile coefficients, identifying their coefficients with HMT's expansions before using growing-valence bounds. The required $c_2(0)$ is reconstructed from exact recursion in Appendix A. EGGLS24, Section 6.1 and (6.10), is credited as a conditional resurgent prediction and a cross-check, not an unconditional proof input. Hua25 is excluded from the proof inputs. Internal calculations assist author checks; the mathematical derivations are in the article and the actual approval evidence is retained in workflow/reviews/ and workflow/state.json.
++
++Keep the two Wang et al. versions distinct. W26 is the actually used v4, including its Lemma 7.2 and Appendix C.1 profile locators. W26v5 credits the later all-order absolute WP expansion, including the unmarked coefficient rule in Theorem 1.1 and (11.6)--(11.7). The particular c_2(0) reconstruction in this article is not a priority claim for that WP coefficient. A newer background citation does not silently replace the technical input version.
+ 
+ The already defined $\gamma_k(u)$ are coefficients of $Z_g(u)/V_{g,0}$.
+ For $Z_g(1)/F_g$, combine with the absolute WP expansion: after factoring
+@@ -143,8 +145,12 @@
+ 
+ For the top Hodge class, the lambda_g theorem, exact Bessel coefficient formula and a uniform tree-tail estimate give an independent proof route. Attribute the existing genus-zero Bessel critical point to its original literature.
+ 
+-For fixed defect, establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Distinguish the o(1) coefficient-transfer error from the O(1/g) background-comparison error.
++For fixed defect, Sections 7--8 and Appendix B establish the exact ILW specialization and constants, analytic domains, endpoint estimates, both dominant singularities, coefficient transfer and the comparison between kappa and Hodge backgrounds. Preserve the distinction between the o(1) coefficient-transfer error and the O(1/g) background-comparison error.
+ 
+ ## Existing manuscript
+ 
+-The introduction is preserved as a baseline, including its target statements and incomplete prose. It is not a record of approved proofs. New planned sections stay out of the default PDF until accepted. Do not silently change target statements or add results outside the assigned unit.
++Introduction, Sections 2--8 and Appendices A/B are the reviewed article. Appendix C is retired: its known low-genus examples are not proof premises, and its old source/reviews remain internal historical records. Section 6 keeps an independently derived genus-two example; the closing Section 8 conjecture directly cites LiuData26 for numerical evidence.
++
++The finalization scope beginning at Git baseline fa2f374 is to update obsolete working descriptions, polish English and presentation, verify bibliography and publication details, conduct an integrated final reading, then rebuild/export/compile the single TeX source in isolation and commit the finished version. The user has explicitly retained the existing author-name-only signature and generic article format; do not add affiliation, email, acknowledgments, funding, classifications or a journal template without new information.
++
++Keep all four main theorem statements and the user's notation and typography intact. Section 4 and Section 6 higher-coefficient Remarks explicitly omit calculations by user instruction; the final h=1 refinement is explicitly a conjecture. These are not unfinished parts of the four theorem proofs and must not silently strengthen their error estimates. Any new substantive change uses the original author and reviewers; current status comes from the actual workflow, not descriptive prose in an old handoff.

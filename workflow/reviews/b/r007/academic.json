@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Read the complete entry, all five subsections, frozen interface, source delta and original-writer handoff/ACK; inspected native pages 32?37, 39 and 41?42. The new paragraphs distinguish local continuations, positive/remote characteristic ranges, intact cubic differences and endpoint consequences, and the shortened quadratic closing sentence retains its reasoning with a normally placed closing square. All sixteen principal statements directly precede their proofs, necessary domain hypotheses remain in the main text, and inherited notation is used without a redundant geometric setup or private-program obligation."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The Bessel critical data and exact numerical generating-series identities enter through the precisely normalized Sections 6?7; the appendix proves its inverse-radius budget, normal convergence, conditional endpoint estimates, actual finite-layer common domains and primitive bounds in the article. DLMF supplies the modified-Bessel series and integral representation, while the displayed positivity, exponential and relative-variation inequalities are derived explicitly in B.5. No lecture note, coordinator computation, FO90 transfer theorem, nefness result, WP coefficient, retired Appendix C datum or Section 8 conclusion is used as authority for these analytic proofs."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The sole direct source citation retains DLMF (10.25.2), (10.32.3), matching the previously verified integer-order modified-Bessel series and integral formula actually displayed for k>=0 and real positive argument. The versioned DLMF bibliography and the FP/Buryak inputs inherited through Sections 6?7 retain their verified conventions; I_k is explicitly distinguished from the shifted times. The source comparison confirms all citation tokens, labels, parameter ranges and mathematical expressions are unchanged, including the forward w_theta derivative versus reciprocal inverse derivative distinction fixed in the earlier review."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "B.3 explicitly defines a conditional holomorphic endpoint class on larger sectors and complex parameter neighborhoods; B.4 verifies its application to the actual Borel fields, with finite 1<=h<=H, nested margins, regenerated fixed Cauchy derivatives, remote bounds and normal coefficient extraction. Real theta/center ranges and joint complex continuation have their separate stated scopes; there is no growing-defect claim or unproved infinite-genus interchange. The geometric primitive is fixed genus and excludes G_(1,1); the subsequent three-interval argument proves an absolute genus-uniform bound for each fixed h, while leading singular coefficients, asymptotic transfer and Theorem 1.4 remain Section 8 responsibilities, with no stronger remainder or positivity assumption asserted here."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Independently matched the live fingerprint, frozen source archive and artifacts, submission snapshot, native render source fingerprint and PDF/entry/helper hashes. The actual academic binding is /root/s02_academic; s01 r007, s02 r017, s06 r012 and s07 r009 are approved and fresh. Strict and layout diagnostics are empty.",
+    "Against r006, only B.2/B.3 prose and paragraphing change in the manuscript; entry and B.1/B.4/B.5 are byte-identical. All 35 numbered equations, sixteen statement blocks, thirty unnumbered displays, inline mathematical expressions, source citations and labels are preserved. The interface updates current scientific scope and historical-status wording without adding exports.",
+    "Focused validation passed (scripts/validate.py --unit b). Prior academic issues were empty; the earlier ACADEMIC-008 derivative distinction remains closed. Retained primary-source verification was reused where unchanged; no scientific computation or frozen-output rebuild was performed. This signature does not preapprove an integrated final manuscript, single-file export or isolation compile."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+  "summary": "The full current Appendix B preserves accurate source boundaries and supplies the stated analytic estimates in the article, with explicit endpoint hypotheses, finite-layer/common-domain scopes and the genus-one primitive exception.",
+  "unit": "b",
+  "verdict": "pass"
+}

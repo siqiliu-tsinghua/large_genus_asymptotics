@@ -161,7 +161,7 @@ class Engine:
     def outline(self, uid):
         heading = self.units[uid]["outline_heading"]
         if not heading:
-            return "Preserve and later revise the existing Introduction baseline.\n"
+            return "Read the established Introduction conventions and preserve the four target statements.\n"
         text = self.safe("paper_outline.md").read_text(encoding="utf-8")
         lines = text.splitlines(keepends=True)
         start = next((i for i, line in enumerate(lines) if line.strip() == heading), None)

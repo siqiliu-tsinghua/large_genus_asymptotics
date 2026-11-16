@@ -116,7 +116,9 @@ its derivative is bounded by the integral of
  C|S|^a(1-\tau)
                   (|1-y/S|+1-\tau)^{-3/2},
 \]
-which is also uniform. For $m\geq2$ keep the entire cubic
+which is also uniform.
+
+For $m\geq2$ keep the entire cubic
 difference together; its individual linear terms must not be
 summed separately. Taylor's integral remainder and
 \eqref{eq:b:input-derivatives} bound its first normalized derivative,
@@ -128,7 +130,9 @@ before the outer factor $m$, by a constant times
 The $\tau$ integral is uniform, and the remaining $m^{-2}$ sum
 converges. Hence these nonprincipal parts have a finite endpoint
 limit and an $O(|S|^a|1-y/S|)$ variation. This proves the value
-estimate in \eqref{eq:b:linear-endpoint}. The negative endpoint
+estimate in \eqref{eq:b:linear-endpoint}.
+
+The negative endpoint
 follows by exchanging the two branches, including their opposite
 signs. Cauchy's formula on smaller cones then gives every fixed
 derivative bound, in particular the third derivative required by
@@ -173,12 +177,15 @@ local bound, apart from $C|S|^{a+c}$, is
  (|1-y/S|+(1-t)+(1-\tau))^{-3/2}
 \]
 at the first corner, and the corresponding bound at the second.
+
 This is integrable in two variables, uniformly up to the endpoint.
 For a second derivative the exponent is $-5/2$, whose integral is
 $O(1+|1-y/S|^{-1/2})$. The remainder terms with exponent $\nu$
-are less singular because $\nu>1/2$. Thus the first derivative
+are less singular because $\nu>1/2$.
+
+Thus the first derivative
 is bounded and the endpoint value exists, with a remainder
 $O(|S|^{a+c}|1-y/S|)$. It is therefore also $O(|S|^{a+c}|1-y/S|^\nu)$.
-Normal convergence proves holomorphy, and the larger-domain
-Cauchy argument proves the remaining assertions.
+Normal convergence gives holomorphy; larger-domain Cauchy estimates
+give the remaining assertions.
 \end{prf}

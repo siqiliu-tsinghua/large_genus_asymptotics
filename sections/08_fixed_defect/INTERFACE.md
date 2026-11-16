@@ -1,6 +1,6 @@
 # Singularity analysis and Hodge integrals at fixed defect
 
-Scientific interface for the complete Section 8 author draft. Live
+Scientific interface for Section 8 and its proof of Theorem 1.4. Live
 review, freshness and acceptance status belongs to workflow/state.json.
 This document is not an approval or a reviewer signature.
 
@@ -19,7 +19,7 @@ assignment was r002, snapshot
 411761e7652ee98e65b32c35dc51dd0e494169ffa3ed4851646ebb200deb0871.
 This is historical provenance; current acceptance belongs to the
 workflow. There is no dependence on WP Sections 3--5, Appendix A,
-an unpublished numerical calculation, or a future appendix.
+an unpublished numerical calculation, or the retired Appendix C.
 
 ## Inherited objects and exact inputs
 
@@ -135,8 +135,8 @@ directly, without introducing an alias or reassigning t_0.
 
 There are 13 principal statements immediately followed by proofs,
 one final theorem proof, 33 numbered equations and one short
-post-proof source remark. These are author-draft counts, not
-claims of reviewer approval.
+post-proof source remark. These counts record source structure,
+not live review or approval status.
 
 ## Verified primary sources and conversions
 
@@ -173,15 +173,18 @@ All these keys are already in the settled bibliography. Internal
 lecture notes and coordinator computations are leads or independent
 checks, not citations or unproved inputs.
 
-## Limits and outstanding work
+## Precision and review boundary
 
-The mathematical draft is complete at the author level and ready
-for a common frozen review. Native compilation, actual page
-inspection and independent mathematical/academic/readability
-review remain coordinator/reviewer work. The transfer error gives
-only relative o(1); no uniform growing h, growing marking count,
-next fixed-defect coefficient or relative O(1/g) theorem is exported.
-No unresolved source or shared-input request is known.
+The transfer error gives only relative o(1); no uniform growing h,
+growing marking count, proved next fixed-defect coefficient or relative
+O(1/g) theorem is exported. The stronger O_h(g^-1) background comparison
+has its separate proved scope. The closing conjecture below does not
+alter either precision statement.
+
+Historical handoffs and validation records preserve earlier author
+evidence. Live review, approval and freshness belong to the workflow,
+rather than an initial author-stage description in this scientific
+interface.
 
 ## Closing conjecture and finite-data diagnostics
 
@@ -192,7 +195,7 @@ No unresolved source or shared-input request is known.
   It introduces no new mathematical symbol or numbered equation.
   The proved exports above remain unchanged: no higher fixed-defect
   coefficient or stronger remainder is proved by this Remark.
-- The old 33 numbered equations, 13 principal statements and 14 proofs
+- The 33 numbered equations, 13 principal statements and 14 proofs
   are unchanged. The original proof is a literal byte prefix of the
   extended 06_proof.tex. The closing conjectural Remark is additional
   to the original post-proof source remark.
@@ -207,7 +210,7 @@ No unresolved source or shared-input request is known.
   g*residual(g)-(g-1)*residual(g-1), the intercept of the line against
   1/g through the two consecutive genera. This residual notation is
   descriptive code/documentation only, not a new paper symbol.
-- The actual run is recorded in checks/verification.json; generated
+- The archived run is recorded in checks/verification.json; generated
   output is confined to build/s08-higher-check/results.json.
   Output SHA256:
   de9e0fa164787e403842fcdbb13caa6b5da652b101e787277bed5d36094751b1.

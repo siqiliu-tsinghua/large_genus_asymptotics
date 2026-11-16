@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Read the complete entry, all four subsections, frozen interface and actual source delta, and inspected native pages 21?28. New variables and finite-jet scopes are defined before use, inherited geometric notation is not restarted, all nine principal statements directly precede their proofs, and the revised functional paragraphs separate the genus-one seed, constant argument, branch construction and local convergence. The article supplies the mathematical arguments without requiring programs, data files or retired Appendix C."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The opening and Theorem 7.1 explicitly credit Buryak?s first ILW flow and sine transformation, translating his raw F^Hodge, transformed potential and field into F, G and U. The FP multipoint and beta identities enter through the normalized Section 6 results, and the kappa specialization uses Section 2?s exact forgetting formula. The text itself supplies string/dilaton anomaly cancellation, the genus-one logarithm, finite jets and zero integration constants, characteristic recovery and both Beta-kernel coefficient calculations; notes, numerical tables and supplementary Section 6 coefficients are not invoked as authority or premises."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "Checked the actual Bur15 Theorem 1.1/(1.1)?(1.2) citations against the retained fixed-v4 source context and cached primary p.2, and Bur16 Theorem 1.1/Section 2 against its fixed-v2 theorem and shorter-proof context. The positive hbar^g epsilon^j weight, alternating sine coefficients and dispersive hbar^k epsilon^(k-1)|B_(2k)|/(2k)! translate exactly into z^g eta^(g-j) and eta z^k c_k; the inverse uses the established beta series. The published bibliography retains these exact version notes and verified publication metadata; all source citations and labels in this section are unchanged."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The corrected finite-times guide now fixes both genus and positive defect, matching the finite constraint in Lemma 7.5 and its separate genus-one logarithmic case. The characteristic corollary states fixed g,h, real theta>=0, a small complex x neighborhood, the chosen inverse branch, decay at infinity and differentiation before evaluation; no common global inverse domain follows from it. The first Borel layer alone receives the stated local normal convergence, while higher layers and their characteristic integrals are coefficientwise, with no infinite-genus interchange; dominant singularities, primitive/background comparison and Theorem 1.4 remain the subsequent Section 8/Appendix B work, with no stronger error rate or priority claim here."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Verified the original bound reviewer and fresh approved dependencies s01 r007, s02 r017 and s06 r012. Independently matched the live selected-input fingerprint, frozen archive/artifacts, submission snapshot, native render source fingerprint and PDF/entry/helper hashes. Strict and layout diagnostics are empty.",
+    "Against r008, all 35 numbered equation environments, nine principal statement blocks, eight unnumbered displays, inline mathematical expressions, source citations and labels in the section are unchanged. The actual prose edits specify the genus qualifier, use labeled spelling and separate functional paragraphs; the interface clarifies scientific exports and historical provenance.",
+    "Focused validation passed (scripts/validate.py --unit s07). The earlier ACADEMIC-007 string-lemma issue remains closed and is not newly resolved in this round; there were no open academic issues in r008. No scientific program or frozen-output rebuild was run. This signature does not approve a future whole-manuscript companion, export or isolation compile."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+  "summary": "The full current Section 7 accurately credits and translates its ILW input, supplies the required constants and coefficientwise kernels in the article, and preserves the distinction between exact/formal results, local convergence and subsequent fixed-defect asymptotics.",
+  "unit": "s07",
+  "verdict": "pass"
+}

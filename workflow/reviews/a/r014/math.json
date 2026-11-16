@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact and native hashes with S1 r007, S2 r017 and S3 r014 approved and fresh. The technical W26 v4 profiles and exact MZ/HMT inputs remain fixed; the post-proof W26v5 credit is supported by the independently checked Theorem 1.1/(11.6)-(11.7), but supplies no reconstruction premise or priority claim.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Read all four subsections: profiles have fixed nonnegative degree tuples and complexity k=2G-2+n, all four pivot cases and stable small children are retained, and the degree/genus conversions preserve their ranges. The core enumeration uses positive small complexities, root-loop contraction and c=(q+n_0)/2, exhausting one complexity-two vertex or two complexity-one vertices at q=2 without adding an illegal disconnected root.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The exact kernel generates the initial half and prefactors 4/8/8, normalized brackets and inverse-complexity/genus conversions agree, and the whole elliptic stack polynomial is used. Signed paired weights retain endpoint correlation and 2^p p!, raw connectors have no half and keep W_11 unscaled under the degree parameter, pure-loop order two retains its extra E_1/2, and absolute Z/F coefficients remain distinct from relative gamma_r.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "A.1 defines k,D,m_a, signed e_(n,r), kernel/dilaton weights and local ratios before use; A.2 defines the five complex generating parameters and chi_r before the Bell rule, then raw connector degrees/indicators before their table. The new sentence correctly differentiates the already defined e^v factor recording loop count p, rather than p itself or geometric markings; A.4 distinguishes edge multiplicities m_ij from low-degree counts m_a and inherits the same core type.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete written chain supplies four-case profile increments and their zero initial value, finite kernel/dilaton moments, third-profile extraction and three actual ratio rows; the adjacent-genus comparison cancels unknown c_3 and determines c_2 without importing an absolute target. Bell moments, the three weighted-expression columns, four small-vertex derivations and exhaustive 1/3/13 cores with flag Aut and edge integration supply every table entry without software; the new connector wording preserves an unnormalized weighted sum, and source comparisons remain after the proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The extraction-tail lemma controls the whole omitted separating-genus sum by factorial convolution and sums HMT polynomial errors against kernel/dilaton tails, giving actual rather than merely formal ratio coefficients. Fixed-tuple identification is kept separate from S3's growing-valence bounds, and its degree moments plus all-legal-loop tail/factorial remainder justify extending the signed loop sums with the stated O(g^-3) error, without logarithmic loss or a stronger claim from the newer background source.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot 0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464 and true /root/s02_math binding were independently verified. Source SHA256 f830e30a8e188d9b68df34b3a7b22ef8986311e9c4919a8bfd038f0ecd76c233; native PDF SHA256 502c5ec68af8c8980589f18098587676b412a3feedee8e3aeca50f515164afcd. Current/preflight source and PDF match, entry/helper hashes match, strict/layout diagnostics are empty and pre-submit/equal-source sealing provenance is retained.",
+    "Compared with r013 and Git fa2f374: all 29 equation environments, 13 align environments and all unnumbered align/bracketed displays are unchanged. All seven tabular tables, 59 labels and proof counts are preserved; the ten principal statements differ only by the documented singular-core grammar. All 487 original inline math tokens are preserved with just one added mention of the existing parameter v. W26v5 is the only added citation.",
+    "A.1 retains the four low-pivot cases, child-complexity shifts, loss-two first corrections, loss-three leading amplitudes, ordered separating orientations and the actual third-order MZ expansion whose unknown c_3 cancels. Polynomial moment bounds and complete genus convolution justify coefficient extraction and dilaton averaging, rather than a resurgent assumption or fitted values.",
+    "A.2 retains log-generator derivatives at zero, the Bell recurrence, correlated paired-endpoint moments and unnormalized rational/elliptic connector weights. The three expression columns are combined with 1,1/2,1/4, preserving the extra E_1 contribution. A.3 derives every small polynomial from stack initial values, string/dilaton and the negative merged kappa term. A.4 supplies valence completeness, parallel-edge/loop/vertex-swap Aut factors, the shared small-loop variable and endpoint evaluations before its final sums.",
+    "The exact inherited/own delta and changed @outline match the summary. Original-writer ACK SHA256 4dafc45c764ffe9ef57213838d9328107fe7a80e56f8be3ab80d1dc49488010c agrees with the reviewed scope. Entry, A.3, old handoffs and internal calculation/verification files remain unchanged; no scientific program was rerun, and no current proof relies on those files.",
+    "No old MATH issue is open, so issues/resolved_issue_ids are empty. Only this round's reports were written without source/shared/state/historical/frozen-output edits; this does not sign the later integrated final manuscript or single-TeX export/isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+  "summary": "Pass on A r014 after a complete final reading: the profile/absolute-c2 extraction, correlated moments, low-type vertices and exhaustive core/Aut/integration rules remain self-contained; revised derivative and table-column prose preserve the operators and weights, with background v5 credit kept separate from technical v4 inputs.",
+  "unit": "a",
+  "verdict": "pass"
+}

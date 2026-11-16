@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, complete archive/live/artifact and native hashes with S1 r007/S2 r017 approved and fresh; the closure excludes WP Sections 3-5, A and retired C. FP03/FP00 numerical top-Hodge inputs, S2 whole-background inversion and the checked classical Bessel sources retain their exact roles, without software or low-genus data filling a proof.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Read the full entry and four subsections: stable types have m=2G-3+n>=0, with G=0 only for n>=3 and beta_0=1 a convention; the unmarked G>=2 case explicitly removes its degree-zero k=0 term before invoking the multipoint theorem. Tree degrees sum to g_2-E and enforce E<=g_2, while both nonelliptic one-edge endpoint orders start at 2.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The exact vertex uses the entire kappa-background inversion with no extra new-point exponential, and the tree identity restores 12^(g_2)b_g/g_2!. Ordered one-edge splits retain the half at equal genera, while two elliptic placements cancel it for g>=3; final multiplication supplies (g_2!)^2, 12R=rho and beta_g=2(2pi)^(-2g)(1+exponentially small error), with beta_g distinct from b_g and scalar b.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Beta_G, Phi and W^top are first defined in 6.1; x_*,w,R in 6.2; local vertex orders and tree scale in 6.3; and analytic amplitude P, circular amplitude and local logarithmic phase before the saddle calculation in 6.4. Inherited g_2,z_(0,1),rho,b retain their original meanings, square-root Bessel expressions mean entire series, and the closed-disk neighborhood requirement remains explicit rather than merely local at the saddle.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete in-text chain covers exact vertices, nonvanishing/product circle bounds, plane-tree and factorial-convolution enumeration over all genera, the nonelliptic tail, local saddle and elliptic leaf. The new beta wording correctly says those factors are uniformly bounded before dropping label restrictions; the saddle keeps both odd half-order polynomials and an integrable m^-2 error, so no amplitude division or omitted m^-3/2 contribution is used.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The vertex bound is uniform in every stable (G,n) for real flag parameters in [0,1]; the tree majorant sums every edge/genus/valence configuration, including E=g_2, with the square-root factor controlled by sqrt(E+1). Bounded analytic amplitudes on one fixed neighborhood give additive saddle errors even at zero amplitude, and full E>=2 plus nonelliptic tails leave exactly the proved relative O(g_2^-2); the reported g_2^-2/g_2^-3 coefficients keep their omitted-details status without a stronger uniform remainder claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot b9020ed4fb6fa54db8658c72a24c4c2fc35a7a2a392feb70225d33c857ac09de and true /root/s02_math binding were independently verified. Source SHA256 2bbb824d429adb21b6ab7fc494b12a026db44744ed3d4998b7b94719bb4d0400; native PDF SHA256 512d7b1e9f0be67fa71c297e09589ea4c64c19aebe98a92bf32b7e0e204e4c0f. Native entry/helper and current/preflight hashes match, strict/layout diagnostics are empty, and recorded pre-submit/equal-source sealing provenance is retained.",
+    "Compared against r010/Git fa2f374: all 25 equation and one align environments (26 numbered containers), other displays, 224 inline math tokens, nine statement bodies, 41 labels and 14 citations are unchanged. Entry, both first subsections, complete genus-two Example, named theorem proof, supplementary samepage Remark, original handoffs and all internal checks are byte-identical. Exact inherited/own delta and @outline match the summary; original-writer ACK SHA256 af0cb61aa2e281ae7fdb6b33b4f0717e87cddc2ce3e59fde78d429e1aa910a7e agrees with the reviewed scope.",
+    "The uniform beta comparison includes G=0. Plane rooted realizations overcount unrooted stack-weighted trees without a vertex factorial, and the factorial convolution sums all genus assignments after parity/stability restrictions are dropped. The all-range inequality (g_2+1)/(g_2-E+1)<=E+1 and falling-factorial bound handle every legal E, not only fixed trees. The nonelliptic one-edge estimate correctly retains the m=2 endpoint.",
+    "The critical disk lies strictly inside the first Phi zero; the circle bound controls the entire outer arc. The local branch of log(w/R) is used only near the saddle, while global powers are integral. Both odd half-orders integrate to zero and the degree-twelve Gaussian-dominated remainder integrates to O(m^-2). The elliptic amplitude is treated additively and its orientations, beta ratio and R*Phi(x_*)=J_1(z_(0,1))^2 give the stated scalar correction.",
+    "The genus-two Example still derives b_2 from the sine-series beta_1/beta_2 and two trees with the elliptic-pair half; it imports no retired-C value. The two further reported coefficients remain unchanged and details are explicitly omitted, without promoting the original theorem precision. Updated interface status and archived computations are provenance rather than new proof evidence.",
+    "No old scientific program, higher-coefficient reconstruction or data calculation was rerun. Only this round's math.json and math_handoff.md were written, without source/shared/state/historical/frozen-output edits. No prior MATH issue is open; integrated manuscript review and final single-TeX export/isolated compilation remain outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 11,
+  "schema_version": 1,
+  "snapshot": "b9020ed4fb6fa54db8658c72a24c4c2fc35a7a2a392feb70225d33c857ac09de",
+  "summary": "Pass on S6 r011 after a complete final reading: the independent exact-vertex/circle/whole-tree/saddle/elliptic-leaf chain proves the unchanged Theorem 1.3 normalization and relative O(g_2^-2); the limited prose edits preserve all domains, beta conventions and supplementary boundaries.",
+  "unit": "s06",
+  "verdict": "pass"
+}

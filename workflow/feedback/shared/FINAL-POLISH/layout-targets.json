@@ -1,0 +1,43 @@
+{
+  "base_commit": "fa2f374",
+  "baseline_overfull_count": 0,
+  "baseline_underfull_count": 9,
+  "scope": "Visual reading targets, not mathematical failures; do not hide warnings with global font/tolerance changes.",
+  "targets": [
+    {
+      "focus": "Weil--Petersson related-work paragraph; fixed versus growing indices and compact W26 v5 credit.",
+      "source": "sections/01_introduction/section.tex",
+      "unit": "s01"
+    },
+    {
+      "focus": "Coefficient-computation Remark beginning Formula ... is a finite-core rule.",
+      "source": "sections/03_graph_asymptotics/04_finite_cores.tex",
+      "unit": "s03"
+    },
+    {
+      "focus": "Source paragraph beginning The volume coefficient is that of Mirzakhani--Zograf.",
+      "source": "sections/04_lambda_one/02_leading_and_first_correction.tex",
+      "unit": "s04"
+    },
+    {
+      "focus": "Joint-moment/contribution proof and long inline formula paragraphs; preserve all algebra.",
+      "source": "sections/a_coefficients/02_loop_moments.tex",
+      "unit": "a"
+    },
+    {
+      "focus": "Compact-parameter neighborhood paragraph and the display/prose boundaries.",
+      "source": "sections/b_analytic_estimates/02_regular_transport.tex",
+      "unit": "b"
+    },
+    {
+      "focus": "Endpoint proof paragraph and long inline endpoint products.",
+      "source": "sections/b_analytic_estimates/03_endpoint_bounds.tex",
+      "unit": "b"
+    },
+    {
+      "focus": "Printed LiuData26 URL and the two Wang version entries; keep accurate credit and fixed source versions.",
+      "source": "references.bib",
+      "unit": "shared"
+    }
+  ]
+}

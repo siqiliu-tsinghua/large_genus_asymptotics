@@ -40,11 +40,20 @@ def labels(path):
     return result
 
 
+def check_reference_pdf(engine, exported):
+    path = engine.safe(exported['source_pdf'])
+    require(path == engine.safe('build/main.pdf'), 'Expected the complete approved manuscript PDF.')
+    require(digest(path.read_bytes()) == exported['source_pdf_sha256'],
+            'Approved manuscript PDF changed since export.')
+    return path
+
+
 def verify(root=ROOT):
     engine = Engine(root)
     engine.audit_records()
     receipt_path = engine.safe('build/export_receipt.json')
     exported = json.loads(receipt_path.read_text(encoding='utf-8'))
+    reference_pdf = check_reference_pdf(engine, exported)
     source = engine.safe(exported['output'])
     require(digest(source.read_bytes()) == exported['output_sha256'], 'Export source changed.')
     inspect_standalone(source.read_text(encoding='utf-8'))
@@ -102,7 +111,7 @@ def verify(root=ROOT):
             inputs.add(str(path))
     run(['pdftotext','-layout','-eol','unix','paper.pdf','paper.txt'],'pdftotext.log')
     manuscript_text = output/'approved-main.txt'
-    result = subprocess.run(['pdftotext','-layout','-eol','unix',str(engine.safe('build/main.pdf')),
+    result = subprocess.run(['pdftotext','-layout','-eol','unix',str(reference_pdf),
                              str(manuscript_text)],capture_output=True,text=True,encoding='utf-8')
     require(result.returncode == 0,'Cannot extract the approved main PDF text.')
     require((isolation/'paper.txt').read_bytes() == manuscript_text.read_bytes(),
@@ -111,6 +120,7 @@ def verify(root=ROOT):
     require(current_labels == labels(engine.safe('build/main.aux')),
             'Standalone label numbers differ from the approved manuscript.')
     require(digest(source.read_bytes()) == exported['output_sha256'], 'Source changed during isolated compilation.')
+    check_reference_pdf(engine, exported)
     require(before == digest(encoded({uid:engine.fingerprint(uid) for uid in engine.included_units()})),
             'Article changed during isolated verification.')
     for suffix in ('pdf','aux','log','fls','txt'):

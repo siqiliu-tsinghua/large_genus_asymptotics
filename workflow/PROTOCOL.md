@@ -4,7 +4,7 @@
 
 ## 状态与文件
 
-工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。原有引言初始为 baseline，仍可在后续显式开启修订。
+工作状态依次为 planned、drafting、in_review；若有不通过的报告，转为 changes_requested，再经 revising 回到下一轮 in_review；全部通过后为 approved。baseline 是初始化时保留旧引言的历史状态；当前引言已走完正常验收，可与其他已验收章节一样显式开启修订。撤回的末尾附录标记为 retired 并保留历史。
 
 workflow/state.json 是脚本维护的状态记录。每轮材料放在 workflow/reviews/单元/r001/ 等目录；其中 submission.json 冻结文件指纹，math.json、readability.json、academic.json 保存各审核者的报告，author_response.json 保存原作者逐条答复。不同轮的记录不覆盖。
 
@@ -16,7 +16,7 @@ sections/单元/INTERFACE.md 与正文一起提交。它必须列明本节导出
 
 回顾经典材料时，说明准确来源及与本文的约定差异。定理、引理、命题的陈述直接接证明；历史、credit 和版本/记号说明通常放入证明后的 Remark，例子和长说明按用途整理为简短 Example、Remark 和段落。原始版本标识放入参考文献条目，正文通过引用定位。数学审核检查模块化后定义和论证仍完整；易读性审核检查读者能否选择阅读及段落是否疏朗；学术审核检查来源、差异和归属的准确性。检查项沿用既有 keys，不用新增形式字段替代实质判断。
 
-写作次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。建议先完成 s02、s03、附录 A，再写 s04、s05、s06、s07、附录 B、s08，最后写附录 C；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用，因此需要先完成相应附录。预览始终保留目标章节和附录编号，最终正文仍按第 1–8 节、附录 A–C 排版。
+写作和复审次序由 workflow/sections.json 的依赖决定，不必等于最终排版次序。当前在用单元的依赖次序为 s01、s02、s03、附录 A、s04、s05、s06、s07、附录 B、s08；每次仍只开启一个单元。附录 A 的系数计算供 s04 使用，附录 B 的分析估计供 s08 使用。预览保留目标编号，论文按第 1–8 节、附录 A–B 排版；已撤回的 C 不再开启或装配。
 
 ## 首次写作
 

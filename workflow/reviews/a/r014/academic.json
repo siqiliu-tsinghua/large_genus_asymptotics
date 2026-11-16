@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The loop-moment proof now separates the generating identity, normal convergence and normalization, and the derivative paragraph correctly identifies the already defined v as the self-loop-count parameter in the logarithmic generator rather than a marking variable. The three-column and total-connector-weight explanations are precise; native pp.32--35,37,39--40 show adjacent statements/proofs, a short post-proof Source comparison and legible finite tables/diagrams, with mathematical evaluation rules in the article and no program or attachment obligation."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The new post-proof Remark credits the broader Wang v5 absolute expansion without claiming priority for c_2(0) or changing the direct MZ/HMT-recursion reconstruction using fixed-v4 profiles and S3 bounds; EGGLS remains a prediction conditional on its stated resurgence assumption. The source-based profiles, the appendix's four-case finite verification and actual ratio extraction, its own correlated moments/core enumeration, and the internally cited uniform tail estimates retain distinct responsibilities rather than being attributed to private notes or code."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "W26v5 is the sole new citation and its Theorem 1.1/(11.6)--(11.7) background scope matches the personally checked primary text; the v4 Lemma 7.2/Appendix C.1 and all old source locators remain unchanged. Retained conventions include signed deficit versus e_{n,1}, k=2G-2+n to inverse-G factors, the common Y=0 amplitude, HMT's kernel half-initial coefficient and 4/8/8 translation, the entire elliptic stack polynomial, and the absence of a loop half-factor or x-rescaling of W_11 in raw connector moments."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "All equation/align displays, unnumbered displays, labels and seven tabular environments are byte-identical to r013; the only added inline symbol mention is the existing moment parameter v, and A.3 is unchanged. The text still derives c_2 from actual third-order ratios with c_3 cancellation, controls the full extraction/loop remainders, and proves the finite 1/3/13 classification and edge/Aut rules in the article; neither the new background reference nor historical-status cleanup changes the fixed-parameter precision, upgrades conditional predictions, or makes internal checks a missing proof premise."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual r014 dispatch, summary, relevant complete frozen source chains across A.1--A.4, interface, outline and original-writer ACK/handoff, retaining the original full mathematical/source-review context without treating bibliography preparation as a signature.",
+    "Independently compared 29 equation, 13 align and seven align* environments, every unnumbered display, all labels and all seven tabular environments with r013; they are unchanged. All original citations remain in order, with only W26v5 added, and the entry/A.3 source and prior internal calculation files are preserved.",
+    "Verified original binding and approved/fresh S1 r007, S2 r017 and S3 r014 dependencies, all archived/live selected inputs and artifacts, recomputed snapshot/render fingerprints and native PDF/entry/helper hashes. The sealed preview has 44 pages with empty standard/layout diagnostics; focused validate.py --unit a passed.",
+    "Prior academic issues remain closed and no new issue is open. No original calculation or long program was rerun; only these two reports and ignored personal page images were written, with no source/state/other-report/history/frozen-output edits or advance approval of the integrated manuscript/single-TeX export."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+  "summary": "Pass. The final-polish appendix preserves its self-contained finite derivations and exact source conventions, clarifies signed loop/connector evaluation, and properly credits the broader v5 background while retaining v4 technical inputs and the unconditional-versus-conditional distinction.",
+  "unit": "a",
+  "verdict": "pass"
+}

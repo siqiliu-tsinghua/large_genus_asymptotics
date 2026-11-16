@@ -1,18 +1,18 @@
 # Introduction
 
-Scientific interface for the complete Introduction author draft.
+Scientific interface for the Introduction.
 Live review, freshness and acceptance status belongs to
 workflow/state.json; this document is not an approval signature.
 The four complete theorem environments, including definitions,
 labels, constants, ranges and error terms, are byte-identical to
-the captured baseline in build/closing-writing/baseline.json.
+Git baseline fa2f374 for the current final-polish round.
 
 ## Current prose scope and assembly
 
 The single section.tex remains the entire Introduction; no formal
-subsections, extra inputs or manifest change is needed. New prose
+subsections, extra inputs or manifest change is needed. The prose
 provides the motivation for four results grouped into two broad
-index settings (first-class powers/fixed-index insertions and
+index settings (first Hodge class powers/fixed-index insertions and
 the top class/fixed defects),
 precise source attribution, an explanation of the contributions,
 the two proof routes and a completed-paper reading guide.
@@ -26,13 +26,17 @@ use literal section/appendix numbers because an isolated s01 preview
 does not import later body dependencies. Theorem references retain
 their stable labels.
 
-An abstract proposal is supplied separately at
-build/closing-writing/abstract-proposal.tex for the coordinator to
-apply verbatim to frontmatter/abstract.tex. The writer has not
-edited that shared file. The proposal has 144 words, no citations
-and no mathematical symbols. It reports the four theorem regimes
-at their original precision, without promoting the supplementary
-third/fourth coefficients from Section 4.
+The applied abstract is already in the shared frontmatter/abstract.tex.
+It has 144 words, no citations and no mathematical symbols, and expands
+intermediate long-wave (ILW) at first use. It reports the four theorem
+regimes at their original precision without promoting supplementary
+coefficients or the fixed-defect conjecture. This final-polish reading
+proposes no abstract change and does not edit the shared file.
+
+The present prose revision makes the first Hodge class explicit in the
+opening, identifies the last two results by indices growing with genus,
+and separately identifies the fixed insertion list and fixed defect.
+It does not describe the top index g as a fixed insertion index.
 
 ## Global conventions at first use
 
@@ -96,11 +100,11 @@ Section/theorem labels: sec:introduction, thm:lambda-one,
 thm:fixed-insertions, thm:top-hodge, thm:fixed-defect.
 Equation labels: eq:phi-1, eq:phi-2, eq:111, eq:P111, eq:g111,
 eq:gh11. All six complete numbered equation environments are
-byte-identical to the captured baseline. Exactly four theorem
+byte-identical to Git baseline fa2f374. Exactly four theorem
 environments remain, in the original order. No numbered formula
 or result is added.
 
-The new prose retains the phrase "the ILW equation". The proofs
+The Introduction retains the phrase "the ILW equation". The proofs
 are in Sections 4,5,6,8 for the respective stable theorem labels.
 This introductory exposition does not replace those proofs.
 
@@ -127,6 +131,11 @@ This introductory exposition does not replace those proofs.
 - W26, Lemma 7.2 and Appendix C.1: first/second descendant
   coefficient inputs used in Appendix A. Fixed-tuple
   identification and HMT uniformity remain separate in the proofs.
+- W26v5, Theorem 1.1 and (11.6)--(11.7): broader all-order absolute
+  volume expansion, including the unmarked case. This is background
+  credit; A retains its direct reconstruction of the required second
+  coefficient, without a priority claim or a new proof dependency.
+  W26 remains the fixed v4 key for the preceding profile locators.
 - MZ15, Section 2: exact recursions used for Appendix A's
   unconditional second absolute WP coefficient reconstruction.
   EGGLS24, Section 6.1 and (6.10), is credited as a conditional
@@ -152,7 +161,7 @@ primary-source verification from the corresponding writing work.
 No fresh priority claim, withdrawn source or internal lecture-note
 citation is introduced.
 
-## Reading routes, precision and remaining work
+## Reading routes and precision
 
 After Section 2, Sections 3--5 give the WP graph route for the
 first two theorems. Section 6 is an independent entry for the top
@@ -168,9 +177,10 @@ cited source, not an appendix of this article.
 
 The fourth theorem remains an asymptotic equivalence; no relative
 error rate is added. The supplementary higher coefficients are
-neither repeated nor used. No known source or structural gap is
-pending. Abstract application, compilation and frozen review
-remain coordinator work.
+neither repeated nor used. No known source or structural gap
+remains. The abstract has already been applied; current build,
+review and acceptance status is recorded in workflow/state.json
+and the corresponding receipts, rather than historical proposal notes.
 
 ## Historical provenance retained
 

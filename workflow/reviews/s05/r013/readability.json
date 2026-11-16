@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete frozen entry and three subsections in manuscript order. 01_character_filtration.tex:11–29 fixes the source count r, odd degrees a_i>=3, total w, binary node polynomial, square-free commuting labels and kernel before coefficient extraction; lines 91–124 bind edge/vertex source subsets, partitions, blocks and new marking degrees (pp.31–33). The majorant proof explicitly scopes s_v,m,H and the number s of new markings on a fixed original core; 02_single_character.tex:5–17 defines the two source sums and the omitted Bernoulli prefactor before their ratios, then binds the new degree d>=4, entire degree generator and scaled derivatives X_k before use (pp.35–37). The final theorem proof explicitly keeps the inherited j_1,...,j_ell fixed and states that its error constant may depend on this list (p.38); no new definition relies on the later appendix or an optional remark.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The entry inherits the normalized Hodge bracket, Chern-character factorial convention, ordinary Bernoulli numbers, WP functions and signed loop functional from Sections 1–4; it does not repeat their basic definitions. The source formula keeps the labeled Bernoulli product, vertex/edge assignments, ordinary graph automorphisms and surviving e^{-alpha psi_new} factors consistent with the forgetting identity; the specified-loop calculation counts its branch factor once (01_character_filtration.tex:31–124; 02_single_character.tex:139–163). Z_g(1) is consistently the denominator in the source ratios and degree conversion, while F_g is the scale for absolute bounds; the final answer returns to the Introduction's F(j),G(j),j_i and ell with O(g^{-4}) precision. Lowercase integral names, g_2, Bessel names and Chow coefficient placement are unchanged; no growing-index uniformity or higher-coefficient input is asserted.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The short opening explains the lambda_3/odd-character mechanism directly, without another genus/moduli/Hodge setup (section.tex:5–23, p.31). The node polynomial and deformed kernel are reused for source allocations and the specified edge; T_g^{free} and T_g^{edge} separate the two actual contributions rather than merely rename one expression. The entire varphi(z) tracks the new descendant degree across the increment and moment calculation, and X_k compresses the recurring scaled derivatives in the ODE table and both finite coefficient evaluations (02_single_character.tex:102–137,166–245; pp.36–37). The revisions add no mathematical names, and the algebraic reduction avoids importing an unnecessary general higher-character formula or Section 4's second correction.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry gives the route from lambda_3 to a full odd-character filtration, then to free-marking/specified-loop contributions and the fixed-product theorem. The filtration proof has explicit modules for the original-graph majorant and fixed cores/all legal loop counts; the revised paragraph break distinguishes the per-graph bound from its complete-tail consequence, and the text explicitly sums legal p>log g before invoking HMT on retained p (01_character_filtration.tex:138–229; pp.33–34). Lemma 5.4's proof is guided by truncation before expansion, common q=1 terms, the free-marking increment and the specified self-loop (02_single_character.tex:35,50,72,139; pp.35–36). The finite derivative step and factorial conversion lead directly into the final substitution into the algebraic reduction (pp.37–38).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All six principal statements immediately precede their proofs, and the final named theorem proof follows a precise substitution guide. The long estimates separate the original unmarked graph, whole graph tail and retained-core bounds; the common q=1 argument retains the three functional paragraphs requested in the earlier review, and Proposition 5.6 now separates the leading, free-marking, specified-loop and final error calculations (pp.33–37). Independently viewed every Section 5 page, pp.31–38, plus the appendix continuation on p.39: source/forgetting displays, ratio formulas, endpoint table, coefficient calculations, proof endings/gaps, final theorem and all three examples remain readable and contained. Necessary rules are proved in the article or accurately linked to its mathematical appendix, with no reader obligation to consult project programs, Markdown or calculation directories.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "Hodge indices remain j_i with ell factors, source-character degrees use a_i with source count r and total degree w, and descendant degrees use d or the bold tuple with total D. The proof explicitly keeps q as the core complexity of the original unmarked graph, p as restored loop count, H as a local counting scalar and s_v/s as forgetting-marking counts; it does not silently replace the graph by a newly marked one (01_character_filtration.tex:138–210). The calligraphic binary P_a differs from the earlier one-variable counting polynomial and from P(lambda), while nilpotent source labels have their stated formal scope; the entire varphi and scaled derivative family X_k have distinct analytic roles (pp.31–37). The finite table and recurrence use the same X_k definition through the final conversion, without new aliases for pi^2, the Hodge bracket or an inherited Bessel quantity.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The opening moves from Section 4's signed loop tools to fixed insertions and explicitly states that no second-order coefficient from Theorem 1.1 is needed. The revised source introduction distinguishes the stated labeled identity from its algebraic proof; that proof supplies the normal-line/Chow argument before the optional Boundary normalization credit, and a direct sentence then introduces edge versus vertex assignments (pp.31–33). The one-source guide now says which denominator terms cancel, and the main proof explains this core by core before computing the remaining increments; the finite ch_3 conversion then accounts separately for the factorial correction, the free term and the specified loop, including their errors (pp.35–37). The short final substitution and three examples illustrate the fixed-list result without becoming proof premises or introducing a stronger precision claim (p.38); the appendix transition remains continuous mathematical prose.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This signature follows a complete final reading of the frozen entry, all three subsections, outline, interface and original-writer final-polish delivery, retaining the freshly reviewed dependency context. Source locations above refer to workflow/reviews/s05/r013/source/sections/05_fixed_insertions/. Native page references are to build/reviews/s05/r013/preview.pdf: every Section 5 page (31–38) and the appendix continuation (39) were independently rendered and viewed.",
+    "Verified all 87 archived/live input hashes, submission artifacts, exact snapshot/source fingerprint, actual bound identity and fresh s01 r007/s02 r017/s03 r014/s04 r016/a r014 dependencies. PDF/entry/helper hashes and sealed equal-fingerprint preflight provenance match the receipt. The 57-page native PDF retains 10pt/no-showkeys, flush-left bibliography continuations and existing proof spacing; strict/layout diagnostics and accepted exceptions are empty. python scripts/validate.py --unit s05 passed.",
+    "All 24 numbered equation/align environment blocks, all six principal statement bodies, endpoint table, existing mathematical expressions, labels and citations match r012 and baseline fa2f374; the Labeled sources heading's spelling change is accounted for, while its stable label is preserved. From the final named proof onward, the theorem proof and three examples are byte-identical to r012. The earlier READABILITY-001 paragraph issue remains fixed and is not reopened/reclosed, so issues and resolved_issue_ids are empty. No source, state or frozen output was edited, and no integrated final manuscript, single-file export or isolated compilation is preapproved."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+  "summary": "Complete final reading and native-page review of Section 5 passed. Fixed-list scope, source assignments, original-graph tails, legal-loop truncation, denominator cancellation and the finite ch_3 calculation are clearly organized; the theorem and examples retain the stated notation and precision.",
+  "unit": "s05",
+  "verdict": "pass"
+}

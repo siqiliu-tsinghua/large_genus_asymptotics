@@ -1,0 +1,48 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "status": "pass",
+      "evidence": "Read the entry and all six frozen subsections continuously against the physical S1/S2/S6/S7/B reading order. 01_analytic_domains.tex:5-30,55-82 defines the perturbed critical data and fixed-cap common domains before 02:5-32 introduces P_h and E_h with their scales and derivative scopes; 03:5-36 defines the convergent transport integral, Y_0 and harmonic numbers before use. 04:12-24,235-263 introduces D_{g,h}, the difference Borel series and the unmarked T shorthand, including the h=0 extension and fixed n=0,1,2 bound; 05:140-175 binds the quotient projective bundle, xi and the local mixed sequence before their intersections. The technical Appendix B inputs are identified by result and their needed main-text domain/output is spelled out; no later optional Remark supplies a missing hypothesis."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "The full reading preserves g_2, z_{0,1}, R=rho/12, the lower-case b_g(h),b_g families and the earlier t_0=x; the recovered-singularity proof uses S-y directly throughout (04:92-188). The two Borel factorials (2g+h-2)! for L_h and D_{g,h}! for the raw-potential difference are explicitly distinguished before use, rather than silently changing a normalization. The final proof (06:12-43; companion pp.65-66, unit p.39) restores both factorial ratios and keeps the background O_h(g^-1) separate from the final relative o(1); the current interface exports the same precision."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "The theorem-first opening inherits the previous geometry and potentials without a genus/moduli/Hodge-bundle inventory. P_h,E_h have separate recurring coefficient/remainder roles, the calligraphic B integral turns repeated transport into powers, D_{g,h} tracks the repeated coefficient and factorial shifts, and F_h^+ separates the inverse part from its primitive constant. The mixed C_k is confined to the background proof; short one-off endpoint distances remain S-y. The closing numerical Remark names neither a new residual sequence nor an extra fitted constant."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "section.tex:5-22 starts with Theorem 1.4 and gives the four-step route through singularity propagation, ordered integrals, inverse-sine recovery and the complete background change. 02:58-65 explains why the principal distance stays fixed and characteristic integration restores a square root; 04:5-10,65-70 prepares the primitive constant and critical initial segment, and 05:5-9 explains why a single-node estimate must be followed by log-concavity. 06:5-10 explains the distinct origins of the two factorial ratios before combining them. These guides remain visible in the actual companion pp.55,57,59-60,63,65."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "All 13 principal tool statements are immediately followed by proofs, with the final named theorem proof separate from the optional source/conjectural Remarks. The current paragraph breaks in 02:103-120 separate endpoint hypotheses, vanishing-order recovery and the remote analytic term; 04:103-188 separates the critical initial segment, principal remainder and other branches, while 04:282-330 separates the primitive and fixed-marking tasks. The whole genus convolution (05:60-87) and the three functional background-proof paragraphs (05:155-217) remain in the main argument. Companion pp.55-66 were all inspected enlarged, with unit pp.30,32-34,38-39 additionally checked: displays and labels stay within the measure, proof squares are normally placed, and the complete closing Remark/table fits on a single page with the final proof. No program or internal document completes an argument."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "In 04:26-60,92-188,193-225, m labels the kernel branches, u/s are bound path or center variables, Y is the normalized transfer variable and N is its integer degree; S is the stated center distance. In 05:60-87 the component genus G, component defect i and degrees a,c are explicitly separated, and p,xi,C_k subsequently have a new stated geometric/proof-local scope. Calligraphic B is a transport function, ordinary B_n remains Bernoulli, beta_g remains the one-point coefficient, and scalar b and b_g are unchanged. The formal Hodge epsilon is not repurposed as a geometric radius."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "The S7 ending and S8 opening (companion p.55) explicitly move from coefficientwise identities to actual analytic domains; pp.57-59 then explain the endpoint mechanism and ordered-integral h! before the inverse operator is used. 04:270-299 (pp.62-63) explains the mirror factor two and the smaller geometric primitive constant; 05:39-87 (pp.63-64) accounts for both stack factors and the full splitting sum, rather than just a fixed term. The final proof and Remark (pp.65-66; unit p.39) keep proven equivalence separate from the h=1 conjecture and define both numerical columns before their table. The move to Appendix A on p.66 and its A.1 on p.67 is clear, with no retired-C or engineering-material obligation."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual binding, exact snapshot, all 72 S8 review inputs, the native source/PDF/entry/helper fingerprints, and the companion receipt were independently checked; 33 numbered equation environments and 13 principal statements remain. All S8 visible source equals r006 after whitespace normalization, but this verdict also rests on the complete current reading.",
+    "Native unit PDF SHA256: 12b33953b0cae012306623e937b0d5ba277206cda18eede9408c637d8c351d47; native source hash: 6d6010697e24687eb1b14cf72a2a93ac2f6b77d39f0373476f45ccfe91732bad. Standard and overfull diagnostics are empty. python -B scripts/validate.py --unit s08 passed.",
+    "Visual extent: all S8 pages 55-66 in the same actual 100-page complete companion were inspected enlarged, plus unit preview pp.30,32-34,38-39; the separate integrated report records the wider full-article inspection. Private images and identity audit are under build/final-polish-20261116/readability-s08-r007/.",
+    "Previously resolved S8 READABILITY-001/002 are not reopened or newly counted as resolutions. This signature covers the frozen S8 snapshot and identified companion, not a future assembled/exported single-TeX build."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "summary": "Pass after a complete current Section 8 reading and actual native/integrated-page inspection. The new functional paragraph breaks improve navigation without changing symbols, hypotheses, constants or the stated precision; no unresolved readability issue remains.",
+  "unit": "s08",
+  "verdict": "pass"
+}

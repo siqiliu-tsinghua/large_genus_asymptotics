@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact hashes and native source/PDF/entry/helper hashes; the corrected context now accurately describes KMZ96v1's retained publication note and deletion of the unused duplicate, without changing the exact source version or adding a mathematical input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The Introduction and interface are byte-identical to r006, preserving stack dimensions, stable-target vanishing, finite-genus ranges and all four theorem hypotheses; the bibliography-status sentence changes none of these.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "All scientific source, bibliography and native rendered text are unchanged from r006, so Hodge integral scales, stack factors, factorials, Bessel constants and absolute/relative volume conventions retain their verified meaning.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged setup and thm:fixed-insertions/thm:top-hodge/thm:fixed-defect retain the first definitions of a_g,b_g(h),g_2,z_(0,1),rho and the fixed-list/fixed-defect quantifiers; KMZ96v1 remains the same source key rather than a new mathematical symbol.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The context correction, appended handoff and empty author response introduce no proof step; the r006 assessment, including verified v5 background credit and the independent in-text S4/A reconstruction, remains valid without a program or private record filling a deduction.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The identical theorem and prose text preserve all four error strengths and fixed-parameter scopes, with neither supplementary coefficients nor the h=1 conjecture promoted by this documentation correction.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh signature on snapshot 728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981; no old MATH issue exists, so issues and resolved_issue_ids remain empty. The r006 mathematical report remains pass with no issue and the authorized response contains no invented issue ID.",
+    "Direct r006-to-r007 comparison shows only workflow/context.md and the appended final_polish_handoff.md changed, plus newly selected r006/author_response.json, with no removed input. The supplied summary uses latest approved r005 as its baseline; its larger six-input/@outline/two-addition comparison was separately checked rather than mistaken for a new scientific change. Intro, interface, references.bib, abstract and preamble match r006.",
+    "The retained KMZ96v1 entry actually records Communications in Mathematical Physics 181 (1996), 763--787, while unused KMZ96 is absent. Original-writer ACK SHA256 45e3873be7905192e8ef1d57290394a90611da357a99215ad78053e1fcf3b911 agrees with this narrow reconciliation. The source review from r006 is retained; no new v5 search or calculation was repeated.",
+    "The submission file-map SHA256 2ab6b8d74ae96b5bd6f8da4e98db9b4bb4b6b051668d7bb85c1169863f891fd0 includes the new author response; the build/render fingerprint bc52ee10a04fc8973e6fe0be038fbb35dabf0bd5c938b664f2908aa427ef06a9 omits that bookkeeping input, matching the helper's fingerprint call without an author-response argument. Both were independently recomputed. Native PDF SHA256 102ca49e59cd1427cc18b7e9e0e2e0212d860ff9932c7ad1b53a130efd5256f9 and entry/helper hashes match current/preflight receipts; strict/layout diagnostics are empty and preview.txt is byte-identical to r006. Pre-submit/equal-source sealing provenance is retained.",
+    "Only this round's math.json and math_handoff.md were written; source, state, historical reports and frozen outputs were untouched. This does not sign full-manuscript review, merged TeX export or isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981",
+  "summary": "Pass on S1 r007: the KMZ bibliography-status reconciliation is accurate, scientific source and native text are unchanged from reviewed r006, and the actual new snapshot and both input/render fingerprints are verified.",
+  "unit": "s01",
+  "verdict": "pass"
+}

@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete frozen entry and four subsections in manuscript order. 01_hodge_potential.tex:8–51 binds descendant times, x=t_0, formal hbar/epsilon, the genus/defect reindexing, transformed potential, field U and Bernoulli coefficients before the ILW statement (p.21); the full-time inverse is defined before the top-sector lemma. 02_specialization.tex:5–36 defines theta, specialized coefficients, stable T_{g,h,n} and the inverse germ, while 03_exact_transport.tex:5–22 now explicitly qualifies finiteness by fixed genus and positive defect before defining shifted times and jets (pp.23–24). L_{g,h}, the transport operator, X_sigma, its fixed inverse branch, derivative-before-evaluation rule and normalized logarithmic kernel precede use; 04_borel_transform.tex:5–50 separately types formal y, layer ranges, local shifts and real integration variables before the kernels (pp.25–27).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The original x=t_0 convention is retained in the raw potential, specialization and characteristic formulas; the full-time W specializes to the inherited w_theta=w+theta u, with the same inverse v_theta. Calligraphic F/G are the raw/transformed potentials, distinct from the inherited factorial scale F_g and functions F(j),G(j); z records genus, eta records defect, and y is explicitly independent of z in the Borel normalization (pp.21,23,27). beta_k remains the inverse-sine family from Section 6, ordinary B_n remains Bernoulli, and g_2+h is used directly for the unmarked degree without a new alias. The current interface agrees with the manuscript's exact factorials, signs, real-theta/local-x characteristic scope and formal-output-coefficient interpretation; Hodge indices j_i/ell, integral families and Bessel names are unchanged.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening explains the positive-defect strategy without restarting g,n, moduli or bundle definitions (section.tex:5–25, pp.20–21). The raw/transformed potentials, finite jets, L_{g,h}, normalized Lambda_theta and indexed Borel layers each have distinct repeated uses in deriving and recovering the transport equations; full-time and specialized objects retain the same names with stated arguments. The revised fixed-genus qualification and paragraph divisions add no symbol, and the Euler factor is written directly as 1+y partial_y instead of introducing another operator. Source-convention conversion is confined to what is needed to read Buryak's flow, while all the kernel's local coefficient indices and integration variables have limited explicit scopes.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry gives the route from potentials/ILW through kappa specialization and geometric integration constants to characteristic recovery and factorial Borel kernels, explicitly leaving the analytic theorem to the next stage (pp.20–21). The 7.3 guide correctly says fixed genus and positive defect; its proof then separates homogeneous string reduction, dilaton resummation, the genus-one seed and rational derivatives before integrating the field equation (03_exact_transport.tex:5–10,47–99; pp.24–25). The guide before Exact transport explains the x-integration constant and the infinite-end condition, and the Borel guide explains why the two Beta integrals implement the linear/quadratic degree shifts (pp.25,27). The concluding paragraph identifies precisely the uniform complex-domain, kernel and primitive tasks for Section 8/Appendix B (p.28).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All nine principal statements are directly followed by their proofs. The essential homogeneous string result remains a main lemma with geometric proof; Exact transport and Characteristic recovery remain separate, readable statements with their own adjacent proofs, preserving the earlier structural repairs (pp.22,25–26). The new paragraph boundaries distinguish genus-one initial value from dilaton summation, the jet-kernel argument from the zero constant, branch construction from decay, and the first-layer formal identity from local convergence; the linear/quadratic Borel verification also retains explicit functional headings (pp.24–28). Independently inspected every native Section 7 page, pp.20–28: long jet, characteristic and Borel formulas and all nine proof endings/gaps are normal; the required mathematics is in the article and formal references, not project software or engineering records.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The calligraphic shifted times I_d distinguish them from Bessel notation, and the normalized logarithmic quotient is Lambda_theta rather than a reuse of the established Phi. W_k denotes inverse-function jets, L_{g,h} a potential derivative, X_sigma the characteristic coordinate and calligraphic L_h the indexed Borel family; their definitions keep these roles separate from cotangent lines, Section 4's unindexed signed functional and the transport operator script D (pp.24–27). Auxiliary u,A,V and local kernel shift a have explicitly local roles; genus splits g',g'', defect split i and derivative increment k have visible bounds. The entry and revisions preserve the inherited zero, rho, beta_g and scalar/integral b notation without a new alias or a conflicting Euler-operator name.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The section starts from the limitation of the top-class tree argument and motivates ILW for positive defect, then distinguishes the raw kappa background from the later Hodge-background comparison (pp.20–23). The revised genus-one and jet paragraphs explain where free-energy constants come from, and the characteristic proof now clearly separates existence of the fixed inverse branch from its integrable decay (pp.24–26). The Borel proof distinguishes the exact first-layer coefficient identity from its local normal convergence for small y; higher layers remain coefficientwise, with the final finite-output-degree argument excluding an unproved infinite-genus interchange (04_borel_transform.tex:80–153, p.28). Both opening and conclusion leave common domains, singularity transfer and Theorem 1.4 to Section 8/Appendix B, so the logical progression and standalone mathematical reading remain clear.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "This is a complete final reading of the frozen entry, four subsections, outline, interface and original-writer final-polish delivery, retaining the s01/s02/s06 context. Source locations above are under workflow/reviews/s07/r009/source/sections/07_ilw_transport/. Every actual Section 7 page in build/reviews/s07/r009/preview.pdf, pp.20–28, was independently rendered and viewed, including the opening on p.20 and all nine proof endings.",
+    "Verified all 48 archived/live input hashes, submission artifacts, exact snapshot/source fingerprint, actual bound identity and fresh s01 r007/s02 r017/s06 r012 dependencies. Native PDF/entry/helper hashes and sealed equal-fingerprint preflight provenance match the receipt. The 30-page PDF retains 10pt/no-showkeys, flush-left bibliography continuations and settled proof spacing; strict/layout diagnostics and accepted exceptions are empty. python scripts/validate.py --unit s07 passed.",
+    "All 35 numbered displays, nine principal statements, mathematical expressions, labels and citations match r008 and baseline fa2f374. The entry and whole 7.1 source remain byte-identical to r008. Earlier READABILITY-001/002 repairs remain effective and are not reopened/reclosed; issues and resolved_issue_ids are empty this round. No scientific rerun or source/state/historical/frozen-output edit was made. This signature concerns Section 7's exact formal/fixed-genus exports, not the subsequent analytic proof, integrated final manuscript or single-file export/isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+  "summary": "Complete final reading and native-page review of Section 7 passed. First definitions, the fixed-genus qualification, geometric integration constants, characteristic branch/decay and formal-versus-analytic Borel scopes are clear; the separate result modules and proof endings remain readable.",
+  "unit": "s07",
+  "verdict": "pass"
+}

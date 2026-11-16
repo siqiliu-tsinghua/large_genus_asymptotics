@@ -1,8 +1,8 @@
 # Coefficients and finite cores
 
-Scientific interface for the complete Appendix A author submission. Live
-review and acceptance status belongs to `workflow/state.json`. This document
-does not confer a review signature or claim completion of Section 4.
+Scientific interface for Appendix A. Live review, freshness and acceptance
+status belongs to `workflow/state.json` and the corresponding frozen
+receipts. This document describes scientific exports, not a review signature.
 
 ## Scope and dependency provenance
 
@@ -11,6 +11,9 @@ summable graph expansion: full first/second descendant profiles, a rigorous
 absolute c2(0) reconstruction, signed correlated loop moments, the q=0
 second and q=1 first corrections, four exact low vertex integrals, and all
 1/3/13 core types for q=0/1/2 with their automorphisms and contributions.
+
+Historical scientific dependency provenance (live versions are recorded by
+the workflow):
 
 - s02 r006 snapshot:
   `a524bfee025c0acb201e25ededbc067ee5141474253c98c2d6e5c0aeecb8df91`.
@@ -55,7 +58,7 @@ The s03 gamma_r coefficients remain relative to V_g0, not F_g.
 | a,z indicator,x,h_0,h_1,h_2,h_z,m | Before/after `eq:a:connector-moments` | Local single connector degree, zero indicator, complex degree-generating parameter near 1, four raw weighted moments and positive connector count. The rational raw degree moments are 2 M_{0,r}; the elliptic generator is the integral of W_11(t) f(xt), with W_11 unscaled and no loop factor 1/2. Zero-indicator integrals are specified separately |
 | r_1,r_2 | Last A.2 Remark | Only that remark's complete absolute coefficients; do not use a_1,a_2, which collide with the integral sequence a_g |
 | raw psi integrals | A.3 opening | Written as actual stack integrals, distinct from both normalized brackets already used in the paper |
-| G_i,n_i,m_{ij},c,n_0 | A.4 opening, `eq:a:core-data` | Local small vertex data, two-index edge multiplicities, genus loss and root core valence. Root labelled 0, no root self-loop |
+| G_i,n_i,m_{ij},c,n_0 | A.4 opening, `eq:a:core-data` | Local small vertex data, two-index edge multiplicities, genus loss and root core valence. Root labeled 0, no root self-loop |
 | Aut_V | `lmm:a:core-enumeration` | Vertex permutations preserving root, genera, edge matrix; separate flag factors are explicit |
 | a,b,d,l_i in enumeration | Proof of the preceding lemma | Local nonnegative edge/loop counts in two-vertex valence equations |
 | core IDs 0.1,1.1--1.3,2.1--2.13 | A.4 graph tables | Row identifiers, not theorem numbers. Square is root; circle contains small genus; upper/lower small vertex is 1/2 |
@@ -122,13 +125,18 @@ manuscript should cite stable labels.
 - `Mir07`, Theorem 4.4 and elliptic convention p.4: length-polynomial
   interpretation only, with the ENTIRE (1,1) polynomial divided by two.
   The class scale is already fixed by s03's Wol86/MZ15 normalization.
+- `W26v5`, Theorem 1.1 and (11.6)--(11.7): background credit for
+  the broader all-order absolute volume expansion, including the
+  unmarked case. The direct reconstruction here retains its original
+  recursions, fixed-v4 profiles and bounds; no new proof dependency
+  or priority claim is introduced.
 - `EGGLS24`, Section 6.1, assumption before (6.6), and (6.10), fixed
   bibliography version: published resurgent prediction, explicitly
   CONDITIONAL. Its match with c2(n) is credit/post-computation comparison,
   not an input to any reconstruction. Hua25 is not cited or used.
 - s02 `eq:s02:partition-inversion` and rational-tail degree lemma:
   low kappa/psi computations, including the negative two-input merged
-  block term. No future Appendix C input is used.
+  block term. No input from the retired Appendix C is used.
 
 ## Self-contained mathematical basis and internal checks
 
@@ -141,9 +149,11 @@ installation instruction is needed to complete these arguments.
 The existing calculations files and verification records are preserved
 unchanged as internal author checks, not as promised submission content.
 
-The full mathematical appendix, core diagrams and finite rules are supplied.
-No known source gap remains in these statements, subject to independent
-formal review. Section 4 must still present the Hodge reduction, apply the
-global tail to the assembled coefficients and prove Theorem 1.1 in its
-announced normalization. Later marked/Hodge insertion work is not claimed
-as completed by these WP coefficient calculations.
+The finite coefficient derivations, core diagrams and rules are complete
+in the article. Section 4 combines them with the Hodge reduction and global
+tail to prove Theorem 1.1 at its stated precision. Section 5 uses the
+first-profile and loop-moment inputs for fixed insertions; it does not
+require the explicit second correction of Theorem 1.1. No known source gap
+remains. Current review and build status belongs to the workflow records,
+not the historical preparation handoffs. Those handoffs, internal checks
+and frozen reports are preserved unchanged.

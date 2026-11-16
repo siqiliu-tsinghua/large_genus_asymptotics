@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The cited GRR statement now directly precedes its scoped proof, which explicitly identifies the convention check; the cotangent comparison names the natural map, its source/target and its simple zero instead of suggesting that a line bundle itself vanishes. Inspected native pp.5--6 and 9: definitions, source/base distinctions and later source Remarks remain readable, inherited notation is not reintroduced, and the article supplies mathematical arguments or precise citations without an engineering reader obligation."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The GRR introduction still credits Mumford and the FP00 formulation, and the proof begins by applying that cited theorem rather than claiming to reprove the deep GRR result; its own binomial computation only translates nonlogarithmic kappa and ordered branches and specializes degree one. The revised cotangent explanation preserves the existing algebraic Chow proof and post-proof KMZ credit, with GP03 flag translation, the ABCDGLW cohomology/Chow distinction and Arbarello--Cornalba/Faber--Zagier attribution intact."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "All eleven S2 citation occurrences are unchanged, including Mum83 Section 5 (5.2)--(5.3), the unnumbered FP00 Section 1.1 Theorem (Mumford), FP00 Section 1.3 (16), GP03 Appendix A.1, and the fixed KMZ96v1 formulas. The explicit conversion retains the marking minus sign, ordinary Bernoulli normalization, ordered-node half factor and rational Chow convention; the actual shared bibliography matches accepted S1 r007, removes only unused KMZ96 and preserves the versioned record and journal information without replacing technical versions."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "Independently compared all nine principal statement blocks, 28 numbered equation environments, labels and citations with r016 and found them unchanged: the added proof wrapper creates no new theorem or hypothesis. The interface correctly exports exact finite-genus identities rather than uniform genus-dependent sum estimates, and neither the shared W26v5 background credit nor the historical-status cleanup upgrades precision, priority, proof independence or the final-export status."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual r017 dispatch, frozen diff, entry, four subsection sources, interface, target outline and original-writer ACK/handoff; retained the original personally checked classic-source context and assessed the actual new proof wording rather than treating preparation as an approval.",
+    "Source/statement guards independently confirm 28 S2 numbered equations, one theorem, five lemmas, one proposition and two corollaries, together with all labels and citation occurrences, unchanged from r016; the GRR wrapper adds only a proof environment. The interface corrects the old ambiguous formula count and historical pending-work descriptions without changing exports.",
+    "Verified the actual academic binding, approved/fresh S1 r007 dependency and matching shared inputs, all archived/live selected files and artifacts, recomputed snapshot/render fingerprint, and native PDF/entry/helper hashes. The sealed native PDF has 13 pages with empty standard/layout diagnostics, and focused validate.py --unit s02 passed.",
+    "No academic issue remains open from r016. Only the current academic report/handoff and ignored personal page images were written; no source, state, other report, history or frozen output changed, and integrated full-manuscript/single-TeX isolation remains outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+  "summary": "Pass. The final-polish S2 correctly presents an application of Mumford GRR with an explicit convention proof and clarifies the cotangent comparison, while preserving precise source attribution, all mathematical statements and the finite-genus scope.",
+  "unit": "s02",
+  "verdict": "pass"
+}

@@ -1,0 +1,56 @@
+--- previous/sections/01_introduction/final_polish_handoff.md
++++ sections/01_introduction/final_polish_handoff.md
+@@ -68,3 +68,31 @@
+ Scoped preservation and UTF-8/LF guards accompany delivery.
+ Shared finalization and the native frozen build remain with the
+ coordinator. STOP for the original three-role review.
++
++## Shared documentation reconciliation after r006
++
++All three original r006 reviewers returned pass with empty issue
++lists on snapshot
++47bc333539a10928ed60ab90f399806ffda79a7dec98db20c6e98f27cd0cc173.
++The coordinator then invalidated the round solely to reconcile
++shared documentation, not to correct a manuscript or reviewer issue.
++The stale context sentence said that the unused KMZ96 database
++entry remained. The context now correctly records KMZ96v1 with its
++publication information and removal of the unused duplicate; README
++also reflects the current source/assembly map.
++
++I checked the actual current files. Before this follow-up, the only
++selected-input difference from r006 was workflow/context.md.
++references.bib already contained the retained versioned record and
++was byte-identical to r006. The Introduction and INTERFACE remain
++byte-identical to r006, including the polished prose, W26v5 credit,
++four theorem blocks and all mathematics. No interface correction
++is needed.
++
++The r006 author_response.json follows the generated template with
++responses empty because no formal issue is open; no failed review
++or issue ID is invented. This follow-up changes only that authorized
++response, this appended handoff section and the designated external
++s01-r007_writer.md ACK. All registered reports, frozen source and
++other artifacts remain intact. No calculation, compilation or state
++transition is performed by the author. STOP after static checks.
+--- previous/workflow/context.md
++++ workflow/context.md
+@@ -98,8 +98,8 @@
+ presentation to FP00. FP00 remains a source for the Hodge bundle conventions.
+ Use a bibliography entry for each cited source version, with precise locators
+ in citations, instead of raw arXiv identifiers in manuscript prose. The exact
+-KMZ preprint version is cited as KMZ96v1; the journal record KMZ96 remains in
+-the bibliography database.
++KMZ preprint version is cited as KMZ96v1, whose entry also records the formal
++journal publication. The unused duplicate key KMZ96 has been removed.
+ 
+ The rmk and exm environments have independent section-based counters and roman
+ bodies, preserving the existing mathematical-result numbers when optional
+--- /dev/null
++++ workflow/reviews/s01/r006/author_response.json
+@@ -0,0 +1,6 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [],
++  "round": 6,
++  "unit": "s01"
++}

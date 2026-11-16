@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the frozen entry and all four subsections in physical manuscript order. Section 4 precedes Appendix A: 01_loop_moments.tex:6–36 therefore defines the paired weights, nonnegative endpoint degrees, concatenated tuple, D/m_a statistics, signed functional and independent complex moment parameters before Lemma 4.1 (p.25). 02_leading_and_first_correction.tex:5–26 defines the signed fixed-tuple profiles and local complexity k before using them, while 03_second_correction.tex:5–25 binds the graph restriction, Q_{q,r} ranges and total inverse-genus orders (pp.26,28). The connector tuple and local x near 1, and all variables in the representative q=2 integral, are defined before their formulas; Remark 4.4 specifies its normalized quantity and assigns the next two coefficients to g^{-3},g^{-4} in that order (pp.29,31).",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The section inherits alpha,F_g,Z_g,f,S, graph complexity and the Introduction's conventions without new aliases. The entry, absolute Q-group definition, Normalization Remark and final proof consistently distinguish Z_g/F_g from Z_g/V_{g,0}; the latter's gamma coefficients require the absolute volume conversion (section.tex:19–21; 03_second_correction.tex:14–19,144–154; 04_proof.tex:33–55). The loop weight's branch factor 1/2, core automorphism orders and raw connector integrals agree with the freshly reviewed Appendix A, including holding W^WP_{1,1}(t) fixed when differentiating f(xt). Both user-specified (9/8)g^{-1} forms remain in (4.7) on p.26 and the final a_g formula on p.31; lowercase integrals, Hodge indices/ell, g_2, Bernoulli/Chow conventions and inherited Bessel names are preserved.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The opening moves directly to the two corrections and the existing graph formula, with no repeated genus/moduli/Hodge setup (section.tex:5–21, pp.24–25). One signed functional handles all correlated loop moments, and the main text retains the two short moment derivations while directing longer finite verification to the mathematical appendix. The few Q_{q,r} names distinguish three actual contribution groups and are reused in the final assembly; the first profile and connector correction are written directly rather than acquiring additional shorthand. The revised root-loop, source-credit and normalization sentences add no symbols, and the higher-coefficient Remark defines its normalization directly without naming a new quantity.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The entry explicitly maps the leading term to q=0, the first correction to q=0,1, and the second to q=0,1,2, then states how loop moments, small vertices, Appendix A and the global tail fit together (pp.24–25). The guide before Proposition 4.3 specifies that the three groups require, respectively, second, first and leading coefficients, and its proof treats their volume/profile, connector and thirteen-core mechanisms separately (03_second_correction.tex:21–25,44–113; pp.28–29). The final proof follows the stated order: M=3 whole-graph tail, all legal p>log g tails, K=2-q core expansion with summable errors, and restoration of absolute WP/Hodge normalization (04_proof.tex:8–55; pp.30–31). This makes the exchange of loop sums and asymptotic extraction traceable without repeating the Section 3 proof.",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "Lemma 4.1 and Propositions 4.2–4.3 immediately precede their proofs; the final named proof has a short guide, and credit, convention and supplementary coefficient material follow the relevant proofs. The joint-generator proof now has separate paragraphs for the identity, convergence/differentiation and normalization; the second-correction proof has distinct q=0, q=1 and q=2 calculations with the cancellations shown in the text (pp.25,28–29). Independently viewed every current Section 4 page, pp.24–31, plus the appendix transition on p.32: diagrams, tags, long displays, paragraph/proof gaps and proof continuations are readable; the complete samepage Remark 4.4 stays on p.31. The main theorem has its full coefficient/remainder argument in the article and precise mathematical appendix references; internal checks and engineering records are not reader obligations.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "Endpoint degrees a,b and their paired indices are explicitly local to w_{ab}; p counts root loops, q counts core complexity, D is degree and m_a counts the low modes, so ell remains the Hodge-product length. The complex moment parameters are separated from the edge variable t, and the later connector x is explicitly assigned its new local near-1 scope (01_loop_moments.tex:6–36; 03_second_correction.tex:69–90). Uppercase Q_{q,r} visibly denotes absolute group coefficients, while lowercase gamma_r keeps the relative expansion role; no competing normalization constant or integral-family name is introduced. The three core diagrams have a stated square/circle convention and explicit automorphism/coefficient columns (02_leading_and_first_correction.tex:113–139, p.27), and the example binds its two connector variables separately from the small-loop variable (p.29).",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The actual p.24 opening connects Section 3's uniform expansion to the numerical corrections, and Example 4.1 gives concrete moment calculations before the first-correction argument. The revised source Remark is a compact post-proof paragraph retaining the MZ and W26 v4 locators and clearly separating fixed-tuple profiles from growing-valence estimates (02_leading_and_first_correction.tex:142–151, p.28). In the second-correction proof, the new paragraph before the connector generator separates loop averaging from raw connector integration; the negative q=2 example and absolute-volume comparison remain optional explanations after the main proof (pp.29–30). The final theorem proof restores a_g/N_g before the self-contained supplementary Remark, whose omitted-details sentence and g^{-3},g^{-4} scope leave the original theorem precision clear; the following appendix entry supplies the promised in-text finite rules rather than software instructions (p.31).",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Signed the current snapshot after a complete final reading of the entry, four subsections, frozen outline, interface and original-writer final-polish delivery, with the retained s01/s02/s03/Appendix A reading context. Source locations above refer to workflow/reviews/s04/r016/source/sections/04_lambda_one/. Native page references are to build/reviews/s04/r016/preview.pdf: Section 4 occupies pp.24–31; p.32 was also viewed for the appendix continuation.",
+    "Verified all 80 archived/live input hashes, submission artifacts, exact snapshot/source fingerprint, actual bound identity and fresh s01 r007/s02 r017/s03 r014/a r014 dependencies. Native PDF, entry/helper hashes and sealed equal-fingerprint preflight provenance agree with the current receipt; strict/layout diagnostics and accepted exceptions are empty. The 50-page native PDF retains 10pt/no-showkeys, flush-left bibliography continuations and existing proof spacing. python scripts/validate.py --unit s04 passed.",
+    "All 15 numbered equation/align blocks, all three principal statements, existing displayed/inline mathematics, labels and citations match both r015 and baseline fa2f374. The entry and complete 04_proof.tex, including the samepage higher-coefficient Remark, are byte-identical to r015. The previously resolved pagination issue remains fixed; it is not reopened or reclosed, so issues and resolved_issue_ids are empty this round. The supplementary coefficients' omitted derivations remain the user-authorized scope and are not main-proof premises. This signature does not approve a later integrated manuscript, single-file export or isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 16,
+  "schema_version": 1,
+  "snapshot": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+  "summary": "Complete final reading and native-page review of Section 4 passed. The q=0,1,2 route, absolute/relative normalization, source attribution and connector mechanism are clear, and the full theorem proof and supplementary samepage Remark retain their distinct scopes and readable presentation.",
+  "unit": "s04",
+  "verdict": "pass"
+}

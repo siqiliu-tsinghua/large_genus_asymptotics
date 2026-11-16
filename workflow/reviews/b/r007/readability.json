@@ -1,0 +1,47 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the frozen entry and all five subsections. B.1 defines the perturbed critical data, disk notation, local derivative series, inverse domains and two-distance cones before use, with explicit square-root branch and parameter ranges (01_inverse_domains.tex:5–38,90–160,222–254; pp.29–32). B.2 binds the regular branch center, positive forward-derivative scale and tube assumptions; B.3 states the real scale exponents, fixed 1/2<nu<1, larger complex parameter neighborhoods and nested-cone conventions before its conditional input estimates (pp.33–36). B.4 then defines the vanishing-order condition and dented regions before applying the class to actual finite layers, and B.5 introduces modified Bessel functions and separately states the genus-one exclusion and coefficient-degree ranges (pp.37–42). No new definition is added by the revisions or left to a later optional explanation.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The appendix inherits w,Phi,x_*,R,w_theta,v_theta,L_{g,h} and the exact Section 7 Borel normalization without reopening the moduli/Hodge setup. The critical distance remains S=R_theta-x, the formal genus/Borel variables and x=t_0 retain their roles, and geometric sizes use r,r_H,r_0 rather than the formal Hodge epsilon. 02_regular_transport.tex:12–16 explicitly identifies w_theta' as the forward derivative and v_theta' as its reciprocal; the regular-disk and negative-axis arguments use that distinction consistently. beta_g, b_g, scalar b, ordinary Bernoulli numbers, the Hodge j-family/ell and g_2 receive no competing global notation; the current interface agrees with the conditional/actual-input and fixed-layer scopes.",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The entry identifies common domains, regular/endpoint transport and the primitive task directly from Sections 6–7, without an inherited-symbol inventory (section.tex:5–17, p.29). The B.1-local M_k series supports repeated angular and derivative estimates; disks, inverse tubes and two-distance cones encode distinct geometric requirements rather than synonymous domains. Generic endpoint inputs and their coefficient/remainder notation are reused across the linear, quadratic and local-transport lemmas before the actual common-domain proposition, while the fixed cap H avoids separate constants for every layer. The B.2/B.3 prose and paragraph revisions add no symbol, and the short quadratic-proof ending preserves its reasoning without a local formatting macro.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The opening distinguishes full inverse-radius geometry, remote regular bounds, initial endpoint estimates and the negative-axis primitive. B.1 separately motivates univalence and the full radius budget; B.2 explains how rational jets define coefficients before constructing actual holomorphic Borel functions (pp.29,33). B.3 explicitly treats general inputs, B.4 explains why frozen/local, intermediate and vanishing-order/remote estimates are all needed, then checks them inductively for the actual fields rather than assuming a Borel sum (pp.35,37–40). B.5 separates the geometric fixed-genus primitive from the near-zero, bounded-negative-interval and negative-infinity uniform estimates, and distinguishes its coefficient bound from the asymptotic transfer reserved for Section 8 (pp.40–43).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "All sixteen principal statements immediately precede their proofs; essential domains, derivative budgets and vanishing orders are in the main definitions/statements. The revised B.2 continuation proof now separates local neighborhoods/finite subcover, positive-sigma and remote control, and Cauchy/uniformity conclusions; B.3 separates m=1 from the intact m>=2 cubic difference and corner integrability from endpoint consequences (02_regular_transport.tex:171–183; 03_endpoint_bounds.tex:110–139,173–190; pp.35–37). Independently viewed every native appendix page, pp.29–43: long displays, proof continuations, functional paragraphs, all sixteen proof endings and gaps are readable, including the locally shortened quadratic ending at the right on p.37 before B.4. The analytic arguments are supplied in the article and precise references; project programs, Markdown and engineering records are not reader obligations.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The perturbed argument x_{*,theta}, critical value R_theta and inverse v_theta retain distinct roles; S and S_sigma describe distances rather than reuse the boundary class delta. Blackboard disks, the fraktur inverse tube and calligraphic cone/transport/input symbols distinguish the objects in the displayed estimates; the generic endpoint H/J/Q inputs remain explicitly conditional until the actual indexed L_h proposition (pp.29–40). Local positive beta in the regular-disk lemma is declared as a derivative scale, distinct from beta_g; ordinary modified Bessel I_k is defined in B.5 and differs from the shifted calligraphic I_d of Section 7 (pp.33,40–41). Local total degree N=2g+h-2 and fixed layer cap H are explicitly bound, leaving g_2 and the inherited Hodge indices unchanged.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "B.2's new phrase 'These local continuations' gives the compact-neighborhood argument an explicit antecedent; the separate remote-corollary paragraphs distinguish its local critical-branch and compact real-center conclusions (pp.34–35). B.3 explains why all m>=2 terms must remain together for the summable m^{-2} majorant, then connects value bounds to fixed derivatives on smaller cones; the quadratic proof separately establishes two-variable integrability before its endpoint output (pp.36–37). B.4 verifies the conditional input class for actual fields with finite layer/parameter reductions and normal coefficient extraction, while B.5 fixes the primitive independently of numerical data and preserves the genus-one exception (pp.39–43). The appendix thus supplies domains/error calculus to Section 8 without assuming that section's singular coefficients, transfer result or background comparison as a premise.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Complete final reading of the current frozen entry, five subsections, outline, interface and original-writer final-polish delivery, in the retained s01/s02/s06/s07 context. Source locations above are under workflow/reviews/b/r007/source/sections/b_analytic_estimates/. Every actual Appendix B page in build/reviews/b/r007/preview.pdf, pp.29–43, was independently rendered and visually inspected, including all sixteen principal proof endings.",
+    "Verified all 57 archived/live input hashes, submission artifacts, exact snapshot/source fingerprint, actual bound identity and fresh s01 r007/s02 r017/s06 r012/s07 r009 dependencies. Native PDF/entry/helper hashes and sealed equal-fingerprint preflight provenance match the receipt. The 44-page PDF retains 10pt/no-showkeys, flush-left bibliography continuations and settled proof spacing; strict/layout diagnostics and accepted exceptions are empty. python scripts/validate.py --unit b passed.",
+    "All 35 numbered displays, sixteen principal statements, mathematical expressions, labels and citations match r006 and baseline fa2f374. The entry and complete B.1/B.4/B.5 source remain byte-identical to r006. The writer's preflight quadratic-square repair was inspected in the actual frozen PDF and introduces no unresolved issue; it was not a prior formal reviewer issue to reclose. Prior B issues were empty, so issues and resolved_issue_ids remain empty. No scientific rerun or source/state/historical/frozen-output edit was made, and no integrated final manuscript or single-file export/isolated compilation is preapproved."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+  "summary": "Complete final reading and native-page review of Appendix B passed. Inverse geometry, normal convergence, whole-sum endpoint estimates, conditional-to-actual input verification and the uniform primitive bound have clear roles and parameter scopes; the revised paragraphs and all proof endings are readable.",
+  "unit": "b",
+  "verdict": "pass"
+}

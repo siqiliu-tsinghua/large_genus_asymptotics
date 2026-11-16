@@ -1,0 +1,32 @@
+{
+  "author_metadata": "Keep the existing author-name-only signature; do not add further details.",
+  "baseline_commit": "fa2f374",
+  "change_id": "FINAL-POLISH",
+  "final_integrated_reading": "Inspect and sign the same frozen complete-manuscript companion during the final s08 round; revision of any earlier unit uses its original author and reviewers before a new complete companion.",
+  "format": "Keep the generic article format; no target journal specified.",
+  "history": "Preserve all prior frozen reports, source copies and acceptance receipts.",
+  "request": "Commit the current changes first, then complete the five listed finalization tasks on the new baseline.",
+  "retired_units": [
+    "c"
+  ],
+  "review_policy": "One active unit, original writer and original three reviewers; no stale or copied pass.",
+  "tasks": [
+    "Update obsolete working documents",
+    "Polish English and presentation",
+    "Verify bibliography and publication details",
+    "Integrated final reading by the retained roles",
+    "Archive outputs, rebuild/export in isolation, and commit the final version"
+  ],
+  "unit_order": [
+    "s01",
+    "s02",
+    "s03",
+    "a",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "b",
+    "s08"
+  ]
+}

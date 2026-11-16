@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The revised prose correctly says that the normalized signed functional encodes root-loop moments and that automorphism groups perform the flag permutations; convergence and zero-parameter normalization are separated, and the connector paragraph now has a clear transition. The source/convention Remarks remain after proofs, with no new notation or engineering reader obligation; native pp.28--29 and 31 show the revised explanations and the complete supplementary Remark clearly."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The actual post-proof source paragraph credits Mirzakhani--Zograf for the volume coefficient, Wang v4 for the signed first deficit/second profile and Appendix A for its finite verification, while S3 retains responsibility for polynomial bounds and summable growing-valence errors. The direct c_2 reconstruction is still described through the exact MZ/HMT recursions and actual adjacent-genus cancellation; EGGLS is explicitly conditional, and the broader v5 background already acknowledged in S1/A neither replaces those technical inputs nor invites a priority claim."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "All source citations and stable labels are unchanged, including MZ15 Theorem 1.2/Remark 1.3, W26 v4 Lemma 7.2/Appendix C.1 and the exact-recursion/conditional-prediction locators. The edited sentences preserve inverse-complexity versus inverse-genus and absolute Q versus relative gamma normalizations, the root-loop automorphism factors, raw connectors without a loop half-factor, and the unscaled elliptic W_11 polynomial; shared bibliography and dependency versions match the newly approved inputs."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "All displayed/inline mathematics, three principal statement blocks, tables, diagrams and labels are unchanged from r015, and the entire final-proof source is byte-identical, including the M=3 whole-graph tail, legal-loop cutoff and K=2-q factorially summable errors. The post-proof higher coefficients retain the user-authorized omitted-calculation status and are not inputs to Theorem 1.1 or an upgrade of its O(g^-3) remainder; historical internal verification records are accurately past evidence rather than a new run or a reader requirement."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual r016 dispatch, summary, frozen diff, entry and all four subsection sources, interface changes, target outline and original-writer ACK/handoff, retaining the original complete source/proof and higher-coefficient-review context without a redundant new literature search or scientific program run.",
+    "Independently compared 12 equation and three align environments, two align* environments, the supplementary gather*, eleven true unnumbered displays, all inline mathematics, one table, two TikZ environments, all citations/labels and all three principal statement blocks with r015: they are unchanged; 04_proof.tex is byte-identical, including samepage and the omitted-details sentence.",
+    "Verified original binding, all four approved/fresh dependencies, archived/live selected files and artifacts, recomputed snapshot/render fingerprints and native PDF/entry/helper hashes; the sealed 50-page preview has empty standard/layout diagnostics and focused validate.py --unit s04 passed.",
+    "No prior academic issue is open. Only the current academic report/handoff and ignored personal images were written; no source/state/history/other-report/frozen-output changes were made, and the later integrated manuscript and isolated single-TeX export are not preapproved."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 16,
+  "schema_version": 1,
+  "snapshot": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+  "summary": "Pass. The final-polish wording sharpens source roles, loop/connector symmetry and normalization without changing the independent finite reconstruction, full graph-tail argument, original theorem precision or supplementary calculation status.",
+  "unit": "s04",
+  "verdict": "pass"
+}

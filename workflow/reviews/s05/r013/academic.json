@@ -1,0 +1,36 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Read the complete entry and three frozen subsections: the revised orientation distinguishes stating the labeled source formula from proving its specialization, and separates the per-graph estimate, complete graph tail, fixed-core bound and three finite coefficient contributions. Native pp.32--34,37--38 show adjacent statements/proofs, the post-proof boundary-convention Remark, a derived endpoint table and three purposeful examples; inherited notation is used continuously and no private program or attachment supplies a reader obligation."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The opening accurately credits ABCDGLW Lemma 3.10 for the general symmetric node series and identifies S2's scalar specialization separately; the section supplies its actual algebraic Chow self-intersection/pushforward proof rather than attributing an unproved generalization to S2. Mumford/FP00 and KMZ remain credited at the internally cited S2 results, MZ/Wang first-coefficient inputs at S3/A, and the complete decorated-graph majorant and single-ch_3 calculation are proved here without using the explicit second or supplementary higher coefficients of Theorem 1.1."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The actual ABCDGLW citation retains its fixed-v3 Lemma 3.10 (3.18)--(3.21) locator and explicitly distinguishes its cohomological statement from the algebraic Chow proof; the symmetric weighted one-edge pushforward equals half the ordered cover, so no extra half or source-label factorial is inserted into the kernel. All old citations/labels and technical versions are unchanged, including the retained logarithmic-kappa negative new-psi term, unordered partition coefficients, Bernoulli normalization, inverse-complexity-to-genus factor and exactly one specified-loop branch-exchange factor."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The revised proof explicitly estimates each original unmarked graph and then invokes the full S3 weighted-tail bound; every legal large-loop tail is summed before HMT is used, preserving the distinction between whole-sum uniformity and fixed-core coefficients. All mathematical displays, inline expressions and six principal statements are unchanged apart from the optional Labeled heading, as are the final theorem proof and examples: the result remains for a fixed insertion list through g^-3 with O(g^-4), with no growing-index, general odd-character coefficient, Schubert or higher-precision claim and no numerical/software premise."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Read the actual r013 dispatch, summary/diff, full frozen section/interface, target outline and original-writer ACK/handoff, using the current approved dependency interfaces and retained personally checked primary-source context rather than copying a preparation or earlier pass.",
+    "Independently compared 20 equation, four align, one align* and all true unnumbered/inline mathematical expressions, endpoint table, citation occurrences and labels with r012: they are unchanged; all six statement blocks match after only the Labeled heading spelling adjustment, and the complete final proof/three-example suffix is byte-identical.",
+    "Verified the real original binding, all five approved/fresh dependencies, archived/live selected inputs and artifacts, recomputed snapshot/render fingerprints and native PDF/entry/helper hashes; the sealed preview has 57 pages, empty standard/layout diagnostics and a passing focused validate.py --unit s05 result.",
+    "No academic issue is open from the preceding round. Only these two reports and ignored personal images were written, without source/state/history/other-report/frozen-output changes, a redundant literature search or scientific-program run; later integrated manuscript and isolated single-TeX export remain outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 13,
+  "schema_version": 1,
+  "snapshot": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+  "summary": "Pass. The final reading confirms precise general-source credit and convention translation, a genuinely whole-graph filtration and a self-contained single-character/Chern reduction, with the original fixed-list scope and O(g^-4) precision preserved.",
+  "unit": "s05",
+  "verdict": "pass"
+}

@@ -1,25 +1,25 @@
 # The top Hodge class and Bessel asymptotics
 
-Scientific interface for the complete s06 author draft. Live review and
+Scientific interface for Section 6 and its proof of Theorem 1.3. Live review and
 acceptance status belongs to `workflow/state.json`; this interface is not
 a review signature.
 
 ## Dependency and scope
 
-Approved s02 r009 snapshot:
+Historical scientific dependency provenance: s02 r009 snapshot
 `33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084`.
 The closure consists of s01 and s02. The proof uses no result, coefficient,
 notation definition or unresolved label from the WP Sections 3--5 or
 Appendix A. It proves the original `thm:top-hodge` / `eq:g111`, with
 relative O(g_2^-2), and preserves every target constant and normalization.
-The Bessel/genus-zero data below are available for future fixed-defect
-work; no positive-defect asymptotic is proved here.
+The Bessel/genus-zero data below are used in the fixed-defect analysis
+of Sections 7--8; no positive-defect asymptotic is proved in this unit.
+Current dependency freshness and approval belong to the workflow.
 
 The entry immediately after `sec:s06` states Theorem 1.3 as its goal,
 then explains the top-class/tree reduction and the exact-vertex,
 uniform-circle/tree-tail and saddle/elliptic-leaf strategy. Its last
-paragraph identifies the retained fixed-defect data. This roadmap
-revision changes no scientific export below.
+paragraph identifies the retained fixed-defect data.
 
 ## Inherited notation
 
@@ -29,7 +29,7 @@ revision changes no scientific export below.
 | b_g, g_2=2g-3, J_n(z), z_{0,1}, rho, scalar b | Introduction, Theorem 1.3; none is renamed |
 | j_1,...,j_ell, ell and other integral families | Introduction; these meanings are retained and not used for auxiliary indices |
 | psi, logarithmic kappa_a, ordinary Bernoulli B_k | s02.2; kappa has the forgetting-point convention |
-| MM_Gamma, graphs, flags, Aut Gamma, gluing, g_v,n_v | s02.3; all graph identities are on the labelled vertex product before its quotient |
+| MM_Gamma, graphs, flags, Aut Gamma, gluing, g_v,n_v | s02.3; all graph identities are on the labeled vertex product before its quotient |
 | pi_k and the kappa exponential | s02.4, `eq:s02:kappa-exponential`; entire-background inversion rather than a second background pullback |
 
 ## New notation and scopes
@@ -110,22 +110,21 @@ and 12 conversion. The original theorem label/number remain unchanged.
   whole-background inversion with new weight psi*(1-exp(-psi)); no
   additional new-point exponential is inserted into that formula.
 - s02 `crl:s02:defect-allocation`, `eq:s02:tautological-gluing`,
-  `eq:s02:boundary-exponential`: labelled-product top-class tree restriction,
+  `eq:s02:boundary-exponential`: labeled-product top-class tree restriction,
   logarithmic gluing and exact boundary weights. No equivariantly trivial
   cycle quotient on a graph quotient stack is asserted.
 
 ## Review boundary
 
-The mathematical draft and roadmap are complete with no known source or
-proof gap left as an input. The all-type estimate, whole-tree sum and
-retained saddle remainder are proved in the text, rather than inferred
-from finite coefficient checks. Independent frozen review is still needed.
-Actual validation/build outcomes and author checks are reported in the
-current handoff. No shared input, accepted chapter or old record is edited.
+The all-type estimate, whole-tree sum and retained saddle remainder are
+proved in the text, rather than inferred from finite coefficient checks.
+Their scopes and error strengths are separate from the supplementary
+coefficients below. Historical handoffs preserve earlier author and build
+evidence; live review, approval and freshness are recorded by the workflow.
 
 ## Supplementary reported coefficients
 
-The new rmk:s06:further-coefficients is directly after the unchanged
+The post-proof rmk:s06:further-coefficients is directly after the
 proof of Theorem 1.3. It reports, respectively, the coefficients
 of g_2^-2 and g_2^-3 in the relative expansion of eq:g111:
 
@@ -139,9 +138,8 @@ Only the existing scalar b and Bessel zero are used. No new
 coefficient name, Bessel alias, numbered equation or principal
 result is introduced. The Remark uses the independent Remark
 counter, unnumbered displays and an explicitly omitted derivation.
-All old source, proof and formula content remains verbatim,
-including the proved O(g_2^-2) remainder and the original
-Introduction/Theorem 1.3 precision.
+The proved O(g_2^-2) remainder and the original Introduction/Theorem 1.3
+precision remain unchanged.
 
 The checks directory supplies a self-contained original-writer
 reconstruction of the phase/Gaussian coefficients and all seven
@@ -152,7 +150,7 @@ the coefficients. Target expressions enter only post-comparison.
 Code-local X,L,z are declared internal and are absent from the
 published Remark.
 
-The actual run.py execution completed with SymPy 1.14.0 and
+The archived run.py execution used SymPy 1.14.0 and
 mpmath 1.3.0. Generated data stay under build/s06-higher-check/.
 The tracked verification.json binds the actual algorithm/output
 hashes and records computation_only status. It is neither a
@@ -164,6 +162,6 @@ w ODE already established here; no new primary citation is needed.
 The appended LiuData26 bibliography entry is not used by this
 Remark or program.
 
-The original writer_handoff.md is preserved as history. The new
+The original writer_handoff.md is preserved as history. The
 higher_remark_handoff.md records the limited addition and actual
 execution. Live acceptance/freshness remains a workflow matter.

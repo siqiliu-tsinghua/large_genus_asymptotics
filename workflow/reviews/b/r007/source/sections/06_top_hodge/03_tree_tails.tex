@@ -1,0 +1,158 @@
+% !TeX root = ../../main.tex
+\subsection{Stable trees and their tails}
+\label{subsec:s06:03}
+
+For a vertex $v$ of a tree, put $m_v=2g_v-3+n_v$. Let
+$\mathbf s_v$ be its tuple of flag parameters: both flags belonging
+to an edge $e$ use the same $s_e\in[0,1]$.
+For the comparisons in this and the next subsection define the
+positive scale
+\begin{equation}\label{eq:s06:tree-scale}
+ \mathcal T_g=\beta_g\frac{g_2!R^{-g_2}}{\sqrt{g_2+1}}.
+\end{equation}
+We first keep the exact automorphism factors. Only after bounding
+every vertex will we replace unrooted trees by plane rooted trees
+in a positive majorant. This controls the entire genus and valence
+sum at each edge count.
+
+\begin{prp}[The complete tree sum]\label{prp:s06:tree-tail}
+For $g\geq2$,
+\begin{equation}\label{eq:s06:tree-expansion}
+ \frac{12^{g_2}b_g}{g_2!}
+ =\sum_{\substack{\Gamma\in\mathcal G_{g,0}\\\Gamma\text{ a tree}}}
+  \frac1{|\operatorname{Aut}\Gamma|}
+  \int_{[0,1]^{E(\Gamma)}}
+       \prod_{v\in V(\Gamma)}W^{\rm top}_{g_v,n_v}(\mathbf s_v)
+       \prod_{e\in E(\Gamma)}\dd s_e.
+\end{equation}
+Every contributing tree has $E\leq g_2$ edges. There is a constant
+$C>0$, independent of $g$ and $E$, such that the absolute sum of
+its $E$-edge integrals is at most
+\begin{equation}\label{eq:s06:edge-mass}
+ \mathcal T_g C^{E+1}
+ \sqrt{\frac{g_2+1}{g_2-E+1}}\,
+                  \frac{(g_2-E)!}{g_2!}
+ \qquad(0\leq E\leq g_2).
+\end{equation}
+Hence, for every fixed integer $K\geq1$, the sum over all trees
+with at least $K$ edges is $O_K(\mathcal T_g g_2^{-K})$ in
+absolute value.
+\end{prp}
+\begin{prf}
+\emph{The finite-genus identity.}
+The boundary exponential with both scalar coefficients one gives
+edge kernel $\int_0^1e^{-s(\psi_f+\psi_{f'})}\dd s$.
+By Corollary~\ref{crl:s02:defect-allocation}, the pullback of
+$\lambda_g$ vanishes on every graph with a cycle and is the product
+of the vertex top classes on a tree. Logarithmic kappa additivity
+\eqref{eq:s02:tautological-gluing} now gives the right side of
+\eqref{eq:s06:tree-expansion}, with the original graph
+$1/|\operatorname{Aut}\Gamma|$.
+On the left, $\kappa_1+\delta=12\lambda_1$ and degree conversion
+gives $\int\lambda_ge^{12\lambda_1}=12^{g_2}b_g/g_2!$.
+For a tree, the genus condition and flag count imply
+\begin{equation}\label{eq:s06:tree-degree}
+ \sum_v m_v=\sum_v(2g_v-3+n_v)=g_2-E.
+\end{equation}
+All $m_v$ are nonnegative, proving $E\leq g_2$.
+
+\emph{A majorant for every tree and genus assignment.}
+The comparison for $\beta_G$ in Theorem~\ref{thm:s06:lambda-g}
+uses $\sum_v g_v=g$ to give
+$\prod_v\beta_{g_v}\leq C^{E+1}\beta_g$, including rational and
+elliptic vertices. Apply Lemma~\ref{lmm:s06:vertex-bound} to
+every factor. Since $\sum_v n_v=2E$ and there are $E+1$ vertices,
+all its exponential constants are bounded by $C^{E+1}$ after
+increasing $C$. The edge domains have measure one. After removing
+$\beta_gR^{-g_2}$, the remaining majorant is thus a constant to
+power $E+1$ times
+$\prod_v m_v!/\sqrt{m_v+1}$.
+
+Every unrooted genus-labeled tree has a plane rooted realization,
+and its original weight is at most one. A plane rooted tree with
+$E$ edges is encoded by a walk of $2E$ up/down steps, so there are
+at most $4^E$ shapes. For a fixed shape and the $m_v$, the genus
+labels are determined by $2g_v=m_v+3-n_v$. The beta factors have
+already been bounded uniformly; dropping parity and stability restrictions
+therefore only enlarges the positive sum over nonnegative $m_v$.
+This introduces no factorial in the vertex count.
+
+For every integer $M\geq0$,
+\begin{equation}\label{eq:s06:factorial-convolution}
+ \sum_{k=0}^M k!(M-k)!\leq3M!.
+\end{equation}
+Indeed the two endpoint terms give $2M!$ when $M\geq1$, while
+$\binom{M}{k}\geq M$ for $1\leq k\leq M-1$; the case $M=0$
+is immediate.
+
+Iterating the convolution for $E+1$ vertices gives
+$3^EM!$ for total $M=\sum_v m_v$. Also
+$\prod_v(m_v+1)\geq M+1$. With $M=g_2-E$, these estimates and
+the shape count prove \eqref{eq:s06:edge-mass}.
+
+\emph{Summing every edge count.}
+For $0\leq E\leq g_2$, direct multiplication gives
+\[
+ (E+1)(g_2-E+1)-(g_2+1)=E(g_2-E)\geq0.
+\]
+The square root in \eqref{eq:s06:edge-mass} is therefore at most
+$\sqrt{E+1}$. Moreover
+\[
+ \frac{(g_2-E)!}{g_2!}\leq\left(\frac e{g_2}\right)^E.
+\]
+For example, integrate $\log t$ from $g_2-E$ to $g_2$ to bound
+the logarithm of the falling factorial below by
+$E(\log g_2-1)$. For sufficiently large $g$, $Ce/g_2\leq1/2$.
+Thus the sum of \eqref{eq:s06:edge-mass} over $E\geq K$ is at most
+\[
+ C\mathcal T_g\left(\frac{Ce}{g_2}\right)^K
+       \sum_{j\geq0}2^{-j}\sqrt{K+j+1}
+ =O_K(\mathcal T_g g_2^{-K}).
+\]
+This bounds the complete tree sum, including all small-genus and
+large-valence configurations.
+\end{prf}
+
+A one-edge tree has positive genus at each endpoint. Its two
+orientations give the exact expression
+\begin{equation}\label{eq:s06:one-edge}
+ \frac12\sum_{G=1}^{g-1}\int_0^1
+       W^{\rm top}_{G,1}(s)W^{\rm top}_{g-G,1}(s)\dd s.
+\end{equation}
+The factor $1/2$ also gives the correct automorphism weight when the
+two genera agree. The next bound isolates the elliptic endpoints
+without a fixed-split approximation.
+
+\begin{lmm}[Nonelliptic one-edge tail]\label{lmm:s06:nonelliptic-tail}
+The absolute contribution to \eqref{eq:s06:one-edge} of all splits
+with $2\leq G\leq g-2$ is $O(\mathcal T_g g_2^{-3})$.
+\end{lmm}
+\begin{prf}
+At an endpoint of genus $G\geq2$, the coefficient order is
+$2G-2\geq2$. The two orders sum to $M=g_2-1$.
+Applying the all-type vertex and beta bounds as above, using
+$(m+1)(M-m+1)\geq M+1$, bounds the relative contribution by
+\[
+ C\sqrt{\frac{g_2+1}{M+1}}\,
+       \frac{M!}{g_2!}
+       \sum_{m=2}^{M-2}\binom{M}{m}^{-1}.
+\]
+Allowing odd $m$ only enlarges the sum. For $M\geq6$ it is at most
+\[
+ \frac2{\binom M2}+\frac{M-5}{\binom M3}=O(M^{-2}).
+\]
+Since $M!/g_2!=1/g_2$, the asserted bound follows. The finitely
+many smaller totals are absorbed in the constant.
+\end{prf}
+
+\begin{exm}[Genus two]
+Here $g_2=1$. The tree with no edges has value $\beta_2$, and the only
+one-edge tree consists of two elliptic vertices with weight $1/2$.
+The series \eqref{eq:s06:beta-series} gives
+$\beta_1=1/24$ and $\beta_2=7/5760$. Thus
+\[
+ b_2=\frac{\beta_2+\beta_1^2/2}{12}=\frac1{5760}.
+\]
+This checks both the stack symmetry factor and the conversion by
+$12^{g_2}$.
+\end{exm}

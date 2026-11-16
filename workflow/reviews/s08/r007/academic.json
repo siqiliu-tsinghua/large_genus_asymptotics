@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Read the full entry, six subsections, interface, actual delta and writer handoff/ACK, then inspected the complete-companion Section 8 on pages 55?66. New paragraph boundaries separate analytic hypotheses, local/remote terms, the initial critical-center segment and fixed-marking estimates without hiding assumptions. All thirteen principal statements immediately precede their proofs; notation inherits Sections 6?7, and the final conjecture/table is clearly separated from the theorem proof. The paper supplies its mathematical arguments without an internal-program or collaboration-file obligation."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The section applies the exact Buryak-based Section 7 identities and the actual common-domain, endpoint and primitive results proved in Appendix B; it does not assign those analytic conclusions to the formal ILW source. Ordered integrals and the two-point transfer are proved here, with the latter expressly crediting Flajolet?Odlyzko Section 2 as its contour method. DLMF supplies the Y_0 expansion and Wronskian; Fujita/Kawamata supply semipositivity under the stated reduction hypotheses, LX26b the full boundary-bundle and smooth-cover steps, and Cornalba?Harris the ample criterion; the all-boundary squeeze is supplied in the article."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The unchanged locators match the retained verified sources: DLMF 10.8.2/10.5.2 with the displayed positive Bessel constant, FO90 Section 2 without an invented journal theorem number, Fuj78 Main Theorem (0.6), Kaw81 Theorem 5, LX26b Proposition 4.4 and Proposition 6.1 at m=0, and CH88 Theorem (1.3). Rechecked the relevant cached primary CH/Fuj/Kaw/LX passages: full vector-bundle nefness, boundary test curves, labeled partial normalization, semistable/SNC/unipotent conditions and positive stack-degree descent remain explicit. The final numerical evidence directly cites LiuData26 at the previously verified fixed commit; it does not pretend to be a primary proof."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The proof closes the analytic chain using Appendix B?s finite-layer common complex regions and normal convergence, then retains the whole inverse-sine path, both parity-related singularities, the genus-one primitive exception and the full one-node convolution. The ordered recurrence gives 1/h!, the two factorial ratios give g^(2h), and B(0)=1/(2R), rho=12R yield the constant 24 at fixed h. The final theorem still asserts only relative o(1), distinct from the separate O_h(g^-1) background comparison; the unchanged closing h=1 limit is explicitly conjectural, with residuals/extrapolation distinguished from the independently evaluated Bessel candidate and no proved rate or general-h refinement."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Verified the actual reviewer binding, fresh approved s01/s02/s06/s07/b dependencies, live/archive/submission/artifact fingerprints, and native unit PDF/entry/helper hashes. The only current section manuscript changes are paragraph boundaries in 8.2/8.4; all visible words, 33 numbered formulas, thirteen statement blocks, mathematical expressions, labels and citations are preserved from r006, including the whole final proof and conjectural table.",
+    "Independently verified the additional complete 100-page companion and all ten snapshots against current live and archived inputs. Its source hash is 47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49 and PDF SHA is 1d01148c664c3d56ab6d0fb6f0764a6f02d776fb4d99e6b0ffc6b9968b139881. The separate final_academic.json records the integrated review and exact visual extent.",
+    "Global validation passed. Native standard/overfull diagnostics are empty; the complete receipt retains eight underfull log entries, which are not treated as absent. Earlier ACADEMIC-009 remains closed, with no open academic issue from r006. No scientific calculation, source/state edit or frozen-output rebuild was performed; this signature does not approve a future export."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "summary": "The current Section 8 retains precise source credit and convention translation, completes the stated analytic and geometric chain at fixed defect, and keeps theorem precision separate from the closing numerical conjecture.",
+  "unit": "s08",
+  "verdict": "pass"
+}

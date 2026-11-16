@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual /root/s02_math binding, canonical snapshot, complete archive/live/artifact and native hashes, with S1 r007 approved and fresh. The immediate GRR proof explicitly applies the cited Mumford theorem and derives only the paper's convention form; the retained primary-source checks for FP00/Mum83, GP03, partial normalization, ABCDGLW and KMZ96v1 remain applicable without a new proof input.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Read the entry and all four subsections: homogeneous degree selection, integer character/kappa ranges, graph dimension 3g-3+n-|E| and vertex-defect total h-b_1 are consistent. The tail factors have dimensions k-1 or k-2 against new degree at least k, while the exponential specialization has minimum pushforward degree m and hence cutoff m>3g-3+n; stable/genus-zero and out-of-rank conventions remain inherited.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The GRR convention proof correctly uses disjoint marking sections with normal class -psi_i, yielding nonlog kappa_a=kappa_a-sum psi_i^a, B_2=1/6 and delta=(1/2)xi_*1. Root-normalized characters, the negative smoothing-line edge kernel, graph 1/Aut, factorial restoration and unordered inversion signs are unchanged; the inverse has no block cycle factorial.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "In 2.2, psi/L_i precede logarithmic kappa and factorial-normalized characters, with psi_(n+1) explicitly on the source; the graph flags/cycle space are defined in 2.3 and pi_m/source-versus-base, divisors, W and unordered blocks before use in 2.4. The accepted Intro supplies stack/Chow/g_2/integral conventions without redundant definitions, and the rewritten cotangent sentence introduces no new object or scope ambiguity.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The GRR wrapper does not purport to reprove the deep theorem, and its convention argument now directly follows the statement. The clarified map pi_1^*L_i to the source L_i has a simple zero on D, giving psi_source=pi_1^*psi_old+D with the stated sign; the remaining family-residue, Chow self-intersection and push-pull/inversion proofs stay complete, including the nontrivial possible Aut action on the cycle-space quotient rather than an equivariant-triviality claim.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The tail lemma requires a positive psi exponent at EVERY forgotten marking and retains the kappa_1-sum_new psi correction, whereas the separate exponential factor starts at degree two and gives a finite codimension cutoff. These are exact graded-Chow identities with algebraic proofs, not estimates for a growing graph/forgetting sum; neither the polish nor the completed-work metadata imports an unproved interchange or strengthens an asymptotic theorem.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e and the true /root/s02_math role were independently verified. Source SHA256 61833a1963f5deca318cf258e25eb30c77452cca716a3890b8be922643ace7a5; native PDF SHA256 6f6a83548f197f1e1ccd63170cc1199446ab2366c68c833fdfe208a818aa4e28. Current/preflight source and PDF agree, entry/helper hashes match, strict/layout diagnostics are empty, and the recorded pre-submit/equal-source sealing provenance is preserved.",
+    "Compared the own scientific source both to r016 and Git fa2f374: all nine principal statement blocks, 28 numbered equations, six unnumbered displays, 244 inline mathematical tokens, 46 labels and 11 citations are unchanged. Exactly one proof environment was added around the existing GRR convention calculation; entry, 2.1 and old writer handoff are byte-identical. Native extracted text confirms the explicit Mumford invocation and convention argument render in that proof.",
+    "The exact inherited/own file-map delta, changed @outline metadata and two added handoffs match the supplied summary. The original-writer ACK SHA256 97beffb88f8c4f8df1270e777c6cf032a047efd913e22fc7742bad88a5de85a6 agrees with the scope. The already reviewed shared bibliography/status update changes no S2 technical locator; KMZ96v1 retains its formal publication note and the unused duplicate is removed.",
+    "The algebraic normal-line, marking-section, residue-family and forgetting arguments supply the Chow statements rather than assuming an injective cycle map or relying on software. The fixed-genus identities remain separate from later uniform graph estimates. No old numerical or symbolic program was rerun, and no prior MATH issue is open.",
+    "Only this round's math.json and math_handoff.md were written, without manuscript/shared/state/historical/frozen-output changes. This is not the later integrated full-manuscript review or final single-TeX export/isolated-compilation signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+  "summary": "Pass on S2 r017 after a complete final reading of the entry, four subsections and interface: the GRR proof wrapper correctly invokes the deep source theorem and checks this paper's conventions, the cotangent-map clarification has the correct direction/sign, and the finite-genus Chow chain and all scopes remain intact.",
+  "unit": "s02",
+  "verdict": "pass"
+}

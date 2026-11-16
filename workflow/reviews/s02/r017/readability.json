@@ -1,0 +1,50 @@
+{
+  "agent_id": "/root/s02_readability",
+  "checks": {
+    "definitions": {
+      "evidence": "Read the complete current section: 2.1 inherits the introductory stack/degree conventions, then 2.2 introduces psi, source psi_new, logarithmic kappa, factorial-normalized characters and ordered boundary data before use (native pp4-5). Graph/flag/cycle data precede normalization and defect allocation, while the forgetting maps, source/base convention, positive new-marking powers and partition variables precede their formulas (pp6-11); no basic setup or inherited-symbol inventory is repeated.",
+      "status": "pass"
+    },
+    "notation_consistency": {
+      "evidence": "The current formulas retain g_2, j_i/ell, lowercase integral families, ordinary Bernoulli numbers and rational Chow coefficients inside parentheses, with explicit logarithmic/nonlogarithmic conversion and the ordered-node half (02_tautological_classes.tex:93-126; pp5-6). The positive-new-psi hypothesis, surviving kappa correction and separate minimum-degree-two cutoff remain distinct and consistent (04_boundary_and_forgetting.tex:146-194,276-319; pp10-12).",
+      "status": "pass"
+    },
+    "notation_economy": {
+      "evidence": "The universal-curve role of the inherited forgetting map is identified without retelling its definition, and the repeated edge kernel, map family and partition notation have specific reusable functions rather than forming an opening ledger. The cotangent clarification describes the existing comparison map without giving it an unnecessary new name, and the GRR proof wrapper adds no object or result.",
+      "status": "pass"
+    },
+    "roadmap": {
+      "evidence": "The opening and 2.4 guide explain factorial conversion, GRR/Chern rewriting, Hodge restriction/defect allocation, boundary expansion and forgetting inversion in their order of use (pp3-4,8). The fixed-parameter table, rational-tail argument and final cutoff explain the outputs and limitations of those steps, and the ending explicitly separates finite-genus identities from later uniform estimates (pp4,10-12).",
+      "status": "pass"
+    },
+    "structure": {
+      "evidence": "The GRR statement is now directly followed by a proof whose first sentence applies the cited Mumford theorem and checks conventions, making the local calculation's ownership clear (pp5-6). Actual inspection of the full section found readable proof paragraphs, preserved source Remarks/one-edge Example, clear long displays and normal proof endings; required assumptions stay in the main argument, and no program or project document is a reader obligation.",
+      "status": "pass"
+    },
+    "symbol_design": {
+      "evidence": "The complete reading confirms distinct roles for Hodge indices j_i, old markings i, flags f, vertex defects h_v and block/new-marking counts, preserving ell as Hodge-product length. Chern roots and local formal variables are explicitly scoped, H(Gamma) and H_1(Gamma;C) have different stated types, and neither the map clarification nor the spelling changes introduce a competing letter or alias.",
+      "status": "pass"
+    },
+    "transitions": {
+      "evidence": "The psi-to-kappa-to-character-to-GRR-to-Chern-polynomial progression is continuous, and the conversion proof closes before the algebraic consequence (pp4-6). The new cotangent sentence correctly names a map's simple zero rather than a line bundle's vanishing, then leads into the kappa comparison; source Remarks remain optional, the GP03 half-edge/leg difference is explained at recall, and the final projection discussion supplies the later graph arguments without retired-C or engineering detours (pp6,9-12).",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Full current Section 2 final reading, not an automatic transfer of r016 pass. Read the frozen entry and all four subsections continuously, current interface, outline, author handoff/acknowledgment and the complete own-source changes; retained the original classic-source context and the freshly approved S1 r007 reading. Historical reviewer issues are already closed and no new issue was found.",
+    "Verified all 28 frozen/live input hashes, artifacts, exact snapshot and current Engine fingerprint. Ten existing paths and @outline changed, two final-polish handoffs were added, and none removed; selected scientific/shared S1 inputs match approved/fresh r007. Independently compared S2 with r016 and actual Git baseline fa2f374: all nine principal statement blocks, 28 numbered equations, other displays, inline mathematics, labels and citations are identical. The added GRR proof environment changes no result or equation number.",
+    "Verified native PDF/entry/helper hashes and sealed equal-source pre-submit provenance. Source SHA256: 61833a1963f5deca318cf258e25eb30c77452cca716a3890b8be922643ace7a5; native PDF SHA256: 6f6a83548f197f1e1ccd63170cc1199446ab2366c68c833fdfe208a818aa4e28. Strict/layout diagnostics are empty and the settled 10pt/no-showkeys/proof-gap/bibliography settings remain intact.",
+    "Actually viewed every native page containing S2 and its references, pp3-13, using private images under build/final-polish-20261116/readability-s02-r017/. The section entrance/roadmap continues across pp3-4, the cited GRR conversion proof across pp5-6, and the paired forgetting statement/proof and final specialization continue normally across pp10-12. Boundary display wrapping, the three functional boundary-proof paragraphs, source modules and final proof/References transition remain clear; no material pagination obstacle was found.",
+    "The main text states the GP03 flag/leg translation, the labeled-product versus quotient distinction and the possible nontrivial graph action, and separately derives the rational Chow comparison/normal-line arguments rather than relying on an injective cycle map or external calculations. The new comparison-map wording and explicit Mumford application improve reader orientation without changing the protected mathematics; the updated interface correctly records completed downstream estimates and the retained KMZ96v1 publication record.",
+    "Read-only status confirms /root/s02_readability bound to s02 r017 and S1 r007 approved/fresh; python scripts/validate.py --unit s02 passes. issues and resolved_issue_ids are empty. This is the current whole-S2 readability signature, not approval of the later integrated final manuscript or single-TeX export/isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "readability",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+  "summary": "Pass. A complete current reading confirms clear inherited/new definitions, economical notation and a usable finite-identity route; the explicit Mumford application and cotangent comparison map improve proof attribution and transitions, and the full native S2 layout is readable.",
+  "unit": "s02",
+  "verdict": "pass"
+}

@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Read the entry, all four subsections and current interface in the frozen source, and inspected native pages 14, 16?18 and 20. Inherited notation is used directly; the revised beta-factor paragraph explains the positive majorant before dropping genus restrictions, and the saddle proof now names its closed-disk analyticity assumption precisely. Principal statements directly precede their proofs, source explanations follow them, and the complete mathematical argument does not require private programs or retired Appendix C."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Section 6.1 assigns the positive-genus multipoint formula to Faber?Pandharipande (FP03), the one-point sine/Bernoulli formula to FP00, and explicitly translates their b_G into beta_G. The post-proof classical-inverse Remark credits KMZ96v1 and its earlier Zograf attribution, and Manin?Zograf for inverse/critical background; Sections 6.2?6.4 supply their own Gaussian circle, all-type vertex, complete tree-tail and retained saddle arguments. The genus-two example is derived from the displayed sine series and stack-weighted trees, independently of public data or WP inputs."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "Checked the actual citations and normalization chain against retained primary-source verification, including FP03 Theorem 1 and stable genus-zero equation (1), FP00 Theorem 2/(6), (3)/(6) notation conversion and Section 4.2 Lemma 1, KMZ96v1 (0.8), and MaZ00 Section 6/(17), numbered Proof 6.3. The two factorials in the classical inverse coefficient are explicit and match the cached primary KMZ text; the printed MaZ sign is not imported. DLMF 10.21.15, 10.21.2, 10.6.6/10.6.3 and 25.6.2/25.2.1 retain their distinct product, interlacing, derivative and zeta roles; no source edition or locator changed in this section."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The beta_0 convention and stable genus-zero/unmarked exceptions remain explicit, and Corollary 6.3 asserts a numerical generating-function equality rather than an equality of Chow classes on different spaces. Proposition 6.6 controls the entire genus/valence sum at each edge count and the complete fixed-threshold tail; Lemma 6.8 states the fixed-amplitude and uniformly bounded analytic-family hypotheses and an additive estimate valid even when the leading amplitude vanishes. The original Theorem 1.3 proof retains relative O(g_2^-2); the unchanged post-proof Further coefficients Remark reports two supplementary coefficients with details explicitly omitted and supplies no stronger remainder or proof input."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Independently matched the live and archived input fingerprints, frozen submission/artifacts, native receipt and PDF/entry/helper hashes to this snapshot; the receipt is strict with empty standard and layout diagnostics. The actual binding is /root/s02_academic and s01 r007/s02 r017 are approved and fresh.",
+    "Compared with r010: entry and Sections 6.1?6.2 are byte-identical; every mathematical expression, principal statement, source citation and formula label in Sections 6.3?6.4 is preserved, including the complete final theorem proof and supplementary Remark. The edits clarify prose and paragraphing and update interface status/history.",
+    "Focused validation passed (scripts/validate.py --unit s06). Retained source verification was reused where unchanged; no scientific calculation or frozen-output rebuild was performed. This signature covers only the present s06 submission, not a future integrated manuscript or single-file export."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 11,
+  "schema_version": 1,
+  "snapshot": "b9020ed4fb6fa54db8658c72a24c4c2fc35a7a2a392feb70225d33c857ac09de",
+  "summary": "The complete current Section 6 preserves precise classical attribution and convention translation, supplies the stated uniform tree and saddle arguments in the article, and keeps supplementary coefficients separate from the original theorem precision.",
+  "unit": "s06",
+  "verdict": "pass"
+}

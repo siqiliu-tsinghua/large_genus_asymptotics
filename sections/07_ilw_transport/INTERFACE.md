@@ -1,6 +1,6 @@
 # Linear Hodge potentials and transport at fixed defect
 
-Scientific interface for the complete s07 author draft. This document is
+Scientific interface for Section 7's exact formal and fixed-genus results. This document is
 not an approval or review signature. Live submission, freshness and
 acceptance status belongs to `workflow/state.json`.
 
@@ -10,20 +10,19 @@ The scientific dependency closure is s01, s02 and s06. In particular,
 this proof uses no WP graph-tail estimate, coefficient table or signed
 loop calculation from Sections 3--5 or Appendix A.
 
-Historical scientific provenance before the S07-SHARED update:
+Historical scientific dependency provenance:
 
 - s02 r009: `33ec1495090af03c99be89a5f5b272437f6d2792aaabb075bc9d4831c3cb2084`.
 - s06 r003: `3bb0091152f459efb5cb63ee188e913e5e3e2ea163126c82245a77f52ad02ec7`.
 
-These record historical scientific-source provenance. Those scientific
-files were preserved during the completed shared-input refresh.
-Current dependency approval and freshness belong to `workflow/state.json`.
+These snapshot IDs identify the original scientific inputs. Current
+dependency approval and freshness belong to `workflow/state.json`.
 
 The section proves exact formal identities and fixed-genus
 characteristic integrals. It does not prove `thm:fixed-defect` or
 `eq:gh11`. The Borel singularities, coefficient transfer, primitive
-estimates and comparison of kappa and Hodge backgrounds belong to
-Section 8.
+estimates and comparison of kappa and Hodge backgrounds are supplied in
+Section 8 and Appendix B. They are not inputs to this unit's exact identities.
 
 ## Inherited definitions and inputs
 
@@ -144,11 +143,16 @@ name is introduced: the formula uses 1+y partial_y.
   jets, characteristic endpoint and the two Beta kernels are proved
   in this section. The lecture notes supplied a route only.
 
-## Remaining work and validation boundary
+## Analytic and review boundaries
 
-No known exact-algebraic gap remains in this author draft. This claim
-is subject to independent frozen review. Required later analysis:
-common inverse domains, full Borel convergence/continuation, endpoint
-and remote-characteristic estimates, both dominant singularities,
-primitive estimates for G, coefficient transfer, and the kappa versus
-12 lambda_1 comparison. None is claimed as an export here.
+The exact formal identities and fixed-genus characteristic recovery
+are the exports of this unit. Common inverse domains, full Borel
+convergence/continuation, endpoint and remote-characteristic estimates,
+both dominant singularities, primitive estimates for G, coefficient
+transfer and the kappa versus 12 lambda_1 comparison are the subsequent
+analysis of Section 8 and Appendix B. No stronger common-domain or
+infinite-genus interchange is asserted here.
+
+Historical handoffs preserve earlier author and validation evidence.
+Live review, approval and freshness are recorded by the workflow rather
+than an author-stage description in this scientific interface.

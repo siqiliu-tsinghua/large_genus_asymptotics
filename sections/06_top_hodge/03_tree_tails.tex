@@ -68,12 +68,12 @@ $\beta_gR^{-g_2}$, the remaining majorant is thus a constant to
 power $E+1$ times
 $\prod_v m_v!/\sqrt{m_v+1}$.
 
-Every unrooted genus-labelled tree has a plane rooted realization,
+Every unrooted genus-labeled tree has a plane rooted realization,
 and its original weight is at most one. A plane rooted tree with
 $E$ edges is encoded by a walk of $2E$ up/down steps, so there are
 at most $4^E$ shapes. For a fixed shape and the $m_v$, the genus
-labels are determined by $2g_v=m_v+3-n_v$. The beta comparison has
-already removed them; dropping parity and stability restrictions
+labels are determined by $2g_v=m_v+3-n_v$. The beta factors have
+already been bounded uniformly; dropping parity and stability restrictions
 therefore only enlarges the positive sum over nonnegative $m_v$.
 This introduces no factorial in the vertex count.
 
@@ -83,7 +83,9 @@ For every integer $M\geq0$,
 \end{equation}
 Indeed the two endpoint terms give $2M!$ when $M\geq1$, while
 $\binom{M}{k}\geq M$ for $1\leq k\leq M-1$; the case $M=0$
-is immediate. Iterating the convolution for $E+1$ vertices gives
+is immediate.
+
+Iterating the convolution for $E+1$ vertices gives
 $3^EM!$ for total $M=\sum_v m_v$. Also
 $\prod_v(m_v+1)\geq M+1$. With $M=g_2-E$, these estimates and
 the shape count prove \eqref{eq:s06:edge-mass}.

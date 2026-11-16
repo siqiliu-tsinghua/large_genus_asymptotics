@@ -1,0 +1,66 @@
+--- previous/sections/06_top_hodge/04_correction_and_proof.tex
++++ sections/06_top_hodge/04_correction_and_proof.tex
+@@ -158,9 +158,9 @@
+  \frac{\beta_1}{g_2}\frac{\beta_{g-1}}{\beta_g}
+      R\Phi(x_*)\sqrt{\frac{g_2}{g_2-1}}.
+ \]
+-The omitted term is $O(g_2^{-2})$ in this ratio. Use
++The ratio has an $O(g_2^{-2})$ error. Using
+ \eqref{eq:s06:beta-asymptotics} and
+-$R\Phi(x_*)=J_1(z_{0,1})^2$ to obtain
++$R\Phi(x_*)=J_1(z_{0,1})^2$ gives
+ \eqref{eq:s06:elliptic-relative}.
+ \end{prf}
+ 
+--- previous/sections/06_top_hodge/final_polish_handoff.md
++++ sections/06_top_hodge/final_polish_handoff.md
+@@ -66,3 +66,31 @@
+ new coefficient reconstruction, compilation or literature search is
+ performed. Source and UTF-8/LF checks accompany delivery. STOP for
+ native layout and the original independent reviewers.
++
++## r012 revision of READABILITY-001
++
++Read the actual r012 dispatch and all three r011 reports. The r011
++snapshot is b9020ed4fb6fa54db8658c72a24c4c2fc35a7a2a392feb70225d33c857ac09de.
++Math and academic reports passed; the sole requested change is the
++detached closing square of the elliptic-leaf proof.
++
++Only that proof's closing prose is shortened: the ratio has the same
++stated error, and the same beta asymptotic and critical-value identity
++give the same conclusion. All mathematical expressions and references,
++the complete main theorem proof and samepage supplementary Remark are
++unchanged. No local box, font/spacing command, shared macro or interface
++edit is introduced; the first-round ACK and historical handoffs remain
++untouched.
++
++Ran python -B build/layout-20261115/snapshot_pdf.py s06. The native
++10pt/no-showkeys preflight has empty standard/layout diagnostics.
++Actually rendered and inspected page 20: the elliptic-leaf square is
++at the right end of its final text line, the main-proof transition is
++clear, and the complete Further coefficients Remark remains on the same
++page with both expressions and its omitted-details sentence. The draft
++receipt is build/reviews/s06/format-preflight/build_receipt.json, with
++snapshot null; the inspection image is
++build/final-polish-20261116/s06-r012-writer/page-20.png.
++After saving the response/handoffs, the final native build binds the
++saved source. This is author validation, not a frozen review signature.
++No scientific calculation or state-changing command is run. STOP.
+--- /dev/null
++++ workflow/reviews/s06/r011/author_response.json
+@@ -0,0 +1,15 @@
++{
++  "agent_id": "/root/s02_writer",
++  "responses": [
++    {
++      "changed_files": [
++        "sections/06_top_hodge/04_correction_and_proof.tex"
++      ],
++      "explanation": "Shortened only the closing prose of the elliptic-leaf proof so the ratio error and the unchanged beta/critical-value references fit with the closing square on the last line. All formulas, estimates and references, the main theorem proof, complete samepage Further coefficients Remark and global proof/font/layout settings are preserved. Ran the native 10pt/no-showkeys preview with empty standard and overfull diagnostics and actually inspected page 20: the square is at the right end of the proof's final text line, and the main-proof transition and complete final Remark remain clear and intact.",
++      "issue_id": "READABILITY-001",
++      "resolution": "addressed"
++    }
++  ],
++  "round": 11,
++  "unit": "s06"
++}

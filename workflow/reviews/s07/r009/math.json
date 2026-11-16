@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, archive/live/artifact and native hashes with S1 r007, S2 r017 and S6 r012 approved and fresh. Buryak's raw parameters and transformation are explicitly converted rather than reproved; exact S2 forgetting and S6 lambda_g/beta/Bessel data suffice, with no WP/A/retired-C or supplemental-coefficient premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "The potential sums only stable types and reindexes g>=h>=0; top-sector zero coefficients and the raw string exceptions are retained. At fixed g>=2 and positive h, sum(d_i-1)=2g-3+h makes the higher-time sum finite, with genus-one h=1 separately seeded; the Borel degree 2g+h-2, minimum 3h-2, parity and every linear/quadratic genus range match the transport equations.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The positive hbar^g epsilon^j weights become z^g eta^h, dispersion is eta*z^k*|B_(2k)|/(2k)!, and the sine/inverse-sine coefficients cancel the top sector and z/24 string anomaly. The normalized logarithmic kernel has the correct (2g-1)! factor; Dirichlet weights, linear-shift subtraction and 1+y*d_y, both Beta integrals and the single outer quadratic 1/2 reproduce the common Borel factorial exactly.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The first subsection binds x=t_0, formal genus z and defect eta before the potentials/operators; W and v precede the specialized w_theta/v_theta, and 7.3 defines shifted times, independent jets, L_(g,h), transport D and X_sigma before use. The updated guide correctly says fixed genus as well as positive defect; Borel y is independent of z, derivatives are taken before characteristic evaluation, and inherited z_(0,1),rho,b/beta_g/b_g remain distinct.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read all four subsections: homogeneous string and geometric dilaton yield finite jets, the exact genus-one value gives the logarithmic seed, and the kernel of d_x on the full finite-jet ring is numerical constants, fixed to zero before specialization. The selected characteristic keeps v fixed, has first jet W_1+sigma with positive real part, yields integrable sources and the correct sign at infinity; Lagrange inversion then gives the first-layer kernel without fitting constants or using software.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Characteristic convergence is proved at each fixed g,h on the stated inverse branch near x=0, not on a common global singular domain. The first Borel layer converges locally normally by its O(y/m^2) summands, while h>=2 transport is coefficientwise with finite output-genus/derivative choices and convergent scalar zeta sums; no infinite-genus/characteristic interchange, primitive recovery bound or Theorem 1.4 asymptotic is prematurely exported.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748 and true /root/s02_math binding were independently checked. Source SHA256 123adf2e6e592cf1097d7dd1e8b6ed00ba660afd7fcabb036b3270023f11fb83; native PDF SHA256 fec832595c5b1dc88b8340a7602ea350a0791d4a37822fa946425b2b0760be24. Native entry/helper and current/preflight hashes match, strict/layout diagnostics are empty and recorded pre-submit/equal-source sealing provenance is retained.",
+    "Against r008/Git fa2f374, all 35 numbered equation environments, eight other displays, 249 inline math tokens, nine statement blocks, 49 labels and three citations are unchanged. All nine proofs are preserved after only the documented American spelling and paragraph-whitespace normalization. Entry, full first subsection and old writer handoff are byte-identical; no mathematical operator, index or bound was changed.",
+    "The genus-one seed is independent of the field equation. The jet-kernel argument is made in independent full-time coordinates before specializing; hence an x-independent unknown cannot be hidden as a function of the specialized times. Along the selected fixed-inverse characteristic the derivative is -D, L tends to zero and the displayed source integrals have integrable powers of W_1+sigma, fixing the sign and endpoint.",
+    "The top sector cancels by the exact lambda_g multinomial and inverse-sine series, including stable/low-genus zero terms. The first-layer logarithmic normalization removes its y-independent term only. Linear Borel shifts retain derivative orders 2k+1 with k>=1, and the two quadratic Beta integrals yield 1/N!, with all parity/minimum-degree and ordered-sum factors preserved.",
+    "The exact inherited/own delta and @outline match the summary. Original-writer ACK SHA256 6fabc6156271320dce4eac24202d5585051b823b49dbdceac97a7add7fa9c301 agrees with this scope. The updated interface correctly leaves common inverse domains, full Borel continuation, primitive constants/estimates, two-singularity transfer and background comparison to B/Section 8 rather than importing them circularly into the exact algebra.",
+    "No old scientific program, coefficient reconstruction or data calculation was rerun. Only this round's math.json and math_handoff.md were written, without source/shared/state/historical/frozen-output edits. No prior MATH issue is open; integrated final-manuscript review and single-TeX export/isolated compilation remain outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 9,
+  "schema_version": 1,
+  "snapshot": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+  "summary": "Pass on S7 r009 after a complete final reading: the ILW/Miura conversion, geometric integration constants, characteristic branch and factorial Borel kernels remain correct; the fixed-genus clarification accurately limits finite jets and preserves the boundary between formal identities and the later common-domain analysis.",
+  "unit": "s07",
+  "verdict": "pass"
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "role": "readability",
+  "agent_id": "/root/s02_readability",
+  "verdict": "pass",
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "source_hash": "47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49",
+  "snapshots": {
+    "a": "0b9dc999f822a0aaa4aab4033d8fdd021e29a71c9fde789299c1360b64b15464",
+    "b": "dbed0d5232b62278eb66a7283588f6f691fc3702bc4fe36343eb23d2a52039ed",
+    "s01": "728950c2a3d9b78f9edeecbb57ac734eb4d382352578ba8609b59e7f270db981",
+    "s02": "a7ab195d67fe1b8297ce16ab8856aa62d120a66c73b23c608c66fdfd2ea5d55e",
+    "s03": "77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377",
+    "s04": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+    "s05": "deab658e743b09a3da113f3430955c09d9d5f29c51adaf3effbb9296a74b8fc0",
+    "s06": "c933ad76be58534340a355c35b1d8aca624477bede5ed41c6fca4672912220dc",
+    "s07": "d1df770826f1069b8540327058d2971722aeb1f29030c1223ff1a3606adce748",
+    "s08": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b"
+  },
+  "pdf": "build/reviews/s08/r007/full-manuscript/manuscript.pdf",
+  "pdf_sha256": "1d01148c664c3d56ab6d0fb6f0764a6f02d776fb4d99e6b0ffc6b9968b139881",
+  "pages": 100,
+  "receipt": "build/reviews/s08/r007/full-manuscript/build_receipt.json",
+  "entry_sha256": "3a1b189ab883d3c2918550baf22418243b02bfc4cdbc4b4edd9c03dbb75023b9",
+  "helper_sha256": "19e16752716b5de8a72f91e9342bac8df48c0251b9c204ac0a48875ba99abe96",
+  "checks": {
+    "provenance_and_reading_extent": {
+      "status": "pass",
+      "evidence": "Independently recomputed the complete fingerprint from the ten current unit input maps, verified all ten canonical submission snapshots and all 525 archived input entries against their hashes and live files, and matched the companion PDF, entry and helper hashes. The actual .fls local-input set (53 entries) matches its receipt, includes the frozen abstract and ten units and excludes retired C; the companion entry is the exact main.tex with only the approved explicit assembly replacement. Independent pdftotext extraction equals the sealed complete manuscript.txt byte for byte. This integrated reading combines retained complete original-role final section readings with fresh physical-order/text/integration checks; the old technical proofs were not all reread or recomputed anew. I viewed a 100-page contact-sheet overview and separately inspected the listed 49 enlarged complete-PDF pages, including every S8 page 55-66, plus six enlarged native-unit pages. Successful compilation alone was not treated as visual evidence.",
+      "complete_pdf_overview_pages": [
+        1,
+        100
+      ],
+      "complete_pdf_enlarged_pages": [
+        1,
+        2,
+        3,
+        4,
+        12,
+        20,
+        24,
+        25,
+        30,
+        31,
+        38,
+        39,
+        46,
+        47,
+        48,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69,
+        74,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        90,
+        91,
+        93,
+        94,
+        98,
+        99,
+        100
+      ],
+      "native_s08_enlarged_pages": [
+        30,
+        32,
+        33,
+        34,
+        38,
+        39
+      ],
+      "retained_final_readings": [
+        "workflow/reviews/s01/r007/readability.json",
+        "workflow/reviews/s02/r017/readability.json",
+        "workflow/reviews/s03/r014/readability.json",
+        "workflow/reviews/s04/r016/readability.json",
+        "workflow/reviews/s05/r013/readability.json",
+        "workflow/reviews/s06/r012/readability.json",
+        "workflow/reviews/s07/r009/readability.json",
+        "workflow/reviews/a/r014/readability.json",
+        "workflow/reviews/b/r007/readability.json"
+      ]
+    },
+    "definitions": {
+      "status": "pass",
+      "evidence": "In physical order, pp.1-3 supply stable-stack, rational Chow, degree/integration, Hodge-rank and lower-case integral conventions before the four theorem displays; psi, logarithmic kappa and Chern-character normalizations enter together in 2.2, not prematurely in the Introduction. The WP family, graph/core degrees and signed moments are introduced on their route before A uses them; the separate Bessel route introduces beta_g, Phi, w, x_* and R in 6.1-6.2, then the times and x=t_0 before the potentials and Borel normalization in Section 7. Section 8 defines its perturbed critical data and needed actual common domains before its square-root coefficients and inverse transform (pp.56-60); its Appendix B references identify the specific technical estimates rather than leaving main-text symbols unbound until p.85. B distinguishes generic conditional endpoint inputs (p.91) from the actual-series common-domain output. No essential assumption is delegated to an optional source or numerical Remark."
+    },
+    "notation_consistency": {
+      "status": "pass",
+      "evidence": "Across both routes and their interfaces, a_g,b_g(h),b_g, g_2=2g-3, the fixed j_1,...,j_ell list and ell, z_{0,1}, rho and scalar b retain the Introduction meanings; beta_g remains the one-point sequence and ordinary B_n the Bernoulli sequence. The displayed Chow coefficients stay inside parentheses. Absolute Z_g/F_g coefficients are distinguished from relative Z_g/V_{g,0} coefficients in 4.3 and A.2 (pp.30,78); F_h^+ and L_h keep their different stated factorials (pp.53,59). The current x=t_0 is never reused as a critical-distance alias. The final displays match the four theorem normalizations and preserve the user's g^-1 typography."
+    },
+    "notation_economy": {
+      "status": "pass",
+      "evidence": "Sections 2-8 inherit the basic Introduction setup instead of repeating a genus/moduli/Hodge inventory; the entrances on pp.4,12-13,25,31,39,47,55 introduce the current operation and input. New names have recurring work: q/p separate core and loop tasks, the signed moment functional preserves paired correlations, S6 uses one exact-vertex Bessel series, and S7-S8 potentials/fields, P_h/E_h and the transport integral distinguish genuinely different stages. A.2 recalls the nonstandard paired weight and signed functional specifically to state its finite differentiation rules and normalization; it does not repeat global preliminaries. The final numerical Remark uses descriptive column labels rather than extra symbol families, and internal interface ledgers have not been copied into the article."
+    },
+    "symbol_design": {
+      "status": "pass",
+      "evidence": "Hodge j-indices and product length ell stay separate from markings and the graph loop p/core q; boundary lengths y_i do not occupy cotangent L_i. Source a_i, degree d/D, low-mode m_a and two-index edge multiplicities m_ij have explicit local types. In the analytic route the formal z,epsilon,eta and times are distinguished from theta, Borel y, integration variables and geometric radii; R is the critical value, delta stays the boundary class, and the S8 distance is S. Calligraphic B for transport is visibly different from Bernoulli B_n; indexed Borel L_h is distinct from the earlier unindexed signed functional. Scoped proof-local p,xi,C_k and real/degree dummy a,c in 8.5 do not create competing global names."
+    },
+    "roadmap": {
+      "status": "pass",
+      "evidence": "The actual title/abstract and Introduction (pp.1-4) consistently present four results in two index settings and two proof routes; the independent S1/S2 to S6-8 reading path is explicit. Section 3 explains whole-graph concentration and finite cores before Section 4 computes q=0/1/2, and Section 5 motivates its odd-character filtration and one-source correction. The theorem-first S6 entry (p.39) gives exact vertices -> all-tree bounds -> saddle/elliptic leaf. The S7/S8 boundary (pp.55-56) states the remaining analytic task, then the endpoint -> h! -> both singularities/primitive -> full-background chain. Appendix A's entry on p.66 and B's on p.84 identify their complementary finite and analytic roles without claiming that a later appendix depends on the S8 conclusion it supports."
+    },
+    "structure": {
+      "status": "pass",
+      "evidence": "The Introduction's principal theorems have explicit proof destinations; subsequent tool statements are followed directly by their proofs, and optional source conventions, examples and reported further coefficients remain separate. The S3 whole-sum argument, S5 source/cancellation computation, S6 saddle proof, S7 differential transport versus characteristic recovery, and S8 initial/principal/other-path and background paragraphs have functional divisions rather than a single dense proof block. In the actual companion, pp.30-31,38-39,46-48,52-55,60-66,76-78,83-85,90-94,98 show usable proof gaps, connected statements/proofs and normal QED placement; the earlier elliptic-leaf closing repair survives on p.46. Necessary calculations stay in text or precise literature citations, while supplementary Remarks can be skipped without losing a theorem premise."
+    },
+    "transitions": {
+      "status": "pass",
+      "evidence": "Fresh integrated checks cover abstract -> Introduction -> geometric conventions (pp.1-4), finite-genus identities -> uniform graph estimates (p.12), core estimates -> coefficients (pp.24-25), the first theorem -> insertions (pp.30-31), insertions -> independent top-Hodge route (pp.38-39), top-class theorem -> exact defect transport (pp.46-48), and formal transport -> analytic recovery (pp.54-56). At pp.65-67 the two factorial mechanisms finish the theorem, the conjectural closing Remark is visibly separate, and Appendix A clearly begins the other route's finite verification. A's summary -> B (pp.83-85), B's negative-axis proof -> References (pp.98-99) also read as completed modules. The stable-graph source convention difference and version-sensitive attribution remain identifiable in their established places; no routine inherited-symbol back-reference list burdens the transitions."
+    },
+    "precision_and_optional_material": {
+      "status": "pass",
+      "evidence": "The Introduction distinguishes fixed insertion list, fixed defect and a genus-dependent top index. The graph route distinguishes exact finite-genus identities, fixed-order expansions and complete graph/loop remainders; the Bessel route controls complete tree/kernel sums rather than merely fixed terms. S7 explicitly keeps higher layers formal until B/S8 supplies analytic domains. The two factorial ratios and mirror factor two are explained before the final asymptotic, which asserts only relative o(1); the background O_h(g^-1) is not advertised as its final error rate (pp.62-66). Complete same-page Remarks 4.4 and 6.3 (pp.31,47) report user-requested further coefficients after full proofs with details omitted; Remark 8.2 (p.66) instead labels its h=1 limit as a conjecture, defines the two numerical columns and says the Bessel candidate is not fitted and is not a remainder theorem."
+    },
+    "figures_tables_bibliography_and_layout": {
+      "status": "pass",
+      "evidence": "The 100-page overview shows a consistent 10pt, centered text measure with no showkeys. Enlarged checks include the S4 diagrams and final Remark, A's moment/profile tables and aligned A.32/A.36 (pp.69,76-78), the complete core drawings, legend, automorphism data and normalized-integral tables (pp.80-84), and the single-line A.44 (p.84). Rows, formula continuations and labels fit and remain legible; tables state their extracted normalization before use. The complete S8 closing Remark/table stays on p.66 with the A transition below it. References pp.99-100 retain alphabetic labels on first lines and flush-left continuation lines; DLMF, the data URL and the two WLQ+26 versions are distinguishable and not clipped. Standard and overfull lists are empty; the receipt transparently retains eight underfull entries, which are not used as an automatic visual pass. No blocking spacing or pagination defect was found in the actual overview/enlarged inspection."
+    },
+    "article_independence_and_delivery_boundary": {
+      "status": "pass",
+      "evidence": "The complete reading path and text contain the mathematical rules for the finite recursions, moment evaluations, graph classification, analytic domains and transport estimates; no Python/Markdown/readme, installation, calculation-directory or accompanying-source instruction completes a proof. The three textual Appendix C.1 references are explicitly to Wang et al., not to the retired local C, which is absent from assembly and the actual input recorder. Section 6 retains its own exact genus-two example, while the final conjecture cites the identified public dataset directly only as numerical evidence. This signature approves the recorded native complete companion. It does not approve, claim to have compiled, or prescribe the contents of a future isolated single-TeX export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Original-role integrated assessment for the same complete companion used by all final reviewers; the ordinary S8 r007 readability report is separately signed for its own native source/PDF.",
+    "No manuscript, shared input, state, earlier report, frozen receipt or frozen PDF was edited or rebuilt. Private identity and visual files are confined to build/final-polish-20261116/readability-s08-r007/.",
+    "The controlled single-file export and isolated compilation remain coordinator work after these signatures; neither a future source nor its PDF is pre-signed here."
+  ]
+}

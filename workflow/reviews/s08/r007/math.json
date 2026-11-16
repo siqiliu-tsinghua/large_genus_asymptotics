@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual binding and approved, hash-fresh S1 r007, S2 r017, S6 r012, S7 r009 and B r007 inputs, with the native source/PDF/entry/helper hashes matching the frozen submission. S8 uses the exact S7 identities and B's proved common-domain/primitive estimates, not WP results, retired C, programs or numerical data. The semipositivity, boundary-normalization, ample-cone and smooth-cover applications retain the checked Fuj78/Kaw81/CH88/LX26b hypotheses; the two-point transfer specialization and all finite algebra are proved in the paper.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "D_{g,h}=g_2+h=2g+h-3, the L-series degree is D+1, and the fixed n in {0,1,2} bound uses M=D+n on stable targets, with genus-one cases handled separately. In the node sum the nonseparating degree is D-1 and separating degrees a=2G-2+i and c=2(g-G)-2+h-i satisfy a+c=D-1 with all allowed genera/defects included. The projective mixed product has degree (2g-h-1)+D=4g-4=dim P(E), and the Hodge-index surface cut has exactly dimension two; all statements retain fixed h and eventual g>=h.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The seed P_1=1/(x_*-v) and local S/(x_*-v) factor give the ordered integral B(0)^h/h!, with B(0)=1/(2R)>0. Checked the inverse-sine kernel's alternating (-1)^(m-1), outer m^-2, plus between shifts, a=2k-2 Taylor degree and D! Beta denominator; both singularities add by parity (-1)^(h-1), rather than only one being transferred. The ordered node halves, quotient-projective pushforward p_*xi^(g-1+j)=lambda_j, exponential-to-power D!, and rho=12R retain both factorial ratios and yield 24^h/h!; beta_g, b_g and the scalar b remain distinct.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "S8.1 defines x_{*,theta}, R_theta and the selected inverse branch before the common finite-cap domains; S8.2 defines S, the unique actual P_h coefficient and E_h with nu in (1/2,1), including mixed-derivative scopes and additive bounds at zero amplitudes. S8.3 defines B(x), Y_0 and harmonic numbers before evaluating the constant; S8.4 defines D_{g,h} and the positive inverse-operator part F_h^+, with x=t_0 preserved and no endpoint alias. The node/mixed-intersection variables in S8.5 are locally bound, and the final proof and conjecture inherit g_2, rho, beta_g, b_g(h) and the original integral normalization without a new alias or rate.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read the entry and all six subsections with all 13 adjacent principal proofs and the final theorem proof. The positive linear branch alone propagates the square-root coefficient; B's local transport and remote estimates validate that extraction. In the inverse kernel, the three positive-cone combinations with u=tau y make both endpoint distances and the center distance comparable to |S-y| on the initial path; B.28 with one center derivative gives O(|S-y|^((h-3)/2)), and path length restores O(|S-y|^((h-1)/2)), before the remaining-path expansion is used. The geometric primitive, full genus convolution and written nef/projective/Hodge-index argument then recover the entire background without circular use of Theorem 1.4 or a software calculation; the closing data table is evidence only.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The actual common dented domains and complex parameter neighborhoods precede kernel integration and coefficient extraction; the initial critical cone, remaining principal segment, other branches, regular/negative-center patches and remote characteristics are all covered. Fixed-marking bounds follow from uniform complex-x transfer and Cauchy circles of radius c/(D+1); the full node sum is bounded by C_h/[D binom(D-1,a)], using sum_a binom(N,a)^(-1)<=4 rather than only fixed splits. The monotone log-concave mixed sequence controls every boundary power at once, but its O_h(g^-1) comparison does not improve the transfer's relative o(1) main conclusion; no growing-h claim, proved next fixed-defect coefficient or conjectural remainder is introduced.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Fresh full final reading on snapshot 53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b. The only own-manuscript changes from r006 are functional paragraph boundaries in 8.2/8.4; all TeX is identical after whitespace removal, including the entire final proof and closing conjecture/table. All 33 numbered equation blocks, 13 principal statements, 307 inline expressions, 54 labels and nine citation instances match r006 and fa2f374. No MATH issue was open in r006, so resolved_issue_ids remains empty.",
+    "Verified the canonical submission snapshot, every selected archive/live input and artifact, and the exact 24-changed/six-added/no-removed input delta (including @outline). Original-writer ACK SHA256 4611cd624f6ad9fb0c4ff7200e9406397f103fff4d84e83e2782d9a7857e98a6. Unit source SHA256 6d6010697e24687eb1b14cf72a2a93ac2f6b77d39f0373476f45ccfe91732bad; unit native PDF SHA256 12b33953b0cae012306623e937b0d5ba277206cda18eede9408c637d8c351d47. Current and preflight receipts agree on source/PDF/entry/helper hashes, with the transparent pre-submit/equal-fingerprint sealing provenance and empty strict/layout diagnostics.",
+    "The separate integrated report is workflow/feedback/shared/FINAL-POLISH/final_math.json. It signs the actual 100-page companion build/reviews/s08/r007/full-manuscript/manuscript.pdf with whole source SHA256 47c114faa136f45363d7cda430c8dbe9cb6b3a8623b7017e328693ee9d066b49 and PDF SHA256 1d01148c664c3d56ab6d0fb6f0764a6f02d776fb4d99e6b0ffc6b9968b139881, after verifying all ten snapshots and recorded source inputs. Standard/layout diagnostics are empty; eight informational underfull records remain explicitly recorded in the whole receipt.",
+    "The integrated assessment combines the actual completed full final-round readings of the ten units with this fresh full S8 reading, the current 100-page text assembly/theorem-proof checks and targeted visual inspection of pages 1, 2, 3, 19, 24, 31, 38, 47, 55, 60, 64, 65, 66, 74, 84, 96 and 98. It does not claim a new visual review of every page or a fresh rerun of unchanged calculations.",
+    "The existing independent high-order and h=1 numerical evidence was retained after source preservation checks; no scientific/data program was rerun. Only the current math report/handoff and designated integrated math JSON were written; future single-TeX export/isolated compilation remains outside this identified-companion signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 7,
+  "schema_version": 1,
+  "snapshot": "53da51164133989be20d1f2c74f945746d22bc9d9394c526b59e414c157e1d4b",
+  "summary": "Pass after a complete final mathematical reading of S8 r007 on the exact frozen snapshot, including the whole-path inverse-sine recovery, two-point transfer, complete one-node convolution and nef background comparison. The identified 100-page integrated companion also passes the separate global mathematical review; the main fixed-defect result remains an asymptotic equivalence and the closing h=1 refinement remains conjectural.",
+  "unit": "s08",
+  "verdict": "pass"
+}

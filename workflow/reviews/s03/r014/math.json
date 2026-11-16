@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, all archive/live/artifact and native hashes, with S1 r007 and S2 r017 approved and fresh. The full reading preserves separate roles for fixed-n MZ/absolute normalization, all-type bounds and HMT A1/A3/A4; c_H and every threshold remain fixed as stated, with W26 v4 still the technical source and no newer background theorem substituted for it.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Vertex complexity k=2G-2+n stays positive, sums to the scoped H and gives the retained valence cap n<=k+2. Contracting root loops increases genus and preserves complexity; fixed q bounds the core data, 2c=q+n_0 is integral, and restoring p gives (G,n)=(g-c-p,n_0+2p); the marked relation q=2c+r-n_0 and nonnegative-marking path retain stable types.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The whole elliptic stack polynomial, descendant factorials and exact Z_g(1)/F_g=a_g/N_g conversion are consistent. Labeled pairings give 1/Aut without recounting stack stabilizers, the square-root ratio is bounded by sqrt(m), restored loops contribute exactly 2^p p!, and the core volume path has Gamma(H-q)/((4pi^2)^q Gamma(H)) with the correct orientation.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Euler's gamma function is named at its existing first definition in 3.1; exactly four occurrences of the restored-loop graph are now Gamma_p, defined in the finite-core lemma for the same legal integer p, with no type or domain change. The lowercase entire coefficient family gamma_k, scoped counting H, inherited graph flags and power-series interpretation of the complex sine/loop functions remain distinct and correctly defined.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "Read the entry and all four subsections: orbit counting, the three short-series intervals, Gaussian absorption and the exhaustive no-large/one-other-k>=M/all-other-k<M cases prove the whole absolute graph tail in the text. The legal-loop tail precedes HMT, the exact ratio path meets every intermediate threshold, and polynomial product/descendant errors are summed before coefficient construction; the revised Coefficient computation Remark uses these rules rather than later values or a program as a premise.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The tail controls the sum of compact sup absolute values, also inside edge integrals, including growing vertex counts and valences. Keeping p,D dependence yields the summable C^(p+1)(1+p)^s/p! remainder with no logarithmic loss, coherent entire coefficients and Cauchy derivative bounds; fixed markings remain additive at zeros, and the conditional weighted tail has only the stated g^(r+s-M) loss without an extra H^r or an assertion for arbitrary decorations.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot 77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377 and true /root/s02_math binding were independently checked. Source SHA256 dd84a85bffed9287737f0705ab88e05bca3dc21cd7fba5daccbcd370e60e2cd7; native PDF SHA256 e4f73e3f7f052ec380be2f2ec3fee966b8e10a1b559a358dabb8b86410bcc972. Native entry/helper and current/preflight hashes match, strict/layout diagnostics are empty, and recorded pre-submit/equal-source sealing provenance is retained.",
+    "Compared the mathematical source against r013 and Git fa2f374 after normalizing only the four graph-family substitutions Gamma_p back to Gamma(p): 37 numbered equations, 16 other displays, 489 inline math tokens, 12 principal statements, all proof counts, 54 labels and 13 citations are preserved. The entry and original writer_handoff are byte-identical. No Euler gamma-function expression is renamed.",
+    "The Gaussian proof retains the valence cap and square-root cancellation; x>epsilon H is controlled with the full degree bound, the no-large coefficient uses z=3/H, and the two q-tail cases use z=2/H with the small-x complexity weight and the intermediate Gaussian tail. The cutoff constants are chosen after compact-dependent majorants and do not depend on graph data.",
+    "The core proof controls every legal p, including small vertex genus, before restricting p<=log g for HMT; invalid descendant tuples are exponentially small under the degree moment bound, and polynomial p,D errors remain inside the factorially summable sum. The marked proof uses H=2g-2+r, absorbs fixed leg allocation into a per-vertex constant and does not divide by a leading factor that may vanish.",
+    "The exact inherited/own delta and @outline metadata agree with the supplied summary; original-writer ACK SHA256 dfaf25c0bf6a0725de1f33f0de9cb59f4212e31bdfddb7d007d961d3303b0d36 matches the reviewed scope. Updated interface status is not treated as mathematical evidence, and the full estimates remain proved in the paper rather than supplied by numerical checks or software.",
+    "No old calculation or primary-source proof audit was unnecessarily rerun. Only this round's math.json and math_handoff.md were written, without scientific/shared/state/historical/frozen-output edits. No prior MATH issue is open; integrated final-manuscript review and final single-TeX export/isolated compilation are outside this signature."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 14,
+  "schema_version": 1,
+  "snapshot": "77a4862249c26a7fa89193a93420c48a00aa47498540fa99dd6044baea955377",
+  "summary": "Pass on S3 r014 after a complete final reading: the revised q-tail orientation is exhaustive, the Gamma_p rename preserves the graph family, and the full absolute majorant, legal HMT region and factorially summable remainders establish the unchanged fixed-order/compact-uniform expansion and precise marked extension.",
+  "unit": "s03",
+  "verdict": "pass"
+}

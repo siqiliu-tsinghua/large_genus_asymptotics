@@ -1,6 +1,6 @@
 # Analytic estimates for transport kernels
 
-Scientific interface for the complete Appendix B author draft. Live
+Scientific interface for Appendix B's analytic estimates. Live
 review, freshness and acceptance status belongs to workflow/state.json;
 this document is not an approval or review signature.
 
@@ -14,16 +14,16 @@ section.tex directly assembles five separate subsections:
 4. 04_local_transport.tex -- local transport and common dented regions.
 5. 05_negative_primitives.tex -- negative-axis primitive and coefficient bound.
 
-The coordinator owns the corresponding manifest update. Inputs are s07
+Inputs are s07
 and its s06/s02/s01 closure. There is no dependency on Section 8,
-Appendix C, WP graph asymptotics or a coefficient computation.
-Historical scientific provenance at drafting:
+the retired Appendix C, WP graph asymptotics or a coefficient computation.
+Historical scientific dependency provenance:
 
 - s06 r005: d507aaa3e42a76f2ad5aafed26f9589deca722c10f1b1521b1c2a1999d28eafd.
 - s07 r003: f8d93be7cf973184112eda4d49a6b2f401ba75cb74708bf162660947737271c9.
 
-Shared-only refreshes can preserve these scientific sources; current
-approved snapshots remain a workflow matter. FORMAT-003 proof spacing
+These IDs record the original scientific inputs. Current approved
+snapshots and freshness remain workflow matters. The shared proof spacing
 has no local override.
 
 ## Notation ledger
@@ -122,7 +122,7 @@ bound in their statements. No new macro or package is required.
     |G_{g,h}(0;0)| <= C_h (2pi)^(-2g) N! R^(-N) N^(-5/2).
     All three negative-axis intervals are controlled uniformly in genus.
 
-## Derivatives, sources and remaining work
+## Derivative budgets, sources and analytic boundary
 
 The conditional endpoint class is defined on larger complex cones and
 parameter neighborhoods. Its value remainder gives every fixed
@@ -146,5 +146,7 @@ inversion, asymptotic transfer with both dominant points and the
 kappa/Hodge comparison. B gives their analytic domains and error
 calculus; it does not claim Theorem 1.4.
 
-No analytic gap is known in this author draft, subject to independent
-review. Builds and formal review await the coordinator's shared refresh.
+The results and their stated hypotheses above are the exports of this
+appendix. Historical handoffs preserve earlier author and validation
+evidence; live review, approval and freshness belong to the workflow
+rather than an author-stage description in this scientific interface.

@@ -1,0 +1,46 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified actual reviewer binding, canonical snapshot, all archive/live/artifact and native hashes with S1 r007, S2 r017, S3 r014 and A r014 approved and fresh. The proof uses their exact Hodge/graph conversion, full uniform tails and independently derived finite profile/moment/core inputs; MZ/W26 technical credit stays version-correct and the conditional prediction supplies no mathematical premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Read the entry and all four subsections: a q-core starts at g^(-q), so only q=0,1,2 and 0<=r<=2-q enter the second correction. Pure-loop type (g-p,2p) has complexity 2g-2; q=1 has n_0=1 or 3 and c=(n_0+1)/2, while q=2 uses exactly the complete low-type cores of A, with large-genus expansion restricted to their legal retained types.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The signed functional has L[1]=1 and encodes moments; the separate e^S and 1/sqrt(pi) factors remain explicit. Q_(q,r) are absolute Z/F coefficients, not relative gamma_r; paired-loop 2^p p!, raw unhalved connectors, fixed elliptic polynomial, the extra first-profile term at order two and final Z_g(1)/F_g=a_g/N_g conversion are all retained, including both requested (9/8)g^-1 forms.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "In 4.1 w_ab, loop tuples, D,m_a,L and complex moment parameters are defined before their use; 4.2 defines inverse-complexity profiles and 4.3 binds q,r,Q_(q,r), connector tuples and local degree parameter x. The clarified normalization sentence distinguishes the gamma_r expansion by V_(g,0), and the revised Aut prose correctly assigns edge/flag permutations to the groups without changing any object or symbol.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The q=0 polynomial combines the absolute volume and complete two-profile input, q=1 integrates the three raw connector corrections, and q=2 invokes A's exhaustive thirteen-core rule with a worked negative example; thus the final sums use proved mechanisms, not an unsupported table addition or software. The unchanged final proof applies M=3, discards all legal large-p loops before HMT, uses K=2-q on retained cores, converts to absolute WP scale and restores the Hodge factorial normalization without circular use of Theorem 1.1.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "Every retained q has remainder g^(-q-(2-q)-1) C^(p+1)(1+p)^s/p!=g^-3 times a summable weight, and coefficient tails are extended only after the legal-loop truncation and threshold check. Summing before replacing p by log g prevents logarithmic loss; the whole graph tail and absolute-volume conversion preserve strict O(g^-3), while the unchanged samepage higher-coefficient Remark explicitly omits details and does not strengthen that theorem error.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Actual snapshot 0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250 and real /root/s02_math binding were independently checked. Source SHA256 367cbb0621d02795e45ba06eb4633d9957770d14839739fc7dfc9801cedacfb3; native PDF SHA256 2c34867181f943ae97d6cf3765672001bb298898010b6a5e0f27af93009074f9. Native entry/helper and current/preflight hashes agree, strict/layout diagnostics are empty, and explicit pre-submit/equal-source sealing provenance is preserved.",
+    "Against r015 and Git fa2f374, all 12 equation and three align environments (15 numbered containers), two unnumbered aligns, one unnumbered gather and eleven bracketed displays are unchanged (29 display containers). All 165 inline math tokens, three principal statements, 24 labels, table/diagram content and five citations are retained. The entry, entire 04_proof.tex including samepage Remark, original handoff and every internal checks file remain byte-identical.",
+    "The pure-loop coefficient retains the order-two correction from (2g-2)^(-1), and its complete low-degree profiles and absolute c_2(n) come from A's independent rules. The complexity-one contribution uses the three genuine graph Aut factors and unscaled raw connectors; the complete q=2 integration yields the remaining group. Rational/pi^-2/pi^-4 sums then give the printed second coefficient rather than determining its inputs by fitting.",
+    "Final proof order was checked explicitly: M=3 bounds the full omitted graph sum, the all-type loop tail includes small-genus legal vertices, retained p<=log g meets HMT at every intermediate type, K=2-q gives summable g^-3 errors, and only coefficient sums are subsequently extended to all p. The common absolute WP/Hodge scales preserve that order; no illegal vertex expansion or residual log g is used.",
+    "The exact inherited/own delta and @outline match the supplied summary. Original-writer ACK SHA256 cc5823d3df1ac2e52e5b1c1857952794680dbf22b4ba9fe5dd61ee933bb5f4c3 agrees with the reviewed scope. Updated interface statements are provenance, not substitutes for the written proofs. The two user-requested (9/8)g^-1 expressions and both previously checked supplemental coefficients are unchanged.",
+    "No old scientific program, higher-coefficient reconstruction or data calculation was rerun. Only this round's math.json and math_handoff.md were written; source/shared/state/historical/frozen outputs were untouched. No prior MATH issue is open, and this signature does not approve the later integrated whole manuscript or final single-TeX export/isolated compilation."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 16,
+  "schema_version": 1,
+  "snapshot": "0cdfa1eab13d29187dc4a6e24feb57850376153a71eeb8311d1c8128fc90f250",
+  "summary": "Pass on S4 r016 after a complete final reading: the q=0/1/2 mechanisms from S3/A close Theorem 1.1 with correct absolute normalization and strict O(g^-3); revised moment/Aut/credit/connector prose changes no object or hypothesis, and supplementary coefficients remain separate.",
+  "unit": "s04",
+  "verdict": "pass"
+}

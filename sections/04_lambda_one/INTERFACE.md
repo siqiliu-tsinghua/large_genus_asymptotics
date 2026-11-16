@@ -1,15 +1,17 @@
 # Powers of the first Hodge class
 
-Scientific interface for the complete s04 author submission. The unit
-supplies a proof of Theorem 1.1, subject to independent frozen review.
+Scientific interface for Section 4 and its proof of Theorem 1.1.
 Live review and acceptance status is recorded in `workflow/state.json`;
 this document confers no review signature.
 
 ## Dependencies and scope
 
-- Approved s03 r003 snapshot:
+These snapshots record the original scientific dependency provenance;
+current dependency freshness and approvals belong to the workflow.
+
+- Historical s03 r003 snapshot:
   `5dea38f471fe1170933c94c84ef50f5741165dd9b682d3043d547428d4949353`.
-- Approved Appendix a r002 snapshot:
+- Historical Appendix a r002 snapshot:
   `8acf608e11a2785097d597d223aa07215b3ddc1aeb06ba2e713a43ba1d786bdf`.
 
 The paper's stack/Chow/degree conventions, lowercase a_g, N_g, Hodge
@@ -138,9 +140,9 @@ the fourth uses the full fourth profile and one-positive fifth-order
 extraction, together with the finite core sums. No proposed higher Hodge
 coefficient is an input to their construction.
 
-The complete reconstruction from the archived `checks/` source and the
-quick receipt verifier both pass. The extra fifth-order source rows and
-the final composition also pass independent exact checks. The versioned
+The archived complete reconstruction and quick receipt verification both
+passed. The extra fifth-order source rows and the final composition also
+passed independent exact checks. The versioned
 `checks/verification.json` binds 24 source fingerprints and the result
 hash, and records both coefficients and their absolute group sums.
 `checks/README.md` gives the full reconstruction and guard commands.
@@ -152,12 +154,14 @@ omitted. Calculation verification does not confer a frozen-review
 signature; live review status remains in `workflow/state.json`.
 Feedback provenance and saved-source evidence are recorded in the handoff.
 
-## Remaining work and review boundary
+## Scope and review boundary
 
-The complete Section 4 proof and all four subsections are supplied.
-No known mathematical/source gap remains for the submitted Theorem 1.1
-proof, subject to formal independent review. Later Hodge-insertion,
-top-Hodge and fixed-defect theorems are outside this unit. The accepted
-appendix and sections, shared inputs and historical records are unchanged.
-Build and saved-source evidence is recorded in the current handoff and
-ignored writer-draft receipt; it is not a formal review signature.
+The Section 4 proof uses the complete coefficient mechanisms and uniform
+remainder estimates listed above. The fixed-insertion, top-Hodge and
+fixed-defect proofs belong to their respective sections. Supplementary
+reported coefficients are separate from the original theorem's proof
+and error estimate.
+
+Historical handoffs and calculation/build receipts preserve the earlier
+author evidence. Live approval and freshness are recorded by the workflow,
+rather than by an author-stage description in this scientific interface.
