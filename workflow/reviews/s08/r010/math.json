@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 77 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020/S6 r015/S7 r012/B r010; navigation adds no mathematical premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All fifteen own files match r009 byte-for-byte, preserving D=g_2+h, fixed-marking bounds, stable genus/defect splits and the projective intersection degrees.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains ordered h!, inverse-sine/Beta factors, both singularities, node halves, two factorial ratios and final 24; the S1-checked preamble changes no mathematical counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions preserve x=t_0, theta, S/P_h, g_2, rho, beta_g and b_g(h); links/bookmarks introduce no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The prior complete assessment of endpoint/primitive recovery, two-point transfer, full node convolution and nef comparison applies to identical source, with the closing h=1 candidate/table still conjectural evidence.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same common-domain and whole-sum estimates retain fixed-h relative o(1), distinct from background O_h(g^-1), without a proved next coefficient or stronger remainder claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all fifteen own files, including checks/data/interface/handoffs, are unchanged. ACK SHA256 e718df263658e8898be7c7cdb3344ad3a755c98d4d7e5b332044ebecdfb89998.",
+    "Actual standard source 399fe083fa325afafdab372ca437ab154117173cb8a505342e75de6b44cc5e74 equals the frozen fingerprint; PDF 6395fef5ebd23adb93a463406ad7f4655a674a2c66773bee2dceb92440059169 matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot 09467146b5e5a8fa2356f05f7d0a3ec3c97dc9e9c3e206dc9d24f4565e1add7a is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No transfer/proof/numerical run, full-repo scan, research, render or build; only these two reports were written, without source/state/history/output edit or future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "0a0453cda5b1f98844e14918c1d31d30ddb87aa429a347efe5bbfed9d94838f6",
+  "summary": "PDF-NAVIGATION: pass on S8 r010. The verified shared preamble-only update preserves the fixed-defect proof, normalizations, original relative-o(1) scope and separate h=1 conjecture.",
+  "unit": "s08",
+  "verdict": "pass"
+}

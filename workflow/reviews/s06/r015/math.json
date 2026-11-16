@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 45 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020; navigation adds no FP/Bessel or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All twelve own files match r014 byte-for-byte, preserving stable vertices including genus zero/m=0, whole-tree degree ranges and the nonelliptic endpoint order at least two.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains beta_g versus b_g/scalar b, R=rho/12, elliptic-leaf symmetry and both factorials; the S1-checked preamble changes no mathematical macro/counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and first definitions retain g_2, z_{0,1}, Phi/w and local amplitude scopes; links/bookmarks introduce no mathematical symbol.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The prior complete assessment of exact vertices, all-type circle bounds, whole-tree summation and saddle/elliptic recovery applies to identical source, with supplementary coefficients still separately reported and details omitted.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same full-tree tail and odd-half-order saddle cancellations retain relative O(g_2^-2) and fixed-amplitude scopes without a stronger estimate or parameter claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all twelve own files, including checks/interface/handoffs, are unchanged. ACK SHA256 8868bb7d2f025d6ed90a10d02fdce0f3a99f1d6edec1f52f716c084cceb79d37.",
+    "Actual standard source 7a1a4bf14901bd8ece23e3193309729d92353f026c7aac160ae3231be709ef05 equals the frozen fingerprint; PDF aed3f7e532665f6122645537295ed040ebe3abef15fe65595d1e58abe5b60df6 matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot ce44a263d072907341620df78a05b94c5a9fb691851ed95f47ebecb24c79416f is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No Bessel/tree calculation, proof reread, full-repo scan, render, research or build; only these two reports were written, without source/state/history/output edit or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 15,
+  "schema_version": 1,
+  "snapshot": "7506c5490a7f22b29aa1065ee2149b9623dc7dd9c3430c0015a49606829546ea",
+  "summary": "PDF-NAVIGATION: pass on S6 r015. The verified shared preamble-only update preserves the independent top-Hodge proof, Bessel normalization, original error scope and separate supplementary coefficients.",
+  "unit": "s06",
+  "verdict": "pass"
+}

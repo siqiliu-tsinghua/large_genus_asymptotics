@@ -1,0 +1,45 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the actual original binding, canonical snapshot, all frozen archive/live inputs and artifacts, ACK and actual source/PDF receipts; hyperref/bookmark supply presentation only and introduce no mathematical premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "Only tex/preamble.tex changes, so every existing section, interface and handoff retains its stability, codimension, rank and fixed-parameter ranges.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "The added block changes no mathematical macro or counter definition, and independent comparison of the actual companion aux maps preserves all 430 label numbers and the original constants/factorials.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "All first definitions and mathematical notation are byte-identical; Unicode, hidden link borders, clickable contents and numbered/open bookmarks add PDF navigation rather than new symbols or aliases.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior mathematical assessments remain applicable because no argument, hypothesis, source citation or reader proof obligation changes, and links/bookmarks do not replace a written proof.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "All four theorem statements and their fixed-list/fixed-defect error scopes remain unchanged, with no new analytic estimate, convergence or formal-verification claim from navigation configuration.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Exact r009-to-r010 selected-input delta is tex/preamble.tex only, with no added/removed path; removing the precise navigation block restores the old preamble byte-for-byte. Actual writer ACK SHA256 69c705d7b5f57a5a12b9625caa0c88b94be7a11b6cff9d81a41cec663d07dd96.",
+    "Standard source SHA256 8178ae1e4ac820a18435fb0c5c0e6495c509ae245e0e3698f99cd24381c466de equals the current frozen fingerprint; PDF 60da4f09c271f11509f9d56c302e4635e6de6f920556d3def676dfce172ca454 matches its strict/passed/with-dependencies receipt and empty diagnostics. Its snapshot field retains the pre-submit r009 ID rather than this actual r010 signature.",
+    "Verified companion-v3 record/artifact hashes and current render maps: source 773b7ecb1646f92b4c5921d7328b07b7b42b1d7b5ede5a1b11053ad022dd29e7; PDF 3684484d43ddbe2f3b8d2468b2ad60ae74e3f7b2f6047de03b76d32468a9a8bb. Its snapshot field is null and built_after_actual_freeze=false: this pre-freeze common artifact is bound by exact current-source equality, not falsely described as a post-freeze build.",
+    "Independently checked all 430 numerical labels against the prior layout aux and counted the existing actual Poppler XML/destination evidence: 102 pages, 810 internal links, 48 unique outline items and 586 named destinations. The artifact-bound printed comparison records equal per-page character multisets with small raster differences; raw extracted text and rasters are not byte-identical, and no exact-equality claim is made.",
+    "Only the current two math reports were written. Reused the complete proof assessments without proof rereading, library/model/literature research, scientific computation, builds or source/state/history/output changes. The shared companion remains layout/navigation evidence, not approval of the nine pending unit snapshots or a future export."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "5421a0b4bb33358e01fe83cb441304e73143f7d042827943d3aee22239096ee6",
+  "summary": "PDF-NAVIGATION: pass on S1 r010. The exact shared hyperref/bookmark configuration adds navigation and PDF metadata without changing mathematical source, numbering, proof inputs or theorem scopes.",
+  "unit": "s01",
+  "verdict": "pass"
+}

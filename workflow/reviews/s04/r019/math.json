@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 85 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020/S3 r017/A r017; navigation adds no coefficient or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All twenty-five own files match r018 byte-for-byte, preserving stable small types, q=0,1,2 core ranges, genus-correct loops and legal expansion parameters.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains absolute Q=Z/F, paired loops/raw connectors, N_g conversion and both (9/8)g^-1 forms; the same S1-checked preamble changes no mathematical macro/counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions retain integral, signed-functional, core and degree scopes; links/bookmarks add no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The prior complete assessment of written S3/A inputs, q=0/1/2 assembly and final T1.1 proof applies to identical source, with supplementary coefficients still separate and explicitly omitting details.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The preserved full-graph M=3 tail, legal-loop cutoff before HMT and K=2-q summable errors retain relative O(g^-3) without logarithmic loss or stronger claims.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all twenty-five own files, including checks/interface/handoffs, are unchanged. ACK SHA256 aae8308124e0f1276fc085cd98dfcfc07e526b98569f9b269235c6249850ee0d.",
+    "Actual standard source b4ca55b75208e2fef1b1c4edf93e74df4fdf23baf164153de1411365edfe502d equals the frozen fingerprint; PDF 4a77c80bdae91a1472131b878e16f53bf930da23f279837edbb6594d16fdcada matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot 403bd685823e0ff27cbfef6eca6a757771e6b046963665ab07881c0bb7763edd is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No coefficient calculation, proof reread, research, common render, full-repo scan or build; only these two reports were written, without source/state/history/output change or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 19,
+  "schema_version": 1,
+  "snapshot": "318d11027bd06658e8a92240fada062fc08e302cae82ebf74acb9d920beb8a89",
+  "summary": "PDF-NAVIGATION: pass on S4 r019. The verified shared preamble-only update preserves the complete T1.1 calculation/proof chain, absolute normalization and original error scope.",
+  "unit": "s04",
+  "verdict": "pass"
+}

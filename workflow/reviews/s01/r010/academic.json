@@ -1,0 +1,35 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The exact unicode/hidelinks/linktoc=all and numbered/open-bookmark configuration adds useful unobtrusive navigation, and actual Poppler XML confirms a coherent 48-item outline and 810 links while the PDF title and author match the unchanged article."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Independent frozen r009/r010 comparison finds only tex/preamble.tex changed, preserving every literature attribution and the author-supplied model/human credit, knowledge-sharing stance and error caution word for word."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "All bibliography entries, citations, version locators and notation translations are byte-identical, and independent comparison of the old/new companion aux files confirms all 430 printed label numbers unchanged; the navigation audit records 586 named destinations."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "The navigation configuration introduces no result, proof premise, computational obligation or stronger remainder, and the source-equivalent full-layout companion supports this new S1 signature without approving pending unit refreshes or final export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual prepared dispatch under logs/688f0f185e81; verified the real binding, exact submission snapshot, live/archive and frozen artifact fingerprints, preamble-only delta and original-writer ACK/hash. Prior full scientific and disclosure assessments remain applicable; no proof, literature, model/policy or scientific-computation rerun was performed.",
+    "The sealed strict standard PDF SHA 60da4f09c271f11509f9d56c302e4635e6de6f920556d3def676dfce172ca454 and source hash 8178ae1e4ac820a18435fb0c5c0e6495c509ae245e0e3698f99cd24381c466de match the actual new frozen inputs; its pre-submit receipt retains the preceding r009 snapshot field. Verified companion-v3 record/artifact hashes and all ten current input fingerprints: whole source 773b7ecb1646f92b4c5921d7328b07b7b42b1d7b5ede5a1b11053ad022dd29e7, PDF 3684484d43ddbe2f3b8d2468b2ad60ae74e3f7b2f6047de03b76d32468a9a8bb. Its built_after_actual_freeze=false and null S1 snapshot are recorded honestly; exact current source equivalence, not a post-freeze timestamp claim, supplies the binding.",
+    "Common navigation evidence was inspected once through actual XML outline/link targets, pdfinfo metadata and independent label-number comparison. The supplied 102-page comparison records equal per-page character multisets, nonidentical extraction order and small raster-rounding differences within its stated tolerance; no pixel-identical or full-page visual inspection claim is made. Only the two current own reports were written; no source/state/history/frozen-output change or future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "5421a0b4bb33358e01fe83cb441304e73143f7d042827943d3aee22239096ee6",
+  "summary": "The verified PDF-navigation-only preamble change preserves S1 mathematics, source credit, notation and claim strength.",
+  "unit": "s01",
+  "verdict": "pass"
+}

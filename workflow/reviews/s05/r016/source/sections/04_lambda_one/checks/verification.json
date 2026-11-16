@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "normalization": "sqrt(pi)*exp(-Cin(2*pi))*a_g/N_g",
+  "method": "Exact recursions, signed moments and complete rooted-core sums",
+  "source_sha256": {
+    "sections/04_lambda_one/checks/source/math/check_high_moments.py": "042dfc4f69bf57d1304da431bb6441ef1a444b7bb6103a35cfb15b6072b7643e",
+    "sections/04_lambda_one/checks/source/math/check_volume_extraction.py": "897b9b2f78d7df57a250fbc4b2ec0b2fc9097d2c2b7eaf44edd003a8dc305e6c",
+    "sections/04_lambda_one/checks/source/math/compose_final.py": "8bcd0239f4bacdce1a444ae4ea11a38222a264f2a2e39411422be1158e5a948f",
+    "sections/04_lambda_one/checks/source/math/core_mass_check.py": "57c198e868bfc66fab2e12425468cb52009509ac8396f1285800e94a147a946b",
+    "sections/04_lambda_one/checks/source/math/finite_functional.py": "54933b76809bf6ea475f8114c6c15da54ef6323c8f2e6b5af089f586d8c5158d",
+    "sections/04_lambda_one/checks/source/math/higher_blocks.py": "5206bb9b9c7cdf696f5b7d5cec7bd0a15b88260f85459919723458efa3e92f98",
+    "sections/04_lambda_one/checks/source/math/kernel_moment_check.py": "da9187dfdd7e53266de1c97e8f6a074b71e110468350cbe2ae60b5ce5f04c51c",
+    "sections/04_lambda_one/checks/source/math/literal_input_check.py": "575620861d65952c812a192d474406bd32198948cb2448c98f56807070f1180d",
+    "sections/04_lambda_one/checks/source/root/absolute_volumes.py": "8aacd04a631449ffe8726c0a92a749dd5c57da5f668579d763e49cbbe7471178",
+    "sections/04_lambda_one/checks/source/root/asymptotic_inputs.py": "94910ade35d800b2de193df8f6c61a487307a7376b44aa0c568f8fea2a9df750",
+    "sections/04_lambda_one/checks/source/root/one_positive.py": "94b29ad3cbf8ed973984ce89a4b2c2ff705aadab0ca96b9b5b981ba79303dd8d",
+    "sections/04_lambda_one/checks/source/root/reconstruct_volumes.py": "f1e36fbe26db53eb240c0eb386de997548617e09b5df0b19b2404ab96cfffc5e",
+    "sections/04_lambda_one/checks/source/root/separating.py": "488439d6baa25045fd3c6473185b9540d2297caa889a768ef7e899d309650548",
+    "sections/04_lambda_one/checks/source/writer/profile_engine.py": "d0c205ce74c4e466c8d2d5ded6f559aab631cabbdb003d73ed938f3eca266daa",
+    "sections/a_coefficients/calculations/core_first_correction.py": "afb416739ab32eb989d57948b73f813ccad10f5311b8fdfcb8c1a67917e0bb0b",
+    "sections/a_coefficients/calculations/enumerate_cores.py": "14803060777fcab04b3cfad36915e825848a95977f632a56af2302ead4185c6b",
+    "sections/a_coefficients/calculations/independent_volume_check.py": "57f6783107d703b1c6d946a26dd5d2a2759e07a20097c77bea3f0a9c0a3e6d5b",
+    "sections/a_coefficients/calculations/loop_moments.py": "bb9c157a789ee4a3ecc2fcc877c7ff3ebc496db4788da68d3fbaec377ea57b5c",
+    "sections/a_coefficients/calculations/run_all.py": "cee0eff2c85f15501a78754391f470bea494ae24b64d66afd295294f05cc2ecf",
+    "sections/a_coefficients/calculations/runtime.py": "b3b8881a6295cbc0981140e85955563b6a7f5951bb899e298f62e5cbf96128ef",
+    "sections/a_coefficients/calculations/verify_profiles.py": "503e37dfe3b49b52e413fb79a33ef231363ca14448af9745a5319191610dad43",
+    "sections/a_coefficients/calculations/volume_coefficients.py": "67a62fba487ea435f2a3a8029e7484ea6c5d365530352c030f10c624665dda19",
+    "sections/a_coefficients/calculations/wp_profiles.py": "e4d72df7ed9c113977813f4feec3f42cefebc825fa33049cbd392de6c872fd98",
+    "sections/04_lambda_one/checks/run.py": "88f2d3e4b56e452784e8e2a96706c16cf9fbdd3fdc6723568a29660b3b6ea42c"
+  },
+  "result_sha256": "016c81cae9321dcff101c1352cb94fcd3d3fd686a93771a294ca97d8469d3ae8",
+  "target_comparison_after_reconstruction": {
+    "3": "0",
+    "4": "0"
+  },
+  "versions": {
+    "sympy": "1.14.0"
+  },
+  "time": "2026-11-14T18:05:11.965969+00:00",
+  "record_scope": "Executable exact calculation evidence for a supplementary Remark; not a formal review signature",
+  "paper_label": "rmk:s04:further-coefficients",
+  "paper_scope": "Higher derivations omitted; not used in the original Theorem 1.1 proof or its precision",
+  "internal_symbol": "P = pi**2",
+  "source_manifest_sha256": "7b96d8c059819b2c80c488b815872009f847eab82ef926af3ce0fbea4bdd22fa",
+  "execution_receipt": {
+    "path": "build/s04-higher-check/verification_receipt.json",
+    "sha256": "af4326f2e414373a50f89881d2457b0242d1515e8fd05f975f962661e4f506da"
+  },
+  "calculation_outputs": {
+    "profiles": {
+      "path": "build/s04-higher-check/writer/profiles.json",
+      "sha256": "1b3b9682346c41e6f6e93909e8f63544604554b78d57c75fe73b93b9042ee695"
+    },
+    "volume3": {
+      "path": "build/s04-higher-check/root/volume3.json",
+      "sha256": "71f69e30517956664e0e6f28e851a66a0e055f4e526f8740fe95879072021ae6"
+    },
+    "volume4": {
+      "path": "build/s04-higher-check/root/volume4.json",
+      "sha256": "5a520bf6cb7af65763c2d324baa6297071ffb1be01fdb22a36d63c8b775a8e5b"
+    },
+    "core_blocks": {
+      "path": "build/s04-higher-check/math/higher_blocks.json",
+      "sha256": "f8f132dc963ce2982667e6e749a6079e3ddef53a53eda1f5e41129e2aa6bbc0c"
+    },
+    "computed_coefficients": {
+      "path": "build/s04-higher-check/math/computed_coefficients.json",
+      "sha256": "016c81cae9321dcff101c1352cb94fcd3d3fd686a93771a294ca97d8469d3ae8"
+    }
+  },
+  "coefficients": {
+    "3": {
+      "expression": "62909/15360 + 251/(192*P) - 5/(16*P**2)",
+      "decimal": "4.22488624041117562771387801182090893602335616839331035415186"
+    },
+    "4": {
+      "expression": "291371/32768 + 129871/(15360*P) - 277/(64*P**2) + 105/(64*P**3)",
+      "decimal": "9.70589643617510999932777712521564618375507587230831831739020"
+    }
+  },
+  "decimal_digits": 60,
+  "groups": {
+    "Q03": "-839*P/73728 + 129799/414720 - 1141757/(69120*P) + 849163/(3456*P**2) - 2198095/(2592*P**3)",
+    "Q04": "-21161*P/368640 - 1583689/9953280 - 86340899/(2488320*P) + 8325967/(12960*P**2) - 86777225/(15552*P**3) + 351768085/(31104*P**4)",
+    "Q12": "2725*P/110592 + 6679/13824 - 26377/(768*P) - 5899/(18*P**2) + 571675/(216*P**3)",
+    "Q13": "553247*P/26542080 + 12950443/3981312 - 31266097/(995328*P) - 20941805/(41472*P**2) + 433896859/(31104*P**3) - 680748575/(15552*P**4)",
+    "Q21": "-611*P/12288 + 4615/13824 - 71/(144*P) - 86651/(288*P**2) - 306065/(108*P**3)",
+    "Q22": "-973063*P/13271040 - 1026745/663552 - 1278281/(18432*P) - 3902593/(3072*P**2) - 77243981/(10368*P**3) + 337231375/(5184*P**4)",
+    "Q30": "8065*P/221184 + 307481/103680 + 3640127/(69120*P) + 1322177/(3456*P**2) + 2683555/(2592*P**3)",
+    "Q31": "-454183*P/13271040 + 4676021/4976640 + 16755043/(497664*P) + 2768507/(20736*P**2) - 46825139/(7776*P**3) - 340811485/(7776*P**4)",
+    "Q40": "3824837*P/26542080 + 255042623/39813120 + 548675927/(4976640*P) + 412672061/(414720*P**2) + 1240165/(243*P**3) + 349586755/(31104*P**4)"
+  },
+  "coefficient_group_keys": {
+    "3": [
+      "Q03",
+      "Q12",
+      "Q21",
+      "Q30"
+    ],
+    "4": [
+      "Q04",
+      "Q13",
+      "Q22",
+      "Q31",
+      "Q40"
+    ]
+  },
+  "pinned_dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "target_input_policy": "Neither higher Hodge coefficient enters reconstruction; exact comparison follows full composition"
+}

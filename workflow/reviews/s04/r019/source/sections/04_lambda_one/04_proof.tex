@@ -1,0 +1,70 @@
+% !TeX root = ../../main.tex
+\subsection{Proof of Theorem 1.1}
+\label{subsec:s04:04}
+
+It remains to combine the finite coefficient calculations with the
+uniform estimates for the whole graph sum.
+
+\begin{prfn}{Theorem~\ref{thm:lambda-one}}
+Apply Proposition~\ref{prp:s03:graph-tail} with $M=3$ at $u=1$.
+The absolute sum of graphs without a large vertex or with $q\geq3$
+is $O(F_g g^{-3})$. There are only finitely many remaining core
+types. First discard their legal loop counts $p>\log g$ by
+Lemma~\ref{lmm:s03:loop-tail}. This tail is smaller than every fixed
+inverse power after normalization, including when the large vertex's
+genus is small.
+
+For a remaining core of complexity $q\leq2$, apply
+Proposition~\ref{prp:s03:core-expansion} with $K=2-q$.
+All its intermediate volume types meet the uniform input thresholds
+for $p\leq\log g$. There are constants $C>0$ and a fixed integer
+$s\geq0$, depending on the core and expansion order, for which the
+remainder after division by $V_{g,0}$ is bounded by
+\[
+ g^{-3}\frac{C^{p+1}(1+p)^s}{p!}.
+\]
+This bound sums to $O(g^{-3})$ over $p$.
+The same factorial bound on the coefficient functions permits
+extending each retained coefficient sum to all $p\geq0$, with a
+further superpolynomially small tail. This is the extension used in
+the signed moments above; no large-genus expansion has been applied
+to an illegal or small-genus vertex.
+
+Multiplication by~\eqref{eq:s03:fixed-n-volume} at $n=0$ through
+order two converts the relative core expansions to the absolute
+groups~\eqref{eq:s04:absolute-groups}. It preserves their summable
+remainder bound and supplies the leading WP factor $1/\sqrt\pi$.
+Consequently
+\begin{align*}
+ \frac{Z_g(1)}{F_g}=\frac{e^{S(1)}}{\sqrt\pi}
+ \left[Q_{0,0}+\frac{Q_{0,1}+Q_{1,0}}g\right.\qquad\qquad\\
+ \left.{}+\frac{Q_{0,2}+Q_{1,1}+Q_{2,0}}{g^2}
+                  +O(g^{-3})\right].
+\end{align*}
+Propositions~\ref{prp:s04:first-correction}
+and~\ref{prp:s04:second-correction} give the two coefficient sums.
+Finally~\eqref{eq:s03:normalization-links} restores
+$a_g/N_g=Z_g(1)/F_g$, and~\eqref{eq:s03:cin-identity} gives
+$S(1)=\Cin(2\pi)$. Thus
+\[
+ a_g=\frac{e^{\Cin(2\pi)}}{\sqrt\pi}N_g
+ \left[1+\frac{9}{8}g^{-1}
+     +\left(\frac{257}{128}+\frac1{8\pi^2}\right)g^{-2}
+     +O(g^{-3})\right],
+\]
+which is~\eqref{eq:111}.
+\end{prfn}
+
+\begin{samepage}
+\begin{rmk}[Further coefficients]\label{rmk:s04:further-coefficients}
+The same finite-core method gives further terms. For the normalized
+quantity $\sqrt\pi\,e^{-\Cin(2\pi)}a_g/N_g$, the coefficients of
+$g^{-3}$ and $g^{-4}$ are, respectively,
+\begin{gather*}
+ \frac{62909}{15360}+\frac{251}{192\pi^2}-\frac5{16\pi^4},\\
+ \frac{291371}{32768}+\frac{129871}{15360\pi^2}
+                    -\frac{277}{64\pi^4}+\frac{105}{64\pi^6}.
+\end{gather*}
+We omit the details of these calculations.
+\end{rmk}
+\end{samepage}

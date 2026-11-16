@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 62 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020/S6 r015/S7 r012; navigation adds no analytic or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All nine own files match r009 byte-for-byte, preserving finite h/H, Borel minimum degree, local vanishing-order threshold and primitive genus range with the logarithmic exception excluded.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains forward versus reciprocal inverse derivatives, Morse/cone signs, cubic shift factors and primitive factorial/radius normalization; the S1-checked preamble changes no mathematical counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions preserve Bessel data, local derivative scales, S/cone/complex-theta scopes and fixed derivative orders; links/bookmarks introduce no mathematical symbol.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior assessment of inverse-radius geometry, normal-convergence construction, endpoint/local transport, complex-domain patching and negative-axis primitives applies to identical source independently of navigation.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same full-sigma bounds, mixed-derivative budgets, finite-layer reductions and negative-axis intervals retain their original constants and ranges without stronger claims.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all nine own files are unchanged. ACK SHA256 c60f1fc111416f6f73c3b7721292bc783211701bb957ec4368ac048808d0d753.",
+    "Actual standard source 32223b2666896e0d799044427a2df5a0115e72e1729b3dd68b6787f3d7774f33 equals the frozen fingerprint; PDF 55b416a419da43e8e51daed95a7542256c8f33716fd3bb45311d0e13da8fbc89 matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot dc3de6c832d847d21b37b6cc173126a3951c02ea955d6939dbaa04c508ce20c1 is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No analytic estimate, proof reread, research, rendering, full-repo scan or build; only these two reports were written, without source/state/history/output change or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "89a2023f3b49bd3dcb7b924cd895207cb418d0e5e2cf1490cdb8a666e4fd2dc1",
+  "summary": "PDF-NAVIGATION: pass on B r010. The verified shared preamble-only update preserves all inverse domains, kernel/transport arguments, derivative budgets and primitive scopes.",
+  "unit": "b",
+  "verdict": "pass"
+}

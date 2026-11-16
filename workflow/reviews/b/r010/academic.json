@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "Only the identical shared navigation configuration reviewed in S1 r010 changes, preserving all nine B-owned files, first-use hypotheses, statement/proof adjacency and independent analytic exposition."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "Unchanged B source and bibliography retain the distinct DLMF Bessel inputs and S6/S7 exact results while inverse-domain, normal-convergence, endpoint, kernel and primitive estimates remain proved in this appendix."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "Exact current/previous fingerprints preserve all DLMF locators, variable and derivative conventions and internal hypothesis references, with printed reference numbering unaffected by the shared navigation already checked in S1."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "Fresh approved S1 r010/S2 r020/S6 r015/S7 r012 supply unchanged inputs, so the navigation-only refresh preserves finite-layer/common-domain uniformity, the genus-one primitive exception and the absence of genus interchange, stronger remainders or software proof premises without approving pending S8 or export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual original-role dispatch and locally checked exact binding/submission/template, old/new fingerprints, nine unchanged own archived SHA values, preamble-only delta, original-writer ACK and fresh dependencies. Strict sealed native PDF 55b416a419da43e8e51daed95a7542256c8f33716fd3bb45311d0e13da8fbc89 and source 32223b2666896e0d799044427a2df5a0115e72e1729b3dd68b6787f3d7774f33 match this frozen input set; the pre-submit receipt retains the preceding r009 snapshot field.",
+    "Reused the complete prior Appendix B assessment and actual S1 common navigation inspection; the summary retains the same companion identity. No full-repository scan, repeated rendering, proof/literature research, scientific computation or build. Only the current own reports were written; no source/state/history/frozen-output edits or future-export approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 10,
+  "schema_version": 1,
+  "snapshot": "89a2023f3b49bd3dcb7b924cd895207cb418d0e5e2cf1490cdb8a666e4fd2dc1",
+  "summary": "The verified navigation-only Appendix B r010 refresh preserves source credit, self-proved analytic estimates and their exact scope.",
+  "unit": "b",
+  "verdict": "pass"
+}

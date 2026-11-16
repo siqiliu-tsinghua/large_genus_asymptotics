@@ -11,6 +11,18 @@
 ]
 \setmathfont{texgyrepagella-math.otf}
 
+% PDF navigation: clickable references and a numbered section outline.
+\usepackage[unicode,hidelinks,linktoc=all]{hyperref}
+\usepackage{bookmark}
+\hypersetup{
+  pdftitle={On Large Genus Asymptotics of Pure Hodge Integrals},
+  pdfauthor={Si-Qi Liu},
+  bookmarksnumbered=true,
+  bookmarksopen=true,
+  bookmarksopenlevel=1,
+  pdfpagemode=UseOutlines
+}
+
 % Retain the page width used by the previous 12pt article layout.
 \setlength{\textwidth}{390pt}
 \setlength{\oddsidemargin}{\dimexpr(\paperwidth-\textwidth)/2-1in\relax}

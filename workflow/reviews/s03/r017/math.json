@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified the exact new snapshot, original binding, 41 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020; navigation adds no WP or geometric premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight own files match r016 byte-for-byte, preserving stable vertex/valence caps, genus-correct cores, legal loop counts and fixed-marking complexity ranges.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains absolute F_g, graph/loop automorphism factors and volume-path conversions; the identical S1-checked preamble block changes no mathematical macro/counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "Unchanged definitions/interface preserve Euler Gamma versus Gamma_p, g_2 and q/p scopes; links/bookmarks introduce no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The complete prior assessment of pairing enumeration, Gaussian graph majorants, both q-tail cases and finite-core reduction applies to identical source independently of PDF navigation.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same sum-of-suprema bounds, legal-loop tail before HMT and factorially summable errors retain fixed-order compact-set quantifiers without stronger claims.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes; all eight own files and the selected path set are unchanged. ACK SHA256 eb4c72c7e30168a1df9ec4067e812ab578687ebed29cabbbc277dbbb9fe62e67.",
+    "Actual standard source 7cea75565594c058835d34a03012d7b2d1db6b5c754e2e1189c2c772f853cb50 equals the frozen fingerprint; PDF e9935516507bdbd819a74a1b94825f0562866c81dcc89430f430e1fe20359600 matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot 275cbc49a8bac2a8845209eed1fbdc33a4a0849234247d2555a536d0682c6b2a is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repeating it. No proof reread, research, computation, build or whole-repo/image scan; only these current reports were written, with no source/state/history/output edit or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "ab67843ce34958dfb7770c1b2e9d76ae612b0027ab02b35d35df944823a2c1ab",
+  "summary": "PDF-NAVIGATION: pass on S3 r017. The verified preamble-only presentation update and fresh dependencies preserve all WP inputs, graph/core arguments, normalizations and scopes.",
+  "unit": "s03",
+  "verdict": "pass"
+}

@@ -1,0 +1,359 @@
+% !TeX root = ../../main.tex
+\subsection{Signed loop moments}
+\label{subsec:a:02}
+
+The two flags of a self-loop share one integration variable in
+\eqref{eq:s03:integrated-graph-formula}. We retain this correlation by
+assigning a weight to their ordered pair of descendant degrees. For
+$a,b\in\mathbb Z_{\geq0}$ define
+\begin{equation}\label{eq:a:paired-weight}
+ w_{ab}=\frac12\int_0^{\alpha}
+       \frac{(-t/2)^{a+b}}{(2a+1)!(2b+1)!}\,\dd t
+ =\frac{(-1)^{a+b}\pi^{2a+2b+2}}
+ {(a+b+1)(2a+1)!(2b+1)!}.
+\end{equation}
+For a list of $p\geq0$ ordered pairs $(a_i,b_i)$ put
+$D=\sum_i(a_i+b_i)$ and let $m_a$ count the endpoints of degree $a$,
+for $a=0,1,2$. For a polynomial $\Phi$ in $p,D,m_0,m_1,m_2$ define
+the signed linear functional
+\begin{equation}\label{eq:a:signed-functional}
+ \mathcal L[\Phi]=e^{-S(1)}\sum_{p\geq0}\frac1{p!}
+ \sum_{a_1,b_1,\ldots,a_p,b_p\geq0}
+       \left(\prod_{i=1}^p w_{a_i b_i}\right)
+       \Phi(p,D,m_0,m_1,m_2).
+\end{equation}
+The empty list has all five statistics zero. The factor $1/2$ in
+$w_{ab}$ and $1/p!$ are exactly the root-loop automorphism factors;
+there is no additional symmetry factor in this definition.
+
+The following generating function gives all the required moments by
+finitely many differentiations. Its variables $v,x,z_0,z_1,z_2$ are
+complex moment parameters, independent of the edge variable $t$.
+
+\begin{lmm}[Joint signed moments]\label{lmm:a:joint-moments}
+The sums defining $\mathcal L$ are absolutely convergent and
+$\mathcal L[1]=1$. More generally,
+\begin{align}
+ &\mathcal L\left[e^{vp+xD+\sum_{a=0}^2z_a m_a}\right]\notag\\
+ &\quad=\exp\left\{\frac{e^v}{2}\int_0^\alpha
+ \left[f(e^x t)+\sum_{a=0}^2(e^{z_a}-1)
+               \frac{(-e^x t/2)^a}{(2a+1)!}\right]^2\dd t-S(1)\right\}.
+ \label{eq:a:joint-egf}
+\end{align}
+Both sides are entire in the five moment parameters. They define a
+signed generating series, with no probability interpretation.
+\end{lmm}
+\begin{prf}
+Expand the square. Selecting the degrees $a,b$ on one edge gives
+$w_{ab}e^{x(a+b)}$ multiplied by the two corresponding low-degree
+factors. Summing over $p$ labeled pairs with $1/p!$ exponentiates
+this one-edge sum and proves the identity.
+
+On any compact parameter
+set, replacing every coefficient by its absolute value is bounded by
+the corresponding factorial series on the finite interval
+$[0,\alpha]$. The exponential sum over $p$ then converges normally,
+also after any fixed number of derivatives.
+
+At zero parameters the
+one-edge integral is $\tfrac12\int_0^\alpha f(t)^2\dd t=S(1)$,
+which proves the normalization.
+\end{prf}
+
+Here are explicit finite rules for differentiating
+\eqref{eq:a:joint-egf}. They are also convenient checks on endpoint
+correlations. For $a=0,1,2$ and integer $r\geq0$ put
+\begin{equation}\label{eq:a:side-moments}
+ M_{a,r}=\left.(z\partial_z)^r
+ \left\{\frac12\int_0^\alpha
+       \frac{(-zt/2)^a}{(2a+1)!}f(zt)\,\dd t\right\}\right|_{z=1}.
+\end{equation}
+The expression in braces is
+\[
+ \frac{2(-1)^a}{(2a+1)!z}
+              \int_0^{\pi\sqrt z}y^{2a}\sin y\,\dd y.
+\]
+The integral identity first holds for positive real $z$ and then by
+analytic continuation near $1$. Integration by parts and differentiation
+give
+\begin{equation}\label{eq:a:side-table}
+\begin{array}{@{}c|c@{\;}c@{\;}c@{}}
+ a&M_{a,0}&M_{a,1}&M_{a,2}\\\hline
+0&4&-4&4-\pi^2/2\\
+1&(4-\pi^2)/3&(\pi^2-4)/3&(\pi^4-4\pi^2+16)/12\\
+2&(\pi^4-12\pi^2+48)/60&-(\pi^4-12\pi^2+48)/60
+ &-(\pi^2-4)(\pi^4+48)/240
+\end{array}
+\end{equation}
+
+For a nonzero multi-index of nonnegative integers
+$\mathbf r=(r_p,r_D,r_0,r_1,r_2)$ let
+$\chi_{\mathbf r}$ be the derivative at zero of the logarithm of
+\eqref{eq:a:joint-egf}, of these respective orders.
+
+Equivalently it is
+the one-loop weighted sum of
+$(a+b)^{r_D}\prod_{c=0}^2(\mathbf1_{a=c}+\mathbf1_{b=c})^{r_c}$.
+The parameter $v$ records the number $p$ of self-loops, and every
+derivative of its exponential factor at zero gives one.
+With no low-count
+derivative the one-loop degree moments, for $r_D=0,\ldots,4$, are
+\begin{equation}\label{eq:a:degree-cumulants}
+ S(1),\quad -S(1),\quad S(1),\quad
+ \frac{\pi^2}{2}-S(1),\quad S(1)-\frac{5\pi^2}{4}.
+\end{equation}
+Indeed their generating function is
+$\sum_{a,b}w_{ab}z^{a+b}=S(z)/z$.
+If just one low count $m_a$ is differentiated $s\geq1$ times, then
+\[
+ \chi_{\mathbf r}=2M_{a,r_D}
+        +(2^s-2)w_{aa}(2a)^{r_D}.
+\]
+If two distinct low counts $m_a,m_b$ are differentiated positively,
+the answer is $2w_{ab}(a+b)^{r_D}$; with three distinct low counts it
+is zero. Powers with exponent zero are one, including $0^0$ in these
+finite polynomial evaluations.
+
+To evaluate the moments recursively, write $X=(p,D,m_0,m_1,m_2)$ and
+$N(\mathbf r)=\mathcal L[X^{\mathbf r}]$. Let $\mathbf e_i$ be
+the $i$th unit vector for $1\leq i\leq5$. Starting with $N(0)=1$,
+the usual product rule gives the finite recurrence
+\begin{equation}\label{eq:a:bell-rule}
+ N(\mathbf r+\mathbf e_i)=
+ \sum_{\mathbf s\leq\mathbf r}\binom{\mathbf r}{\mathbf s}
+       \chi_{\mathbf s+\mathbf e_i}N(\mathbf r-\mathbf s).
+\end{equation}
+For example $\mathcal L[D]=-S(1)$ and
+$\mathcal L[D^2]=S(1)^2+S(1)$.
+
+For the zero-degree count, $\mathcal L[m_0]=2M_{0,0}=8$.
+The corresponding second logarithmic derivative is
+$8+2w_{00}=8+2\pi^2$, whence
+$\mathcal L[m_0^2]=72+2\pi^2$.
+
+As a further useful check,
+\[
+ \mathcal L[D+p]=\mathcal L[(D+p)^2]=0,\qquad
+ \mathcal L[(D+p)^3]=\frac{\pi^2}{2},\quad
+ \mathcal L[(D+p)^4]=\frac{3\pi^2}{4}.
+\]
+
+We now apply these rules to the pure-loop core. In this and the next
+calculation, a vertical restriction $\big|_{q=r}$ means the part of
+the exact graph sum whose distinguished large vertex has core
+complexity $r$, as defined in Section~\ref{subsec:s03:04}.
+For the pure-loop core its restored vertex has $(G,n)=(g-p,2p)$ and
+complexity $2g-2$. Put, locally,
+\[
+ E_r=e_{2p,r}(a_1,b_1,\ldots,a_p,b_p)\quad(r=1,2),
+\]
+\[
+ v_1=\frac p2+c_1(2p),\qquad
+ v_2=\frac{3p^2}{8}+\frac{3p}{2}c_1(2p)+c_2(2p).
+\]
+The square-root genus factor and the absolute fixed-marking volume
+expansion give these $v_1,v_2$. Multiplication by the profile in
+complexity $2g-2$ gives respectively
+\begin{equation}\label{eq:a:pure-loop-polynomials}
+ v_1+\frac{E_1}{2},\qquad
+ v_2+\frac{(1+v_1)E_1}{2}+\frac{E_2}{4}.
+\end{equation}
+The additional $E_1/2$ in the second expression comes from expanding
+$(2g-2)^{-1}$; omitting it changes the second coefficient.
+
+\begin{prp}[Pure-loop coefficients]\label{prp:a:pure-loops}
+The pure-loop contribution in the absolute normalization is
+\begin{equation}\label{eq:a:q-zero}
+\begin{aligned}
+ \left.\frac{Z_g(1)}{F_g}\right|_{q=0}
+ &=\frac{e^{S(1)}}{\sqrt\pi}\Bigl[1
+   +\frac{1/12-65/(6\pi^2)}g\\
+ &\quad+\frac{43/288-469/(36\pi^2)+5665/(72\pi^4)}{g^2}
+   +O(g^{-3})\Bigr].
+\end{aligned}
+\end{equation}
+\end{prp}
+\begin{prf}
+Sum~\eqref{eq:a:pure-loop-polynomials} with $\mathcal L$.
+For the first coefficient the finite rules give
+\[
+ \mathcal L[v_1]=c_1(0)+\frac{3S(1)-2S(1)^2}{\pi^2},\qquad
+ \mathcal L[E_1]=-1+\frac{4S(1)^2-6S(1)-16}{\pi^2}.
+\]
+Here is a compact coefficient table for the second calculation. Each
+column lists the coefficient of $S(1)^j$ in the indicated expression,
+after multiplying the entire expression by $96\pi^4$:
+\[
+\begin{array}{c|r|r}
+ j&\mathcal L[v_2-c_2(0)]&\mathcal L[(1+v_1)E_1]\\\hline
+0&0&-152\pi^4-2448\pi^2+2816\\
+1&-3\pi^4+568\pi^2-2064&-816\pi^2+13728\\
+2&-400\pi^2+1072&800\pi^2+3328\\
+3&-16\pi^2-384&-768\\
+4&192&-768
+\end{array}
+\]
+\[
+\begin{array}{c|r}
+ j&\mathcal L[E_2]\\\hline
+0&168\pi^4+2000\pi^2+16512\\
+1&12\pi^4-640\pi^2-19200\\
+2&-10944\\
+3&64\pi^2+3072\\
+4&768
+\end{array}
+\]
+The three expression columns follow by inserting~\eqref{eq:a:first-profile},
+\eqref{eq:a:second-profile}, and~\eqref{eq:a:c-two-n} into
+\eqref{eq:a:bell-rule}; the largest polynomial degree is four.
+
+Combining these columns with coefficients $1,1/2,1/4$ cancels every
+positive power of $S(1)$. The constant left is
+\[
+ c_2(0)-\frac{17}{48}-\frac{181}{24\pi^2}
+                                      +\frac{173}{3\pi^4}.
+\]
+Proposition~\ref{prp:a:c-two} now gives the displayed result.
+
+Section~\ref{sec:s03} justifies the operation on all legal loop
+counts: its degree-moment estimate and summable core remainder apply
+to these fixed-degree polynomials, and the large-loop tail is smaller
+than every fixed inverse power of $g$. Thus extending the finite legal
+sum to the signed entire series changes only the stated remainder.
+\end{prf}
+
+For complexity one there are three cores: a rational vertex with a
+small loop and one connector to the root, a rational vertex with three
+connectors, and an elliptic vertex with one connector. Their precise
+graphs and automorphisms will be listed in
+Subsection~\ref{subsec:a:04}. We calculate their first corrections
+here so that the finite core table has a proved coefficient rule.
+
+For a restored core with root valence $n_0$, root genus loss
+$c=(n_0+1)/2$, and $p$ restored root loops, the absolute volume
+correction is
+\[
+ \frac32+\frac{p+c}{2}+c_1(2p+n_0).
+\]
+The $3/2$ is the first correction of the complexity-one factorial
+ratio. Let $D_{\rm c}$ be the total degree at its connector flags on
+the root, and $m_{0,\rm c}$ the number of their zero degrees. Add them
+to the loop statistics in the first profile. The same finite moment
+rule gives, for $n_0=1$ or $3$,
+\begin{align}
+ &\mathcal L\left[\frac32+\frac{p+c}{2}+c_1(2p+n_0)
+       +\frac12e_{2p+n_0,1}(\text{loop and connector degrees})\right]
+ \notag\\
+ &\quad=\frac{22\pi^2-12D_{\rm c}^2+(30-12n_0)D_{\rm c}
+      -3m_{0,\rm c}^2-33m_{0,\rm c}+3n_0-121}{12\pi^2}.
+ \label{eq:a:q-one-loop-average}
+\end{align}
+Here the profile's total degree is $D+D_{\rm c}$ and its zero count
+is $m_0+m_{0,\rm c}$, with $n=2p+n_0$.
+
+Only elementary connector moments remain. For one connector let its
+degree be $a$ and its zero indicator be $z=\mathbf1_{a=0}$. Sum its
+negative-psi coefficient against $1$ or
+$W^{\rm WP}_{1,1}(t)=(2\pi^2-t)/24$, respectively. Use $x$ locally
+as a complex degree-generating parameter near $1$. For degree orders
+$r=0,1,2$, the raw moments are the unscaled integrals
+\[
+\begin{aligned}
+ \text{rational:}\quad &2M_{0,r}
+ =\left.(x\partial_x)^r\int_0^\alpha f(xt)\,\dd t\right|_{x=1},\\
+ \text{elliptic:}\quad &\left.(x\partial_x)^r
+   \int_0^\alpha W^{\rm WP}_{1,1}(t)f(xt)\,\dd t\right|_{x=1}.
+\end{aligned}
+\]
+The elliptic polynomial $W^{\rm WP}_{1,1}(t)$ is not scaled with $x$. A connector
+has no loop branch-exchange factor $1/2$. The zero-indicator moments
+are separately
+\[
+ \int_0^\alpha 1\,\dd t=2\pi^2,\qquad
+ \int_0^\alpha W^{\rm WP}_{1,1}(t)\,\dd t=\frac{\pi^4}{12}.
+\]
+These give the following raw moment table:
+\begin{equation}\label{eq:a:connector-moments}
+\begin{array}{c|rrrr}
+ &1&a&a^2&z\\\hline
+ \text{rational connector}&8&-8&8-\pi^2&2\pi^2\\
+ \text{elliptic connector}&(\pi^2+4)/3&-8/3&(16-2\pi^2)/3&\pi^4/12
+\end{array}
+\end{equation}
+Always $z^r=z$
+for $r\geq1$, and $a^r z=0$ for $r\geq1$. For $m$ independent
+connectors with raw moments $h_0,h_1,h_2,h_z$, product expansion gives
+\begin{align*}
+ \sum D_{\rm c}&=mh_1h_0^{m-1},&
+ \sum D_{\rm c}^2&=mh_2h_0^{m-1}+m(m-1)h_1^2h_0^{m-2},\\
+ \sum m_{0,\rm c}&=mh_zh_0^{m-1},&
+ \sum m_{0,\rm c}^2&=mh_zh_0^{m-1}+m(m-1)h_z^2h_0^{m-2}.
+\end{align*}
+For $m=1$ the terms with $m(m-1)$ are absent. These sums mean the
+product of the unnormalized connector weights, not a probability
+average.
+
+\begin{prp}[Complexity-one coefficients]\label{prp:a:q-one}
+After removing the common factor $e^{S(1)}/\sqrt\pi$, the three
+complexity-one cores contribute the following coefficients of
+$g^{-1}$ and $g^{-2}$ in $Z_g(1)/F_g$:
+\begin{equation}\label{eq:a:q-one-table}
+\begin{array}{c|c|c}
+ \text{Small vertex}&g^{-1}&g^{-2}\\\hline
+ \begin{gathered}(0,3)\\\text{one connector}\\\text{and one loop}\end{gathered}
+ &1&29/24-37/(3\pi^2)\\
+ \begin{gathered}(0,3)\\\text{three connectors}\end{gathered}
+ &32/(3\pi^2)&-1-4/(9\pi^2)-1616/(9\pi^4)\\
+ \begin{gathered}(1,1)\\\text{one connector}\end{gathered}
+ &1/24+1/(6\pi^2)&13/288-1/(48\pi^2)-101/(36\pi^4)
+\end{array}
+\end{equation}
+Consequently the complete complexity-one part is
+\begin{equation}\label{eq:a:q-one}
+\begin{aligned}
+ \left.\frac{Z_g(1)}{F_g}\right|_{q=1}
+ &=\frac{e^{S(1)}}{\sqrt\pi}\Bigl[
+   \frac{25/24+65/(6\pi^2)}g\\
+ &\quad+\frac{73/288-1843/(144\pi^2)-6565/(36\pi^4)}{g^2}
+   +O(g^{-3})\Bigr].
+\end{aligned}
+\end{equation}
+\end{prp}
+\begin{prf}
+Insert the connector moments into~\eqref{eq:a:q-one-loop-average}.
+For the three rows in order use $(n_0,m)=(1,1),(3,3),(1,1)$.
+The remaining prefactors are $1/8$, $1/(48\pi^2)$, and
+$1/(8\pi^2)$, respectively. The first includes the small-loop integral
+$\alpha$ and its automorphism factor $2$; the second includes $3!$;
+the third has no graph symmetry.
+Multiplying each prefactor by the total connector weight gives the
+leading column; including the polynomial in
+\eqref{eq:a:q-one-loop-average} in that weighted sum gives the
+correction column.
+For example, the first polynomial at $n_0=1$ has raw average
+\[
+ \frac{8(22\pi^2-118)-12(8-\pi^2)+18(-8)
+                   -36(2\pi^2)}{12\pi^2}
+ =\frac{29}{3}-\frac{296}{3\pi^2}.
+\]
+Its factor $1/8$ gives the first correction in the table. The two
+other rows follow by the displayed product formulas, with no
+uncomputed endpoint moments. Summing proves~\eqref{eq:a:q-one}.
+The summable remainders are again those of
+\eqref{eq:s03:summable-remainder}, now to first order on a fixed
+complexity-one core.
+\end{prf}
+
+\begin{rmk}[Normalization]
+The correction columns are absolute coefficients after extracting
+$e^{S(1)}/\sqrt\pi$ from $Z_g(1)/F_g$. The functions $\gamma_r$ of
+Section~\ref{sec:s03} are instead coefficients of $Z_g/V_{g,0}$.
+If the complete absolute coefficients are $r_1,r_2$ (in this remark
+only), then
+\[
+ e^{-S(1)}\gamma_1(1)=r_1-c_1(0),\qquad
+ e^{-S(1)}\gamma_2(1)=r_2-c_2(0)-c_1(0)(r_1-c_1(0)).
+\]
+Thus an absolute core correction must not be relabeled as a relative
+$\gamma_r$ coefficient.
+\end{rmk}

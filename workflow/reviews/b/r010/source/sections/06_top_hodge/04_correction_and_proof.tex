@@ -1,0 +1,227 @@
+% !TeX root = ../../main.tex
+\subsection{The first correction and proof of Theorem 1.3}
+\label{subsec:s06:04}
+
+The tree bound leaves two calculations. The tree with no edges requires a
+two-term coefficient expansion; an elliptic leaf needs only its
+additive leading-amplitude version. We prove both versions on the
+same Cauchy circle. In particular the error estimate does not require
+division by an amplitude that might vanish at the saddle.
+
+\begin{lmm}[Circular saddle]\label{lmm:s06:saddle}
+Let $P$ be analytic on a neighborhood of the closed disk
+$|x|\leq x_*$. As the positive integer $m\to\infty$,
+\begin{equation}\label{eq:s06:additive-saddle}
+ [x^m]\Phi(x)^{-m-1}P(x)
+ =\frac{R^{-m}}{J_1(z_{0,1})\sqrt{2\pi m}}
+             \left(P(x_*)+O_P(m^{-1})\right).
+\end{equation}
+The error is uniform for amplitudes analytic and uniformly bounded
+on one fixed neighborhood of that disk. For $P=1$,
+\begin{equation}\label{eq:s06:two-term-saddle}
+ [x^m]\Phi(x)^{-m-1}
+ =\frac{R^{-m}}{J_1(z_{0,1})\sqrt{2\pi m}}
+ \left[1+\frac{-1/4+1/(24x_*)}{m}+O(m^{-2})\right].
+\end{equation}
+\end{lmm}
+\begin{prf}
+\emph{The integral and its outer arc.}
+For $-\pi\leq\theta\leq\pi$ put $x_\theta=x_*e^{i\theta}$
+and
+$\mathcal A_P(\theta)=e^{i\theta}R P(x_\theta)/w(x_\theta)$.
+Cauchy's formula is exactly
+\begin{equation}\label{eq:s06:cauchy}
+ [x^m]\Phi(x)^{-m-1}P(x)
+ =\frac{R^{-m}}{2\pi\Phi(x_*)}
+ \int_{-\pi}^{\pi}
+ \left(\frac{w(x_\theta)}R\right)^{-m}
+                         \mathcal A_P(\theta)\dd\theta.
+\end{equation}
+Analyticity on a neighborhood of the closed disk justifies this
+coefficient integral and bounds its amplitude on the whole circle. By
+\eqref{eq:s06:circle-bound}, the part with
+$|\theta|\geq m^{-2/5}$ is
+$O_P(R^{-m}e^{-a m^{1/5}})$, after decreasing $a>0$ if needed.
+It is negligible at every algebraic order relative to the leading
+$R^{-m}/\sqrt m$ scale.
+
+\emph{Local Taylor terms.}
+Near zero define
+$\mathcal H(\theta)=\log(w(x_\theta)/R)$ by the branch with
+$\mathcal H(0)=0$. The series of $w$ satisfies $xw''+w=0$.
+Together with $w(x_*)=R$ and $w'(x_*)=0$, differentiation gives
+\begin{align*}
+ \mathcal H(\theta)
+ &=\frac{x_*}{2}\theta^2+\frac{i x_*}{3}\theta^3\\
+ &\quad-\left(\frac{x_*^2}{12}+\frac{x_*}{8}\right)\theta^4
+   -\frac{i x_*(7x_*+2)}{60}\theta^5+O(\theta^6),\\
+ \mathcal A_1(\theta)
+ &=1+i\theta-\frac{x_*+1}{2}\theta^2
+                    -\frac{i(5x_*+1)}6\theta^3+O(\theta^4).
+\end{align*}
+Set $t=\sqrt m\,\theta$.
+Define the three polynomials
+\begin{align*}
+ \mathcal Q_1(t)&=it-\frac{i x_*}{3}t^3,\\
+ \mathcal Q_2(t)&=-\frac{x_*+1}{2}t^2
+       +\left(\frac{x_*^2}{12}+\frac{11x_*}{24}\right)t^4
+       -\frac{x_*^2}{18}t^6,\\
+ \mathcal Q_3(t)&=i\biggl[-\frac{5x_*+1}{6}t^3
+       +\left(\frac{11x_*^2}{30}+\frac{13x_*}{40}\right)t^5\\
+ &\hspace{30mm}
+       -\left(\frac{x_*^3}{36}+\frac{7x_*^2}{72}\right)t^7
+       +\frac{x_*^3}{162}t^9\biggr].
+\end{align*}
+
+For $|t|\leq m^{1/10}$ the product of the Taylor expansions is
+\begin{align}
+ &e^{-m\mathcal H(t/\sqrt m)}\mathcal A_1(t/\sqrt m)\notag\\
+ &\quad=e^{-x_*t^2/2}
+ \left[1+\frac{\mathcal Q_1(t)}{\sqrt m}
+         +\frac{\mathcal Q_2(t)}m
+         +\frac{\mathcal Q_3(t)}{m^{3/2}}\right]\notag\\
+ &\qquad\quad
+   +O\left(m^{-2}(1+|t|^{12})e^{-x_*t^2/4}\right).
+ \label{eq:s06:local-saddle}
+\end{align}
+For completeness, the Taylor remainders in the phase and amplitude
+are $O(m^{-2}|t|^6)$ and $O(m^{-2}|t|^4)$ after rescaling.
+The retained cubic exponential has size
+$O(m^{-1/2}|t|^3)$. On this interval its ratio to $t^2$ tends
+uniformly to zero, as do the higher phase terms. Exponential
+Taylor's remainder is consequently bounded by $m^{-2}$ times a
+polynomial of degree at most twelve, with the extra exponential
+absorbed into $e^{-x_*t^2/4}$. This proves the integrable uniform
+error in \eqref{eq:s06:local-saddle}.
+
+\emph{Symmetry and the first correction.}
+Both $\mathcal Q_1$ and $\mathcal Q_3$ are odd. Their integrals
+against the even Gaussian over the symmetric interval vanish
+exactly. The normalized Gaussian moments of $t^2,t^4,t^6$ are
+$1/x_*$, $3/x_*^2$, $15/x_*^3$. They give
+\[
+ -\frac{x_*+1}{2x_*}
+ +3\left(\frac1{12}+\frac{11}{24x_*}\right)
+ -\frac{15}{18x_*}
+ =-\frac14+\frac1{24x_*}.
+\]
+The Gaussian tails beyond $|t|=m^{1/10}$ are exponentially small,
+and the error in \eqref{eq:s06:local-saddle} integrates to
+$O(m^{-2})$. Finally
+$\Phi(x_*)\sqrt{x_*}=J_1(z_{0,1})$ converts the prefactor in
+\eqref{eq:s06:cauchy} to that in
+\eqref{eq:s06:two-term-saddle}.
+
+For general $P$, expand $\mathcal A_P$ through its quadratic term.
+The term of order $m^{-1/2}$ is still odd; the remaining integral
+is $P(x_*)$ plus an additive $O_P(m^{-1})$.
+The same outer-arc bound applies. Cauchy bounds for derivatives on
+a fixed neighborhood of the closed disk make these constants
+uniform for the asserted families. This proves
+\eqref{eq:s06:additive-saddle}, including when $P(x_*)=0$.
+\end{prf}
+
+The elliptic endpoint has an exact one-point value, so only its
+opposite vertex must be estimated. The two placements of that
+endpoint will remove the orientation half in the ordered split.
+
+\begin{lmm}[Elliptic leaf]\label{lmm:s06:elliptic-leaf}
+For $g\geq3$, the contribution to \eqref{eq:s06:one-edge} with
+an elliptic endpoint is
+\begin{equation}\label{eq:s06:elliptic-exact}
+ \beta_1\beta_{g-1}(g_2-1)!
+ [x^{g_2-1}]\Phi(x)^{-g_2}\Phi(x).
+\end{equation}
+Relative to
+$\beta_g g_2!R^{-g_2}/(J_1(z_{0,1})\sqrt{2\pi g_2})$,
+it equals
+\begin{equation}\label{eq:s06:elliptic-relative}
+ \frac{\pi^2J_1(z_{0,1})^2}{6g_2}+O(g_2^{-2}).
+\end{equation}
+\end{lmm}
+\begin{prf}
+The two ordered placements in \eqref{eq:s06:one-edge} cancel
+its factor $1/2$. The small vertex is
+$W^{\rm top}_{1,1}(s)=\beta_1=1/24$ by
+\eqref{eq:s06:exact-vertex}. The entire series gives
+\[
+ \int_0^1J_0(2\sqrt{s x})\dd s
+    =\sum_{a\geq0}\frac{(-x)^a}{a!(a+1)!}=\Phi(x).
+\]
+The other vertex has coefficient order $g_2-1$, proving
+\eqref{eq:s06:elliptic-exact}.
+
+Apply \eqref{eq:s06:additive-saddle} with $m=g_2-1$ and
+$P=\Phi$. After division by the displayed scale its leading
+coefficient is
+\[
+ \frac{\beta_1}{g_2}\frac{\beta_{g-1}}{\beta_g}
+     R\Phi(x_*)\sqrt{\frac{g_2}{g_2-1}}.
+\]
+The ratio has an $O(g_2^{-2})$ error. Using
+\eqref{eq:s06:beta-asymptotics} and
+$R\Phi(x_*)=J_1(z_{0,1})^2$ gives
+\eqref{eq:s06:elliptic-relative}.
+\end{prf}
+
+We now combine the uniform tree estimates with the two retained
+contributions. The scale \eqref{eq:s06:tree-scale} differs by a
+bounded positive factor from the leading saddle scale, so the
+absolute tree estimates have exactly the relative strength needed
+for the theorem.
+
+\begin{prfn}{Theorem~\ref{thm:top-hodge}}
+In \eqref{eq:s06:tree-expansion}, all trees with at least two edges
+give $O(\mathcal T_g g_2^{-2})$ by
+Proposition~\ref{prp:s06:tree-tail}. The nonelliptic one-edge sum
+is $O(\mathcal T_g g_2^{-3})$ by
+Lemma~\ref{lmm:s06:nonelliptic-tail}. The tree with no edges, by
+\eqref{eq:s06:exact-vertex} and
+\eqref{eq:s06:two-term-saddle} at coefficient order $g_2$, is
+\[
+ \frac{\beta_g g_2!R^{-g_2}}
+      {J_1(z_{0,1})\sqrt{2\pi g_2}}
+ \left[1+\frac{-1/4+1/(6z_{0,1}^2)}{g_2}
+                 +O(g_2^{-2})\right].
+\]
+Lemma~\ref{lmm:s06:elliptic-leaf} supplies the remaining one-edge
+term. Therefore
+\begin{equation}\label{eq:s06:combined-expansion}
+ \frac{12^{g_2}b_g}{g_2!}
+ =\frac{\beta_g g_2!R^{-g_2}}
+      {J_1(z_{0,1})\sqrt{2\pi g_2}}
+       \left(1+\frac b{g_2}+O(g_2^{-2})\right).
+\end{equation}
+The $-1/4$ and $1/(6z_{0,1}^2)$ in the Introduction's scalar $b$
+come from the saddle of the tree with no edges; its
+$\pi^2J_1(z_{0,1})^2/6$ comes from the elliptic leaf.
+Finally multiply by $g_2!/12^{g_2}$, use $12R=\rho$ and
+\eqref{eq:s06:beta-asymptotics}. The exponentially small beta
+error is absorbed into the remainder, giving
+\[
+ b_g=\frac1{J_1(z_{0,1})}\frac2{(2\pi)^{2g}}
+ \frac{(g_2!)^2}{\rho^{g_2}\sqrt{2\pi g_2}}
+       \left(1+\frac b{g_2}+O(g_2^{-2})\right).
+\]
+This is \eqref{eq:g111}.
+\end{prfn}
+
+\begin{samepage}
+\begin{rmk}[Further coefficients]\label{rmk:s06:further-coefficients}
+Continuing the same tree and saddle calculation, the coefficients
+of $g_2^{-2}$ and $g_2^{-3}$ in the relative expansion of
+\eqref{eq:g111} are, respectively,
+\[
+ \frac{b^2}{2}+b+\frac14-\frac{2b+2/3}{z_{0,1}^2}
+\]
+and
+\[
+ \begin{aligned}
+ &\frac{b^3}{6}+\frac{16b^2}{5}+\frac{47b}{20}+\frac{103}{240}\\
+ &\quad+\frac{192b^2-592b-187}{120z_{0,1}^2}
+       +\frac{152(3b+1)}{45z_{0,1}^4}.
+ \end{aligned}
+\]
+We omit the details.
+\end{rmk}
+\end{samepage}

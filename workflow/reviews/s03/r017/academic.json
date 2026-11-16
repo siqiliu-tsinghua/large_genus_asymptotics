@@ -1,0 +1,34 @@
+{
+  "agent_id": "/root/s02_academic",
+  "checks": {
+    "academic_style": {
+      "status": "pass",
+      "evidence": "The sole changed input is the identical shared hyperref/bookmark block already reviewed in S1 r010, leaving all eight S3 files and their independent definitions, statement/proof structure and exposition unchanged."
+    },
+    "attribution": {
+      "status": "pass",
+      "evidence": "The unchanged S3 source and bibliography retain the distinct MZ, LX, Wang, HMT, Mirzakhani and Shen–Wu inputs, while whole-graph majorants and coefficient summation remain attributed to this paper’s proofs."
+    },
+    "citation_precision": {
+      "status": "pass",
+      "evidence": "The exact current/previous fingerprints preserve every technical source version, locator and stack-volume/descendant conversion; the shared navigation adds links without altering the label numbers checked in the S1 common review."
+    },
+    "claim_status": {
+      "status": "pass",
+      "evidence": "Fresh approved S1 r010 and S2 r020 provide the same scientific inputs, so this navigation-only signature preserves fixed-parameter versus growing-valence uniformity, whole-graph remainder bounds and the absence of software proof obligations without approving pending units or export."
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Executed the actual original-role dispatch and locally verified the new submission/template identity, live fingerprint, sole preamble delta, eight own archived hashes, original-writer ACK and fresh S1/S2 approvals. Sealed strict native PDF e9935516507bdbd819a74a1b94825f0562866c81dcc89430f430e1fe20359600 and source 7cea75565594c058835d34a03012d7b2d1db6b5c754e2e1189c2c772f853cb50 match the current frozen input set; its pre-submit receipt retains the previous r016 snapshot field.",
+    "Reused the prior complete S3 assessment and already inspected common navigation/configuration evidence; the unchanged companion identity is recorded in this round summary. No full-repository scan, repeated common-artifact or image inspection, source research, proof reread, scientific computation or build; only the current own reports were written."
+  ],
+  "resolved_issue_ids": [],
+  "role": "academic",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "ab67843ce34958dfb7770c1b2e9d76ae612b0027ab02b35d35df944823a2c1ab",
+  "summary": "The verified navigation-only r017 refresh preserves all S3 source roles, normalization conventions and uniformity claims.",
+  "unit": "s03",
+  "verdict": "pass"
+}

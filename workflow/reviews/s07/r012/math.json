@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 53 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020/S6 r015; navigation adds no geometric, Bessel or ILW premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All eight own files match r011 byte-for-byte, preserving stable descendant ranges, positive fixed defect, finite-jet degree constraints, genus-one exception and Borel minimum degree.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains parameter conversion, string anomaly cancellation, beta inverse sine and Borel/Beta factorials including the quadratic half; the S1-checked preamble changes no mathematical counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions preserve x=t_0, theta, W/w/v, indexed L_h and g_2 scopes; links/bookmarks introduce no mathematical symbol or alias.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The prior complete assessment of finite jets, jet-kernel constants, characteristic recovery and Borel coefficient identities applies to identical source independently of navigation.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same coefficientwise/formal identities and fixed-genus characteristic convergence remain separate from B/S8 common-domain and infinite-genus conclusions, with no stronger claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all eight own files are unchanged. ACK SHA256 e9f3593168f4ad0c636aa9866676e67348afee2a907700729902564720c8d166.",
+    "Actual standard source 3380d5b26c5014dc16c855e4fbc9a9a7a58e7e11d75ff8bca078f3d152835b86 equals the frozen fingerprint; PDF 5d91ec0ad891e46aa4a7bebe5c67c3f02b9c96974fbac65e6227f91d01fbb21c matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot 449cdc4fe9f1920aeabf0c4775a4c55390cde48a2fc7fa98e0fc863b5aa79158 is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No proof/ILW calculation, research, rendering, full-repo scan or build; only these two reports were written, without source/state/history/output edit or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 12,
+  "schema_version": 1,
+  "snapshot": "c430fa4c38606b971f15c3de2434fb384f774fec04721930710f0c49870f3f59",
+  "summary": "PDF-NAVIGATION: pass on S7 r012. The verified shared preamble-only update preserves ILW normalization, integration constants, characteristic/Borel identities and their formal/fixed-genus scopes.",
+  "unit": "s07",
+  "verdict": "pass"
+}

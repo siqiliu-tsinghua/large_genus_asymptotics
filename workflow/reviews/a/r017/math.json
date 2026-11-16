@@ -1,0 +1,43 @@
+{
+  "agent_id": "/root/s02_math",
+  "checks": {
+    "dependencies": {
+      "evidence": "Verified original binding, canonical snapshot, 60 frozen/live inputs, ACK, preview and fresh approved S1 r010/S2 r020/S3 r017; navigation adds no mathematical source or premise.",
+      "status": "pass"
+    },
+    "dimensions": {
+      "evidence": "All nineteen own files match r016 byte-for-byte, preserving profile/descendant ranges, stable low-type dimensions and the complete 1/3/13 core/integration domains.",
+      "status": "pass"
+    },
+    "normalization": {
+      "evidence": "Unchanged source retains absolute volume conventions, signed paired moments, raw connectors and flag Aut factors; the same S1-checked navigation block changes no mathematical macro/counter or label number.",
+      "status": "pass"
+    },
+    "notation": {
+      "evidence": "The unchanged interface and definitions retain profile, genus, moment and core scopes with inherited integral/Bernoulli conventions; links/bookmarks add no mathematical symbol.",
+      "status": "pass"
+    },
+    "proof_logic": {
+      "evidence": "The prior complete assessment of the written unconditional c2 reconstruction, finite moment rules and complete core/integration proofs applies to identical source independently of navigation or programs.",
+      "status": "pass"
+    },
+    "uniformity": {
+      "evidence": "The same full omitted-genus bounds, summable polynomial errors and fixed-order core scopes retain their original quantifiers without a stronger estimate or verification claim.",
+      "status": "pass"
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Only tex/preamble.tex changes, with no added/removed path; all nineteen own files, including calculations/interface/handoffs, are unchanged. ACK SHA256 111dcf048887a3076af0d1180f3c712e941bf1cbd81938bd6135fbb93982ee21.",
+    "Actual standard source 1b68740491ac986f0ee7c3aa4bd7c5122a1d1a38676847a80be9086c637ced59 equals the frozen fingerprint; PDF eb7b1fe9b02f76dfe8ff8778fa41745cea243e668e8d94968fe53cf14197a2d3 matches the strict/passed/with-dependencies receipt with empty diagnostics. Its build-time snapshot 2c2b33c7da04c6b0a347fae23bf1a94159f4951bf580b4b43ed12dae56a76052 is the pre-submit baseline, distinct from this new signature.",
+    "Common companion-v3 record SHA256 dac7b7b5e27bb3c2c2bde1ec95ad733f5f714b440bbd78ff8fb43efd407ad583 is unchanged; reused S1 r010 navigation/430-label and printed-comparison assessment without repetition. No proof/WP calculation, common-render/full-repo scan, research or build; only these two reports were written, without source/state/history/output change or future approval."
+  ],
+  "resolved_issue_ids": [],
+  "role": "math",
+  "round": 17,
+  "schema_version": 1,
+  "snapshot": "9e445ccf72936d8307aaf912f3c768b61f7e487e680df55ef3031e454b70246f",
+  "summary": "PDF-NAVIGATION: pass on A r017. The verified shared preamble-only update preserves the complete coefficient reconstruction, moment/core arguments, normalizations and scopes.",
+  "unit": "a",
+  "verdict": "pass"
+}

@@ -1,0 +1,22 @@
+{
+  "task": "PDF-NAVIGATION",
+  "baseline_commit": "6156e95181cc6e244182757832bcf52881ce6506",
+  "request_source": "Explicit user request relayed by the coordinating root agent",
+  "problem": "The existing PDF has no clickable references or bookmark outline.",
+  "allowed_source_patch": "tex/preamble.tex only: hyperref and bookmark presentation configuration, including Unicode, hidden link borders, clickable TOC, numbered/open outline and plain title/author PDF metadata.",
+  "preserve": [
+    "All mathematical and section TeX, interfaces and handoffs",
+    "Printed text and all 430 theorem/formula/other label numbers",
+    "Existing author information, bibliography and TOC contents",
+    "Old helpers, pins, review archives and production scripts"
+  ],
+  "baseline_pages": 102,
+  "page_count_policy": "Prefer the existing 102-page layout; compare actual printed text and labels rather than inventing a page-count receipt.",
+  "writer_scope": "Every original writer, including s01, writes only an external per-unit PDF-NAVIGATION acknowledgment.",
+  "refresh_order": ["s01", "s02", "s03", "a", "s04", "s05", "s06", "s07", "b", "s08"],
+  "review_scope": "Reuse previous proof assessments; inspect the exact shared-preamble effects and sign each genuine new snapshot. No proof reread, computation, literature, library or model research.",
+  "official_generated_outputs": ["submission/paper.tex", "submission/paper.pdf"],
+  "navigation_evidence": "Actual Poppler pdftohtml XML links/outline and pdfinfo named destinations, without installing dependencies.",
+  "topics_status": "The coordinator reports that all 15 public topics were already verified; this task does not repeat API checks.",
+  "not_an_approval": true
+}
